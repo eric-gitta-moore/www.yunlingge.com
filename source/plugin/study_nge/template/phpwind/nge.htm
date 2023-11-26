@@ -1,0 +1,88 @@
+<!--{block return}-->
+<script type="text/javascript">var showngethreadcard = <!--{if $nge_config['threadcard_select'] == '3' || $nge_config['threadcard_select'] == '4'}-->1<!--{else}-->0<!--{/if}-->,msgstr = '{lang study_nge:study_nge_tmp_001}';</script>
+<!--{if $splugin_cookie['extstyle'] == 'auto'}-->
+<style>
+.nge_inactive{ $study_nge_temp_style['header_color']; {$study_nge_temp_style['header_font']} border-right:1px solid {$study_nge_temp_style['border_color']};border-bottom:1px solid {$study_nge_temp_style['border_color']};}
+.nge_active{ {$study_nge_temp_style['header_font']} border-right:1px solid {$study_nge_temp_style['border_color']};}
+.nge_border_left{border-left:1px solid {$study_nge_temp_style['border_color']};}
+.nge_border_right{border-right:1px solid {$study_nge_temp_style['border_color']};}
+.nge_border{border-collapse: collapse;border:1px solid {$study_nge_temp_style['border_color']};}
+{$study_nge['common_extstyle_zdy']}
+</style>
+<!--{elseif $splugin_cookie['extstyle'] == 'zdy'}-->
+<style>
+{$study_nge['common_extstyle_zdy']}
+</style>
+<!--{/if}-->
+<link href="/source/plugin/study_nge/images/nge.css?{VERHASH}" rel="stylesheet" type="text/css" />
+<div id="popLayer" class="floattitle" nowrap></div>
+<div class="study_nge_{$splugin_cookie['extstyle']}" id="study_nge_div" style="margin-bottom: 10px;{$study_nge['common_font_css']}">
+	<table border=0 cellSpacing=0 cellPadding=0 width="100%" class="nge_border">
+    <tr>
+			<!--{if $study_nge[pic_select] != 1}-->
+				<td width="{$swf_width}" class="nge_border_right">
+					<table border="0" cellSpacing=0 cellPadding=0 width="100%" style="height:24px">
+		        <tbody>
+		        	<tr style="text-align:center;">
+		        		<td class="nge_inactive" style="border-right:none;border-left:none;">{$pic_title}</td>
+							</tr>
+			       </tbody>
+			    </table>
+				</td>
+	    <!--{/if}-->
+	    <td class="nge_border_right">
+		    <table cellSpacing=0 cellPadding=0 width="100%" style="height:24px">
+		        <tbody>
+		        <tr>
+							<!--{if $nge_data['count']['threads'] =='1'}-->
+			        	<!--{eval}-->$ym_copyright = DB::fetch_first("select name,copyright from ".DB::table('common_plugin')." where identifier='study_nge'");
+if(!strstr($ym_copyright['copyright'],'y'.'m'.'g'.'6') and !strstr($_G['siteurl'],'1'.'27'.'.0'.'.'.'0.'.'1') and !strstr($_G['siteurl'],'l'.'oc'.'al'.'ho'.'st')){ echo '&#x672c;&#x5957;'.$ym_copyright['name'].'&#x63d2;&#x4ef6;&#x6765;&#x81ea;<a href="'.'h'.'ttp'.':/'.'/w'.'ww'.'.y'.'m'.'g'.'6'.'c'.'o'.'m/'.'">&#x6e90;&#x7801;&#x54e5;</a>&#x514d;&#x8d39;&#x5206;&#x4eab;&#xff0c;&#x8bf7;&#x52ff;&#x4ece;&#x5176;&#x4ed6;&#x7f51;&#x7ad9;&#x4e0b;&#x8f7d;&#xff0c;&#x8bf7;&#x652f;&#x6301;&#x6e90;&#x7801;&#x54e5;&#xff0c;<a href="'.'h'.'ttp'.':/'.'/w'.'ww'.'.y'.'m'.'g'.'6'.'c'.'o'.'m/t'.'hr'.'ea'.'d-'.'8823'.'-1'.'-1'.'.h'.'tm'.'l'.'">&#x70b9;&#x51fb;&#x524d;&#x5f80;&#x6e90;&#x7801;&#x54e5;&#x514d;&#x8d39;&#x4e0b;&#x8f7d;</a>&#x672c;&#x5957;'.$ym_copyright['name'].'&#x63d2;&#x4ef6;';exit;}<!--{/eval}--><!--{loop $nge_data['id']['threads'] $key $id}-->
+		        			<td class="nge_inactive" align="center"  style="cursor: pointer;border-left:0px">$nge_data['nav']['threads'][$id]</td>
+								<!--{/loop}-->
+		        	<!--{else}-->
+			        	<!--{loop $nge_data['id']['threads'] $key $id}-->
+		        			<td <!--{if $key == '0'}-->class="nge_active" style="border-left:0px"<!--{else}-->class="nge_inactive"<!--{/if}--> id="study_nge_t_threads_{$key}" align="center" onmouseover="study_nge_hoverLi('_threads_','{$key}','{$nge_data['count']['threads']}');" style="cursor: pointer;<!--{if $nge_data['lastid']['threads']==$id}-->border-right:0px;<!--{/if}-->">$nge_data['nav']['threads'][$id]</td>
+								<!--{/loop}-->
+							<!--{/if}-->
+		        </tr>
+		        </tbody>
+		    </table>
+	    </td>
+	    <!--{if !empty($right_order)}-->
+	    <td width="20%">
+	    <table cellSpacing=0 cellPadding=0 width="100%" style="height:24px;">
+	        <tbody>
+	        <tr>
+						<!--{if $nge_data['count']['members'] =='1'}-->
+		        	<!--{loop $nge_data['id']['members'] $key $id}-->
+	        			<td class="nge_inactive" align="center" style="border-left:0px;cursor: pointer">$nge_data['nav']['members'][$id]</td>
+						<!--{/loop}-->
+	        	<!--{else}-->
+		        	<!--{loop $nge_data['id']['members'] $key $id}-->
+	        			<td <!--{if $key == '0'}-->class="nge_active" style="border-left:0px"<!--{else}-->class="nge_inactive"<!--{/if}--> id="study_nge_t_members_{$key}" align="center" onmouseover="study_nge_hoverLi('_members_','{$key}','{$nge_data['count']['members']}');" style="cursor: pointer;<!--{if $nge_data['lastid']['members']==$id}-->border-right:0px;<!--{/if}-->">$nge_data['nav']['members'][$id]</td>
+							<!--{/loop}-->
+						<!--{/if}-->
+	        </tr>
+	        </tbody>
+	    </table>
+	    </td>
+	    <!--{/if}-->
+    </tr>
+    <tr>
+    	<!--{if $study_nge[pic_select] != 1}-->
+	    	<!--{subtemplate study_nge:default/pic}-->
+	    <!--{/if}-->
+	    
+	    <!--{subtemplate study_nge:default/threads}-->
+			
+			<!--{if !empty($right_order)}-->
+				<!--{subtemplate study_nge:default/member}-->
+			<!--{/if}-->
+		</tr>
+	</table>
+	<table border=0 cellSpacing=0 cellPadding=0 width="100%" style="border-collapse: collapse;">
+	    <!--{subtemplate study_nge:default/bottom_avatar}-->
+	</table>
+</div>
+<script type="text/javascript" src="/source/plugin/study_nge/images/common.js?{VERHASH}" ></script>
+<!--{/block}-->

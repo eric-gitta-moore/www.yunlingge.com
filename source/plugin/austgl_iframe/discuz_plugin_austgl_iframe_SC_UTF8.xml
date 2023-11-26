@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.1]]></item>
+	<item id="Time"><![CDATA[2014-02-14 20:21]]></item>
+	<item id="From"><![CDATA[编力地带 (http://www.austgl.com/b/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[网站外链iframe打开]]></item>
+			<item id="identifier"><![CDATA[austgl_iframe]]></item>
+			<item id="description"><![CDATA[论坛用户发贴时填有外链时,打开链接将以iframe形式，在自己域名下打开,上方会有一拉幕广告.有效减少用户跳出率,提高用户访问时间,同时加上nofollow标签，防止垃圾外链.可以添加例外域名，设置白名单。另有一固定 广告，默认高度为90px。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[austgl_iframe/]]></item>
+			<item id="copyright"><![CDATA[austgl.com|iganlei.cn 阿甘工作室]]></item>
+			<item id="version"><![CDATA[v0.2.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[austgl_iframe]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[拉幕图片地址]]></item>
+				<item id="description"><![CDATA[下拉图片，拉幕广告，图片尺寸960px * 180px。默认图片是插件包img目录下的2014.jpg,可直接用同名图片更换，或者填入图片地址（绝对地址，相对地址都可）]]></item>
+				<item id="variable"><![CDATA[austgl_iframe_adimg]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[插件开关]]></item>
+				<item id="description"><![CDATA[外链iframe打开 是否开启开关]]></item>
+				<item id="variable"><![CDATA[austgl_iframe_radio]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[白名单（例外域名） ... ...]]></item>
+				<item id="description"><![CDATA[白名单（例外域名）,将会直接打开
+格式：一行一个.
+例如
+www.austgl.com
+girls.iganlei.cn]]></item>
+				<item id="variable"><![CDATA[austgl_iframe_exceptiondomin]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[austgl.com
+iganlei.cn]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[html广告代码]]></item>
+				<item id="description"><![CDATA[支持第三方联盟或者自己自定义广告html代码，广告尺寸高度 不能大于90px]]></item>
+				<item id="variable"><![CDATA[austgl_iframe_adcode]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[填入广告联盟代码或者是自定义html代码|<a href="http://www.austgl.com/b">austgl.com/b</a>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="austgl_iframe"><![CDATA[网站外链iframe打开]]></item>
+				<item id="iframe_return_homepage"><![CDATA[返回首页]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="austgl_iframe"><![CDATA[网站外链iframe打开]]></item>
+				<item id="iframe_return_homepage"><![CDATA[返回首页]]></item>
+				<item id="austgl_iframe_dangerous"><![CDATA[打开的url可能存在风险，请复制打开！！！]]></item>
+			</item>
+		</item>
+	</item>
+</root>

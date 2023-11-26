@@ -1,0 +1,127 @@
+
+#jzmms{padding: 2px; text-align: right; }
+.navbar-unread {
+    border-radius: 30px;
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 17px;
+    min-width: 8px;
+    padding: 0px 4px;
+    right: 0px;
+    text-align: center;
+    text-shadow: none;
+    z-index: 10;
+	align: right;
+	}
+	
+.navbar-unreadn {
+    border-radius: 30px;
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 17px;
+    min-width: 8px;
+    padding: 0px 4px;
+    right: 0px;
+    text-align: center;
+    text-shadow: none;
+    z-index: 10;
+	align: right;
+	}	
+
+#jzgrzxkp {
+	height: 260px;
+	width: 231px;
+	background:#f2f6f8;
+	font-family: Microsoft YaHei;
+}
+
+#jzgrzxkp .jzgrzxkptop {
+	height: 140px;
+	color: #fff;
+}
+#jzgrzxkp .jzgrzxkptop a{
+
+	color: #fff;
+}
+
+#jzgrzxkp .jzgrzxkptop h3 {
+	 height: 16px;
+font-weight:normal;
+    padding: 8px 0px 0px 10px;
+	font-size: 16px;
+}
+
+#jzgrzxkp .jzgrzxkptop .jzgrzxkpthtle {
+	height: 35px;
+}
+#jzgrzxkp .jzgrzxkptop .jzgrzxkpimg {
+	height: 65px;
+	text-align:center;
+}
+
+#jzgrzxkp .jzgrzxkptop .jzgrzxkpimg img {
+	width: 54px;
+	width: 54px;
+	border-radius: 100px;
+	margin-top: 2px;
+
+
+}
+
+#jzgrzxkp .jzgrzxkptop .jzgrzxkpimg .jzgrzxkpimgn {
+	width: 58px;
+	height: 58px;
+	border-radius: 100px;
+	background: none repeat scroll 0% 0% #fff;
+	margin-top: 5px;
+	margin-right: auto;
+    margin-left: auto;
+}
+
+#jzgrzxkp .jzyhm {
+    font-size: 15px;
+    line-height: 22px;
+	text-align: center;
+	padding-bottom: 10px;
+	text-align:center;
+}
+
+#jzgrzxkp .jzyhm a {
+    width: 231px;
+    height: 15px;
+	text-align:center;
+	background: none ;
+}
+
+#jzgrzxkp .jzgrzxkpbox  { height: 120px; background:#f1f1f1;}
+
+#jzgrzxkp .jzgrzxkpbox a { 
+width:57px;height:60px;float:left; margin: 0px;}
+
+.box01{background-position: 0px 0px !important;}
+.box02{background-position: -57px 0px !important;}
+.box03{background-position: -114px 0px !important;}
+.box04{background-position: -171px 0px !important;}
+
+.box05{background-position: 0px -60px !important;}
+.box06{background-position: -57px -60px !important;}
+.box07{background-position: -114px -60px !important;}
+.box08{background-position: -171px -60px !important;}
+.box09{background-position: 0px -120px !important;}
+
+
+#jz52-grzx-skin a{
+margin: 0px;
+top: 0px;
+height: 20px;
+width: 20px;
+overflow: hidden;
+background-image: url('source/plugin/jz52_top/template/wei.png');
+background-position: 0px 0px;
+background-repeat: no-repeat;
+position: absolute;
+display: block;
+right: 0px;
+}

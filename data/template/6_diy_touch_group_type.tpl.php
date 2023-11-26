@@ -1,0 +1,1 @@
+<?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('type');?><?php include template('common/header'); include template('group/comiis_grouplist'); include template('common/footer'); ?><?php if(function_exists('yunling_redirect_resource_output')){yunling_redirect_resource_output('doNotMove');}?>

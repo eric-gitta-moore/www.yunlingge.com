@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[it618_firstad_flex.plugin]]></item>
+	<item id="RevisionID"><![CDATA[10240]]></item>
+	<item id="SN"><![CDATA[2020012616ea72uA87I8]]></item>
+	<item id="RevisionDateline"><![CDATA[1561257788]]></item>
+	<item id="Data">
+		<item id="/uninstall.php"><![CDATA[fdf6006bc4c44aa950ded0c95355e136]]></item>
+		<item id="/discuz_plugin_it618_firstad_flex_SC_UTF8.xml"><![CDATA[2c3180bbb0fa5770619992dc3a6bebca]]></item>
+		<item id="/help.inc.php"><![CDATA[6ee1e30143480e7131d6b925506202dd]]></item>
+		<item id="/function/it618_firstad_flex.func.php"><![CDATA[dfbdee691d97af1af3c7b952d4610263]]></item>
+		<item id="/include/admin_ad.inc.php"><![CDATA[90dae9f7ab03009daa34df80416d95a2]]></item>
+		<item id="/install.php"><![CDATA[7706f1f1c94a5e7a995a6894f232df97]]></item>
+		<item id="/upgrade.php"><![CDATA[3d11e86a746c5adf049b121934c22339]]></item>
+		<item id="/adimg/ad3.jpg"><![CDATA[ce0a156e765ed5f5702a3403ec7d6874]]></item>
+		<item id="/adimg/ad2.jpg"><![CDATA[09a3fa3634ee3c2523213a19e2c8cbcb]]></item>
+		<item id="/adimg/ad1.jpg"><![CDATA[7e01d5f7933295a17fcbd89425730802]]></item>
+		<item id="/admin_ad.inc.php"><![CDATA[5616573990497bffcdecec802c2969f4]]></item>
+		<item id="/discuz_plugin_it618_firstad_flex_TC_UTF8.xml"><![CDATA[720d04fcfec2e079bedc527504170bcf]]></item>
+		<item id="/firstad_flex.class.php"><![CDATA[c4fa7fc62e6f75055c639ceef8dd16cc]]></item>
+		<item id="/template/firstad_flex.htm"><![CDATA[1ed021fbf3a85340c2f80e441b5a773a]]></item>
+	</item>
+</root>

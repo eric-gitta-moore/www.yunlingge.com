@@ -1,0 +1,691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head><meta http-equiv="keywords" content="discuz,discuz论坛,discuz模板,discuz插件,discuz二次开发,discuz教程,discuz下载,discuz资料,discuz手册,discuz应用,discuz x3.2,discuz x3.3,discuz x3.4,discuz数据库字典" />
+<meta name="description" content="提供discuz discu zx3.2 discuz x3.3 discuz x3.4 的开发教程、使用手册、数据库字典，系统架构说明" />
+        <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+        <title>Discuz! 资料库</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<link rel="stylesheet" href="../../common.css" tppabs="http://faq.comsenz.com/library/common.css" />
+		<link rel="stylesheet" href="../style_part.css" tppabs="http://faq.comsenz.com/library/plug/style_part.css" />
+		<script src="../../base.js" tppabs="http://faq.comsenz.com/library/base.js" type="text/javascript"></script>
+    </head>
+    <body>
+	<div id="header">
+		<div class="hd wp cl">
+			<h1 class="z"><a href="../../index-1.htm" tppabs="http://faq.comsenz.com/library/index.htm">Discuz! 资料库文档索引</a></h1>
+			<h2><a href="#">Discuz! X资料库 —— 插件机制</a></h2>
+		</div>
+	</div>
+	<div id="topnv"><iframe id="nviframe" src="../topnv.htm" tppabs="http://faq.comsenz.com/library/plug/topnv.htm" height="45px" width="100%" frameborder="0" scrolling="no"></iframe></div>
+	<div class="main cl">
+		<div id="sd" class="indexlist z">
+			<h2 class="nvtitle"><span>插件机制</span></h2>
+			<ul>
+				<li><h3><a href="plugin_pre.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_pre.htm">准备工作</a></h3></li>
+				<li><h3><a href="plugin_vars.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_vars.htm">参数读取</a></h3></li>
+				<li><h3><a href="plugin_module.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_module.htm">插件接口</a></h3></li>
+				<li class="a">
+					<h3><a href="plugin_hook.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_hook.htm">页面嵌入</a></h3>
+					<dl class="two">
+						<dd><a href="plugin_hook.htm#geshi" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_hook.htm#geshi">- 脚本格式</a></dd>
+						<dd><a href="plugin_hook.htm#hookid" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_hook.htm#hookid">- HookId</a></dd>
+						<dd><a href="plugin_hook.htm#liebiao" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_hook.htm#liebiao">- 嵌入点列表</a></dd>
+					</dl>
+				</li>
+				<li><h3><a href="plugin_specialthread.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_specialthread.htm">特殊主题</a></h3></li>
+				<li><h3><a href="plugin_classes.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_classes.htm">第三方扩展类</a></h3></li>
+				<li><h3><a href="plugin_install.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_install.htm">安装/升级/卸载</a></h3></li>
+				<li><h3><a href="plugin_language.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_language.htm">模版和语言包</a></h3></li>
+				<li><h3><a href="plugin_notice.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_notice.htm">注意事项</a></h3></li>
+				<li><h3><a href="plugin_example.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_example.htm">插件开发实例</a></h3></li>
+			</ul>
+		</div>
+		<div class="content">
+			<h2 class="nvtitle">页面嵌入</h2>
+			<div class="mainc">
+				<h3 class="nvtwo" id="geshi">脚本格式</h3>
+<pre>&lt;?php
+
+//全局嵌入点类（必须存在）
+class plugin_identifier {
+
+	function HookId_1() {
+		......
+		return ...;
+	}
+
+	function HookId_2() {
+		......
+		return ...;
+	}
+
+	......
+
+}
+
+//脚本嵌入点类
+class plugin_identifier_CURSCRIPT extends plugin_identifier {
+
+	function HookId_1() {
+		......
+		return ...;
+	}
+
+	function HookId_2() {
+		......
+		return ...;
+	}
+
+	......
+
+}
+
+?&gt;
+</pre>
+				
+				<ul><li>plugin_</li></ul>
+				<dl><dd>普通版脚本中的类名以 plugin_ 开头。手机版脚本中的类名以 mobileplugin_ 开头。</dd></dl>
+				<ul><li>identifier</li></ul>
+				<dl><dd>插件的唯一标识符，在插件设置中设置。</dd></dl>
+				<ul><li>CURSCRIPT</li></ul>
+				<dl><dd>嵌入点位于的脚本名，如 forum.php 为 forum。</dd></dl>
+				<ul><li id="hookid">HookId</li></ul>
+
+<table border="0" cellspacing="0" style="border: 1px solid #AAA;">
+
+	<tbody>
+		<tr>
+			<td width="140" style="border-bottom: 1px solid gray"><b>函数名</b></td>
+			<td width="230" style="border-bottom: 1px solid gray;padding-left:10px"><b>调用位置</b></td>
+			<td width="130" style="border-bottom: 1px solid gray"><b>声明位置</b></td>
+			<td style="border-bottom: 1px solid gray"><b>第一个参数含义</b></td>
+		</tr>
+		<tr>
+			<td style="border-bottom: 1px solid gray"><i>HookId</i>()</td>
+			<td style="border-bottom: 1px solid gray">所有模块执行前被调用</td>
+			<td style="border-bottom: 1px solid gray">脚本嵌入点类</td>
+			<td style="border-bottom: 1px solid gray"></td>
+		</tr>
+		<tr>
+			<td style="border-bottom: 1px solid gray"><i>HookId</i>_output()</td>
+			<td style="border-bottom: 1px solid gray">模块执行完毕，模板输出前被调用</td>
+			<td style="border-bottom: 1px solid gray">脚本嵌入点类</td>
+			<td style="border-bottom: 1px solid gray">array(
+				<dl><dd>'template' =&gt; 当前要输出的模版,</dd>
+					<dd>'message' =&gt; showmessage 的信息内容,</dd>
+					<dd>'values' =&gt; showmessage 的信息变量,</dd></dl><p>)</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom: 1px solid gray">global_<i>HookId</i>()</td>
+			<td style="border-bottom: 1px solid gray">模块执行完毕，模板输出前被调用</td>
+			<td style="border-bottom: 1px solid gray">全局嵌入点类</td>
+			<td style="border-bottom: 1px solid gray"></td>
+		</tr>
+		<tr>
+			<td style="border-bottom: 1px solid gray"><i>HookId</i>_message()</td>
+			<td style="border-bottom: 1px solid gray">showmessage() 执行时调用</td>
+			<td style="border-bottom: 1px solid gray">脚本嵌入点类</td>
+			<td style="border-bottom: 1px solid gray">array(
+				<dl><dd>'param' =&gt; showmessage() 函数的参数数组,</dd></dl><p>)</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom: 1px solid gray">ad_<i>adId</i>()</td>
+			<td style="border-bottom: 1px solid gray">相应的广告位中调用<p>函数名为广告位脚本 ID如：ad_headerbanner()</p>
+				</td>
+			<td style="border-bottom: 1px solid gray">全局嵌入点类<p>脚本嵌入点类</p></td>
+			<td style="border-bottom: 1px solid gray">array(
+				<dl><dd>'params' =&gt; 广告位参数,
+				</dd><dd>'content' =&gt; 当前广告位原本将要显示的内容,
+				</dd></dl><p>)</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom: 1px solid gray">common()</td>
+			<td style="border-bottom: 1px solid gray">所有模块执行前被调用</td>
+			<td style="border-bottom: 1px solid gray">全局嵌入点类</td>
+			<td style="border-bottom: 1px solid gray"></td>
+		</tr>
+		<tr>
+			<td style="border-bottom: 1px solid gray">discuzcode()</td>
+			<td style="border-bottom: 1px solid gray">discuzcode() 函数执行时调用
+				<p>用于在帖子内容解析时嵌入自己的功能，函数中 $_G['discuzcodemessage'] 变量为待解析的字串</p></td>
+			<td style="border-bottom: 1px solid gray">全局嵌入点类</td>
+			<td style="border-bottom: 1px solid gray">array(
+				<dl><dd>'param' =&gt; caller 函数的参数数组,</dd>
+				<dd>'caller' =&gt; caller 函数，此嵌入点被哪个函数调用<dl>
+					<dd><dl><dd><dl>
+				<dd>'discuzcode' 被 discuzcode() 调用</dd>
+				<dd>'messagecutstr' 被 messagecutstr() 调用</dd></dl></dd></dl></dd></dl></dd></dl><p>)</p></td>
+		</tr>
+		<tr>
+			<td style="border-bottom: 1px solid gray">deletethread()</td>
+			<td style="border-bottom: 1px solid gray">deletethread() 函数执行时调用
+				<p>用于在主题删除前后嵌入自己的功能，此函数将在 deletethread() 中被调用 2 次，函数中 $_G['deletethreadtids'] 变量为待处理的 TID 数组</p></td>
+			<td style="border-bottom: 1px solid gray">全局嵌入点类</td>
+			<td style="border-bottom: 1px solid gray">array(<dl><dd>'param' =&gt; deletethread() 函数的参数数组,</dd><dd>'step' =&gt; 删除的步骤<dl><dd><dl><dd><dl><dd>'check' 检测步骤</dd><dd>'delete' 删除步骤</dd></dl></dd></dl></dd></dl></dd></dl><p>)</p></td>
+		</tr>
+		<tr>
+			<td style="border-bottom: 1px solid gray">deletepost()</td>
+			<td style="border-bottom: 1px solid gray">deletepost() 函数执行时调用
+				<p>用于在帖子删除前后嵌入自己的功能，此函数将在 deletepost() 中被调用 2 次，函数中 $_G['deletepostids'] 变量为待处理的 ID 数组</p></td>
+			<td style="border-bottom: 1px solid gray">全局嵌入点类</td>
+			<td style="border-bottom: 1px solid gray">array(<dl><dd>'param' =&gt; deletepost() 函数的参数数组,</dd><dd>'step' =&gt; 删除的步骤<dl><dd><dl><dd><dl><dd>'check' 检测步骤</dd><dd>'delete' 删除步骤</dd></dl></dd></dl></dd></dl></dd></dl><p>)</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-bottom: 1px solid gray">avatar()<p>(X2.5 新增)</p></td>
+			<td style="border-bottom: 1px solid gray">avatar() 函数执行时调用
+				<p>用于在头像调用时嵌入自己的功能，函数中 $_G['hookavatar'] 变量为新头像返回值</p></td>
+			<td style="border-bottom: 1px solid gray">全局嵌入点类</td>
+			<td style="border-bottom: 1px solid gray">array(<dl><dd>'param' =&gt; avatar() 函数的参数数组</dd><dd></dd></dl><p>)</p></td>
+		</tr>
+	</tbody>
+</table>
+		<p>要查看所有的预定义嵌入点，请打开 config/config_global.php 文件，将文件结尾添加的设计者模式值改成“2”，然后更新缓存即可。在页面源码中查找"&lt;hook&gt;"可搜索到嵌入点。（详细内容可参阅的《<a href="javascript:if(confirm('http://faq.comsenz.com/library/plug/plugin/hook.htm  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://faq.comsenz.com/library/plug/plugin/hook.htm#liebiao'" tppabs="http://faq.comsenz.com/library/plug/plugin/hook.htm#liebiao" title="插件嵌入点列表">插件嵌入点列表</a>》）</p>
+<pre>$_config['plugindeveloper'] = 2;</pre>
+		<p>预定义的嵌入点会在页面预置好的位置输出函数返回的内容。函数返回值类型如果是 array 且是空值的，必须输出一个空数组，如：</p>
+<pre>return array();</pre>
+		<p>函数名并不限于以上列表，您可以自定义，只要符合以下规则，函数就会在适当的地方被调用。</p>
+<pre>function CURMODULE_USERDEFINE[_output]()</pre>
+		<p>CURMODULE 指明了此函数在哪个模块执行，可通过常量 CURMODULE 得到当前页面的 CURMODULE 值。 USERDEFINE 可自定义，如果函数名以“_output”结尾则会在模板输出前调用，否则会在模块执行前调用。如：attachment_test() 函数会在论坛的下载附件的时候执行。“_output”结尾的函数的第一个参数为数组，含义为 array('template' =&gt; 要输出的模板名, 'message' =&gt; showmessage 的文字) 如：以下函数将在登录的时候输出调试文字</p>
+<pre>function logging_test_output($a) {
+	print_r($a);
+	print_r($_POST);
+}</pre>
+		<p>plugin_identifier 类中的其它函数为了便于阅读建议以“_”开头，如：</p>
+<pre>&lt;?php
+
+class plugin_sample {
+
+	function _updatecache() {
+		......
+		return ...;
+	}
+
+}
+
+class plugin_sample_forum extends plugin_sample {
+
+	function viewthread_posttop() {
+		......
+		return ...;
+	}
+
+	......
+
+}
+
+?&gt;</pre>
+
+				<h3 class="nvtwo" id="liebiao">插件嵌入点列表</h3>
+<ul><li id="common">全局(common/)
+</li></ul>
+<pre> extcredits.htm
+     string spacecp_credit_extra
+ faq.htm
+     string faq_extra
+ footer.htm
+     string global_footer
+     string global_footerlink
+ header.htm
+     string global_cpnav_top (X2.5)
+     string global_cpnav_extra1
+     string global_cpnav_extra2
+     string global_usernav_extra1
+     string global_usernav_extra2
+     string global_usernav_extra3
+     string global_usernav_extra4 (X2.5)
+     string global_nav_extra (X2.5)
+     string global_header
+ userabout.htm
+     array global_userabout_top
+     string userapp_menu_top
+     string userapp_menu_middle
+     array global_userabout_bottom
+</pre>
+	<ul><li id="forum">论坛(forum/)
+</li></ul>			
+<pre> collection_all.htm (X2.5)
+     string collection_index_top
+     string collection_index_bottom
+ collection_comment.htm (X2.5)
+     string collection_nav_extra
+ collection_index.htm (X2.5)
+     string collection_index_top
+     string collection_index_bottom
+ collection_mycollection.htm (X2.5)
+     string collection_index_top
+     string collection_index_bottom
+ collection_nav.htm (X2.5)
+     string collection_nav_extra
+ collection_view.htm (X2.5)
+     string collection_viewoptions
+     string collection_view_top
+     string collection_threadlistbottom
+     string collection_relatedop
+     string collection_view_bottom
+     string collection_side_bottom
+ discuz.htm
+     string index_status_extra
+     string index_nav_extra (X2.5)
+     string index_top
+     string index_catlist_top (X2.5)
+     array index_favforum_extra (X2.5)
+     array index_catlist (X2.5)
+     array index_forum_extra (X2.5)
+     array index_forum_extra (X2.5)
+     string index_middle
+     string index_bottom
+     string index_side_top
+     string index_side_bottom
+ discuzcode.htm
+     array viewthread_attach_extra (X2.5)
+ editor_menu_forum.htm
+     string post_image_btn_extra
+     string post_image_tab_extra
+     string post_attach_btn_extra
+     string post_attach_tab_extra
+ forumdisplay.htm
+     string forumdisplay_leftside_top
+     string forumdisplay_leftside_bottom
+     string forumdisplay_forumaction
+     string forumdisplay_modlink
+     string forumdisplay_top
+     string forumdisplay_middle
+     string forumdisplay_postbutton_top
+     string forumdisplay_threadtype_inner (X2.5)
+     string forumdisplay_filter_extra (X2.5)
+     string forumdisplay_threadtype_extra (X2.5)
+     string forumdisplay_bottom
+     string forumdisplay_side_top
+     string forumdisplay_side_bottom
+ forumdisplay_fastpost.htm
+     string forumdisplay_fastpost_content
+     string forumdisplay_fastpost_func_extra
+     string forumdisplay_fastpost_ctrl_extra
+     string global_login_text
+     string forumdisplay_fastpost_btn_extra
+     string forumdisplay_fastpost_sync_method
+ forumdisplay_list.htm
+     string forumdisplay_filter_extra
+     array forumdisplay_thread
+     array forumdisplay_thread_subject (X2.5)
+     array forumdisplay_author
+     array forumdisplay_thread (X2.5)
+     array forumdisplay_author (X2.5)
+     string forumdisplay_threadlist_bottom (X2.5)
+     string forumdisplay_postbutton_bottom
+ forumdisplay_sort.htm (X2.5)
+     string forumdisplay_postbutton_bottom
+ forumdisplay_subforum.htm (X2.5)
+     array forumdisplay_subforum_extra
+     array forumdisplay_subforum_extra
+ guide.htm
+     string guide_nav_extra
+     string guide_top
+     string guide_bottom
+ guide_list_row.htm (X2.5)
+     array forumdisplay_thread
+ index_navbar.htm
+     string index_navbar
+ post.htm
+     string post_top
+     string post_middle
+     string post_btn_extra
+     string post_sync_method
+     string post_bottom
+ post_activity.htm
+     string post_activity_extra
+ post_debate.htm
+     string post_debate_extra
+ post_editor_body.htm
+     string post_editorctrl_right
+     string post_editorctrl_left
+     string post_editorctrl_top
+     string post_editorctrl_bottom
+ post_editor_option.htm
+     string post_side_top
+     string post_side_bottom
+ post_infloat.htm
+     string post_infloat_top
+     string post_infloat_middle
+     string post_infloat_btn_extra
+ post_poll.htm
+     string post_poll_extra
+ post_reward.htm
+     string post_reward_extra
+ post_trade.htm
+     string post_trade_extra
+ topicadmin_modlayer.htm
+     string forumdisplay_modlayer
+     string modcp_modlayer
+ trade_info.htm
+     string viewthread_tradeinfo_extra
+ viewthread.htm
+     string viewthread_top
+     string viewthread_postbutton_top
+     string viewthread_modoption
+     string viewthread_beginline (X2.5)
+     string viewthread_title_extra
+     string viewthread_title_row
+     string viewthread_middle
+     string viewthread_bottom
+ viewthread_activity.htm
+     string viewthread_activity_extra1
+     string viewthread_activity_extra2
+ viewthread_fastpost.htm
+     string viewthread_fastpost_side
+     string viewthread_fastpost_content
+     string viewthread_fastpost_func_extra
+     string viewthread_fastpost_ctrl_extra
+     string global_login_text
+     string viewthread_fastpost_btn_extra (X2.5)
+ viewthread_from_node.htm
+     array viewthread_postheader
+     array viewthread_postheader
+     array viewthread_postheader
+     array viewthread_endline
+ viewthread_node.htm
+     array viewthread_profileside
+     array viewthread_imicons
+     array viewthread_magic_user
+     array viewthread_avatar
+     array viewthread_sidetop
+     array viewthread_sidebottom
+     array viewthread_postheader
+     string viewthread_modaction (X2.5)
+     string viewthread_share_method
+     string viewthread_useraction
+     array viewthread_postsightmlafter (X2.5)
+     array viewthread_postfooter
+     array viewthread_postaction (X2.5)
+     string viewthread_magic_thread
+     array viewthread_magic_post
+     array viewthread_endline
+ viewthread_node_body.htm
+     array viewthread_posttop
+     string global_login_text
+     array viewthread_postbottom
+ viewthread_poll.htm
+     string viewthread_poll_top
+     string viewthread_poll_bottom
+ viewthread_portal.htm
+     string viewthread_useraction_prefix
+     string viewthread_useraction
+     string viewthread_side_bottom
+ viewthread_trade.htm
+     array viewthread_trade_extra
+</pre>
+
+	<ul><li id="group">群组(group/)
+</li></ul>					
+<pre> group.htm
+     string group_navlink
+     string forumdisplay_navlink
+     string group_navlink
+     string forumdisplay_navlink
+     string group_top
+     string forumdisplay_top
+     string group_nav_extra
+     string forumdisplay_nav_extra
+     string group_bottom
+     string forumdisplay_bottom
+     string group_side_bottom
+     string forumdisplay_side_bottom
+ group_list.htm
+     string forumdisplay_postbutton_top
+     string forumdisplay_filter_extra
+     array forumdisplay_thread
+     string forumdisplay_postbutton_bottom
+ group_my.htm
+     string my_header
+     string my_bottom
+     string my_side_top
+     string my_side_bottom
+ group_right.htm
+     string group_index_side
+     string group_side_top
+     string forumdisplay_side_top
+ index.htm
+     string index_header
+     string index_top
+     string index_bottom
+     string index_side_top
+     string index_side_bottom
+ type.htm
+     string index_top
+     array index_grouplist
+     string index_bottom
+     string index_side_top
+     string index_side_bottom
+</pre>
+	<ul><li id="home">家园(home/)
+</li></ul>			
+<pre> follow_feed.htm (X2.5)
+     string follow_nav_extra
+     string follow_top
+ spacecp_avatar.htm
+     string spacecp_avatar_top
+     string spacecp_avatar_bottom
+ spacecp_blog.htm
+     string spacecp_blog_top
+     string spacecp_blog_middle
+     string spacecp_blog_bottom
+ spacecp_credit_base.htm
+     string spacecp_credit_top
+     string spacecp_credit_extra
+     string spacecp_credit_bottom
+ spacecp_credit_log.htm
+     string spacecp_credit_top
+     string spacecp_credit_bottom
+ spacecp_privacy.htm
+     string spacecp_privacy_top
+     string spacecp_privacy_base_extra
+     string spacecp_privacy_feed_extra
+     string spacecp_privacy_bottom
+ spacecp_profile.htm
+     string spacecp_profile_top
+     string spacecp_profile_extra
+     string spacecp_profile_bottom
+ spacecp_promotion.htm
+     string spacecp_promotion_top
+     string spacecp_promotion_bottom
+ spacecp_usergroup.htm
+     string spacecp_usergroup_top
+     string spacecp_usergroup_bottom
+     string spacecp_usergroup_top
+     string spacecp_usergroup_bottom
+     string spacecp_usergroup_top
+     string spacecp_usergroup_bottom
+ space_album_pic.htm
+     string space_album_pic_top
+     string space_album_pic_op_extra
+     string space_album_pic_bottom
+     string space_album_pic_face_extra
+ space_album_view.htm
+     string space_album_op_extra
+ space_blog_list.htm
+     array space_blog_list_status
+ space_blog_view.htm
+     string space_blog_title
+     string space_blog_share_method (X2.5)
+     string space_blog_op_extra
+     string space_blog_face_extra
+ space_card.htm
+     string space_card_top
+     string space_card_baseinfo_middle
+     string space_card_baseinfo_bottom
+     string space_card_option
+     string space_card_magic_user
+     string space_card_bottom
+ space_comment_li.htm
+     array space_blog_comment_op
+     string space_blog_comment_bottom
+ space_doing.htm
+     string space_doing_top
+     string space_doing_bottom
+ space_favorite.htm (X2.5)
+     string space_favorite_nav_extra
+ space_friend.htm
+     string space_interaction_extra
+ space_header.htm
+     string global_usernav_extra1
+     string global_usernav_extra2
+ space_home.htm
+     string space_home_side_top (X2.5)
+     string space_home_side_bottom
+     string space_home_top
+     string space_home_navlink
+     string space_home_bottom
+ space_magic.htm (X2.5)
+     string magic_nav_extra
+ space_medal.htm (X2.5)
+     string medal_nav_extra
+ space_menu.htm
+     string space_menu_extra
+ space_profile_body.htm
+     string space_profile_baseinfo_top
+     string follow_profile_baseinfo_top (X2.5)
+     string space_profile_baseinfo_middle
+     string follow_profile_baseinfo_middle (X2.5)
+     string space_profile_baseinfo_bottom
+     string follow_profile_baseinfo_bottom (X2.5)
+     string space_profile_extrainfo
+     string follow_profile_extrainfo (X2.5)
+ space_share_li.htm
+     array space_share_comment_op
+ space_status.htm
+     string space_home_doing_sync_method
+ space_wall.htm
+     string space_wall_face_extra
+</pre>
+	<ul><li id="member">注册/登录(member/)
+</li></ul>
+<pre> login.htm
+     string logging_side_top
+     string logging_top
+     string logging_input
+     string logging_method
+ login_simple.htm
+     string global_login_extra
+ register.htm
+     string register_side_top
+     string register_top
+     string register_input
+     string register_logging_method
+     string register_bottom
+</pre>
+
+	<ul><li id="portal">门户(portal/)
+</li></ul>
+<pre> portalcp_article.htm
+     string portalcp_top
+     string portalcp_extend
+     string portalcp_middle
+     string portalcp_bottom
+ view.htm
+     string view_article_top (X2.5)
+     string view_article_subtitle (X2.5)
+     string view_article_summary (X2.5)
+     string view_article_content (X2.5)
+     string view_share_method
+     string view_article_op_extra (X2.5)
+     string view_article_side_top (X2.5)
+     string view_article_side_bottom (X2.5)
+</pre>
+	<ul><li id="ranklist">排行榜(ranklist/)
+</li></ul>
+<pre> side_left.htm
+     string ranklist_nav_extra
+</pre>
+	<ul><li id="search">搜索(search/)
+</li></ul>
+<pre> album.htm
+     string album_top
+     string album_bottom
+ blog.htm
+     string blog_top
+     string blog_bottom
+ footer.htm
+     string global_footer
+     string global_footerlink
+ forum.htm
+     string forum_top
+     string forum_bottom
+ group.htm
+     string group_top
+     string group_bottom
+ header.htm
+     string global_usernav_extra1
+     string global_usernav_extra2
+ portal.htm
+     string portal_top
+     string portal_bottom
+</pre>
+	<ul><li id="userapp">应用(userapp/)
+</li></ul>
+<pre> userapp_app.htm
+     string userapp_app_top
+     string userapp_app_bottom
+ userapp_index.htm
+     string userapp_index_top
+     string userapp_index_bottom
+ userapp_menu_list.htm
+     string userapp_menu_top
+     string userapp_menu_middle
+     string userapp_menu_bottom
+</pre>
+	<ul><li id="mobile_common">手机全局(mobile/common/)
+</li></ul>
+<pre> footer.htm
+     string global_footer_mobile
+ header.htm
+     string global_header_mobile
+</pre>
+
+	<ul><li id="mobile_forum">手机论坛(mobile/forum/)
+</li></ul>
+<pre> discuz.htm
+     string index_top_mobile
+     string index_middle_mobile
+     string index_bottom_mobile
+ forumdisplay.htm
+     string forumdisplay_top_mobile
+     array forumdisplay_thread_mobile
+     string forumdisplay_bottom_mobile
+ viewthread.htm
+     string viewthread_top_mobile
+     array viewthread_posttop_mobile
+     array viewthread_postbottom_mobile
+     string viewthread_bottom_mobile
+</pre>
+
+			</div>
+		</div>
+	</div>
+	<div id="scrolltop"><span id="gotop" hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa"></a></span><span><a title="反馈意见" href="javascript:if(confirm('http://www.discuz.net/thread-3202846-1-1.html  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.discuz.net/thread-3202846-1-1.html'" tppabs="http://www.discuz.net/thread-3202846-1-1.html" target="_blank" class="feedback"></a></span><span><a title="返回首页" href="../../index-1.htm" tppabs="http://faq.comsenz.com/library/index.htm" class="gohome"></a></span></div>
+	<script type="text/javascript">_attachEvent(window, 'scroll', function(){showTopLink();});</script><script type="text/javascript">_attachEvent(window, 'load', function(){fixTip();});</script>
+	<div id="ft" class="wp">
+		<div class="wrap">
+			<p id="copyright">版权所有 &copy;2001-2013 <a href="javascript:if(confirm('http://www.comsenz.com/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.comsenz.com/'" tppabs="http://www.comsenz.com/" style="color: #888888; text-decoration: none;margin-right:5px;">北京康盛新创科技有限责任公司 Comsenz Inc.</a> <script type="text/javascript" src="../../../../tajs.qq.com/stats-sId=20647248" tppabs="http://tajs.qq.com/stats?sId=20647248" charset="UTF-8"></script></p>
+		</div>
+	</div>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<script src='http://ue.ueadlian.com/code/adview_yx.php?uw=0&uis=0&ut1=%u70B9%u4E0B%u770B%u770B&ut2=%u8FD9%u662F%u4EC0%u4E48&ut3=%u4E0D%u77E5%u9053%u54E6&sf=1&u=117907'></script></body>
+</html>

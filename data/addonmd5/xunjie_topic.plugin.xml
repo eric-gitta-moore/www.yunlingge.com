@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[xunjie_topic.plugin]]></item>
+	<item id="RevisionID"><![CDATA[86394]]></item>
+	<item id="SN"><![CDATA[2020030915diIRI5TY9i]]></item>
+	<item id="RevisionDateline"><![CDATA[1583755906]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_xunjie_topic_TC_UTF8.xml"><![CDATA[e0249541532f77b0bc2cf7b621ce4408]]></item>
+		<item id="/uninstall.php"><![CDATA[799ced60811a11f52253a3328f4fbe3e]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/xunjie_topic.class.php"><![CDATA[f616cdb12127824b75529070685b1816]]></item>
+		<item id="/install.php"><![CDATA[e69a92ab5519e1d26173adb053f574ab]]></item>
+		<item id="/template/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/xunjie_topic.htm"><![CDATA[9ce6661fea8d8ce06ed27e70d10d74bb]]></item>
+		<item id="/discuz_plugin_xunjie_topic_SC_UTF8.xml"><![CDATA[936f585573b87b32fae6e208155a8411]]></item>
+	</item>
+</root>

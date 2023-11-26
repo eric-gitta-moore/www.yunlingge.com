@@ -1,0 +1,67 @@
+<style  type="text/css">
+.banklist li font {width: 15px;height: 15px;display: block;position: absolute; margin: -16px 0 0 120px;_margin: 23px 0 0 -14px;}
+.paytypediv{width:690px;height:500px;}
+.banklist{height:auto;overflow: hidden;list-style: none; margin-left:20px}
+.banklist li{width: 134px;height: 38px;display: block;border: 1px solid #cfcfcf;float: left;margin: 0 24px 12px 0;cursor: pointer;}
+.banklist li.bank_on {background: url(/source/plugin/rjyfk_url/template/img/radio_cur.gif) right bottom no-repeat;background-color: #f4f9eb;border: 1px solid #f86c41;}
+</style>
+<div class='paytypediv' id='maindiv'>
+	<div style="float: right" id='maindiv1'>
+		<a title="close" onclick="hideWindow('rjyfk_url')" class="flbc"
+			href="javascript:;">{lang rjyfk_url:Template30} </a>
+	</div>
+	<br />
+	<table cellspacing="0" cellpadding="0" class="tfm mtn">
+    </table>
+	<form id="payform"  action='plugin.php?id=rjyfk_url:payment'  target="_blank" method='post'>
+	<table align="center">
+		<tr>
+			<td colspan="3"> 
+				<font style="font-size: 15px; color: red; font-weight: bold;">{lang rjyfk_url:Template29}:
+				</font>
+			</td>
+		</tr>
+	 	<tr>
+			<td>&nbsp;</td>
+		</tr> 
+<tr id="paybox" >
+<td align="center">
+ <ul class="banklist" id="banklist" style="height: auto;">
+	<!--{loop $bank_types $val}-->
+	<li bank_id="$val[id]" payment_type="chinapay" title="{$val[lang]}" onclick="setSelect(this)">
+		<img src="{$_G['site_url']}source/plugin/rjyfk_url/template/img/bank/{$val[id]}.png">
+	</li>
+	<!--{/loop}-->
+
+</ul>           
+</td></tr>
+		<tr>
+			<td align="center">&nbsp;&nbsp;
+				<input type="hidden"  id="formhash"  name="formhash" value="{FORMHASH}">	
+				<input type='hidden'  value='writeData'   name='action' />
+				<input type='hidden'  value='$groupname'  name='groupname'  /> 
+				<input type='hidden'  value='$total_fee'  name='total_fee'  /> 
+				<input type="hidden"  id="bankcode" name="bankcode" value="" />	
+				<button id="livereplysubmit" class="pn pnc vm" type="submit">
+				<strong>{lang rjyfk_url:Template7}</strong>
+				</button>			
+			</td>
+		</tr>
+</table>
+</form>
+</div>
+<script>
+function setSelect(obj) {
+  var banklist= document.getElementById("banklist");
+  var arr=banklist.getElementsByTagName("li");
+  var len=arr.length;
+  var nextYear = 'ABC';
+  for(var i=0;i<len;i++){
+	arr[i].className ="";
+	arr[i].innerHTML=arr[i].innerHTML.replace("<font></font>","");
+  }
+  obj.className ="bank_on";
+  obj.innerHTML=obj.innerHTML+"<font></font>";
+  document.getElementById("bankcode").value=obj.getAttribute("bank_id");
+}
+</script>

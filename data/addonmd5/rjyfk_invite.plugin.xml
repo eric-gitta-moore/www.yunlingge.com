@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[rjyfk_invite.plugin]]></item>
+	<item id="RevisionID"><![CDATA[70669]]></item>
+	<item id="SN"><![CDATA[2020021809sQS3y9S9fr]]></item>
+	<item id="RevisionDateline"><![CDATA[1561534058]]></item>
+	<item id="Data">
+		<item id="/Instructions.inc.php"><![CDATA[b6d110f901e32982c474230b0ff8788d]]></item>
+		<item id="/payment.inc.php"><![CDATA[d06f970ced06e7499cc3da9af26b22c7]]></item>
+		<item id="/discuz_plugin_rjyfk_invite_TC_UTF8.xml"><![CDATA[6aa1b76e8bf870a606dc6c7ed37aa292]]></item>
+		<item id="/table/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/table/table_rjyfk_invite.php"><![CDATA[5d357fd66f1a3f71aca4dc006ae59af9]]></item>
+		<item id="/admin_data.inc.php"><![CDATA[1ce3cbacd0289dcc1a7531bd0a4d70ba]]></item>
+		<item id="/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/checkout/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/checkout/notify.php"><![CDATA[0ee40685d0bb6fc5dbfa4ba53a07fe5f]]></item>
+		<item id="/checkout/return.php"><![CDATA[e9d3ba65bd39e69f213f40990f4a2a74]]></item>
+		<item id="/in.inc.php"><![CDATA[b0e79d1659718fde07c140c76e3b014b]]></item>
+		<item id="/rjyzf.class.php"><![CDATA[349e3abc122f40d44ba5d91bd0969d2c]]></item>
+		<item id="/discuz_plugin_rjyfk_invite_SC_UTF8.xml"><![CDATA[c929c658de20e66d696e9e6165d05b4b]]></item>
+		<item id="/template/admin.htm"><![CDATA[4560e906123e41161d3389a18833f1d4]]></item>
+		<item id="/template/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/go.htm"><![CDATA[162e075975a1155bb523809f9d56a302]]></item>
+		<item id="/template/touch/go.htm"><![CDATA[26a9eee63d76c5d606af19529e976369]]></item>
+		<item id="/template/touch/invite.htm"><![CDATA[3a73e3bbe246901a310e7b0f0f35fab9]]></item>
+		<item id="/template/invite.htm"><![CDATA[bdc47ac50df4774d830e93e5f167c6a5]]></item>
+		<item id="/template/img/new.gif"><![CDATA[cd690bfeccbde4da8c525a0b783d633d]]></item>
+		<item id="/template/img/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/js/jquery.SuperSlide.js"><![CDATA[bbe0ed13f3cb399f663213f670fd292e]]></item>
+		<item id="/template/js/jquery-1.11.3.min.js"><![CDATA[895323ed2f7258af4fae2c738c8aea49]]></item>
+	</item>
+</root>

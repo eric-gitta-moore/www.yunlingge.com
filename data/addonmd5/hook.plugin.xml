@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[hook.plugin]]></item>
+	<item id="RevisionID"><![CDATA[32014]]></item>
+	<item id="SN"><![CDATA[2020012206a1DkbhjwwA]]></item>
+	<item id="RevisionDateline"><![CDATA[1576058008]]></item>
+	<item id="Data">
+		<item id="/demo.php"><![CDATA[b36a444934ea19af5b98e28fe192956d]]></item>
+		<item id="/check.php"><![CDATA[9835f4a2417d49519b318cc4580803c5]]></item>
+		<item id="/images/index.html"><![CDATA[3ee7d3d03bedafcac937b3323b215421]]></item>
+		<item id="/images/index.htm"><![CDATA[3ee7d3d03bedafcac937b3323b215421]]></item>
+		<item id="/uninstall.php"><![CDATA[5ddc5f4ab369269b294cadac189bffb3]]></item>
+		<item id="/index.html"><![CDATA[3ee7d3d03bedafcac937b3323b215421]]></item>
+		<item id="/thank.inc.php"><![CDATA[519a527fe4c65da541bb0855cff6f4c6]]></item>
+		<item id="/index.htm"><![CDATA[3ee7d3d03bedafcac937b3323b215421]]></item>
+		<item id="/faq.inc.php"><![CDATA[79e41eede4fb221ac2ce6988c49deaef]]></item>
+		<item id="/hook.class.php"><![CDATA[69a035c6e4ab532f7ba8bf83fefe2695]]></item>
+		<item id="/pluginvar.func.php"><![CDATA[dbf5fb1d38751bdf3771e9b737f0420a]]></item>
+		<item id="/addon.inc.php"><![CDATA[e33b688b18f26bdca886ba7ad7eff573]]></item>
+		<item id="/changelog.inc.php"><![CDATA[7d468385112d006d72d9235c6c5bcc44]]></item>
+		<item id="/installlang.lang.php"><![CDATA[7e1286431518d82d632a24faa9da450a]]></item>
+		<item id="/install.php"><![CDATA[cfe3f783140d3dcbbc2797b117d5000e]]></item>
+		<item id="/upgrade.php"><![CDATA[cfe3f783140d3dcbbc2797b117d5000e]]></item>
+		<item id="/discuz_plugin_hook_TC_UTF8.xml"><![CDATA[8e971700412349d48e6926f1918f06d2]]></item>
+		<item id="/feedback.inc.php"><![CDATA[96b1473f59439a2d47aa476ab5b9e5e7]]></item>
+		<item id="/template/index.html"><![CDATA[3ee7d3d03bedafcac937b3323b215421]]></item>
+		<item id="/template/index.htm"><![CDATA[3ee7d3d03bedafcac937b3323b215421]]></item>
+		<item id="/template/faq.htm"><![CDATA[77a49c1ac65bc0ec3fd0637fadcc276a]]></item>
+		<item id="/template/hook.htm"><![CDATA[9522078ffd20f826d177b3df24101e10]]></item>
+		<item id="/discuz_plugin_hook_SC_UTF8.xml"><![CDATA[09d70bfc88a8202ab6d8cda9cb9cdb83]]></item>
+	</item>
+</root>

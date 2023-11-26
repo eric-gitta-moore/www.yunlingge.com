@@ -1,0 +1,70 @@
+<!--{subtemplate common/header}-->
+<link href="{$static}/css/ami.css" rel="stylesheet">
+<!--[if IE 8]>
+<link rel="stylesheet" href="{$static}/css/ie8.css">
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel="stylesheet" href="{$static}/css/ie7.css">
+<![endif]-->
+
+<!--{if $config['jquery']}-->
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>jQuery.noConflict();</script>
+<!--{/if}-->
+
+<div class="wrapper">
+    <section class="display">
+        <div class="mobile ui-draggable">
+            <div class="trim">
+                <iframe src="{$config[default_url]}" id="mobile" scrolling="no">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="tablet ui-draggable">
+            <div class="trim">
+                <iframe src="{$config[default_url]}" id="tablet" scrolling="no">
+                </iframe>
+            </div>
+        </div>
+        <div class="laptop ui-draggable">
+            <div class="trim">
+                <iframe src="{$config[default_url]}" id="laptop" scrolling="no">
+                </iframe>
+            </div>
+        </div>
+        <div class="desktop ui-draggable">
+            <div class="trim">
+                <iframe src="{$config[default_url]}" id="desktop" scrolling="no">
+                </iframe>
+            </div>
+        </div>
+
+    </section>
+</div>
+<section class="url">
+    <div class="ad">
+
+    </div>
+    <h1></h1>
+    <div id="rwdform">
+        <input type="text" placeholder="{$config[default_url]}" class="button1" name="url">
+        <input id="submit" class="button" type="button" value="GO" name='submit'>
+    </div>
+</section>
+<script>
+    jQuery('#submit').on('click',function () {
+        let url = jQuery('input[name=url]').val();
+
+        $('mobile').src = url;
+        $('tablet').src = url;
+        $('laptop').src = url;
+        $('desktop').src = url;
+    });
+</script>
+<div class="carbon-poweredby">
+    <p class="copyright">Copyright © <a href="{$_G[setting][siteurl]}">{$_G[setting][sitename]}</a></p>
+</div>
+
+
+<!--{subtemplate common/footer}-->

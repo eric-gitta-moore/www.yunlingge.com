@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[xcblog.plugin]]></item>
+	<item id="RevisionID"><![CDATA[78848]]></item>
+	<item id="SN"><![CDATA[2020012913be74rK3EIe]]></item>
+	<item id="RevisionDateline"><![CDATA[1560999448]]></item>
+	<item id="Data">
+		<item id="/hook_pc.class.php"><![CDATA[bd92e2609544fc152766f6ca884b8a89]]></item>
+		<item id="/class/utils.class.php"><![CDATA[0a06543c672e24a969400383db3c422b]]></item>
+		<item id="/class/validate.class.php"><![CDATA[f50bab3da16397d081fe9941eab6fd6f]]></item>
+		<item id="/class/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/class/log.class.php"><![CDATA[a50eaa4885874afad55d2849ec9b44c7]]></item>
+		<item id="/class/env.class.php"><![CDATA[ed0b1b6c7cf3a1f40f624a15b2732fe0]]></item>
+		<item id="/z_setting.inc.php"><![CDATA[8920b22cae1a1bccd098519a16f58320]]></item>
+		<item id="/discuz_plugin_xcblog_SC_UTF8.xml"><![CDATA[8c9064f301678df06364305ec6b53939]]></item>
+		<item id="/index.php"><![CDATA[538f86b7bbc2a726323b6e8956219b1f]]></item>
+		<item id="/xcblog.inc.php"><![CDATA[55fc2b951f0837b3ac00c4766d92bc0c]]></item>
+		<item id="/install.php"><![CDATA[6f87e74c7080588547e5ddb38ba80af9]]></item>
+		<item id="/api/1/blog.php"><![CDATA[5a6a7c3d4fdd81a3963441bf52d11631]]></item>
+		<item id="/api/1/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/api/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/model/model_xcblog_paper.php"><![CDATA[54014460a316939a895036a295993a5f]]></item>
+		<item id="/model/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/model/model_xcblog_profile.php"><![CDATA[fe186ef5b8d7209330bd6fbd994c0cc0]]></item>
+		<item id="/model/model_xcblog_forum.php"><![CDATA[6622a09ba9c3ff5763f18f022fd17082]]></item>
+		<item id="/model/model_xcblog_setting.php"><![CDATA[0162fd04253ac80076be434d2f67a43e]]></item>
+		<item id="/template/views/misadmin.css"><![CDATA[8042710c90a19f2dbbc2516473e81d77]]></item>
+		<item id="/template/views/z_setting.tpl"><![CDATA[2e980fc78f9c365e4939b07df81cdabb]]></item>
+		<item id="/template/xcblog.htm"><![CDATA[53dc69fda3688356287b8c282fbf2690]]></item>
+		<item id="/template/header.htm"><![CDATA[2f6020c2188c6502f16c1412d26e91df]]></item>
+		<item id="/template/libs/jquery/1.11.2/jquery.min.js"><![CDATA[5ae947966d0b742b542d7cf23d3d27e1]]></item>
+		<item id="/template/libs/jquery/1.11.2/jquery.min.map"><![CDATA[6f42959851c8b0aa7e65ab8f0b55f5a8]]></item>
+		<item id="/template/libs/jquery/1.11.2/ajaxfileupload.js"><![CDATA[4e803247705f9bf4f54adc2226b6199c]]></item>
+		<item id="/template/libs/requirejs/2.1.9/require.js"><![CDATA[d4f49e01ac3d014266e673ad09aefa80]]></item>
+		<item id="/template/libs/mwt/4.0/fonts/fontawesome-webfont.eot"><![CDATA[32400f4e08932a94d8bfd2422702c446]]></item>
+		<item id="/template/libs/mwt/4.0/fonts/fontawesome-webfont.svg"><![CDATA[f775f9cca88e21d45bebe185b27c0e5b]]></item>
+		<item id="/template/libs/mwt/4.0/fonts/fontawesome-webfont.woff"><![CDATA[a35720c2fed2c7f043bc7e4ffb45e073]]></item>
+		<item id="/template/libs/mwt/4.0/fonts/fontawesome-webfont.woff2"><![CDATA[db812d8a70a4e88e888744c1c9a27e89]]></item>
+		<item id="/template/libs/mwt/4.0/fonts/fontawesome-webfont.ttf"><![CDATA[a3de2170e4e9df77161ea5d3f31b2668]]></item>
+		<item id="/template/libs/mwt/4.0/fonts/icomoon.ttf"><![CDATA[2b0bd41b4f5e889d47242927a289c747]]></item>
+		<item id="/template/libs/mwt/4.0/fonts/Simple-Line-Icons.eot"><![CDATA[a894fbbf4c94264412d2dc562445b47a]]></item>
+		<item id="/template/libs/mwt/4.0/fonts/icomoon.eot"><![CDATA[710538025d321efa2fb3cf5f557ba58c]]></item>
+		<item id="/template/libs/mwt/4.0/fonts/Simple-Line-Icons.woff"><![CDATA[ff94ad94c3a9d04bd2f80cb3c87dcccb]]></item>
+		<item id="/template/libs/mwt/4.0/fonts/Simple-Line-Icons.ttf"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/libs/mwt/4.0/fonts/icomoon.woff"><![CDATA[2903c76bb164753fd7609482d254a10f]]></item>
+		<item id="/template/libs/mwt/4.0/fonts/icomoon.svg"><![CDATA[ad49efc078f93700b54c782e4f21256b]]></item>
+		<item id="/template/libs/mwt/4.0/fonts/Simple-Line-Icons.svg"><![CDATA[a894fbbf4c94264412d2dc562445b47a]]></item>
+		<item id="/template/libs/mwt/4.0/mwt.min.js"><![CDATA[534b4e1b966f87166e3bd205bd530fe9]]></item>
+		<item id="/template/libs/mwt/4.0/mwt.min.css"><![CDATA[3ab00a91bf61d26cc83b519fa7161d6d]]></item>
+		<item id="/template/index.htm"><![CDATA[68b329da9893e34099c7d8ad5cb9c940]]></item>
+		<item id="/template/dist-20180202213241/japp.js"><![CDATA[5ce0320dc48cc0e0525792b9f1ea921f]]></item>
+		<item id="/template/dist-20180202213241/jappengine.js"><![CDATA[24e31c79b32945a25b147b3a011c8e8c]]></item>
+		<item id="/template/dist-20180202213241/base.css"><![CDATA[3e6bd7e0ab20c9fad327681c1c259313]]></item>
+		<item id="/template/footer.htm"><![CDATA[af841ef2e2814b8d0c935c2ae88574ce]]></item>
+	</item>
+</root>

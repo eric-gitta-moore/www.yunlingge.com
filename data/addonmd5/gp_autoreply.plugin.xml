@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[gp_autoreply.plugin]]></item>
+	<item id="RevisionID"><![CDATA[51523]]></item>
+	<item id="SN"><![CDATA[2020021819CyOZfYnmGv]]></item>
+	<item id="RevisionDateline"><![CDATA[1581486787]]></item>
+	<item id="Data">
+		<item id="/logs.inc.php"><![CDATA[9945518fe08cb0410a67f32e2347d4aa]]></item>
+		<item id="/apps.inc.php"><![CDATA[f0ef6e70c6dcc89e432e58dc76f5227b]]></item>
+		<item id="/discuz_plugin_gp_autoreply_SC_UTF8.xml"><![CDATA[3cc916b54e28935c95cb4d0205763324]]></item>
+		<item id="/uninstall.php"><![CDATA[11495228774c4bf55f171162562ded1f]]></item>
+		<item id="/hook.class.php"><![CDATA[c531e2bf045bc7915c3ae778768bfcdb]]></item>
+		<item id="/item.inc.php"><![CDATA[c0723f40767fb34ac06d6e529c4d07b3]]></item>
+		<item id="/install.php"><![CDATA[1e8107da662b11cc1b6d0ee1efa131bb]]></item>
+		<item id="/upgrade.php"><![CDATA[e2da1e73417c91c9d122e1e04dc7c959]]></item>
+		<item id="/discuz_plugin_gp_autoreply_TC_UTF8.xml"><![CDATA[41442a70fc3aa572e59ce2eb5c16de48]]></item>
+	</item>
+</root>

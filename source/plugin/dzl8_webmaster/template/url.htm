@@ -1,0 +1,100 @@
+<link rel="stylesheet" href="source/plugin/dzl8_webmaster/image/css.css">
+<div class="rztop">
+    <div id="rzlc" class="rzlc">
+        <div class="bz bz1">{lang dzl8_webmaster:write_domain}</div>
+
+            <div class="bz bz2">{lang dzl8_webmaster:verify_file}</div>
+
+            <div class="bz bz3">{lang dzl8_webmaster:domain_verification}</div>
+
+            <div class="bz bz4">{lang dzl8_webmaster:verify_success}</div>
+        <!--{if $add[url]||$add[name]}-->
+        <div id="s1" class="s s1"></div>
+            <!--{if $add[verify]==1}-->
+            <div id="s2" class="s s2"></div>
+            <div id="s3" class="s s3"></div>
+            <!--{/if}-->
+        <!--{/if}-->
+    </div>
+</div>
+<!--{if $add[url]||$add[name]}-->
+    <!--{if $add[verify]==0}-->
+        <table cellspacing="0" cellpadding="0" class="tfm" id="profilelist">
+            <tbody>
+            <tr>
+                <th>{lang dzl8_webmaster:webname}</th>
+                <td>$add[name]</td>
+            </tr>
+            <tr>
+                <th>{lang dzl8_webmaster:webadd}</th>
+                <td>$add[url]</td>
+            </tr>
+            <tr>
+                <th>{lang dzl8_webmaster:down_verify_file}</th>
+                <td>
+                    <a href="home.php?mod=spacecp&ac=plugin&id=dzl8_webmaster:url&down=yes" class="down">{lang dzl8_webmaster:down_now}</a>
+                </td>
+            </tr>
+            <tr>
+                <th>{lang dzl8_webmaster:please_visit_address}</th>
+                <td>
+                    <a href="$add[url]/$tname.txt" target="_blank">$add[url]/$tname.txt</a>
+                </td>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+                <td>
+                    <a href="home.php?mod=spacecp&ac=plugin&id=dzl8_webmaster:url&yz=yes" class="down">{lang dzl8_webmaster:verify_now}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    <!--{else}-->
+    <table cellspacing="0" cellpadding="0" class="tfm" id="profilelist">
+        <tbody>
+        <tr>
+            <th>{lang dzl8_webmaster:webname}</th>
+            <td>$add[name]</td>
+        </tr>
+        <tr>
+            <th>{lang dzl8_webmaster:webadd}</th>
+            <td>$add[url]</td>
+        </tr>
+        <tr>
+            <th>&nbsp;</th>
+            <td>{lang dzl8_webmaster:success}</td>
+        </tr>
+        </tbody>
+    </table>
+    <!--{/if}-->
+<!--{else}-->
+<table cellspacing="0" cellpadding="0" class="tfm">
+    <form action="home.php?mod=spacecp&ac=plugin&id=dzl8_webmaster:url" method="post">
+    <input type="hidden" value="{FORMHASH}" name="formhash" />
+        <tbody>
+        <tr>
+            <th><span class="rq" >*</span>{lang dzl8_webmaster:webname}</th>
+            <td style="width:400px;">
+                <input type="text" name="name" id="name" class="px" value="<!--{if $add[url]||$add[name]}-->$add[name]<!--{/if}-->">
+            </td>
+            <td>{lang dzl8_webmaster:chinese_or_English_name}</td>
+        </tr>
+        <tr>
+            <th><span class="rq" >*</span>{lang dzl8_webmaster:webadd}</th>
+            <td style="width:400px;">
+                <input type="text" name="url" id="url" class="px"  value="<!--{if $add[url]||$add[name]}-->$add[url]<!--{/if}-->" >
+            </td>
+            <td>{lang dzl8_webmaster:as_url}<font color="red">http://</font>www.baidu.com</td>
+        </tr>
+        <tr>
+            <th>&nbsp;</th>
+            <td>
+                <button name="next" type="submit" value="true" id="subbtn" class="pn pnc">
+                    <strong>{lang dzl8_webmaster:next}</strong>
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </form>
+</table>
+<!--{/if}-->

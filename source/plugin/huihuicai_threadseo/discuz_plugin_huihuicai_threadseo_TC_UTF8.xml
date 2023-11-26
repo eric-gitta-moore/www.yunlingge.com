@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
+	<item id="Time"><![CDATA[2019-07-08 17:48]]></item>
+	<item id="From"><![CDATA[Discuz! Board (QQ:464308221)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[SEO自定義琯理]]></item>
+			<item id="identifier"><![CDATA[huihuicai_threadseo]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[huihuicai_threadseo/]]></item>
+			<item id="copyright"><![CDATA[huihuicai]]></item>
+			<item id="version"><![CDATA[1.0.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[threadseo]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[threadseo]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[threadseo]]></item>
+					<item id="param"><![CDATA[optype=all]]></item>
+					<item id="menu"><![CDATA[全部主題]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[threadseo]]></item>
+					<item id="param"><![CDATA[optype=edited]]></item>
+					<item id="menu"><![CDATA[已編輯主題]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="order"><![CDATA[序號]]></item>
+				<item id="subject"><![CDATA[標題]]></item>
+				<item id="dateline"><![CDATA[發佈時間]]></item>
+				<item id="views"><![CDATA[瀏覽數]]></item>
+				<item id="replies"><![CDATA[廻複數]]></item>
+				<item id="operation"><![CDATA[操作]]></item>
+				<item id="edited_title"><![CDATA[SEO編輯標題]]></item>
+				<item id="edited_time"><![CDATA[編輯時間]]></item>
+				<item id="ignored_time"><![CDATA[忽略時間]]></item>
+				<item id="status"><![CDATA[狀態]]></item>
+				<item id="not_edited"><![CDATA[待編輯]]></item>
+				<item id="edited"><![CDATA[已編輯]]></item>
+				<item id="ignored"><![CDATA[已忽略]]></item>
+				<item id="ignore"><![CDATA[]]></item>
+				<item id="edit_subject"><![CDATA[編輯標題]]></item>
+				<item id="forum_original_title"><![CDATA[原標題]]></item>
+				<item id="forum_seo_title"><![CDATA[seo標題]]></item>
+				<item id="operation_content_error"><![CDATA[填寫內容不能爲空]]></item>
+				<item id="operation_success"><![CDATA[操作成功]]></item>
+				<item id="operation_fail"><![CDATA[操作失敗]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

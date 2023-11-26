@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[wxqqshare.plugin]]></item>
+	<item id="RevisionID"><![CDATA[84644]]></item>
+	<item id="SN"><![CDATA[2020012615SO3asAZO8B]]></item>
+	<item id="RevisionDateline"><![CDATA[1581738752]]></item>
+	<item id="Data">
+		<item id="/more.inc.php"><![CDATA[c496c4ce9335038c95ccaa3d5948b6e7]]></item>
+		<item id="/lib/wechat.class.php"><![CDATA[7abe268ca56c0383d698c0ceb81c232b]]></item>
+		<item id="/discuz_plugin_wxqqshare_TC_UTF8.xml"><![CDATA[9b81c2dc028941e9952c91cf4d5b1803]]></item>
+		<item id="/hook.class.php"><![CDATA[7dd7d36544aa9824e9a255e661771bed]]></item>
+		<item id="/discuz_plugin_wxqqshare_SC_UTF8.xml"><![CDATA[97d8bb586efd095a6bf8b633e70696f0]]></item>
+		<item id="/js/share.js"><![CDATA[1630ac7ff3c28f12883ea53c56d3a370]]></item>
+		<item id="/mobile.class.php"><![CDATA[d5ad136177fee8edc1c773e7ee333baa]]></item>
+		<item id="/template/touch/share.htm"><![CDATA[32cbed1820f8e2fbc796de787c55e8e4]]></item>
+		<item id="/template/mobile/share.htm"><![CDATA[8721d668787449f63f2460ab9121d490]]></item>
+		<item id="/template/share.htm"><![CDATA[32cbed1820f8e2fbc796de787c55e8e4]]></item>
+	</item>
+</root>

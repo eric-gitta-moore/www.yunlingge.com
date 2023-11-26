@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[both_today_history.plugin]]></item>
+	<item id="RevisionID"><![CDATA[86490]]></item>
+	<item id="SN"><![CDATA[2020012608E19G0QZoaE]]></item>
+	<item id="RevisionDateline"><![CDATA[1574576256]]></item>
+	<item id="Data">
+		<item id="/images/fire_16.png"><![CDATA[5bac05a01bee2d0c942a572d60526fd9]]></item>
+		<item id="/images/fire_24.png"><![CDATA[c9ff688321ff3e1e58dcc6ed8ee8cdf2]]></item>
+		<item id="/uninstall.php"><![CDATA[0c18dc8358fa2d7e5484ce6ca67eaeee]]></item>
+		<item id="/discuz_plugin_both_today_history_TC_UTF8.xml"><![CDATA[1dc778b2d169d1519f8950348b5bdcce]]></item>
+		<item id="/hook.class.php"><![CDATA[b945bcc58341a3f743745a33f0a8a96f]]></item>
+		<item id="/install.php"><![CDATA[7f2438628fa9dfb4a7b180742e092860]]></item>
+		<item id="/cron/cron_both_today_history.php"><![CDATA[08ccedd4b4b43c77ee5271640982bc3d]]></item>
+		<item id="/discuz_plugin_both_today_history_SC_UTF8.xml"><![CDATA[3c90112590c8bf4074edc5f21221e126]]></item>
+		<item id="/template/heat.htm"><![CDATA[376ddebbf3d743ff7c8f80dc556fb8ad]]></item>
+	</item>
+</root>

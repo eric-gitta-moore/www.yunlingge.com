@@ -1,0 +1,57 @@
+<!--{template common/header}-->
+
+<!--{if $study_nge['threadcard_select2'] == '4'}-->
+<div style="padding:10px">
+{lang study_nge:study_nge_tmp_011} {$_G['cache']['forums'][$post[fid]][name]}<br>
+{lang study_nge:study_nge_tmp_012} {$post[subject]}<br>
+{lang study_nge:study_nge_tmp_013} <!--{if $post[author]}-->{$post['author']}<!--{else}-->{$_G[setting][anonymoustext]}<!--{/if}--> ({$post['dateline']})<br>
+{lang study_nge:study_nge_tmp_014} {$post[views]} {lang study_nge:study_nge_tmp_016} {lang study_nge:study_nge_tmp_015} {$post[replies]} {lang study_nge:study_nge_tmp_016}<br>
+{lang study_nge:study_nge_tmp_015} <!--{if $post[lastposter]}-->{$post['lastposter']}<!--{else}-->{$_G[setting][anonymoustext]}<!--{/if}--> ({$post['lastpost']})<br>
+</div>
+
+<!--{else}-->
+	<div class="card_mn" style="padding: 10px 10px 0px 80px;">
+		<div class="avt">
+			<a href="home.php?mod=space&uid=$space[uid]" target="_blank" title="{lang enter}{$space[username]}{lang someone_space}"><!--{avatar($space[uid],small)}--></a>
+		</div>
+		<div class="c">
+			<p class="pbn cl">
+				<span class="y xg1" style="color:{$space[group][color]}"{if $upgradecredit !== false} title="{lang credits} $space[credits], {lang thread_groupupgrade} $upgradecredit {lang credits}"{/if}>{$space[group][grouptitle]}</span>
+				<strong><a href="home.php?mod=space&uid=$space[uid]">$space[username]</a></strong>
+				<!--{if $_G['ols'][$space[uid]]}-->
+					<img src="{IMGDIR}/ol.gif" alt="online" title="{lang study_nge:study_nge_tmp_005}" class="vm" />&nbsp;
+				<!--{/if}-->
+			</p>
+			<!--{eval $isfriendinfo = 'home_friend_info_'.$space['uid'].'_'.$_G[uid];}-->
+			<!--{if $_G[$isfriendinfo][note]}-->
+				<p class="xg1">$_G[$isfriendinfo][note]</p>
+			<!--{/if}-->
+			<p class="xg1">{lang study_nge:study_nge_tmp_006}$post['dateline']</p>
+			<p class="xg1">{lang study_nge:study_nge_tmp_007}$post['views'] {lang study_nge:study_nge_tmp_008}$post['replies']</p>
+			
+		</div>
+	</div>
+	<div class="nge_thread_o" style="background-color: #E5EDF2;margin: 5px 5px 0;border: 1px dashed #CDCDCD;max-height:200px;OVERFLOW-X:hidden;OVERFLOW-Y:auto;">
+		<div>{$post['image']}</div>
+		<div style="padding: 3px 6px;">{$post[message]}</div>
+	</div>
+	
+	<div class="nge_threadfm">
+		<!--{if $_G[uid]}-->
+		<form method="post" autocomplete="off" id="ngethreadform" action="forum.php?mod=post&infloat=yes&action=reply&fid={$post['fid']}&tid={$post['tid']}&replysubmit=yes&handlekey=vfastpost" onsubmit="return ngethread_onsubmit(this.id,'{$post['tid']}','{lang study_nge:study_nge_tmp_009}');">
+			<input type="hidden" name="formhash" value="{FORMHASH}" />
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td>
+						<textarea name="message" id="ngethread_message{$post['tid']}" class="xg1" onfocus="handlePrompt({$post['tid']},1);" onblur="handlePrompt({$post['tid']},0);"  onkeydown="if(ctrlEnter(event, 'ngereplysubmit')){if(event.keyCode == 13 ){ doane(event);}}" >{lang study_nge:study_nge_tmp_001}</textarea>
+					</td>
+					<td class="nge_threadfm_btn">
+						<button type="submit" name="replysubmit" id="ngereplysubmit" value="true">{lang study_nge:study_nge_tmp_010}</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<!--{/if}-->
+	</div>
+<!--{/if}-->
+<!--{template common/footer}-->

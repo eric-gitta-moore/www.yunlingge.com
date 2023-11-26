@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[austgl_shorturl.plugin]]></item>
+	<item id="RevisionID"><![CDATA[32405]]></item>
+	<item id="SN"><![CDATA[2020022720DG7G58h53P]]></item>
+	<item id="RevisionDateline"><![CDATA[1561286958]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_austgl_shorturl_SC_UTF8.xml"><![CDATA[e645c2d4de1e95242461854e6d6a44de]]></item>
+		<item id="/css/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/css/icon.png"><![CDATA[9dc3a8608d6dd32bfd3e54a7425a1f7e]]></item>
+		<item id="/css/icon_small.png"><![CDATA[09407346303cce749c1a5797f831c4b5]]></item>
+		<item id="/css/austglurl.css"><![CDATA[e6bede6d3962839475dcc88ff90992bc]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/austgl_shorturl.inc.php"><![CDATA[0e16648b7b322cc18fdabb26f8298b51]]></item>
+		<item id="/austgl_shorturl.class.php"><![CDATA[ab5f4f3837036ffb0c79a32e3ef53488]]></item>
+		<item id="/discuz_plugin_austgl_shorturl_TC_UTF8.xml"><![CDATA[ed9157015015ece08ebaeb8211288cdc]]></item>
+		<item id="/shorturl.php"><![CDATA[ec86a91307a086ae7246175ca3d7e466]]></item>
+		<item id="/js/austgl_editor.js"><![CDATA[739b2957e3588b3e1aebac4f037b3f71]]></item>
+		<item id="/js/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/js/player.js"><![CDATA[3ce5f0cd4bae3fd4d34b0809536065a1]]></item>
+		<item id="/template/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/austgl_shorturl.htm"><![CDATA[9f53dc6527eaa44a8b8485c7b3735304]]></item>
+	</item>
+</root>

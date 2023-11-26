@@ -1,0 +1,78 @@
+<!--{block zhiwu55_return}-->
+<script src="{$_G['siteurl']}source/plugin/zhiwu55com_autoreply/template/jquery.min.js"></script>
+<div style="text-align: center;margin: 16px;padding: 16px;" id="zhiwu55_console">
+<span class="pn pnc vm" style="padding-top:4px;padding-bottom:8px;background:#ccc"><input id="hzwkeyword" type="text" class="px" style="width:120px" placeholder="{lang zhiwu55com_autoreply:zhiwu55_15}" value="{lang zhiwu55com_autoreply:zhiwu55_15}" onfocus="this.select()"></span>
+<span class="pn pnc vm" style="padding-top:4px;padding-bottom:8px;background:#3296fa" id="hzw1"><strong>{lang zhiwu55com_autoreply:zhiwu55_01}1</strong></span>
+<span class="pn pnc vm" style="padding-top:4px;padding-bottom:8px;background:#3296fa" id="hzw2"><strong>{lang zhiwu55com_autoreply:zhiwu55_01}2</strong></span>
+<span class="pn pnc vm" style="padding-top:4px;padding-bottom:8px;background:#3296fa" id="hzw3"><strong>{lang zhiwu55com_autoreply:zhiwu55_01}3</strong></span>
+<span class="pn pnc vm" style="padding-top:4px;padding-bottom:8px;background:#3296fa" id="hzw4"><strong>{lang zhiwu55com_autoreply:zhiwu55_01}4</strong></span>
+<span class="pn pnc vm" style="padding-top:4px;padding-bottom:8px;background:#3296fa" id="hzw5"><strong>{lang zhiwu55com_autoreply:zhiwu55_01}5</strong></span>
+<span class="pn pnc vm" style="padding-top:4px;padding-bottom:8px;background:#079200" id="hzw6"><strong>{lang zhiwu55com_autoreply:zhiwu55_02}</strong></span>
+<span class="pn pnc vm" style="padding-top:4px;padding-bottom:8px;background:red;display:none" id="loading"><strong>{lang zhiwu55com_autoreply:zhiwu55_16}</strong></span>
+</div>
+<script defer>
+var zhiwu55com = jQuery.noConflict(true);
+var zhiwuData;
+var hzwNum="";
+var keyword="{lang zhiwu55com_autoreply:zhiwu55_15}";
+(function($,window){
+
+	$("#hzw1,#hzw2,#hzw3,#hzw4,#hzw5,#hzw6").click(function(){
+
+		hzwNum=this.id;
+		if(hzwNum=='hzw6' && zhiwuData && $("#hzwkeyword").val()==keyword)
+		{
+		
+			var hzwRnd=Math.random();
+			hzwRnd = hzwRnd * 100;
+			hzwRnd = Math.ceil(hzwRnd);
+			hzwRnd = hzwRnd % zhiwuData.hzwcount;
+			hzwRnd++;
+			hzwNum="hzw" + hzwRnd;
+		
+		} else if(hzwNum=='hzw6' && !zhiwuData) {
+		
+			hzwNum=='hzw3';
+		
+		}
+		if(!zhiwuData || $("#hzwkeyword").val()!=keyword)
+		{
+			if($("#hzwkeyword").val()!=keyword)
+			{
+				keyword=$("#hzwkeyword").val();
+				var serverUrl = "{$_G['siteurl']}plugin.php?formhash={FORMHASH}&id=zhiwu55com_autoreply&aid={$_GET['aid']}&keyword="+encodeURIComponent(keyword)+"&zhiwu55callback=?";
+			} else {
+				var serverUrl = "{$_G['siteurl']}plugin.php?formhash={FORMHASH}&id=zhiwu55com_autoreply&aid={$_GET['aid']}&zhiwu55callback=?";
+			}
+			$("#loading").show();
+			$.getJSON(serverUrl,function(data){
+
+				zhiwuData=data;
+				$("#message").val(zhiwuData[hzwNum]);
+				$("#loading").hide();
+				if(data.hzwcount==1)
+				{
+				
+					alert("{lang zhiwu55com_autoreply:zhiwu55_17}");
+					$("#hzwkeyword").focus();
+				
+				}
+
+			});
+			
+		} else {
+		
+			$("#message").val(zhiwuData[hzwNum]);
+		
+		}
+
+	});
+	
+})(zhiwu55com,window);
+window.onload=function(){
+
+	zhiwu55com("#zhiwu55_console").insertBefore("#cform");
+
+}
+</script>
+<!--{/block}-->

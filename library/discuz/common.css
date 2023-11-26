@@ -1,0 +1,90 @@
+* { word-break: break-all; }
+.wp{width:980px;margin:0 auto;}
+body { overflow-x: hidden; background: #e9e9e9; }
+body, td, input, textarea, select, button { color: #444; font: 14px "Î¢ÈíÑÅºÚ", "ËÎÌå", Trebuchet MS, Helvetica, Arial, sans-serif; }
+body, ul, dl, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset { margin: 0; padding: 0; }
+table {empty-cells: show;border-collapse: collapse;border-spacing: 0px;border:none;}
+td, th {display: table-cell;}
+ol{margin-top:0px;}
+p { padding: 10px 0px; }
+a { color: #006699; text-decoration: none; }
+	a:hover { text-decoration: underline; }
+	a img { border: none; }
+table { empty-cells: show; border-collapse: collapse; }
+.z{float:left;} .y{float:right;}
+h2, h3{font-size:14px;}
+.cl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } .cl { zoom: 1; }
+.pipe{margin-right:10px;color:#1784c9;}
+.mtm{margin-top:10px;}
+.red{color:#F00;}
+.bfont{font-weight:700;}
+#topnv{margin:10px auto;background-color:#FFF;width:980px;}
+/*×¢ÊÍ*/ .note{color:#999;margin-top:5px;display:block;}
+.red{color:#f00;}
+.subtitle { font-size: 14px; font-weight: bold; color: #000000; padding: 5px 0; }
+
+/* pic contral */
+.content img{width:auto;border:1px solid #474775;margin:5px 10px;-webkit-box-shadow:2px 2px 3px #474775, -1px -1px 3px #474775;
+    -moz-box-shadow:2px 2px 3px #474775, -1px -1px 3px #474775;
+    box-shadow:2px 2px 3px #474775, -1px -1px 3px #474775;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#474775')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#474775');margin-bottom:5px;_border:2px solid #fa47f0;}
+.content .limit{width:90%;}
+.content .imgbig{ width:70%}
+.content .imgmid{ width:50%}
+.content .imgsmall{width:40%}
+
+/* header */
+#header { overflow: hidden; background:#FFF;background:url("header.gif")/*tpa=http://faq.comsenz.com/library/header.gif*/ repeat-x 0px 0px;margin-bottom:10px; }
+	.hd{background:url("hd.jpg")/*tpa=http://faq.comsenz.com/library/hd.jpg*/ no-repeat 0px 0px;height:120px;position:relative;}
+	.logo{border:none;}
+	#header h1 {font-size:28px;margin:40px 0px 0px 0px;}
+	#header h1 a{display:block;text-indent:-9999px;overflow:hidden;height:60px;width:450px;}
+	#header h2{display:none;}
+	#header h2 a{color:#FFF;text-decoration:none;font-size:18px;}
+
+/* sd */
+#sd{background:#FFF; border:1px solid #ebebeb; width:160px;padding:0px;margin:0px;}
+	#sd ul{border-color:#A9CDE4;margin:0px;}
+	#sd li{margin-bottom:10px;list-style:inside square;text-indent:10px;}
+	#sd li h3{line-height:30px;margin-bottom:5px;}
+	#sd li dl{padding-left:20px;}
+	#sd li dd{line-height:24px;}
+	#sd li dd a, #sd .a dd a{color:#666;text-decoration:none;cursor:default;}
+
+	#sd .a{background:#F0F9FD;}
+	#sd .a{color:#333;}
+	#sd .a h3{background:#4396ca;}
+	#sd .a, #sd .a h3 a{color:#FFF;}
+
+/* content */
+	.content{margin-left:170px;}
+	.content .nvtitle{line-height: 33px;background-color: #F0F6FB;text-align:left;padding-left:10px;}
+	.content .nvtwo{font-size:14px;}
+	.content .nvt{border-bottom: 1px #E5E5E5 solid;background-color: whiteSmoke;line-height: 30px;padding-left:10px;}
+
+/* main */
+.main{background:#FFF;position:relative;width:980px;margin:10px auto;}
+#forhome{position:fixed;top:240px;_position: absolute; _top: expression (offsetParent.scrollTop); _left: expression (offsetParent.scrollLeft);background:url("img/forhome.gif")/*tpa=http://faq.comsenz.com/library/img/forhome.gif*/ no-repeat 0px 0px #FFF;}
+#forhome a{display:block;color:#FFF;text-decoration:none;border:1px solid #ccc;height:30px;width:32px;overflow:hidden;text-indent:9999px;padding:5px;}
+
+.mainc{line-height:24px;padding:10px 10px 10px 15px;border-left:1px dotted #B4C9E0;}
+.mainc p b{padding-right:10px;}
+.mainc h3, .mainc .nvtwo {border-bottom: 1px dotted #4396ca;padding: 5px 0px 5px 20px;margin-bottom: 5px;color: #369;font-size: 14px;margin-top:5px;background:url("img/arrow.png")/*tpa=http://faq.comsenz.com/library/img/arrow.png*/ no-repeat 0 50% #f4f4f4;}
+
+.main h2{line-height:30px;font-weight:400;}
+/* footer */
+#ft { border-top: 1px solid #B4C9E0; background: #EEF5FD; color: #666; padding: 2px 10px; margin-top:10px;width: 960px;}
+	#copyright{ padding:10px; text-align:center;}
+	#copyright a { color: #0954A6; }
+#scrolltop { visibility: hidden; position: fixed; bottom: 100px; display: block; margin: -30px 0 0 2px; width: 40px; background: #f4f4f4; border: 1px #cdcdcd solid; border-radius: 3px; border-top: 0; cursor: pointer; }
+			#scrolltop:hover { text-decoration: none; } 
+		#scrolltop { _position: absolute; _bottom: auto; }
+			#scrolltop a { display: block; width: 30px; height: 24px; padding: 3px 5px; line-height: 12px; text-align: center; color: #787878; text-decoration: none; background: url("img/scrolltop.png")/*tpa=http://faq.comsenz.com/library/img/scrolltop.png*/ no-repeat 0 0; border-top: 1px #cdcdcd solid; }
+				a.scrolltopa { background-position: 0 0px !important; }
+				a.feedback { background-position: 0 -30px !important; }
+				a.gohome { background-position: 0 -60px !important; }
+/* code */
+pre { font-family: Courier, Courier New; font-weight: normal; color:#000; margin: 0; padding: 0; }
+.code, .blockcode { background: #F3F3F3 url("codeicon.gif")/*tpa=http://faq.comsenz.com/library/codeicon.gif*/ no-repeat 5px 5px; padding: 30px 20px 10px; border: 1px solid #CCC; margin: 10px 0; font-size:12px;}
+.blockcode { background: #F3F3F3 url("image/common/codeicon.gif")/*tpa=http://faq.comsenz.com/library/image/common/codeicon.gif*/ no-repeat 8px 6px; }

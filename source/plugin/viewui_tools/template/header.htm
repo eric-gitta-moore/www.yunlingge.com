@@ -1,0 +1,72 @@
+{template common/header}
+<div id="pt" class="bm cl">
+	<div class="z">
+		<a href="./" class="nvhm" title="{lang homepage}">HomePage</a><em>&raquo;</em><a href="plugin.php?id=viewui_tools">{$plugin[name]}</a>
+	</div>
+</div>
+<style>
+.tools li {
+    width: 285px;
+    float: left;
+    margin: 10px 13px 10px 0;
+    border: 1px solid #ccc;
+    background-image: -webkit-linear-gradient(top,#fff,#f9f9f9);
+    position: static;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out;
+	min-height:136px;
+}
+.tools li:hover{
+	box-shadow: 0 3px 8px 0 rgba(0,0,0,.2);
+}
+.box-top{
+    padding: 15px 10px;
+    overflow: hidden;
+}
+.box-top img{
+    width:48px;
+	height:48px;
+	float:left;
+}
+.box-top-r{
+	float:left;
+	margin-left:10px;
+	width: 78%;
+}
+.box-top-r .tt{
+	color: #333;
+    font-size: 14px;
+    font-weight: 700;
+	margin-bottom: 5px;
+}
+.box-top-r .type{
+    background: #9E9E9E;
+    padding: 1px 3px 3px 5px;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+	float:left;
+}
+.box-top-r .use{
+	float:right;
+}
+.box-bt {
+    padding: 5px 0px 10px 0;
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+    width: 250px;
+    margin: 0 auto;
+    color: #999;
+}
+.box-bt span{
+	letter-spacing: .5px;
+    line-height: 20px;
+}
+#world{
+    position: absolute;
+}
+#world canvas{
+    width:1200px;
+}
+</style>
+<div id="ct" class=" wp cl">

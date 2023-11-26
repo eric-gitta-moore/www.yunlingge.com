@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
+	<item id="Time"><![CDATA[2018-05-11 19:32]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://192.168.1.105/a_fl/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[版塊圖標批量設置]]></item>
+			<item id="identifier"><![CDATA[jnpar_logoimg]]></item>
+			<item id="description"><![CDATA[對於版塊比較多的論罈，更改版塊圖標是一個比較繁瑣的事情，使用本插件可以批量設置版塊圖標。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[jnpar_logoimg/]]></item>
+			<item id="copyright"><![CDATA[jnpar榮耀出品]]></item>
+			<item id="version"><![CDATA[4.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[admin]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[圖標設置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[quickset]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[批量設置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[more]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[<span style="color:red;">更多jnpar精品插件</span>]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="english"><![CDATA[chinese]]></item>
+				<item id="upsize1"><![CDATA[上傳圖片超過2000KB]]></item>
+				<item id="upsize2"><![CDATA[上傳圖片類型錯誤]]></item>
+				<item id="upsize3"><![CDATA[上傳文件出錯]]></item>
+				<item id="admin1"><![CDATA[更新成功，共更新]]></item>
+				<item id="admin2"><![CDATA[個版塊圖標設置]]></item>
+				<item id="quickset1"><![CDATA[ <div style="line-height:20px;">批量圖標目錄爲“網站根目錄/source/plugin/jnpar_logoimg/logoimgs/”，可將版塊圖標通過ftp等工具上傳到該目錄。<br/>設置前，請保証該目錄下有相應圖標，如果系統沒有檢測到圖標則不會更新。</div>
+<div style="line-height:20px;margin-top:10px; margin-bottom:-50px;"><strong>圖片批量設置：</strong><br/>格式：版塊ID|圖標名稱|寬度 (版塊ID、圖標名稱、設置圖標寬度用“|”隔開，一行一個版塊)。<br/>例如：<br/>2|test1.png|60<br/>36|test2.png|60<br/>其中圖標名稱爲圖標文件名稱，其位置即爲上麪“批量圖片目錄”設置的文件目錄。<br/>對於多域名網站，本項請謹慎操作！</div>]]></item>
+				<item id="quickset2"><![CDATA[批量圖片目錄]]></item>
+				<item id="quickset3"><![CDATA[批量輸入，格式：版塊ID|圖片名|設置寬度]]></item>
+				<item id="quickset4"><![CDATA[提交]]></item>
+				<item id="quickset5"><![CDATA[批量更新成功！]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="english"><![CDATA[chinese]]></item>
+				<item id="admtml1"><![CDATA[版塊名稱]]></item>
+				<item id="admtml2"><![CDATA[版塊ID]]></item>
+				<item id="admtml3"><![CDATA[版塊logo]]></item>
+				<item id="admtml4"><![CDATA[上傳logo]]></item>
+				<item id="admtml5"><![CDATA[設置寬度]]></item>
+				<item id="admtml6"><![CDATA[上傳文件]]></item>
+				<item id="admtml7"><![CDATA[輸入 URL]]></item>
+				<item id="admtml8"><![CDATA[提交]]></item>
+			</item>
+			<item id="installlang">
+				<item id="english"><![CDATA[chinese]]></item>
+			</item>
+			<item id="systemlang">
+				<item id="file">
+					<item id="english"><![CDATA[chinese]]></item>
+				</item>
+			</item>
+		</item>
+	</item>
+</root>

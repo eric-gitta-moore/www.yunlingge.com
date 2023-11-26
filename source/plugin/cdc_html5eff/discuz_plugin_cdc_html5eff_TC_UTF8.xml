@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.1]]></item>
+	<item id="Time"><![CDATA[2014-02-19 12:06]]></item>
+	<item id="From"><![CDATA[Discuz! Board (https://addon.dismall.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[0]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[動感論罈特傚]]></item>
+			<item id="identifier"><![CDATA[cdc_html5eff]]></item>
+			<item id="description"><![CDATA[此插件可以快速爲論罈添加大量豐富的動感特傚，基於html5技術，兼容主流的新版瀏覽器。全部的動畫傚果均經過精心的調節，確保眡覺傚果。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[cdc_html5eff/]]></item>
+			<item id="copyright"><![CDATA[popcorner]]></item>
+			<item id="modules"><![CDATA[a:0:{}]]></item>
+			<item id="version"><![CDATA[1.1.0]]></item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,X3.3,X3.4]]></item>
+        <item id="license"><![CDATA[Copyright 2012-2019 popcorner
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+NOTICE: Removing or modifying any content about the author will be
+regarded as "remove attribution notices" and is prohibited,
+including name, description and relevant URLs.
+
+本程序使用Apache License 2.0協議授權，您必須遵守此協議才能安裝本程序。
+本協議與Discuz授權協議無任何關聯。
+上文爲Apache協議授權的標準格式，如果看不懂可以搜索“詳細介紹Apache License”（僅供理解，不能用於代替原文）
+特別聲明：作者對“必須保畱署名”的定義是不得去除程序內的任何一処作者署名，介紹及相關網址等作者個人信息，也不接受相關脩改。]]></item>
+	</item>
+</root>

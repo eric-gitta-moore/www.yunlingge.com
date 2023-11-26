@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3,X3.1,X3.2]]></item>
+	<item id="Time"><![CDATA[2014-12-08 11:53]]></item>
+	<item id="From"><![CDATA[Ñ¶»ÃÍø (http://www.xhkj5.com)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[ÕûÕ¾¼òÌå·±Ìå×ª»»]]></item>
+			<item id="identifier"><![CDATA[xhkj5com_jtft]]></item>
+			<item id="description"><![CDATA[ÓÐÈÎºÎÒÉÎÊÇë¼ÓQQÈº£º534641585·´À¡]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[xhkj5com_jtft/]]></item>
+			<item id="copyright"><![CDATA[Ñ¶»ÃÍø£¨www.xhkj5.com£©]]></item>
+			<item id="modules"><![CDATA[a:0:{}]]></item>
+			<item id="version"><![CDATA[Ñ¶»ÃÍø×¨°æ]]></item>			
+		<item id="__modules">			
+				<item id="0">
+					<item id="name"><![CDATA[xhkj5com_jtft]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>				
+			</item>
+		</item>
+		<item id="var">
+			 <item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[ÄãµÄÍøÕ¾±àÂë]]></item>
+				<item id="description"><![CDATA[Ñ¡Ôñ¡°ÊÇ¡±=GBK£¬Ñ¡Ôñ¡°·ñ¡±=UTF-8£¬²»»áÊ¹ÓÃºÍÒâ¼û·´À¡Çë¼Ó¹Ù·½QQÈº£º534641585]]></item>
+				<item id="variable"><![CDATA[xhkj5com_jtft_gbut]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+                          <item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[È«¾Ö¼ò·±ÇÐ»»¿ª¹Ø]]></item>
+				<item id="description"><![CDATA[Ñ¡Ôñ¡°ÊÇ¡±Ôò¿ªÆô²å¼þ!]]></item>
+				<item id="variable"><![CDATA[xhkj5com_jtft_quanju]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+	 	          <item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[×Ô¶¨Òå°´Å¥]]></item>
+				<item id="description"><![CDATA[°´Å¥µÄÃû×Ö£¬±ØÐë°üº¬¡°¼ò¡±£»¡°·±¡±×ÖÑù£¡]]></item>
+				<item id="variable"><![CDATA[xhkj5com_jtft_zdybt]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[·±ÌåÖÐÎÄ]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+	                  <item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[Ä¬ÈÏÊÇ·ñ·±Ìå]]></item>
+				<item id="description"><![CDATA[Ñ¡Ôñ¡°ÊÇ¡±·±Ìå£¬Ñ¡Ôñ¡°·ñ¡±¼òÌå!]]></item>
+				<item id="variable"><![CDATA[wmaffmrjf]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			  <item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[¼ò·±°´Å¥ÑÕÉ«]]></item>
+				<item id="description"><![CDATA[×Ô¶¨Òå°´Å¥ÑÕÉ«£¡]]></item>
+				<item id="variable"><![CDATA[xhkj5com_jtft_color]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FF0000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		          <item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[ÇÐ»»°´Å¥ÏÔÊ¾Î»ÖÃ]]></item>
+				<item id="description"><![CDATA[Ñ¡Ôñ²å¼þÏÔÊ¾ÔÚÄÄ¸öÎ»ÖÃ!]]></item>
+				<item id="variable"><![CDATA[xhkj5com_jf_weizhi]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[ 1=ÕûÕ¾¶¥²¿×ó²à
+2=¶¥²¿×ó²à
+3=¶¥²¿ÓÒ²à
+4=ÕûÕ¾µ¼º½Î»ÖÃ
+5=ÕûÕ¾µ×²¿Î»ÖÃ]]></item>
+			</item>					
+		</item>
+		<item id="version"><![CDATA[X3,X3.1,X3.2]]></item>
+	</item>
+</root>

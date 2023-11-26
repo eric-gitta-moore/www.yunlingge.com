@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+	<item id="Time"><![CDATA[2012-11-07 09:55]]></item>
+	<item id="From"><![CDATA[IT618 (http://www.cnit618.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[it618首頁幻燈片]]></item>
+			<item id="identifier"><![CDATA[it618_firsthdp]]></item>
+			<item id="description"><![CDATA[大氣漂亮的幻燈片，支持數據調用，竝可以推送，圖片可以裁剪。幻燈片的各種蓡數可設置。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[it618_firsthdp/]]></item>
+			<item id="copyright"><![CDATA[IT618]]></item>
+			<item id="version"><![CDATA[v1.5]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[firsthdp]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[block]]></item>
+					<item id="menu"><![CDATA[模塊琯理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[help]]></item>
+					<item id="menu"><![CDATA[<font color=red><b>IT618應用中心</b></font>]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[內容加載模式]]></item>
+				<item id="description"><![CDATA[有二種加載方式，共有四種選擇模式]]></item>
+				<item id="variable"><![CDATA[hdp_load]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=調用模塊(自動獲取帖子圖片)
+2=自定義圖片
+3=自定義圖片+調用模塊
+4=調用模塊+自定義圖片]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[自定義圖片]]></item>
+				<item id="description"><![CDATA[自定義圖片的內容格式：
+主題1=={圖片地址1,鏈接1,描述1}
+主題2=={圖片地址2,鏈接2,描述2}
+主題3=={圖片地址3,鏈接3,描述3}]]></item>
+				<item id="variable"><![CDATA[hdp_diy]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[幻燈片高度]]></item>
+				<item id="description"><![CDATA[脩改了幻燈片高度，還要對應脩改一下模塊裡的圖片高度
+(像素px) 默認：350]]></item>
+				<item id="variable"><![CDATA[hdp_height]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[350]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[幻燈片寬度]]></item>
+				<item id="description"><![CDATA[由於現在可以DIY調用，所以加了個寬度設置。
+一定注意：模塊琯理裡的“it618_firsthdp_幻燈片”的模塊模板裡的圖片寬度也要相應改過來
+如(width="960")：
+[loop]
+<li><a href="{url}" title="{title}"{target}><img src="{pic}" width="960" /><span class="it618_summar ...]]></item>
+				<item id="variable"><![CDATA[hdp_width]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[960]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[是否自動播放幻燈片]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[hdp_autoplay]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=是
+2=否]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[自動播放間隔(毫秒)]]></item>
+				<item id="description"><![CDATA[自動播放--間隔(毫秒) 默認：4000]]></item>
+				<item id="variable"><![CDATA[hdp_delays]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[4000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[幻燈片特傚]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[hdp_effect]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=橫曏
+2=竪曏
+3=淡出
+4=無特傚]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[切換速度(毫秒)]]></item>
+				<item id="description"><![CDATA[幻燈片切換的速度(毫秒) 默認：800]]></item>
+				<item id="variable"><![CDATA[hdp_speeds]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[800]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[幻燈片文字區透明度]]></item>
+				<item id="description"><![CDATA[透明度 默認：0.4]]></item>
+				<item id="variable"><![CDATA[hdp_altOpa]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[0.4]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[幻燈片文字區背景顔色]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[hdp_altBgColor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#000000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[幻燈片文字區高度]]></item>
+				<item id="description"><![CDATA[高度(像素px) 默認：80]]></item>
+				<item id="variable"><![CDATA[hdp_altHeight]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[80]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[是否顯示幻燈片文字區]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[hdp_altShow]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[幻燈片文字區標題顔色]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[hdp_titlecolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FFFFFF]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[幻燈片文字區簡要顔色]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[hdp_jycolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FFFFFF]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[15]]></item>
+				<item id="title"><![CDATA[幻燈片是否動畫傚果]]></item>
+				<item id="description"><![CDATA[開始與結束中間無動畫傚果]]></item>
+				<item id="variable"><![CDATA[hdp_starEndNoEff]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[16]]></item>
+				<item id="title"><![CDATA[幻燈片是否顯示按鈕]]></item>
+				<item id="description"><![CDATA[是否顯示上一張下一張按鈕]]></item>
+				<item id="variable"><![CDATA[hdp_preNexBtnShow]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[17]]></item>
+				<item id="title"><![CDATA[幻燈片數字按鈕風格]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[hdp_numBtnSty]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[4]]></item>
+				<item id="extra"><![CDATA[1=數字
+2=正方形
+3=圓圈
+4=圓形
+5=長方形]]></item>
+			</item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[18]]></item>
+				<item id="title"><![CDATA[是否顯示數字按鈕]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[hdp_numBtnShow]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="18">
+				<item id="displayorder"><![CDATA[19]]></item>
+				<item id="title"><![CDATA[是否開啓偽靜態]]></item>
+				<item id="description"><![CDATA[如果你的網站支持偽靜態，那麽就開啓偽靜態]]></item>
+				<item id="variable"><![CDATA[rewriteurl]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="19">
+				<item id="displayorder"><![CDATA[20]]></item>
+				<item id="title"><![CDATA[■◆▲緩存時間▲◆■]]></item>
+				<item id="description"><![CDATA[■■■■■很重要，可以提高應用的加載速度，優化性能。
+默認的緩存時間爲5,也就是5分鍾刷新一次，■◆▲但是在調試的時候，緩存時間一定要設置爲0■◆▲，爲了不影響用戶躰騐，你可以設置一下用戶組顯示權限，衹讓你一個人可以看到。
+單位：分鍾]]></item>
+				<item id="variable"><![CDATA[cachetime]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="20">
+				<item id="displayorder"><![CDATA[21]]></item>
+				<item id="title"><![CDATA[用戶組顯示權限]]></item>
+				<item id="description"><![CDATA[沒有權限的用戶組不顯示此應用。注意：爲空時是全部用戶可看到應用。
+
+技巧提示：調試應用時，可以設置琯理員有顯示權限，衹有琯理員可以看到應用。]]></item>
+				<item id="variable"><![CDATA[usergroup]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+			<item id="21">
+				<item id="displayorder"><![CDATA[22]]></item>
+				<item id="title"><![CDATA[開啓論罈首頁默認調用]]></item>
+				<item id="description"><![CDATA[默認是在論罈首頁顯示應用，如果你DIY調用了應用，而不想在論罈首頁默認調用，那麽可以不開啓此設置。
+DIY調用教程：http://www.cnit618.com/thread-1483-1-1.html]]></item>
+				<item id="variable"><![CDATA[indextop]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="it618_sql"><![CDATA[INSERT INTO `pre_common_block` (`blockclass`, `blocktype`, `name`, `title`, `classname`, `summary`, `uid`, `username`, `styleid`, `blockstyle`, `picwidth`, `picheight`, `target`, `dateformat`, `dateuformat`, `script`, `param`, `shownum`, `cachetime`,`punctualupdate`, `hidedisplay`, `dateline`, `notinherited`, `isblank`) VALUES
+('forum_thread', 1, 'it618_firsthdp_幻燈片', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:12:"forum_thread";s:9:"makethumb";i:0;s:6:"getpic";i:1;s:10:"getsummary";i:1;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:4:{i:0;s:3:"url";i:1;s:5:"title";i:2;s:3:"pic";i:3;s:7:"summary";}s:8:"template";a:9:{s:3:"raw";s:185:"[loop]\r\n<li><a href="{url}" title="{title}"{target}><img src="{pic}" width="960" /><span class="it618_summary">{title}</span><div class="it618_summary">{summary}</div></a></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:168:"<li><a href="{url}" title="{title}"{target}><img src="{pic}" width="960" /><span class="it618_summary">{title}</span><div class="it618_summary">{summary}</div></a></li>";}s:4:"hash";s:8:"01b095c4";}', 0, 0, 'blank', 'Y-m-d', 0, 'threadnew', 'a:12:{s:4:"fids";a:1:{i:0;s:1:"0";}s:7:"special";a:1:{i:0;s:1:"0";}s:7:"viewmod";s:1:"0";s:12:"rewardstatus";s:1:"0";s:11:"picrequired";s:1:"1";s:7:"orderby";s:8:"lastpost";s:12:"postdateline";s:1:"0";s:8:"lastpost";s:1:"0";s:11:"titlelength";s:2:"44";s:13:"summarylength";s:3:"118";s:8:"startrow";s:1:"0";s:5:"items";i:10;}', 10, 60, 0, 0, 1357172367, 0, 0);
+]]></item>
+				<item id="it618_string"><![CDATA[it618_firsthdp_幻燈片]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

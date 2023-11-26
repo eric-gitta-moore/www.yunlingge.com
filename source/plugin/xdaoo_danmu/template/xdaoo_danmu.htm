@@ -1,0 +1,56 @@
+{eval
+function tpl_global_footer($arr,$looper_time,$text_color,$bg_rgba,$isloop) {
+global $_G;
+
+}
+<!--{block return}-->
+<style>
+    .barrage{position: fixed;bottom:70px;right:-500px;display: inline-block;width: 500px;z-index: 99999}
+    .barrage_box{background-color:$bg_rgba;padding-right: 8px; height: 40px; max-width:500px;display: inline-block;border-radius: 25px;transition: all .3s;}
+    .barrage_box .portrait{ display: inline-block;margin-top: 4px; margin-left: 4px; width: 32px;height: 32px;border-radius: 50%;overflow: hidden;}
+    .barrage_box .portrait img{width: 100%;height: 100%;}
+    .barrage_box div.p a{ display: block; margin-right: 8px; font-size: 14px;color:$text_color !important;line-height: 40px; height:40px;max-width:400px;margin-left: 10px; overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+    .barrage_box div.p a:hover{text-decoration: underline;}
+    .barrage .z {float: left !important; }
+    .barrage  a{text-decoration:none;}
+</style>
+<script src="source/plugin/xdaoo_danmu/js/jquery-1.8.3.min.js?{VERHASH}" charset="{CHARSET}"></script>
+<script src="source/plugin/xdaoo_danmu/js/jquery.barrager.js?{VERHASH}" charset="{CHARSET}"></script>
+<!--{if $arr}-->
+<script type="text/javascript">
+    var looper_time = {$looper_time}*1000;
+    var items = {$arr};
+    var total = items.length;
+    var isloop = {$isloop};
+    var run_once = true;
+    var index = 0;
+    barrager();
+    function barrager(){
+        if (run_once) {
+            looper = setInterval(barrager, looper_time); run_once = false
+        }
+        jQuery("body").barrager(items[index]);
+        index++;
+        if (index == total) {
+            clearInterval(looper);
+            if (isloop){
+            looper = setInterval(barrager_loop,looper_time);
+            }
+            return false
+        }
+    }
+    function barrager_loop(){
+        if (jQuery(".barrage").length == 0) {
+            run_once = true;
+            index = 0;
+            barrager();
+        }
+    }
+</script>
+
+<!--{/if}-->
+<!--{/block}-->
+<!--{eval return $return;}-->
+{eval
+}
+}

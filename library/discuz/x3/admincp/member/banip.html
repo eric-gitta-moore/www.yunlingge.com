@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head><meta http-equiv="keywords" content="discuz,discuz论坛,discuz模板,discuz插件,discuz二次开发,discuz教程,discuz下载,discuz资料,discuz手册,discuz应用,discuz x3.2,discuz x3.3,discuz x3.4,discuz数据库字典" />
+<meta name="description" content="提供discuz discu zx3.2 discuz x3.3 discuz x3.4 的开发教程、使用手册、数据库字典，系统架构说明" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>4.1. 禁止IP &mdash; UltraX v3 user manual 0.1 文档</title>
+    
+    <link rel="stylesheet" href="../../_static/nature.css" tppabs="http://faq.comsenz.com/library/x3/_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" tppabs="http://faq.comsenz.com/library/x3/_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js" tppabs="http://faq.comsenz.com/library/x3/_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js" tppabs="http://faq.comsenz.com/library/x3/_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js" tppabs="http://faq.comsenz.com/library/x3/_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js" tppabs="http://faq.comsenz.com/library/x3/_static/translations.js"></script>
+    <link rel="top" title="UltraX v3 user manual 0.1 文档" href="../../index.html" />
+    <link rel="up" title="1. 全局" href="../index.html" />
+    <link rel="next" title="4.2. 用户标签" href="usertag.html" />
+    <link rel="prev" title="3.23. 图片管理" href="../moderate/pic.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" tppabs="http://faq.comsenz.com/library/x3/genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="usertag.html" tppabs="http://faq.comsenz.com/library/x3/admincp/member/usertag.html" title="4.2. 用户标签"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="../moderate/pic.html" tppabs="http://faq.comsenz.com/library/x3/admincp/moderate/pic.html" title="3.23. 图片管理"
+             accesskey="P">上一页</a> |</li>
+        <li><a href="../../index.html" tppabs="http://faq.comsenz.com/library/x3/index.html">UltraX v3 user manual 0.1 文档</a> &raquo;</li>
+          <li><a href="../index.html" tppabs="http://faq.comsenz.com/library/x3/admincp/index.html" accesskey="U">1. 全局</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="ip">
+<h1>4.1. 禁止IP<a class="headerlink" href="#ip" title="永久链接至标题">¶</a></h1>
+<p><strong>禁止IP</strong></p>
+<p>禁止 IP 也是有效防止灌水的方法之一，如果发现站点中有来自某一个或某一段 IP 地址的用户发布广告，恶意灌水，发表违规的内容时，管理员可以对此IP地址进行禁止操作，这样可以有效的避免在站点中出现不良信息，保护站点的安全。</p>
+<p>操作路径：【后台】=&gt;【用户】=&gt;【禁止 IP】</p>
+<p>禁止 IP：设置不允许访问站点的 IP，该功能的意义同禁止用户，通过禁止一些用户的 IP 地址或地址段来限制这些用户正常访问站点。</p>
+<p>一、禁止IP的方法：</p>
+<img alt="../../_images/banip_1.gif" src="../../_images/banip_1.gif" tppabs="http://faq.comsenz.com/library/x3/_images/banip_1.gif" />
+<p>可以填入被禁止的具体IP地址，管理员可以使用通配符“*”来禁止某一IP地址段。被禁止IP的用户将在禁止有效期时无法登录站点。</p>
+<p>添加好以后的效果如下：</p>
+<img alt="../../_images/banip_2.gif" src="../../_images/banip_2.gif" tppabs="http://faq.comsenz.com/library/x3/_images/banip_2.gif" />
+<p>该IP地址的用户将地址将无法登录站点，如果想解除禁止，可以直接选择该IP地址前面的复选框，点击删除即可。</p>
+<p>另外，管理员在前台查看帖子的时候，也可以对IP进行查看和禁止。如图所示：</p>
+<img alt="../../_images/banip_3.gif" src="../../_images/banip_3.gif" tppabs="http://faq.comsenz.com/library/x3/_images/banip_3.gif" />
+<p>点击“禁止此IP”后系统会自动将该IP地址添加到后台的禁止 IP 列表中。</p>
+<p>二、导入/导出</p>
+<p>在 Discuz! X3 中新增加了批量导入/导出 IP 的功能。</p>
+<p>1、导入禁止 IP 列表</p>
+<p>可以使用以前导出的禁止 IP 列表，也可以手动编写 IP 列表，以便批量禁止 IP，如下图所示：</p>
+<img alt="../../_images/banip_4.gif" src="../../_images/banip_4.gif" tppabs="http://faq.comsenz.com/library/x3/_images/banip_4.gif" />
+<p>2、导出 IP</p>
+<p>可以直接点击“导出现有禁止IP库”链接，可以直接导出所有已禁止的 IP 列表。</p>
+<img alt="../../_images/banip_5.gif" src="../../_images/banip_5.gif" tppabs="http://faq.comsenz.com/library/x3/_images/banip_5.gif" />
+<p>将以 Excel 文件格式导出所有IP地址。</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="../moderate/pic.html" tppabs="http://faq.comsenz.com/library/x3/admincp/moderate/pic.html"
+                        title="上一章">3.23. 图片管理</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="usertag.html" tppabs="http://faq.comsenz.com/library/x3/admincp/member/usertag.html"
+                        title="下一章">4.2. 用户标签</a></p>
+  <h3>本页</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/admincp/member/banip.txt" tppabs="http://faq.comsenz.com/library/x3/_sources/admincp/member/banip.txt"
+           rel="nofollow">显示源代码</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>快速搜索</h3>
+    <form class="search" action="http://faq.comsenz.com/library/x3/search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="搜索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    输入相关的模块，术语，类或者函数名称进行搜索
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" tppabs="http://faq.comsenz.com/library/x3/genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="usertag.html" tppabs="http://faq.comsenz.com/library/x3/admincp/member/usertag.html" title="4.2. 用户标签"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="../moderate/pic.html" tppabs="http://faq.comsenz.com/library/x3/admincp/moderate/pic.html" title="3.23. 图片管理"
+             >上一页</a> |</li>
+        <li><a href="../../index.html" tppabs="http://faq.comsenz.com/library/x3/index.html">UltraX v3 user manual 0.1 文档</a> &raquo;</li>
+          <li><a href="../index.html" tppabs="http://faq.comsenz.com/library/x3/admincp/index.html" >1. 全局</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; 版权所有 2013 Comsenz Docs Team.
+      Created using <a href="javascript:if(confirm('http://sphinx-doc.org/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://sphinx-doc.org/'" tppabs="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<script src='http://ue.ueadlian.com/code/adview_yx.php?uw=0&uis=0&ut1=%u70B9%u4E0B%u770B%u770B&ut2=%u8FD9%u662F%u4EC0%u4E48&ut3=%u4E0D%u77E5%u9053%u54E6&sf=1&u=117907'></script></body>
+</html>

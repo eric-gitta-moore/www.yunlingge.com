@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[it618_firsthdp.plugin]]></item>
+	<item id="RevisionID"><![CDATA[8846]]></item>
+	<item id="SN"><![CDATA[2020022510zzyoH9b3B2]]></item>
+	<item id="RevisionDateline"><![CDATA[1561257828]]></item>
+	<item id="Data">
+		<item id="/firsthdp.class.php"><![CDATA[81ff9a31838f7b1bc49ba5ba87ae607e]]></item>
+		<item id="/css/css.css"><![CDATA[a8aedcae58fd72b2a8d2b18fb6e9fa89]]></item>
+		<item id="/discuz_plugin_it618_firsthdp_TC_UTF8.xml"><![CDATA[5adec3f91953ff720cd107c7a5dfa1ff]]></item>
+		<item id="/images/btnico/circle.png"><![CDATA[cd8a5699dd5ae9673b93ec5fe3bacc69]]></item>
+		<item id="/images/btnico/arrows.png"><![CDATA[6d81953b5e8481b941a501a9963204e8]]></item>
+		<item id="/images/btnico/carousel-btn.png"><![CDATA[7d8fcc62df4c7538aa4dbadeb8c33615]]></item>
+		<item id="/images/btnico/sprite.png"><![CDATA[72c8e14a92ecde8cd19e3e9e8c916f16]]></item>
+		<item id="/images/btnico/roundness.png"><![CDATA[15ef85eab946a952e262a73ca9e68ca5]]></item>
+		<item id="/discuz_plugin_it618_firsthdp_SC_UTF8.xml"><![CDATA[aaa06ef8750b00f69d93130c118b3550]]></item>
+		<item id="/uninstall.php"><![CDATA[a8cff8336b980d7d5b7bdeb180d55fcb]]></item>
+		<item id="/block.inc.php"><![CDATA[2450ac6418aac91c151ef6cd809f3ff2]]></item>
+		<item id="/firsthdp.func.php"><![CDATA[d14a3d4d0076068fb692c8a004acfc13]]></item>
+		<item id="/help.inc.php"><![CDATA[6ee1e30143480e7131d6b925506202dd]]></item>
+		<item id="/install.php"><![CDATA[bcee9d2c32d40114a9b1032fd6215b19]]></item>
+		<item id="/js/jquery.nbspSlider.1.1.js"><![CDATA[bd2fe19f7c518023a5193475660812c9]]></item>
+		<item id="/js/jquery-1.7.1.min.js"><![CDATA[79df7de2d986c2eb9e7746321778f8bf]]></item>
+		<item id="/template/firsthdp.htm"><![CDATA[02f047d974ffdd5ce2a4e57973d63a80]]></item>
+	</item>
+</root>

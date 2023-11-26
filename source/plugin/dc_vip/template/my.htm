@@ -1,0 +1,76 @@
+<!--don't close the div here-->
+<div class="vipblock">
+<h3 class="title">{lang dc_vip:vip_growth_status}</h3>
+<div class="content">
+<div class="vip_leval">
+	<dl>
+	<dt>
+	<!--{eval $i=0;}-->
+	<!--{loop $_G['dc_plugin']['vip']['groupdata'] $gd}-->
+		<span>{$gd['grouptitle']}({$gd['growthlower']})</span>
+	<!--{eval
+		if($i>=7)break;
+		$i++;}-->
+	<!--{/loop}-->
+	</dt>
+	<dd>
+	<!--{eval $i=0;
+	if($_G['dc_plugin']['vip']['user'])
+		$myvipt = $_G['dc_plugin']['vip']['user'];
+	else
+		$myvipt = $myvip;
+	}-->
+	<!--{loop $_G['dc_plugin']['vip']['groupdata'] $gd}-->
+		<p class="mi_jdVip" style="display:;top:<!--{eval echo 100-$i*7}-->px;left:<!--{eval echo $i*81}-->px;">
+			<!--{if $myvip['growth']>=$gd['growthlower']}-->
+				<!--{if $myvipt['vgid']!=$gd['id']}-->
+					<a class="jd_link" href="javascript:;"><span style="width:100%; background-color:{$gd['color']}"></span></a>
+				<!--{else}-->
+					<!--{if $upgrade}-->
+						<!--{eval $levelpercent = ($myvip['growth']-$gd['growthlower'])*100/($upgrade['growthlower'] - $gd['growthlower']);$levelpercent=$levelpercent>2?$levelpercent:2;}-->
+					<!--{else}-->
+						<!--{eval $levelpercent = 2;}-->
+					<!--{/if}-->
+					<a class="jd_link" href="javascript:;"><span style="width:{$levelpercent}%; background-color:{$gd['color']}"></span></a>
+					<strong class="sj_tbg"><i class="jd_icon"></i>{lang dc_vip:growth}:{$myvipt['growth']}{lang dc_vip:point}<!--{if $myvip}--><!--{if $_G['dc_plugin']['vip']['user']}--><img src="source/plugin/dc_vip/images/common/up.png"><!--{else}--><img src="source/plugin/dc_vip/images/common/down.png"><!--{/if}--><!--{/if}--></strong>
+				<!--{/if}-->
+			<!--{else}-->
+				<a class="jd_link" href="javascript:;"><span style="width:0%; background-color:{$gd['color']}"></span></a>
+			<!--{/if}-->
+		</p>
+		<!--{eval
+		if($i>=7)break;
+		$i++;}-->
+		<!--{/loop}-->
+	</dd>
+</dl>
+</div>
+<div class="vip_msg">
+	<!--{if !$_G['dc_plugin']['vip']['user']}-->
+	<p>{lang dc_vip:vip_no_welcome}  <b>{$_G['username']}</b> !</p>
+	<!--{if $myvip}-->
+	<p>{lang dc_vip:mylevel_0} <b>{$myvip['growth']}</b>{lang dc_vip:mylevel_12}</p>
+	<p>{lang dc_vip:mylevel_2}{lang dc_vip:mylevel_11} <b >{$cvar['dropv']}</b> {lang dc_vip:point}</p>
+	<!--{/if}-->
+    <p>{lang dc_vip:no_vip_msg_1}
+        <a href="plugin.php?id=dc_vip&action=pay" class="dc_vip_btn"><span>{lang dc_vip:joinvip}</span></a>
+    </p>
+	<!--{else}-->
+	<p>{lang dc_vip:vip_welcome}  <b style="color:{$_G['dc_plugin']['vip']['group']['color']}">{$_G['username']}</b> !</p>
+	<p>{lang dc_vip:mylevel_0} <b>{$_G['dc_plugin']['vip']['user']['growth']}</b> {lang dc_vip:mylevel_1} <b>{$_G['dc_plugin']['vip']['group']['grouptitle']}</b></p>
+	<p>{lang dc_vip:mylevel_2}{lang dc_vip:mylevel_10} <b >{$cvar['growthv']}<!--{if $_G['dc_plugin']['vip']['user']['isyear']}-->+{$cvar['yearv']}<!--{/if}--></b> {lang dc_vip:point}</p>
+	<p><!--{if $upgrade}-->{lang dc_vip:mylevel_3} <b><!--{eval
+		$growthstep = $cvar['growthv'];
+		if($_G['dc_plugin']['vip']['user']['isyear'])$growthstep+=$cvar['yearv'];
+		$times = ceil(($upgrade['growthlower'] - $_G['dc_plugin']['vip']['user']['growth'])/$growthstep);
+		echo dgmdate(strtotime('+'.$times.' day',TIMESTAMP), 'd');
+	}--></b>{lang dc_vip:mylevel_4}<img src="source/plugin/dc_vip/images/icon/{$upgrade['icon']}">{lang dc_vip:juhao}<!--{else}-->{lang dc_vip:mylevel_5}<!--{/if}--></p>
+	<p>{lang dc_vip:mylevel_6} <b><!--{if $_G['dc_plugin']['vip']['user']['exptime']=='2147454847'}--><font color="#FF0000">{lang dc_vip:forever}</font><!--{else}--><!--{echo dgmdate($_G['dc_plugin']['vip']['user']['exptime'], 'd')}--><!--{/if}--></b></p>
+	<p>{lang dc_vip:mylevel_7}<a href="plugin.php?id=dc_vip&action=pay" class="dc_vip_btn"><span>{lang dc_vip:mylevel_8}</span></a></p>
+		<!--{if !$_G['dc_plugin']['vip']['user']['isyear']}-->
+			<p>{lang dc_vip:mylevel_9}<b>{$cvar['yearv']}{lang dc_vip:point}</b></p>
+		<!--{/if}-->
+	<!--{/if}-->
+</div>
+</div>
+</div>

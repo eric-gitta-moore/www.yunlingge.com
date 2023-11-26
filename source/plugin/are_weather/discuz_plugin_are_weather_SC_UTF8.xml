@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
+	<item id="Time"><![CDATA[2019-07-26 17:24]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://127.0.0.1/Discuz_X3.2_UTF8_2019/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[【START】天气]]></item>
+			<item id="identifier"><![CDATA[are_weather]]></item>
+			<item id="description"><![CDATA[【START】天气]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[are_weather/]]></item>
+			<item id="copyright"><![CDATA[怪话丨START丨www.gh87661.com]]></item>
+			<item id="version"><![CDATA[电脑版 2019]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[gh87661]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[<b style="color:red;">更多</b>]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[显示位置]]></item>
+				<item id="description"><![CDATA[可以按Ctrl多选
+设置显示天气的位置]]></item>
+				<item id="variable"><![CDATA[hook]]></item>
+				<item id="type"><![CDATA[selects]]></item>
+				<item id="extra"><![CDATA[global_cpnav_top=页面顶部
+global_cpnav_extra1=收藏本站后
+global_header=左上角浮动
+global_footer=右下角浮动]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[global_cpnav_top]]></item>
+					<item id="1"><![CDATA[global_cpnav_extra1]]></item>
+					<item id="2"><![CDATA[global_header]]></item>
+					<item id="3"><![CDATA[global_footer]]></item>
+				</item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[距离顶部【top】]]></item>
+				<item id="description"><![CDATA[设置左上角浮动：距离顶部的距离【例如：50】]]></item>
+				<item id="variable"><![CDATA[top_jl]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[100]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[距离左边【left】]]></item>
+				<item id="description"><![CDATA[设置左上角浮动：距离左边的距离【例如：50】]]></item>
+				<item id="variable"><![CDATA[left_jl]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[距离底部【bottom】]]></item>
+				<item id="description"><![CDATA[设置右下角浮动：距离底部的距离【例如：50】]]></item>
+				<item id="variable"><![CDATA[bottom_jl]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[50]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[距离右边【right】]]></item>
+				<item id="description"><![CDATA[设置右下角浮动：距离右边的距离【例如：50】]]></item>
+				<item id="variable"><![CDATA[right_jl]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+	</item>
+</root>

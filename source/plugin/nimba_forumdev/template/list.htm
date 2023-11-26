@@ -1,0 +1,29 @@
+<!--{block list}-->
+<!--{if $threads}-->
+<div class="forumdev" id="forumdev_{$fid}">
+  <ul>
+	<!--{loop $threads $thread}-->
+		<!--{eval $thread['subject']=dhtmlspecialchars($thread['subject']);}-->
+		<!--{eval $thread['highlight']=$this->devGetHighlight($thread['highlight']);}-->
+		<!--{if $this->style==6}-->
+			<li><span>{$thread['replies']}</span><a href="forum.php?mod=viewthread&tid={$thread['tid']}" {$thread['highlight']} title="{$thread['subject']}" target="_blank">{$thread['subject']}</a></li>
+		<!--{elseif $this->style==5}-->
+			<li><span>{$thread['views']}</span><a href="forum.php?mod=viewthread&tid={$thread['tid']}" {$thread['highlight']} title="{$thread['subject']}" target="_blank">{$thread['subject']}</a></li>
+		<!--{elseif $this->style==4}-->
+			<!--{eval $thread['lastposter']=dhtmlspecialchars($thread['lastposter']);}-->	
+			<li><!--{if $thread['lastposter']}--><span><a href="home.php?mod=space&username={$thread['lastposter']}" target="_blank">{$thread['lastposter']}</a></span><!--{/if}--><a href="forum.php?mod=viewthread&tid={$thread['tid']}" {$thread['highlight']} title="{$thread['subject']}" target="_blank">{$thread['subject']}</a></li>
+		<!--{elseif $this->style==3}-->
+			<!--{eval $thread['author']=dhtmlspecialchars($thread['author']);}-->
+			<li><span><a href="home.php?mod=space&uid={$thread['authorid']}" target="_blank">{$thread['author']}</a></span><a href="forum.php?mod=viewthread&tid={$thread['tid']}" title="{$thread['subject']}" target="_blank">{$thread['subject']}</a></li>
+		<!--{elseif $this->style==2}-->
+			<!--{eval $thread['lastpost']=$thread['lastpost']? dgmdate($thread['lastpost'],'m-d/H:i'):dgmdate($thread['dateline'],'m-d/H:i');}-->
+			<li><span>{$thread['lastpost']}</span><a href="forum.php?mod=viewthread&tid={$thread['tid']}" {$thread['highlight']} title="{$thread['subject']}" target="_blank">{$thread['subject']}</a></li>
+		<!--{else}-->
+			<!--{eval $thread['dateline']=dgmdate($thread['dateline'],'m-d/H:i');}-->
+			<li><span>{$thread['dateline']}</span><a href="forum.php?mod=viewthread&tid={$thread['tid']}" {$thread['highlight']} title="{$thread['subject']}" target="_blank">{$thread['subject']}</a></li>
+		<!--{/if}-->
+	<!--{/loop}-->     
+  </ul>
+</div>
+<!--{/if}-->
+<!--{/block}-->

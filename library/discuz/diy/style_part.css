@@ -1,0 +1,22 @@
+.item{padding-bottom:10px;border-bottom:1px dashed #ebebeb;margin:0 10px;}
+.title{color:#000;}
+	.title a { font-size:14px;font-weight:700; color: #3B8DD1; text-decoration: underline;}
+	.item_c, .item_c dl{margin-left:12px;margin-top:10px;}
+
+	.nvtitle{border-bottom:3px solid #a9cde4;line-height:30px;text-align:center;background:#F0F6FB;}
+		.nvtitle span{padding:1px;display:block;color:#3f89c3;font-size:18px;}
+
+pre{padding: 1em;border: 1px dashed #2F6FAB;color: black;background-color: #F9F9F9;line-height: 1em;word-wrap: break-word;}
+
+/* table */
+.content table { width: 100%;}
+	.content td { border-bottom: 1px solid #E8EDF2; padding:10px 15px;}
+.formatblock{width: 90%;}
+.formatblock *{font-size:12px;line-height:1.5em;}
+.formatblock th {font-weight: 400;width: 200px;border: 1px solid #BBB;padding: 4px;background-color: #F3F3F3;text-align:left;}
+.formatblock td {border: 1px solid #BBB;padding: 4px;}
+
+/* code block */
+.blockcode {padding: 10px 10px 5px 35px;border: 1px solid #CCC;background: #F7F7F7 url("img/codebg.gif")/*tpa=http://faq.comsenz.com/library/diy/img/codebg.gif*/ repeat-y 0 0;overflow: hidden;font-size:12px;margin-top:5px;}
+.blockcode ol {margin: 0 0 0 10px !important;padding: 0 !important;}
+.blockcode ol li {padding-left: 10px;list-style-type: decimal-leading-zero;font-family: Monaco,Consolas,'Lucida Console','Courier New',serif;line-height: 1.8em;}

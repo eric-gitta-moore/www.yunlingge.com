@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[austgl_iframe.plugin]]></item>
+	<item id="RevisionID"><![CDATA[31223]]></item>
+	<item id="SN"><![CDATA[2020012616lozDniZdfc]]></item>
+	<item id="RevisionDateline"><![CDATA[1561280635]]></item>
+	<item id="Data">
+		<item id="/austgl_iframe.class.php"><![CDATA[4724856fc2a1321522457d56772d03cc]]></item>
+		<item id="/austgl_iframe.inc.php"><![CDATA[6f7525fe7b846687b8679108ac88c608]]></item>
+		<item id="/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/discuz_plugin_austgl_iframe_TC_UTF8.xml"><![CDATA[82046b564c350450afdeb7c41ab0c4a0]]></item>
+		<item id="/img/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/img/2014.jpg"><![CDATA[29b74ab4efad2e933f24922a5a9eb755]]></item>
+		<item id="/discuz_plugin_austgl_iframe_SC_UTF8.xml"><![CDATA[0a41b4201957e7a625f1e3d3640efe59]]></item>
+		<item id="/template/iframe.htm"><![CDATA[a504e0c31854e938c2d702ad12ae9948]]></item>
+		<item id="/template/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/error.htm"><![CDATA[f5d7ac176745dd749606f9af1982ea95]]></item>
+	</item>
+</root>

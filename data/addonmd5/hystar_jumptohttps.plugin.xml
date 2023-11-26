@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[hystar_jumptohttps.plugin]]></item>
+	<item id="RevisionID"><![CDATA[84971]]></item>
+	<item id="SN"><![CDATA[2020031421VNPLZZevL5]]></item>
+	<item id="RevisionDateline"><![CDATA[1562592975]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_hystar_jumptohttps_SC_UTF8.xml"><![CDATA[d4423cf305c679b44f0ad8aca73671a0]]></item>
+		<item id="/redirect_mobile.class.php"><![CDATA[04f860089d557acc599ac213997ed89b]]></item>
+		<item id="/redirect_pc.class.php"><![CDATA[d18dc2f54ac858109ec1354da3bb2aa9]]></item>
+		<item id="/discuz_plugin_hystar_jumptohttps_TC_UTF8.xml"><![CDATA[1f95d74be5064e0a70f2d7603118aa77]]></item>
+	</item>
+</root>

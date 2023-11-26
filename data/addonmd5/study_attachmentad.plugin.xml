@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[study_attachmentad.plugin]]></item>
+	<item id="RevisionID"><![CDATA[316]]></item>
+	<item id="SN"><![CDATA[2020012608mamNjAwEhw]]></item>
+	<item id="RevisionDateline"><![CDATA[1575120326]]></item>
+	<item id="Data">
+		<item id="/config.inc.php"><![CDATA[f13cddcd8e9155bc54e02f4d933051f4]]></item>
+		<item id="/demo.php"><![CDATA[d456822da544bb4b3f6177fa3a635935]]></item>
+		<item id="/check.php"><![CDATA[8a825ca6229416faf04a5be8990a5989]]></item>
+		<item id="/images/faq.gif"><![CDATA[2016bd6b1d980e1609ecad8d4c40085b]]></item>
+		<item id="/images/manage.css"><![CDATA[6b41fb8ea9a32acbc5c6365a85ee2f66]]></item>
+		<item id="/images/index.html"><![CDATA[c868b06b1f487bd71a2964398560a333]]></item>
+		<item id="/images/index.htm"><![CDATA[c868b06b1f487bd71a2964398560a333]]></item>
+		<item id="/images/bg_tab.gif"><![CDATA[d8ddde434d1e604f36abf1936617f99c]]></item>
+		<item id="/images/bg_tab_mid.gif"><![CDATA[da79a1002b9c209a9760211e9a08dd20]]></item>
+		<item id="/images/yeei_down.png"><![CDATA[d24b5014183311eab5c2858dbdf38076]]></item>
+		<item id="/uninstall.php"><![CDATA[be2b183c58d8028f49b3bdbd67765360]]></item>
+		<item id="/source/function/function_core.php"><![CDATA[1e1065bcd170e0e51080906c91cea363]]></item>
+		<item id="/source/function/function_var.php"><![CDATA[424e30b13127ae8b9d9b29df65a44dd2]]></item>
+		<item id="/index.html"><![CDATA[c868b06b1f487bd71a2964398560a333]]></item>
+		<item id="/thank.inc.php"><![CDATA[8d5716153ae8ff7f83b507b3a7555cc3]]></item>
+		<item id="/index.htm"><![CDATA[c868b06b1f487bd71a2964398560a333]]></item>
+		<item id="/discuz_plugin_study_attachmentad_TC_UTF8.xml"><![CDATA[5ab3a7f59a9e22275617d10aafc307ee]]></item>
+		<item id="/ad.inc.php"><![CDATA[13520aebb64d3e2f546079986013c2af]]></item>
+		<item id="/faq.inc.php"><![CDATA[9a622a4016d5d9ae18ab4cff17bffb5e]]></item>
+		<item id="/hook.class.php"><![CDATA[bde0b8f6e6f0b5b7f65c1cf54401595a]]></item>
+		<item id="/pluginvar.func.php"><![CDATA[424e30b13127ae8b9d9b29df65a44dd2]]></item>
+		<item id="/discuz_plugin_study_attachmentad_SC_UTF8.xml"><![CDATA[65d4cdc48ec66270bd3b29d5194a24c0]]></item>
+		<item id="/addon.inc.php"><![CDATA[7ffb165cc65c5e5aacb65e05d0ad50f2]]></item>
+		<item id="/changelog.inc.php"><![CDATA[5105c61bdf269665f6f45330b2927d77]]></item>
+		<item id="/disable.php"><![CDATA[9ec471bbb96d92721012311f9c6e86e9]]></item>
+		<item id="/installlang.lang.php"><![CDATA[0afc0f044bd191e6956494efa2f8aae6]]></item>
+		<item id="/enable.php"><![CDATA[8e0e1c44cd1e933cab2bef7f6b6e33ef]]></item>
+		<item id="/install.php"><![CDATA[5394593d803ef025b8200b33ae1961b1]]></item>
+		<item id="/upgrade.php"><![CDATA[5394593d803ef025b8200b33ae1961b1]]></item>
+		<item id="/feedback.inc.php"><![CDATA[ead76045f6c473df40fc175db5858ae7]]></item>
+		<item id="/template/index.html"><![CDATA[c868b06b1f487bd71a2964398560a333]]></item>
+		<item id="/template/index.htm"><![CDATA[c868b06b1f487bd71a2964398560a333]]></item>
+		<item id="/template/ad.htm"><![CDATA[12bc900971e128c4be4b535754ebc215]]></item>
+		<item id="/template/faq.htm"><![CDATA[ec3cfd91cc42a7a60503741410455e06]]></item>
+	</item>
+</root>

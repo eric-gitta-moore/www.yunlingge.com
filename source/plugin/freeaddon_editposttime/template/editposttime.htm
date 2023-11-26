@@ -1,0 +1,47 @@
+<!--{template common/header}-->
+<!--{if empty($_GET['infloat'])}-->
+<div id="pt" class="bm cl">
+	<div class="z"><a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a> <em>&rsaquo;</em> $navigation</div>
+</div>
+<div id="ct" class="wp cl">
+	<div class="mn">
+		<div class="bm bw0">
+<!--{/if}-->
+
+<div class="tm_c" id="floatlayout_topicadmin">
+	<h3 class="flb">
+		<em id="return_mods">&#x53D1;&#x5E16;&#x65F6;&#x95F4;&#x4FEE;&#x6539;</em>
+		<span>
+			<a href="javascript:;" class="flbc" onclick="hideWindow('freeaddon_editposttime')" title="{lang close}">{lang close}</a>
+		</span>
+	</h3>
+	<form method="post" autocomplete="off" action="plugin.php?id=freeaddon_editposttime" onsubmit="ajaxpost('moderateform', 'return_mods', 'return_mods', 'onerror');return false;">
+		<input type="hidden" name="formhash" value="{FORMHASH}" />
+		<input type="hidden" name="tid" value="$_GET[tid]" />
+		<div class="c">
+				<table cellspacing="0" cellpadding="5" width="100%">
+					<tr>
+						<td>
+							<p class="hasd">
+								<label for="expirationstick" class="labeltxt">&#x53D1;&#x5E16;&#x65F6;&#x95F4;&#xFF1A;</label>
+								<input onclick="showcalendar(event, this, true)" type="text" autocomplete="off" id="dateline" name="dateline" class="px" value="$thread[dateline]" tabindex="1" />
+							</p>
+						</td>
+					</tr>
+				</table>
+		</div>
+			<p class="o pns">
+				<button type="submit" name="submit" class="pn pnc" value="{lang confirms}"><span>{lang confirms}</span></button>
+			</p>
+	</form>
+</div>
+
+<script type="text/javascript" src="{$_G[setting][jspath]}calendar.js?{VERHASH}" reload="1"></script>
+
+
+<!--{if empty($_GET['infloat'])}-->
+		</div>
+	</div>
+</div>
+<!--{/if}-->
+<!--{template common/footer}-->

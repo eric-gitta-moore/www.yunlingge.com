@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[jzsjiale_360.plugin]]></item>
+	<item id="RevisionID"><![CDATA[87031]]></item>
+	<item id="SN"><![CDATA[2020022307CExzG6bGRT]]></item>
+	<item id="RevisionDateline"><![CDATA[1581218121]]></item>
+	<item id="Data">
+		<item id="/apps.inc.php"><![CDATA[fa74d9e566d9a3be2bd8acd1ea788463]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/discuz_plugin_jzsjiale_360_TC_UTF8.xml"><![CDATA[93f926490c16bb23153b76809a791d8a]]></item>
+		<item id="/discuz_plugin_jzsjiale_360_SC_UTF8.xml"><![CDATA[ae73b81a3e357cfde9080fc141a94e55]]></item>
+		<item id="/static/css/photo-sphere-viewer.min.css"><![CDATA[5606e06c6ddc044358c189685c67188c]]></item>
+		<item id="/static/css/btn_360.css"><![CDATA[c4fcc1bfa75923027a78703be07475ab]]></item>
+		<item id="/static/images/icon.png"><![CDATA[b6ea0ea39b38c4de079339d34f26917c]]></item>
+		<item id="/static/js/uevent.min.js"><![CDATA[fe3b8c857a7851e7ba4d75bc977c39b3]]></item>
+		<item id="/static/js/three.min.js"><![CDATA[87d6318ab6cc24f8af79d4375bbe0797]]></item>
+		<item id="/static/js/photo-sphere-viewer.min.js"><![CDATA[ffed032ecfec959e7a45dfd872ee38e0]]></item>
+		<item id="/static/js/addbtn.js"><![CDATA[3a23f0d577dff0c1a09271d67061f17b]]></item>
+		<item id="/static/js/polyfill.min.js"><![CDATA[d05a380d50b74e629738ae6f62fb7e78]]></item>
+		<item id="/static/js/doT.min.js"><![CDATA[e804e636c1f99ec7ffc65374f33c8782]]></item>
+		<item id="/mobile.class.php"><![CDATA[5228412d5a8ba50bc532a90a114ad1bb]]></item>
+		<item id="/pc.class.php"><![CDATA[40c85a48536d9e360e4f9f0390d5b4c5]]></item>
+		<item id="/template/360.htm"><![CDATA[8f882b776cad5e5e31da8100884bb251]]></item>
+		<item id="/template/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/touch/360.htm"><![CDATA[8f882b776cad5e5e31da8100884bb251]]></item>
+	</item>
+</root>

@@ -1,0 +1,80 @@
+{template viewui_tools:header}
+<style type="text/css">
+#viewui-toolsbg {overflow:hidden;margin-bottom:10px;}
+#viewui-toolsbg .tips{
+    overflow: hidden;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #FBEED5;
+    border-radius: 4px;
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    color: #3A87AD;
+    margin-bottom: 10px;
+}
+#viewui-toolsbg .tips strong{
+    margin-right: 5px;
+}
+#viewui-toolsbg .left{padding:10px;float:left;width:49%;border: 1px solid #c6cede !important;height:210px;}
+#viewui-toolsbg .right{padding:10px;float:right;width:45%;border: 1px solid #c6cede !important;}
+#viewui-toolsbg textarea {
+    padding: 0px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+    color: #333;
+}
+#viewui-toolsbg .btns{
+    float: right;
+    overflow: hidden;
+    margin-top: 10px;
+}
+#viewui-toolsbg .btns button {
+    background-color: #55a7e3;
+    color: #fff;
+    font-family: 'Microsoft YaHei';
+    border: none;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 10px;
+    letter-spacing: .5px;
+    text-decoration: none;
+    cursor: pointer;
+    min-width: 70px;
+    outline: none;
+}
+#viewui-toolsbg .btns button:hover{
+    opacity: 0.8;
+}
+</style>   
+<div id="viewui-toolsbg">
+<div class="tips"><strong>{lang viewui_tools:tip}</strong>{lang viewui_tools:base64jsummary}</div>
+<div style="overflow: hidden;height: 232px;">
+	<div class="left">
+		<textarea  style="height:210px;" id="jia"  placeholder="{lang viewui_tools:md5input}"></textarea>
+	</div>
+		<div class="right">
+<div id="jg" class="right-body" style="height: 210px;font-size: 14px;color: #333;"></div>
+		</div>
+</div>
+		<div id="tip" style="float: left;margin: 10px 0;"></div>
+		<div class="btns">
+		<button type="submit" id="j">{lang viewui_tools:md5open}</button>
+		<button type="submit" onclick="document.getElementById('jia').value='';document.getElementById('jg').value='';document.getElementById('jg').innerHTML='';">{lang viewui_tools:rest}</button>
+		</div>
+</div>
+<script src="source/plugin/viewui_tools/js/jquery-1.10.2.js"></script>
+<script src="source/plugin/viewui_tools/js/jquery.base64.js"></script>
+<script type="text/javascript"> var jq = jQuery.noConflict(); </script>
+<script>
+	jq("#jg").text(""+jq.base64.encode(jq("#jia").val()));
+	jq("#j").click(function(){
+		 jq("#jg").text(""+jq.base64.encode(jq("#jia").val()));
+		 jq("#jia").text(jq("#jia").val());
+	});	
+</script>
+{template viewui_tools:footer}

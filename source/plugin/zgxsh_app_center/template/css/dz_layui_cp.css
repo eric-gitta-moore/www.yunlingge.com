@@ -1,0 +1,16 @@
+body {
+  height: auto !important;
+  font-size: 12px !important;
+}
+.layui-layout a {
+  text-decoration: none;
+}
+.layui-header {
+  z-index: 680;
+}
+.layui-side {
+  z-index: 670;
+}
+.layui-body {
+  z-index: 660;
+}

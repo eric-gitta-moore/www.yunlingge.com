@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[iplus_gezi.plugin]]></item>
+	<item id="RevisionID"><![CDATA[23557]]></item>
+	<item id="SN"><![CDATA[2020012718ju3FDuF52k]]></item>
+	<item id="RevisionDateline"><![CDATA[1563769085]]></item>
+	<item id="Data">
+		<item id="/apps.inc.php"><![CDATA[e597e3fa34b3806c025c2c1049df7761]]></item>
+		<item id="/discuz_plugin_iplus_gezi_TC_UTF8.xml"><![CDATA[61991d79c4e7da63928e44f02a60e76d]]></item>
+		<item id="/images/style2.css"><![CDATA[1c09d657e272faaa6c4b472a8aa647a5]]></item>
+		<item id="/images/style1.css"><![CDATA[e6efa75150d5582fe47383d3aa501fe4]]></item>
+		<item id="/lib/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/uninstall.php"><![CDATA[c12d3e3b3608e6117c2a0e489d59c25e]]></item>
+		<item id="/function.php"><![CDATA[2dcf557c0c8e5990fa5d4be7e091de55]]></item>
+		<item id="/discuz_plugin_iplus_gezi_SC_UTF8.xml"><![CDATA[3e17f443bc3c6097ec29d2e5cb003a1f]]></item>
+		<item id="/hook.class.php"><![CDATA[87d5370e2c206ec61dd8caa155b8dfd4]]></item>
+		<item id="/adlist.inc.php"><![CDATA[bdcb7c95e7dcc5d483f6c102e7c781d9]]></item>
+		<item id="/data.inc.php"><![CDATA[a22b909466767738d46442ff45c288e6]]></item>
+		<item id="/install.php"><![CDATA[cdae65aa0a9e5d72aa6e4358795a13ba]]></item>
+		<item id="/upgrade.php"><![CDATA[f7c89c033ef10104933116506bf57df0]]></item>
+		<item id="/buy.inc.php"><![CDATA[9cb70a5d6b8281f6b078874d57227118]]></item>
+		<item id="/rebuy.inc.php"><![CDATA[b5358da0828f6cd6782568ecff428923]]></item>
+		<item id="/template/buy.htm"><![CDATA[6074679ec5dc83cedaa72a51e607dea3]]></item>
+		<item id="/template/rebuy.htm"><![CDATA[d3dd70ed3480e1d981dd3ca10dc27929]]></item>
+		<item id="/template/adlist.htm"><![CDATA[0ebf7f407e95fa546108d350b68fb4d7]]></item>
+		<item id="/template/gz.htm"><![CDATA[be331a5d5bdf2b21a1b34f08dda52cdc]]></item>
+	</item>
+</root>

@@ -1,0 +1,45 @@
+<style  type="text/css">
+ol, ul { list-style: none;}
+.banklistwap{ margin-right:40px;}
+.banklistwap li{height: 80px;border: 2px solid #cfcfcf;margin: 0 0px 12px 0;}
+.banklistwap li.bank_on { background: url(/source/plugin/rjyfk_url/template/img/radio_cur.gif) right bottom no-repeat;background-color: #f4f9eb;border: 1px solid #f86c41;}
+</style>
+<div style="background-color: #7C807C; ">
+<div align="center"><a style="color: #FFFFFF; font-size: 40px; body{line-height:normal;}"><strong>{lang rjyfk_url:Template29}:</strong></a>
+</div>
+</div>
+<form id="payform"  action='plugin.php?id=rjyfk_url:payment'  target="_blank" method='post'>
+  <div align="center">
+    <ul class="banklistwap" id="banklistwap">
+	<!--{loop $bank_types $val}-->
+	<li bank_id="$val[id]" payment_type="chinapay" title="{$val[lang]}" onclick="setSelect(this)">
+		<img src="{$_G['site_url']}source/plugin/rjyfk_url/template/img/bank/{$val[id]}.png">
+	</li>
+       <!--{/loop}-->
+    </ul>
+<input type="hidden"  id="formhash"  name="formhash" value="{FORMHASH}">	
+<input type='hidden'  value='writeData'   name='action' />
+<input type='hidden'  value='$groupname'  name='groupname'  /> 
+<input type='hidden'  value='$total_fee'  name='total_fee'  /> 
+<input type="hidden"  id="bankcode" name="bankcode" value="" />	
+<div style="background-color: #7C807C; min-height: 100px;position: fixed;right: 0;bottom: 0;left: 0;right: 0;z-index: 999;">
+<button id="livereplysubmit" style="color: #FFFFFF; background: #7C807C; font-size: 80px; width:100% " type="submit">
+<strong>{lang rjyfk_url:Template7}</strong>
+</button>	
+<a href="plugin.php?id=rjyfk_url:url"><input style="color: #FFFFFF; background: #7C807C; font-size: 80px; width:100% "type="button" name="test" value="{lang rjyfk_url:Template32}"/></a>
+</div></div></form>
+<script>
+function setSelect(obj) {
+  var banklist= document.getElementById("banklistwap");
+  var arr=banklistwap.getElementsByTagName("li");
+  var len=arr.length;
+  for(var i=0;i<len;i++){
+    	arr[i].className ="";
+	arr[i].innerHTML=arr[i].innerHTML.replace("<font></font>","");
+
+  }
+  obj.className ="bank_on";
+  obj.innerHTML=obj.innerHTML+"<font></font>";
+  document.getElementById("bankcode").value=obj.getAttribute("bank_id");
+}
+</script>

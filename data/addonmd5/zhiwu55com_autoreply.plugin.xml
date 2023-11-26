@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[zhiwu55com_autoreply.plugin]]></item>
+	<item id="RevisionID"><![CDATA[85249]]></item>
+	<item id="SN"><![CDATA[2020021808y124Z64ryz]]></item>
+	<item id="RevisionDateline"><![CDATA[1563640652]]></item>
+	<item id="Data">
+		<item id="/function_common.php"><![CDATA[a0f1c593bbe1b24fb419593d4f3a907a]]></item>
+		<item id="/hand_reply.inc.php"><![CDATA[b802865661cb4b94717336c09975798f]]></item>
+		<item id="/auth.inc.php"><![CDATA[f3f14eca5d4bcf0edb5594c1f2067b09]]></item>
+		<item id="/exportVest.inc.php"><![CDATA[99b28b201b5537fe6184d015462b822e]]></item>
+		<item id="/uninstall.php"><![CDATA[eb514cfadf855f3fc906d8b5e065e187]]></item>
+		<item id="/user_vest.inc.php"><![CDATA[670c78896a43801cf6a0a7dab44183bb]]></item>
+		<item id="/zhiwu55com_autoreply.inc.php"><![CDATA[2a744214009874d0e048a4c7124272a0]]></item>
+		<item id="/auto_reply.inc.php"><![CDATA[4bd57e7760ee739935cfcdd96801951e]]></item>
+		<item id="/discuz_plugin_zhiwu55com_autoreply_SC_UTF8.xml"><![CDATA[63570663338526d5f9f6d6ed0daa8274]]></item>
+		<item id="/importVest.inc.php"><![CDATA[d22f5630840510e3a763da45c05dc2b5]]></item>
+		<item id="/zhiwu55com.class.php"><![CDATA[35189f02baf22b49166ef673fe79e7f4]]></item>
+		<item id="/install.php"><![CDATA[4da40b98b9a6dc74caf01ce9a40a678b]]></item>
+		<item id="/cron/cron_zhiwu55com_autoreply.inc.php"><![CDATA[d4e8828487c18fe04ebf591fca279f13]]></item>
+		<item id="/discuz_plugin_zhiwu55com_autoreply_TC_UTF8.xml"><![CDATA[4f988c0c7a7c228972343b4379eb9813]]></item>
+		<item id="/hzw_cron.inc.php"><![CDATA[98828aa8d684c0e93ce52f2926c71ce1]]></item>
+		<item id="/template/auto_reply.htm"><![CDATA[0b5c1e0d081924c37e90b08bc6b4fc4b]]></item>
+		<item id="/template/zhiwu55com_forum.htm"><![CDATA[1822fa3e1bf28d3dc8394f4c75ed6f73]]></item>
+		<item id="/template/importVest.htm"><![CDATA[8a39f228d81264ffdbb8daf7aecebca1]]></item>
+		<item id="/template/zhiwu55com_portal.htm"><![CDATA[37900b0b4822aecb6440fd45835c3b94]]></item>
+		<item id="/template/jquery.min.js"><![CDATA[220afd743d9e9643852e31a135a9f3ae]]></item>
+		<item id="/template/auth.htm"><![CDATA[84c16b18c2662669384ca634e35d95a6]]></item>
+		<item id="/template/exportVest.htm"><![CDATA[b2ce39c5fa417731cefcaf2b56dd7b5f]]></item>
+		<item id="/template/help.png"><![CDATA[23fcdd79b0a68dc257327f8b0488672b]]></item>
+		<item id="/template/hand_reply.htm"><![CDATA[7c4b6e2b7dabbebcea62bea942beaeb1]]></item>
+		<item id="/template/user_vest.htm"><![CDATA[58e62d5705634bf24f497022ae5b0dc1]]></item>
+		<item id="/template/regvest.htm"><![CDATA[56a0be40c0ad7d82e5e62e75502cd450]]></item>
+		<item id="/regvest.inc.php"><![CDATA[23ddf43eab567cb3a7b6a1d2d1bc9043]]></item>
+	</item>
+</root>

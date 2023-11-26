@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3]]></item>
+	<item id="Time"><![CDATA[2019-12-09 02:47]]></item>
+	<item id="From"><![CDATA[http://www.1314study.com/]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[[1314]SEO之sitemap]]></item>
+			<item id="identifier"><![CDATA[study_seo_sitemap]]></item>
+			<item id="description"><![CDATA[使用问题请到1314学习网（www.1314study.com）反馈]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[study_seo_sitemap/]]></item>
+			<item id="copyright"><![CDATA[1314学习网（www.1314study.com）]]></item>
+			<item id="version"><![CDATA[2.1.02]]></item>
+		</item>
+		<item id="version"><![CDATA[X1.5,X2,X2.5,X3,X3.1,X3.2,X3.3,X3.4,X3.5,F1.0,L1.0]]></item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="rewrite_message_apache1"><![CDATA[<br>
+<h1>Apache Web Server(独立主机用户)</h1>
+<pre class=colorbox>
+&lt;IfModule mod_rewrite.c&gt;
+	RewriteEngine On
+{apache1}&lt;/IfModule&gt;
+</pre>]]></item>
+				<item id="rewrite_message_apache2"><![CDATA[<h1>Apache Web Server(虚拟主机用户)</h1>
+<pre class=colorbox>
+# 将 RewriteEngine 模式打开
+RewriteEngine On
+
+# RewriteBase 后边为论坛目录，插件自动识别，如果识别错误请自行修改为你论坛的目录
+# 如 www.xxx.com/bbs，对应的目录就是/bbs，如果程序放在根目录中，使用 RewriteBase /
+RewriteBase {siteroot}
+
+# Rewrite 系统规则请勿修改
+{apache2}
+</pre>]]></item>
+				<item id="rewrite_message_iis1"><![CDATA[<h1>IIS Web Server(独立主机用户)</h1>
+<pre class=colorbox>
+[ISAPI_Rewrite]
+
+# 3600 = 1 hour
+CacheClockRate 3600
+
+RepeatLimit 32
+
+# Protect httpd.ini and httpd.parse.errors files
+# from accessing through HTTP
+{iis}
+</pre>]]></item>
+				<item id="rewrite_message_iis2"><![CDATA[<h1>IIS7 Web Server(独立主机用户)</h1>
+<pre class=colorbox>
+&lt;rewrite&gt;
+	&lt;rules&gt;
+{iis7}	&lt;/rules&gt;
+&lt;/rewrite&gt;
+</pre>]]></item>
+				<item id="rewrite_message_zeus"><![CDATA[<h1>Zeus Web Server</h1>
+<pre class=colorbox>
+{zeus}
+</pre>]]></item>
+				<item id="rewrite_message_nginx"><![CDATA[<h1>Nginx Web Server</h1>
+<pre class=colorbox>
+{nginx}
+</pre>]]></item>
+				<item id="rewrite_tip"><![CDATA[
+<li><font color=red>先查看你的伪静态文件是否存在下边的<font color=blue>蓝色规则</font>，存在则把红色规则粘贴于<font color=blue>蓝色规则</font>之上，不存在则把红色规则粘贴到文件末尾</li></font>]]></item>
+				<item id="copyright"><![CDATA[<span class=pipe>|</span><a href=http://addon.1314study.com/ target=_blank>Discuz! 应用中心</a>]]></item>
+				<item id="slang_001"><![CDATA[第]]></item>
+				<item id="slang_002"><![CDATA[页]]></item>
+				<item id="slang_003"><![CDATA[网站地图]]></item>
+				<item id="slang_1"><![CDATA[2020012206vj7JR8bYYb]]></item>
+				<item id="slang_2"><![CDATA[11950]]></item>
+				<item id="slang_3"><![CDATA[1575832284]]></item>
+				<item id="slang_4"><![CDATA[http://www.yun-ling.cn/]]></item>
+				<item id="slang_5"><![CDATA[http://www.yun-ling.cn/]]></item>
+				<item id="slang_6"><![CDATA[60DF4F84-4325-8E2C-A68B-78184AFF8D9A]]></item>
+				<item id="slang_7"><![CDATA[abaf33aa4232d85834ca3507a2cd28fd]]></item>
+				<item id="slang_8"><![CDATA[2020012206vj7JR8bYYb119501575832284http://www.yun-ling.cn/http://www.yun-ling.cn/60DF4F84-4325-8E2C-A68B-78184AFF8D9A]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="tlang_001"><![CDATA[最新帖子列表]]></item>
+				<item id="tlang_002"><![CDATA[快速发帖]]></item>
+				<item id="tlang_003"><![CDATA[主题]]></item>
+				<item id="tlang_004"><![CDATA[发帖人]]></item>
+				<item id="tlang_005"><![CDATA[发贴时间]]></item>
+				<item id="tlang_006"><![CDATA[有图片]]></item>
+				<item id="tlang_007"><![CDATA[有附件]]></item>
+				<item id="tlang_008"><![CDATA[精华]]></item>
+				<item id="tlang_009"><![CDATA[级热门]]></item>
+				<item id="tlang_010"><![CDATA[帖子被加分]]></item>
+				<item id="tlang_011"><![CDATA[帖子被减分]]></item>
+				<item id="tlang_012"><![CDATA[目前暂无主题]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+		<item id="checkfile"><![CDATA[check.php]]></item>
+		<item id="enablefile"><![CDATA[enable.php]]></item>
+		<item id="disablefile"><![CDATA[disable.php]]></item>
+	</item>
+</root>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[jzsjiale_video.plugin]]></item>
+	<item id="RevisionID"><![CDATA[86749]]></item>
+	<item id="SN"><![CDATA[2020022307Q4Z9dPp3S6]]></item>
+	<item id="RevisionDateline"><![CDATA[1578817065]]></item>
+	<item id="Data">
+		<item id="/apps.inc.php"><![CDATA[de8c7544c72e42502b2970bba4fac6aa]]></item>
+		<item id="/shangpin.inc.php"><![CDATA[74aa6750551e424936b4ed63e39d02c5]]></item>
+		<item id="/discuz_plugin_jzsjiale_video_TC_UTF8.xml"><![CDATA[401b54c6ad3f42e09dd4324f1e645b11]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/isms.inc.php"><![CDATA[ee7c4fc878bda62ad68928cc1eb4b6a6]]></item>
+		<item id="/discuz_plugin_jzsjiale_video_SC_UTF8.xml"><![CDATA[9a2a14ef2a4850cd6ba970c0b957409d]]></item>
+		<item id="/sms.inc.php"><![CDATA[ebd1e13c54464e3e366e0cd0a0b91171]]></item>
+		<item id="/mobile.class.php"><![CDATA[6b8748db38fb30015e2b6a20a8b713fb]]></item>
+		<item id="/pc.class.php"><![CDATA[cebe11fe1bf4071c6d3b1e548e21fbed]]></item>
+		<item id="/template/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+	</item>
+</root>

@@ -1,0 +1,21 @@
+<!--{block return}-->
+<script type="text/javascript">
+var freeaddon_banadblock = 0;
+</script>
+<script src="/source/plugin/freeaddon_banadblock/ad/advertisement_ads_cpc_cpm_cpa_guanggao_gg.js"></script>
+<script type="text/javascript">
+
+<!--{if $splugin_setting[seconds] > 0}-->
+if(getcookie('freeaddon_banadblock') == $splugin_setting[seconds]) {
+	freeaddon_banadblock = 1314;
+}
+<!--{/if}-->
+
+if(freeaddon_banadblock != 1314) {
+	setTimeout(function () {showWindow('banadblock', 'plugin.php?id=freeaddon_banadblock&url='+encodeURI(window.location.href), 'get', null, {'cover':'1'});}, 1);
+	<!--{if $splugin_setting[seconds] > 0}-->
+	setcookie('freeaddon_banadblock', $splugin_setting[seconds], $splugin_setting[seconds]);
+	<!--{/if}-->
+}
+</script>
+<!--{/block}-->

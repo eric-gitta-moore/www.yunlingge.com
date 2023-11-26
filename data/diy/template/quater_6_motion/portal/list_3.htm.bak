@@ -1,0 +1,183 @@
+<!--{template common/header}-->
+<!--{eval $list = array();}-->
+<!--{eval $wheresql = category_get_wheresql($cat);}-->
+<!--{eval $list = category_get_list($cat, $wheresql, $page);}-->
+
+<link rel="stylesheet" type="text/css" href="/template/quater_6_motion/src/wei.css" />
+<script src="/template/quater_6_motion/src/js/jquery.superslide.js" type="text/javascript"></script>
+
+<!--{ad/text/wp a_t}-->
+<style id="diy_style" type="text/css"></style>
+</div>
+<div class="container">
+  <div class="m-slide">
+    <div class="g-main">
+      <div class="tt">
+        <h3>加入情感社区！</h3>
+      </div>
+      <div class="ct f-cb">
+        <div class="f-fl code"> <img src="/template/quater_6_motion/src/code-down.png" alt=""> </div>
+        <div class="f-fl down">
+          <p>扫描二维码下载APP</p>
+          <a href="#"><span class="icon_down icon_andiord"></span><span class="icon_txt s-fcgreen">下载安卓版</span></a> <a href="#"><span class="icon_down icon_ios"></span><span class="icon_txt s-fcblue">下载苹果版</span></a> </div>
+      </div>
+    </div>
+  </div>
+  <div class="g-bd g-main">
+    <div class="serve">
+      <div class="u-tt"><span>服务能力</span></div>
+      <div class="u-ct f-cb">
+        <div class="item bgf9">
+          <dl class="z-crt">
+            <dt>特惠洗车</dt>
+            <dd>
+              <h3>特惠洗车</h3>
+            </dd>
+          </dl>
+          <dl class="z-show">
+            <dt>
+              <h3>特惠洗车</h3>
+            </dt>
+            <dd>
+              <p>全国超低价，2w+线下服务门店助力洗车服务。一次购买，全国通用！</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="item">
+          <dl class="z-crt ml">
+            <dt>精致美容</dt>
+            <dd>
+              <h3>精致美容</h3>
+            </dd>
+          </dl>
+          <dl class="z-show">
+            <dt>
+              <h3>精致美容</h3>
+            </dt>
+            <dd>
+              <p>精选优质商户，提供精致服务，以更低的价格享受不输4S的品质！</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="item bgf9">
+          <dl class="z-crt by">
+            <dt>正品保养</dt>
+            <dd>
+              <h3>正品保养</h3>
+            </dd>
+          </dl>
+          <dl class="z-show">
+            <dt>
+              <h3>正品保养</h3>
+            </dt>
+            <dd>
+              <p>机油、配件正品保障，严选服务商户，为您提供极致的保养体验！</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="item">
+          <dl class="z-crt wz">
+            <dt>违章查询</dt>
+            <dd>
+              <h3>违章查询</h3>
+            </dd>
+          </dl>
+          <dl class="z-show">
+            <dt>
+              <h3>违章查询</h3>
+            </dt>
+            <dd>
+              <p>支持全国300多个城市。完善车辆信息，一键极速查询！</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="item">
+          <dl class="z-crt dl">
+            <dt>道路救援</dt>
+            <dd>
+              <h3>道路救援</h3>
+            </dd>
+          </dl>
+          <dl class="z-show">
+            <dt>
+              <h3>道路救援</h3>
+            </dt>
+            <dd>
+              <p>专业救援团队，极速响应，平均30分钟完成救援服务，7*24h服务车主用户！</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="item bgf9">
+          <dl class="z-crt cx">
+            <dt>车险算价</dt>
+            <dd>
+              <h3>车险算价</h3>
+            </dd>
+          </dl>
+          <dl class="z-show">
+            <dt>
+              <h3>车险算价</h3>
+            </dt>
+            <dd>
+              <p>人保、太保等保险公司官方合作，在线精准报价，一键快速下单！</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="item">
+          <dl class="z-crt jy">
+            <dt>加油充值</dt>
+            <dd>
+              <h3>加油充值</h3>
+            </dd>
+          </dl>
+          <dl class="z-show">
+            <dt>
+              <h3>加油充值</h3>
+            </dt>
+            <dd>
+              <p>官网直充，支持全国中石化中石油，现在充值还能享受99折优惠！</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="item bgf9">
+          <dl class="z-crt ax">
+            <dt>安心代驾</dt>
+            <dd>
+              <h3>安心代驾</h3>
+            </dd>
+          </dl>
+          <dl class="z-show">
+            <dt>
+              <h3>安心代驾</h3>
+            </dt>
+            <dd>
+              <p>真诚、热心、专业！用我们温暖的心，将您安全送达！</p>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+    var list = jQuery('#list_news');
+    jQuery('.nav li').hover(function(event) {
+        var e = event || e;
+        e.stopPropagation();
+        e.preventDefault();
+        jQuery(this).find('.u-snav').stop().toggle();
+    });
+    jQuery('.serve .item').hover(function() {
+        jQuery(this).find('.z-show').toggleClass('show');
+    });
+	});
+	</script>
+    <div class="m-news">
+      <div class="u-tt"><span>媒体报道</span></div>
+      <div class="u-ct">
+         <!--[diy=diy1]--><div id="diy1" class="area"><div id="framenC5NR4" class="frame move-span cl frame-1"><div id="framenC5NR4_left" class="column frame-1-c"><div id="framenC5NR4_left_temp" class="move-span temp"></div><!--{block/45}--></div></div></div><!--[/diy]-->
+      </div>
+    </div>
+  </div>
+ </div>
+
+<!--{template common/footer}-->

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,F1.0,L1.0,X3.3,X3.4]]></item>
+	<item id="Time"><![CDATA[2019-09-10 15:20]]></item>
+	<item id="From"><![CDATA[源   码  哥  y  m   g 6  . c  o m]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[自动封面助手]]></item>
+			<item id="identifier"><![CDATA[iplus_autocover]]></item>
+			<item id="description"><![CDATA[自动封面助手 for Discuz! 作者 艾普拉斯 功能介绍：自动获取回复楼层里面的图片作为帖子的封面，优化图片列表显示方式！]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[iplus_autocover/]]></item>
+			<item id="copyright"><![CDATA[源码哥（www.ymg6.com）]]></item>
+			<item id="version"><![CDATA[v2.5.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[status]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[组件检测]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[apps]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[应用推荐]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[99]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1999">
+					<item id="name"><![CDATA[admincp_addonymg]]></item>
+					<item id="menu"><![CDATA[<span style="color:#E53333;"><b>反馈错误</b></span>]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,F1.0,L1.0,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[图片最小宽度]]></item>
+				<item id="description"><![CDATA[单位：px，填写数字，选择调取图片的最小宽度，以避免过小的图片被调至封面！]]></item>
+				<item id="variable"><![CDATA[width]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[200]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[开启本地附件识别]]></item>
+				<item id="description"><![CDATA[1、开启后，本插件将在主帖无图片的情况下，自动从回复中调用本地图片附件作为封面
+2、开启下面任意一种功能，此处必须开启]]></item>
+				<item id="variable"><![CDATA[localsrc]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[[*]开启外部图片识别]]></item>
+				<item id="description"><![CDATA[[*]1、需要安装本插件外部图片组件包:http://addon.discuz.com/?@iplus_autocover.plugin
+2、开启后，在帖子没有图片附件的情况下，插件从贴中插进入的外部图片中调用为帖子封面]]></item>
+				<item id="variable"><![CDATA[srcopen]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[[*]开启远程附件识别]]></item>
+				<item id="description"><![CDATA[[*]1、需要安装本插件远程附件组件包:http://addon.discuz.com/?@iplus_autocover.plugin
+2、开启后，开启了远程附件的情况下，本插件自动调用为帖子封面]]></item>
+				<item id="variable"><![CDATA[remoteopen]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[[*]远程附件访问路径]]></item>
+				<item id="description"><![CDATA[[*]1、需要安装本插件远程附件组件包:http://addon.discuz.com/?@iplus_autocover.plugin
+2、默认可留空，本插件将自动识别远程附件设置，当识别不准确的时候再在此处微调！
+3、以http或者ftp开头，结尾不要加斜杠“/”
+例如完整地址是：http://att.discuz.net/data/attac ...]]></item>
+				<item id="variable"><![CDATA[remote]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="appname"><![CDATA[自动封面助手]]></item>
+				<item id="tips"><![CDATA[组件检测]]></item>
+				<item id="name"><![CDATA[组件名称]]></item>
+				<item id="status"><![CDATA[组件状态]]></item>
+				<item id="info"><![CDATA[组件功能]]></item>
+				<item id="remote"><![CDATA[远程附件组件包]]></item>
+				<item id="img"><![CDATA[外部图片组件包]]></item>
+				<item id="down"><![CDATA[下载]]></item>
+				<item id="remoteinfo"><![CDATA[开启了远程附件、云附件的站点需要安装此组件，在开启了远程附件的情况下，本插件自动调用为帖子封面]]></item>
+				<item id="imginfo"><![CDATA[在帖子没有图片附件的情况下，如果帖子有外部插入图片，插件将从贴中插进入的外部图片中调用为帖子封面]]></item>
+				<item id="status_1"><![CDATA[已安装]]></item>
+				<item id="status_2"><![CDATA[未安装]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="appname"><![CDATA[自动封面助手]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

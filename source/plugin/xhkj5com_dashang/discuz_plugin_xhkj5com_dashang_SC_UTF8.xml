@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,F1.0,L1.0,X3.3]]></item>
+	<item id="Time"><![CDATA[2017-01-02 15:26]]></item>
+	<item id="From"><![CDATA[讯幻网（www.xhkj5.com）]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[讯幻网_打赏/赞助/奖励作者]]></item>
+			<item id="identifier"><![CDATA[xhkj5com_dashang]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[xhkj5com_dashang/]]></item>
+			<item id="copyright"><![CDATA[讯幻网（www.xhkj5.com）]]></item>
+			<item id="version"><![CDATA[V1.5]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[app]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[<span style="color:red">更多可可精品插件</span>]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[xhkj5com_dashang]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[keke_myds]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[打赏设置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[7]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[xhkj5com_dashang]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,F1.0,L1.0,X3.3]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[允许打赏的版块]]></item>
+				<item id="description"><![CDATA[允许打赏的版块，留空则所有版块均显示]]></item>
+				<item id="variable"><![CDATA[bk]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[2]]></item>
+				</item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[允许接受打赏的用户组]]></item>
+				<item id="description"><![CDATA[允许接受打赏的用户组，未选中的用户组发表帖子不显示打赏按钮]]></item>
+				<item id="variable"><![CDATA[yhz]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[回帖能否接受打赏]]></item>
+				<item id="description"><![CDATA[若开启则所有回帖楼层均显示接受打赏按钮]]></item>
+				<item id="variable"><![CDATA[htds]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[1 = 仅楼主能接受打赏
+2 = 所有楼层均能接受打赏]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[默认打赏语]]></item>
+				<item id="description"><![CDATA[默认打赏语，当用户未设置打赏语时或打开了站长打赏模式显示]]></item>
+				<item id="variable"><![CDATA[dsy]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[感谢你的支持，我会继续努力！]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[默认微信收款码]]></item>
+				<item id="description"><![CDATA[默认微信收款码,当打开打赏站长模式或会员没有设置时显示]]></item>
+				<item id="variable"><![CDATA[wechat]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[source\plugin\xhkj5com_dashang\template\img\wechat.png]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[默认支付宝收款码]]></item>
+				<item id="description"><![CDATA[默认支付宝收款码,当打开打赏站长模式或会员没有设置时显示]]></item>
+				<item id="variable"><![CDATA[alipay]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[source\plugin\xhkj5com_dashang\template\img\alipay.png]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[二维码上传大小限制]]></item>
+				<item id="description"><![CDATA[二维码上传大小限制，单位为KB，请根据自身服务器容量以及带宽设置，推荐 100 - 500]]></item>
+				<item id="variable"><![CDATA[size]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[100]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[开启打赏站长模式]]></item>
+				<item id="description"><![CDATA[开启此功能后所有会员打赏信息均失效，打赏二维码显示为网站默认收款二维码，为网站自身盈利。]]></item>
+				<item id="variable"><![CDATA[zz]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[当用户未上传收款二维码时]]></item>
+				<item id="description"><![CDATA[当用户未上传收款二维码时的操作]]></item>
+				<item id="variable"><![CDATA[yhewm]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=不显示打赏选项
+2=显示站长二维码打赏]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[手机版二维码下方提示]]></item>
+				<item id="description"><![CDATA[手机版二维码下方提示]]></item>
+				<item id="variable"><![CDATA[mtsa]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[微信打开长按识别二维码进行打赏]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[二维码下方提示]]></item>
+				<item id="description"><![CDATA[二维码下方提示]]></item>
+				<item id="variable"><![CDATA[tsa]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[扫码打赏，建议金额1-10元]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[温馨提示内容]]></item>
+				<item id="description"><![CDATA[温馨提示内容]]></item>
+				<item id="variable"><![CDATA[tsb]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[打赏金额将直接进入对方账号，无法退款]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[手机版是否启用打赏]]></item>
+				<item id="description"><![CDATA[手机版是否启用打赏]]></item>
+				<item id="variable"><![CDATA[mobile]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[风格设置]]></item>
+				<item id="description"><![CDATA[风格设置，请根据自身网站色调选择]]></item>
+				<item id="variable"><![CDATA[styles]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1 = 风格一【红】
+2 = 风格二【黄】
+3 = 风格三【绿】
+4 = 风格四【海蓝】
+5 = 风格五【深蓝】]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="logy_m_g"><![CDATA[<h2 style="text-align:-webkit-center;">
+	<span style="color:#4C33E5;">推荐一个dz商</span><span style="color:#4C33E5;">业插件模版下载的</span><span style="color:#4C33E5;"></span><span style="color:#4C33E5;">网站给大家</span><a href="http://www.xhkj5.com" target="_blank"><span style="color:#4C33E5;">讯幻网分享吧</span></a><span style="color:#4C33E5;">（www.xhkj5.com）</span> 
+</h2>
+<h3 style="text-align:-webkit-center;">
+	<span style="color:#E53333;">这</span><span style="color:#E53333;">是一个</span><span style="color:#E53333;">dz商业</span><a href="http://www.xhkj5.com/forum.php?mod=forumdisplay&fid=2" target="_blank"><span style="color:#337FE5;">插</span><u><span style="color:#337FE5;"></span></u><span style="color:#337FE5;">件</span></a><a href="http://www.xhkj5.com/forum.php?mod=forumdisplay&fid=36" target="_blank"><u><span style="color:#337FE5;">模</span></u><u><span style="color:#337FE5;"></span></u><u><span style="color:#337FE5;">版</span></u></a><span style="color:#E53333;">资源破解分享的网站，而且还有很多精品的网站源码下载</span> 
+</h3>
+<h3 style="text-align:-webkit-center;">
+	<span style="color:#E53333;">他们资源每天更新，并且很多都是他们自己出钱在应用中心购买后破解分享出来的</span><br />
+</h3>
+<h3>
+	<div style="text-align:center;">
+		<span style="color:#E53333;">不过还是替他们说一下</span> 
+	</div>
+	<div style="text-align:center;">
+		<span style="color:#E53333;">&nbsp;他们站下载的资源只限于自己学习研究内含的设计思想和原理 请勿有任何商业盈利行为</span> 
+	</div>
+</h3>
+<h3 style="text-align:center;">
+	<span style="color:#999999;">介绍也介绍完了，给大家做个小导航吧</span> 
+</h3>
+<h3 style="text-align:center;">
+	<span style="color:#337FE5;"><a href="http://www.xhkj5.com/forum.php?mod=forumdisplay&fid=2" target="_blank">dz商业破解插件下载</a> &nbsp; <a href="http://www.xhkj5.com/forum.php?mod=forumdisplay&fid=36" target="_blank">dz商业风格模版下载</a> &nbsp; &nbsp;<a href="http://www.xhkj5.com/forum.php?mod=forumdisplay&fid=50" target="_blank">精品网站源码下载</a> &nbsp; &nbsp;<a href="http://www.xhkj5.com/forum.php?mod=forumdisplay&fid=51" target="_blank">工具素材下载</a></span><span style="color:#337FE5;">&nbsp; &nbsp; <a href="http://www.xhkj5.com/forum.php?mod=forumdisplay&fid=41" target="_blank">精选教程区</a></span> 
+</h3> ]]></item>
+				<item id="zsgb"><![CDATA[站长暂时关闭打赏功能，请稍后再试]]></item>
+				<item id="scsb"><![CDATA[上传失败]]></item>
+				<item id="bstpgs"><![CDATA[不是图片格式]]></item>
+				<item id="tpccdx"><![CDATA[图片超出限定大小！]]></item>
+				<item id="bcsb"><![CDATA[保存失败]]></item>
+				<item id="sccg"><![CDATA[删除成功]]></item>
+				<item id="szcg"><![CDATA[设置成功]]></item>
+				<item id="gb"><![CDATA[关闭]]></item>
+				<item id="ds"><![CDATA[打赏]]></item>
+				<item id="dssz"><![CDATA[设置我的收款二维码]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="jbsz"><![CDATA[基本设置]]></item>
+				<item id="zfbsk"><![CDATA[支付宝收款二维码设置]]></item>
+				<item id="wxsk"><![CDATA[微信收款二维码设置]]></item>
+				<item id="wsmhqff"><![CDATA[二维码获取方法]]></item>
+				<item id="dsysz"><![CDATA[打赏语设置]]></item>
+				<item id="bc"><![CDATA[保存]]></item>
+				<item id="xqewm"><![CDATA[选取二维码]]></item>
+				<item id="wdskewm"><![CDATA[我的收款二维码]]></item>
+				<item id="wdzfbewm"><![CDATA[我的支付宝收款二维码]]></item>
+				<item id="wdwxewm"><![CDATA[我的微信收款二维码]]></item>
+				<item id="sc"><![CDATA[删除]]></item>
+				<item id="fh"><![CDATA[返回]]></item>
+				<item id="hyzx"><![CDATA[会员中心]]></item>
+				<item id="hqff"><![CDATA[获取方法]]></item>
+				<item id="zfbskm"><![CDATA[支付宝收款码]]></item>
+				<item id="wxskm"><![CDATA[微信收款码]]></item>
+				<item id="gjsz"><![CDATA[赶紧设置您的收款二维码吧！]]></item>
+				<item id="dssz"><![CDATA[打赏设置]]></item>
+				<item id="scxz"><![CDATA[上传文件必须是图片文件，且大小必须小于]]></item>
+				<item id="hqfs"><![CDATA[<p><strong>一、微信收款码获取方法：</strong><br />
+1、打开微信,点击右上角“+号”，选择“收付款”
+  <br />
+  2、选择“我要收款”，生成收款二维码
+  <br />
+  3、长按二维码，选择保存二维码到手机，并把二维码发送到电脑（通过QQ或者iCloud等工具）。
+  <br />
+  4、使用QQ截图等工具，将二维码区域截图保存到桌面。（为了最好的前端展示效果，请精确剪裁二维码）
+  <br />
+  5、把截取的二维码图片上传到后台微信收款二维码。  </p>
+<p>&nbsp;</p>
+<p><strong>二、支付宝收款二维码获取方法：</strong><br />
+  1、手机打开支付宝APP，点击右上角“+号”，选择“收款”
+  <br />
+  2、长按二维码，选择保存二维码到手机，并把二维码发送到电脑（通过QQ或者iCloud等工具）。
+  <br />
+  3、使用QQ截图等工具，将二维码区域截图保存到桌面。（为了最好的前端展示效果，请精确剪裁二维码）
+  <br />
+  4、把截取的二维码图片上传到后台支付宝收款二维码。]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+	</item>
+</root>

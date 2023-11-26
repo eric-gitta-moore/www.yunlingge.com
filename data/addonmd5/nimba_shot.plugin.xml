@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[nimba_shot.plugin]]></item>
+	<item id="RevisionID"><![CDATA[14061]]></item>
+	<item id="SN"><![CDATA[2020012615USMXsS2O2s]]></item>
+	<item id="RevisionDateline"><![CDATA[1562315694]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_nimba_shot_SC_UTF8.xml"><![CDATA[d49513cb0e272d2d0f081022ec30c5a5]]></item>
+		<item id="/uninstall.php"><![CDATA[a783d39a5e8cfcff0d0ec30ab2145a4b]]></item>
+		<item id="/libs/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/hook.class.php"><![CDATA[2444eb10a384668e6fb57c02d30800dd]]></item>
+		<item id="/discuz_plugin_nimba_shot_TC_UTF8.xml"><![CDATA[31b6797bff0bdcef538ca7a7707c9ed9]]></item>
+		<item id="/addon.inc.php"><![CDATA[5e68c1a0c6f79e27be53f55d73652f71]]></item>
+		<item id="/install.php"><![CDATA[273bd57d278280b284c7713dcb921d4e]]></item>
+		<item id="/upgrade.php"><![CDATA[8c472b15daf48c49414ca4fe5d184099]]></item>
+		<item id="/hot.inc.php"><![CDATA[774f9ea423ddd3d1e4a6e166d8d4e03c]]></item>
+	</item>
+</root>

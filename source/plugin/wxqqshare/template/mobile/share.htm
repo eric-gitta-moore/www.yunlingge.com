@@ -1,0 +1,20 @@
+<!--{block return}-->
+	<script type="text/javascript" src="source/plugin/wxqqshare/js/share.js?{VERHASH}"></script>
+	<script type="text/javascript">
+     setShareInfo({
+         title: "$sharetitle",
+         summary: "$sharesummary",
+         pic: "$sharepic",
+         url: "$url",
+		<!--{if $wxconfig}-->
+         WXconfig:       {
+             swapTitleInWX: false,
+             appId: '{$wxconfig[appid]}',
+             timestamp: '{$wxconfig[timestamp]}',
+             nonceStr: '{$wxconfig[noncestr]}',
+             signature: '{$wxconfig[signature]}'
+         }
+		<!--{/if}-->
+     });
+	</script>	
+<!--{/block}-->

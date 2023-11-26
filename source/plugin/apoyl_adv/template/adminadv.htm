@@ -1,0 +1,8 @@
+<table class="tb tb2 fixpadding">
+<tbody><tr class="header"><th>{lang apoyl_adv:subject}</th><th>{lang apoyl_adv:url}</th><th>{lang apoyl_adv:pvcount}</th><th>{lang apoyl_adv:showcount}</th><th>{lang apoyl_adv:modtime}</th><th></th></tr>
+<!-- {loop $arr $v} -->
+<tr class="hover"><td class="td25">$v['subject']</td><td class="td25">$v['url']</td><td class="td25">$v['pvcount']</td><td class="td25">$v['showcount']</td><td class="td25"><!--{eval echo date('Y-m-d H:i:s',$v['modtime']) }--></td><td class="td25"></td></tr>
+<!-- {/loop} -->
+<tr><td colspan="5">
+<div class="cuspages right"><!--{$pagecode}--></div></td></tr>
+</table>

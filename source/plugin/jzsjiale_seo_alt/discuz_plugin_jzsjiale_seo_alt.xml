@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,F1.0]]></item>
+	<item id="Time"><![CDATA[2016-10-28 19:32]]></item>
+	<item id="From"><![CDATA[（www.xhkj5.com）]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[搜索引擎友好的图片]]></item>
+			<item id="identifier"><![CDATA[jzsjiale_seo_alt]]></item>
+			<item id="description"><![CDATA[本插件可以批量给你文章中的图片添加 alt 和 title 信息.]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[jzsjiale_seo_alt/]]></item>
+			<item id="copyright"><![CDATA[讯幻网（www.xhkj5.com）]]></item>
+			<item id="version"><![CDATA[4.0.3]]></item>
+			<item id="__modules">
+
+				<item id="0">
+					<item id="name"><![CDATA[settings]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[论坛规则设置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[keywords]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[关键词过滤]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[seoalt]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[3]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[mobile]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[4]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,F1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[是否开启]]></item>
+				<item id="description"><![CDATA[该开关为全局开关，如选否，则本插件的所有设置、功能都会停用。]]></item>
+				<item id="variable"><![CDATA[g_isopen]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="lesettings"><![CDATA[规则列表]]></item>
+				<item id="addsetting"><![CDATA[添加规则]]></item>
+				<item id="editsetting"><![CDATA[编辑规则]]></item>
+				<item id="lesettingstitle">
+					<item id="0"><![CDATA[ID]]></item>
+					<item id="1"><![CDATA[规则标题]]></item>
+					<item id="2"><![CDATA[是否开启]]></item>
+					<item id="3"><![CDATA[投放范围]]></item>
+					<item id="4"><![CDATA[版块]]></item>
+					<item id="5"><![CDATA[用户组]]></item>
+					<item id="6"><![CDATA[创建时间]]></item>
+					<item id="7"><![CDATA[操作]]></item>
+				</item>
+				<item id="yes"><![CDATA[是]]></item>
+				<item id="no"><![CDATA[否]]></item>
+				<item id="settingnotitlename"><![CDATA[对不起,规则标题不能为空,该规则标题仅用于后台管理员识别通知用]]></item>
+				<item id="setting_titlename_more"><![CDATA[规则标题过长]]></item>
+				<item id="addsettingtitle"><![CDATA[添加规则]]></item>
+				<item id="editsettingtitle"><![CDATA[编辑规则]]></item>
+				<item id="settingtitlename"><![CDATA[规则名称]]></item>
+				<item id="settingtitlename_msg"><![CDATA[该规则名称仅用于后台管理员识别规则用]]></item>
+				<item id="settingisopen"><![CDATA[是否开启]]></item>
+				<item id="settingisopen_msg"><![CDATA[是否开启,仅用于该条规则]]></item>
+				<item id="settingtargets"><![CDATA[投放范围]]></item>
+				<item id="settingtargetspc"><![CDATA[电脑端]]></item>
+				<item id="settingtargetswsq"><![CDATA[微社区]]></item>
+				<item id="settingtargetsmobile"><![CDATA[手机端]]></item>
+				<item id="settingtargetsfidslist"><![CDATA[论坛列表页]]></item>
+				<item id="settingtargetstidcontent"><![CDATA[论坛内容页]]></item>
+				<item id="settinghuifu"><![CDATA[回帖与正文一致]]></item>
+				<item id="settinghuifu_msg"><![CDATA[选是：回帖中图片alt与title信息与正文一致;<br/>先否：回帖中图片alt与title信息从回帖内容中读取。]]></item>
+				<item id="settingalt"><![CDATA[alt规则]]></item>
+				<item id="settingalt_msg"><![CDATA[变量：%forum代表版块名称；%title代表帖子标题；%tags代表关键词；%name代表图片名称；%num代表自动递增序号;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">%imgdesc代表图片描述</span>，即编辑器上传图片时为图片添加的描述信息;<br/>示例：%title %forum 可带自定文字;<br/>例如：在一篇题为"文章图片"有一个图片命名image.jpg;<br/>设置alt属性“%name %title”会产生alt=”image 文章图片”。]]></item>
+				<item id="settingtitle"><![CDATA[title规则]]></item>
+				<item id="settingtitle_msg"><![CDATA[变量：%forum代表版块名称；%title代表帖子标题；%tags代表关键词；%name代表图片名称；%num代表自动递增序号;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">%imgdesc代表图片描述</span>，即编辑器上传图片时为图片添加的描述信息;<br/>示例：%title %forum 可带自定文字;<br/>例如：在一篇题为"文章图片"有一个图片命名image.jpg;<br/>设置title属性“%的名字为标题”会产生title=”image 文章图片”。]]></item>
+				<item id="settingisoverridealt"><![CDATA[是否覆盖原有alt]]></item>
+				<item id="settingisoverridealt_msg"><![CDATA[说明：如果原来没有alt，此处即便选否也会添加！]]></item>
+				<item id="settingisoverridetitle"><![CDATA[是否覆盖原有title]]></item>
+				<item id="settingisoverridetitle_msg"><![CDATA[说明：如果原来没有title，此处即便选否也会添加！]]></item>
+				<item id="settingistags"><![CDATA[调用论坛自带主题标签]]></item>
+				<item id="settingistags_msg"><![CDATA[选是：调用论坛自带功能，获取当前主题标签，请在发帖时，在编辑器下，填写“主题标签”，否则无法获取。<br/>选否：调用discuz官方分词服务器，获取当前帖子内容关键词标签。<span style="color:red;">注意：如果您的服务器与discuz分词服务器连接慢，使用此项可能会造成网站打开速度变慢，此时该项设置请选-->是</span>]]></item>
+				<item id="settingstarttime"><![CDATA[规则生效起始时间]]></item>
+				<item id="settingstarttime_msg"><![CDATA[请输入规则生效起始时间,留空则不限制起始时间]]></item>
+				<item id="settingendtime"><![CDATA[规则生效截止时间]]></item>
+				<item id="settingendtime_msg"><![CDATA[请输入规则生效截止时间,留空则不限制截止时间]]></item>
+				<item id="setting_endtime_invalid"><![CDATA[弹出截止时间不能小于当前时间或者开始时间]]></item>
+				<item id="settingnotargets"><![CDATA[请选择投放范围]]></item>
+				<item id="settingfidstitle"><![CDATA[版块选择]]></item>
+				<item id="settingfidscomment"><![CDATA[按ctrl多选,按ctrl+A全选]]></item>
+				<item id="settingusergroupstitle"><![CDATA[用户组选择]]></item>
+				<item id="settingusergroupscomment"><![CDATA[按ctrl多选,按ctrl+A全选,越下级的用户组优先级越高,(该规则仅对用户的所属用户组过滤)]]></item>
+				<item id="settingnofids"><![CDATA[请选择版块]]></item>
+				<item id="settingnogroupid"><![CDATA[请选择用户组]]></item>
+				<item id="details"><![CDATA[详细]]></item>
+				<item id="edit"><![CDATA[编辑]]></item>
+				<item id="delete"><![CDATA[删除]]></item>
+				<item id="empty"><![CDATA[对不起,不存在这条关键词]]></item>
+				<item id="aboutsettings"><![CDATA[关于图片优化功能设置的相关说明（包含论坛电脑版、手机版、微社区版）]]></item>
+				<item id="settingsdescription"><![CDATA[1、<span style="color:red;">该模块设置仅适用于论坛帖子页;</span><br/>2、如果多条规则中出现相同版块、用户组,则以最新添加的一条规则为准;如果存在相同版块，用户组不同,则按添加时间倒序查找含当前用户组的规则;<br/>3、使用％imgdesc标签时,仅支持编辑器上传图片处添加的描述，因外链无法添加描述信息，故自动将外链图片的描述信息留空;<br/>4、使用％imgdesc标签时,无论"回帖与正文一致"选项为是或否,回帖图片alt、title中的图片描述均为当前图片的描述。<br/>5、如果设置了规则的启用时间与截至时间,并且该符合当前的版块、用户组要求,则以该规则为准，参考第2条说明。<br/>]]></item>
+				<item id="keywordslist"><![CDATA[关键词列表]]></item>
+				<item id="keywordslisttitle">
+					<item id="0"><![CDATA[ID]]></item>
+					<item id="1"><![CDATA[关键词]]></item>
+					<item id="2"><![CDATA[创建时间]]></item>
+					<item id="3"><![CDATA[操作]]></item>
+				</item>
+				<item id="add"><![CDATA[添加关键词]]></item>
+				<item id="aboutkeywords"><![CDATA[关于关键词过滤设置的相关说明]]></item>
+				<item id="description"><![CDATA[如果您使用了％tag标签，获取到的内容关键词中存在此处所设置的关键词，将会自动过滤掉，不会显示出来！即此关键词设置仅对％tag标签有效。]]></item>
+				<item id="copyright"><![CDATA[<a href="mailto:154606914@qq.com" target="_blank">jzsjiale <154606914@qq.com></a>]]></item>
+				<item id="addkeywords"><![CDATA[添加关键词]]></item>
+				<item id="editkeywords"><![CDATA[修改关键词]]></item>
+				<item id="cachekeywords"><![CDATA[更新关键词缓存]]></item>
+				<item id="dkeywords"><![CDATA[关键词]]></item>
+				<item id="dkeywords_msg"><![CDATA[该关键词将会被过滤掉，不再显示。]]></item>
+				<item id="nokeywords"><![CDATA[关键词不能为空]]></item>
+				<item id="d_keywords_more"><![CDATA[关键词不能大于40字节]]></item>
+				<item id="addok"><![CDATA[添加成功]]></item>
+				<item id="editok"><![CDATA[修改成功]]></item>
+				<item id="error"><![CDATA[错误,请重试]]></item>
+				<item id="delok"><![CDATA[删除成功]]></item>
+				<item id="ddel"><![CDATA[是否删除关键词【{keywords}】]]></item>
+				<item id="delsetting"><![CDATA[是否删除规则【{titlename}】]]></item>
+				<item id="ddateline"><![CDATA[创建时间]]></item>
+				<item id="cache_success"><![CDATA[更新缓存成功]]></item>
+				<item id="cache_error"><![CDATA[更新缓存失败，或没有需要缓存的内容]]></item>
+				<item id="bbshome"><![CDATA[论坛首页]]></item>
+				<item id="nullstr"><![CDATA[空]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="keywordslist"><![CDATA[关键词列表]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

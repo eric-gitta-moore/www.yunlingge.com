@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[vaptcha.plugin]]></item>
+	<item id="RevisionID"><![CDATA[78012]]></item>
+	<item id="SN"><![CDATA[2020013007Io4aO1OoSi]]></item>
+	<item id="RevisionDateline"><![CDATA[1576645813]]></item>
+	<item id="Data">
+		<item id="/vaptcha_mobile.class.php"><![CDATA[e97149fef726361f27e80630ea40268d]]></item>
+		<item id="/vaptcha.class.php"><![CDATA[1b0fbba7e887c15f4830125a51d3235c]]></item>
+		<item id="/lib/vaptcha.class.php"><![CDATA[702ca71810d48c6b42181fea2accadb0]]></item>
+		<item id="/lib/helper.class.php"><![CDATA[d3a4fe3e26f12be5b523857b9a97fa65]]></item>
+		<item id="/lib/config.php"><![CDATA[6bc4444ad8abacd8b17190be033513ad]]></item>
+		<item id="/vaptcha.inc.php"><![CDATA[e41451d7bf514fb2713fc12cce422bc7]]></item>
+		<item id="/setting.inc.php"><![CDATA[1151c2555bcee6a8cbaa86fdd697b307]]></item>
+		<item id="/embed_class/plugin_vaptcha_portal.php"><![CDATA[6826cfa15e9e2ae1466005dd6ac5aa1d]]></item>
+		<item id="/embed_class/plugin_vaptcha_forum.php"><![CDATA[c6a80cb564999d52ad80acb5953c72b0]]></item>
+		<item id="/embed_class/plugin_vaptcha_member.php"><![CDATA[f789f38ce753e0573572912e2a1f7e96]]></item>
+		<item id="/embed_class/plugin_vaptcha_group.php"><![CDATA[fa0d4fe42596b0066bdad2d960f4d8ac]]></item>
+		<item id="/embed_class/plugin_vaptcha_home.php"><![CDATA[e6a57ef50fa48ef54fa757ef575d6c95]]></item>
+		<item id="/static/css/set.css"><![CDATA[ae63d0d170c012d183d68acd96f1bca4]]></item>
+		<item id="/static/css/colpick.css"><![CDATA[37a35a4b089ffd8b8c812ee219cd8e14]]></item>
+		<item id="/static/img/vaptcha-dz-btn.png"><![CDATA[9ad33157e157d44bae35fc63e1ff27ef]]></item>
+		<item id="/static/js/colpick.js"><![CDATA[3f7ef3d0af7d4f64d926d34964030c94]]></item>
+		<item id="/static/js/jquery.min.js"><![CDATA[eaec1712551cd2792f4607f39fab12e7]]></item>
+		<item id="/static/js/set.js"><![CDATA[f9893f7effc07431c2c1fb86cd4d20a3]]></item>
+		<item id="/controller/main.php"><![CDATA[52f59d8208e9e8ce4aaac67d613ea39e]]></item>
+		<item id="/discuz_plugin_vaptcha_SC_UTF8.xml"><![CDATA[07d1173cd505e39ddd37bd100107e0ad]]></item>
+		<item id="/discuz_plugin_vaptcha_TC_UTF8.xml"><![CDATA[295005c7d99a60692b20b050886585b9]]></item>
+		<item id="/template/extend_common.css"><![CDATA[6eb6418b7b7979520d3191586ac80536]]></item>
+		<item id="/template/embed_captcha.htm"><![CDATA[78ea57fe96e81c870c363302f3f59d9f]]></item>
+		<item id="/template/mobile_captcha.php"><![CDATA[ea7c5a03c811bf417635537dd78f525d]]></item>
+		<item id="/template/click_captcha.htm"><![CDATA[8257301ac61e4755c8c56517c1dea569]]></item>
+		<item id="/template/member_captcha.htm"><![CDATA[a1f50987b3bebdc13da9baa1e5c9338a]]></item>
+		<item id="/template/vaptcha_tpl.htm"><![CDATA[37db96b07a411cb61bfdce0874594c58]]></item>
+		<item id="/template/setting.htm"><![CDATA[7a9d61f327fce0b7eb4ed0d98f898a87]]></item>
+	</item>
+</root>

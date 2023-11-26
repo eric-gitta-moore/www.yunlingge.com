@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5]]></item>
+	<item id="Time"><![CDATA[2014-02-28 15:32]]></item>
+	<item id="From"><![CDATA[http://www.1314study.com/]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[[1314]嵌入点显示]]></item>
+			<item id="identifier"><![CDATA[hook]]></item>
+			<item id="description"><![CDATA[定制联系QQ：15326940]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[hook/]]></item>
+			<item id="copyright"><![CDATA[1314学习网（www.discuz.1314study.com）]]></item>
+			<item id="version"><![CDATA[1.0.1]]></item>
+		</item>
+		<item id="version"><![CDATA[X1.5,X2,X2.5,X3,X3.1,X3.2,X3.3,X3.4,X3.5]]></item>
+		<item id="language">
+			<item id="templatelang">
+				<item id="tlang_001"><![CDATA[隐藏插件钩子]]></item>
+				<item id="tlang_002"><![CDATA[显示插件钩子]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+		<item id="checkfile"><![CDATA[check.php]]></item>
+	</item>
+</root>

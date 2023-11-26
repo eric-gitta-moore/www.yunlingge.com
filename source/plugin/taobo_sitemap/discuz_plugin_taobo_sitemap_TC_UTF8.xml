@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,F1.0,L1.0,X3.3,X3.4]]></item>
+	<item id="Time"><![CDATA[2019-09-10 14:49]]></item>
+	<item id="From"><![CDATA[源  碼   哥   y  m g   6  .  c   o m]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[[滔博]網站地圖]]></item>
+			<item id="identifier"><![CDATA[taobo_sitemap]]></item>
+			<item id="description"><![CDATA[本插件能將網站帖子內容生成.xml格式的網站地圖，并提交給搜索引擎，幫助網站進行SEO優化！]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[taobo_sitemap/]]></item>
+			<item id="copyright"><![CDATA[源碼哥（www.ymg6.com）]]></item>
+			<item id="version"><![CDATA[Ver2.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[sitemapauto]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[do]]></item>
+					<item id="menu"><![CDATA[手動生成地圖]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[addon]]></item>
+					<item id="menu"><![CDATA[<span style="color:#009900;">更多應用</span>]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[99]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1999">
+					<item id="name"><![CDATA[admincp_addonymg]]></item>
+					<item id="menu"><![CDATA[<span style="color:#E53333;"><b>更多插件</b></span>]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,F1.0,L1.0,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[-3]]></item>
+				<item id="title"><![CDATA[網站主域名]]></item>
+				<item id="description"><![CDATA[填寫你的主域名，不含“http://”和結尾的“/”]]></item>
+				<item id="variable"><![CDATA[mysite]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[www.9rao.com]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[-2]]></item>
+				<item id="title"><![CDATA[開啟自動更新地圖]]></item>
+				<item id="description"><![CDATA[如網站內容過多不建議開啟自動更新，建議每天手動生成更新一次！]]></item>
+				<item id="variable"><![CDATA[auto]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[-1]]></item>
+				<item id="title"><![CDATA[開啟分卷多地圖模式]]></item>
+				<item id="description"><![CDATA[開啟后則自動分卷生成多個地圖文件，建議網站內容多的用戶開啟。]]></item>
+				<item id="variable"><![CDATA[open]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[單個分卷網址數量]]></item>
+				<item id="description"><![CDATA[為響應搜索引擎規定：建議每個Sitemap文件網址數量不超過5萬條，并需小于10MB。]]></item>
+				<item id="variable"><![CDATA[num]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[3000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[最大分卷地圖數量]]></item>
+				<item id="description"><![CDATA[設置最多生成多少卷地圖，留空或填0則表示不限制。]]></item>
+				<item id="variable"><![CDATA[maxmaps]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[地圖收錄內容類型]]></item>
+				<item id="description"><![CDATA[設置地圖內收錄顯示的內容網址類型]]></item>
+				<item id="variable"><![CDATA[urls]]></item>
+				<item id="type"><![CDATA[selects]]></item>
+				<item id="extra"><![CDATA[1=論壇主題
+2=論壇版塊
+3=門戶文章]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[1]]></item>
+					<item id="1"><![CDATA[2]]></item>
+					<item id="2"><![CDATA[3]]></item>
+				</item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[論壇主題優先級]]></item>
+				<item id="description"><![CDATA[如無特殊需要，保持默認即可。（級別:0.0~1.0）]]></item>
+				<item id="variable"><![CDATA[rank1]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0.8]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[論壇版塊優先級]]></item>
+				<item id="description"><![CDATA[如無特殊需要，保持默認即可。（級別:0.0~1.0）]]></item>
+				<item id="variable"><![CDATA[rank2]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0.7]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[門戶文章優先級]]></item>
+				<item id="description"><![CDATA[如無特殊需要，保持默認即可。（級別:0.0~1.0）]]></item>
+				<item id="variable"><![CDATA[rank3]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0.6]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[論壇主題更新頻率]]></item>
+				<item id="description"><![CDATA[默認為每小時一次更新。]]></item>
+				<item id="variable"><![CDATA[change1]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[1=總是
+2=小時
+3=每天
+4=每周
+5=每月
+6=每年
+7=從不]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[論壇版塊更新頻率]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[change2]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=總是
+2=小時
+3=每天
+4=每周
+5=每月
+6=每年
+7=從不]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[門戶文章更新頻率]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[change3]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[1=總是
+2=小時
+3=每天
+4=每周
+5=每月
+6=每年
+7=從不]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[地圖名稱]]></item>
+				<item id="description"><![CDATA[必須為.xml格式，無特殊需要，不建議修改。]]></item>
+				<item id="variable"><![CDATA[filename]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[sitemap.xml]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[網站目錄]]></item>
+				<item id="description"><![CDATA[例如網站在根目錄時填/，在子目錄abc時填/abc/，依此類推。]]></item>
+				<item id="variable"><![CDATA[web_root]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[/]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[自動更新地圖周期]]></item>
+				<item id="description"><![CDATA[單位：秒，開啟自動更新地圖后使用此設置，建議一般情況下設置為3600，即1小時更新一次。內容較多的網站建議設置為86400，即24小時更新一次。]]></item>
+				<item id="variable"><![CDATA[cycle]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[86400]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[編碼方式]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[charset]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=GBK
+2=UTF-8]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[網站地圖不收錄版塊]]></item>
+				<item id="description"><![CDATA[設置不想讓網站地圖收錄的版塊]]></item>
+				<item id="variable"><![CDATA[ban]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[添加頁底網站地圖鏈接]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[link]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+		<item id="license"><![CDATA[[*]源碼哥：www.ymg6.com.
+[*]更多商業插件/模版免費下載 百度搜索 源碼哥.
+[*]本資源來源于網絡收集,僅供個人學習交流，請勿用于商業用途，并于下載24小時后刪除!
+[*][b]技術支持:[/b][url=http://www.ymg6.com/]源碼哥[/url]
+[*]如果侵犯了您的權益,請及時告知我們,我們即刻刪除!.
+[*][b]QQ群:[/b]550494646
+[*][color=Red]如果您愿意資助我們,請至[url]http://www.ymg6.com[/url]對我們進行贊助.[/color]
+[*]最后,感謝您使用我們分享的插件,更多精品插件盡在源碼哥).]]></item>		
+	</item>
+</root>

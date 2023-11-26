@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{$title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{$desc}"/>
+    <meta name="keywords" content="{$keywords}"/>
+    <link href='{$static}/css/ad90f9b8861d47169f8e1dfa1f2e3e00.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{$static}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{$static}/css/animate.css">
+    <link rel="stylesheet" href="{$static}/css/style.css">
+    <!-- Modernizr JS -->
+    <script src="{$static}/js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="{$static}/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <!-- Start Sign In Form -->
+            <form class="fh5co-form animate-box" style="border-radius:20px;">
+                <h2>{$config['nav_title']}</h2>
+                <div class="alert alert-info text-center" role="alert">
+                    {$config['tips']}
+                </div>
+                <a id="zfb" class="btn btn-warning btn-block" <!--{if empty($config['zfb'])}-->disabled<!--{/if}-->>支付宝</a><p/><p/>
+                <a id="wx" class="btn btn-info btn-block" <!--{if empty($config['wx'])}-->disabled<!--{/if}-->>微信</a><p/>
+                <a id="qq" class="btn btn-success btn-block" <!--{if empty($config['qq'])}-->disabled<!--{/if}-->>QQ</a><p/>
+                <a id="cft" class="btn btn-danger btn-block" <!--{if empty($config['cft'])}-->disabled<!--{/if}-->>财付通</a><p/>
+                <div class="form-group text-center">
+                    <p><a href="{$_G['setting']['siteurl']}">{$_G['setting']['sitename']}</a>
+                    </p>
+                </div>
+            </form>
+            <!-- END Sign In Form -->
+        </div>
+    </div>
+    <div class="row" style="padding-top: 60px; clear: both;">
+        <div class="col-md-12 text-center">
+            <p>
+                <small>Copyright &copy; {eval echo date('Y');} <a href="http://www.yunlingge.com/">云凌工作室</a> All Rights Reserved.</small>
+            </p>
+        </div>
+    </div>
+</div>
+<!-- jQuery -->
+<script src="{$static}/js/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="{$static}/js/bootstrap.min.js"></script>
+<!-- Placeholder -->
+<script src="{$static}/js/jquery.placeholder.min.js"></script>
+<!-- Waypoints -->
+<script src="{$static}/js/jquery.waypoints.min.js"></script>
+<script src="{$static}/layer/layer.js"></script>
+<!-- Main JS -->
+<script src="{$static}/js/main.js"></script>
+
+<script>
+    <!--{if !empty($config['zfb'])}-->
+    $('#zfb').on('click', function(){
+        layer.open({
+            type: 1,
+            title: '支付宝',
+            maxmin: true,
+            shadeClose: true, //点击遮罩关闭层
+            area : ['{$width}px' , '{$height}px'],
+            content: '<!doctype html><html><head><meta charset="utf-8"></head><body style="text-align: center;"><img style="height:100%;width:100%" id="bg" src="{$config[zfb]}" /></body></html>'
+        });
+    });
+    <!--{/if}-->
+
+    <!--{if !empty($config['qq'])}-->
+    $('#qq').on('click', function(){
+        layer.open({
+            type: 1,
+            title: 'QQ',
+            maxmin: true,
+            shadeClose: true, //点击遮罩关闭层
+            area : ['{$width}px' , '{$height}px'],
+            content: '<!doctype html><html><head><meta charset="utf-8"></head><body style="text-align: center;"><img style="height:100%;width:100%" id="bg" src="{$config[qq]}" /></body></html>'
+        });
+    });
+    <!--{/if}-->
+
+    <!--{if !empty($config['wx'])}-->
+    $('#wx').on('click', function(){
+        layer.open({
+            type: 1,
+            title: '微信',
+            maxmin: true,
+            shadeClose: true, //点击遮罩关闭层
+            area : ['{$width}px' , '{$height}px'],
+            content: '<!doctype html><html><head><meta charset="utf-8"></head><body style="text-align: center;"><img style="height:100%;width:100%" id="bg" src="{$config[wx]}" /></body></html>'
+        });
+    });
+    <!--{/if}-->
+
+    <!--{if !empty($config['cft'])}-->
+    $('#cft').on('click', function(){
+        layer.open({
+            type: 1,
+            title: '财付通',
+            maxmin: true,
+            shadeClose: true, //点击遮罩关闭层
+            area : ['{$width}px' , '{$height}px'],
+            content: '<!doctype html><html><head><meta charset="utf-8"></head><body style="text-align: center;"><img style="height:100%;width:100%" id="bg" src="{$config[cft]}" /></body></html>'
+        });
+    });
+    <!--{/if}-->
+</script>
+</body>
+</html>

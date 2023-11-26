@@ -1,0 +1,378 @@
+{template viewui_tools:header}
+<script>
+var u = window.navigator.userAgent.toLocaleLowerCase(),
+ie11 = /(trident)\/([\d.]+)/,
+b = u.match(ie11);
+if(b){
+     alert("{lang viewui_tools:ieerror}");
+     window.location.href = "plugin.php?id=viewui_tools";
+     document.getElementById('open').style.display='none';     
+}
+</script>
+<style>
+#viewui-toolsbg .tips{
+    overflow: hidden;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #FBEED5;
+    border-radius: 4px;
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    color: #3A87AD;
+    margin-bottom: 10px;
+}
+#viewui-toolsbg .tips strong{
+    margin-right: 5px;
+}
+#viewui-toolsbg{
+	overflow:hidden;
+}
+#viewui-toolsbg .left {
+    float: left;
+    width: 30%;
+    margin-right: 4%;
+}
+#viewui-toolsbg .right {
+    float: left;
+    width: 65%;
+	margin-bottom:10px;
+}
+#viewui-toolsbg .fileup{
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	position: relative;
+	margin: 10px 0;
+}
+#viewui-toolsbg .fileup img{
+    width: 100%;
+    height: 100%;
+	cursor:pointer;
+}
+#viewui-toolsbg .fileup input{
+	width: 100px;
+	height: 100px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+#viewui-toolsbg .left .tt,.right .tt{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    color: #333;
+}
+#viewui-toolsbg .left .img-show{
+    width: 90%;
+    height: auto;
+    overflow: auto;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 10px;
+	margin:10px 0;
+}
+#viewui-toolsbg .left .img-show img{
+    width: 100%;
+    height: 100%;
+}
+#viewui-toolsbg .right #area-16p{
+	float:left;
+	width:50%;
+}
+#viewui-toolsbg .right #area-16p,#area-rgbap{
+	float:left;
+	width:50%;
+}
+#viewui-toolsbg section p span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+#viewui-toolsbg .left button {
+    background-color: #55a7e3;
+    color: #fff;
+    font-family: 'Microsoft YaHei';
+    border: none;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: .5px;
+    text-decoration: none;
+    margin: 10px 0;
+	outline:none;
+}
+#viewui-toolsbg .left button:hover {
+    cursor: pointer;
+    transition: 0.5s;
+}
+.module-list-name {
+	font-size: 16px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.module-check {
+	position: relative;
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+}
+
+.module-check span {
+	display: block;
+	background: #fff url(source/plugin/viewui_tools/image/check.png) no-repeat center center/16px 16px;
+	width: 16px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.module-check input:checked + span {
+	background: #fff url(source/plugin/viewui_tools/image/checked.png) no-repeat center center/16px 16px;
+}
+
+.module-show-area section {
+	float: left;
+	width: 50%;
+	font-size: 0;
+}
+
+.module-show-area section p {
+	line-height: 30px;
+	display: inline-block;
+	width: 200px;
+	font-size: 16px;
+}
+
+.module-show-area section p span {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+}
+</style>
+		<div id="viewui-toolsbg">
+		<div class="tips"><strong>{lang viewui_tools:tip}</strong>{lang viewui_tools:colorsummary}</div>
+			<div class="left">
+			<p class="tt">{lang viewui_tools:colorlefttt}</p>
+			<div class="fileup">
+			<img src="source/plugin/viewui_tools/image/imgup.jpg"/>
+			<input type="file" id="file" onchange="setFiles(this,'showImg')" class="form-control" placeholder="{lang viewui_tools:colorbdtip}">
+			</div>
+			<div class="btns">
+				            <div class="module-check-box">
+	            	<div class="module-list-name">
+		            	<label class="module-check">
+			            	<input type="checkbox" id="checkRange" checked="checked"> 
+			            	<span></span>
+			            	{lang viewui_tools:colortip1}
+			            </label>
+		            </div>
+		            <div class="module-list-name">
+		            	<label class="module-check">
+			            	<input type="checkbox" id="check16" onclick="check({area16:'area-16p',areaRgba:'area-rgbap',check16:'check16',checkRgb:'checkRgb'})" checked="checked"> 
+			            	<span></span>
+			            	{lang viewui_tools:colortip2}
+			            </label>
+		            </div>
+		            <div class="module-list-name">
+		            	<label class="module-check">
+			            	<input type="checkbox" id="checkRgb" onclick="check({area16:'area-16p',areaRgba:'area-rgbap',check16:'check16',checkRgb:'checkRgb'})" checked="checked"> 
+			            	<span></span>
+			            	{lang viewui_tools:colortip3}
+			            </label>
+		            </div>
+		            <div class="module-list-name">
+		            	<label class="module-check">
+			            	<input type="checkbox" id="checkAlike"> 
+			            	<span></span>
+			            	{lang viewui_tools:colortip4}
+			            </label>
+		            </div>
+	            </div>
+					<button  id="open" onclick="colorPicker(1,{showImg:'showImg',area16:'area-16',areaRgba:'area-rgba',check16:'check16',checkRgb:'checkRgb',checkAlike:'checkAlike',checkRange:'checkRange'})">{lang viewui_tools:colorok}</button>
+			</div>
+			<p class="tt">{lang viewui_tools:colorimgyl}</p>
+			<div class="img-show">
+			<img id="showImg" onclick="colorPicker(0,{showImg:'showImg',area16:'area-16',areaRgba:'area-rgba',check16:'check16',checkRgb:'checkRgb',checkAlike:'checkAlike',checkRange:'checkRange'})" src="source/plugin/viewui_tools/image/img.png"/>
+			</div>
+			</div>
+		
+				<div class="right">
+				<p class="tt">{lang viewui_tools:colorsbjg}</p>
+				<div class="show">
+				<section id="area-16p">
+            		<div class="module-list-name">{lang viewui_tools:color16}</div>
+            		<div id="area-16"></div>
+            	</section>
+				<section id="area-rgbap">
+            		<div class="module-list-name">{lang viewui_tools:colorrgb}</div>
+            		<div id="area-rgba"></div>
+            	</section>
+				</div>
+				</div>
+		</div>
+   
+		<script type="text/javascript">
+			(() => {
+				let obj = {};
+				let $ = function(id){
+					return document.getElementById(id);
+				}
+				let getObjectURL = function(file){
+				    let url = null ; 
+				    if (window.createObjectURL!=undefined) { // basic
+				        url = window.createObjectURL(file) ;
+				    } else if (window.URL!=undefined) { // mozilla(firefox)
+				        url = window.URL.createObjectURL(file) ;
+				    } else if (window.webkitURL!=undefined) { // webkit or chrome
+				        url = window.webkitURL.createObjectURL(file) ;
+				    }
+				    return url ;
+				}
+				let hexadecimal = function(num) {
+                    var r = parseInt(num).toString(16);
+                    if (r.length == 1) {
+                        return '0' + r;
+                    }
+                    return r.toUpperCase();
+                }
+                let checkHasColor = function(arr, r, g, b) {
+                    for (var i = 0; i < arr.length; i++) {
+                        var n = equalsColor(arr[0], arr[1], arr[2], r, g, b);
+                        if (n >= 0.8) {
+                            return true;
+                        }
+                    }
+                    return false;
+                }
+                let equalsColor = function(r1, g1, b1, r2, g2, b2) {
+                    return (255 - Math.abs(r1 - r2) * 0.297 - Math.abs(g1 - g2) * 0.593 - Math.abs(b1 - b2) * 0.11) / 255;
+                }
+                let canvas = function(obj,size,param){
+                	let canvas = document.createElement("canvas");
+                    if (!canvas.getContext) {
+                        alert("{lang viewui_tools:colorerror}");
+                        return;
+                    }
+                    
+                    let ctx = canvas.getContext("2d");
+                    let str = "",str1 = "";
+                    let img = $(obj.showImg);
+                    let imgWidth = img.width;
+                    let imhHeight = img.height;
+                    let imgData = null;
+                    let newImg = new Image();
+                    
+                    newImg.onload = function(){
+                    	canvas.width = newImg.width;
+                        canvas.height = newImg.height;
+                        ctx.drawImage(newImg, 0, 0);
+                        if(param === 0){
+                        	let x = newImg.width * size.x / imgWidth;
+	                        let y = newImg.height * size.y / imhHeight;
+	                        let imgData = ctx.getImageData(x, y, 1, 1);
+	                        let color16 = '#'+ hexadecimal(imgData.data[0]) + hexadecimal(imgData.data[1]) + hexadecimal(imgData.data[2])
+	                        str1 = '<p><span style="background:'+ color16 +'"></span>'+ imgData.data.slice(0,3) +'</p>';
+	                        str = '<p><span style="background:'+ color16 +'"></span>'+ color16 +'</p>';
+                        }else if(param === 1){
+                        	if (!confirm("{lang viewui_tools:coloropentip}")) {
+		                        return;
+		                    }
+                        	let flag = false;
+	                        let indexRange;
+	                        let jsonObj = {};
+	                        let arr = [];
+	                        let check = [];
+	                        if ($(obj.checkRange).checked) {
+	                            flag = true;
+	                            indexRange = 10;
+	                        } else {
+	                            indexRange = 1;
+	                        }
+	                        for (let i = 0; i < imgWidth; i += indexRange) {
+	                            for (let j = 0; j < imhHeight; j += indexRange) {
+	                                let imgData = ctx.getImageData(i, j, indexRange, indexRange);
+	                                let color = '#' + hexadecimal(imgData.data[0]) + hexadecimal(imgData.data[1]) + hexadecimal(imgData.data[2]);
+	                                if (flag) {
+	                                    if (!checkHasColor(check, imgData.data[0], imgData.data[1], imgData.data[2]) && arr.indexOf(color) === -1) {
+	                                        arr.push(color);
+	                                        check.push([imgData.data[0], imgData.data[1], imgData.data[2]]);
+	                                    }
+	                                } else {
+	                                    if (arr.indexOf(color) === -1) {
+	                                        arr.push(color);
+	                                        check.push([imgData.data[0], imgData.data[1], imgData.data[2]]);
+	                                    }
+	                                }
+	                            }
+	                        }
+	                        for (let index = 0; index < arr.length; index++) {
+	                            str += '<p><span style="background-color:' + arr[index] + '"></span>' + arr[index] +'</p>';
+	                            str1 += '<p><span style="background-color:' + arr[index] + '"></span>' + check[index] +'</p>';
+	                        }
+	                        if($(obj.checkAlike).checked){
+	                        	for (let i = 0; i < imgWidth; i+=3) {
+	                        		let arr = {};
+		                            for (let j = 0; j < imhHeight; j+=3) {
+		                                let imgData = ctx.getImageData(i, j, indexRange, indexRange);
+	                                	let color = '#' + hexadecimal(imgData.data[0]) + hexadecimal(imgData.data[1]) + hexadecimal(imgData.data[2]);
+		                            	arr[j] = color;
+		                            }
+		                            jsonObj[i] = arr;
+		                        }
+	                        	console.log(JSON.stringify(jsonObj));
+	                        }
+                        }
+                        $(obj.area16).innerHTML = str;
+	                    $(obj.areaRgba).innerHTML = str1;
+                    }
+                    newImg.src = img.src;
+                }
+				window.setFiles = function(e,areaId){
+					e = e || window.event;
+					if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {
+                        alert("{lang viewui_tools:colorerror}");
+                        return;
+                    }
+					if(e.files.length > 0)$(areaId).src = getObjectURL(e.files[0]);
+				}
+				window.colorPicker = function(param,obj,e){
+					e = e || window.event;
+					$(obj.areaRgba).innerHTML = '';
+					$(obj.area16).innerHTML = '';
+					let size = {};
+	                if(param === 0){
+	                	if (e["offsetX"]) {
+		                    size.x = e.offsetX;
+		                    size.y = e.offsetY;
+		                } else {
+		                    let offset = img.getBoundingClientRect();
+		                    size.x = touch.clientX - offset.left;
+		                    size.y = touch.clientY - offset.top;
+		                }
+	                }
+					canvas(obj,size,param);
+				}
+				window.check = function(obj){
+					console.log($(obj.check16).checked);
+					if($(obj.check16).checked){
+	                	$(obj.area16).style.display = 'block';
+	                }else{
+	                	$(obj.area16).style.display = 'none';
+	                }
+	                if($(obj.checkRgb).checked){
+	                	$(obj.areaRgba).style.display = 'block';
+	                }else{
+	                	$(obj.areaRgba).style.display = 'none';
+	                }
+				}
+			})()
+		</script>
+{template viewui_tools:footer}

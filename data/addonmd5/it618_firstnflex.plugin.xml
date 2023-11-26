@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[it618_firstnflex.plugin]]></item>
+	<item id="RevisionID"><![CDATA[7950]]></item>
+	<item id="SN"><![CDATA[2020012608jlqXquZvSD]]></item>
+	<item id="RevisionDateline"><![CDATA[1561170094]]></item>
+	<item id="Data">
+		<item id="/images/ad.jpg"><![CDATA[80c953e2315d40adcb6724d8b9e4d743]]></item>
+		<item id="/images/titlebg.png"><![CDATA[47c44f22ac9221047b99987333a9d103]]></item>
+		<item id="/uninstall.php"><![CDATA[ce0b4a0d5c5cb7b09a44c527c57d1b2a]]></item>
+		<item id="/block.inc.php"><![CDATA[1d06f5c6f56552ac1f71379ed0fa3930]]></item>
+		<item id="/discuz_plugin_it618_firstnflex_TC_UTF8.xml"><![CDATA[149910a5cc68b0eb1392db7d4e0bec86]]></item>
+		<item id="/firstnflex.func.php"><![CDATA[4777d32e82bf47dbfa905406d738e5d3]]></item>
+		<item id="/help.inc.php"><![CDATA[2abd59ae02a3898ed92c77105ed71f60]]></item>
+		<item id="/install.php"><![CDATA[3a61f0973a53329b24e647873a6e13bb]]></item>
+		<item id="/js/tiptitle.js"><![CDATA[84017f80b982aa9250256519a2299e24]]></item>
+		<item id="/js/MSClass.js"><![CDATA[9010d4e16c6527380e4f8e43c9831cd1]]></item>
+		<item id="/js/jquery.js"><![CDATA[6e7910f3e2a0c122e760fe57afa8393c]]></item>
+		<item id="/js/hdp.js"><![CDATA[41cb9829452fb3ca651bbc74702776cc]]></item>
+		<item id="/discuz_plugin_it618_firstnflex_SC_UTF8.xml"><![CDATA[60e0ef32bacf4fd82e5b65ce1b783343]]></item>
+		<item id="/firstnflex.class.php"><![CDATA[36cf473d6ce49872433e701646f9699c]]></item>
+		<item id="/template/firstnflex.htm"><![CDATA[8891db6ef8fdd6a70355baabd73c6460]]></item>
+	</item>
+</root>

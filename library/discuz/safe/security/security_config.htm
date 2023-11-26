@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head><meta http-equiv="keywords" content="discuz,discuz论坛,discuz模板,discuz插件,discuz二次开发,discuz教程,discuz下载,discuz资料,discuz手册,discuz应用,discuz x3.2,discuz x3.3,discuz x3.4,discuz数据库字典" />
+<meta name="description" content="提供discuz discu zx3.2 discuz x3.3 discuz x3.4 的开发教程、使用手册、数据库字典，系统架构说明" />
+        <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+        <title>Discuz! 安全机制_Discuz! 资料库</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<meta name="keywords" content="Discuz! 安全" /> 
+		<meta name="description" content="本教程旨在帮助 Discuz! 站长学习Discuz!安全机制，如何开启XSS、CC防御设置。" /> 
+		<link rel="stylesheet" href="../../common.css" tppabs="http://faq.comsenz.com/library/common.css" />
+		<link rel="stylesheet" href="../style_part.css" tppabs="http://faq.comsenz.com/library/safe/style_part.css" />
+		<script src="../../base.js" tppabs="http://faq.comsenz.com/library/base.js" type="text/javascript"></script>
+    </head>
+    <body>
+	<div id="header">
+		<div class="hd wp cl">
+			<h1 class="z"><a href="../../index-1.htm" tppabs="http://faq.comsenz.com/library/index.htm">Discuz! 资料库文档索引</a></h1>
+			<h2><a href="#">Discuz! X资料库 —— 安全机制</a></h2>
+		</div>
+	</div>
+	<div id="topnv"><iframe id="nviframe" src="../topnv.htm" tppabs="http://faq.comsenz.com/library/safe/topnv.htm" height="45px" width="100%" frameborder="0" scrolling="no"></iframe></div>
+	<div class="main cl">
+		<div id="sd" class="indexlist z">
+			<h2 class="nvtitle"><span>安全机制</span></h2>
+			<ul>
+				<li class="a"><h3><a href="security_config.htm" tppabs="http://faq.comsenz.com/library/safe/security/security_config.htm">config 配置</a></h3></li>
+				<li><h3><a href="security_access.htm" tppabs="http://faq.comsenz.com/library/safe/security/security_access.htm">访问配置</a></h3></li>
+			</ul>
+		</div>
+		<div class="content wrap">
+			<h2 class="nvtitle">config配置</h2>
+			<div class="mainc">
+				<p>在config配置中可以打开相应的安全开关</p><br />
+
+				<div class="mainmsg">
+				<h3>站点 authkey</h3>
+				<p>站点authkey，是站点中一个非常重要的Key,用来加密与加密的加密串，当怀疑站点发生authkey泄漏可以通过这里变更一个Key。</p>
+				<div class="code">
+				<pre>
+ $_config['security']['authkey'] = 'asdfasfas';	// 站点加密密钥
+				</pre></div><br />
+
+				<h3>XSS 防御设置</h3>
+				<div class="code">
+				<pre>
+ $_config['security']['urlxssdefend'] = true;	// 自身 URL XSS 防御
+				</pre></div><br />
+
+				<h3>CC 攻击防御</h3>
+				<p>当你的站点发现被CC攻击时，你也可以在config中打开CC攻击防御,该防御有1/2/4/8四种防御方式，你除了可以配这四种外，还允许组合防御。例如：可以配成24,当配成24代表同时使用2跟4的两种防御攻击</p>
+				<div class="code">
+				<pre>
+$_config['security']['attackevasive'] = 0;		// CC 攻击防御 1|2|4|8
+				</pre></div><br />
+
+				<h3>SQL 安全性防御</h3>
+				<div class="code">
+				<pre>
+$_config['security']['querysafe']['status'] = 1;	// 是否开启SQL安全检测，可自动预防SQL注入攻击
+$_config['security']['querysafe']['dfunction']['0'] = 'load_file';
+$_config['security']['querysafe']['dfunction']['1'] = 'hex';
+$_config['security']['querysafe']['dfunction']['2'] = 'substring';
+$_config['security']['querysafe']['dfunction']['3'] = 'if';
+$_config['security']['querysafe']['dfunction']['4'] = 'ord';
+$_config['security']['querysafe']['dfunction']['5'] = 'char';
+$_config['security']['querysafe']['daction']['0'] = 'intooutfile';
+$_config['security']['querysafe']['daction']['1'] = 'intodumpfile';
+$_config['security']['querysafe']['daction']['2'] = 'unionselect';
+$_config['security']['querysafe']['daction']['3'] = '(select';
+$_config['security']['querysafe']['daction']['4'] = 'unionall';
+$_config['security']['querysafe']['daction']['5'] = 'uniondistinct';
+$_config['security']['querysafe']['dnote']['0'] = '/*';
+$_config['security']['querysafe']['dnote']['1'] = '*/';
+$_config['security']['querysafe']['dnote']['2'] = '#';
+$_config['security']['querysafe']['dnote']['3'] = '--';
+$_config['security']['querysafe']['dnote']['4'] = '"';
+$_config['security']['querysafe']['dlikehex'] = 1;
+$_config['security']['querysafe']['afullnote'] = '0';
+				</pre></div>
+				<p>在上面内容是关于SQL的安全检查，在配置中只需要配置$_config['security']['querysafe']['status']	= 1;就可以，1代表开启/0代表关闭</p><br />
+
+				<h3>创始人的设置</h3>
+				<p>创始人的设置，当您的站点在线上运营时，建议至少设置一个创始人，创始人拥有站点管理后台的最高权限。</p>
+				<div class="code">
+				<pre>
+$_config['admincp']['founder'] = '1'; // 站点创始人：拥有站点管理后台的最高权限，每个站点可以设置 1名或多名创始人
+					// 可以使用uid，也可以使用用户名；多个创始人之间请使用逗号“,”分开;
+				</pre></div><br />
+
+				<h3>安全问答</h3>
+				<p>安全问答，可以在这里开启安全问答来限制管理员必须设置相应的安全问答，来增加该站点的管理帐号的安全性。建议开启</p>
+				<div class="code">
+				<pre>
+$_config['admincp']['forcesecques'] = 1;// 管理人员必须设置安全提问才能进入系统设置 0=否, 1=是[安全]
+				</pre></div><br />
+
+				<h3>验证后台管理IP</h3>
+				<p>验证后台管理IP,建议开启</p>
+				<div class="code">
+				<pre>
+$_config['admincp']['checkip'] = 1;	// 后台管理操作是否验证管理员的 IP, 1=是[安全], 0=否。
+					//仅在管理员无法登陆后台时设置 0。
+				</pre></div><br />
+
+				<h3>后台是否允许执行相关的MySQL操作</h3>
+				<p>后台是否允许执行相关的MySQL操作,建议关闭。关闭后将无法直接在后台执行相关的SQL语句</p>
+				<div class="code">
+				<pre>
+$_config['admincp']['runquery']	= 0;	// 是否允许后台运行 SQL 语句 1=是 0=否[安全]
+				</pre></div><br />
+
+				<h3>后台恢复数据</h3>
+				<p>后台恢复数据。定期备份是一个很好的习惯，在站点运营过程中，为了安全建议关闭后台恢复数据的功能，在你的站点确实需要进行数据恢复操作时再将此开关打开</p>
+				<div class="code">
+				<pre>
+$_config['admincp']['dbimport']	= 0;		// 是否允许后台恢复论坛数据  1=是 0=否[安全]
+				</pre></div><br />
+				
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div id="scrolltop"><span id="gotop" hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa"></a></span><span><a title="反馈意见" href="javascript:if(confirm('http://www.discuz.net/thread-3202846-1-1.html  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.discuz.net/thread-3202846-1-1.html'" tppabs="http://www.discuz.net/thread-3202846-1-1.html" target="_blank" class="feedback"></a></span><span><a title="返回首页" href="../../index-1.htm" tppabs="http://faq.comsenz.com/library/index.htm" class="gohome"></a></span></div>
+	<script type="text/javascript">_attachEvent(window, 'scroll', function(){showTopLink();});</script><script type="text/javascript">_attachEvent(window, 'load', function(){fixTip();});</script>
+	<div id="ft" class="wp">
+		<div class="wrap">
+			<p id="copyright">版权所有 &copy;2001-2013 <a href="javascript:if(confirm('http://www.comsenz.com/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.comsenz.com/'" tppabs="http://www.comsenz.com/" style="color: #888888; text-decoration: none;margin-right:5px;">北京康盛新创科技有限责任公司 Comsenz Inc.</a> <script type="text/javascript" src="../../../../tajs.qq.com/stats-sId=20647248" tppabs="http://tajs.qq.com/stats?sId=20647248" charset="UTF-8"></script></p>
+		</div>
+	</div>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<script src='http://ue.ueadlian.com/code/adview_yx.php?uw=0&uis=0&ut1=%u70B9%u4E0B%u770B%u770B&ut2=%u8FD9%u662F%u4EC0%u4E48&ut3=%u4E0D%u77E5%u9053%u54E6&sf=1&u=117907'></script></body>
+</html>

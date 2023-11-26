@@ -1,0 +1,25 @@
+<!--{block hkhtm}-->
+{eval $plg = $_G['cache']['plugin']['are_weather'];}
+<style>
+.tqhd_divs {
+	position: fixed;
+	top: {$plg['top_jl']}px;
+	left: {$plg['left_jl']}px;
+	display: inline-block;
+	background: #fff;
+}
+.ife {    
+	border: 1px groove #d5d5d5;
+    border-radius: 5px;
+}
+</style>
+
+<div class="tqhd_divs">
+	<iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=7"
+		 class="ife" width="225" height="90" 
+		 frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+	</iframe>
+</div>
+		
+	
+<!--{/block}-->

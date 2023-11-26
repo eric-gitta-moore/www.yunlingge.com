@@ -1,0 +1,189 @@
+<!--don't close the div here--><ul class="tb cl">
+<li class="y showmenu" id="gupgrade" onmouseover="showMenu(this.id)"><a>{lang dc_vip:jgvip}</a></li>
+<li class="a"><a href="plugin.php?id=dc_vip&action=tq">{lang dc_vip:myvip}</a></li>
+<li><a href="home.php?mod=spacecp&ac=usergroup">{lang dc_vip:myusergroups}</a></li>
+</ul><div class="tdats">
+<table class="tdat" cellpadding="0" cellspacing="0">
+<tbody><tr><th class="c0">&nbsp;</th></tr>
+<tr><th class="alt">&nbsp;</th></tr>
+</tbody><tbody class="ca">
+<tr>
+<td>{lang dc_vip:viplevel}</td>
+</tr>
+<tr class="alt">
+<td>{lang dc_vip:disablepostctrl}</td>
+</tr>
+<tr>
+<td>{lang dc_vip:allowdirectpost}</td>
+</tr>
+<tr class="alt">
+<td>{lang dc_vip:closead}</td>
+</tr>
+<tr>
+<td>{lang dc_vip:allowsenpm}</td>
+</tr>
+<tr class="alt">
+<td>{lang dc_vip:allowsearch}</td>
+</tr>
+<tr>
+<td>{lang dc_vip:allowatt}</td>
+</tr>
+<tr class="alt">
+<td>{lang dc_vip:allowpayadd}</td>
+</tr>
+<tr>
+<td>{lang dc_vip:allowpaysubject}</td>
+</tr>
+<tr class="alt">
+<td>{lang dc_vip:allowhide}</td>
+</tr>
+<!--{if !empty($viphooks)}-->
+</tbody>
+<tbody><tr class="alt h">
+<th>{lang dc_vip:otherqx}</th>
+</tr>
+</tbody>
+<tbody>
+<!--{eval $viphookflag=false}-->
+<!--{loop $viphooks $hook}-->
+<tr<!--{if $viphookflag}--> class="alt"<!--{/if}-->>
+<td>{$hook['name']}</td>
+</tr>
+<!--{eval $viphookflag=!$viphookflag}-->
+<!--{/loop}-->
+<!--{/if}-->
+</tbody>
+</table>
+<table class="tdat tfx<!--{if empty($jg)}-->f<!--{/if}-->" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<th class="c0"><h4>{lang dc_vip:myvip} - <!--{if $_G['dc_plugin']['vip']['group']['grouptitle']}-->{$_G['dc_plugin']['vip']['group']['grouptitle']}<!--{else}-->{lang dc_vip:nogroup}<!--{/if}--></h4></th>
+</tr>
+<tr>
+<th class="alt"><span class="notice">{lang dc_vip:growth}: <!--{if isset($_G['dc_plugin']['vip']['user']['growth'])}-->{$_G['dc_plugin']['vip']['user']['growth']}<!--{else}-->NULL<!--{/if}--></span></th>
+</tr><tr><td><!--{if isset($_G['dc_plugin']['vip']['group']['grouptitle'])}--><img src="source/plugin/dc_vip/images/icon/{$_G['dc_plugin']['vip']['group']['icon']}" alt="{$_G['dc_plugin']['vip']['group']['grouptitle']}"<!--{else}--><img src="source/plugin/dc_vip/images/icon/novip.gif" alt="{$_G['dc_plugin']['vip']['group']['grouptitle']}"<!--{/if}-->></td></tr>
+</tbody><tbody class="ca"><tr class="alt">
+<td>
+<img src="static/image/common/<!--{if $_G['dc_plugin']['vip']['allow']['disablepostctrl']}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/<!--{if $_G['dc_plugin']['vip']['allow']['allowdirectpost']}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/<!--{if $_G['dc_plugin']['vip']['allow']['closead']}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/<!--{if $_G['dc_plugin']['vip']['allow']['exempt'][0]}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/<!--{if $_G['dc_plugin']['vip']['allow']['exempt'][1]}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/<!--{if $_G['dc_plugin']['vip']['allow']['exempt'][2]}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/<!--{if $_G['dc_plugin']['vip']['allow']['exempt'][3]}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/<!--{if $_G['dc_plugin']['vip']['allow']['exempt'][4]}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/<!--{if $_G['dc_plugin']['vip']['allow']['allowhide']}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr>
+<!--{if !empty($viphooks)}-->
+</tbody>
+<tbody><tr class="alt h">
+<th>{$_G['dc_plugin']['vip']['group']['grouptitle']}</th>
+</tr>
+</tbody>
+<tbody>
+<!--{eval $viphookflag=false}-->
+<!--{loop $viphooks $hook}-->
+<tr<!--{if $viphookflag}--> class="alt"<!--{/if}-->>
+<td><!--{if $hook['type']=='radio'}--><img src="static/image/common/<!--{if $hook['value']}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"><!--{else}-->{$hook['value']}<!--{/if}--></td>
+</tr>
+<!--{eval $viphookflag=!$viphookflag}-->
+<!--{/loop}-->
+<!--{/if}-->
+</tbody>
+</table>
+<!--{if !empty($jg)}-->
+<ul id="tba" class="tb c2">
+<li id="c2">{lang dc_vip:jgvip} - {$jg['grouptitle']}</li>
+</ul>
+<div class="tscr">
+<table class="tdat" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<th class="alt h">
+<span class="notice"><!--{if $_G['dc_plugin']['vip']['user']['growth']>=$jg['growthlower']}-->{lang dc_vip:growthlower} {$jg['growthlower']}<!--{else}-->{lang dc_vip:upgrowermsg} <!--{eval echo $jg['growthlower']-intval($_G['dc_plugin']['vip']['user']['growth'])}--><!--{/if}--></span>
+</th>
+</tr><tr><td><img src="source/plugin/dc_vip/images/icon/{$jg['icon']}" alt="{$jg['grouptitle']}"></td></tr>
+</tbody><tbody class="ca"><tr class="alt">
+<td>
+<img src="static/image/common/<!--{if $jg['allow']['disablepostctrl']}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/<!--{if $jg['allow']['allowdirectpost']}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/<!--{if $jg['allow']['closead']}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/<!--{if $jg['allow']['exempt'][0]}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/<!--{if $jg['allow']['exempt'][1]}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/<!--{if $jg['allow']['exempt'][2]}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/<!--{if $jg['allow']['exempt'][3]}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr>
+<td>
+<img src="static/image/common/<!--{if $jg['allow']['exempt'][4]}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<tr class="alt">
+<td>
+<img src="static/image/common/<!--{if $jg['allow']['allowhide']}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"></td>
+</tr>
+<!--{if !empty($viphooks)}-->
+</tbody>
+<tbody><tr class="alt h">
+<th>{$jg['grouptitle']}</th>
+</tr>
+</tbody>
+<tbody>
+<!--{eval $viphookflag=false}-->
+<!--{loop $viphooks $hook}-->
+<tr<!--{if $viphookflag}--> class="alt"<!--{/if}-->>
+<td><!--{if $hook['type']=='radio'}--><img src="static/image/common/<!--{if $hook['jgvalue']}-->data_valid.gif<!--{else}-->data_invalid.gif<!--{/if}-->"><!--{else}-->{$hook['jgvalue']}<!--{/if}--></td>
+</tr>
+<!--{eval $viphookflag=!$viphookflag}-->
+<!--{/loop}-->
+<!--{/if}-->
+</tbody>
+</table>
+</div>
+<!--{/if}-->
+</div>
+<img src="static/image/common/data_valid.gif" alt="data_valid" class="vm"> {lang dc_vip:isallow}&nbsp;
+<img src="static/image/common/data_invalid.gif" alt="data_invalid" class="vm"> {lang dc_vip:disallow}
+
+<div id="gupgrade_menu" class="p_pop" style="display:none">
+<!--{loop $_G['dc_plugin']['vip']['groupdata'] $gd}--><a<!--{if $jg['id']==$gd['id']}--> class="xi1"<!--{/if}--> href="plugin.php?id=dc_vip&action=tq&vgid={$gd['id']}">{$gd['grouptitle']}</a><!--{/loop}--></div>

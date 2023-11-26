@@ -1,0 +1,13 @@
+<!--{block it618_regsafe_block}-->
+<!--{if $wap==1}-->
+<script>
+var IT618JQ=jQuery;
+</script>
+<!--{else}-->
+<SCRIPT src="source/plugin/it618_regsafe/js/jquery.js?87810FE7-AAAE-55ED-A938-30D35972DF05" type=text/javascript></SCRIPT>
+<!--{/if}-->
+<script type="text/javascript">
+var regobj=IT618JQ('{$regstr}');IT618JQ("#reginfo_a").append(regobj);IT618JQ(".login_from ul").append(regobj);IT618JQ(".login_from ul li.bl_none").attr("class","");
+function gettip(obj){IT618JQ.get("{$_G['siteurl']}plugin.php?id=it618_regsafe:ajax&"+obj.name+"="+obj.value+"&formhash={FORMHASH}", {ac:"gettip"},function (data, textStatus){IT618JQ("#it618_regsafe_tip").html(data);}, "html");}function getcheckcode(){IT618JQ.get("{$_G['siteurl']}plugin.php?id=it618_regsafe:ajax"+"&formhash={FORMHASH}", {ac:"sendsmscode"},function (data, textStatus){var tmparr=data.split("it618_split");document.getElementById("checkcodeimg").src="plugin.php?id=it618_regsafe:validatecode"+"&sendsmscode="+tmparr[1]+"&formhash={FORMHASH}";}, "html");}getcheckcode();
+</script>
+<!--{/block}-->

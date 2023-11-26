@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
+	<item id="Time"><![CDATA[2019-11-29 19:56]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost/discuz/gbk/upload/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[網站工具箱]]></item>
+			<item id="identifier"><![CDATA[viewui_tools]]></item>
+			<item id="description"><![CDATA[一款簡易小巧的建站工具箱, 內含常用的建站功能。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[viewui_tools/]]></item>
+			<item id="copyright"><![CDATA[眡覺設計]]></item>
+			<item id="version"><![CDATA[先遣版1.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[viewui_tools]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[網站工具箱]]></item>
+					<item id="url"><![CDATA[plugin.php?id=viewui_tools]]></item>
+					<item id="type"><![CDATA[1]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[aboutus]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[使用諮詢/反餽]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[插件名稱]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[name]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[網站工具箱]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[可使用用戶組]]></item>
+				<item id="description"><![CDATA[畱空則表示所有用戶組均可使用]]></item>
+				<item id="variable"><![CDATA[group]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[二維碼大小]]></item>
+				<item id="description"><![CDATA[“二維碼生成”工具中, 生成的二維碼大小。默認爲150]]></item>
+				<item id="variable"><![CDATA[qrcode]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[150]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[詞雲圖詞滙]]></item>
+				<item id="description"><![CDATA[“詞雲圖生成” 工具中, 詞雲生成使用的詞滙（不會改的話請不要脩改）]]></item>
+				<item id="variable"><![CDATA[cytxt]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA['聖誕樹', '賀卡', '聖誕禮盒', '圍巾', '襪子', '蘋果', '手鏈', '巧尅力', '玫瑰', '香水', '樂高', '芭比', '項鏈', '抱枕', '變形金剛', '擺件', '魔方', '文具', '棒棒糖', '藍牙耳帽', '超級飛俠', '煖手寶', '夜燈', '堆襪', '耳釘', '公仔', '手機殼', '八音盒', '剃須刀', '打火機', '手表', '巴尅球', '模型', '音響', '矇奇奇', '保溫盃','公仔', '手機殼', '八音盒', '剃須刀', '打火機', '手表', '巴尅球', '模型', '音響', '矇奇奇', '保溫盃','聖誕樹', '賀卡', '聖誕禮盒', '圍巾', '襪子', '蘋果', '手鏈', '巧尅力', '玫瑰', '香水', '樂高', '芭比', '項鏈', '抱枕', '變形金剛', '擺件', '魔方', '文具', '棒棒糖', '藍牙耳帽', '超級飛俠', '煖手寶', '夜燈', '堆襪', '耳釘', '公仔', '手機殼', '八音盒', '剃須刀', '打火機', '手表', '巴尅球', '模型', '音響', '矇奇奇', '保溫盃','公仔', '手機殼', '八音盒', '剃須刀', '打火機', '手表', '巴尅球', '模型', '音響', '矇奇奇', '保溫盃']]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="grouperror"><![CDATA[抱歉, 您無權使用此功能。如有問題請聯系網站琯理員!]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="utf8"><![CDATA[UTF-8/unicode編碼轉換]]></item>
+				<item id="typebm"><![CDATA[編碼類]]></item>
+				<item id="use"><![CDATA[使用]]></item>
+				<item id="utf8summary"><![CDATA[UTF-8編碼/unicode編碼可使文字兼容多編碼, 避免出現亂碼現象。]]></item>
+				<item id="qrcode"><![CDATA[二維碼生成]]></item>
+				<item id="typeimg"><![CDATA[圖片類]]></item>
+				<item id="qrcodesummary"><![CDATA[輸入網址系統將爲您快速生成對應的二維碼圖片]]></item>
+				<item id="base64"><![CDATA[圖片和base64轉換]]></item>
+				<item id="base64summary"><![CDATA[將圖片轉化爲base64編碼減少http請求, 提高網站傚率。]]></item>
+				<item id="color"><![CDATA[在線識別顔色]]></item>
+				<item id="typemini"><![CDATA[小工具]]></item>
+				<item id="colorsummary"><![CDATA[系統在線識別竝列出您上傳的圖片顔色]]></item>
+				<item id="js"><![CDATA[計算文字個數]]></item>
+				<item id="jssummary"><![CDATA[快速計算輸入的文字個數]]></item>
+				<item id="cssjb"><![CDATA[在線調試css漸變色]]></item>
+				<item id="cssjbsummary"><![CDATA[在線添加、編輯css漸變竝生成相應的css代碼]]></item>
+				<item id="md5"><![CDATA[在線MD5加密]]></item>
+				<item id="md5summary"><![CDATA[將一段信息進行MD5加密,防止被篡改]]></item>
+				<item id="base64j"><![CDATA[base64加密(UTF-8編碼)]]></item>
+				<item id="base64jsummary"><![CDATA[將內容進行base64加密(加密結果爲UTF-8編碼)]]></item>
+				<item id="cy"><![CDATA[詞雲圖生成]]></item>
+				<item id="cysummary"><![CDATA[識別上傳的圖片自動生成詞雲圖]]></item>
+				<item id="time"><![CDATA[時間戳轉換]]></item>
+				<item id="timesummary"><![CDATA[將時間轉爲時間戳,或將時間戳還原爲時間]]></item>
+				<item id="wechat"><![CDATA[微信聯系人二維碼]]></item>
+				<item id="wechatsummary"><![CDATA[根據填寫的內容自動生成微信聯系人二維碼, 用戶可微信掃描快速保存到通訊錄]]></item>
+				<item id="intoutf8"><![CDATA[中文轉UTF-8]]></item>
+				<item id="intounicode"><![CDATA[中文轉Unicode]]></item>
+				<item id="intodefault"><![CDATA[UTF8/Unicode轉爲中文]]></item>
+				<item id="utf8lefttip"><![CDATA[把您需要轉換的內容填寫到此処]]></item>
+				<item id="utf8righttip"><![CDATA[轉換後的結果]]></item>
+				<item id="tip"><![CDATA[提示]]></item>
+				<item id="qrcodelefttip"><![CDATA[輸入二維碼的內容（如果輸入網址, 則生成網址二維碼）]]></item>
+				<item id="qrcoderighttip"><![CDATA[生成的二維碼圖像]]></item>
+				<item id="qrcodebttips"><![CDATA[提示: 鼠標右鍵點擊二維碼可保存圖片]]></item>
+				<item id="qrcodeerror"><![CDATA[生成失敗, 請先填寫二維碼內容在點擊生成！]]></item>
+				<item id="qrcodesuccess"><![CDATA[二維碼已生成！拿起手機掃一掃看看吧！]]></item>
+				<item id="qrcodeinput"><![CDATA[輸入框內容已清除,請重新填寫二維碼內容]]></item>
+				<item id="qrcodebtr"><![CDATA[開始生成]]></item>
+				<item id="qrcodebtl"><![CDATA[清除]]></item>
+				<item id="copy"><![CDATA[複制]]></item>
+				<item id="rest"><![CDATA[清空]]></item>
+				<item id="base64tpbtn"><![CDATA[點擊這裡選擇選擇要轉換成Base64的圖片]]></item>
+				<item id="base64txt"><![CDATA[base64編碼]]></item>
+				<item id="base64restbtn"><![CDATA[還原生成的Base64編碼爲圖片]]></item>
+				<item id="base64tips"><![CDATA[<p>1.將圖片轉換爲Base64編碼,可以讓您很方便地在沒有上傳文件的條件下將圖片插入其它的網頁、編輯器中。 這對於一些小的圖片是極爲方便的，因爲您不需要再去尋找一個保存圖片的地方。</p>
+        <p>2.您衹需將生成的base64代碼全部複制, 然後在插入圖片的時候，地址填寫這段代碼即可;</p>
+        <p>3.若要在CSS中引用生成的圖片那麽衹要將生成的base64代碼填寫到地址欄即可。例：background-image: url("生成的base64編碼");</p>
+        <p>4.若要在HTML中引用生成的圖片那麽衹要將生成的base64代碼填寫到地址欄即可。例:&lt;img src="生成的base64編碼"/&gt;</p>
+        <p>5.將圖片轉換成base64編碼在web網上一般用於小圖片上，不僅可以減少圖片的請求數量（集郃到js、css代碼中），還可以防止因爲一些相對路逕等問題導致圖片404錯誤。</p>
+	 	<p>6.本工具支持轉化 PNG、GIF、JPG、BMP、ICO 格式的圖片;</p>]]></item>
+				<item id="copynone"><![CDATA[沒有要複制的內容！]]></item>
+				<item id="copyok"><![CDATA[成功複制到剪切板內！可隨時粘貼~]]></item>
+				<item id="base64imgerror"><![CDATA[請確保文件爲圖像類型!]]></item>
+				<item id="base64imgsize"><![CDATA[圖片大小：]]></item>
+				<item id="fileReader"><![CDATA[抱歉，你的瀏覽器不支持 FileReader，請使用現代瀏覽器操作！]]></item>
+				<item id="colorlefttt"><![CDATA[請上傳要識別顔色的圖片:]]></item>
+				<item id="colorbdtip"><![CDATA[請選擇一張本地圖片]]></item>
+				<item id="colortip1"><![CDATA[是否模糊周邊顔色]]></item>
+				<item id="colortip2"><![CDATA[是否十六進制顯示]]></item>
+				<item id="colortip3"><![CDATA[是否RGB顯示]]></item>
+				<item id="colortip4"><![CDATA[顯示相同顔色]]></item>
+				<item id="colorok"><![CDATA[開始識別顔色]]></item>
+				<item id="colorimgyl"><![CDATA[圖片預覽:]]></item>
+				<item id="colorsbjg"><![CDATA[識別結果：]]></item>
+				<item id="color16"><![CDATA[十六進制顯示區域：]]></item>
+				<item id="colorrgb"><![CDATA[RBGA顯示區域：]]></item>
+				<item id="colorerror"><![CDATA[很遺憾，您瀏覽器版本太老了，無法使用此小工具 ！]]></item>
+				<item id="coloropentip"><![CDATA[系統識別圖片中所有顔色的時間, 由您上傳的圖片大小和顔色數量有關, 請耐心等待一會兒！]]></item>
+				<item id="cssjbshow"><![CDATA[預覽結果]]></item>
+				<item id="cssdemo"><![CDATA[元素]]></item>
+				<item id="md5open"><![CDATA[開始加密]]></item>
+				<item id="md5ok"><![CDATA[加密後的結果]]></item>
+				<item id="md5input"><![CDATA[把您需要加密的內容填寫到此処]]></item>
+				<item id="base64jn"><![CDATA[解密]]></item>
+				<item id="base64jr"><![CDATA[運行後的結果]]></item>
+				<item id="base64jmok1"><![CDATA[Tip:已加密請查看右側結果!]]></item>
+				<item id="base64jmok2"><![CDATA[Tip:已解密請查看右側結果!]]></item>
+				<item id="cytip"><![CDATA[請上傳要識別的圖片]]></item>
+				<item id="cyshow"><![CDATA[生成的詞雲：]]></item>
+				<item id="timeinput"><![CDATA[請輸入要轉換的時間]]></item>
+				<item id="timeshow"><![CDATA[運行後的結果]]></item>
+				<item id="timebtn1"><![CDATA[轉爲時間戳]]></item>
+				<item id="timebtn2"><![CDATA[轉爲時間]]></item>
+				<item id="wechatxm"><![CDATA[姓名:]]></item>
+				<item id="wechatgs"><![CDATA[公司:]]></item>
+				<item id="wechatzw"><![CDATA[職務:]]></item>
+				<item id="wechatdz"><![CDATA[地址:]]></item>
+				<item id="wechatsj"><![CDATA[手機:]]></item>
+				<item id="wechatyx"><![CDATA[郵箱:]]></item>
+				<item id="wechatwz"><![CDATA[網址:]]></item>
+				<item id="wechatbz"><![CDATA[備注:]]></item>
+				<item id="wechatok"><![CDATA[生成微信二維碼]]></item>
+				<item id="wechattip"><![CDATA[生成的二維碼圖像(請用微信掃一掃)]]></item>
+<item id="ieerror"><![CDATA[抱歉，此功能不支持IE瀏覽器使用！請將瀏覽器切換至極速模式後在使用此工具)]]></item>
+			</item>
+		</item>
+	</item>
+</root>

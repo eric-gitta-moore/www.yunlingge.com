@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[ac9394_postmail.plugin]]></item>
+	<item id="RevisionID"><![CDATA[85283]]></item>
+	<item id="SN"><![CDATA[2020012615TNtGG4c6UI]]></item>
+	<item id="RevisionDateline"><![CDATA[1565531323]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_ac9394_postmail_SC_UTF8.xml"><![CDATA[dc5113721dd820c18d46ebe0ae283a3e]]></item>
+		<item id="/ac9394_postmail.class.php"><![CDATA[079b0b936b4e2ea6da8db4bc0e4d300c]]></item>
+		<item id="/mobile.class.php"><![CDATA[c46d2301812858e358d8c59b25773942]]></item>
+	</item>
+</root>

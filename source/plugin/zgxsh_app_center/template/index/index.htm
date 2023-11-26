@@ -1,0 +1,141 @@
+<!--{template common/header}-->
+<!--{template zgxsh_app_center:system/css}-->
+
+<div class="<!--{if $_TRC['pc_width']}-->layui-main<!--{/if}-->" style="padding: 15px; background: #d2d2d2;<!--{if $_TRC['pc_width']}-->width: 1200px<!--{/if}-->">
+  <div class="layui-row layui-col-space15">
+		
+		<div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+			<div class="layui-card">
+        <div class="layui-card-body" style="display: flex;justify-content: space-between;align-items:centers">
+					<button style="flex:1;flex-grow:0;text-align: left" type="button" class="layui-btn layui-btn-primary" onClick="location='forum.php'"><i class="layui-icon">&#xe68e;</i>{lang zgxsh_app_center:forum_a}</button>
+					<span style="flex:auto;text-align:center;line-height: 36px">$_TRC['p_name']</span>
+					<!--{if $_TRC['admin_uid']==$_G['uid']}-->
+					<button style="flex:1;flex-grow:0;text-align:right" type="button" class="layui-btn layui-btn-primary" onClick="location='plugin.php?id=zgxsh_app_center:setup'"><i class="layui-icon">&#xe716;</i>{lang zgxsh_app_center:setup_a}</button>					
+					<!--{/if}-->
+				</div>
+			</div>
+		</div>
+    
+    <!--{if $_TRC['see_bdx']}-->
+    <div class="layui-col-xs{$_TRC['zp_few']} layui-col-sm{$_TRC['zp_few']} layui-col-md{$_TRC['kp_few']} layui-col-lg{$_TRC['kp_few']} layui-anim $_TRC['load_anim']">
+      <div class="layui-card">
+        <div class="layui-card-header" style="text-align: center;font-size: 20px;"> 
+          <b> {lang zgxsh_app_center:bdx} </b>
+        </div>
+        <div class="layui-card-body">
+          <div style="display:flex;">
+            <div style="flex:1;width: 100px;margin-right: 12px" onClick="layer.msg('{lang zgxsh_app_center:bdx_ltt}')">
+              <p style="line-height: 20px; overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient:vertical;word-break:break-all;"><b class="layui-badge layui-bg-gray" style="margin: 0px 6px">{lang zgxsh_app_center:ltt}</b>{lang zgxsh_app_center:bdx_ltt}</p>
+            </div>
+            <div style="flex:0">
+              <img src="https://addon.dismall.com/resource/plugin/zgxsh_bdx.png" width="80" height="80" style="border-radius:10px;"/> 
+            </div>
+          </div>
+          <hr>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span style="flex:1;text-align: left">
+              <span class="layui-badge " style="margin-right: 4px">{lang zgxsh_app_center:label_1}</span>
+              <span class="layui-badge layui-bg-orange" style="margin-right: 4px">{lang zgxsh_app_center:label_2}</span>
+              <span class="layui-badge layui-bg-green" style="margin-right: 4px">{lang zgxsh_app_center:label_3}</span>
+            </span>
+            <span style="flex:1;text-align: right"><button type="button" class="layui-btn layui-btn-sm layui-btn-primary" onClick="location='plugin.php?id=zgxsh_bdx:index'">{lang zgxsh_app_center:Et}</button></span>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <!--{/if}-->
+    
+    <!--{if $_TRC['see_cq']}-->
+    <div class="layui-col-xs{$_TRC['zp_few']} layui-col-sm{$_TRC['zp_few']} layui-col-md{$_TRC['kp_few']} layui-col-lg{$_TRC['kp_few']} layui-anim $_TRC['load_anim']">
+      <div class="layui-card">
+        <div class="layui-card-header" style="text-align: center;font-size: 20px;"> 
+          <b> {lang zgxsh_app_center:cq} </b>
+        </div>
+        <div class="layui-card-body">
+          <div style="display:flex;">
+            <div style="flex:1;width: 100px;margin-right: 12px" onClick="layer.msg('{lang zgxsh_app_center:cq_ltt}')">
+              <p style="line-height: 20px; overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient:vertical;word-break:break-all;"><b class="layui-badge layui-bg-gray" style="margin: 0px 6px">{lang zgxsh_app_center:ltt}</b>{lang zgxsh_app_center:cq_ltt}</p>
+            </div>
+            <div style="flex:0">
+              <img src="https://open.dismall.com/resource/plugin/zgxsh_cq.png" width="80" height="80" style="border-radius:10px;"/> 
+            </div>
+          </div>
+          <hr>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span style="flex:1;text-align: left">
+              <span class="layui-badge layui-bg-orange" style="margin-right: 4px">{lang zgxsh_app_center:label_2}</span>
+              <span class="layui-badge layui-bg-green" style="margin-right: 4px">{lang zgxsh_app_center:label_6}</span>
+              <span class="layui-badge layui-bg-black" style="margin-right: 4px">{lang zgxsh_app_center:label_4}</span>
+            </span>
+            <span style="flex:1;text-align: right"><button type="button" class="layui-btn layui-btn-sm layui-btn-primary" onClick="location='plugin.php?id=zgxsh_cq:index'">{lang zgxsh_app_center:Et}</button></span>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <!--{/if}-->
+    
+    <!--{if $_TRC['see_sxsb']}-->
+    <div class="layui-col-xs{$_TRC['zp_few']} layui-col-sm{$_TRC['zp_few']} layui-col-md{$_TRC['kp_few']} layui-col-lg{$_TRC['kp_few']} layui-anim $_TRC['load_anim']">
+      <div class="layui-card">
+        <div class="layui-card-header" style="text-align: center;font-size: 20px;"> 
+          <b> {lang zgxsh_app_center:sxsb} </b>
+        </div>
+        <div class="layui-card-body">
+          <div style="display:flex;">
+            <div style="flex:1;width: 100px;margin-right: 12px" onClick="layer.msg('{lang zgxsh_app_center:sxsb_ltt}')">
+              <p style="line-height: 20px; overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient:vertical;word-break:break-all;"><b class="layui-badge layui-bg-gray" style="margin: 0px 6px">{lang zgxsh_app_center:ltt}</b>{lang zgxsh_app_center:sxsb_ltt}</p>
+            </div>
+            <div style="flex:0">
+              <img src="https://open.dismall.com/resource/plugin/zgxsh_sxsb.png" width="80" height="80" style="border-radius:10px;"/> 
+            </div>
+          </div>
+          <hr>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span style="flex:1;text-align: left">
+              <span class="layui-badge " style="margin-right: 4px">{lang zgxsh_app_center:label_1}</span>
+              <span class="layui-badge layui-bg-green" style="margin-right: 4px">{lang zgxsh_app_center:label_3}</span>
+              <span class="layui-badge layui-bg-blue" style="margin-right: 4px">{lang zgxsh_app_center:label_5}</span>
+            </span>
+            <span style="flex:1;text-align: right"><button type="button" class="layui-btn layui-btn-sm layui-btn-primary" onClick="location='plugin.php?id=zgxsh_sxsb:index'">{lang zgxsh_app_center:Et}</button></span>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <!--{/if}-->
+		
+		<!--{if $db_plugin}-->
+		<!--{loop $db_plugin $i $v}-->
+    <div class="layui-col-xs{$_TRC['zp_few']} layui-col-sm{$_TRC['zp_few']} layui-col-md{$_TRC['kp_few']} layui-col-lg{$_TRC['kp_few']} layui-anim $_TRC['load_anim']">
+      <div class="layui-card">
+        <div class="layui-card-header" style="text-align: center;font-size: 20px;"> 
+          <b> $db_plugin[$i]['name'] </b>
+        </div>
+        <div class="layui-card-body">
+          <div style="display:flex;">
+            <div style="flex:1;width: 100px;margin-right: 12px" onClick="layer.msg('{$db_plugin[$i]['txt']}')">
+              <p style="line-height: 20px; overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient:vertical;word-break:break-all;"><b class="layui-badge layui-bg-gray" style="margin: 0px 6px">{lang zgxsh_app_center:ltt}</b>$db_plugin[$i]['txt']</p>
+            </div>
+            <div style="flex:0">
+              <img src="$db_plugin[$i]['ico']" width="80" height="80" style="border-radius:10px;"/> 
+            </div>
+          </div>
+          <hr>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span style="flex:1;text-align: right"><button type="button" class="layui-btn layui-btn-sm layui-btn-primary" onClick="location='$db_plugin[$i]['url']'">{lang zgxsh_app_center:Et}</button></span>
+          </div>
+        </div>
+      </div> 
+    </div>
+		<!--{/loop}-->
+    <!--{/if}-->
+		
+
+		
+  </div>
+</div>
+
+<!--{template common/footer}--> 
+
+<script>
+
+</script>

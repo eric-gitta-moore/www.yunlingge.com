@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[freeaddon_closelight.plugin]]></item>
+	<item id="RevisionID"><![CDATA[82872]]></item>
+	<item id="SN"><![CDATA[2020012608Fol00ofcgG]]></item>
+	<item id="RevisionDateline"><![CDATA[1574962773]]></item>
+	<item id="Data">
+		<item id="/config.inc.php"><![CDATA[e83d200bdbf68cbb9a58692e49130e23]]></item>
+		<item id="/demo.php"><![CDATA[d456822da544bb4b3f6177fa3a635935]]></item>
+		<item id="/mobilehook.class.php"><![CDATA[a2cfba8e3d60c6377ca69afbadf426f5]]></item>
+		<item id="/check.php"><![CDATA[8a825ca6229416faf04a5be8990a5989]]></item>
+		<item id="/images/faq.gif"><![CDATA[2016bd6b1d980e1609ecad8d4c40085b]]></item>
+		<item id="/images/manage.css"><![CDATA[6b41fb8ea9a32acbc5c6365a85ee2f66]]></item>
+		<item id="/images/index.html"><![CDATA[27f706173470f2d775be9fdd6e01594a]]></item>
+		<item id="/images/index.htm"><![CDATA[27f706173470f2d775be9fdd6e01594a]]></item>
+		<item id="/images/bg_tab.gif"><![CDATA[d8ddde434d1e604f36abf1936617f99c]]></item>
+		<item id="/images/bg_tab_mid.gif"><![CDATA[da79a1002b9c209a9760211e9a08dd20]]></item>
+		<item id="/uninstall.php"><![CDATA[2de34718561037e4d68c704236953304]]></item>
+		<item id="/source/function/function_core.php"><![CDATA[618ad0db932d6f72477a218452b2492f]]></item>
+		<item id="/source/function/function_var.php"><![CDATA[6ae02dd61471b03da88f5a0723ade39f]]></item>
+		<item id="/index.html"><![CDATA[27f706173470f2d775be9fdd6e01594a]]></item>
+		<item id="/thank.inc.php"><![CDATA[e64fac24379af4f6b8f9175ef4e0c7c7]]></item>
+		<item id="/index.htm"><![CDATA[27f706173470f2d775be9fdd6e01594a]]></item>
+		<item id="/discuz_plugin_freeaddon_closelight_SC_UTF8.xml"><![CDATA[b25ce1eaeece7b91d63309edf66b6fda]]></item>
+		<item id="/faq.inc.php"><![CDATA[3e940f97ddc0308de11a4570bed2f086]]></item>
+		<item id="/hook.class.php"><![CDATA[37665a9c6c8225e133daf61d55f5f0de]]></item>
+		<item id="/pluginvar.func.php"><![CDATA[6ae02dd61471b03da88f5a0723ade39f]]></item>
+		<item id="/addon.inc.php"><![CDATA[5d5a1908b2fd1761e651a9d7a5251d00]]></item>
+		<item id="/changelog.inc.php"><![CDATA[4496c60cc6fedf25457358744d834c7b]]></item>
+		<item id="/disable.php"><![CDATA[9af6f521ef0dff2c784dbcdaa436d36a]]></item>
+		<item id="/installlang.lang.php"><![CDATA[b99988ceb256d18506b4011ebca5f31b]]></item>
+		<item id="/enable.php"><![CDATA[c14a3fea6573350cc4a73108aaa1d0b0]]></item>
+		<item id="/install.php"><![CDATA[24e1dc4dce930e10eb7e1ddca4128475]]></item>
+		<item id="/upgrade.php"><![CDATA[24e1dc4dce930e10eb7e1ddca4128475]]></item>
+		<item id="/discuz_plugin_freeaddon_closelight_TC_UTF8.xml"><![CDATA[7ea37400f149a19f7035eb3474585733]]></item>
+		<item id="/feedback.inc.php"><![CDATA[58326a3d18b45d32d27aefac8100bfef]]></item>
+		<item id="/template/index.html"><![CDATA[27f706173470f2d775be9fdd6e01594a]]></item>
+		<item id="/template/index.htm"><![CDATA[27f706173470f2d775be9fdd6e01594a]]></item>
+		<item id="/template/faq.htm"><![CDATA[13fd161325ff6a20f52a99d29bfee50c]]></item>
+	</item>
+</root>

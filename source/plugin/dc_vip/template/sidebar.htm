@@ -1,0 +1,51 @@
+<div class="vipleft">
+	<div class="ch hm">
+		<label>{lang dc_vip:vip_center}</label> 
+	</div>
+	<div class="welcome">
+	<!--{if $_G['dc_plugin']['vip']['user']}-->
+	<div class="info">
+		<img class="avatar" src="{$_G[setting][ucenterurl]}/avatar.php?uid=$_G[uid]&size=small" alt="" width="48" height="48">
+			<p class="username">{lang dc_vip:welcome}<br><font color="{$_G['dc_plugin']['vip']['group']['color']}">{$_G['username']}</font></p>
+			<div class="vipico">
+				<img src="source/plugin/dc_vip/images/icon/{$_G['dc_plugin']['vip']['group']['icon']}" alt="{$_G['dc_plugin']['vip']['grouptitle']}" />
+			</div>
+	</div>
+	<div class="content">
+	<ul class="xl">
+	<li>{lang dc_vip:growth}:&nbsp;{$_G['dc_plugin']['vip']['user']['growth']}</li>
+	<li>{lang dc_vip:growspeed}:&nbsp;<font color="red">{$cvar['growthv']}</font>{lang dc_vip:pointday}</li>
+	<li>{lang dc_vip:timeend}:&nbsp;<b><!--{echo dgmdate($_G['dc_plugin']['vip']['user']['exptime'], 'd')}--></b></li>
+	</ul>
+	</div>
+	<!--{else}-->
+	<div class="info">
+		<img class="avatar" src="{$_G[setting][ucenterurl]}/avatar.php?uid=$_G[uid]&size=small" alt=""  width="48" height="48">
+		<p class="username">{lang dc_vip:welcome}<br>{$_G['username']}</p>
+		<div class="vipico">
+			<img src="source/plugin/dc_vip/images/icon/novip.gif" alt="">
+		</div>
+	</div>
+	<div class="content">
+	<div class="msg">
+	<p>{lang dc_vip:no_vip_msg}</p>
+	</div>
+	</div>
+	<!--{/if}-->
+	</div>
+<div class="vappl">
+<div class="tbn">
+<ul>
+<!--{loop $dh $k $v}-->
+<li<!--{if $action==$k}--> class="a"<!--{/if}-->><a href="plugin.php?id=dc_vip<!--{if $k!='index'}-->&action={$k}<!--{/if}-->">{$v}</a></li>
+<!--{/loop}-->
+</ul>
+</div>
+</div>
+<div class="hm" style="margin-bottom:10px;">
+<!--{if $rmcopy[isrmcopy]&&!empty($rmcopy[copytext])}-->
+{$rmcopy[copytext]}
+<!--{else}-->
+<p><a href="http://addon.dismall.com/?@dc_vip.plugin" target="_blank"><span style="font: bold 16px Arial; color: #fbb040;">[DC]</span><span style="font: bold 16px Verdana; color: #f15a29;">VIP Center</span></a><span style="font: normal 9px Verdana; display:block;">{$version} <a href="http://addon.dismall.com/?@19418.developer">DC</a>.</span></p>
+<!--{/if}-->
+</div>

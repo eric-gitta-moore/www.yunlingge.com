@@ -1,0 +1,63 @@
+<!--{template common/header}-->
+<!--{template zgxsh_app_center:system/css}-->
+
+<div class="layui-card" style="padding:10px;margin-bottom: 0px">
+  <div class="layui-card-header layui-bg-gray"> 
+    <b>{lang zgxsh_app_center:ead}</b> 
+    <i class="layui-icon layui-btn layui-btn-xs layui-btn-primary" style="text-align:right;display:block;float: right;margin-top: 10px" onClick="location='plugin.php?id=zgxsh_app_center:index'">&#x1006;</i> 
+  </div>
+  <br>
+  <div class="layui-card-body">
+    
+    <p style="color: #E516D7;"> 
+			{lang zgxsh_app_center:con_txt}
+		</p>
+		
+    <br>
+		
+    <form class="layui-form" action="plugin.php?id=zgxsh_app_center:setup_if" method="post" id="TR_A">
+      <input type="hidden" name="formhash" value="{FORMHASH}"/>
+      <input type="text" name="op" value="setup_add_sub" hidden>
+                      
+      <div class="layui-form-item">
+				<label class="layui-form-mid">{lang zgxsh_app_center:p_name}</label>
+				<div class="layui-input-inline" style="width: 300px;">
+          <input type="text" name="name" required  lay-verify="required" autocomplete="off" class="layui-input" value="{$p_l['name']}">
+				</div>
+      </div>
+			
+			<div class="layui-form-item">
+				<label class="layui-form-mid">{lang zgxsh_app_center:p_icon}</label>
+				<div class="layui-input-inline" style="width: 300px;">
+          <input type="text" name="ico" required  lay-verify="required" autocomplete="off" class="layui-input" value="{$p_l['ico']}">
+				</div>
+      </div>
+			
+			<div class="layui-form-item">
+				<label class="layui-form-mid">{lang zgxsh_app_center:p_url}</label>
+				<div class="layui-input-inline" style="width: 300px;">
+          <input type="text" name="url" required  lay-verify="required" autocomplete="off" class="layui-input" value="{$p_l['url']}">
+				</div>
+      </div>
+			
+			<div class="layui-form-item">
+				<label class="layui-form-mid">{lang zgxsh_app_center:p_txt}</label>
+				<div class="layui-input-inline" style="width: 300px;">
+          <input type="text" name="txt" required  lay-verify="required" autocomplete="off" class="layui-input" value="{$p_l['txt']}">
+				</div>
+      </div>
+
+			<div class="layui-btn-group">
+        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm" onClick="location='plugin.php?id=zgxsh_app_center:index'"> <i class="layui-icon">&#xe65c;</i> {lang zgxsh_app_center:a_cancel} </button>
+        <button class="layui-btn layui-btn-sm" onClick="showWindow('TS','TR_A','post',0,{'cover':'1'});"> <i class="layui-icon">&#x1005;</i> {lang zgxsh_app_center:a_create} </button>
+      </div>
+			
+    </form>
+  </div>
+</div>
+
+<script>
+$see['form']
+</script>
+
+<!--{template common/footer}-->

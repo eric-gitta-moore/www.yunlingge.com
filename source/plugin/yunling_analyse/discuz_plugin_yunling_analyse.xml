@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2020-03-02 12:36]]></item>
+	<item id="From"><![CDATA[云凌工作室（http://www.yunlingge.com/）]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[0]]></item>
+			<item id="name"><![CDATA[超级统计代码]]></item>
+			<item id="identifier"><![CDATA[yunling_analyse]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[yunling_analyse/]]></item>
+			<item id="copyright"><![CDATA[云凌工作室（http://www.yunlingge.com/）]]></item>
+			<item id="version"><![CDATA[1.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[mobile]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[头部统计代码1]]></item>
+				<item id="description"><![CDATA[头部统计代码不会被延迟加载。
+底部统计代码会延迟加载，从而不会影响页面DOM加载完成，达到加速渲染的效果。
+只能填写js代码，不要写<script>等标签]]></item>
+				<item id="variable"><![CDATA[head1]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[let a = Date.now();
+console.log(a);
+console.log("-------------------");	]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[头部统计代码2]]></item>
+				<item id="description"><![CDATA[默认测试代码可清空]]></item>
+				<item id="variable"><![CDATA[head2]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[let a1 = Date.now();
+console.log(a1);
+console.log("-------------------");	]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[头部统计代码3]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[head3]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[let a2 = Date.now();
+console.log(a2);
+console.log("-------------------");	]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[底部统计代码1]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[foot1]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[let a = Date.now();
+console.log(a);
+console.log("-------------------");	]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[底部统计代码2]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[foot2]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[let a = Date.now();
+console.log(a);
+console.log("-------------------");	]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[底部统计代码3]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[foot3]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[(function(){
+let a = Date.now();
+console.log(a);
+console.log("-------------------");	
+})();]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[延迟时间]]></item>
+				<item id="description"><![CDATA[推荐：0，单位毫秒
+如果设置为0则自动在页面完全加载后时执行统计代码]]></item>
+				<item id="variable"><![CDATA[timeout]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[是否引入jQuery]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jquery]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+	</item>
+</root>

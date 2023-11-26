@@ -1,0 +1,48 @@
+<?php
+/**
+ * 
+ * 克米出品 必属精品
+ * 克米设计工作室 版权所有 http://www.Comiis.com
+ * 专业论坛首页及风格制作, 页面设计美化, 数据搬家/升级, 程序二次开发, 网站效果图设计, 页面标准DIV+CSS生成, 各类大中小型企业网站设计...
+ * 我们致力于为企业提供优质网站建设、网站推广、网站优化、程序开发、域名注册、虚拟主机等服务，
+ * 一流设计和解决方案为企业量身打造适合自己需求的网站运营平台，最大限度地使企业在信息时代稳握无限商机。
+ *
+ *   电话: 0668-8810200
+ *   手机: 13450110120  15813025137
+ *    Q Q: 21400445  8821775  11012081  327460889
+ * E-mail: ceo@comiis.com
+ *
+ * 工作时间: 周一到周五早上09:00-11:00, 下午03:00-05:00, 晚上08:30-10:30(周六、日休息)
+ * 克米设计用户交流群: ①群83667771 ②群83667772 ③群83667773 ④群110900020 ⑤群110900021 ⑥群70068388 ⑦群110899987
+ * 
+ */
+ 
+if(!defined('IN_DISCUZ')) {
+	exit('Access Denied');
+}
+function comiis_replace_https(){
+	global $_G;
+	if($_G['cache']['plugin']['comiis_https']['mob'] == 1 && $_G['cache']['plugin']['comiis_https']['http']){
+		$comiis_url = explode("\n", $_G['cache']['plugin']['comiis_https']['http']);
+		if(!empty($_G['setting']['output']['preg']['search']) && (empty($_G['setting']['rewriteguest']) || empty($_G['uid']))) {
+			$_G['setting']['output']['preg']['search'] = str_replace('(http\:', '(https\:', $_G['setting']['output']['preg']['search']);
+		}
+		if(is_array($comiis_url)){
+			$_G['setting']['rewritestatus'][] = 'comiis_https';
+			foreach($comiis_url as $temp) {
+				$temp = trim($temp);
+				if(strlen($temp) > 3) {
+					$_G['setting']['output']['str']['search'][] = 'http://'. $temp;
+					$_G['setting']['output']['str']['replace'][] = 'https://'. $temp;
+				}
+			}
+			$content = output_replace(ob_get_contents());
+			ob_end_clean();
+			$_G['gzipcompress'] ? ob_start('ob_gzhandler') : ob_start();
+			echo $content;
+		}
+	}
+}
+class mobileplugin_comiis_https{
+	function common(){}
+}

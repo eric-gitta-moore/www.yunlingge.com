@@ -1,0 +1,11 @@
+<!--{block return}-->
+<style type="text/css">
+#gbtn{position:fixed;width:106px;bottom:{$height}px;left:50%;margin-left:{$about}px;z-index:1000;font-size:10px;overflow:hidden;} 
+#gbtn a{display:block;z-index:1001;position:relative;right:-70px;width:85px;height:20px;line-height:20px;margin:5px 0;padding:10px 0px 10px 35px;border:1px solid {$color};border-right:none;color:{$Typeface};text-decoration:none;white-space:nowrap;background:#FFF no-repeat;transition:right 0.3s ease-in-out 0s;}
+#gbtn a:hover{right:0px;}
+#gbtn img {position: absolute; top: 10px;left: 10px; width: 20px;height: 20px;border-radius: {$radius}%;display: inline-block;}
+</style>
+<div id="gbtn">
+{$url}
+</div>
+<!--{/block}-->

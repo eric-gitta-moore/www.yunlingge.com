@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[xzccode_canvas.plugin]]></item>
+	<item id="RevisionID"><![CDATA[86089]]></item>
+	<item id="SN"><![CDATA[2020012608AUXqubFRPu]]></item>
+	<item id="RevisionDateline"><![CDATA[1571293409]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_xzccode_canvas_TC_UTF8.xml"><![CDATA[724c291a8e52752ea0120a38143464db]]></item>
+		<item id="/discuz_plugin_xzccode_canvas_SC_UTF8.xml"><![CDATA[813283c1d37157c6b7305ae48c7df2c0]]></item>
+		<item id="/hook.class.php"><![CDATA[a1a8763d9da17125ede3a18079289d11]]></item>
+		<item id="/static/js/jquery.min.js"><![CDATA[e39d7f174407886a84c437f14182e57a]]></item>
+		<item id="/static/js/script.js"><![CDATA[0d6c6c8dd5e6bd99d399d451a83f0ce4]]></item>
+	</item>
+</root>

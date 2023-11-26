@@ -1,0 +1,12 @@
+.vip_banner {border: 0px none; padding: 0px; position: relative;}
+.vip_banner > section {border: 8px solid rgb(255, 255, 255);box-shadow: rgb(230, 230, 220) 0px 1px 2px 2px;border-radius: 0;background-color: rgba(255, 255, 255, 0.6);}
+.vip_banner > section > section {padding: 20px 10px;border-width: 5px 0px 0px;border-style: solid none none;border-left-color: rgb(219, 219, 219);border-top-color: rgb(255, 255, 255);border-bottom-left-radius: 2%;background-color: rgba(219, 219, 219,0.1);border-bottom-right-radius: 2%;}
+.vip_banner > section > section > p {letter-spacing: 1px; text-align: center; }
+.vip_banner > section > section > p > span {color: #FE8B1F;display: block;text-align:center; font-weight: bold;}
+.vip_banner_img {vertical-align: middle;display: inline;width: 100%;visibility: visible !important;}
+.alert-success {color: #3c763d;background-color: #dff0d8;border-color: #d6e9c6;}
+.alert {padding: 15px;margin-bottom: 20px;border: 1px solid transparent;border-radius: 4px;}
+.logos_lists dl {float: left;position: relative;padding: 16px 14.35px;margin: 10px;background: #fff;border: 1px solid #ededed;-webkit-transition: border linear .2s,box-shadow linear .2s;-moz-transition: border linear .2s,box-shadow linear .2s;-o-transition: border linear .2s,box-shadow linear .2s;transition: border linear .2s,box-shadow linear .2s;}
+.logos_lists dl dt {outline: 0;font-weight: inherit;font-style: inherit;font-size: 100%;font-family: inherit;vertical-align: baseline;}
+.logos_lists dl dd {display: none;color: #262626;}
+.logos_lists dl dt img {width: 120px;}

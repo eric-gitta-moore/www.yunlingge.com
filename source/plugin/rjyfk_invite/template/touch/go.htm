@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>&#x6B63;&#x5728;&#x8F6C;&#x5230;&#x4ED8;&#x6B3E;&#x9875;</title>
+<body onload="document.pay.submit()">
+    <form name="pay" action="http://www.19fk.com/checkout" method="post">
+        <input type="hidden" name="version" value="{$version}">
+        <input type="hidden" name="customerid" value="{$userid}">
+        <input type="hidden" name="sdorderno" value="{$sdorderno}">
+        <input type="hidden" name="total_fee" value="{$total_fee}">
+        <input type="hidden" name="notifyurl" value="{$notifyurl}">
+        <input type="hidden" name="returnurl" value="{$returnurl}">
+        <input type="hidden" name="remark" value="{$remark}">
+		<input type="hidden" name="server" value="{$server}">
+        <input type="hidden" name="sign" value="{$sign}">
+    </form>
+</body>
+</html>

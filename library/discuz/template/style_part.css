@@ -1,0 +1,31 @@
+.item{padding-bottom:10px;border-bottom:1px dashed #ebebeb;margin:0 10px;}
+.title{color:#000;}
+	.title a { font-size:14px;font-weight:700; color: #3B8DD1; text-decoration: underline;}
+	.item_c, .item_c dl{margin-left:12px;margin-top:10px;}
+
+	.nvtitle{border-bottom:3px solid #a9cde4;line-height:30px;text-align:center;background:#F0F6FB;}
+		.nvtitle span{padding:1px;display:block;color:#3f89c3;font-size:18px;}
+		div.code {background: #F3F3F3 url("img/codeicon.gif")/*tpa=http://faq.comsenz.com/library/template/img/codeicon.gif*/ no-repeat 5px 5px;padding-top:40px;}
+
+ul {
+line-height: 1.5em;
+list-style-type: square;
+margin: .3em 0 0 1.5em;
+padding: 0;
+list-style-image: url("img/bullet.gif")/*tpa=http://faq.comsenz.com/library/template/img/bullet.gif*/;
+}
+ol{line-height:24px;}
+li ol{list-style:upper-roman;}
+li ol ol{list-style:lower-roman;}
+/* table */
+.content table { width: 100%;}
+	.content td { border-bottom: 1px solid #E8EDF2; padding:10px 15px;}
+.formatblock{width: 90%;}
+.formatblock *{font-size:12px;line-height:1.5em;}
+.formatblock th {font-weight: 400;width: 320px;border: 1px solid #BBB;padding: 4px;background-color: #F3F3F3;text-align:left;}
+.formatblock td {border: 1px solid #BBB;padding: 4px;}
+
+/* code block */
+.blockcode {padding: 10px 0 5px 10px;border: 1px solid #CCC;background: #F7F7F7 url("codebg.gif")/*tpa=http://faq.comsenz.com/library/template/codebg.gif*/ repeat-y 0 0;overflow: hidden;}
+.blockcode ol {margin: 0 0 0 10px !important;padding: 0 !important;}
+.blockcode ol li {padding-left: 10px;list-style-type: decimal-leading-zero;font-family: Monaco,Consolas,'Lucida Console','Courier New',serif;font-size: 12px;line-height: 1.8em;}

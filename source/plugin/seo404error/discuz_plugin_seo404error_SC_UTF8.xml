@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3]]></item>
+	<item id="Time"><![CDATA[2020-02-14 08:23]]></item>
+	<item id="From"><![CDATA[QQ:210667808]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[【公益】404错误页面]]></item>
+			<item id="identifier"><![CDATA[seo404error]]></item>
+			<item id="description"><![CDATA[QQ:210667808]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[seo404error/]]></item>
+			<item id="copyright"><![CDATA[QQ:210667808]]></item>
+			<item id="version"><![CDATA[1.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[alipay]]></item>
+					<item id="menu"><![CDATA[每天领红包]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[error]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[error]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,X3.5,F1.0,L1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[404页面标题]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[title]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[【公益】404错误页面]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[公益404代码]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[code]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[1=益云404
+2=腾讯404
+3=随机]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[404页面显示最新帖子]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[thread]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[最新帖子显示数量]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[num]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[最新帖子缓存时间]]></item>
+				<item id="description"><![CDATA[单位：秒]]></item>
+				<item id="variable"><![CDATA[time]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[300]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="html"><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="robots" content="noarchive">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>$title</title>
+</head>
+<body>
+<div style="display:table;margin:0 auto">
+$html
+$links
+</div>
+$siteurl
+</body>
+</html>]]></item>
+				<item id="style"><![CDATA[<style>body{background:#c33764;background:-webkit-linear-gradient(to right,#1d2671,#c33764);background:linear-gradient(to right,#1d2671,#c33764)}.add_button{float:right;display:inline;border-radius:50%;height:30px;width:30px;border:2px solid #fff;margin-top:15px;margin-right:10px;text-align:center;cursor:pointer;line-height:25px;vertical-align:middle}.container{overflow:hidden;font-family:Quicksand,sans-serif;color:#fff;padding:20px;background-color:rgba(0,0,0,.15);border-radius:10px;-webkit-box-shadow:10px 10px 60px 10px rgba(0,0,0,.5);-moz-box-shadow:10px 10px 60px 10px rgba(0,0,0,.5);box-shadow:10px 10px 60px 10px rgba(0,0,0,.5)}.fa-check,.fa-plus,.fa-times{color:#fff;vertical-align:middle;line-height:30px;font-size:20px}.fa-plus,.fa-times{left:.5px;position:relative}.header{width:100%;position:relative;height:65px;background-color:rgba(50,51,75,.5);text-align:center;vertical-align:middle;line-height:65px;font-size:20px;margin-bottom:3px}.row{width:100%;position:relative;height:65px;background-color:rgba(95,94,158,.35);margin-bottom:3px;position:relative}.text{float:left;text-align:center;vertical-align:middle;line-height:65px;margin-left:10px;margin-right:10px;font-size:16px}.check{border:2px solid #fff;float:right;height:30px;width:30px;border-radius:50%;margin-top:15px;margin-right:10px;text-align:center;cursor:pointer}.cancel{border:2px solid #fff;float:right;height:30px;width:30px;border-radius:50%;margin-top:15px;margin-right:10px;text-align:center;cursor:pointer}.content{display:block}</style>]]></item>
+			</item>
+		</item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="checkfile"><![CDATA[check.php]]></item>
+	</item>
+</root>

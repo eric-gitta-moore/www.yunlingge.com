@@ -1,0 +1,66 @@
+<!--{block attention}-->
+<link rel="stylesheet" type="text/css" href="source/plugin/xunjie_attention/template/xunjie_attention.css">
+<div id="xunjie_attention_userlist" style="position:absolute;display:none;border:1px solid;min-width:0px;border-color:#DDD;background:#FEFEFE;width:220px;" onmouseleave="xunjie_attention_mOut(this);"></div>
+<div id="xunjie_attention_show" style="position:absolute;display:none;border:1px solid;min-width:60px;border-color:#DDD;background:#FEFEFE;" onmouseleave="xunjie_attention_mOut(this);"></div>
+<div id="xunjie_attention_w" style="display:none;"></div>
+<script>
+function xunjie_attention_getTop(e) {
+	var offset = e.offsetTop;
+	if(e.offsetParent != null) {
+		offset += xunjie_attention_getTop(e.offsetParent);
+	}         
+	return offset;
+}
+function xunjie_attention_getLeft(e) {
+	var offset = e.offsetLeft;
+	if(e.offsetParent != null) {
+		offset += xunjie_attention_getLeft(e.offsetParent);
+	} 
+	return offset;
+} 
+function xunjie_attention_follow(a, href) {
+	if(a == 1) {
+		document.getElementById('follow_a').innerHTML = xunjie_attention_5;
+		document.getElementById('follow_a').href = href;
+		document.getElementById('follow_a').style.color = '#515151';
+		document.getElementById('follow_li').style.backgroundImage = 'url(source/plugin/xunjie_attention/image/2.3.png)';
+	}
+	if(a == 2) {
+		document.getElementById('follow_a').innerHTML = xunjie_attention_2;
+		document.getElementById('follow_a').href = href;
+		document.getElementById('follow_a').style.color = '#F64B31';
+		document.getElementById('follow_li').style.backgroundImage = 'url(source/plugin/xunjie_attention/image/1.3.png)';
+	}
+}
+function xunjie_attention_mOver(div, id, link) {
+	document.getElementById(id).style.display = '';
+	document.getElementById(id).style.left = xunjie_attention_getLeft(div) + 'px';
+	document.getElementById(id).style.top = xunjie_attention_getTop(div) + div.offsetHeight + 0.3 + 'px';
+	if(typeof xunjie_attention_isexist == 'undefined') {
+		xunjie_attention_isexist = 1;
+		ajaxget(link, id, id);
+	}
+}
+function xunjie_attention_mleave(id) {
+    var div = document.getElementById(id);
+    var x = event.clientX + window.pageXOffset;
+    var y = event.clientY + window.pageYOffset;
+    var divx1 = div.offsetLeft;
+    var divy1 = div.offsetTop;
+    var divx2 = div.offsetLeft + div.offsetWidth;
+    var divy2 = div.offsetTop + div.offsetHeight;
+	if(x < divx1 || x > divx2 || y < divy1 || y > divy2) {
+		div.style.display = 'none';
+	}	
+}
+function xunjie_attention_mOut(div) {
+	div.style.display = 'none';
+}
+function xunjie_attention_userlist(div, id) {
+	if(div.href != 'javascript:;') {
+		ajaxget(div.href, id);
+		div.href = 'javascript:;';
+	}
+}
+</script>
+<!--{/block}-->

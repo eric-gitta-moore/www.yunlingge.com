@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[ya_lucky.plugin]]></item>
+	<item id="RevisionID"><![CDATA[85848]]></item>
+	<item id="SN"><![CDATA[2020012615mSXMhN68Im]]></item>
+	<item id="RevisionDateline"><![CDATA[1569131815]]></item>
+	<item id="Data">
+		<item id="/class/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/class/base.class.php"><![CDATA[95ed936d9eb5c9eabca76737f3360462]]></item>
+		<item id="/discuz_plugin_ya_lucky_TC_UTF8.xml"><![CDATA[9b6c7da27f13ccbfb234a7fb63becafb]]></item>
+		<item id="/lucky.class.php"><![CDATA[6ce25e52726b6244b71b66e14d777f0c]]></item>
+		<item id="/mlucky.class.php"><![CDATA[d77f5b96ec5ec46cd19f3e96204cab7d]]></item>
+		<item id="/lang.inc.php"><![CDATA[c98ac1599abbdb18049b166a2158b882]]></item>
+		<item id="/uninstall.php"><![CDATA[3919bfe8d7ecb96a38d1b8fcbd547153]]></item>
+		<item id="/src/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/src/app_src.php"><![CDATA[925e1ea241b05cd12bdc9fb81212fcf2]]></item>
+		<item id="/src/check_src.php"><![CDATA[ab3b0daeba425c57893c71631fe6d712]]></item>
+		<item id="/src/sql_src.php"><![CDATA[7d7474655f84cd5963b70fcf54d161e6]]></item>
+		<item id="/src/upgrade_src.php"><![CDATA[ed18c62ec3288eeaa4589f2eab47c791]]></item>
+		<item id="/src/install_src.php"><![CDATA[1c0887437d0006fff6158194b825e975]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/ya_lucky.inc.php"><![CDATA[8b8ec3c8e90bac1ec5157ef329040fa7]]></item>
+		<item id="/table/table_ya_lucky_log.php"><![CDATA[8abb351f273aa640ba441f5a9d870297]]></item>
+		<item id="/table/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/table/table_ya_lucky_userstat.php"><![CDATA[4eec8adffd029e278e10d7efbe63ef62]]></item>
+		<item id="/table/table_ya_lucky_event.php"><![CDATA[ded87e352140db3ef97e28aaf04633a5]]></item>
+		<item id="/discuz_plugin_ya_lucky_SC_UTF8.xml"><![CDATA[a1c3baf7ecafa0f7dbb57878e49c1849]]></item>
+		<item id="/function/common.func.php"><![CDATA[b330038086a6a1f284d2f3651b179f7b]]></item>
+		<item id="/function/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/function/lucky.func.php"><![CDATA[94a37f9275465827e6fbd8cf3dd03a0e]]></item>
+		<item id="/function/admincp.func.php"><![CDATA[17536eb1125b74f5557634f2e8286d5d]]></item>
+		<item id="/event.inc.php"><![CDATA[579e8d90a67fd2f8ae54078788ae392b]]></item>
+		<item id="/install.php"><![CDATA[3f2d39e0b7769cad7331676e6f0c9009]]></item>
+		<item id="/upgrade.php"><![CDATA[054230607f3b22b274036569484d09ae]]></item>
+		<item id="/course.inc.php"><![CDATA[2ca500d3e01b826fb20163334a0d9067]]></item>
+		<item id="/template/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/touch/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/touch/module.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/module.htm"><![CDATA[60555c9ddc806dea21b1e2726c5be07a]]></item>
+		<item id="/template/lucky.htm"><![CDATA[27c3261f95dd073b1b0909b57aaf7e7a]]></item>
+		<item id="/template/extend_module.css"><![CDATA[3f92f7cddd40e30207323a96c06f11bf]]></item>
+		<item id="/app.inc.php"><![CDATA[ecbcd791bca623995a8b5f0bb3a51c92]]></item>
+	</item>
+</root>

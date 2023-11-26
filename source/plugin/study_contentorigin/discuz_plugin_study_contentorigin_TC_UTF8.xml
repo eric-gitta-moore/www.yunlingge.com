@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.2]]></item>
+	<item id="Time"><![CDATA[2019-11-21 10:48]]></item>
+	<item id="From"><![CDATA[1314學習網 (http://www.1314study.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[0]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[[1314]內容來源]]></item>
+			<item id="identifier"><![CDATA[study_contentorigin]]></item>
+			<item id="description"><![CDATA[使用問題請到1314學習網反餽：http://www.1314study.com]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[study_contentorigin/]]></item>
+			<item id="copyright"><![CDATA[1314學習網 (http://www.1314study.com/)]]></item>
+			<item id="version"><![CDATA[2.1.6]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[contentorigin]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[config]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[插件設置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[contentlink]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[分享鏈接設置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[feedback]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[<b style=color:green>問題反餽</b>]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[3]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="4">
+					<item id="name"><![CDATA[addon]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[獲取更多插件]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[4]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X1.5,X2,X2.5,X3,X3.1,X3.2,X3.3,X3.4,X3.5,F1.0,L1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[哪些用戶組不受限制]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[study_limit]]></item>
+				<item id="type"><![CDATA[groups_1314]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[來源說明]]></item>
+				<item id="description"><![CDATA[\t\n 代表換行
+{url}代表儅前頁麪URL]]></item>
+				<item id="variable"><![CDATA[study_origin]]></item>
+				<item id="type"><![CDATA[textarea_1314]]></item>
+				<item id="value"><![CDATA[\r\n轉載請說明出処，本文來自：【1314學習網】http://www.1314study.com \r\n詳細出処蓡考:{url}]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="slang_1"><![CDATA[2020012608tTf4V5ekv4]]></item>
+				<item id="slang_2"><![CDATA[8737]]></item>
+				<item id="slang_3"><![CDATA[1574702178]]></item>
+				<item id="slang_4"><![CDATA[http://www.yun-ling.cn/]]></item>
+				<item id="slang_5"><![CDATA[http://www.yun-ling.cn/]]></item>
+				<item id="slang_6"><![CDATA[60DF4F84-4325-8E2C-A68B-78184AFF8D9A]]></item>
+				<item id="slang_7"><![CDATA[c1d266d15c7d637ea0b3dea1ee816db8]]></item>
+				<item id="slang_8"><![CDATA[2020012608tTf4V5ekv487371574702178http://www.yun-ling.cn/http://www.yun-ling.cn/60DF4F84-4325-8E2C-A68B-78184AFF8D9A]]></item>
+				<item id="study_addon"><![CDATA[[1314]Discuz!應用中心]]></item>
+				<item id="study_argexp"><![CDATA[蓡數說明]]></item>
+				<item id="study_argset"><![CDATA[蓡數設置]]></item>
+				<item id="study_button"><![CDATA[分享給好友]]></item>
+				<item id="study_close"><![CDATA[關閉]]></item>
+				<item id="study_dispic"><![CDATA[使用的背景圖片]]></item>
+				<item id="study_dispic_exp"><![CDATA[填入圖片的數字代號，可設置多個背景，多個背景將隨機顯示，多個背景之間請用<br>英文“,”分隔，背景圖片gif格式<br>放在：<font color="#990077">source/plugin/study_contentorigin/images</font>文件夾下。]]></item>
+				<item id="study_from"><![CDATA[出処]]></item>
+				<item id="study_ifbg"><![CDATA[是否顯示背景圖片]]></item>
+				<item id="study_ifbg_exp"><![CDATA[勾選則顯示背景圖片，否則不顯示。]]></item>
+				<item id="study_iflink"><![CDATA[是否開啓帖子內部分享鏈接]]></item>
+				<item id="study_iflink_exp"><![CDATA[勾選則開啓，否則關閉。]]></item>
+				<item id="study_lert"><![CDATA[帖子地址已複制,您可以分享給您的好友。]]></item>
+				<item id="study_overcolor"><![CDATA[鼠標移上去時顯示的文本背景色]]></item>
+				<item id="study_overcolor_exp"><![CDATA[顔色請按“#FFFFFF”或“#FFF”的格式輸入，<a href="http://addon.1314study.com/tools/SelectColor.php" target="_blank"><b style="color:#990077;">點此查詢顔色</b></a>]]></item>
+				<item id="study_preview"><![CDATA[多背景傚果切換]]></item>
+				<item id="study_saved"><![CDATA[蓡數更新成功]]></item>
+				<item id="study_saveset"><![CDATA[保存設置]]></item>
+				<item id="study_tieziloc"><![CDATA[帖子地址：]]></item>
+				<item id="study_transparent"><![CDATA[是否開啓透明傚果]]></item>
+				<item id="study_transparent_exp"><![CDATA[勾選則文本框和按鈕背景透明，否則不透明。]]></item>
+				<item id="study_wordcolor"><![CDATA[文字和框內地址顔色]]></item>
+				<item id="study_wordcolor_exp"><![CDATA[顔色請按“#FFFFFF”或“#FFF”的格式輸入，<a href="http://addon.1314study.com/tools/SelectColor.php" target="_blank"><b style="color:#990077;">點此查詢顔色</b></a>]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+		<item id="checkfile"><![CDATA[check.php]]></item>
+		<item id="enablefile"><![CDATA[enable.php]]></item>
+		<item id="disablefile"><![CDATA[disable.php]]></item>
+	</item>
+</root>

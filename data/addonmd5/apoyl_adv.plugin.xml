@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[apoyl_adv.plugin]]></item>
+	<item id="RevisionID"><![CDATA[55415]]></item>
+	<item id="SN"><![CDATA[2020012616g92Taau7Ga]]></item>
+	<item id="RevisionDateline"><![CDATA[1560840534]]></item>
+	<item id="Data">
+		<item id="/uninstall.php"><![CDATA[10668631b1679ff3c505882347d80d9b]]></item>
+		<item id="/adv.class.php"><![CDATA[73ece61c9d271311ff49af9e66bdc618]]></item>
+		<item id="/discuz_plugin_apoyl_adv_TC_UTF8.xml"><![CDATA[f5c1ba0e29202abad6a479f9c7223b68]]></item>
+		<item id="/table/index.htm"><![CDATA[7215ee9c7d9dc229d2921a40e899ec5f]]></item>
+		<item id="/table/table_adv_count.php"><![CDATA[fd1222b33b125cf61ceaada37fc6500a]]></item>
+		<item id="/index.htm"><![CDATA[7215ee9c7d9dc229d2921a40e899ec5f]]></item>
+		<item id="/index.inc.php"><![CDATA[f80dc533a389a0f09060fe78879a7ebb]]></item>
+		<item id="/discuz_plugin_apoyl_adv_SC_UTF8.xml"><![CDATA[b33fad5b72851ffd236f6bfddca18686]]></item>
+		<item id="/install.php"><![CDATA[09f266d39e2cc6ac9d85ea95ba8ed12c]]></item>
+		<item id="/adminadv.inc.php"><![CDATA[82d67e9255c3909279ee0e2ac45946b6]]></item>
+		<item id="/adminhelp.inc.php"><![CDATA[3f342da9ce16a087a8fdb42366ec9624]]></item>
+		<item id="/template/adminadv.htm"><![CDATA[8d667adcfe1b345e3c4e5c1718ea0dae]]></item>
+		<item id="/template/index.htm"><![CDATA[7215ee9c7d9dc229d2921a40e899ec5f]]></item>
+	</item>
+</root>

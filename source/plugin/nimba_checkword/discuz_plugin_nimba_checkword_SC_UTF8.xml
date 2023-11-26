@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4]]></item>
+	<item id="Time"><![CDATA[2019-05-14 10:00]]></item>
+	<item id="From"><![CDATA[Dev开发站 (http://localhost/dev/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[英文灌水拦截]]></item>
+			<item id="identifier"><![CDATA[nimba_checkword]]></item>
+			<item id="description"><![CDATA[英文灌水拦截 for Discuz! 人工智能实验室出品 功能介绍：自动拦截发帖、回帖全部是英文的内容，能够有效阻止一些非法灌水内容！]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[nimba_checkword/]]></item>
+			<item id="copyright"><![CDATA[人工智实验室]]></item>
+			<item id="version"><![CDATA[v1.0.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[logs]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[拦截记录]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[3]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[addon]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[插件推荐]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[99]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[提示内容]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[tips]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[对不起，本站不允许恶意灌水！]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="appname"><![CDATA[英文灌水拦截]]></item>
+				<item id="type_1"><![CDATA[PC发帖]]></item>
+				<item id="type_2"><![CDATA[PC回复]]></item>
+				<item id="type_3"><![CDATA[手机发帖]]></item>
+				<item id="type_4"><![CDATA[手机回复]]></item>
+				<item id="m_title"><![CDATA[拦截管理]]></item>
+				<item id="m_type"><![CDATA[拦截类型]]></item>
+				<item id="m_user"><![CDATA[拦截会员]]></item>
+				<item id="m_date"><![CDATA[拦截时间]]></item>
+				<item id="m_ban"><![CDATA[封禁]]></item>
+				<item id="del_succeed"><![CDATA[批量删除成功！]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="appname"><![CDATA[英文灌水拦截]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+	</item>
+</root>

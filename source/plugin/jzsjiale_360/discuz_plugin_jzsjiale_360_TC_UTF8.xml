@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2020-02-05 17:07]]></item>
+	<item id="From"><![CDATA[糖果說 (http://dz34gbk.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[電腦手機全景圖展示]]></item>
+			<item id="identifier"><![CDATA[jzsjiale_360]]></item>
+			<item id="description"><![CDATA[該插件用於在電腦版、手機版論罈帖子中嵌入竝展示全景圖片，僅支持電腦版論罈編輯器發佈，支持電腦版、手機版帖子詳情頁展示。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[jzsjiale_360/]]></item>
+			<item id="copyright"><![CDATA[jzsjiale]]></item>
+			<item id="version"><![CDATA[1.0.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[pc]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[mobile]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[apps]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[更多應用]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[99]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3.2,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[電腦版是否允許展示]]></item>
+				<item id="description"><![CDATA[電腦版是否允許解析竝展示全景圖。]]></item>
+				<item id="variable"><![CDATA[g_isopenpc]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[手機版是否允許展示]]></item>
+				<item id="description"><![CDATA[手機版是否允許解析竝展示全景圖。]]></item>
+				<item id="variable"><![CDATA[g_isopenmobile]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[允許添加全景圖的版塊]]></item>
+				<item id="description"><![CDATA[電腦版論罈編輯器，允許添加全景圖的版塊。]]></item>
+				<item id="variable"><![CDATA[g_fids]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+					<item id="1"><![CDATA[2]]></item>
+					<item id="2"><![CDATA[37]]></item>
+					<item id="3"><![CDATA[38]]></item>
+					<item id="4"><![CDATA[39]]></item>
+					<item id="5"><![CDATA[40]]></item>
+					<item id="6"><![CDATA[41]]></item>
+					<item id="7"><![CDATA[42]]></item>
+				</item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[允許群組添加全景圖]]></item>
+				<item id="description"><![CDATA[允許在電腦版群組發帖編輯器上使用添加全景圖功能。]]></item>
+				<item id="variable"><![CDATA[g_isopengroup]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[允許添加全景圖的用戶組]]></item>
+				<item id="description"><![CDATA[允許在電腦版論罈、群組編輯器上，使用添加全景圖功能的用戶組。]]></item>
+				<item id="variable"><![CDATA[g_usergroups]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+					<item id="1"><![CDATA[9]]></item>
+					<item id="2"><![CDATA[10]]></item>
+					<item id="3"><![CDATA[11]]></item>
+					<item id="4"><![CDATA[12]]></item>
+					<item id="5"><![CDATA[13]]></item>
+					<item id="6"><![CDATA[14]]></item>
+					<item id="7"><![CDATA[15]]></item>
+					<item id="8"><![CDATA[16]]></item>
+					<item id="9"><![CDATA[17]]></item>
+					<item id="10"><![CDATA[18]]></item>
+					<item id="11"><![CDATA[19]]></item>
+					<item id="12"><![CDATA[1]]></item>
+					<item id="13"><![CDATA[2]]></item>
+					<item id="14"><![CDATA[3]]></item>
+					<item id="15"><![CDATA[4]]></item>
+					<item id="16"><![CDATA[5]]></item>
+					<item id="17"><![CDATA[6]]></item>
+					<item id="18"><![CDATA[7]]></item>
+					<item id="19"><![CDATA[8]]></item>
+				</item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[20]]></item>
+				<item id="title"><![CDATA[編輯器按鈕文字]]></item>
+				<item id="description"><![CDATA[編輯器按鈕文字，兩個字]]></item>
+				<item id="variable"><![CDATA[g_btnname]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[全景]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[21]]></item>
+				<item id="title"><![CDATA[編輯器按鈕觸碰提示]]></item>
+				<item id="description"><![CDATA[編輯器按鈕觸碰提示]]></item>
+				<item id="variable"><![CDATA[g_btntip]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[插入全景圖片]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[99]]></item>
+				<item id="title"><![CDATA[靜態資源使用cdn]]></item>
+				<item id="description"><![CDATA[靜態資源是否使用cdn，關閉後使用本地資源。主要指插件使用到的js、css文件。]]></item>
+				<item id="variable"><![CDATA[g_cdn]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+	</item>
+</root>

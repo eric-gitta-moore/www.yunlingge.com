@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[ya_thread_rewrite.plugin]]></item>
+	<item id="RevisionID"><![CDATA[85954]]></item>
+	<item id="SN"><![CDATA[2020012608Aw9UxB19f8]]></item>
+	<item id="RevisionDateline"><![CDATA[1570584935]]></item>
+	<item id="Data">
+		<item id="/class/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/class/base.class.php"><![CDATA[64daac5a83bcc64c28350b79f6b803a1]]></item>
+		<item id="/thread.class.php"><![CDATA[d97d303ee82df0508526228426c595c6]]></item>
+		<item id="/uninstall.php"><![CDATA[8f72441350d1cb25c12196b5198ed868]]></item>
+		<item id="/src/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/src/app_src.php"><![CDATA[adf00a505d828fc8748f2926e4e0216f]]></item>
+		<item id="/src/check_src.php"><![CDATA[f604b575c7be6f54800a6f794740d281]]></item>
+		<item id="/src/sql_src.php"><![CDATA[b57be6ecce29f253477bef6d2bc7abbf]]></item>
+		<item id="/src/upgrade_src.php"><![CDATA[5176ae42e676429ba5fb6c3b242c7da2]]></item>
+		<item id="/src/install_src.php"><![CDATA[56f0567ef2168524b23e3c999bd99c01]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/function/common.func.php"><![CDATA[184934e7dc0407591dad7b74ac14f0b4]]></item>
+		<item id="/function/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/function/admincp.func.php"><![CDATA[acfdd023808b48f61e0600306e8e3223]]></item>
+		<item id="/discuz_plugin_ya_thread_rewrite_TC_UTF8.xml"><![CDATA[14c53b24fe932da731448973f3b88797]]></item>
+		<item id="/install.php"><![CDATA[b24a4a4cd706801d3eaa2385de494bfe]]></item>
+		<item id="/upgrade.php"><![CDATA[ee1ab898046095dca80677e0e21fafbb]]></item>
+		<item id="/discuz_plugin_ya_thread_rewrite_SC_UTF8.xml"><![CDATA[966a18951000c7ec17861bb04f443acf]]></item>
+	</item>
+</root>

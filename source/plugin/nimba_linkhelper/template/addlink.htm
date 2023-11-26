@@ -1,0 +1,94 @@
+{subtemplate common/header}
+<div id="pt" class="bm cl">
+<div class="z"><a href="./" class="nvhm">$_G[setting][bbname]</a><em>&rsaquo;</em><a href="./">$_G[setting][bbname]</a> <em>&rsaquo;</em><a href="plugin.php?id=nimba_linkhelper:addlink">{lang nimba_linkhelper:appname}</a> <em>&rsaquo;</em>$plugin_nav</div>
+</div>
+<div id="ct" class="ct2 wp cl">
+<div class="mn">
+    	<div class="bm bw0">
+            <div class="bm bw0">
+				<ul class="tb cl">
+					<li <!--{if $_GET['mod']== 'apply' || empty($_GET['mod'])}-->class="a"<!--{/if}-->><a href="plugin.php?id=nimba_linkhelper:addlink&mod=apply">{lang nimba_linkhelper:appntab_applyame}</a></li>
+					<!--{if !empty($_G[uid])}--><li <!--{if $_GET['mod']== 'log'}-->class="a"<!--{/if}-->><a href="plugin.php?id=nimba_linkhelper:addlink&mod=log">{lang nimba_linkhelper:tab_log}</a></li><!--{/if}-->
+				</ul>
+				<div class="datalist" style="margin:10px 0 0 0;">
+					<!--{if $_GET['mod']== 'apply' || empty($_GET['mod'])}-->
+					<div style="border:1px dashed #f60; background-color:#FFC" class="notice">{lang nimba_linkhelper:l1}<br>{lang nimba_linkhelper:l3}{$vars['ailab_wz']}<br>{lang nimba_linkhelper:l2}{$vars['ailab_url']}</div>
+					<form method="post" action="plugin.php?id=nimba_linkhelper:addlink&mod=apply&applysubmit=true" name="applyform">
+					<input type="hidden" name="referer" value="$_G[referer]">
+					<input type="hidden" name="formhash" value="{FORMHASH}" />
+					<table width="100%" border="1" bordercolor="#cccccc">
+						<tr>
+							<td width="100" height="35" bgcolor="#F2F2F2" align="center"><span style="color:red;">*</span> {lang nimba_linkhelper:sitename}</td>
+							<td colspan="2">&nbsp;&nbsp;&nbsp;<input type="text" name="sitename" style="width:220px; height:22px; line-height22px;" /> $site_name</td>
+						</tr>
+						<tr>
+							<td height="35" bgcolor="#F2F2F2" align="center"><span style="color:red;">*</span>{lang nimba_linkhelper:siteurl}</td>
+							<td colspan="2">&nbsp;&nbsp;&nbsp;<input type="text" id="siteurl" name="siteurl" value="http://" style="width:220px; height:22px; line-height22px;"/> {$site_url}</td>
+						</tr>
+						<tr>
+							<td height="35" bgcolor="#F2F2F2" align="center">{lang nimba_linkhelper:logo}</td>
+							<td colspan="2">&nbsp;&nbsp;&nbsp;<input type="text" name="logo" style="width:220px; height:22px; line-height22px;" /> {$site_logo}</td>
+						</tr>
+						<tr>
+							<td bgcolor="#F2F2F2" align="center">{lang nimba_linkhelper:intro}</td>
+							<td colspan="2">
+								<div class="tedt" style="width:96%;margin:5px auto;">
+								<div class="area">
+									<textarea rows="5" cols="20" name="description" class="pt" id="replymessage"></textarea>
+								</div>
+							</div>
+							</td>
+						</tr>
+					</table>
+					<div style="text-align:center; margin-top:20px;">
+						<button type="submit" name="applysubmit" id="applysubmit" value="true" class="pn pnp" /><strong>{lang nimba_linkhelper:submit}</strong></button>
+						<button type="reset" name="sendreset" class="pn pnp" /><strong>{lang nimba_linkhelper:reset}</strong></button>
+					</div>
+					</form>
+					<!--{elseif $_GET['mod']== 'log' && $_G['uid']!=''}-->
+					<div style="border:1px dashed #f60; background-color:#FFC" class="notice">{lang nimba_linkhelper:l1}<br>{lang nimba_linkhelper:l3}{$vars['ailab_wz']}<br>{lang nimba_linkhelper:l2}{$vars['ailab_url']}</div>
+					<table width="100%" border="1" bordercolor="#cccccc">
+						<tr bgcolor="#F2F2F2" align="center">
+							<td width="140">{lang nimba_linkhelper:log_title1}</td>
+							<td height="35">{lang nimba_linkhelper:log_title2}</td>
+							<td width="60">{lang nimba_linkhelper:log_title3}</td>
+							<td width="80">{lang nimba_linkhelper:log_title4}</td>
+							<td width="100">{lang nimba_linkhelper:log_title5}</td>
+							<td width="60">{lang nimba_linkhelper:log_title6}</td>
+						</tr>
+						<!--{loop $loglists $loglist}-->
+						<tr align="center">
+							<td height="35">{$loglist['sitename']}</td>
+							<td>{$loglist['siteurl']}</td>
+							<td>{$loglist['logo']}</td>
+							<td><span id="viewmsg_$loglist[id]" onmouseover="showMenu(this.id);"><a href="javascript:;" class="red">{lang nimba_linkhelper:viewintro}</a></span>
+							<div id="viewmsg_$loglist[id]_menu" style="display:none; border:1px solid #ccc; background-color:#F2F2F2; padding:10px; text-align:left">$loglist[description]</div></td>
+							<td>{$loglist[dateline]}</td>
+							<td>{$loglist[status]}</td>
+						</tr>
+						<!--{/loop}-->
+					</table>
+					<div style="clear:both"></div>
+					<div style="margin-top:20px;">$multipage</div>
+					<!--{/if}-->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="sd"><!--提示信息-->
+		<div class="bm">
+			<div class="bm_h cl">
+				<h2>{lang nimba_linkhelper:side_tips1}</h2>
+			</div>
+			<div class="bm_c">
+				<ul class="xl" style="line-height:25px;">
+					{$tips}
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</div>
+{subtemplate common/footer}

@@ -1,0 +1,98 @@
+<!--don't close the div here-->
+<div class="vipblock">
+<h3 class="title">{$dh['pay']}</h3> 
+<div class="content">
+<div class="tips">
+<p>{lang dc_vip:pay_vip_0} <b>{$cvar['credit']}{$vip_price_ext}</b></p>
+<p>{lang dc_vip:pay_vip_1}</p>
+</div>
+<form method="post" action="plugin.php?id=dc_vip&action=pay" id="payfor" onsubmit="showWindow('payfor', 'payfor', 'post');return false;" autocomplete="off">
+<input type="hidden" name="formhash" value="{FORMHASH}"/>
+<input type="hidden" name="submit" value="true" />
+<input type="hidden" name="handlekey" value="payfor" />
+<input type="hidden" id="payway" name="payway" value="year" />
+<table class="pay_box">
+	<tr class="pay_list" >
+		<td class="tit">{lang dc_vip:pay_way}<td>
+		<td>
+			<div class="chk_red_box_list chk_red_box_list_2px">
+				<li class="cur" onclick="way_set('year')" id="way_year"><div class="inner_wp"><span class="inner">{lang dc_vip:pay_way_year}<i class="now_chk"></i></span></div></li>
+				<li class="" onclick="way_set('month')"  id="way_month"><div class="inner_wp"><span class="inner">{lang dc_vip:pay_way_month}<i class="now_chk"></i></span></div></li>	
+			</div>
+	   <td>
+	</tr>
+	<tr class="pay_list" id="paylenth">
+		<td class="tit">{lang dc_vip:pay_times}<td>
+		<td>
+			<input type="text" id="paylen" size="5" name="paylen" value="1" maxlength="1" onchange="getmoney();"/><i id="payp" style="padding-left:14px;">{lang dc_vip:year}</i>
+	   <td>
+	</tr>
+	<tr class="pay_list" >
+		<td class="tit">{lang dc_vip:pay_for}<td>
+		<td>
+			<div id="show_money"></div>
+	   <td>
+	</tr>
+</table>
+<!--{if $cvar['secopen']}-->
+<span id="seccode_{$randstr}"></span><script type="text/javascript">updateseccode('{$randstr}', '<table class="pay_box"><tr class="pay_list"><td  class="tit"><sec></td><td><sec><p class="d"><sec></p></td></tr></table>', 'dc_vip');</script>
+<!--{/if}-->
+<table class="pay_box">
+	<tr class="pay_list" >
+		<td class="tit"><td>
+		<td>
+			<button class="<!--{if $_G['dc_plugin']['vip']['user']}-->xf_btn<!--{else}-->open_btn<!--{/if}-->" type="submit" name="btn" value="true"></button>
+	   <td>
+	</tr>
+</table>
+</form>
+</div>
+</div>
+<div class="vipblock">
+<h3 class="title">{lang dc_vip:viptq}</h3>
+<div class="content">
+<p><!--{if $_G['dc_plugin']['vip']['user']}-->{lang dc_vip:vip_msg}<!--{else}-->{lang dc_vip:no_vip_msg_1}<!--{/if}--></p>
+<ul class="intro">
+{$vip_intro}
+</ul>
+</div>
+</div>
+<div class="vipblock">
+<h3 class="title">{lang dc_vip:vip_year}</h3>
+<div class="content">
+{lang dc_vip:vip_year_msg}{$cvar['yearv']}{lang dc_vip:vip_year_msg_more}
+</div></div>
+<script>
+	function way_set(tp) {
+		$('way_month').className="";
+		$('way_year').className="";
+		<!--{if $cvar['forevercredit']}-->$('way_forever').className="";<!--{/if}-->
+		$('way_'+tp).className="cur";
+		$('payway').value=tp;
+		$('paylen').readOnly = false;
+		$('paylenth').style.display="";
+		if (tp == 'year'){
+			$('paylen').value=1;
+			$('payp').innerHTML="{lang dc_vip:year}";
+		}else if(tp == 'forever'){
+			$('paylen').value=1;
+			$('paylenth').style.display="none";
+		}else{
+			$('paylen').value={$cvar['mplower']};
+			$('payp').innerHTML="{lang dc_vip:month} ({lang dc_vip:paylimit}{$cvar['mplower']})";
+		}
+		getmoney();
+	}
+	function succeedhandle_payfor(locationhref, message, param){
+		showDialog(message, 'right', '', 'window.location.href=\''+locationhref+'\'','','','','','','',3);
+	}
+	function errorhandle_payfor(message, param){
+		hideWindow('payfor');
+		showDialog(message, 'alert');
+	}
+	function getmoney(){
+		if(isNaN($('paylen').value)||$('paylen').value<0||($('paylen').value>10&&$('payway').value!='forever')){$('paylen').value=1;}
+		ajaxget('plugin.php?id=dc_vip&action=pay&getmoney=yes&payway='+$('payway').value+'&paylen='+$('paylen').value, 'show_money');
+	}
+	getmoney();
+</script>

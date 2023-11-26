@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2020-01-11 19:17]]></item>
+	<item id="From"><![CDATA[因分享而精彩 (http://bbs.share555.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[批量注册马甲用户发帖]]></item>
+			<item id="identifier"><![CDATA[ror_user_vest]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[ror_user_vest/]]></item>
+			<item id="copyright"><![CDATA[share555]]></item>
+			<item id="version"><![CDATA[2.9]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[mobileror_user_vest]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[admin]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[马甲管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[ror_user_vest]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[是否随机注册ip]]></item>
+				<item id="description"><![CDATA[开启后随机国内ip作为用户注册ip，否侧为本机ip]]></item>
+				<item id="variable"><![CDATA[is_rand_ip]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[开启论坛发帖使用马甲 ...]]></item>
+				<item id="description"><![CDATA[开启后论坛发帖已添加的用户将用随机马甲发布]]></item>
+				<item id="variable"><![CDATA[forum_thread_open_vest]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[开启论坛发回复使用马甲 ...]]></item>
+				<item id="description"><![CDATA[开启后论坛发回复已添加的用户将用随机马甲发布]]></item>
+				<item id="variable"><![CDATA[forum_post_open_vest]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[开启群组发帖使用马甲 ...]]></item>
+				<item id="description"><![CDATA[开启后群组发帖已添加的用户将用随机马甲发布]]></item>
+				<item id="variable"><![CDATA[group_thread_open_vest]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[开启群组发回复使用马甲 ...]]></item>
+				<item id="description"><![CDATA[开启后群组发回复已添加的用户将用随机马甲发布]]></item>
+				<item id="variable"><![CDATA[group_post_open_vest]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[使用马甲功能的用户组 ... ...]]></item>
+				<item id="description"><![CDATA[选择的用户组用户登陆发帖或回复时，将开启选择马甲功能，可以选择多个用户组]]></item>
+				<item id="variable"><![CDATA[group_is_open]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[使用马甲功能的用户uid ... ...]]></item>
+				<item id="description"><![CDATA[添加的用户uid登陆发帖或回复时，将开启选择马甲功能，多个uid用英文逗号拼接]]></item>
+				<item id="variable"><![CDATA[send_uid]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[前台默认随机马甲]]></item>
+				<item id="description"><![CDATA[开启此项默认发布帖子自动使用随机马甲，否则需要在马甲列表里选择需要使用的马甲]]></item>
+				<item id="variable"><![CDATA[vest_is_rand]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[电脑前台马甲展示数量]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[web_vest_number]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[70]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[手机前台马甲展示数量]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[wap_vest_number]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[100]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[注册马甲性别设置]]></item>
+				<item id="description"><![CDATA[若马甲性别保密可设置，输入数字，0默认、1男、2女、3随机男女]]></item>
+				<item id="variable"><![CDATA[vest_gender]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[注册马甲默认密码]]></item>
+				<item id="description"><![CDATA[可以统一设置新注册马甲用户的密码，若设置建议复杂些降低安全隐患]]></item>
+				<item id="variable"><![CDATA[vest_password]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[注册马甲接口token]]></item>
+				<item id="description"><![CDATA[对外提供注册马甲接口数据的验证凭证，需要自定义越复杂越好]]></item>
+				<item id="variable"><![CDATA[api_token]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="success"><![CDATA[操作成功]]></item>
+				<item id="fail"><![CDATA[操作失败，请重试]]></item>
+				<item id="nologin"><![CDATA[抱歉，未登录操作失败]]></item>
+				<item id="nodata"><![CDATA[无查询数据]]></item>
+				<item id="nosave"><![CDATA[数据保存失败，请重试]]></item>
+				<item id="noupdate"><![CDATA[数据更新失败，请重试]]></item>
+				<item id="nodelete"><![CDATA[数据删除失败，请重试]]></item>
+				<item id="noparam"><![CDATA[缺少参数，请重试]]></item>
+				<item id="notoken"><![CDATA[验证失效，请重试]]></item>
+				<item id="nopermission"><![CDATA[无权限操作，请重试]]></item>
+				<item id="repeat"><![CDATA[添加数据重复，请重试]]></item>
+				<item id="noaction"><![CDATA[未知方法，请重试]]></item>
+				<item id="noselect"><![CDATA[请选择操作数据]]></item>
+				<item id="noformhash"><![CDATA[未知来源，请重试]]></item>
+				<item id="op"><![CDATA[操作]]></item>
+				<item id="edit"><![CDATA[编辑]]></item>
+				<item id="delete"><![CDATA[删除]]></item>
+				<item id="cancle"><![CDATA[取消]]></item>
+				<item id="submit"><![CDATA[立即提交]]></item>
+				<item id="reset"><![CDATA[重置]]></item>
+				<item id="add"><![CDATA[添加]]></item>
+				<item id="field_nodata"><![CDATA[无]]></item>
+				<item id="func_page_prev"><![CDATA[]]></item>
+				<item id="func_page_next"><![CDATA[]]></item>
+				<item id="func_page_intval"><![CDATA[…]]></item>
+				<item id="func_page_to"><![CDATA[到第]]></item>
+				<item id="func_page_page"><![CDATA[页]]></item>
+				<item id="func_page_submit"><![CDATA[确定]]></item>
+				<item id="func_page_count"><![CDATA[共]]></item>
+				<item id="func_page_number"><![CDATA[条]]></item>
+				<item id="vest_username"><![CDATA[用户名]]></item>
+				<item id="vest_password"><![CDATA[用户密码]]></item>
+				<item id="vest_source"><![CDATA[来源网站]]></item>
+				<item id="vest_dateline"><![CDATA[添加时间]]></item>
+				<item id="local_vest_add_header"><![CDATA[添加马甲]]></item>
+				<item id="local_vest_add_placeholder"><![CDATA[输入用户名，一行一条数据或者用英文逗号拼接]]></item>
+				<item id="local_vest_import_header"><![CDATA[导入马甲，用于已存在的站内用户作为马甲发帖]]></item>
+				<item id="local_vest_import_placeholder"><![CDATA[输入站内已注册的用户uid，一行一条数据或者用英文逗号拼接，可以输入范围例如：1,2,3-10,11]]></item>
+				<item id="import_success"><![CDATA[导入成功]]></item>
+				<item id="user_is_noexist"><![CDATA[用户不存在]]></item>
+				<item id="username_sensitive"><![CDATA[用户名包含敏感字符]]></item>
+				<item id="username_shield"><![CDATA[用户名包含被系统屏蔽的字符]]></item>
+				<item id="username_is_registered"><![CDATA[该用户名已被注册]]></item>
+				<item id="email_is_invalid"><![CDATA[抱歉，Email 地址无效]]></item>
+				<item id="email_is_unused"><![CDATA[抱歉，Email 包含不可使用的邮箱域名]]></item>
+				<item id="email_is_registered"><![CDATA[该 Email 地址已被注册]]></item>
+				<item id="op_unknow"><![CDATA[未定义操作]]></item>
+				<item id="user_register_success"><![CDATA[成功注册为马甲用户]]></item>
+				<item id="vest_is_registered"><![CDATA[已注册为马甲用户]]></item>
+				<item id="local_vest_import"><![CDATA[导入uid]]></item>
+				<item id="local_vest_export"><![CDATA[导出马甲]]></item>
+				<item id="vest_get_uid"><![CDATA[获取uid]]></item>
+				<item id="vest_uid_noselect"><![CDATA[请选择用户数据]]></item>
+				<item id="vest_uid_get_title"><![CDATA[用户uid数据]]></item>
+				<item id="share_vest"><![CDATA[分享马甲]]></item>
+				<item id="share_vest_register"><![CDATA[注册用户]]></item>
+				<item id="share_vest_register_batch"><![CDATA[批量注册用户]]></item>
+				<item id="share_vest_register_batch_number"><![CDATA[注册数量]]></item>
+				<item id="share_vest_register_batch_end"><![CDATA[批量注册完成]]></item>
+				<item id="share_vest_register_batch_header"><![CDATA[注册用户完成，跳转中...]]></item>
+				<item id="share_vest_add"><![CDATA[添加分享马甲]]></item>
+				<item id="share_vest_add_notice"><![CDATA[您可以添加常用的马甲数据分享给大家使用，马甲必须是站内已注册的用户并且上传了头像信息，添加成功后，大家会看到此马甲是来自您的网站，请填写有意义的马甲数据给大家分享使用，检测到添加了垃圾、广告、违禁等数据，将被加入黑名单删除数据并禁用此功能]]></item>
+				<item id="vest_rand"><![CDATA[随机马甲]]></item>
+				<item id="vest_select"><![CDATA[选择马甲]]></item>
+				<item id="grab_auth"><![CDATA[获取授权]]></item>
+				<item id="grab_auth_success"><![CDATA[授权成功]]></item>
+				<item id="weight"><![CDATA[权重]]></item>
+				<item id="local_vest_weight_header"><![CDATA[设置前台展示马甲顺序]]></item>
+				<item id="weight_placeholder"><![CDATA[输入整数，数值越大排序越靠前]]></item>
+				<item id="gender"><![CDATA[性别]]></item>
+				<item id="gender0"><![CDATA[保密]]></item>
+				<item id="gender1"><![CDATA[男]]></item>
+				<item id="gender2"><![CDATA[女]]></item>
+				<item id="novest"><![CDATA[今天已无新马甲，每天会新增，明天再来试试吧]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="notice_title"><![CDATA[提示信息]]></item>
+				<item id="search_placeholder"><![CDATA[请输入搜索内容]]></item>
+				<item id="select_search_field"><![CDATA[请选择搜索字段]]></item>
+				<item id="search"><![CDATA[搜索]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

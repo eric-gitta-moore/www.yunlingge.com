@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[nimba_forumdev.plugin]]></item>
+	<item id="RevisionID"><![CDATA[69189]]></item>
+	<item id="SN"><![CDATA[2020012608phUtT8MfuQ]]></item>
+	<item id="RevisionDateline"><![CDATA[1566193931]]></item>
+	<item id="Data">
+		<item id="/listnum.gif"><![CDATA[f75cb628d9579450afccd8bfbd982f7a]]></item>
+		<item id="/dotline.gif"><![CDATA[9d80225af23d621378b48a98f3ebf469]]></item>
+		<item id="/uninstall.php"><![CDATA[9bae87abf99eb2a603c0928f42f4c5bb]]></item>
+		<item id="/hook.class.php"><![CDATA[548279380269a557c658ff0a3681ef38]]></item>
+		<item id="/cache.inc.php"><![CDATA[8c9b0271853d00558c0fa7127412f187]]></item>
+		<item id="/addon.inc.php"><![CDATA[392622d14fee6960b28f12b62032594d]]></item>
+		<item id="/install.php"><![CDATA[e9559c3082b7b7c599be0caf50ca7786]]></item>
+		<item id="/upgrade.php"><![CDATA[69f7c5d48e83d5fa947783a59489c5cb]]></item>
+		<item id="/discuz_plugin_nimba_forumdev_TC_UTF8.xml"><![CDATA[650bc6dd62698b2d0a3f16e1b23ef348]]></item>
+		<item id="/discuz_plugin_nimba_forumdev_SC_UTF8.xml"><![CDATA[d48ed4c960a0aa96ae2a6accb7bf3f83]]></item>
+		<item id="/template/list.htm"><![CDATA[fb842e5bf0d1eff4515d446244bb406d]]></item>
+	</item>
+</root>

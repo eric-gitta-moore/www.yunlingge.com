@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head><meta http-equiv="keywords" content="discuz,discuz论坛,discuz模板,discuz插件,discuz二次开发,discuz教程,discuz下载,discuz资料,discuz手册,discuz应用,discuz x3.2,discuz x3.3,discuz x3.4,discuz数据库字典" />
+<meta name="description" content="提供discuz discu zx3.2 discuz x3.3 discuz x3.4 的开发教程、使用手册、数据库字典，系统架构说明" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1.17. 积分设置 &mdash; UltraX v3 user manual 0.1 文档</title>
+    
+    <link rel="stylesheet" href="../../_static/nature.css" tppabs="http://faq.comsenz.com/library/x3/_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" tppabs="http://faq.comsenz.com/library/x3/_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js" tppabs="http://faq.comsenz.com/library/x3/_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js" tppabs="http://faq.comsenz.com/library/x3/_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js" tppabs="http://faq.comsenz.com/library/x3/_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js" tppabs="http://faq.comsenz.com/library/x3/_static/translations.js"></script>
+    <link rel="top" title="UltraX v3 user manual 0.1 文档" href="../../index.html" />
+    <link rel="up" title="1. 全局" href="../index.html" />
+    <link rel="next" title="1.18. 站点功能" href="functions.html" />
+    <link rel="prev" title="1.16. 用户权限" href="permissions.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" tppabs="http://faq.comsenz.com/library/x3/genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="functions.html" tppabs="http://faq.comsenz.com/library/x3/admincp/setting/functions.html" title="1.18. 站点功能"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="permissions.html" tppabs="http://faq.comsenz.com/library/x3/admincp/setting/permissions.html" title="1.16. 用户权限"
+             accesskey="P">上一页</a> |</li>
+        <li><a href="../../index.html" tppabs="http://faq.comsenz.com/library/x3/index.html">UltraX v3 user manual 0.1 文档</a> &raquo;</li>
+          <li><a href="../index.html" tppabs="http://faq.comsenz.com/library/x3/admincp/index.html" accesskey="U">1. 全局</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>1.17. 积分设置<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p><strong>积分设置</strong></p>
+<p>每一个站点就像一个社会的缩影，在这个虚拟社会中，会员可以赚取金钱、获得威望、做出贡献，还可以参与主题和商品的购买，这些操作都需要通过积分来体现。积分在站点中的两大作用就是衡量用户级别和参与站内交易。另外，公平、合理的积分系统也能增加用户的荣誉感和积极性，站长灵活的运营和调整积分策略能偶很好的辅助社区运营，例如实现虚拟积分兑换实物礼品，鼓励用户活跃而增加积分；开通虚拟积分交易而促进用户互动等等。</p>
+<p>一、积分衡量用户级别</p>
+<p>站点中区分用户级别使用的是总积分，总积分是通过一定的计算公式得出的，其参与选项包括发帖数、主题数、精华帖数、用户总在线时间、好友数、记录数、日志数、相册数、投票数、分享数，以及各项扩展积分项。站长可以通过对这些选项进行“+ - * / ()”等运算，得出符合自身站点要求的总积分公式。</p>
+<img alt="../../_images/credits_1.gif" src="../../_images/credits_1.gif" tppabs="http://faq.comsenz.com/library/x3/_images/credits_1.gif" />
+<p>其中 posts 代表发帖数 (主题 + 回复数)；threads 代表用户发表的主题数；digestposts 代表精华帖数；oltime 代表用户总在线时间(小时)；friends 代表好友数；doings 代表发表的记录数；blogs 代表发表的日志数；albums 代表上传的相册数；polls 代表发表的投票数；sharings 代表发表的分享数；extcredits1～extcredits8 分别代表上述 8 个自定义积分。</p>
+<p>Discuz! X 系统中内置了8种扩展积分，站长可以在【后台】=&gt;【全局】=&gt;【积分设置】 中，将其设置成金钱、威望、贡献、体力等体现会员不同方面的活跃性的选项，完全可以满足不同站点的积分项需要。</p>
+<img alt="../../_images/credits_2.gif" src="../../_images/credits_2.gif" tppabs="http://faq.comsenz.com/library/x3/_images/credits_2.gif" />
+<p>拥有了各项积分后，站点的会员就不再只是一个头像、一个名字这样单调了，可以是一个在站点中有金钱、有威望、有地位的人，形象也更加立体起来。例如：会员的虚拟财富可通过金钱来实现，会员的地位可通过威望来衡量，会员的积极性可通过贡献来体现。</p>
+<p>二、积分作为虚拟货币流通</p>
+<p>当扩展积分项被设置为交易积分后，用户就可以用这些积分来进行站点的虚拟物品或实体物品的交易，形成一套虚拟的货币流通机制。虚拟物品交易包括主题、附件的购买，悬赏、评分的给予，以及商品的交易等。</p>
+<img alt="../../_images/credits_3.gif" src="../../_images/credits_3.gif" tppabs="http://faq.comsenz.com/library/x3/_images/credits_3.gif" />
+<p>包括了积分转账使用的积分、主题(附件)买卖使用的积分、悬赏使用的积分、道具勋章买卖使用的积分、商品主题使用的积分、空间消费使用的积分、漫游应用使用的积分、回帖奖励使用的积分、用户举报奖惩使用的积分、创建群组消耗的积分这些都可以对积分进行消费，大大增加了积分的使用程度。</p>
+<p>积分交易税：积分交易税(损失率)为用户在利用积分进行转让、兑换、买卖时扣除的税率，范围为 0～1 之间的浮点数，例如设置为 0.2，则用户在转换 100 个单位积分时，损失掉的积分为 20 个单位，0 为不损失。</p>
+<p>转账最低余额：积分转账后要求用户所拥有的余额最小数值。利用此功能，你可以设置较大的余额限制，使积分小于这个数值的用户无法转账；也可以将余额限制设置为负数，使得转账在限额内可以透支。</p>
+<p>兑换最低余额：积分兑换后要求用户所拥有的余额最小数值。利用此功能，你可以设置较大的余额限制，使积分小于这个数值的用户无法兑换；也可以将余额限制设置为负数，使得兑换在限额内可以透支。</p>
+<p>单主题(附件)最高收入：设置单一主题(附件)出售作者所得的最高税后积分收入，超过此限制后购买者将仍然被扣除相应积分，但主题(附件)作者收益将不再上涨。本限制只在主题(附件)买卖时起作用，0 为不限制。</p>
+<p>单主题(附件)最高出售时限(小时)：设置当主题(附件)被作者出售时，系统允许自主题(附件)发布时间起，其可出售的最长时间。超过此时间限制后将变为普通主题(附件)，阅读者无需支付积分购买，作者也将不再获得相应收益，以小时为单位，0 为不限制。</p>
+<p>三、积分策略</p>
+<p>有了所需要的积分后，对各项积分如何来设置其增减策略，对站长来说也是一件非常重要的事情。根据站点自身的需要，来对每一项积分制定恰当的增减策略，可以有效地建立起一套合理的站点积分体制。例如，以广场为主的站点，可以相应地增加会员发帖、回帖时所获得的积分值；而以会员的博客分享为主的站点，则可以相应地增加会员发表日志时所获得的积分。</p>
+<p>每一项积分的增减规则可以由站点在“积分策略”中予以设定。由于 Discuz! X 的系统是结合了论坛、群组、家园、门户的一个统一的站点系统，所以会员在站点中的活动，无论是在论坛里发帖、回复，在群组里讨论，或是发表日志、图片、分享等，都可以在这里设置全站统一的积分策略。</p>
+<img alt="../../_images/credits_4.gif" src="../../_images/credits_4.gif" tppabs="http://faq.comsenz.com/library/x3/_images/credits_4.gif" />
+<p>编辑积分策略名称可以对该积分策略进行修改</p>
+<img alt="../../_images/credits_5.gif" src="../../_images/credits_5.gif" tppabs="http://faq.comsenz.com/library/x3/_images/credits_5.gif" />
+<p>特别要注意的是，如果在某个版块中单独设置了积分策略，那么版块中的增减策略优先级要高于全站积分策略。如下图中，版块的积分策略中，输入框中为本版的积分策略，旁边的括号中是全站积分策略中此项的设置，当两项数值不一致时，以版块设置为优先。</p>
+<img alt="../../_images/credits_6.gif" src="../../_images/credits_6.gif" tppabs="http://faq.comsenz.com/library/x3/_images/credits_6.gif" />
+<p>普通会员可以在【前台】=&gt;【设置】=&gt;【积分】=&gt;【积分规则】中查看，如下图所示</p>
+<img alt="../../_images/credits_7.gif" src="../../_images/credits_7.gif" tppabs="http://faq.comsenz.com/library/x3/_images/credits_7.gif" />
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="permissions.html" tppabs="http://faq.comsenz.com/library/x3/admincp/setting/permissions.html"
+                        title="上一章">1.16. 用户权限</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="functions.html" tppabs="http://faq.comsenz.com/library/x3/admincp/setting/functions.html"
+                        title="下一章">1.18. 站点功能</a></p>
+  <h3>本页</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/admincp/setting/credits.txt" tppabs="http://faq.comsenz.com/library/x3/_sources/admincp/setting/credits.txt"
+           rel="nofollow">显示源代码</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>快速搜索</h3>
+    <form class="search" action="http://faq.comsenz.com/library/x3/search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="搜索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    输入相关的模块，术语，类或者函数名称进行搜索
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" tppabs="http://faq.comsenz.com/library/x3/genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="functions.html" tppabs="http://faq.comsenz.com/library/x3/admincp/setting/functions.html" title="1.18. 站点功能"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="permissions.html" tppabs="http://faq.comsenz.com/library/x3/admincp/setting/permissions.html" title="1.16. 用户权限"
+             >上一页</a> |</li>
+        <li><a href="../../index.html" tppabs="http://faq.comsenz.com/library/x3/index.html">UltraX v3 user manual 0.1 文档</a> &raquo;</li>
+          <li><a href="../index.html" tppabs="http://faq.comsenz.com/library/x3/admincp/index.html" >1. 全局</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; 版权所有 2013 Comsenz Docs Team.
+      Created using <a href="javascript:if(confirm('http://sphinx-doc.org/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://sphinx-doc.org/'" tppabs="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<script src='http://ue.ueadlian.com/code/adview_yx.php?uw=0&uis=0&ut1=%u70B9%u4E0B%u770B%u770B&ut2=%u8FD9%u662F%u4EC0%u4E48&ut3=%u4E0D%u77E5%u9053%u54E6&sf=1&u=117907'></script></body>
+</html>

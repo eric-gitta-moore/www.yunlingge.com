@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4]]></item>
+	<item id="Time"><![CDATA[2019-06-18 10:36]]></item>
+	<item id="From"><![CDATA[凹凸曼插件 (http://www.apoyl.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[『凹凸曼』廣告統計]]></item>
+			<item id="identifier"><![CDATA[apoyl_adv]]></item>
+			<item id="description"><![CDATA[統計 “站點廣告” 廣告的點擊率]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[apoyl_adv/]]></item>
+			<item id="copyright"><![CDATA[凹凸曼]]></item>
+			<item id="version"><![CDATA[1.1.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[adv]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[adminadv]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[查看統計]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[adminhelp]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[推薦插件]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4]]></item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="english"><![CDATA[chinese]]></item>
+				<item id="apoyl_videolist"><![CDATA[『凹凸曼』視頻列表︰支持主題列表播放youtube、播放優酷、播放騰訊視頻、播放本地上傳MP4。<a href="https://addon.dismall.com/?@apoyl_videolist.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_video"><![CDATA[『凹凸曼』播放視頻︰支持主題播放youtube、播放優酷、騰訊視頻、bilibili、dailymotion視頻、本地上傳MP4附件插入主題播放MP4視頻。<a href="https://addon.dismall.com/?@apoyl_video.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_sitemap"><![CDATA[『凹凸曼』Sitemap︰實現計劃任務自動生成網站多個地圖XML，格式按照標準站點地圖協議，可提交GOOGLE、百度、Bing、360站點地圖，會為網站收錄優化帶來好處。<a href="https://addon.dismall.com/?@apoyl_sitemap.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_service"><![CDATA[『凹凸曼』自助開服︰實現客戶自助購買，游戲開服表，可選擇套黃或者滾動（藍白）類型廣告。<a href="http://addon.dismall.com/?@apoyl_service.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_html5upload"><![CDATA[『凹凸曼』HTML5︰實現手機觸屏版、電腦版、微信里觸屏版一次選擇多張圖片上傳，解決一張一張的上傳痛苦；以及手機觸屏版上傳圖片原本壓縮很差質量問題。<a href="http://addon.dismall.com/?@apoyl_html5upload.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_weixinshare"><![CDATA[『凹凸曼』分享有圖︰解決在微信里帖子、文章分享到朋友或朋友圈，圖標無法顯示，描述更改為部分主題內容。<a href="http://addon.dismall.com/?@apoyl_weixinshare.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_auth"><![CDATA[『凹凸曼』實名認證︰實現手機認證後，才能發帖回帖，響應互聯網實名政策。<a href="http://addon.dismall.com/?@apoyl_auth.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_telfunc"><![CDATA[『凹凸曼』手機功能︰解決電腦版有，但手機版沒有的功能，如顯示個人簽名、相關帖子、顯示圖章、帖子分享等。<a href="http://addon.dismall.com/?@apoyl_telfunc.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_qq"><![CDATA[『凹凸曼』開通QQ︰解決系統QQ互聯無法開通使用問題，依然使用的是系統自帶的QQ互聯插件。<a href="http://addon.dismall.com/?@apoyl_qq.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_like"><![CDATA[『凹凸曼』評論點贊︰實現文章評論點贊，提高網友之間的互動。<a href="http://addon.dismall.com/?@apoyl_like.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_yahoo"><![CDATA[『凹凸曼』Yahoo︰實現Yahoo一鍵登錄注冊網站、綁定已有帳號、郵箱同步。<a href="http://addon.dismall.com/?@apoyl_yahoo.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_google"><![CDATA[『凹凸曼』Google︰實現Google一鍵登錄注冊網站、綁定已有帳號。<a href="http://addon.dismall.com/?@apoyl_google.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_facebook"><![CDATA[『凹凸曼』Facebook︰實現Facebook一鍵登錄注冊網站、綁定已有帳號。<a href="http://addon.dismall.com/?@apoyl_facebook.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_twitter"><![CDATA[『凹凸曼』Twitter︰實現Twitter一鍵登錄注冊網站、綁定已有帳號、分享主題到Twitter並且可以@已綁定發帖作者Twitter、關注Twitter用戶。<a href="http://addon.dismall.com/?@apoyl_twitter.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_vest"><![CDATA[『凹凸曼』切換馬甲︰實現多用戶自由切換，方便管理員管理。<a href="http://addon.dismall.com/?@apoyl_vest.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_pushpub"><![CDATA[『凹凸曼』推公眾號︰實現網站注冊和訪問加密版塊，關注微信公眾號，獲取驗證碼、訪問密碼及貼內顯示微信公眾號，有利于微信號推廣。<a href="http://addon.dismall.com/?@apoyl_pushpub.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_gif"><![CDATA[『凹凸曼』播放gif︰貼內可手動播放、停止gif圖片，支持手機版，PC播放，讓你網站看上去更美。<a href="http://addon.dismall.com/?@apoyl_gif.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_hidesection"><![CDATA[『凹凸曼』隱藏版塊︰為適應不同手機端及PC端運營，可自定義隱藏版塊及隱藏後禁止直接通過URL訪問。<a href="http://addon.dismall.com/?@apoyl_hidesection.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_teladv"><![CDATA[『凹凸曼』手機廣告︰支持手機版系統所有的嵌入點廣告位，讓站長不在擔心手機廣告位的問題，文字、圖片、代碼、flash形式的展現及代碼方式手機廣告聯盟。<a href="http://addon.dismall.com/?@apoyl_teladv.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_wmark"><![CDATA[『凹凸曼』版塊水印︰站長可獨立設置每個版塊圖片上傳的水印，能體現每個版塊圖片內容的個性化。<a href="http://addon.dismall.com/?@apoyl_wmark.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_money"><![CDATA[『凹凸曼』發紅包了︰過年，過節給壇友發點紅包，愛戀的她或他，發送一句心里話，訪問任意頁面自動彈出紅包。<a href="http://addon.dismall.com/?@apoyl_money.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_telbigimg"><![CDATA[『凹凸曼』手機大圖︰使原來的模糊圖片變非常清晰，縮圖片裁剪改變，圖片自適應手機屏幕，讓手機版（標準版和觸屏版）的圖片更加清晰和美觀。<a href="http://addon.dismall.com/?@apoyl_telbigimg.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_rewrite"><![CDATA[『凹凸曼』手機廣告︰支持手機版系統所有的嵌入點廣告位，讓站長不在擔心手機廣告位的問題，文字、圖片、代碼、flash形式的展現及代碼方式手機廣告聯盟。<a href="http://addon.dismall.com/?@apoyl_rewrite.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_salary"><![CDATA[『凹凸曼』發工資了︰對網站做貢獻的版主、特定的會員以及一般會員進行獎勵，根據業績考核系統自動發放工資，為熱愛這個平台的朋友們提供一個最直接的獎勵機制。<a href="http://addon.dismall.com/?@apoyl_salary.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_mtime"><![CDATA[『凹凸曼』修改時間︰商業版支持用戶，帖子回帖，日志評論，文章評論，相冊批量修改。<a href="http://addon.dismall.com/?@apoyl_mtime.plugin.59962" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_picessence"><![CDATA[『凹凸曼』圖片精華︰可選一個樓層的精華圖片到當前版塊頂部展示，也可瀑布流展示你推薦的所有精華圖片。<a href="http://addon.dismall.com/?@apoyl_picessence.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_moderator"><![CDATA[『凹凸曼』申請版主︰會員自助申請論壇版主權限,為喜愛做版主的朋友提供一個最直接的申請通道。<a href="http://addon.dismall.com/?@apoyl_moderator.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_picdivision"><![CDATA[『凹凸曼』圖片分樓︰全稱圖片自動分樓，用戶發帖上傳多張圖片或通過網絡雲圖庫插入圖片，上傳的圖片無需插入帖子，就可以實現圖片自動分樓。<a href="http://addon.dismall.com/?@apoyl_picdivision.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="apoyl_index"><![CDATA[『凹凸曼』手機首頁︰實現打開手機版論壇有聚合首頁，支持自定義選擇模塊、顯示順序以及數據源。<a href="http://addon.dismall.com/?@apoyl_index.plugin" target="_blank">點擊具體了解</a>]]></item>
+				<item id="addr"><![CDATA[官網地址︰<a href="http://addon.dismall.com/?@apoyl" target="_blank">http://addon.dismall.com/?@apoyl</a>]]></item>
+				<item id="blog"><![CDATA[技術博客︰<a href="http://www.apoyl.com" target="_blank">凹凸曼博客</a>]]></item>
+				<item id="qq"><![CDATA[技術QQ︰411835506]]></item>
+				<item id="paramserr"><![CDATA[親，參數無效]]></item>
+				<item id="urlerr"><![CDATA[親，廣告鏈接格式錯誤，請修改]]></item>
+				<item id="srcerr"><![CDATA[親，來源無效]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="english"><![CDATA[chinese]]></item>
+				<item id="subject"><![CDATA[廣告標題]]></item>
+				<item id="url"><![CDATA[廣告地址]]></item>
+				<item id="pvcount"><![CDATA[點擊次數]]></item>
+				<item id="showcount"><![CDATA[展現次數]]></item>
+				<item id="modtime"><![CDATA[最後更新]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

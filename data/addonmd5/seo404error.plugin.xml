@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[seo404error.plugin]]></item>
+	<item id="RevisionID"><![CDATA[87076]]></item>
+	<item id="SN"><![CDATA[2020021802L5GrTyS2Dt]]></item>
+	<item id="RevisionDateline"><![CDATA[1581922766]]></item>
+	<item id="Data">
+		<item id="/alipay.inc.php"><![CDATA[dc0da222d19f02c0715a77717cddbfe5]]></item>
+		<item id="/error.class.php"><![CDATA[c0b578ae2875def6afa0164dcda27e07]]></item>
+		<item id="/check.php"><![CDATA[748e47cb21957ce337555f133e0a148e]]></item>
+		<item id="/uninstall.php"><![CDATA[890f1986505dca7ed40b9e74a05b83a0]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/discuz_plugin_seo404error_SC_UTF8.xml"><![CDATA[73c69c7ff04d6a34328fc88e3c0a04f5]]></item>
+		<item id="/image/qiong3.jpg"><![CDATA[774c8cfe5b8da5e4f1c48a07fd7b04c1]]></item>
+		<item id="/image/qiong5.jpg"><![CDATA[2da67346fdeb4c2fbd37b931c0993d5c]]></item>
+		<item id="/image/alipay.jpg"><![CDATA[d3e54873a39068acc8107b7a44d09eda]]></item>
+		<item id="/image/qiong4.jpg"><![CDATA[a25112abde9016775e9513ad4b8ea1c5]]></item>
+		<item id="/image/qiong1.jpg"><![CDATA[a81a3b6d5a3e94e79e91f8de0f6091bd]]></item>
+		<item id="/image/qiong2.jpg"><![CDATA[0aecaec80af4f8d779936716bc2a4865]]></item>
+		<item id="/webkey.php"><![CDATA[c0660a80c11d4c2f67f30bcd54ae7031]]></item>
+		<item id="/discuz_plugin_seo404error_TC_UTF8.xml"><![CDATA[6d9444197b31259e5229b659a68b920c]]></item>
+	</item>
+</root>

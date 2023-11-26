@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[xunjie_attention.plugin]]></item>
+	<item id="RevisionID"><![CDATA[87181]]></item>
+	<item id="SN"><![CDATA[2020030915kIHP3A3NiH]]></item>
+	<item id="RevisionDateline"><![CDATA[1583558692]]></item>
+	<item id="Data">
+		<item id="/uninstall.php"><![CDATA[afce1739edefc0621d7520c974a3a018]]></item>
+		<item id="/xunjie_attention.class.php"><![CDATA[72b2bb93241326f130ff30c36cf885fa]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/discuz_plugin_xunjie_attention_TC_UTF8.xml"><![CDATA[18105d724b67aded14cfc804de11ef95]]></item>
+		<item id="/attention.inc.php"><![CDATA[6bf0c0baf918bb979938cc965cf1bbb3]]></item>
+		<item id="/image/d7h.png"><![CDATA[9fe981dac5d0f51c0cb28177ae1b91e6]]></item>
+		<item id="/image/notice.gif"><![CDATA[e6fe82209f9f6cd43631593360a5d453]]></item>
+		<item id="/image/1.3.png"><![CDATA[7c01a58c3eb5c8b228c421489aad0e51]]></item>
+		<item id="/image/2.3.png"><![CDATA[a19595fc01b9d504c8fba0b53af398de]]></item>
+		<item id="/image/bgu.png"><![CDATA[3b27c9c1f76aaa9df39216ab8d3617eb]]></item>
+		<item id="/install.php"><![CDATA[c0e6abcae1e436d18177de51021a7b08]]></item>
+		<item id="/discuz_plugin_xunjie_attention_SC_UTF8.xml"><![CDATA[96eada845dfc36128f5f7f5b978a4457]]></item>
+		<item id="/template/xunjie_attention.css"><![CDATA[9d6338c69ffc3a60b59b09618b64dbcc]]></item>
+		<item id="/template/attention.htm"><![CDATA[f4cbb71aa729ece21cddbc358d7bdaed]]></item>
+		<item id="/template/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+	</item>
+</root>

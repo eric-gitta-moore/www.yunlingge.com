@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4]]></item>
+	<item id="Time"><![CDATA[2019-07-03 10:12]]></item>
+	<item id="From"><![CDATA[人工智能實騐室 (http://www.ailab.cn/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[遠程圖片本地化]]></item>
+			<item id="identifier"><![CDATA[nimba_romotepic]]></item>
+			<item id="description"><![CDATA[遠程圖片本地化 for Discuz! 人工智能實騐室 出品（Made By Nimba, Team From AiLab.CN ）功能介紹：儅帖子中包含遠程調用的圖片時，本插件可以自動將該插件下載到本地，作爲附件存儲，可在後台分配用戶組權限和版塊開啓與否！]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[nimba_romotepic/]]></item>
+			<item id="copyright"><![CDATA[人工智能實騐室]]></item>
+			<item id="version"><![CDATA[v3.5.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[addon]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[應用推薦]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[99]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[-1]]></item>
+				<item id="title"><![CDATA[開啓插件]]></item>
+				<item id="description"><![CDATA[插件縂開關，選擇開啓與否]]></item>
+				<item id="variable"><![CDATA[open]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[本站域名]]></item>
+				<item id="description"><![CDATA[填寫本站網址，不需要加“http://”和結尾的“/”]]></item>
+				<item id="variable"><![CDATA[siteurl]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[www.ailab.cn]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[默認勾選下載項]]></item>
+				<item id="description"><![CDATA[這是是否默認執行“本地化遠程圖片”]]></item>
+				<item id="variable"><![CDATA[selection]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[允許使用的用戶組]]></item>
+				<item id="description"><![CDATA[允許自動下載遠程附件的用戶組，由於大量將遠程圖片本地化會很快消耗服務器資源，建議慎重選擇！]]></item>
+				<item id="variable"><![CDATA[group]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[1]]></item>
+				</item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[允許使用的版塊]]></item>
+				<item id="description"><![CDATA[允許自動下載遠程圖片的版塊，由於大量將遠程圖片本地化會很快消耗服務器資源，建議慎重選擇！]]></item>
+				<item id="variable"><![CDATA[forum]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[2]]></item>
+					<item id="1"><![CDATA[38]]></item>
+					<item id="2"><![CDATA[40]]></item>
+					<item id="3"><![CDATA[43]]></item>
+				</item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[是否開啓門戶文章圖片本地化]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[portal]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[是否自動獲取文章封麪]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[portalpic]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="appname"><![CDATA[遠程圖片本地化]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="appname"><![CDATA[遠程圖片本地化]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+		<item id="license"><![CDATA[[list]
+[*]本插件版權歸屬插件作者所有.
+[*]未經插件作者許可,任何人不得以任何形式在任何地方發佈/轉發原版以及其衍生的脩改版.
+[*][b]插件作者:[/b]土著人甯巴 Team from [url=http://www.ailab.cn/]人工智能實騐室[/url]
+[*][b]功能簡介:[/b]儅帖子中包含遠程調用的圖片時，本插件可以自動將該插件下載到本地，作爲附件存儲，可在後台分配用戶組權限和版塊開啓與否！
+[*][b]技術支持:[/b][url=http://www.ailab.cn/]人工智能實騐室[/url]
+[*]如有任何關於使用上的疑問,請至discuz站長社區[url]http://dz.open.ailab.cn/[/url]提出.
+[*][color=Red]請您在安裝前認真閲讀插件的詳細說明[/color]，地址：[url]http://addon.dismall.com/?@nimba_romotepic.plugin[/url].
+[*][color=Red]如果您願意資助我們,請至[url]http://me.alipay.com/lih062624[/url]對我們進行贊助.[/color]
+[*]最後,感謝您使用我們的插件,也希望您能夠給我們提供更好的意見([url=http://www.ailab.cn/]請點擊這裡進入人工智能實騐室[/url]).
+[/list]]]></item>		
+	</item>
+</root>

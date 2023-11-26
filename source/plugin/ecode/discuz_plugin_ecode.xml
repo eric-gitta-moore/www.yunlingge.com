@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.2]]></item>
+	<item id="Time"><![CDATA[2015-12-25 20:08]]></item>
+	<item id="From"><![CDATA[讯幻网 (http://www.xhkj5.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[易语言代码语法高亮]]></item>
+			<item id="identifier"><![CDATA[ecode]]></item>
+			<item id="description"><![CDATA[现在,易语言代码复制到论坛中,再也不是直白的文字啦~ 更生动!更形象!!更贴切!!!]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[ecode/]]></item>
+			<item id="copyright"><![CDATA[逐优网]]></item>
+			<item id="version"><![CDATA[1.4]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[help]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[<font color="red">点击这里查看帮助</font>]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[ecode]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3.2]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[是否开启]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isopen]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[在版块列表页快速发帖可用]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isthread]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[在帖子显示页快速回复可用]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isreply]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[在高级模式编辑器栏可用]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[ispost]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[代码的最大长度]]></item>
+				<item id="description"><![CDATA[允许用户发布的代码长度,默认为1.2W长度.]]></item>
+				<item id="variable"><![CDATA[codewidth]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[12000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[代码前后缀标识]]></item>
+				<item id="description"><![CDATA[代码的前后缀, 默认为 " ecode "
+注意,此配置如若修改,之前用户在论坛内发布的代码都将失效. 需到class文件内手动开启兼容,可兼容不同的代码前后缀,不懂处可联系我]]></item>
+				<item id="variable"><![CDATA[codemod]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[ecode]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[代码样式排序]]></item>
+				<item id="description"><![CDATA[设置代码排序,默认为:
+0=随机颜色    (注意,如果不喜欢某项,直接删除即可)
+1=默认配色
+2=传统绿色
+3=传统蓝色
+4=古色古香
+5=显明配色
+6=淡兰黑字
+7=灰色风格
+8=粉红风格
+9=绿色风格
+10=蓝色风格 ...]]></item>
+				<item id="variable"><![CDATA[font]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[0=随机颜色
+1=默认配色
+2=传统绿色
+3=传统蓝色
+4=古色古香
+5=显明配色
+6=淡兰黑字
+7=灰色风格
+8=粉红风格
+9=绿色风格
+10=蓝色风格]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[指定可用用户组]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[usergroups]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[指定使用版块]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[forums]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[支持库判断文本]]></item>
+				<item id="description"><![CDATA[放置支持库判断文本,一行一个.
+格式为: 支持库名=中文注释]]></item>
+				<item id="variable"><![CDATA[codelib]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[BmpOperate=位图操作支持库
+btdownload=BT下载支持库
+CallFuncLib=动态调用库函数支持库
+CnCalendar=农历日期支持库
+cncnv=文字编码转换支持库
+CodeStyleEdit=代码编辑框支持库
+commobj=通用对象支持库
+console=控制台操作支持库
+dhtmled=超文本编辑框
+DialogEx=通用对话框扩展
+downlib=网络传送支持库
+dp1=数据操作支持库一
+eAPI=应用接口支持库
+eCalc=数值计算支持库
+EChartBar=数据图表支持库
+eCompress=压缩解压支持库
+EDataStructure=数据结构支持库
+eDB=数据库操作支持库
+EdirectX=DirectX支持库
+eDirTree=目录树支持库
+edroptarget=拖放支持库
+eExcel2000=EXCEL2000支持库
+eGrid=高级表格支持库
+eImgConverter=图像格式转换支持库
+EInterProcess=进程通讯支持库
+eLIB=eLIB++EX
+eLIBpp=eLIB++
+ELogoPanel=易Logo支持库
+eMMedia=多媒体支持库
+eNetIntercept=网络拦截支持库
+eOALib=办公组件支持库
+ePPT2000=PowerPoint2000支持库
+ERawSock=网络通讯支持库二
+eSkin=易语言皮肤支持库
+ESpeechEngine=文本语音转换支持库
+ESSLayer=保密通讯支持库
+EThread=多线程支持库
+EVectorAFrame=矢量动画框
+eWinSock=TCP/UDP网络通信支持库
+ewizard=易向导支持库
+eWord2000=WORD2000支持库
+EXMLParser=XML解析支持库
+Exmlrpc=远程服务支持库
+ExtMenu=超级菜单支持库
+Figures=自定义图形支持库
+Flash9=ShockwaveFlashObjects
+GIF89a=GIF动画全操作支持库
+HtmlView=超文本浏览框支持库
+HYExtLib=海洋扩展支持库
+iconv=编码转换支持库
+iext=扩展界面支持库一
+iext2=扩展界面支持库二
+iext3=扩展界面支持库三
+iext5=扩展界面支持库五
+iext6=扩展界面支持库六
+internet=互联网支持库
+isapi=互联网服务支持库
+Javalib=Java支持库
+krnln=系统核心支持库
+MDI=多文档界面(MDI)支持库
+MDIlib=多文档界面支持库
+MSINET=InetCtlsObjects
+mysql=MySql支持库
+ogrelib=DirectX3D支持库
+OLEDispatch=COM对象操作支持库
+OPenGL=OPenGL支持库
+PhoneCortrol=电话语音支持库
+pop3=邮件接收支持库
+portio=端口访问支持库
+RegEx=正则表达式支持库
+script=脚本语言支持组件
+shdocvw=SHDocVw
+shell=操作系统界面功能支持库
+shellEx=扩展功能支持库一
+SkinLib=换肤支持库
+sock=网络通讯支持库
+spec=特殊功能支持库
+SqliteDB=Sqlite数据库支持库
+Tooltiplib=提示工具支持库
+twain=数码设备支持库
+WebBrowser=网页浏览框
+WebBrowser2=WEB浏览器
+web浏览器=SHDocVw
+wmp9=Windows媒体播放器
+WNet=局域网操作支持库
+xplib=XP风格界面库
+YunImage=云外归鸟的图像处理支持库
+YunMDIWnd=云外归鸟的MDI窗口支持库]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[提示语]]></item>
+				<item id="description"><![CDATA[用以显示在代码插入窗口的上方
+默认为 
+请将易语言代码复制粘帖到下方编辑框内]]></item>
+				<item id="variable"><![CDATA[banquan]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[请将易语言代码复制粘帖到下方编辑框内]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+	</item>
+</root>

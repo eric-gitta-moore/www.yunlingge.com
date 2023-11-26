@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2020-02-15 11:40]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[微信QQ图文分享]]></item>
+			<item id="identifier"><![CDATA[wxqqshare]]></item>
+			<item id="description"><![CDATA[以图文内容的显示形式分享给微信好友、微信朋友圈或手机QQ好友]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[wxqqshare/]]></item>
+			<item id="copyright"><![CDATA[乘凉]]></item>
+			<item id="version"><![CDATA[1.6]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[mobile]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[more]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[更多插件推荐]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[微信AppId(应用ID)]]></item>
+				<item id="description"><![CDATA[微信公众号--基本配置--获取开发者ID(AppID)]]></item>
+				<item id="variable"><![CDATA[wechat_appid]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[微信AppSecret(应用密钥)]]></item>
+				<item id="description"><![CDATA[微信公众号--基本配置--获取开发者密码(AppSecret)]]></item>
+				<item id="variable"><![CDATA[wechat_appsecret]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[默认显示图片地址]]></item>
+				<item id="description"><![CDATA[分享页面若无图片获取，则默认显示该图片，请以http://或https://开头]]></item>
+				<item id="variable"><![CDATA[default_image]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[强制显示默认图片]]></item>
+				<item id="description"><![CDATA[如果开启请填写好默认显示图片地址，分享后直接显示此图片]]></item>
+				<item id="variable"><![CDATA[force_image]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[分享帖子显示图标]]></item>
+				<item id="description"><![CDATA[分享帖子页面时显示的图片，若所显示的图片不存在则使用默认显示图片]]></item>
+				<item id="variable"><![CDATA[viewthread_image]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1 = 显示帖子封面图片
+2 = 显示对应版块图标
+3 = 无帖子封面则显示版块图标]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[统一分享标题文字]]></item>
+				<item id="description"><![CDATA[填写后分享直接显示此标题文字，留空则默认显示页面标题文字]]></item>
+				<item id="variable"><![CDATA[force_title]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[统一分享描述文字]]></item>
+				<item id="description"><![CDATA[填写后分享直接显示此描述文字，留空则默认显示页面描述文字]]></item>
+				<item id="variable"><![CDATA[force_desc]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[  ]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[当前站点请求协议]]></item>
+				<item id="description"><![CDATA[如站点开启了https且程序无法判断当前站点使用https时，请开启强制https]]></item>
+				<item id="variable"><![CDATA[http_type]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[0 = 自动判断
+1 = 强制https]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[分享链接附加参数]]></item>
+				<item id="description"><![CDATA[可在推广链接后附加参数传递，可填写如：fromuid={uid}&shareop=1，{uid}为当前用户的ID，{username}为当前用户的用户名，此项可配合其他推广下级等功能，如无需求请留空]]></item>
+				<item id="variable"><![CDATA[request_url]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="wxqqshare"><![CDATA[微信QQ分享]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="wxqqshare"><![CDATA[微信QQ分享]]></item>
+			</item>
+			<item id="installlang">
+				<item id="wxqqshare"><![CDATA[微信QQ分享]]></item>
+			</item>
+		</item>
+	</item>
+</root>

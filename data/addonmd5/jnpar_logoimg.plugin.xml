@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[jnpar_logoimg.plugin]]></item>
+	<item id="RevisionID"><![CDATA[80203]]></item>
+	<item id="SN"><![CDATA[2020012608LzgbO3TlGu]]></item>
+	<item id="RevisionDateline"><![CDATA[1568873683]]></item>
+	<item id="Data">
+		<item id="/lang.TC_BIG5.php"><![CDATA[86c5ce55adc5dfc60f656300b8343b6b]]></item>
+		<item id="/lang.SC_UTF8.php"><![CDATA[071f9785afbf4074aab62cd510b0407a]]></item>
+		<item id="/discuz_plugin_jnpar_logoimg_TC_UTF8.xml"><![CDATA[0aab8153acd8a0d7367e7815ac71fd2b]]></item>
+		<item id="/quickset.inc.php"><![CDATA[6933e3bdd9e8e2d83fd8e0fa8f353c6d]]></item>
+		<item id="/more.inc.php"><![CDATA[ad4138d745e7f21bf54aff51070ae1bf]]></item>
+		<item id="/admin.inc.php"><![CDATA[5ec880da670f6294b53a5aad4716fb9d]]></item>
+		<item id="/config.php"><![CDATA[b1464a99b3b1af085c3e9f62958a9913]]></item>
+		<item id="/discuz_plugin_jnpar_logoimg_SC_UTF8.xml"><![CDATA[d14261d753983963109d19a6f95629b5]]></item>
+		<item id="/upload.class.php"><![CDATA[881d921b5bf30fe05c71544adb505052]]></item>
+		<item id="/lang.SC_GBK.php"><![CDATA[fbde521c44d53dbabd5bd4ef8f3bea9e]]></item>
+		<item id="/identity.php"><![CDATA[85007dc3501e988f864dc65bf506d1ff]]></item>
+		<item id="/lang.TC_UTF8.php"><![CDATA[f2893202aa85049a65a9dc3f6cbf2d82]]></item>
+		<item id="/logoimgs/common_38_icon.png"><![CDATA[7af4704f1a4ca32c7cdf9406b182688c]]></item>
+		<item id="/logoimgs/common_2_icon.png"><![CDATA[74b4f7067f5310ad8de6f3e20a1246f5]]></item>
+		<item id="/logoimgs/test2.png"><![CDATA[c3be3ce81ef175af3cecc2d52801cae6]]></item>
+		<item id="/logoimgs/common_39_icon.png"><![CDATA[7c3d1506bbe3d4d20effda2ea08fa840]]></item>
+		<item id="/logoimgs/common_37_icon.png"><![CDATA[476720cf60208d205b86a4bef1f7107a]]></item>
+		<item id="/logoimgs/common_87_icon.png"><![CDATA[780c2cdf421f274615a0a647a447ba2f]]></item>
+		<item id="/logoimgs/test1.png"><![CDATA[e76746fed47fbbee5ef5c7c9e916edbf]]></item>
+		<item id="/logoimgs/common_2_icon.gif"><![CDATA[5372f47ce338c10893a17a40363a4e8a]]></item>
+		<item id="/logoimgs/common_68_icon.png"><![CDATA[8073299635ddff7e026ebfe2e8c4b587]]></item>
+		<item id="/logoimgs/common_80_icon.png"><![CDATA[2e6a00957fbc0963a00cfd8020f30795]]></item>
+		<item id="/template/admin.htm"><![CDATA[193710f284e741465362d4208458c7d2]]></item>
+	</item>
+</root>

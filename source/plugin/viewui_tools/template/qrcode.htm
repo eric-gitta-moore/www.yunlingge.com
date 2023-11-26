@@ -1,0 +1,134 @@
+{template viewui_tools:header}
+<style type="text/css">
+#qrcode table{margin:0 auto !important;}
+#viewui-toolsbg {overflow:hidden;margin-bottom:10px;}
+#viewui-toolsbg .tips{
+    overflow: hidden;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #FBEED5;
+    border-radius: 4px;
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    color: #3A87AD;
+    margin-bottom: 10px;
+}
+#viewui-toolsbg .tips strong{
+    margin-right: 5px;
+}
+#viewui-toolsbg .left{padding:10px;float:left;width:49%;border: 1px solid #c6cede !important;height:210px;}
+#viewui-toolsbg .right {
+    padding: 10px;
+    float: right;
+    width: 45%;
+    min-height: 210px;
+    background: #EEE;
+    border-radius: 8px;
+}
+#viewui-toolsbg .right-body {
+    text-align: center;
+    width: 98%;
+    margin: 0 auto;
+}
+#viewui-toolsbg #qrcode {
+    margin: 10px auto 10px;
+}
+#viewui-toolsbg #qrcode img{
+    margin: 0 auto;
+}
+#viewui-toolsbg .right-body span{
+    text-align: center;
+	font-size:16px;
+	font-weight:500;
+}
+#viewui-toolsbg textarea {
+    padding: 0px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+    color: #333;
+}
+#viewui-toolsbg .btns {
+    float: left;
+    margin-top: 5px;
+}
+#viewui-toolsbg .btns button {
+    background-color: #55a7e3;
+    color: #fff;
+    font-family: 'Microsoft YaHei';
+    border: none;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 5px;
+    letter-spacing: .5px;
+    text-decoration: none;
+    min-width: 70px;
+	cursor:pointer;
+}
+#viewui-toolsbg .btns button:hover{
+    opacity: 0.8;
+}
+</style> 
+<div id="viewui-toolsbg">
+<div class="tips"><strong>{lang viewui_tools:tip}</strong>{lang viewui_tools:qrcodesummary}</div>
+<div style="overflow: hidden;">
+<div class="left">
+<textarea style="height:210px;" name="txtContent" id="txtContent" r  placeholder="{lang viewui_tools:qrcodelefttip}"></textarea>
+</div>
+<div class="right">
+	<div class="right-body">
+	<span>{lang viewui_tools:qrcoderighttip}</span>
+	<div id="qrcode"></div>
+	<span style="font-size:14px;">{lang viewui_tools:qrcodebttips}</span>
+	</div>
+</div>
+</div>
+<div class="btns">
+<p id="tips" style="overflow: hidden;margin-bottom: 5px;"></p>
+<button name="btnCreate" class="btn btn-success" type="button" onclick="f_onCreateQrcode();" >{lang viewui_tools:qrcodebtr}</button>
+<button name="btnClear" class="btn btn-default" type="button" onclick="f_onClearQrcode();">{lang viewui_tools:qrcodebtl}</button>
+</div>
+</div>
+<script src="source/plugin/viewui_tools/js/jquery-1.10.2.js"></script>
+<script src="source/plugin/viewui_tools/js/modernizr-2.8.3.js" type="text/javascript"></script>
+<script src="source/plugin/viewui_tools/js/bootstrap.min.js" type="text/javascript"></script>    
+<script type="text/javascript" src="source/plugin/viewui_tools/js/qrcode.min.js"></script>
+<script type="text/javascript"> var jq = jQuery.noConflict(); </script>
+<script type="text/javascript">
+        var txtContent = document.getElementById("txtContent"), tips = jq("#tips");
+        var qrcode = new QRCode('qrcode', {
+            text: 'https://shang.qq.com/wpa/qunwpa?idkey=b9e451761a4f7368c3f5d8a60745eb026f413e89290635c620448c2b8be51f29',
+            width: {$plugin['qrcode']},
+            height: {$plugin['qrcode']},
+            colorDark: '#000000',
+            colorLight: '#ffffff',
+            correctLevel: QRCode.CorrectLevel.H
+        });
+        function f_onCreateQrcode() {
+            if (!txtContent) {
+                return false;
+            } else {
+                if (!txtContent.value) {
+                     tips.html("{lang viewui_tools:qrcodeerror}");
+                } else {
+                    qrcode.clear();
+					tips.empty();
+                    qrcode.makeCode(txtContent.value);
+					tips.html("{lang viewui_tools:qrcodesuccess}");
+                }
+                return false;
+            }
+        }
+
+        function f_onClearQrcode() {
+            if (txtContent) {
+        txtContent.value = "";
+		 tips.html("{lang viewui_tools:qrcodeinput}");
+            }
+        }
+    </script>
+{template viewui_tools:footer}

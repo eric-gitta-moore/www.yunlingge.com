@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2019-08-21 17:20]]></item>
+	<item id="From"><![CDATA[因分享而精彩 (http://bbs.share555.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[发帖先发后审]]></item>
+			<item id="identifier"><![CDATA[ror_threadverify]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[ror_threadverify/]]></item>
+			<item id="copyright"><![CDATA[share555]]></item>
+			<item id="version"><![CDATA[2.0.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[admin]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[审核管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[ror_threadverify]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[mobileror_threadverify]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[是否开启论坛先发后审]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[forum_is_open_verify]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[是否开启群组先发后审]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[group_is_open_verify]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[是否开启门户先发后审]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[portal_is_open_verify]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[选择开启的板块]]></item>
+				<item id="description"><![CDATA[选择开启先发后审的板块，只有选中的板块才会发帖必进审核]]></item>
+				<item id="variable"><![CDATA[open_forum]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[选择开启的用户组]]></item>
+				<item id="description"><![CDATA[选择开启先发后审的用户组，只有选中的用户组才会发帖必进审核]]></item>
+				<item id="variable"><![CDATA[open_group]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="success"><![CDATA[操作成功]]></item>
+				<item id="fail"><![CDATA[操作失败，请重试]]></item>
+				<item id="nologin"><![CDATA[抱歉，未登录操作失败]]></item>
+				<item id="nodata"><![CDATA[无查询数据]]></item>
+				<item id="nosave"><![CDATA[数据保存失败，请重试]]></item>
+				<item id="noupdate"><![CDATA[数据更新失败，请重试]]></item>
+				<item id="nodelete"><![CDATA[数据删除失败，请重试]]></item>
+				<item id="noparam"><![CDATA[缺少参数，请重试]]></item>
+				<item id="notoken"><![CDATA[验证失效，请重试]]></item>
+				<item id="nopermission"><![CDATA[无权限操作，请重试]]></item>
+				<item id="repeat"><![CDATA[添加数据重复，请重试]]></item>
+				<item id="noaction"><![CDATA[未知方法，请重试]]></item>
+				<item id="noselect"><![CDATA[请选择操作数据]]></item>
+				<item id="noformhash"><![CDATA[未知来源，请重试]]></item>
+				<item id="op"><![CDATA[操作]]></item>
+				<item id="edit"><![CDATA[编辑]]></item>
+				<item id="delete"><![CDATA[删除]]></item>
+				<item id="cancle"><![CDATA[取消]]></item>
+				<item id="submit"><![CDATA[立即提交]]></item>
+				<item id="reset"><![CDATA[重置]]></item>
+				<item id="add"><![CDATA[添加]]></item>
+				<item id="field_nodata"><![CDATA[无]]></item>
+				<item id="func_page_prev"><![CDATA[]]></item>
+				<item id="func_page_next"><![CDATA[]]></item>
+				<item id="func_page_intval"><![CDATA[…]]></item>
+				<item id="func_page_to"><![CDATA[到第]]></item>
+				<item id="func_page_page"><![CDATA[页]]></item>
+				<item id="func_page_submit"><![CDATA[确定]]></item>
+				<item id="func_page_count"><![CDATA[共]]></item>
+				<item id="func_page_number"><![CDATA[条]]></item>
+				<item id="moderate_status0"><![CDATA[未审核]]></item>
+				<item id="moderate_status1"><![CDATA[已忽略]]></item>
+				<item id="article_dateline0"><![CDATA[全部]]></item>
+				<item id="article_dateline1"><![CDATA[一周]]></item>
+				<item id="article_dateline2"><![CDATA[一月]]></item>
+				<item id="article_dateline3"><![CDATA[三月]]></item>
+				<item id="cat_select0"><![CDATA[频道栏目]]></item>
+				<item id="thread_moderate"><![CDATA[审核主题]]></item>
+				<item id="post_moderate"><![CDATA[审核帖子]]></item>
+				<item id="article_moderate"><![CDATA[审核文章]]></item>
+				<item id="content_show"><![CDATA[全部展开]]></item>
+				<item id="content_hide"><![CDATA[全部折叠]]></item>
+				<item id="author"><![CDATA[用户名]]></item>
+				<item id="moderate_range"><![CDATA[审核范围]]></item>
+				<item id="search"><![CDATA[搜索]]></item>
+				<item id="article_moderate_nodata"><![CDATA[无需要审核的文章数据]]></item>
+				<item id="censorwords"><![CDATA[命中关键词：]]></item>
+				<item id="in"><![CDATA[于]]></item>
+				<item id="publish"><![CDATA[发布在]]></item>
+				<item id="article_detail"><![CDATA[文章详情]]></item>
+				<item id="look"><![CDATA[查看]]></item>
+				<item id="article_edit"><![CDATA[文章编辑]]></item>
+				<item id="validate"><![CDATA[通过]]></item>
+				<item id="ignore"><![CDATA[忽略]]></item>
+				<item id="button"><![CDATA[提交]]></item>
+				<item id="validate_all"><![CDATA[全部通过]]></item>
+				<item id="delete_all"><![CDATA[全部删除]]></item>
+				<item id="ignore_all"><![CDATA[全部忽略]]></item>
+				<item id="cancel_all"><![CDATA[全部取消]]></item>
+				<item id="article_moderate_success"><![CDATA[审核操作成功，共 %d 个文章被通过，%d 个文章被忽略，%d 个文章被删除]]></item>
+				<item id="pic_view"><![CDATA[图片预览]]></item>
+				<item id="attach"><![CDATA[附件:]]></item>
+				<item id="thread_all"><![CDATA[所有帖子]]></item>
+				<item id="group_only"><![CDATA[仅群组]]></item>
+				<item id="subject"><![CDATA[标题包含]]></item>
+				<item id="thread_moderate_nodata"><![CDATA[无需要审核的主题数据]]></item>
+				<item id="group"><![CDATA[群组]]></item>
+				<item id="forum"><![CDATA[论坛]]></item>
+				<item id="from"><![CDATA[来自]]></item>
+				<item id="thread_detail"><![CDATA[帖子详情]]></item>
+				<item id="thread_edit"><![CDATA[帖子编辑]]></item>
+				<item id="op_reason"><![CDATA[操作理由]]></item>
+				<item id="thread_moderate_success"><![CDATA[审核操作成功，共 %d 个主题被通过，%d 个主题被忽略，%d 个主题被放入回收站，%d 个主题被删除]]></item>
+				<item id="content"><![CDATA[内容包含]]></item>
+				<item id="post_moderate_nodata"><![CDATA[无需要审核的主题数据]]></item>
+				<item id="post_moderate_success"><![CDATA[审核操作成功，共 %d 个帖子被通过，%d 个帖子被忽略，%d 个帖子被放入回收站，%d 个帖子被删除]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="notice_title"><![CDATA[提示信息]]></item>
+				<item id="search_placeholder"><![CDATA[请输入搜索内容]]></item>
+				<item id="select_search_field"><![CDATA[请选择搜索字段]]></item>
+				<item id="search"><![CDATA[搜索]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

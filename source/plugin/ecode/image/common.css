@@ -1,0 +1,357 @@
+@charset "gb2312";
+/*
+//欢迎大家自己创新编写本插件 . 有更好的思路及代码,也请分享到到我网站里.以便更多人下载使用..
+//程序已免费开源,  请不要修改此处版权 谢谢
+// 逐优网   http://bbs.zuuu.com
+ */
+#codecolor { background: url(e.gif) no-repeat 0 0; overflow: hidden;background-position: 9px 4px;}
+.b2r #codecolor	{ background-position: 0px 1px; }
+#codecolor:hover { background-color: #fff; }
+
+.frame_out {width:100%; border:1px dashed #CCCCCC;}
+.frame_up {border-bottom:1px dashed #CCCCCC;text-align:left; padding:10px; font-size:20px; font-weight:bold;}
+.frame_show{margin:5px 5px 5px 5px;}
+.codeshow {width:99%; height:250px;}
+
+#e_button .b2r #ecode { background: url(e.gif) no-repeat 2px 2px; }
+#return_ecode { background: url(e.gif) no-repeat 0 50%; padding-left: 22px; }
+#return_ecode a { color: #999; font-weight: normal; font-size: 12px; text-decoration: none; margin-left: 10px; }
+#ecode_form { width: 599px; }
+#ecode_form .c { padding: 0 10px 10px 10px; }
+#ecode_message { width: 569px; height: 120px; margin-bottom: 10px; }
+
+.ecode i { font-weight: 700; font-family: Microsoft Yahei, Arial; font-style: normal; text-align: center; display: inline-block; }
+
+.ecode1 i { font-size: 16px; padding-right: 2px; float: left; }
+.ecode1 i.e1 { color: #FF0000; }
+.ecode1 i.e2 { color: #00FF00; }
+.ecode1 i.e3 { color: #0000FF; }
+.ecode1 i.e4 { color: #FFCC00; }
+.ecode1 i.e5 { color: #00CCFF; }
+.ecode1 i.e6 { color: #FF00FF; }
+.ecode1 i.e7 { color: #6600FF; }
+
+.ecode2 i { color: #0000CC; font-size: 14px; line-height: 20px; width: 22px; height: 22px; background: url(2.jpg); margin: 0 5px 5px 0; }
+.ecode3 i { color: #fff; font-size: 14px; width: 27px; height: 24px; line-height: 26px; background: url(3.gif); margin: 0 3px 3px 0; }
+.ecode4 i { color: #fff; font-size: 12px; width: 18px; height: 25px; line-height: 18px; background: url(4.jpg); margin: 0 3px 3px 0; }
+.ecode5 i { color: #fff; font-size: 14px; width: 40px; height: 18px; line-height: 18px; padding: 10px 0 9px 0; background: url(5.jpg); margin: 0 3px 3px 0; }
+.ecode6 i { color: #934105; font-size: 14px; width: 34px; height: 20px; line-height: 20px; padding-top: 9px; background: url(6.jpg); margin: 0 3px 3px 0; }
+.ecode7 i { color: #00a4d9; font-size: 12px; width: 34px; height: 28px; line-height: 22px; background: url(7.jpg); margin: 0 3px 3px 0; }
+.ecode8 i { color: #ff5474; font-size: 14px; width: 25px; height: 27px; line-height: 27px; background: url(8.jpg); margin: 0 3px 3px 0; }
+
+.ecode_bar { background: #f8f8f8; border:1px solid #e6e8eb; height:96px; margin:0 auto; width:577px; zoom:1; float: left; position: relative; z-index: 20; }
+.ecode_pager { position:relative; z-index:3; }
+.ecode_nav { background:url(props.png) repeat scroll -9px 0; cursor:pointer; height:17px; left:5px; position:absolute; top:32px; width:9px; z-index:3; display: block; }
+.ecode_next { background-position:0 0; left:563px; z-index:3; }
+.ecode_wrap { height:78px; margin:9px 0 0 18px; visibility: visible; overflow:hidden; position: relative; z-index: 2; width: 550px; }
+#ecode_ul { margin: 0px; padding: 0px; position: relative; z-index: 1; }
+#ecode_ul li { position:relative; float:left; margin-right:10px; width:100px; height:81px; overflow:hidden; cursor:pointer; }
+#ecode_ul li a { display: inline-block; float: left; }
+#ecode_ul li img { width: 90px; height:55px; padding: 2px 4px; border: 1px solid #ddd; background: #fff; }
+#ecode_ul li .a img { border: 2px solid #477CCC; padding: 1px 3px; }
+#ecode_ul li p { color: #999999; line-height: 20px; text-align: center; margin: 0; }
+
+
+.ebackcolor1{background:#FFFFFF; color:#000000;}
+.ebackcolor2{background:#008284; color:#FFFFFF;}
+.ebackcolor3{background:#0061C6; color:#FFFFFF;}
+.ebackcolor4{background:#FFF7EF; color:#000000;}
+.ebackcolor5{background:#FFFFFF; color:#000000;}
+.ebackcolor6{background:#BDDFFF; color:#000000;}
+.ebackcolor7{background:#EFEFEF; color:#000000;}
+.ebackcolor8{background:#FFEBF7; color:#000000;}
+.ebackcolor9{background:#EFF8F5; color:#000000;}
+.ebackcolor10{background:#DEEFFF; color:#000000;}
+
+/* 第一轮 .ebackcolor1*/
+.ebackcolor1 textarea{background-color: #FFFFFF;color: #000000;} /*文本框的颜色 */
+
+.ebackcolor1 .eunderimg {background:url(code1/01.png) no-repeat 0 0 ;}
+.ebackcolor1 .ecenterimg {background:url(code1/02.png) no-repeat 0 0 ;}
+
+.ebackcolor1 .comecolor {color: #0000FF} /* 如果真  的蓝色 */
+.ebackcolor1 .conscolor {color: #000080}  /* 常量图片色  蓝色*/
+.ebackcolor1 .funccolor{color: #800000} /* 括号前的 程序名 红色 */
+.ebackcolor1 .cometwolr{color: #800000} /* 启动窗口.取窗口句柄() 小程序名颜色 */
+.ebackcolor1 .eTxtcolor{color: #008080} /*引号内的字体颜色 */
+.ebackcolor1 .eTickcolor{color: #800000 ; font-weight: bold;} /*表格内打勾的颜色 */
+
+.ebackcolor1 .Rowheight{	font-size: 10px;	line-height: 12px;	border:1px solid #888888;} /*常量名称  灰色*/
+.ebackcolor1 .eHeadercolor {	color: #000000;	background-color: #E6EDE4;	white-space: nowrap;	padding:5px;} /*常量值  前一个黑色字体 后一个淡蓝色*/
+.ebackcolor1 .eVariableheadcolor {	color: #000000;	background-color: #D9E3F0;	white-space: nowrap;	padding:5px;} /*变量名 淡蓝色*/
+.ebackcolor1 .eAssemblycolor {	color: #000000;	background-color: #ECECEC;	white-space: nowrap;	padding:5px;} /*窗口程序集名 淡蓝色 */
+.ebackcolor1 .Variablescolor {	color: #000000;	white-space: nowrap;	padding:5px;}  /*程序集变量  无色  */
+.ebackcolor1 .eTypecolor {	color: #0000FF;	white-space: nowrap;	padding:5px;}  /*变量名  无色  */
+.ebackcolor1 .Remarkscolor {	color: #008000;	white-space: nowrap;	padding:5px;} /*备注名  绿色 */
+.ebackcolor1 .Wrongcolor {	color: #FF0000;	white-space: nowrap;	padding:5px;} /*未知支持库 红色  此处看情况修改 */
+.ebackcolor1 .Constanttext {	color: #008080;	white-space: nowrap;	padding:5px;} /*常量第二格的字体颜色 */
+.ebackcolor1 .eArraycolor {	color: #000000;	white-space: nowrap;	padding:5px;} /*数组成员名 */
+.ebackcolor1 .eProcolor {	color: #000080;	white-space: nowrap;	padding:5px;} /* 自定义数据类型的名字字体颜色 */
+.ebackcolor1 .eAPIcolor {	color: #800000;	white-space: nowrap;	padding:5px;} /*API字体颜色 橙色 */
+.ebackcolor1 .eOthercolor{	color: #000080;	white-space: nowrap;	padding:5px;} /*声音 常量 等.. 字体颜色 */
+/* 第一轮 .ebackcolor1 完毕   */
+
+
+/* .ebackcolor2*/
+.ebackcolor2 textarea{background-color: #008284;color: #FFFFFF;} /*文本框的颜色 */
+
+.ebackcolor2 .eunderimg {background:url(code2/01.png) no-repeat 0 0 ;}
+.ebackcolor2 .ecenterimg {background:url(code2/02.png) no-repeat 0 0 ;} /*此处需要修改文件夹名 */
+
+.ebackcolor2 .comecolor {color: #00FF00} /* 如果真  的蓝色 */
+.ebackcolor2 .conscolor {color: #00FFFF}  /* 常量图片色  蓝色*/
+.ebackcolor2 .funccolor{color: #FFFF00} /* 括号前的 程序名 红色 */
+.ebackcolor2 .cometwolr{color: #FFFFFF} /* 启动窗口.取窗口句柄() 小程序名颜色 */
+.ebackcolor2 .eTxtcolor{color: #00FFFF} /*引号内的字体颜色 */
+.ebackcolor2 .eTickcolor{color: #FFFFFF ; font-weight: bold;} /*表格内打勾的颜色 */
+
+.ebackcolor2 .Rowheight{	font-size: 10px;	line-height: 12px;	border:1px solid #41BEBE;} /*行高 边框色*/
+.ebackcolor2 .eHeadercolor {	color: #ECECEC;	background-color: #0E979A;	white-space: nowrap;	padding:5px;} /*常量值  前一个黑色字体 后一个背景色*/
+.ebackcolor2 .eVariableheadcolor {	color: #ECECEC;	background-color: #0E979A;	white-space: nowrap;	padding:5px;} /*变量名头部 淡蓝色*/
+.ebackcolor2 .eAssemblycolor {	color: #ECECEC;	background-color: #0E979A;	white-space: nowrap;	padding:5px;} /*窗口程序集名 淡蓝色 */
+.ebackcolor2 .Variablescolor {	color: #FFFFFF;	white-space: nowrap;	padding:5px;}  /*程序集变量用户定义的名字  */
+.ebackcolor2 .eTypecolor {	color: #00E080;	white-space: nowrap;	padding:5px;}  /*数据类型 文本型整数型..   */
+.ebackcolor2 .Remarkscolor {	color: #000080;	white-space: nowrap;	padding:5px;} /*备注名  绿色 */
+.ebackcolor2 .Wrongcolor {	color: #FF0000;	white-space: nowrap;	padding:5px;} /*未知支持库 红色  此处看情况修改 */
+.ebackcolor2 .Constanttext {	color: #00FFFF;	white-space: nowrap;	padding:5px;} /*常量第二格的字体颜色 */
+.ebackcolor2 .eArraycolor {	color: #FFFF00;	white-space: nowrap;	padding:5px;} /*数组成员名 */
+.ebackcolor2 .eProcolor {	color: #00FF00;	white-space: nowrap;	padding:5px;} /* 自定义数据类型的名字字体颜色 */
+.ebackcolor2 .eAPIcolor {	color: #D8D800;	white-space: nowrap;	padding:5px;} /*API字体颜色 橙色 */
+.ebackcolor2 .eOthercolor{	color: #00FFFF;	white-space: nowrap;	padding:5px;} /*声音 常量 等.. 字体颜色 */
+/*  .ebackcolor2 完毕   */
+
+
+
+/* .ebackcolor3*/
+.ebackcolor3 textarea{background-color: #0061C6;color: #FFFFFF;} /*文本框的颜色 */
+
+.ebackcolor3 .eunderimg {background:url(code3/01.png) no-repeat 0 0 ;}
+.ebackcolor3 .ecenterimg {background:url(code3/02.png) no-repeat 0 0 ;} /*此处需要修改文件夹名 */
+
+.ebackcolor3 .comecolor {color: #00E080} /* 如果真  的蓝色 */
+.ebackcolor3 .conscolor {color: #ECECEC}  /* 常量图片色  蓝色*/
+.ebackcolor3 .funccolor{color: #00FFFF} /* 括号前的 程序名 红色 */
+.ebackcolor3 .cometwolr{color: #F9E6AA} /* 启动窗口.取窗口句柄() 小程序名颜色 */
+.ebackcolor3 .eTxtcolor{color: #ECECEC} /*引号内的字体颜色 */
+.ebackcolor3 .eTickcolor{color: #FFFFFF ; font-weight: bold;} /*表格内打勾的颜色 */
+
+.ebackcolor3 .Rowheight{	font-size: 10px;	line-height: 12px;	border:1px solid #5AA4CB;} /*行高 边框色*/
+.ebackcolor3 .eHeadercolor {	color: #ECECEC;	background-color: #0079E8;	white-space: nowrap;	padding:5px;} /*常量值  前一个黑色字体 后一个背景色*/
+.ebackcolor3 .eVariableheadcolor {	color: #ECECEC;	background-color: #4E83D1;	white-space: nowrap;	padding:5px;} /*变量名头部 淡蓝色*/
+.ebackcolor3 .eAssemblycolor {	color: #ECECEC;	background-color: #0079E8;	white-space: nowrap;	padding:5px;} /*窗口程序集名 淡蓝色 */
+.ebackcolor3 .Variablescolor {	color: #80E000;	white-space: nowrap;	padding:5px;}  /*程序集变量用户定义的名字  */
+.ebackcolor3 .eTypecolor {	color: #8FBCFE;	white-space: nowrap;	padding:5px;}  /*数据类型 文本型整数型..   */
+.ebackcolor3 .Remarkscolor {	color: #00FF00;	white-space: nowrap;	padding:5px;} /*备注名  绿色 */
+.ebackcolor3 .Wrongcolor {	color: #FF0000;	white-space: nowrap;	padding:5px;} /*未知支持库 红色  此处看情况修改 */
+.ebackcolor3 .Constanttext {	color: #ECECEC;	white-space: nowrap;	padding:5px;} /*常量第二格的字体颜色 */
+.ebackcolor3 .eArraycolor {	color: #00FFFF;	white-space: nowrap;	padding:5px;} /*数组成员名 */
+.ebackcolor3 .eProcolor {	color: #FFFF00;	white-space: nowrap;	padding:5px;} /* 自定义数据类型的名字字体颜色 */
+.ebackcolor3 .eAPIcolor {	color: #D8D800;	white-space: nowrap;	padding:5px;} /*API字体颜色 橙色 */
+.ebackcolor3 .eOthercolor{	color: #ECECEC;	white-space: nowrap;	padding:5px;} /*声音 常量 等.. 字体颜色 */
+/*  .ebackcolor3 完毕   */
+
+
+/* .ebackcolor4*/
+.ebackcolor4 textarea{background-color: #FFF7EF;color: #000000;} /*文本框的颜色 */
+
+.ebackcolor4 .eunderimg {background:url(code4/01.png) no-repeat 0 0 ;}
+.ebackcolor4 .ecenterimg {background:url(code4/02.png) no-repeat 0 0 ;} /*此处需要修改文件夹名 */
+
+.ebackcolor4 .comecolor {color: #0000FF} /* 如果真  的蓝色 */
+.ebackcolor4 .conscolor {color: #000080}  /* 常量图片色  蓝色*/
+.ebackcolor4 .funccolor{color: #A80000} /* 括号前的 程序名 红色 */
+.ebackcolor4 .cometwolr{color: #9000FF} /* 启动窗口.取窗口句柄() 小程序名颜色 */
+.ebackcolor4 .eTxtcolor{color: #FF00FF} /*引号内的字体颜色 */
+.ebackcolor4 .eTickcolor{color: #800080 ; font-weight: bold;} /*表格内打勾的颜色 */
+
+.ebackcolor4 .Rowheight{	font-size: 10px;	line-height: 12px;	border:1px solid #CE766F;} /*行高 边框色*/
+.ebackcolor4 .eHeadercolor {	color: #000000;	background-color: #F4C299;	white-space: nowrap;	padding:5px;} /*常量值  前一个黑色字体 后一个背景色*/
+.ebackcolor4 .eVariableheadcolor {	color: #000000;	background-color: #ECECEC;	white-space: nowrap;	padding:5px;} /*变量名头部 淡蓝色*/
+.ebackcolor4 .eAssemblycolor {	color: #000000;	background-color: #CFA06D;	white-space: nowrap;	padding:5px;} /*窗口程序集名 淡蓝色 */
+.ebackcolor4 .Variablescolor {	color: #000000;	white-space: nowrap;	padding:5px;}  /*程序集变量用户定义的名字  */
+.ebackcolor4 .eTypecolor {	color: #0088FF;	white-space: nowrap;	padding:5px;}  /*数据类型 文本型整数型..   */
+.ebackcolor4 .Remarkscolor {	color: #008000;	white-space: nowrap;	padding:5px;} /*备注名  绿色 */
+.ebackcolor4 .Wrongcolor {	color: #FF0000;	white-space: nowrap;	padding:5px;} /*未知支持库 红色  此处看情况修改 */
+.ebackcolor4 .Constanttext {	color: #FF00FF;	white-space: nowrap;	padding:5px;} /*常量第二格的字体颜色 */
+.ebackcolor4 .eArraycolor {	color: #FF0000;	white-space: nowrap;	padding:5px;} /*数组成员名 */
+.ebackcolor4 .eProcolor {	color: #0000FF;	white-space: nowrap;	padding:5px;} /* 自定义数据类型的名字字体颜色 */
+.ebackcolor4 .eAPIcolor {	color: #FF0000;	white-space: nowrap;	padding:5px;} /*API字体颜色 橙色 */
+.ebackcolor4 .eOthercolor{	color: #000080;	white-space: nowrap;	padding:5px;} /*声音 常量 等.. 字体颜色 */
+/*  .ebackcolor4 完毕   */
+
+
+/* .ebackcolor5*/
+.ebackcolor5 textarea{background-color: #FFFFFF;color: #000000;} /*文本框的颜色 */
+
+.ebackcolor5 .eunderimg {background:url(code5/01.png) no-repeat 0 0 ;}
+.ebackcolor5 .ecenterimg {background:url(code5/02.png) no-repeat 0 0 ;} /*此处需要修改文件夹名 */
+
+.ebackcolor5 .comecolor {color: #0000FF} /* 如果真  的蓝色 */
+.ebackcolor5 .conscolor {color: #000080}  /* 常量图片色  蓝色*/
+.ebackcolor5 .funccolor{color: #800000} /* 括号前的 程序名 红色 */
+.ebackcolor5 .cometwolr{color: #800000} /* 启动窗口.取窗口句柄() 小程序名颜色 */
+.ebackcolor5 .eTxtcolor{color: #008080} /*引号内的字体颜色 */
+.ebackcolor5 .eTickcolor{color: #000000 ; font-weight: bold;} /*表格内打勾的颜色 */
+
+.ebackcolor5 .Rowheight{	font-size: 10px;	line-height: 12px;	border:1px solid #606060;} /*行高 边框色*/
+.ebackcolor5 .eHeadercolor {	color: #0000A8;	background-color: #ECECEC;	white-space: nowrap;	padding:5px;} /*常量值  前一个黑色字体 后一个背景色*/
+.ebackcolor5 .eVariableheadcolor {	color: #0000A8;	background-color: #ECECEC;	white-space: nowrap;	padding:5px;} /*变量名头部 淡蓝色*/
+.ebackcolor5 .eAssemblycolor {	color: #0000A8;	background-color: #ECECEC;	white-space: nowrap;	padding:5px;} /*窗口程序集名 淡蓝色 */
+.ebackcolor5 .Variablescolor {	color: #000000;	white-space: nowrap;	padding:5px;}  /*程序集变量用户定义的名字  */
+.ebackcolor5 .eTypecolor {	color: #0000FF;	white-space: nowrap;	padding:5px;}  /*数据类型 文本型整数型..   */
+.ebackcolor5 .Remarkscolor {	color: #008000;	white-space: nowrap;	padding:5px;} /*备注名  绿色 */
+.ebackcolor5 .Wrongcolor {	color: #FF0000;	white-space: nowrap;	padding:5px;} /*未知支持库 红色  此处看情况修改 */
+.ebackcolor5 .Constanttext {	color: #008080;	white-space: nowrap;	padding:5px;} /*常量第二格的字体颜色 */
+.ebackcolor5 .eArraycolor {	color: #000000;	white-space: nowrap;	padding:5px;} /*数组成员名 */
+.ebackcolor5 .eProcolor {	color: #000000;	white-space: nowrap;	padding:5px;} /* 自定义数据类型的名字字体颜色 */
+.ebackcolor5 .eAPIcolor {	color: #000000;	white-space: nowrap;	padding:5px;} /*API字体颜色 橙色 */
+.ebackcolor5 .eOthercolor{	color: #000080;	white-space: nowrap;	padding:5px;} /*声音 常量 等.. 字体颜色 */
+/*  .ebackcolor5 完毕   */
+
+
+/* .ebackcolor6*/
+.ebackcolor6 textarea{background-color: #BDDFFF;color: #000000;} /*文本框的颜色 */
+
+.ebackcolor6 .eunderimg {background:url(code6/01.png) no-repeat 0 0 ;}
+.ebackcolor6 .ecenterimg {background:url(code6/02.png) no-repeat 0 0 ;} /*此处需要修改文件夹名 */
+
+.ebackcolor6 .comecolor {color: #000000} /* 如果真  的蓝色 */
+.ebackcolor6 .conscolor {color: #000000}  /* 常量图片色  蓝色*/
+.ebackcolor6 .funccolor{color: #000000} /* 括号前的 程序名 红色 */
+.ebackcolor6 .cometwolr{color: #000000} /* 启动窗口.取窗口句柄() 小程序名颜色 */
+.ebackcolor6 .eTxtcolor{color: #000000} /*引号内的字体颜色 */
+.ebackcolor6 .eTickcolor{color: #000000 ; font-weight: bold;} /*表格内打勾的颜色 */
+
+.ebackcolor6 .Rowheight{	font-size: 10px;	line-height: 12px;	border:1px solid #000000;} /*行高 边框色*/
+.ebackcolor6 .eHeadercolor {	color: #000000;	background-color: #A2D0FF;	white-space: nowrap;	padding:5px;} /*常量值  前一个黑色字体 后一个背景色*/
+.ebackcolor6 .eVariableheadcolor {	color: #000000;	background-color: #A2D0FF;	white-space: nowrap;	padding:5px;} /*变量名头部 淡蓝色*/
+.ebackcolor6 .eAssemblycolor {	color: #000000;	background-color: #A2D0FF;	white-space: nowrap;	padding:5px;} /*窗口程序集名 淡蓝色 */
+.ebackcolor6 .Variablescolor {	color: #000000;	white-space: nowrap;	padding:5px;}  /*程序集变量用户定义的名字  */
+.ebackcolor6 .eTypecolor {	color: #000000;	white-space: nowrap;	padding:5px;}  /*数据类型 文本型整数型..   */
+.ebackcolor6 .Remarkscolor {	color: #000000;	white-space: nowrap;	padding:5px;} /*备注名  绿色 */
+.ebackcolor6 .Wrongcolor {	color: #FF0000;	white-space: nowrap;	padding:5px;} /*未知支持库 红色  此处看情况修改 */
+.ebackcolor6 .Constanttext {	color: #000000;	white-space: nowrap;	padding:5px;} /*常量第二格的字体颜色 */
+.ebackcolor6 .eArraycolor {	color: #000000;	white-space: nowrap;	padding:5px;} /*数组成员名 */
+.ebackcolor6 .eProcolor {	color: #000000;	white-space: nowrap;	padding:5px;} /* 自定义数据类型的名字字体颜色 */
+.ebackcolor6 .eAPIcolor {	color: #000000;	white-space: nowrap;	padding:5px;} /*API字体颜色 橙色 */
+.ebackcolor6 .eOthercolor{	color: #000000;	white-space: nowrap;	padding:5px;} /*声音 常量 等.. 字体颜色 */
+/*  .ebackcolor6 完毕   */
+
+
+/* .ebackcolor7*/
+.ebackcolor7 textarea{background-color: #EFEFEF;color: #000000;} /*文本框的颜色 */
+
+.ebackcolor7 .eunderimg {background:url(code7/01.png) no-repeat 0 0 ;}
+.ebackcolor7 .ecenterimg {background:url(code7/02.png) no-repeat 0 0 ;} /*此处需要修改文件夹名 */
+
+.ebackcolor7 .comecolor {color: #800080} /* 如果真  的蓝色 */
+.ebackcolor7 .conscolor {color: #9000FF}  /* 常量图片色  蓝色*/
+.ebackcolor7 .funccolor{color: #0000FF} /* 括号前的 程序名 红色 */
+.ebackcolor7 .cometwolr{color: #0060C0} /* 启动窗口.取窗口句柄() 小程序名颜色 */
+.ebackcolor7 .eTxtcolor{color: #800000} /*引号内的字体颜色 */
+.ebackcolor7 .eTickcolor{color: #FF5080 ; font-weight: bold;} /*表格内打勾的颜色 */
+
+.ebackcolor7 .Rowheight{	font-size: 10px;	line-height: 12px;	border:1px solid #808080;} /*行高 边框色*/
+.ebackcolor7 .eHeadercolor {	color: #000000;	background-color: #E0CEE6;	white-space: nowrap;	padding:5px;} /*常量值  前一个黑色字体 后一个背景色*/
+.ebackcolor7 .eVariableheadcolor {	color: #000000;	background-color: #E4E4E4;	white-space: nowrap;	padding:5px;} /*变量名头部 淡蓝色*/
+.ebackcolor7 .eAssemblycolor {	color: #000000;	background-color: #C1D8D9;	white-space: nowrap;	padding:5px;} /*窗口程序集名 淡蓝色 */
+.ebackcolor7 .Variablescolor {	color: #000000;	white-space: nowrap;	padding:5px;}  /*程序集变量用户定义的名字  */
+.ebackcolor7 .eTypecolor {	color: #606060;	white-space: nowrap;	padding:5px;}  /*数据类型 文本型整数型..   */
+.ebackcolor7 .Remarkscolor {	color: #008000;	white-space: nowrap;	padding:5px;} /*备注名  绿色 */
+.ebackcolor7 .Wrongcolor {	color: #FF0000;	white-space: nowrap;	padding:5px;} /*未知支持库 红色  此处看情况修改 */
+.ebackcolor7 .Constanttext {	color: #800000;	white-space: nowrap;	padding:5px;} /*常量第二格的字体颜色 */
+.ebackcolor7 .eArraycolor {	color: #800000;	white-space: nowrap;	padding:5px;} /*数组成员名 */
+.ebackcolor7 .eProcolor {	color: #FF0000;	white-space: nowrap;	padding:5px;} /* 自定义数据类型的名字字体颜色 */
+.ebackcolor7 .eAPIcolor {	color: #0000FF;	white-space: nowrap;	padding:5px;} /*API字体颜色 橙色 */
+.ebackcolor7 .eOthercolor{	color: #9000FF;	white-space: nowrap;	padding:5px;} /*声音 常量 等.. 字体颜色 */
+/*  .ebackcolor7 完毕   */
+
+
+
+/* .ebackcolor8*/
+.ebackcolor8 textarea{background-color: #FFEBF7;color: #000000;} /*文本框的颜色 */
+
+.ebackcolor8 .eunderimg {background:url(code8/01.png) no-repeat 0 0 ;}
+.ebackcolor8 .ecenterimg {background:url(code8/02.png) no-repeat 0 0 ;} /*此处需要修改文件夹名 */
+
+.ebackcolor8 .comecolor {color: #5830E0} /* 如果真  的蓝色 */
+.ebackcolor8 .conscolor {color: #000080}  /* 常量图片色  蓝色*/
+.ebackcolor8 .funccolor{color: #FF0000} /* 括号前的 程序名 红色 */
+.ebackcolor8 .cometwolr{color: #F200E0} /* 启动窗口.取窗口句柄() 小程序名颜色 */
+.ebackcolor8 .eTxtcolor{color: #000080} /*引号内的字体颜色 */
+.ebackcolor8 .eTickcolor{color: #800080 ; font-weight: bold;} /*表格内打勾的颜色 */
+
+.ebackcolor8 .Rowheight{	font-size: 10px;	line-height: 12px;	border:1px solid #A67192;} /*行高 边框色*/
+.ebackcolor8 .eHeadercolor {	color: #000000;	background-color: #FDBFB3;	white-space: nowrap;	padding:5px;} /*常量值  前一个黑色字体 后一个背景色*/
+.ebackcolor8 .eVariableheadcolor {	color: #F200E0;	background-color: #ECECEC;	white-space: nowrap;	padding:5px;} /*变量名头部 淡蓝色*/
+.ebackcolor8 .eAssemblycolor {	color: #000000;	background-color: #FDBFB3;	white-space: nowrap;	padding:5px;} /*窗口程序集名 淡蓝色 */
+.ebackcolor8 .Variablescolor {	color: #000000;	white-space: nowrap;	padding:5px;}  /*程序集变量用户定义的名字  */
+.ebackcolor8 .eTypecolor {	color: #0088FF;	white-space: nowrap;	padding:5px;}  /*数据类型 文本型整数型..   */
+.ebackcolor8 .Remarkscolor {	color: #008000;	white-space: nowrap;	padding:5px;} /*备注名  绿色 */
+.ebackcolor8 .Wrongcolor {	color: #FF0000;	white-space: nowrap;	padding:5px;} /*未知支持库 红色  此处看情况修改 */
+.ebackcolor8 .Constanttext {	color: #000080;	white-space: nowrap;	padding:5px;} /*常量第二格的字体颜色 */
+.ebackcolor8 .eArraycolor {	color: #FF0000;	white-space: nowrap;	padding:5px;} /*数组成员名 */
+.ebackcolor8 .eProcolor {	color: #0000FF;	white-space: nowrap;	padding:5px;} /* 自定义数据类型的名字字体颜色  所有子程序的标题字体颜色*/
+.ebackcolor8 .eAPIcolor {	color: #000080;	white-space: nowrap;	padding:5px;} /*API字体颜色 橙色 */
+.ebackcolor8 .eOthercolor{	color: #000080;	white-space: nowrap;	padding:5px;} /*声音 常量 等.. 字体颜色 */
+/*  .ebackcolor8 完毕   */
+
+
+
+/* .ebackcolor9*/
+.ebackcolor9 textarea{background-color: #EFF8F5;color: #000000;} /*文本框的颜色 */
+
+.ebackcolor9 .eunderimg {background:url(code9/01.png) no-repeat 0 0 ;}
+.ebackcolor9 .ecenterimg {background:url(code9/02.png) no-repeat 0 0 ;} /*此处需要修改文件夹名 */
+
+.ebackcolor9 .comecolor {color: #008000} /* 如果真  的蓝色 */
+.ebackcolor9 .conscolor {color: #800000}  /* 常量图片色  蓝色*/
+.ebackcolor9 .funccolor{color: #0000FF} /* 括号前的 程序名 红色 */
+.ebackcolor9 .cometwolr{color: #800080} /* 启动窗口.取窗口句柄() 小程序名颜色 */
+.ebackcolor9 .eTxtcolor{color: #800000} /*引号内的字体颜色 */
+.ebackcolor9 .eTickcolor{color: #008000 ; font-weight: bold;} /*表格内打勾的颜色 */
+
+.ebackcolor9 .Rowheight{	font-size: 10px;	line-height: 12px;	border:1px solid #628662;} /*行高 边框色*/
+.ebackcolor9 .eHeadercolor {	color: #FFFFFF;	background-color: #6C936C;	white-space: nowrap;	padding:5px;} /*常量值  前一个黑色字体 后一个背景色*/
+.ebackcolor9 .eVariableheadcolor {	color: #FFFFFF;	background-color: #68BFBF;	white-space: nowrap;	padding:5px;} /*变量名头部 淡蓝色*/
+.ebackcolor9 .eAssemblycolor {	color: #FFFFFF;	background-color: #008080;	white-space: nowrap;	padding:5px;} /*窗口程序集名 淡蓝色 */
+.ebackcolor9 .Variablescolor {	color: #000000;	white-space: nowrap;	padding:5px;}  /*程序集变量用户定义的名字  */
+.ebackcolor9 .eTypecolor {	color: #C06000;	white-space: nowrap;	padding:5px;}  /*数据类型 文本型整数型..   */
+.ebackcolor9 .Remarkscolor {	color: #808080;	white-space: nowrap;	padding:5px;} /*备注名  绿色 */
+.ebackcolor9 .Wrongcolor {	color: #FF0000;	white-space: nowrap;	padding:5px;} /*未知支持库 红色  此处看情况修改 */
+.ebackcolor9 .Constanttext {	color: #800000;	white-space: nowrap;	padding:5px;} /*常量第二格的字体颜色 */
+.ebackcolor9 .eArraycolor {	color: #5830E0;	white-space: nowrap;	padding:5px;} /*数组成员名 */
+.ebackcolor9 .eProcolor {	color: #FF0000;	white-space: nowrap;	padding:5px;} /* 自定义数据类型的名字字体颜色  所有子程序的标题字体颜色*/
+.ebackcolor9 .eAPIcolor {	color: #800000;	white-space: nowrap;	padding:5px;} /*API字体颜色 橙色 */
+.ebackcolor9 .eOthercolor{	color: #800000;	white-space: nowrap;	padding:5px;} /*声音 常量 等.. 字体颜色 */
+/*  .ebackcolor9 完毕   */
+
+
+
+/* .ebackcolor10 */
+.ebackcolor10 textarea{background-color: #DEEFFF;color: #000000;} /*文本框的颜色 */
+
+.ebackcolor10 .eunderimg {background:url(code10/01.png) no-repeat 0 0 ;}
+.ebackcolor10 .ecenterimg {background:url(code10/02.png) no-repeat 0 0 ;} /*此处需要修改文件夹名 */
+
+.ebackcolor10 .comecolor {color: #0000FF} /* 如果真  的蓝色 */
+.ebackcolor10 .conscolor {color: #5830E0}  /* 常量图片色  蓝色*/
+.ebackcolor10 .funccolor{color: #000000} /* 括号前的 程序名 红色 */
+.ebackcolor10 .cometwolr{color: #FF0080} /* 启动窗口.取窗口句柄() 小程序名颜色 */
+.ebackcolor10 .eTxtcolor{color: #5830E0} /*引号内的字体颜色 */
+.ebackcolor10 .eTickcolor{color: #0000FF ; font-weight: bold;} /*表格内打勾的颜色 */
+
+.ebackcolor10 .Rowheight{	font-size: 10px;	line-height: 12px;	border:1px solid #20669F;} /*行高 边框色*/
+.ebackcolor10 .eHeadercolor {	color: #000080;	background-color: #ACDBD6;	white-space: nowrap;	padding:5px;} /*常量值  前一个黑色字体 后一个背景色*/
+.ebackcolor10 .eVariableheadcolor {	color: #000080;	background-color: #ECDDFF;	white-space: nowrap;	padding:5px;} /*变量名头部 淡蓝色*/
+.ebackcolor10 .eAssemblycolor {	color: #000080;	background-color: #ACDBD6;	white-space: nowrap;	padding:5px;} /*窗口程序集名 淡蓝色 */
+.ebackcolor10 .Variablescolor {	color: #000000;	white-space: nowrap;	padding:5px;}  /*程序集变量用户定义的名字  */
+.ebackcolor10 .eTypecolor {	color: #606060;	white-space: nowrap;	padding:5px;}  /*数据类型 文本型整数型..   */
+.ebackcolor10 .Remarkscolor {	color: #008000;	white-space: nowrap;	padding:5px;} /*备注名  绿色 */
+.ebackcolor10 .Wrongcolor {	color: #FF0000;	white-space: nowrap;	padding:5px;} /*未知支持库 红色  此处看情况修改 */
+.ebackcolor10 .Constanttext {	color: #5830E0;	white-space: nowrap;	padding:5px;} /*常量第二格的字体颜色 */
+.ebackcolor10 .eArraycolor {	color: #800000;	white-space: nowrap;	padding:5px;} /*数组成员名 */
+.ebackcolor10 .eProcolor {	color: #FF0000;	white-space: nowrap;	padding:5px;} /* 自定义数据类型的名字字体颜色  所有子程序的标题字体颜色*/
+.ebackcolor10 .eAPIcolor {	color: #800000;	white-space: nowrap;	padding:5px;} /*API字体颜色 橙色 */
+.ebackcolor10 .eOthercolor{	color: #5830E0;	white-space: nowrap;	padding:5px;} /*声音 常量 等.. 字体颜色 */
+/*  .ebackcolor10 完毕   */

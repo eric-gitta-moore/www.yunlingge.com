@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[apoyl_video.plugin]]></item>
+	<item id="RevisionID"><![CDATA[82473]]></item>
+	<item id="SN"><![CDATA[2020022307mZ9g0as5Qe]]></item>
+	<item id="RevisionDateline"><![CDATA[1575282548]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_apoyl_video_TC_UTF8.xml"><![CDATA[1c3b72cc467690f9801604905a521d15]]></item>
+		<item id="/discuz_plugin_apoyl_video_SC_UTF8.xml"><![CDATA[26ec637be0a8d79daa9979f95a4a4d84]]></item>
+		<item id="/index.htm"><![CDATA[7215ee9c7d9dc229d2921a40e899ec5f]]></item>
+		<item id="/video.class.php"><![CDATA[dcf0cff8fda96e3f062f6d161cc24523]]></item>
+		<item id="/adminhelp.inc.php"><![CDATA[0855927addadd8e665ceab1ac017bb8a]]></item>
+		<item id="/mobilevideo.class.php"><![CDATA[e9feba484176a9685150a351b3b8e1d7]]></item>
+	</item>
+</root>

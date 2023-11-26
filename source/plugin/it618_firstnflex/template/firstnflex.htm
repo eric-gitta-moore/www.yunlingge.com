@@ -1,0 +1,94 @@
+<!--{block it618_firstnflex_block}-->
+<!--script language="javascript" type="text/javascript" src="source/plugin/it618_firstnflex/js/jquery.js"></script-->
+<script language="javascript" type="text/javascript" src="source/plugin/it618_firstnflex/js/hdp.js"></script>
+<script language="javascript" type="text/javascript" src="source/plugin/it618_firstnflex/js/MSClass.js"></script>
+<script language="javascript">
+    function it618_firstnflex_tabChange(obj,id)
+    {
+     var arrayli = obj.parentNode.getElementsByTagName("li");
+     for(i=1;i<arrayli.length;i++)
+     {
+      if(obj==arrayli[i])
+      {
+       arrayli[i].className = "cli";
+       document.getElementById(id+i).className = "";
+      }
+      else
+      {
+       arrayli[i].className = "";
+       document.getElementById(id+i).className = "hidden";
+      }
+     }
+    }
+</script>
+
+<style>
+.it618_nflex_table *{margin:0; padding:0;}
+.it618_nflex_table{width:100%; margin-bottom:10px;table-layout: fixed;}
+
+.it618_tabbox_image {width:100%;height:auto;border:none;}
+.it618_tabmenu_image {width:100%;height:30px;}
+.it618_tabmenu_image ul {width:100%;list-style-type: none;background-color: #f8f8f8; height:30px}
+.it618_tabmenu_image li {text-align:center; float:left;height:30px;overflow:hidden;line-height:30px; border-right:#f8f8f8 0px solid; font-size:13px;cursor:pointer;padding-left:5px; padding-right:5px}
+.it618_tabmenu_image .cli {font-weight:bold;overflow:hidden;background-color: #f8f8f8;}
+.it618_tabcontent_image {margin:0; padding:5px;overflow:hidden; width:310px; height:229px}
+.it618_tabcontent_image .hidden {display:none;}
+.it618_tabcontent_image LI div.it618_title{display:none}
+
+.it618_tabbox_thread {width:100%;height:auto;border:none;}
+.it618_tabmenu_thread {width:100%;height:30px;}
+.it618_tabmenu_thread ul {width:100%;list-style-type: none;background-color: #f8f8f8; height:30px}
+.it618_tabmenu_thread li {text-align:center; float:left;height:30px;overflow:hidden;line-height:30px; border-right:#f8f8f8 0px solid; font-size:13px;cursor:pointer;padding-left:5px; padding-right:5px}
+.it618_tabmenu_thread .cli {font-weight:bold;overflow:hidden;background-color: #f8f8f8;}
+.it618_tabcontent_thread {margin:0; padding-bottom:15px; padding-top:1px;overflow:hidden; width:100%; height:229px}
+.it618_tabcontent_thread .hidden {display:none;}
+
+.it618_tabbox_forum {width:100%;height:auto;border:none;}
+.it618_tabmenu_forum {width:100%;height:30px;}
+.it618_tabmenu_forum ul {width:100%;list-style-type: none;background-color: #f8f8f8; height:30px}
+.it618_tabmenu_forum li {text-align:center; float:left;height:30px;overflow:hidden;line-height:30px; border-right:#f8f8f8 0px solid; font-size:13px;cursor:pointer;padding-left:5px; padding-right:5px}
+.it618_tabmenu_forum .cli {font-weight:bold;overflow:hidden;background-color: #f8f8f8;}
+.it618_tabcontent_forum {margin:0; padding-bottom:15px; padding-top:1px;overflow:hidden;width:100%; height:229px;}
+.it618_tabcontent_forum .hidden {display:none;}
+
+.it618_tabbox_nmember {width:100%;height:auto;border:none;}
+.it618_tabmenu_nmember {width:100%;height:22px;}
+.it618_tabmenu_nmember ul {width:100%;list-style-type: none;height:22px}
+.it618_tabmenu_nmember li {text-align:center; float:left;height:22px;overflow:hidden;line-height:20px; border-right:#f8f8f8 0px solid; font-size:12px;cursor:pointer;padding-left:5px; padding-right:5px}
+.it618_tabmenu_nmember .cli {font-weight:bold;overflow:hidden;}
+.it618_tabcontent_nmember {margin:0; padding:5px; padding-left:3px; padding-right:0;overflow:hidden;height:auto}
+.it618_tabcontent_nmember .hidden {display:none;}
+.it618_tabcontent_nmember div ul{height:auto; width:100%}
+.it618_tabcontent_nmember div li{float:left; width:68px; list-style:none;text-align:center;overflow:hidden; height:75px}
+.it618_tabcontent_nmember div li img {padding:2px; border:#e8e8e8 1px solid; height:50px; width:50px}
+
+.it618_flex_list{width:auto; padding-left:5px; padding-right:5px}
+.it618_flex_list A {TEXT-DECORATION: none; outline: none}
+.it618_flex_list A:hover {TEXT-DECORATION: underline}
+.it618_flex_list LI {LINE-HEIGHT: 23px;POSITION: relative; HEIGHT: 23px; list-style:none; overflow:hidden; width:auto; padding-right:10px;}
+.it618_flex_list LI A{LINE-HEIGHT: 23px;}
+.it618_tabcontent_forum .it618_flex_list LI{_padding-right:0px;}
+.it618_flex_list LI {PADDING-LEFT: 20px;}
+.it618_flex_list LI div.it618_title{display:none}
+.it618_flex_ranknum1,.it618_flex_ranknum2,.it618_flex_ranknum3,.it618_flex_ranknum4,.it618_flex_ranknum5,.it618_flex_ranknum6,.it618_flex_ranknum7,.it618_flex_ranknum8,.it618_flex_ranknum9,.it618_flex_ranknum10{FONT-SIZE: 11px; LEFT: 0px; WIDTH:15px; LINE-HEIGHT: 14px; POSITION: absolute; TOP: 5px; HEIGHT: 14px; TEXT-ALIGN: center; font-weight:bold;white-space:nowrap; padding-right:1px;_padding-right:0px;}
+
+.it618_flex_list span.it618_flex_author{ float:right;}
+.it618_flex_list span.it618_flex_author A {TEXT-DECORATION: none; outline: none}
+.it618_flex_list span.it618_flex_author A:hover {TEXT-DECORATION: underline}
+
+.it618_flex_debug{padding-left:2px; color:#F00; font-size:12px}
+
+{$strall}
+
+<!--{if $it618_firstnflex['cachetime']==0}-->
+<tr>
+<td colspan="{$cols}" class="it618_flex_debug">
+{lang it618_firstnflex:it618_string}
+</td>
+</tr>
+<!--{/if}-->
+</table>
+
+<script language="javascript" type="text/javascript" src="source/plugin/it618_firstnflex/js/tiptitle.js"></script>
+
+<!--{/block}-->

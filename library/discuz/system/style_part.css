@@ -1,0 +1,44 @@
+.item{padding-bottom:10px;border-bottom:1px dashed #ebebeb;margin:0 10px;}
+.title{color:#000;}
+	.title a { font-size:14px;font-weight:700; color: #3B8DD1; text-decoration: underline;}
+	.item_c, .item_c dl{margin-left:12px;margin-top:10px;}
+
+	.nvtitle{border-bottom:3px solid #a9cde4;line-height:30px;text-align:center;background:#F0F6FB;}
+		.nvtitle span{padding:1px;display:block;color:#3f89c3;font-size:18px;}
+
+	div.submsg { line-height: 22px; padding-left: 40px; }
+	.msgtable { width: 90%;}
+	.msgtable th { font-weight: 700; width: 200px; border: 1px solid #bbb; padding: 4px; }
+		.msgtable thead th { background: #F3F3F3; color: #333; }
+		.msgtable tfoot th { background: #F2F9FD; color: #333; }
+	.msgtable td { border: 1px solid #bbb; padding: 4px; }
+		.msgtable thead td { font-weight: 700; background: #F3F3F3; color: #333; }
+		.msgtable tfoot td { background: #F2F9FD; color: #333; }
+		.msgtable tfoot .msgtable { border: 1px dotted #bbb; }
+			.msgtable tfoot .msgtable th { border: 1px dotted #bbb; }
+			.msgtable tfoot .msgtable td { border: 1px dotted #bbb; background: #FFFFFF; }
+	.msgtable em { font-weight: 700; width: 50px; float: left; text-align: right; padding-right: 10px; }
+		.msgtable td.max em { width: 80px; }
+	.msgtable th { background-color: #F3F3F3; }
+	.msgtable th i { color: #bbb; }
+	.msgtable td i { color: #bbb; }
+.imgbig{ width:70%}
+.imgmid{ width:50%}
+.imgsmall{width:40%}
+h4 { width:95%; color: #333; }
+h4 i { color: #aaa; }
+h5 { font-size:12px; border-left: 3px solid #0095C8; padding-left: 15px; margin: 10px 0 5px 0px; height: 16px; line-height: 16px; }
+h6 { font-size:12px; padding-left: 15px; margin: 4px 0 2px 0px; height: 24px; line-height: 24px; }
+h6:hover { background: #F9F9F9; }
+h6 a { padding-left: 24px; color: #006C9F; }
+h6 a.spread, em.spread { background:url("image/interface/spread.gif")/*tpa=http://faq.comsenz.com/library/system/image/interface/spread.gif*/ no-repeat 0 50%; }
+h6 a.shrink, em.shrink { background:url("image/interface/shrink.gif")/*tpa=http://faq.comsenz.com/library/system/image/interface/shrink.gif*/ no-repeat 0 50%; }
+
+.wrap { text-align: left; }
+
+.pic { height: 100%; margin-bottom: 20px;}
+.pic th { padding: 5px 15px 5px 15px; } 
+	.pic td { width: 10px; }
+	.pic th { text-align: center; font-weight: normal;}
+	.pic th.box { border: 1px solid #CCC; }
+	.pic td.rr { background: url("image/interface/arrowr.gif")/*tpa=http://faq.comsenz.com/library/system/image/interface/arrowr.gif*/;background-repeat: no-repeat; background-position: left 50%;}

@@ -1,0 +1,11 @@
+<form name="cpform" method="post" action="?{$server_url}&inputuser=yes" id="cpform">
+  <input type="hidden" name="formhash" id="formhash" value="{FORMHASH}" />
+  <input type="hidden" name="zhiwu" id="zhiwu" />
+  <div style="padding:8px;margin:8px;">
+    <textarea style="width:500px;height:250px;" name="add_uids"></textarea>
+    <br>
+    {lang zhiwu55com_autoreply:user_import_prompt} <br>
+    <br>
+    <input type="submit" value="{lang zhiwu55com_autoreply:determine_import}" class="btn" />
+  </div>
+</form>

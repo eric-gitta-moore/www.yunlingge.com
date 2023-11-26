@@ -1,0 +1,26 @@
+<!--{template common/header}-->
+
+<link type="text/css" rel="stylesheet" href="{$pluginPath}/template/libs/mwt/4.0/mwt_mobile.min.css">
+<link type="text/css" rel="stylesheet" href="{$pluginPath}/template/touch/dist-20200214112158/base.css">
+<script type="text/javascript" src="{$pluginPath}/template/libs/jquery/1.11.2/jquery.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="{$pluginPath}/template/libs/mwt/4.0/mwt_mobile.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="{$pluginPath}/template/libs/requirejs/2.1.9/require.js" charset="UTF-8"></script>
+<script type="text/javascript" src="{$pluginPath}/template/touch/dist-20200214112158/japp.js" charset="UTF-8"></script>
+
+<div id="ct" class="wp cl" style="padding-top:10px;"></div>
+
+<script>
+    var dz={
+        siteurl    : '$_G['siteurl']',
+        pluginpath : '{$pluginPath}',
+        ajaxapi    : '{$pluginPath}/index.php?module=',
+        uid      : $_G[uid],
+        groupid  : $_G[groupid],
+        username : '$_G['username']',
+        avatar   : '{avatar($_G['uid'],'',true)}'
+    };
+    mwt.config.log_level=2;
+    new JApp("{$pluginPath}/template/touch/dist-20200214112158/").init();
+</script>
+
+<!--{template common/footer}-->

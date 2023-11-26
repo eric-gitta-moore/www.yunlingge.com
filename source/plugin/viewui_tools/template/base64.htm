@@ -1,0 +1,291 @@
+{template viewui_tools:header}
+<style>
+#viewui-toolsbg .tips{
+    overflow: hidden;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #FBEED5;
+    border-radius: 4px;
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    color: #3A87AD;
+    margin-bottom: 10px;
+}
+#viewui-toolsbg .tips strong{
+    margin-right: 5px;
+}
+#viewui-toolsbg .nv{
+    position: relative;
+    padding: 5px 10px 0 10px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #cccccc;
+    height: 37px;
+    line-height: 37px;
+    margin-bottom: 20px;
+}
+#viewui-toolsbg .nv li{
+    float: left;
+    border-bottom: none;
+    border-radius: 3px 0px 0 0;
+    padding: 0 15px;
+    font-size: 14px;
+    letter-spacing: .5px;
+    margin-right: 20px;
+}
+#viewui-toolsbg .nv .a{
+	float: left;
+    border-bottom: 2px solid #fff;
+    background: #fff;
+    border-radius: 3px 0px 0 0;
+    padding: 0 15px;
+    height: 37px;
+    font-size: 14px;
+    letter-spacing: .5px;
+    margin-right: 20px;
+    color: #55a7e3;
+}
+#viewui-toolsbg  .left{padding:10px;float:left;width:98%;border: 1px solid #c6cede !important;}
+#viewui-toolsbg  textarea {
+    padding: 0px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+    color: #333;
+}
+#viewui-toolsbg .top {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+#viewui-toolsbg .top .top-r{
+	float:right;
+}
+#viewui-toolsbg .top .top-btn{
+	width:325px;
+	float:left;
+}
+#viewui-toolsbg .top .top-btn a {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    color: #888;
+    cursor: pointer;
+    display: inline-block;
+    height: 2.1em;
+    line-height: 2.1em;
+    overflow: hidden;
+    position: relative;
+    width: 95%;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: .5px;
+	text-decoration: none;
+}
+#viewui-toolsbg .top .top-btn a:hover{
+    background: #f5f5f5;
+	transition: 0.2s;
+}
+#viewui-toolsbg .top .top-btn input{
+    cursor: pointer;
+    font-size: 100px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    border: none;
+}
+#viewui-toolsbg .top .top-fileurl{
+    float: left;
+    line-height: 42px;
+    margin-left: 10px;
+}
+#viewui-toolsbg .top .top-r input {
+    background-color: #55a7e3;
+    color: #fff;
+    font-family: 'Microsoft YaHei';
+    border: none;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 10px;
+    letter-spacing: .5px;
+    text-decoration: none;
+    min-width: 70px;
+}
+#viewui-toolsbg .top .top-r input:hover{
+    opacity: 0.8;
+	cursor:pointer;
+}
+#viewui-toolsbg .tipss{
+	float: left;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px 20px;
+    background: #fafafa;
+    color: #999;
+    line-height: 35px;
+    font-size: 13px;
+}
+#viewui-toolsbg .bt-btn{
+    float: left;
+    overflow: hidden;
+    margin: 10px 0;
+	width:98%;
+}
+#viewui-toolsbg .bt-btn input{
+	background: #55a7e3;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 2.1em;
+    overflow: hidden;
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: .5px;
+    text-decoration: none;
+    width: 320px;
+    height: 40px;
+    outline: none;
+    border: none;
+	float:left;
+}
+#viewui-toolsbg .bt-btn input:hover{
+    opacity: 0.8;
+	cursor:pointer;
+}
+#viewui-toolsbg .bt-btntips{
+    float: left;
+    margin-left: 10px;
+    line-height: 40px;
+}
+#viewui-toolsbg .showimg {
+    float: left;
+    overflow: hidden;
+    width: 98%;
+    background: #f7fbfe;
+    border: 1px solid #c1d2de;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 10px;
+}
+#viewui-toolsbg .showimg img{
+	max-width: 100%;
+	display: block;
+}
+</style>
+<form enctype="multipart/form-data">
+<div id="viewui-toolsbg">
+<div class="tips"><strong>{lang viewui_tools:tip}</strong>{lang viewui_tools:base64summary}</div>
+	<div class="top">
+        <div class="top-r">
+          <input onclick="copyUrl2()" value="{lang viewui_tools:copy}" name="res7" class="tools_btn06" type="button">
+          <input onclick="Word.value=&#39;&#39;" value="{lang viewui_tools:rest}" name="res7" class="tools_btn06" type="button">
+        </div>
+        <div class="top-btn">
+		<a href="javascript:;" class="input-file">
+          <input accept="image/*" name="upimage" id="upload_file" type="file" value="{lang viewui_tools:base64tpbtn}">
+          &nbsp;{lang viewui_tools:base64tpbtn} </a> 
+		  </div>
+        <div class="top-fileurl" id="update_file_label"></div>
+	</div>
+	<div class="left">
+	<textarea id="base64_output" rows="10" name="Word" placeholder="{lang viewui_tools:base64txt}"></textarea>
+     </div>
+	 <div class="bt-btn">
+	 <input value="{lang viewui_tools:base64restbtn}" class="tools_btn02" type="button" onclick="test_base64();" >
+	 <div class="bt-btntips" id="img_size"> </div>
+	 </div>
+	 <div id="showimg" class="showimg" style="display:none;">
+	<img id="img_prev" src="" style="max-width:100%;" data-bd-imgshare-binded="1">
+	 </div>
+	 <div class="tipss">
+        {lang viewui_tools:base64tips}
+	 </div>
+</div>
+</form>
+<script>
+	function async_load(url){ 
+		var s = document.createElement('script'); 
+		s.type = 'text/javascript'; 
+		s.async = true; 
+		s.src = url; 
+		var x = document.getElementsByTagName('script')[0]; 
+		x.parentNode.insertBefore(s, x); 
+	}
+	function aysnc_load_js(url) {
+		if (window.attachEvent) 
+			window.attachEvent('onload', function() {async_load(url)}); 
+		else 
+			window.addEventListener('load', function() {async_load(url)}, false); 
+	}
+
+	function async_do_func(func) {
+		if (window.attachEvent) 
+			window.attachEvent('onload', func); 
+		else 
+			window.addEventListener('load', func, false); 
+	}
+
+    function copyUrl2(){
+      var Url2=document.getElementById("base64_output");
+      var val=Url2.value;
+      if(val==''){
+          alert('{lang viewui_tools:copynone}');
+          return false;
+      }
+      Url2.select(); 
+      document.execCommand("Copy");
+      alert("{lang viewui_tools:copyok}");
+    }
+
+</script>
+	<script type="text/javascript">
+						document.getElementById("upload_file").onchange = function () {
+						    document.getElementById("update_file_label").innerHTML = this.value;
+						    gen_base64();
+						};
+	</script> 
+	<script type="text/javascript"> var jq = jQuery.noConflict(); </script>
+    <script type="text/javascript">
+				function jq_(id) {
+					return document.getElementById(id);
+				}
+				function gen_base64() {
+					jq_('base64_output').value = '';
+					jq_('img_size').innerHTML = '';
+					jq_('img_prev').src = '';
+					var file = jq_('upload_file').files[0];
+					if(!/image\/\w+/.test(file.type)){   
+						alert("{lang viewui_tools:base64imgerror}"); 
+						return false; 
+					}
+					r = new FileReader(); 
+					r.onload = function(){
+						jq_('base64_output').value = r.result;
+						jq_('img_size').innerHTML = "    {lang viewui_tools:base64imgsize} " + Math.round(r.result.length/1024*1000)/1000 + " KB";
+					}
+					r.readAsDataURL(file); 
+				}
+				function test_base64() {
+					jq_('img_prev').src = '';
+					document.getElementById('img_prev').setAttribute( 'src', jq_('base64_output').value);
+document.getElementById('showimg').style.display='block';
+				}
+				window.onload = function() {
+					if ( typeof(FileReader) === 'undefined' ){
+						alert("{lang viewui_tools:fileReader}");
+						jq_('upload_file').disabled = true;
+					}
+				}
+            </script>
+
+  </div>
+
+{template viewui_tools:footer}

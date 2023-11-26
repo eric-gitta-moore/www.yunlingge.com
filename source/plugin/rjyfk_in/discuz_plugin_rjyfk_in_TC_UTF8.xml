@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+    <item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+	<item id="Time"><![CDATA[2016-11-28 08:46]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://127.0.0.1/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[瑞捷雲積分充值]]></item>
+			<item id="identifier"><![CDATA[rjyfk_in]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[rjyfk_in/]]></item>
+			<item id="copyright"><![CDATA[瑞捷雲 www.rjypay.com]]></item>
+			<item id="version"><![CDATA[v2.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[rjyzf]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[rjyzf]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[in]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[積分充值]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[19]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[admin_data]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[訂單琯理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="4">
+					<item id="name"><![CDATA[Instructions]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[使用說明]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[3]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+    <item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[接入編號]]></item>
+				<item id="description"><![CDATA[申請地址：http://www.rjypay.com]]></item>
+				<item id="variable"><![CDATA[userid]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[20080001]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[接入密鈅(key)]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[userkey]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[61b72850ed1c302c33cf0b13c0912249d0769763]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[開啓積分充值]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[switch_integral]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+				<item id="3">
+                <item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[支付渠道選擇:]]></item>
+				<item id="description"><![CDATA[請選擇需要開啓的支付接口，按住Ctrl可以多選]]></item>
+				<item id="variable"><![CDATA[bank_type]]></item>
+				<item id="type"><![CDATA[selects]]></item>
+				<item id="extra"><![CDATA[weixin=微信支付
+				wxh5=微信支付②
+				wxswap=微信支付③
+				alipay=支付寶
+				alipaywap=支付寶②
+				cftpay=財付通
+                qqrcode=QQ掃碼
+				jdscan=京東掃碼
+				ICBC=中國工商銀行
+				ABC=中國辳業銀行
+				BOC=中國銀行
+				CCB=建設銀行
+				CMB=招商銀行
+				SPDB=浦發銀行
+				GDB=廣發銀行
+				BCOM=交通銀行
+				PSBC=郵政儲蓄銀行
+				ECITIC=中信銀行
+				CMBC=民生銀行
+				CEBB=光大銀行
+				HXB=華夏銀行
+				CIB=興業銀行
+				HZB=杭州銀行
+				NBB=甯波銀行
+				SPABANK=平安銀行
+				BOB=北京銀行]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[ICBC]]></item>
+					<item id="1"><![CDATA[ABC]]></item>
+					<item id="2"><![CDATA[weixin]]></item>
+					<item id="3"><![CDATA[alipay]]></item>
+					<item id="4"><![CDATA[cftpay]]></item>
+					<item id="5"><![CDATA[qqrcode]]></item>
+				</item>
+                </item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[鏈接顔色]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[linkcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FF0000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[鏈接位置]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[linktype]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[0=頂部導航(左側,通用)
+1=頂部導航(右側,通用)
+2=積分左側(X2以上)
+3=主導航(X2.5以上)
+4=不顯示購買鏈接]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[積分類型]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[rj_type]]></item>
+				<item id="type"><![CDATA[extcredit]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[積分兌換比例]]></item>
+				<item id="description"><![CDATA[例子:填1表示1RMB=1積分,填10表示1RMB=10積分]]></item>
+				<item id="variable"><![CDATA[rj_ratio]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[積分最低消費數]]></item>
+				<item id="description"><![CDATA[設置用戶一次支付所購買的交易積分的最小數額，不能低於1RMB]]></item>
+				<item id="variable"><![CDATA[rj_minimum]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[積分最大消費數]]></item>
+				<item id="description"><![CDATA[設置用戶一次支付所購買的交易積分的最大數額，不能低於20000RMB]]></item>
+				<item id="variable"><![CDATA[rj_dayumum]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[積分充值標題]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[rj_title]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[瑞捷雲支付]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[提示信息]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[rj_information]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[溫馨提醒：1.付款完成後,系統將自動開通！2.最終解釋權歸Discuz! Board所有！]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[不傳遞備注蓡數]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[remark_user]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+				 <item id="13">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[手機頁麪購買標題]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[rj_flname]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[積分充值]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="cnyinglan_success"><![CDATA[操作成功!]]></item>
+				<item id="Prompt1"><![CDATA[訂單記錄]]></item>
+				<item id="Prompt2"><![CDATA[用戶購買訂單搜索]]></item>
+				<item id="Prompt3"><![CDATA[<li>您可以在這裡查看用戶購買記錄！手機模板請調用:http://你的域名/plugin.php?id=rjyfk_in:url</li>]]></item>
+				<item id="Prompt4"><![CDATA[訂單狀態]]></item>
+				<item id="Prompt5"><![CDATA[所有狀態]]></item>
+				<item id="Prompt6"><![CDATA[等待付款]]></item>
+				<item id="Prompt7"><![CDATA[付款成功]]></item>
+				<item id="Prompt8"><![CDATA[付款人]]></item>
+				<item id="Prompt9"><![CDATA[訂單提交時間]]></item>
+				<item id="Prompt10"><![CDATA[訂單付款時間]]></item>
+				<item id="Prompt11"><![CDATA[全選]]></item>
+				<item id="Prompt12"><![CDATA[排序]]></item>
+				<item id="Prompt13"><![CDATA[用戶名]]></item>
+				<item id="Prompt14"><![CDATA[訂單號]]></item>
+				<item id="Prompt15"><![CDATA[購買類型]]></item>
+				<item id="Prompt16"><![CDATA[支付金額（元）]]></item>
+				<item id="Prompt17"><![CDATA[訂單提交時間]]></item>
+				<item id="Prompt18"><![CDATA[訂單付款時間]]></item>
+				<item id="Prompt19"><![CDATA[付款類型]]></item>
+				<item id="Prompt20"><![CDATA[交易號]]></item>
+				<item id="Prompt21"><![CDATA[狀態]]></item>
+				<item id="Prompt22"><![CDATA[描述]]></item>
+				<item id="Prompt23"><![CDATA[充值]]></item>
+				<item id="Prompt24"><![CDATA[購買]]></item>
+				<item id="Prompt25"><![CDATA[天]]></item>
+				<item id="Prompt26"><![CDATA[]]></item>
+				<item id="Prompt27"><![CDATA[充值積分]]></item>
+				<item id="Prompt28"><![CDATA[提示：刪除後無法恢複！]]></item>
+				<item id="Prompt29"><![CDATA[]]></item>
+				<item id="Prompt30"><![CDATA[]]></item>
+				<item id="Prompt31"><![CDATA[]]></item>
+				<item id="Prompt32"><![CDATA[用戶名]]></item>
+				<item id="Prompt33"><![CDATA[充值金額（元）]]></item>
+				<item id="Prompt34"><![CDATA[]]></item>
+				<item id="Prompt35"><![CDATA[]]></item>
+				<item id="Prompt36"><![CDATA[贈送積分類型]]></item>
+				<item id="Prompt37"><![CDATA[贈送積分值]]></item>
+				<item id="Prompt38"><![CDATA[您輸入用戶名不存在，請重新輸入！]]></item>
+				<item id="Prompt39"><![CDATA[您輸入信息不完整，請重新輸入]]></item>
+				<item id="Prompt40"><![CDATA[可填，單位：天，0或空表示永久，請填寫如數字]]></item>
+				<item id="Prompt41"><![CDATA[可填]]></item>
+				<item id="Prompt42"><![CDATA[必填]]></item>
+				<item id="Prompt43"><![CDATA[您輸入用戶組ID不存在，請重新輸入！]]></item>
+				<item id="Prompt44"><![CDATA[]]></item>
+				<item id="Prompt45"><![CDATA[]]></item>
+				<item id="Prompt46"><![CDATA[贈送]]></item>
+				<item id="Prompt47"><![CDATA[永久]]></item>
+				<item id="Prompt48"><![CDATA[]]></item>
+				<item id="Prompt49"><![CDATA[]]></item>
+				<item id="Prompt50"><![CDATA[]]></item>
+				<item id="Prompt51"><![CDATA[積分充值功能尚未開通，請到後台開通！]]></item>
+				<item id="Prompt52"><![CDATA[<div style="margin:10px;"> 介紹<br>
+						  瑞捷雲是國內首家提供一站式解決在線支付接口方案的雲服務平台。  <br>
+						</div>
+						<br>
+						<div style="margin:10px;"> 1、Discuz!插件使用教程：<a href="http://www.19fk.com/news/view/6" target="_blank">http://www.19fk.com/news/view/6</a><br>
+						  <br>
+						  2、Discuz!積分充值插件設置教程:<a href="http://www.19fk.com/news/view/5" target="_blank">http://www.19fk.com/news/view/5</a><br>
+						  <br>
+						    企業客服： 800176586<br>
+						  <br>
+						</div>
+                        <div style="margin:10px;">
+						洽談QQ：  <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3335852721&site=qq&menu=yes"><img src="http://www.19fk.com/static/default/images/qq.png" alt="點擊這裡給我發消息" border="0" align="absmiddle" title="點擊這裡給我發消息"/></a>
+                        </div>
+						]]></item>
+				<item id="Prompt53"><![CDATA[說明和槼則介紹]]></item>
+				<item id="Prompt54"><![CDATA[暫無購買記錄]]></item>
+				<item id="Prompt55"><![CDATA[抱歉，充值金額不能低於:  {rj_minimum} ]]></item>
+				<item id="Prompt56"><![CDATA[抱歉，充值金額不能大於:  {rj_dayumum} ]]></item>
+				<item id="Prompt57"><![CDATA[抱歉，你未選擇支付方式,請選擇支付方式!]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="Template1"><![CDATA[支付方式]]></item>
+				<item id="Template2"><![CDATA[瑞捷雲支付]]></item>
+				<item id="Template3"><![CDATA[充值金額]]></item>
+				<item id="Template4"><![CDATA[元]]></item>
+				<item id="Template5"><![CDATA[您將得到]]></item>
+				<item id="Template6"><![CDATA[抱歉，充值金額不能低於]]></item>
+				<item id="Template7"><![CDATA[立即充值]]></item>
+				<item id="Template8"><![CDATA[正在轉到付款頁]]></item>
+				<item id="Template9"><![CDATA[恭喜您，充值成功！]]></item>
+				<item id="Template10"><![CDATA[充值金額]]></item>
+				<item id="Template11"><![CDATA[選擇支付方式]]></item>
+				<item id="Template12"><![CDATA[充值渠道]]></item>
+				<item id="Template13"><![CDATA[請使用手機訪問]]></item>
+				<item id="Template14"><![CDATA[]]></item>
+				<item id="Template15"><![CDATA[]]></item>
+				<item id="Template16"><![CDATA[]]></item>
+				<item id="Template17"><![CDATA[提示信息]]></item>
+				<item id="Template18"><![CDATA[]]></item>
+				<item id="Template19"><![CDATA[]]></item>
+				<item id="Template20"><![CDATA[]]></item>
+				<item id="Template21"><![CDATA[]]></item>
+				<item id="Template22"><![CDATA[]]></item>
+				<item id="Template23"><![CDATA[之間]]></item>
+				<item id="Template24"><![CDATA[充值金額超出充值範圍!]]></item>
+				<item id="Template25"><![CDATA[元，您確定要充值嗎？]]></item>
+				<item id="Template26"><![CDATA[本次充值需要支付]]></item>
+				<item id="Template27"><![CDATA[恭喜您，購買成功！]]></item>
+				<item id="Template28"><![CDATA[登錄後才能支付！]]></item>
+				<item id="Template29"><![CDATA[積分充值]]></item>
+				<item id="Template30"><![CDATA[充值範圍：]]></item>
+				<item id="Template31"><![CDATA[-99999]]></item>
+				<item id="Template32"><![CDATA[，]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

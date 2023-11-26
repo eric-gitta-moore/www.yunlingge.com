@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,F1.0,L1.0,X3.3,X3.4]]></item>
+	<item id="Time"><![CDATA[2018-01-21 13:55]]></item>
+	<item id="From"><![CDATA[1627]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[阿里云oss附件云存儲]]></item>
+			<item id="identifier"><![CDATA[zhanmishu_storage]]></item>
+			<item id="description"><![CDATA[本插件對接阿里云oss，可以讓帖子等附件資源轉移到阿里云oss，節省磁盤空間，不占用帶寬]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[zhanmishu_storage/]]></item>
+			<item id="copyright"><![CDATA[Dz盒子（www.idzbox.com）]]></item>
+			<item id="version"><![CDATA[v1.1.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[oss]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[mobile]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[update_acl]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[批量授權]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1999">
+					<item id="name"><![CDATA[admincp_addondzbox]]></item>
+					<item id="menu"><![CDATA[<span style="color:#E53333;"><b>應用中心</b></span>]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,F1.0,L1.0,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[OSSAccessKeyId]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[OSSAccessKeyId]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[OssAccessKeySecret]]></item>
+				<item id="description"><![CDATA[填寫阿里云oss的AccessKeySecret]]></item>
+				<item id="variable"><![CDATA[AccessKeySecret]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[OSS外網域名]]></item>
+				<item id="description"><![CDATA[填寫阿里云oss的外網域名，必須帶http://或者https://開頭的url，例如：http://zhanmishu.oss-cn-shenzhen.aliyuncs.com]]></item>
+				<item id="variable"><![CDATA[host]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[http://zhanmishu.oss-cn-shenzhen.aliyuncs.com]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[OSS附件訪問域名]]></item>
+				<item id="description"><![CDATA[oss附件訪問的url，必須http://或者https://開頭，可以是你綁定的自己的域名，也可以是cdn的域名]]></item>
+				<item id="variable"><![CDATA[cdn_url]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[http://zhanmishu.oss-cn-shenzhen.aliyuncs.com]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[OSSbucket名稱]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[bucketname]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[zhanmishu]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[OSS保存文件前綴]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[oss_filename_head]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[playzhancom]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[是否開啟OSS水印功能 ...]]></item>
+				<item id="description"><![CDATA[開啟后，必須在oss后臺設置好水印樣式，然后把【OSS圖片水印樣式名稱】填寫好。]]></item>
+				<item id="variable"><![CDATA[iswater]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[OSS圖片水印樣式名稱 ...]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[water_field]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[playzhan]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[批量授權單步執行數量 ...]]></item>
+				<item id="description"><![CDATA[根據自身服務器環境而定。適當設置合適的值]]></item>
+				<item id="variable"><![CDATA[acl_perpage]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[200]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[授權和同步功能使用內網 ...]]></item>
+				<item id="description"><![CDATA[開啟此功能后，必須設置下面內網的endpoint和域名。域名不要帶http之類的，請按照我們默認的范例進行設置。另外，請確保你服務器能訪問這個內網域名。]]></item>
+				<item id="variable"><![CDATA[use_intranet]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[內網EndPoint]]></item>
+				<item id="description"><![CDATA[如果服務器和oss在同一內網，這里填寫內網的參數，方便授權和后期增加的同步功能使用內網。]]></item>
+				<item id="variable"><![CDATA[intranet_EndPoint]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[oss-cn-shenzhen-internal.aliyuncs.com]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[內網訪問域名]]></item>
+				<item id="description"><![CDATA[如果服務器和oss在同一內網，這里填寫內網的參數，方便授權和后期增加的同步功能使用內網。]]></item>
+				<item id="variable"><![CDATA[intranet_host]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[zhanmishu.oss-cn-shenzhen-internal.aliyuncs.com]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="auto_acl"><![CDATA[批量授權oss圖片權限為public-read]]></item>
+				<item id="success"><![CDATA[成功]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

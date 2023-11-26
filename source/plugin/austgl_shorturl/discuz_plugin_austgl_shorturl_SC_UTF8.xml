@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.1]]></item>
+	<item id="Time"><![CDATA[2014-03-07 00:40]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost/dz/3g/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[新浪短网址]]></item>
+			<item id="identifier"><![CDATA[austgl_shorturl]]></item>
+			<item id="description"><![CDATA[新浪短网址sae，可将贴中网址缩短，可在发帖时插入需要转换的长网址，另提供独立也进行转换，站长小工具。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[austgl_shorturl/]]></item>
+			<item id="copyright"><![CDATA[austgl.com|iganlei.cn 阿甘工作室]]></item>
+			<item id="version"><![CDATA[v1.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[austgl_shorturl]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[austgl_shorturl]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[短网址]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[1]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[独立页开关]]></item>
+				<item id="description"><![CDATA[导航页面开关，选择是，游客可以使用；选择否，会根据用户组设置的级别判断权限。]]></item>
+				<item id="variable"><![CDATA[austgl_navopen]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[使用等级]]></item>
+				<item id="description"><![CDATA[发帖时可以使用用户组
+导航页权限用户组]]></item>
+				<item id="variable"><![CDATA[austgl_user]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[9]]></item>
+					<item id="1"><![CDATA[10]]></item>
+					<item id="2"><![CDATA[11]]></item>
+					<item id="3"><![CDATA[12]]></item>
+					<item id="4"><![CDATA[13]]></item>
+					<item id="5"><![CDATA[14]]></item>
+					<item id="6"><![CDATA[15]]></item>
+					<item id="7"><![CDATA[20]]></item>
+					<item id="8"><![CDATA[16]]></item>
+					<item id="9"><![CDATA[17]]></item>
+					<item id="10"><![CDATA[18]]></item>
+					<item id="11"><![CDATA[19]]></item>
+					<item id="12"><![CDATA[1]]></item>
+					<item id="13"><![CDATA[2]]></item>
+					<item id="14"><![CDATA[3]]></item>
+					<item id="15"><![CDATA[4]]></item>
+					<item id="16"><![CDATA[5]]></item>
+					<item id="17"><![CDATA[6]]></item>
+					<item id="18"><![CDATA[7]]></item>
+					<item id="19"><![CDATA[8]]></item>
+				</item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[发帖开关]]></item>
+				<item id="description"><![CDATA[是否开启发帖按钮总开关，多项条件（用户组级别、版块、总开关）同时满足可以使用。]]></item>
+				<item id="variable"><![CDATA[austgl_forumopen]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[版块权限]]></item>
+				<item id="description"><![CDATA[发帖时能够使用短网址的版块]]></item>
+				<item id="variable"><![CDATA[austgl_forums]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[2]]></item>
+				</item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[插件页联盟广告代码]]></item>
+				<item id="description"><![CDATA[广告联盟代码或者自定义广告代码，宽度默认是90px；自定义高度请修改下个配置]]></item>
+				<item id="variable"><![CDATA[austgl_ads]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<a href="http://www.austgl.com">austgl/com</a>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[广告高度]]></item>
+				<item id="description"><![CDATA[自定义广告高度]]></item>
+				<item id="variable"><![CDATA[austgl_adsh]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[90]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="austgl_shorturl"><![CDATA[新浪短网址]]></item>
+				<item id="austgl_insert"><![CDATA[请输入需要转换的长网址：]]></item>
+				<item id="austgl_submit"><![CDATA[提交]]></item>
+				<item id="austgl_shorturlname"><![CDATA[网址缩短]]></item>
+				<item id="austgl_shorturladd"><![CDATA[需转换的长网址]]></item>
+				<item id="austgl_shutdown"><![CDATA[关闭]]></item>
+				<item id="austgl_example"><![CDATA[例：http://www.austgl.com/b/]]></item>
+				<item id="austgl_error"><![CDATA[需登录或者用户组级别过低]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="austgl_shorturl"><![CDATA[新浪短网址]]></item>
+				<item id="austgl_shortnav"><![CDATA[短网址]]></item>
+				<item id="austgl_short"><![CDATA[转换后的短地址为：]]></item>
+				<item id="austgl_long"><![CDATA[原始地址：]]></item>
+				<item id="austgl_label"><![CDATA[请输入要生成短地址的url：]]></item>
+				<item id="austgl_make"><![CDATA[生成]]></item>
+				<item id="austgl_author"><![CDATA[阿甘工作室]]></item>
+			</item>
+		</item>
+	</item>
+</root>

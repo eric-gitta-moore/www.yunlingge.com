@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[study_diydown.plugin]]></item>
+	<item id="RevisionID"><![CDATA[21187]]></item>
+	<item id="SN"><![CDATA[2020012608cvkk0Pf20g]]></item>
+	<item id="RevisionDateline"><![CDATA[1576123032]]></item>
+	<item id="Data">
+		<item id="/name.class.php"><![CDATA[09d11ec7b9b8a7d181acd8edc24a5d7a]]></item>
+		<item id="/demo.php"><![CDATA[b36a444934ea19af5b98e28fe192956d]]></item>
+		<item id="/check.php"><![CDATA[8a825ca6229416faf04a5be8990a5989]]></item>
+		<item id="/discuz_plugin_study_diydown_TC_UTF8.xml"><![CDATA[995f473b97ddd1ef34db81bbcd741c76]]></item>
+		<item id="/admin.inc.php"><![CDATA[d2c36a694bf1548f8d448cf2e0a4ec4e]]></item>
+		<item id="/uninstall.php"><![CDATA[4025288440814dc27a81ba6675449ff5]]></item>
+		<item id="/forum_attachment.php"><![CDATA[8c50142f0dc51fee6ae5fae5ab3900fb]]></item>
+		<item id="/thank.inc.php"><![CDATA[bfdf8b4a822dbb7def957df4929d4177]]></item>
+		<item id="/table/table_study_diydown_log.php"><![CDATA[7b71791a37c9ca492dd76b72e5f9d6c6]]></item>
+		<item id="/faq.inc.php"><![CDATA[79e41eede4fb221ac2ce6988c49deaef]]></item>
+		<item id="/pluginvar.func.php"><![CDATA[3135762f08b756d789b2fdf74b0764d7]]></item>
+		<item id="/addon.inc.php"><![CDATA[e33b688b18f26bdca886ba7ad7eff573]]></item>
+		<item id="/changelog.inc.php"><![CDATA[7d468385112d006d72d9235c6c5bcc44]]></item>
+		<item id="/installlang.lang.php"><![CDATA[94536cfacb8d055f5f2bd0657ce09538]]></item>
+		<item id="/install.php"><![CDATA[11c92bdeb79d7d8a40c4b56170e1854b]]></item>
+		<item id="/upgrade.php"><![CDATA[11c92bdeb79d7d8a40c4b56170e1854b]]></item>
+		<item id="/discuz_plugin_study_diydown_SC_UTF8.xml"><![CDATA[c9fdcdfe0179f8998e6ad212883f68e7]]></item>
+		<item id="/feedback.inc.php"><![CDATA[96b1473f59439a2d47aa476ab5b9e5e7]]></item>
+		<item id="/template/faq.htm"><![CDATA[77a49c1ac65bc0ec3fd0637fadcc276a]]></item>
+	</item>
+</root>

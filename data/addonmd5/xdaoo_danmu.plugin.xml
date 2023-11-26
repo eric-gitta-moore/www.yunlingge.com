@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[xdaoo_danmu.plugin]]></item>
+	<item id="RevisionID"><![CDATA[87161]]></item>
+	<item id="SN"><![CDATA[2020022720grO9mNwVxx]]></item>
+	<item id="RevisionDateline"><![CDATA[1582679745]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_xdaoo_danmu_TC_UTF8.xml"><![CDATA[d45b8fd818413424b2eef469507e0f01]]></item>
+		<item id="/discuz_plugin_xdaoo_danmu_SC_UTF8.xml"><![CDATA[d489e3e7950ac01a4341155327c76b0f]]></item>
+		<item id="/js/jquery.barrager.js"><![CDATA[f3e1a01b821f35254070e64b31c1b870]]></item>
+		<item id="/js/jquery-1.8.3.min.js"><![CDATA[3373d7014a90312ef58b4344f96ac4ed]]></item>
+		<item id="/xdaoo_danmu.class.php"><![CDATA[26d0d5d7f8375e3f77a0eeebe6c67a71]]></item>
+		<item id="/template/xdaoo_danmu.htm"><![CDATA[c4b81544fe1966d19f39353d458ac2b1]]></item>
+	</item>
+</root>

@@ -1,0 +1,81 @@
+<!--{template common/header}-->
+<div id="pt" class="bm cl">
+		<div class="z"><a href="./" class="nvhm">{$_G[setting][bbname]}</a>
+			 <em>&rsaquo;</em> 
+			 <a href="./" title="{lang home}">{$_G[setting][bbname]}</a>
+			 	 <em>&rsaquo;</em>
+			 <a href="sitemap.php">{$splugin_setting['navtitle']}</a>
+		</div>
+</div>
+<div class="boardnav">
+	<div id="ct" class="wp cl">
+		<div class="mn">
+			<div id="pgt" class="bm bw0 pgs cl">
+				$multipage
+				<span class="pgb y"><a href="sitemap.php">{lang homepage}</a></span>
+				<a onclick="showWindow('nav', this.href, 'get', 0)" href="forum.php?mod=misc&amp;action=nav"><img src="{IMGDIR}/pn_post.png" alt="{lang study_seo_sitemap:tlang_002}" /></a>
+			</div>
+			<div id="threadlist" class="tl bm bmw"{if $_G['uid']} style="position: relative;"{/if}>
+				<div class="th">
+					<table cellspacing="0" cellpadding="0">
+						<tr>
+							<th>
+								{lang study_seo_sitemap:tlang_003}
+							</th>
+							<td class="by">{lang study_seo_sitemap:tlang_004}</td>
+							<td class="by">{lang study_seo_sitemap:tlang_005}</td>
+						</tr>
+					</table>
+				</div>
+				<div class="bm_c">
+					<div id="forumnew" style="display:none"></div>
+					<table cellspacing="0" cellpadding="0">
+					<!--{if $threadlist}-->
+						<!--{loop $threadlist $key $thread}-->
+						<tbody id="$thread['pid']">
+							<tr>
+								<th>
+									<!--{if $splugin_setting[show_forum_radio]}-->
+									<em><a href="forum.php?mod=forumdisplay&fid={$thread['fid']}" {$study_new_blank}>[{$_G['cache']['forums'][$thread['fid']]['name']}]</a></em>
+									<!--{/if}-->
+									 <a href="forum.php?mod=viewthread&tid={$thread['tid']}" {$thread['highlight']} title="{$thread['subject']}" {$study_new_blank}>{$thread['subject']}</a>
+									<!--{if $thread['attachment'] == 2}-->
+										<img src="static/image/filetype/image_s.gif" alt="attach_img" title="{lang study_seo_sitemap:tlang_006}" align="absmiddle" />
+									<!--{elseif $thread['attachment'] == 1}-->
+										<img src="static/image/filetype/common.gif" alt="attachment" title="{lang study_seo_sitemap:tlang_007}" align="absmiddle" />
+									<!--{/if}-->
+									<!--{if $thread['digest'] > 0}-->
+										<img src="static/image/common/digest_{$thread[digest]}.gif" align="absmiddle" alt="digest" title="{lang study_seo_sitemap:tlang_008} {$thread[digest]}" />
+									<!--{/if}-->
+									<!--{if $thread[heatlevel]}-->
+										<img src="static/image/common/hot_{$thread[heatlevel]}.gif" align="absmiddle" alt="heatlevel" title="{$thread[heatlevel]} {lang study_seo_sitemap:tlang_009}" />
+									<!--{/if}-->
+									<!--{if $thread['rate'] > 0}-->
+										<img src="static/image/common/agree.gif" align="absmiddle" alt="agree" title="{lang study_seo_sitemap:tlang_010}" />
+									<!--{elseif $thread['rate'] < 0}-->){
+										<img src="static/image/common/disagree.gif" align="absmiddle" alt="disagree" title="{lang study_seo_sitemap:tlang_011}" />
+									<!--{/if}-->
+								</th>
+								<td class="by">
+									<a href="home.php?mod=space&uid={$thread['authorid']}" c="1">{$thread['author']}</a>
+								</td>
+								<td class="by">
+									<em><span{if $thread['dateline'] > $todaytime} class="xi1"{/if}><!--{date($thread['dateline'], 'Y-n-j H:i:s')}-->&nbsp;</span></em>
+								</td>
+							</tr>
+						</tbody>
+						<!--{/loop}-->
+					<!--{else}-->
+						<tbody class="bw0_all"><tr><th colspan="5"><p class="emp">{lang study_seo_sitemap:tlang_012}</p></th></tr></tbody>
+					<!--{/if}-->
+					</table>
+				</div>
+			</div>
+			<div class="bm bw0 pgs cl">
+				$multipage
+				<span class="pgb y"><a href="sitemap.php">{lang homepage}</a></span>
+			</div>
+		</div>
+	</div>
+</div>
+<!--{template common/footer}-->
