@@ -1,0 +1,199 @@
+<!--{block return}-->
+<script type="text/javascript">var showngethreadcard = <!--{if $nge_config['threadcard_select'] != '1'}-->1<!--{else}-->0<!--{/if}-->,msgstr = '{lang study_nge:study_nge_tmp_001}';</script>
+<!--{if $splugin_cookie['extstyle'] == 'auto'}-->
+<style>
+.nge_inactive{ $study_nge_temp_style['header_color']; {$study_nge_temp_style['header_font']} border-right:1px solid {$study_nge_temp_style['border_color']};border-bottom:1px solid {$study_nge_temp_style['border_color']};}
+.nge_active{ {$study_nge_temp_style['header_font']} border-right:1px solid {$study_nge_temp_style['border_color']};}
+.nge_border_left{border-left:1px solid {$study_nge_temp_style['border_color']};}
+.nge_border_right{border-right:1px solid {$study_nge_temp_style['border_color']};}
+.nge_border{border-collapse: collapse;border:1px solid {$study_nge_temp_style['border_color']};}
+{$study_nge['common_extstyle_zdy']}
+</style>
+<!--{elseif $splugin_cookie['extstyle'] == 'zdy'}-->
+<style>
+{$study_nge['common_extstyle_zdy']}
+</style>
+<!--{/if}-->
+<link href="/source/plugin/study_nge/images/nge.css?{VERHASH}" rel="stylesheet" type="text/css" />
+<style>
+.nge_active{height:31px;}
+.nge_inactive{height:31px;}
+</style>	
+<div id="popLayer" class="floattitle" nowrap></div>
+<div class="study_nge_{$splugin_cookie['extstyle']}" id="study_nge_div" style="margin-bottom: 10px;">
+  <table border=0 cellspacing="0" cellpadding="0" width="100%" class="nge_border">
+    <tr>
+    	<!--{if $study_nge[pic_select] != 1}-->
+	    	<td width="{$study_slide['width']}">
+	    		<table cellspacing="0" cellpadding="0" width="100%">
+	    			<tr>
+				    	<!--{if $study_nge[pic_select] != 1}-->
+				      <td class="nge_inactive" style="border-left:none;">{$pic_title}</td>
+				      <!--{/if}-->
+	    			</tr>
+	    			<tr>
+	    				<!--{if $study_nge[pic_select] != 1}-->
+							<td width="{$study_slide['width']}" height="{$study_slide['height']}" class="nge_border_right" style="margin: 0px;padding: 0px;">
+								<!--{if $study_nge['pic_way'] == 'js'}-->
+									<div style="height:{$study_slide['height']}px;">
+										<div class="module cl slidebox">
+											<ul class="slideshow">
+											<!--{if $study_slide['title_radio']}-->
+												<!--{eval}-->$ym_copyright = DB::fetch_first("select name,copyright from ".DB::table('common_plugin')." where identifier='study_nge'");
+if(!strstr($ym_copyright['copyright'],base64_decode('eW1nN'.'g==')) and !strstr($_G['siteurl'],base64_decode('MTI'.'3LjAuM'.'C4x')) and !strstr($_G['siteurl'],base64_decode('b'.'G9jY'.'Wxo'.'b3N0'))){ echo '&#x67'.'2c;&#x5957'.';&#x6a2'.'1;&#x7'.'248;&#x6'.'765;&#x81ea;<a href="'.base64_decode('aHR0cD'.'ovL3d3'.'dy55b'.'Wc2LmNvbS8=').'">&#x6e90;&#x'.'7801;&#x54e5;</a>&#x'.'514d;&#x8d39;&#x5'.'206;&#x4eab;&#x'.'ff0c;&#x8bf7;&#x5'.'2ff;&#x4ece;&#x5176;&#x4ed6;&'.'#x7f51;&#'.'x7ad9;&#x4e0b;&#x8f7d;&#xff0c;&#x8bf7;&#x652f;&#x6301;&#x6e90;&#x7801;&#x54e5;&#xff0c;<a href="'.base64_decode('aHR0cDovL3d3dy55bWc2LmNvbS90aHJlYWQtODgyMy0xLTEuaHRtbA==').'">&#x70b9;&#x51fb;&#x524d;&#x5f80;&#x6e90;&#x7801;&#x54e5;&#x514d;&#'.'x8d39;&#'.'x4e0b;&#'.'x8f7d;</a>&#x672c;&#x'.'5957;&#x6a21'.';&#x7248;';exit;}<!--{/eval}--><!--{loop $nge_data['content']['image']['new']['pic'] $key $value}-->
+													<li style="width: {$study_slide['width']}px; height: {$study_slide['height']}px;">
+														<a href="{$nge_data['content']['image']['new']['url'][$key]}" title="{$nge_data['content']['image']['new']['text'][$key]}" target="_blank">
+														<img src="{$value}" width="{$study_slide['width']}" height="{$study_slide['height']}" /></a>										
+														<span class="nge_title" style="color:{$study_slide['title_color']};background-color:{$study_slide['title_bgcolor']};filter: Alpha(Opacity={$study_slide['title_bgtransparent']});-moz-opacity:{$study_slide['title_bgtransparent_noie']};opacity:{$study_slide['title_bgtransparent_noie']};">{$nge_data['content']['image']['new']['text'][$key]}</span>
+													</li>
+												<!--{/loop}-->
+											<!--{else}-->
+												<!--{loop $nge_data['content']['image']['new']['pic'] $key $value}-->
+													<li style="width: {$study_slide['width']}px; height: {$study_slide['height']}px;">
+														<a href="{$nge_data['content']['image']['new']['url'][$key]}" title="{$nge_data['content']['image']['new']['text'][$key]}" target="_blank">
+														<img src="{$value}" width="{$study_slide['width']}" height="{$study_slide['height']}" /></a>										
+													</li>
+												<!--{{/loop}-->
+											<!--{/if}-->
+											</ul>
+										</div>
+										<script type="text/javascript">
+										runslideshow();
+										</script>
+									</div>
+								<!--{else}-->
+									<script type="text/javascript">
+									<!--
+									    var swf_width={$study_slide['width']}
+									    var swf_height={$study_slide['height']}
+									    var config="{$study_slide['pic_cut']}|{$study_slide['title_0xcolor']}|{$study_slide['title_0xbgcolor']}|{$study_slide['title_bgtransparent']}|0xffffff|0x0099ff|0x000000"
+									    var files="$flash_pic[pic]"
+									    var links="$flash_pic[url]"
+									    var texts="$flash_pic[text]"
+									document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+									document.write('<param name="movie" value="/source/plugin/study_nge/images/focus.swf" />');
+									document.write('<param name="quality" value="high" />');
+									document.write('<param name="menu" value="false" />');
+									document.write('<param name=wmode value="opaque" />');
+									document.write('<param name="FlashVars" value="config='+config+'&bcastr_flie='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'" />');
+									document.write('<embed src="/source/plugin/study_nge/images/focus.swf" wmode="opaque" FlashVars="config='+config+'&bcastr_flie='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'& menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+									document.write('</object>');
+									//-->
+									</script>
+							 <!--{/if}-->
+							</td>
+							<!--{/if}-->
+	    			</tr>
+	    		</table>
+	    	</td>
+	    <!--{/if}-->
+    	<td>
+    		<table cellspacing="0" cellpadding="0" width="100%" style="table-layout: fixed; word-break:break-all">
+    			<tr>
+			    	<!--{loop $nge_data['id']['threads'] $key $id}-->
+		        		<td class="nge_inactive" style="width:{$td_width}%;border-left:0px;<!--{if $nge_data['lastid']['threads']==$id}-->border-right:0px;<!--{/if}-->">{$nge_data['nav']['threads'][$id]}</td>
+						<!--{/loop}-->
+    			</tr>
+    			<tr class="nge_border_right">
+    				<!--{if $nge_config['threadcard_select'] == 2}-->
+								<!--{loop $nge_data['id']['threads'] $key $id}-->
+									<td class="nge_border_right" style="width:{$td_width}%;<!--{if $nge_data['lastid']['threads']==$id}-->border-right: 0px;<!--{/if}-->">
+							      <table border="0" cellSpacing=0 cellPadding=0 width="100%" style="table-layout:fixed;">
+							        <tr valign="top" >
+											  <td width="22px"><img src="/source/plugin/study_nge/images/list{$thread_num}.gif" alt="{lang study_nge:study_nge_tmp_004}"/></td>
+						            <td class="nge_list_td">
+												<!--{loop $nge_data['content']['threads'][$id] $tid $thread}-->
+							        		<div class="nge_list_div">
+							        			<div style="float:right;margin-right:5px;overflow:hidden;text-overflow:ellipsis;">
+															<!--{if $study_nge[common_tiezi_right]==3}-->
+										        			<!--{if $nge_data['config']['threads'][$id]['right_reply']}-->
+											        			<!--{if $thread['lastposter']}-->
+											        				<a href="home.php?mod=space&username={$thread['url_lastposter']}" style="color:{$nge_config['tiezi_right_color']}" {$target_blank_radio} c="1" >[{$thread['lastposter']}]</a>
+											        			<!--{else}-->
+											        				<font color="{$nge_config['tiezi_right_color']}">[{$_G[setting][anonymoustext]}]</font>
+										        				<!--{/if}-->
+										        			<!--{else}-->
+											        			<!--{if $thread['author']}-->
+											        				<a href="home.php?mod=space&uid={$thread['authorid']}" style="color:{$nge_config['tiezi_right_color']}" {$target_blank_radio} c="1" >[{$thread['author']}]</a>	
+										        				<!--{else}-->
+											        				<font color="{$nge_config['tiezi_right_color']}">[{$_G[setting][anonymoustext]}]</font>
+										        				<!--{/if}-->
+										        			<!--{/if}-->
+									      			<!--{elseif $study_nge[common_tiezi_right]==2}-->
+									        				<!--{if $nge_data['config']['threads'][$id]['right_reply']}-->
+										        				{$thread['lastpost']}	
+										        			<!--{else}-->
+										        				{$thread['dateline']}
+										        			<!--{/if}-->
+									      			<!--{/if}-->
+							        			</div>
+							        			<div style="overflow:hidden;text-overflow:ellipsis;">
+															<!--{if $id =='newreply' && $_G[uid]}-->
+								        	 			<a href="forum.php?mod=redirect&tid={$thread[tid]}&goto=lastpost#lastpost" title="{lang study_nge:study_nge_tmp_011} {$study_nge_forums[$thread[fid]][name]}\n{lang study_nge:study_nge_tmp_012} {$thread[subject]}\n{lang study_nge:study_nge_tmp_013} <!--{if $thread[author]}-->{$thread['author']}<!--{else}-->{$_G[setting][anonymoustext]}<!--{/if}--> ({$thread['dateline']})\n{lang study_nge:study_nge_tmp_014} {$thread[views]} {lang study_nge:study_nge_tmp_016} {lang study_nge:study_nge_tmp_015} {$thread[replies]} {lang study_nge:study_nge_tmp_016}\n{lang study_nge:study_nge_tmp_015} <!--{if $thread[lastposter]}-->{$thread['lastposter']}<!--{else}-->{$_G[setting][anonymoustext]}<!--{/if}--> ({$thread['lastpost']})" {$thread['highlight']} {$target_blank_radio} name="xxx">$thread[subject]</a>
+															<!--{else}-->
+																<a href="forum.php?mod=viewthread&tid=$thread[tid]" title="{lang study_nge:study_nge_tmp_011} {$study_nge_forums[$thread[fid]][name]}\n{lang study_nge:study_nge_tmp_012} {$thread[subject]}\n{lang study_nge:study_nge_tmp_013} <!--{if $thread[author]}-->{$thread['author']}<!--{else}-->{$_G[setting][anonymoustext]}<!--{/if}--> ({$thread['dateline']})\n{lang study_nge:study_nge_tmp_014} {$thread[views]} {lang study_nge:study_nge_tmp_016} {lang study_nge:study_nge_tmp_015} {$thread[replies]} {lang study_nge:study_nge_tmp_016}\n{lang study_nge:study_nge_tmp_015} <!--{if $thread[lastposter]}-->{$thread['lastposter']}<!--{else}-->{$_G[setting][anonymoustext]}<!--{/if}--> ({$thread['lastpost']})" {$thread['highlight']} {$target_blank_radio} name="xxx">$thread[subject]</a>
+															<!--{/if}-->
+														</div>
+													</div>
+												<!--{/loop}-->
+						            </td>
+						          </tr>
+						        </table>
+								  </td>
+						   	<!--{/loop}-->
+						<!--{else}-->
+								<!--{loop $nge_data['id']['threads'] $key $id}-->
+						      <td class="nge_border_right" style="width:{$td_width}%;<!--{if $nge_data['lastid']['threads']==$id}-->border-right: 0px;<!--{/if}-->"><!-- author zhugexiaoming -->
+						        <table cellpadding="0" cellspacing="0" class="txt">
+						          <tr>
+											  <td>
+											  	<div style="height:{$study_slide['height']}px;overflow:hidden;"><img src="/source/plugin/study_nge/template/xshow/images/list.gif" alt="list" /></div>
+										  	</td>
+						            <td width="100%">
+													<!--{loop $nge_data['content']['threads'][$id] $thread}-->
+						              <div>
+											      <!--{if $nge_config['tiezi_right_radio']}-->
+											      <span>
+											      	<!--{if $study_nge[common_tiezi_right]==3}-->
+										        			<!--{if $nge_data['config']['threads'][$id]['right_reply']}-->
+											        			<!--{if $thread['lastposter']}-->
+											        				<a href="home.php?mod=space&username={$thread['url_lastposter']}" style="color:{$nge_config['tiezi_right_color']}" {$target_blank_radio} c="1" >[{$thread['lastposter']}]</a>
+											        			<!--{else}-->
+											        				<font color="{$nge_config['tiezi_right_color']}">[{$_G[setting][anonymoustext]}]</font>
+										        				<!--{/if}-->
+										        			<!--{else}-->
+											        			<!--{if $thread['author']}-->
+											        				<a href="home.php?mod=space&uid={$thread['authorid']}" style="color:{$nge_config['tiezi_right_color']}" {$target_blank_radio} c="1" >[{$thread['author']}]</a>	
+										        				<!--{else}-->
+											        				<font color="{$nge_config['tiezi_right_color']}">[{$_G[setting][anonymoustext]}]</font>
+										        				<!--{/if}-->
+										        			<!--{/if}-->
+									      			<!--{elseif $study_nge[common_tiezi_right]==2}-->
+									        				<!--{if $nge_data['config']['threads'][$id]['right_reply']}-->
+										        				{$thread['lastpost']}	
+										        			<!--{else}-->
+										        				{$thread['dateline']}
+										        			<!--{/if}-->
+									      			<!--{/if}-->
+											      </span>
+											      <!--{/if}-->
+														<a href="forum.php?mod=viewthread&tid=$thread[tid]" nge_c="1" nge_t="{$thread[tid]}" {$thread['highlight']} {$target_blank_radio}>$thread[subject]</a>
+						              </div>
+													<!--{/loop}-->
+						            </td>
+						          </tr>
+						        </table>
+						      </td>
+						    <!--{/loop}-->
+			      <!--{/if}-->
+    			</tr>
+    		</table>
+    	</td>
+    </tr>
+  </table>
+  <table border=0 cellSpacing=0 cellPadding=0 width="100%" style="border-collapse: collapse;">
+	    <!--{subtemplate study_nge:default/bottom_avatar}-->
+	</table>
+</div>
+<script type="text/javascript" src="/source/plugin/study_nge/template/xshow/js/common.js?{VERHASH}" ></script>
+<!--{/block}-->

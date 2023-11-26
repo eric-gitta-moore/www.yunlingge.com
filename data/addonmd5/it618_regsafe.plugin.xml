@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[it618_regsafe.plugin]]></item>
+	<item id="RevisionID"><![CDATA[21562]]></item>
+	<item id="SN"><![CDATA[2020012608lLp7rRl7v3]]></item>
+	<item id="RevisionDateline"><![CDATA[1569222957]]></item>
+	<item id="Data">
+		<item id="/images/english.ttf"><![CDATA[f568f7b07d208e2a99b507534392a333]]></item>
+		<item id="/images/check_right.gif"><![CDATA[67140a21f80675f4d9a781c2b8673e2f]]></item>
+		<item id="/images/ol.gif"><![CDATA[eb407f23eed9ac9c2e1eab6b2020d6c2]]></item>
+		<item id="/images/data_valid.gif"><![CDATA[f52e87fd9bb6dcbb6bb07d6df0d1e6b7]]></item>
+		<item id="/images/data_invalid.gif"><![CDATA[7ec5ec275164f90643b2f6331105da46]]></item>
+		<item id="/images/check_error.gif"><![CDATA[b247df6c12a919291ee599eb53fe620e]]></item>
+		<item id="/discuz_plugin_it618_regsafe_TC_UTF8.xml"><![CDATA[6a4520f4fcb61bcc6170519f370a1441]]></item>
+		<item id="/discuz_plugin_it618_regsafe_SC_UTF8.xml"><![CDATA[c83cbd7d9e28d4422eafeed80c30cc1b]]></item>
+		<item id="/ajax.inc.php"><![CDATA[b5a9c815db3b79d81e284124075c94d1]]></item>
+		<item id="/regsafe.class.php"><![CDATA[ff1c9ded908495a7b4f730e45a2d6fd4]]></item>
+		<item id="/validatecode.inc.php"><![CDATA[bcbb2bd9896201ad7222b82a28be0b0b]]></item>
+		<item id="/help.inc.php"><![CDATA[6ee1e30143480e7131d6b925506202dd]]></item>
+		<item id="/js/jquery.js"><![CDATA[920b174f3466886016bd0f26a7199ffc]]></item>
+		<item id="/template/regsafe.htm"><![CDATA[b3bc08d86131c6767255f69c15372adc]]></item>
+	</item>
+</root>

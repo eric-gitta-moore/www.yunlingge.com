@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[xzccode_subnav.plugin]]></item>
+	<item id="RevisionID"><![CDATA[85978]]></item>
+	<item id="SN"><![CDATA[2020012608ERpmm1WrmV]]></item>
+	<item id="RevisionDateline"><![CDATA[1571025139]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_xzccode_subnav_TC_UTF8.xml"><![CDATA[8c57d67a4d23ce7ee03a14c491aeae3f]]></item>
+		<item id="/xzccode.class.php"><![CDATA[4f404d968dc5e42aeeead5aa0bbe9b62]]></item>
+		<item id="/discuz_plugin_xzccode_subnav_SC_UTF8.xml"><![CDATA[b3000d8bbcf270a84fa57240a4e883a0]]></item>
+	</item>
+</root>

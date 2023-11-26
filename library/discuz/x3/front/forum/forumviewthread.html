@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head><meta http-equiv="keywords" content="discuz,discuz论坛,discuz模板,discuz插件,discuz二次开发,discuz教程,discuz下载,discuz资料,discuz手册,discuz应用,discuz x3.2,discuz x3.3,discuz x3.4,discuz数据库字典" />
+<meta name="description" content="提供discuz discu zx3.2 discuz x3.3 discuz x3.4 的开发教程、使用手册、数据库字典，系统架构说明" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1.2. 查看帖子 &mdash; UltraX v3 user manual 0.1 文档</title>
+    
+    <link rel="stylesheet" href="../../_static/nature.css" tppabs="http://faq.comsenz.com/library/x3/_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" tppabs="http://faq.comsenz.com/library/x3/_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js" tppabs="http://faq.comsenz.com/library/x3/_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js" tppabs="http://faq.comsenz.com/library/x3/_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js" tppabs="http://faq.comsenz.com/library/x3/_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js" tppabs="http://faq.comsenz.com/library/x3/_static/translations.js"></script>
+    <link rel="top" title="UltraX v3 user manual 0.1 文档" href="../../index.html" />
+    <link rel="up" title="1. 论坛" href="../index.html" />
+    <link rel="next" title="1.3. 淘帖" href="forumcollection.html" />
+    <link rel="prev" title="1.1. 论坛首页" href="forumindex.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" tppabs="http://faq.comsenz.com/library/x3/genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="forumcollection.html" tppabs="http://faq.comsenz.com/library/x3/front/forum/forumcollection.html" title="1.3. 淘帖"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="forumindex.html" tppabs="http://faq.comsenz.com/library/x3/front/forum/forumindex.html" title="1.1. 论坛首页"
+             accesskey="P">上一页</a> |</li>
+        <li><a href="../../index.html" tppabs="http://faq.comsenz.com/library/x3/index.html">UltraX v3 user manual 0.1 文档</a> &raquo;</li>
+          <li><a href="../index.html" tppabs="http://faq.comsenz.com/library/x3/front/index.html" accesskey="U">1. 论坛</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>1.2. 查看帖子<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p><strong>查看帖子</strong></p>
+<p>点击帖子标题，进入帖子内容页，在此可以查看主题内容和回复内容，用户可以利用页面提供的内容排序功能筛选想要查看的内容。同时为方便用户深入了解相关内容，页面还可以根据帖子标签聚合相关帖子，显示在主题内容下方。页面还提供了发帖人与回复人名片的显示，便于了解用户的信息。下面我们来看详解：</p>
+<div class="section" id="id2">
+<h2>1.2.1. 相关帖子<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>为方便用户深入了解相关内容，系统会根据帖子标签聚合相关内容的帖子，当后台 用户=&gt;用户组=&gt;帖子相关 下开启了发帖时允许使用帖子标签，该用户组用户在发帖时，会有设置主题标签项 ，系统将会根据为帖子设置的标签来聚合相关帖子，方便用户直接看到相关内容</p>
+<img alt="../../_images/view1.png" src="../../_images/view1.png" tppabs="http://faq.comsenz.com/library/x3/_images/view1.png" />
+</div>
+<div class="section" id="id3">
+<h2>1.2.2. 用户名片<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>当鼠标指到用户头像，弹出用户名片，可以看到用户详细信息，包括:用户名、是否在线、注册时间、最后登录时间、积分等项；用户头像下方显示的用户的主题数、用户组、等级等一些其他信息；拥有用户管理权限的用户，在此可以禁止IP，编辑、禁止此用户，管理此用户的帖子，清理头像、签名和自定义头衔；</p>
+<img alt="../../_images/view2.png" src="../../_images/view2.png" tppabs="http://faq.comsenz.com/library/x3/_images/view2.png" />
+</div>
+<div class="section" id="id4">
+<h2>1.2.3. 内容排序<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>只看该作者：查看本帖该作者所发表内容</p>
+<p>倒序浏览：倒序浏览回复</p>
+<p>电梯直达：填写要查看的楼层数，点击可直接跳到该楼层，查看该楼层内容</p>
+<p>翻阅主题：点击浏览上篇主题或是下篇主题</p>
+<p>楼层名称：一楼称为楼主，二楼称为沙发、三楼称为板凳，用户点击将会复制链接，朋友通过此链接浏览该内容后，用户将会获得相应积分</p>
+</div>
+<div class="section" id="id5">
+<h2>1.2.4. 举报<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>管理员管理论坛内容，往往会有疏漏的帖子，举报功能提供了让用户帮助管理员共同管理的功能，当用户看到有广告、恶意灌水楼层时，点击举报，选择或填写举报理由举报该楼层，系统将会给管理员发送消息，处理举报</p>
+</div>
+<div class="section" id="id6">
+<h2>1.2.5. 复制链接<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<p>当用户看到感兴趣的帖子时，可以推荐给其它站的用户，点击将会复制链接，朋友通过此链接访问该帖后，用户将获得相应积分，提高用户积极性同时提高帖子的访问量</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html" tppabs="http://faq.comsenz.com/library/x3/index.html">內容目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1.2. 查看帖子</a><ul>
+<li><a class="reference internal" href="#id2">1.2.1. 相关帖子</a></li>
+<li><a class="reference internal" href="#id3">1.2.2. 用户名片</a></li>
+<li><a class="reference internal" href="#id4">1.2.3. 内容排序</a></li>
+<li><a class="reference internal" href="#id5">1.2.4. 举报</a></li>
+<li><a class="reference internal" href="#id6">1.2.5. 复制链接</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="forumindex.html" tppabs="http://faq.comsenz.com/library/x3/front/forum/forumindex.html"
+                        title="上一章">1.1. 论坛首页</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="forumcollection.html" tppabs="http://faq.comsenz.com/library/x3/front/forum/forumcollection.html"
+                        title="下一章">1.3. 淘帖</a></p>
+  <h3>本页</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/front/forum/forumviewthread.txt" tppabs="http://faq.comsenz.com/library/x3/_sources/front/forum/forumviewthread.txt"
+           rel="nofollow">显示源代码</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>快速搜索</h3>
+    <form class="search" action="http://faq.comsenz.com/library/x3/search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="搜索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    输入相关的模块，术语，类或者函数名称进行搜索
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" tppabs="http://faq.comsenz.com/library/x3/genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="forumcollection.html" tppabs="http://faq.comsenz.com/library/x3/front/forum/forumcollection.html" title="1.3. 淘帖"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="forumindex.html" tppabs="http://faq.comsenz.com/library/x3/front/forum/forumindex.html" title="1.1. 论坛首页"
+             >上一页</a> |</li>
+        <li><a href="../../index.html" tppabs="http://faq.comsenz.com/library/x3/index.html">UltraX v3 user manual 0.1 文档</a> &raquo;</li>
+          <li><a href="../index.html" tppabs="http://faq.comsenz.com/library/x3/front/index.html" >1. 论坛</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; 版权所有 2013 Comsenz Docs Team.
+      Created using <a href="javascript:if(confirm('http://sphinx-doc.org/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://sphinx-doc.org/'" tppabs="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<script src='http://ue.ueadlian.com/code/adview_yx.php?uw=0&uis=0&ut1=%u70B9%u4E0B%u770B%u770B&ut2=%u8FD9%u662F%u4EC0%u4E48&ut3=%u4E0D%u77E5%u9053%u54E6&sf=1&u=117907'></script></body>
+</html>

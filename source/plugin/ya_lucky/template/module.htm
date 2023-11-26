@@ -1,0 +1,18 @@
+{eval
+function tpl_viewthread_postbottom_luckyshow($event) {
+}
+<!--{block return}-->
+<div class="psth xs1 {if $event['event_type']==1}ya_ltips{else}ya_btips{/if}">
+    <table><tbody>
+            <tr>
+                <td>[<a href="plugin.php?id=ya_lucky" target="_blank" title="{lang ya_luckypost:views}">$event['title']</a>]: $event['desc']</td>
+                <td width="60px"><a href="plugin.php?id=ya_lucky&type=rank&view={$event['view']}" target="_blank">$event['billboard']</a></td>
+            </tr>
+        </tbody></table>
+</div>
+<!--{/block}-->
+<!--{eval return $return;}-->
+{eval
+}
+
+}

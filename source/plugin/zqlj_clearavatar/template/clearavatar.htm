@@ -1,0 +1,31 @@
+{template common/header}
+<div class="float" style="width:300px;">
+<div class="floatbox floatbox1">
+	<div style="padding:5px;">
+		<!--
+		<h2 class="float_ctrl">
+			<em>{lang zqlj_clearavatar:op_cleartips}</em>
+		</h2>
+		-->
+		<p style="font-size: 14px;line-height:18px;text-align:center;margin-left:auto;margin-right:auto;">
+		  <br />
+		  {lang zqlj_clearavatar:op_cleartip1}<br>
+		  <font color="red">{lang zqlj_clearavatar:op_cleartip2}</font>
+		  <br />
+		</p>
+	</div>
+	
+<form id="op_clearavatar" name="op_clearavatar" method="post" action="plugin.php?id=zqlj_clearavatar:clearavatar">
+<input type="hidden" name="formhash" value="{FORMHASH}">
+  <input type="hidden" name="op" value="delete" />
+  <input type="hidden" name="clearuid" value="$_GET['clearuid']" />
+  <input type="hidden" name="op_fid" value="$_GET['op_fid']" />
+	<p class="o pns" id="one_btn" style="text-align:center;margin-top:10px;">
+		<button type="submit" name="clearavatar_yes" id="clearavatar_yes" class="pn pnc" value="true"><strong style="font-weight:normal;">{lang zqlj_clearavatar:op_yes}</strong></button>
+		<button type="reset"  name="clearavatar_no" onclick="hideWindow('zqlj_clearavatar')" class="pn vm"/><strong style="font-weight:normal;">{lang zqlj_clearavatar:op_no}</strong></button>
+	</p>  
+
+</form>
+</div> 
+</div>
+{template common/footer}

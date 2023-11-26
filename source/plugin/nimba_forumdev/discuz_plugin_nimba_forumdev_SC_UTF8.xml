@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+	<item id="Time"><![CDATA[2019-08-19 13:05]]></item>
+	<item id="From"><![CDATA[人工智能实验室开发站 (http://localhost/dev/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[论坛首页版块主题显示]]></item>
+			<item id="identifier"><![CDATA[nimba_forumdev]]></item>
+			<item id="description"><![CDATA[论坛首页版块主题显示 for Discuz！ 人工智能实验室 出品 功能介绍：本插件实现在论坛首页(包括分区页面)的版块下方创建一个主题列表，可调用最新主题或最新回复，显示样式可自定义，能够有效提高用户体验和内容紧凑度！]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[nimba_forumdev/]]></item>
+			<item id="copyright"><![CDATA[人工智能实验室]]></item>
+			<item id="version"><![CDATA[v3.6.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[cache]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[更新缓存]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[addon]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[应用推荐]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[99]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[位置微调]]></item>
+				<item id="description"><![CDATA[1、填写负数：向左偏移；
+2、填写正数：向右偏移；
+3、留空或为0，按嵌入点正常位置显示；
+【*】单位：px；如果版块图标太大或者模板样式限制造成显示列表偏移，可通过修改此处重新纠正位置]]></item>
+				<item id="variable"><![CDATA[margin]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[列表宽度微调]]></item>
+				<item id="description"><![CDATA[默认为100，即模板此处正常宽度，如果需要调宽列表(即增加列表字数)，可以稍微增大数字，反之则改小数字；]]></item>
+				<item id="variable"><![CDATA[listwidth]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[100]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[排序方式]]></item>
+				<item id="description"><![CDATA[1=按发帖时间
+2=按回复时间]]></item>
+				<item id="variable"><![CDATA[order]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=按发帖时间
+2=按回复时间]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[显示样式]]></item>
+				<item id="description"><![CDATA[1=标题+发帖时间
+2=标题+最后回复时间
+3=标题+作者
+4=标题+最后回复人
+5=标题+浏览量
+6=标题+回复量
+【*】注意，本插件使用了缓存机制，只有当版块的主题数或回复数变更时才会更新缓存]]></item>
+				<item id="variable"><![CDATA[style]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=标题+发帖时间
+2=标题+最后回复时间
+3=标题+作者
+4=标题+最后回复人
+5=标题+浏览量
+6=标题+回复量]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[显示数量]]></item>
+				<item id="description"><![CDATA[填写1至10的整数，建议值：5]]></item>
+				<item id="variable"><![CDATA[num]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[关闭版块]]></item>
+				<item id="description"><![CDATA[选中的版块，将不再在首页显示主题列表；]]></item>
+				<item id="variable"><![CDATA[forums]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[版块推送]]></item>
+				<item id="description"><![CDATA[允许按版块推送主题，推送的主题在列表的上方，一行一个版块，格式为：fid=tid1,tid2,tid3(多个tid之间以英文逗号分隔)
+例如
+2=10,12,55
+37=56,58
+38=9
+【注意】如果设置的tid不在对应版块，则设置无效
+【*】推送功能仅商业版享有，其他版本设置无效]]></item>
+				<item id="variable"><![CDATA[tuis]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[2=10,12,57,58,59
+37=56,58
+38=9]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[推送数据缓存时长]]></item>
+				<item id="description"><![CDATA[单位：秒；为保证缓存效率，建议设置不小于300，即不小于5分钟！]]></item>
+				<item id="variable"><![CDATA[tuicache]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[300]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="appname"><![CDATA[论坛首页版块主题显示]]></item>
+				<item id="title"><![CDATA[缓存列表]]></item>
+				<item id="doupdate"><![CDATA[更新缓存]]></item>
+				<item id="m_index"><![CDATA[序号]]></item>
+				<item id="m_file"><![CDATA[缓存文件]]></item>
+				<item id="m_time"><![CDATA[缓存时间]]></item>
+				<item id="m_nodata"><![CDATA[暂无缓存文件！]]></item>
+				<item id="m_ok"><![CDATA[缓存更新成功！]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="appname"><![CDATA[论坛首页版块主题显示]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+	</item>
+</root>

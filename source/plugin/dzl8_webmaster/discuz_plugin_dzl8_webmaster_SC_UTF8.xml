@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4]]></item>
+	<item id="Time"><![CDATA[2017-08-16 09:04]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://www.dzl8.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[站长认证]]></item>
+			<item id="identifier"><![CDATA[dzl8_webmaster]]></item>
+			<item id="description"><![CDATA[用户自助网站认证]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[dzl8_webmaster/]]></item>
+			<item id="copyright"><![CDATA[dz乐吧工作室]]></item>
+			<item id="version"><![CDATA[1.5]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[url]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[站长认证]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[7]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[lists]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[认证管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+	<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[验证秘钥]]></item>
+				<item id="description"><![CDATA[txt文本会生成对应用户的唯一秘钥：秘钥+加密UID]]></item>
+				<item id="variable"><![CDATA[verify]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[cG7AP]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[验证文件名]]></item>
+				<item id="description"><![CDATA[填写用户下载的文件名称，填写为英文]]></item>
+				<item id="variable"><![CDATA[tname]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[web]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[验证网址唯一]]></item>
+				<item id="description"><![CDATA[验证用户填写的网址是否重复。]]></item>
+				<item id="variable"><![CDATA[isurl]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[加密选项]]></item>
+				<item id="description"><![CDATA[选择文件加密部分]]></item>
+				<item id="variable"><![CDATA[jiami]]></item>
+				<item id="type"><![CDATA[selects]]></item>
+				<item id="extra"><![CDATA[1 = 文件名
+2 = 文件后缀
+3 = 内容
+4 = 内容后缀]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[1]]></item>
+					<item id="1"><![CDATA[2]]></item>
+					<item id="2"><![CDATA[3]]></item>
+					<item id="3"><![CDATA[4]]></item>
+				</item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[是否开启正则]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[urlkg]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="save_success"><![CDATA[保存成功]]></item>
+				<item id="please_a"><![CDATA[请将资料填写完整]]></item>
+				<item id="y_sb"><![CDATA[验证失败]]></item>
+				<item id="y_success"><![CDATA[验证成功]]></item>
+				<item id="congf"><![CDATA[网址已被别人提交]]></item>
+				<item id="no"><![CDATA[未认证成功]]></item>
+				<item id="yes"><![CDATA[认证成功]]></item>
+				<item id="shan"><![CDATA[删除成功]]></item>
+				<item id="bt"><![CDATA[认证列表]]></item>
+				<item id="xh"><![CDATA[序号]]></item>
+				<item id="yhm"><![CDATA[用户名]]></item>
+				<item id="nmae"><![CDATA[网站名称]]></item>
+				<item id="url"><![CDATA[网站地址]]></item>
+				<item id="sfrz"><![CDATA[是否认证]]></item>
+				<item id="time"><![CDATA[认证时间]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="english"><![CDATA[chinese]]></item>
+				<item id="write_domain"><![CDATA[填写域名]]></item>
+				<item id="verify_file"><![CDATA[验证文件]]></item>
+				<item id="domain_verification"><![CDATA[域名核实]]></item>
+				<item id="verify_success"><![CDATA[验证成功]]></item>
+				<item id="webname"><![CDATA[网站名称:]]></item>
+				<item id="webadd"><![CDATA[网站地址:]]></item>
+				<item id="down_verify_file"><![CDATA[下载验证文件：]]></item>
+				<item id="down_now"><![CDATA[点击下载]]></item>
+				<item id="please_visit_address"><![CDATA[请先访问地址]]></item>
+				<item id="verify_now"><![CDATA[立刻验证]]></item>
+				<item id="success"><![CDATA[恭喜你认证成功]]></item>
+				<item id="chinese_or_English_name"><![CDATA[请填写中文或英文名称]]></item>
+				<item id="as_url"><![CDATA[请填写网址如：]]></item>
+				<item id="next"><![CDATA[下一步]]></item>
+			</item>
+			<item id="installlang">
+				<item id="english"><![CDATA[chinese]]></item>
+			</item>
+			<item id="systemlang">
+				<item id="file">
+					<item id="english"><![CDATA[chinese]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

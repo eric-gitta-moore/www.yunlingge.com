@@ -1,0 +1,1 @@
+define(["require"],function(t){return{get:function(t,i){var n=i?"mwt-popover-"+i:"mwt-popover-danger";return'<i class="sicon-question" pop-title="'+t+'" pop-cls="'+n+'" style="cursor:pointer;padding-left:3px;color:#888;"></i>'},init:function(){mwt.popinit()}}});

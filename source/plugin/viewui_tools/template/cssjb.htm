@@ -1,0 +1,848 @@
+{template viewui_tools:header}
+<!--[if IE 9]> 
+<script>
+ alert("{lang viewui_tools:ieerror}");
+window.location.href = "plugin.php?id=viewui_tools";
+</script>
+<![endif]-->
+<!--[if IE 8]> 
+<script>
+ alert("{lang viewui_tools:ieerror}");
+window.location.href = "plugin.php?id=viewui_tools";
+</script>
+<![endif]-->
+<style>
+#viewui-toolsbg{
+	min-width: 960px;
+    margin: 0 auto;
+    max-width: 960px;
+    width: 960px;
+}
+#viewui-toolsbg .tips{
+    overflow: hidden;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #FBEED5;
+    border-radius: 4px;
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    color: #3A87AD;
+    margin-bottom: 10px;
+}
+#viewui-toolsbg .tips strong{
+    margin-right: 5px;
+}
+.sp-top {
+  position:relative;
+  width: 100%;
+  display:inline-block;
+}
+.sp-top-inner {
+   position:absolute;
+   top:0;
+   left:0;
+   bottom:0;
+   right:0;
+}
+.sp-color {
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:20%;
+}
+.sp-hue {
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:84%;
+    height: 100%;
+}
+.sp-fill {
+    padding-top: 80%;
+}
+.sp-sat, .sp-val {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.sp-alpha-enabled .sp-top
+{
+    margin-bottom: 18px;
+}
+.sp-alpha-enabled .sp-alpha
+{
+    display: block;
+}
+
+.sp-alpha-handle
+{
+    position:absolute;
+    top:-4px;
+    bottom: -4px;
+    width: 6px;
+    left: 50%;
+    cursor: pointer;
+    border: 1px solid black;
+    background: white;
+    opacity: .8;
+}
+
+.sp-alpha
+{
+    display: none;
+    position: absolute;
+    bottom: -14px;
+    right: 0;
+    left: 0;
+    height: 8px;
+}
+.sp-alpha-inner{
+    border: solid 1px #333;
+}
+
+/* Don't allow text selection */
+.sp-container, .sp-replacer, .sp-preview, .sp-dragger, .sp-slider, .sp-alpha, .sp-alpha-handle, .sp-container.sp-dragging .sp-input, .sp-container button  {
+    -webkit-user-select:none;
+    -moz-user-select: -moz-none;
+    -o-user-select:none;
+    user-select: none;
+}
+
+.sp-container.sp-input-disabled .sp-input-container {
+    display: none;
+}
+.sp-container.sp-buttons-disabled .sp-button-container {
+    display: none;
+}
+.sp-palette-only .sp-picker-container {
+    display: none;
+}
+.sp-palette-disabled .sp-palette-container {
+    display: none;
+}
+
+.sp-initial-disabled .sp-initial {
+    display: none;
+}
+
+.sp-sat {
+    background-image: -webkit-gradient(linear,  0 0, 100% 0, from(#FFF), to(rgba(204, 154, 129, 0)));
+    background-image: -webkit-linear-gradient(left, #FFF, rgba(204, 154, 129, 0));
+    background-image: -moz-linear-gradient(left, #fff, rgba(204, 154, 129, 0));
+    background-image: -o-linear-gradient(left, #fff, rgba(204, 154, 129, 0));
+    background-image: -ms-linear-gradient(left, #fff, rgba(204, 154, 129, 0));
+    background-image: linear-gradient(to right, #fff, rgba(204, 154, 129, 0));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr=#FFFFFFFF, endColorstr=#00CC9A81)";
+    filter : progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr='#FFFFFFFF', endColorstr='#00CC9A81');
+}
+.sp-val {
+    background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#000000), to(rgba(204, 154, 129, 0)));
+    background-image: -webkit-linear-gradient(bottom, #000000, rgba(204, 154, 129, 0));
+    background-image: -moz-linear-gradient(bottom, #000, rgba(204, 154, 129, 0));
+    background-image: -o-linear-gradient(bottom, #000, rgba(204, 154, 129, 0));
+    background-image: -ms-linear-gradient(bottom, #000, rgba(204, 154, 129, 0));
+    background-image: linear-gradient(to top, #000, rgba(204, 154, 129, 0));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00CC9A81, endColorstr=#FF000000)";
+    filter : progid:DXImageTransform.Microsoft.gradient(startColorstr='#00CC9A81', endColorstr='#FF000000');
+}
+
+.sp-hue {
+    background: -moz-linear-gradient(top, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+    background: -ms-linear-gradient(top, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+    background: -o-linear-gradient(top, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), color-stop(0.17, #ffff00), color-stop(0.33, #00ff00), color-stop(0.5, #00ffff), color-stop(0.67, #0000ff), color-stop(0.83, #ff00ff), to(#ff0000));
+    background: -webkit-linear-gradient(top, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+}
+
+
+.sp-1 {
+    height:17%;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#ffff00');
+}
+.sp-2 {
+    height:16%;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff00', endColorstr='#00ff00');
+}
+.sp-3 {
+    height:17%;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ff00', endColorstr='#00ffff');
+}
+.sp-4 {
+    height:17%;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffff', endColorstr='#0000ff');
+}
+.sp-5 {
+    height:16%;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0000ff', endColorstr='#ff00ff');
+}
+.sp-6 {
+    height:17%;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00ff', endColorstr='#ff0000');
+}
+
+.sp-hidden {
+    display: none !important;
+}
+
+.sp-cf:before, .sp-cf:after { content: ""; display: table; }
+.sp-cf:after { clear: both; }
+.sp-cf { *zoom: 1; }
+
+@media (max-device-width: 480px) {
+    .sp-color { right: 40%; }
+    .sp-hue { left: 63%; }
+    .sp-fill { padding-top: 60%; }
+}
+
+.sp-dragger {
+   border-radius: 5px;
+   height: 5px;
+   width: 5px;
+   border: 1px solid #fff;
+   background: #000;
+   cursor: pointer;
+   position:absolute;
+   top:0;
+   left: 0;
+}
+.sp-slider {
+    position: absolute;
+    top:0;
+    cursor:pointer;
+    height: 3px;
+    left: -1px;
+    right: -1px;
+    border: 1px solid #000;
+    background: white;
+    opacity: .8;
+}
+
+.sp-container {
+    border-radius: 0;
+    background-color: #ECECEC;
+    border: solid 1px #f0c49B;
+    padding: 0;
+}
+.sp-container, .sp-container button, .sp-container input, .sp-color, .sp-hue
+{
+    font: normal 12px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.sp-top
+{
+    margin-bottom: 3px;
+}
+.sp-color, .sp-hue
+{
+    border: solid 1px #666;
+}
+
+.sp-input-container {
+    float:right;
+    width: 100px;
+    margin-bottom: 4px;
+}
+.sp-initial-disabled  .sp-input-container {
+    width: 100%;
+}
+.sp-input {
+   font-size: 12px !important;
+   border: 1px inset;
+   padding: 4px 5px;
+   margin: 0;
+   width: 100%;
+   background:white;
+   border-radius: 3px;
+   color: #222;
+}
+.sp-input:focus  {
+    border: 1px solid rgba(82,168,236,0.8);
+}
+.sp-input.sp-validation-error
+{
+    border: 1px solid red;
+    background: #fdd;
+}
+.sp-picker-container , .sp-palette-container
+{
+    float:left;
+    position: relative;
+    padding: 10px;
+    padding-bottom: 300px;
+    margin-bottom: -290px;
+}
+.sp-picker-container
+{
+    width: 172px;
+    border-left: solid 1px #fff;
+}
+
+.sp-palette-container
+{
+    border-right: solid 1px #ccc;
+}
+
+.sp-palette .sp-thumb-el {
+    display: block;
+    position:relative;
+    float:left;
+    width: 24px;
+    height: 15px;
+    margin: 3px;
+    cursor: pointer;
+    border:solid 2px transparent;
+}
+.sp-palette .sp-thumb-el:hover, .sp-palette .sp-thumb-el.sp-thumb-active {
+    border-color: orange;
+}
+.sp-thumb-el
+{
+    position:relative;
+}
+
+.sp-initial
+{
+    float: left;
+    border: solid 1px #333;
+}
+.sp-initial span {
+    width: 30px;
+    height: 25px;
+    border:none;
+    display:block;
+    float:left;
+    margin:0;
+}
+
+.sp-button-container {
+    float: right;
+}
+
+.sp-replacer {
+    margin:0;
+    overflow:hidden;
+    cursor:pointer;
+    padding: 4px;
+    display:inline-block;
+    *zoom: 1;
+    *display: inline;
+    border: solid 1px #91765d;
+    background: #eee;
+    color: #333;
+    vertical-align: middle;
+}
+.sp-replacer:hover, .sp-replacer.sp-active {
+    border-color: #F0C49B;
+    color: #111;
+}
+.sp-replacer.sp-disabled {
+    cursor:default;
+    border-color: silver;
+    color: silver;
+}
+.sp-dd {
+    padding: 2px 0;
+    height: 16px;
+    line-height: 16px;
+    float:left;
+    font-size:10px;
+}
+.sp-preview
+{
+    position:relative;
+    width:25px;
+    height: 20px;
+    border: solid 1px #222;
+    margin-right: 5px;
+    float:left;
+    z-index: 0;
+}
+
+.sp-palette
+{
+    *width: 220px;
+    max-width: 220px;
+}
+.sp-palette .sp-thumb-el
+{
+    width:16px;
+    height: 16px;
+    margin:2px 1px;
+    border: solid 1px #d0d0d0;
+}
+
+.sp-container
+{
+    padding-bottom:0;
+}
+
+.sp-container button {
+  background-color: #eeeeee;
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #bbb;
+  border-radius: 3px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1;
+  padding: 5px 4px;
+  text-align: center;
+  text-shadow: 0 1px 0 #eee;
+  vertical-align: middle;
+}
+.sp-container button:hover {
+    background-color: #dddddd;
+    background-image: -webkit-linear-gradient(top, #dddddd, #bbbbbb);
+    background-image: -moz-linear-gradient(top, #dddddd, #bbbbbb);
+    background-image: -ms-linear-gradient(top, #dddddd, #bbbbbb);
+    background-image: -o-linear-gradient(top, #dddddd, #bbbbbb);
+    background-image: -ms-linear-gradient(top, #dddddd, #bbbbbb);
+    background-image: linear-gradient(to bottom, #dddddd, #bbbbbb);
+    border: 1px solid #bbb;
+    border-bottom: 1px solid #999;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #ddd;
+}
+.sp-container button:active {
+    border: 1px solid #aaa;
+    border-bottom: 1px solid #888;
+    -webkit-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+    -moz-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+    -ms-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+    -o-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+    box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+}
+.sp-cancel
+{
+    font-size: 11px;
+    color: #d93f3f !important;
+    margin:0;
+    padding:2px;
+    margin-right: 5px;
+    vertical-align: middle;
+    text-decoration:none;
+
+}
+.sp-cancel:hover
+{
+    color: #d93f3f !important;
+    text-decoration: underline;
+}
+
+
+.sp-palette span:hover, .sp-palette span.sp-thumb-active
+{
+    border-color: #000;
+}
+
+.sp-preview, .sp-alpha, .sp-thumb-el
+{
+    position:relative;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);
+}
+.sp-preview-inner, .sp-alpha-inner, .sp-thumb-inner
+{
+    display:block;
+    position:absolute;
+    top:0;left:0;bottom:0;right:0;
+}
+
+.sp-palette .sp-thumb-inner
+{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.sp-palette .sp-thumb-light.sp-thumb-active .sp-thumb-inner
+{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIVJREFUeNpiYBhsgJFMffxAXABlN5JruT4Q3wfi/0DsT64h8UD8HmpIPCWG/KemIfOJCUB+Aoacx6EGBZyHBqI+WsDCwuQ9mhxeg2A210Ntfo8klk9sOMijaURm7yc1UP2RNCMbKE9ODK1HM6iegYLkfx8pligC9lCD7KmRof0ZhjQACDAAceovrtpVBRkAAAAASUVORK5CYII=);
+}
+.sp-palette .sp-thumb-dark.sp-thumb-active .sp-thumb-inner
+{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAMdJREFUOE+tkgsNwzAMRMugEAahEAahEAZhEAqlEAZhEAohEAYh81X2dIm8fKpEspLGvudPOsUYpxE2BIJCroJmEW9qJ+MKaBFhEMNabSy9oIcIPwrB+afvAUFoK4H0tMaQ3XtlrggDhOVVMuT4E5MMG0FBbCEYzjYT7OxLEvIHQLY2zWwQ3D+9luyOQTfKDiFD3iUIfPk8VqrKjgAiSfGFPecrg6HN6m/iBcwiDAo7WiBeawa+Kwh7tZoSCGLMqwlSAzVDhoK+6vH4G0P5wdkAAAAASUVORK5CYII=);
+}
+.targets {
+	margin:0 auto;
+	text-align: center;
+	border: 1px solid #ccc;
+	background: #f8f8f8;
+	margin: 0 auto;
+	border-radius: 4px;
+	width:auto;
+	padding:10px;
+}
+.target_text {
+	margin: 0px auto;
+	margin-top: 40%;
+	background: #f8f8f8;
+	width: 70px;
+	border: 1px solid #ddd;
+	padding: 2px;
+	border-radius: 2px;
+	color: #111;
+}
+.target {
+	border: 1px solid;
+	margin: 0px 10%;
+	width: 150px;
+	height: 150px;
+	display:inline-block;
+}
+#target {
+	border-radius: 150px;
+}
+.result {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding:12px;
+	padding-left: 15px;
+	margin: 10px 0px;
+	border: 1px solid #ddd;
+	background: #f8f8f8;
+}
+#gradX {
+    height: 200px;
+    width: 100%;
+}
+.gradx_hide {
+	display: none;
+}
+.gradx {
+    position: relative;
+    background: #FAFAFA;
+    background: -moz-linear-gradient(top, #FAFAFA 0%, #DFDFDF 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FAFAFA), color-stop(100%, #DFDFDF));
+    background: -webkit-linear-gradient(top, #FAFAFA 0%, #DFDFDF 100%);
+    background: -o-linear-gradient(top, #FAFAFA 0%, #DFDFDF 100%);
+    background: -ms-linear-gradient(top, #FAFAFA 0%, #DFDFDF 100%);
+    background: linear-gradient(top, #FAFAFA 0%, #DFDFDF 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#dfdfdf', GradientType=0 );
+    border: 4px solid #dfdfdf;
+    padding: 10px;
+    font-weight: normal;
+    width: 97%;
+    font-size: 12px;
+}
+.gradx textarea, input, select {
+	font-size: 12px;
+}
+.gradx_container {
+	padding: 10px;
+	background: white;
+	padding-left: 16px;
+	border: 5px solid #e5e5e5;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.gradx_panel {
+    width: 100%;
+    height: 42px;
+    border: 1px solid #ccc;
+}
+.gradx_start_sliders {
+    width: 100%;
+    margin-top: 8px;
+    margin-left: -0.4em;
+    background: whitesmoke;
+    height: 12px;
+    box-shadow: 5px 9px 30px rgba(0, 0, 0, .5) inset;
+    -webkit-box-shadow: 5px 9px 30px rgba(0, 0, 0, .5) inset;
+    -moz-box-shadow: 5px 9px 30px rgba(0, 0, 0, .5) inset;
+    -o-box-shadow: 5px 9px 30px rgba(0, 0, 0, .5) inset;
+    border: 1px solid #f1f1f1;
+}
+.gradx_slider {
+	position: absolute;
+	left: 0px;
+	width: 10px;
+	height: 10px;
+	background: red;
+	border: 1px solid black;
+	display: inline-block;
+	opacity: 0.6;
+}
+.gradx_slider:hover {
+	opacity: 1;
+	cursor: move;
+}
+.gradx_slectboxes select {
+	color: black;
+	vertical-align: baseline;
+}
+.gradx_slider:after {
+	content: "";
+	position: absolute;
+	bottom: 10px;
+	left: 4px;
+	border-style: solid;
+	border-width: 70px 1px 0px 0px;
+	border-color: transparent #000;
+	display: block;
+	width: 0;
+	z-index: 1;
+}
+.gradx_code, gradx_code:focus {
+	padding: 8px;
+	color: #111;
+	text-shadow: #eee 0 1px;
+	background: #bba;
+	margin-top: 5px;
+	border-radius: 4px;
+	font-size: 12px;
+	display: none;
+	overflow: auto;
+	width: 100%;
+	min-height: 200px;
+	border: 1px solid #ccc;
+	resize: vertical;
+	font-family: 'Maven Pro', sans-serif;
+	border: 0;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-o-box-shadow: none !important;
+	line-height: 14px;
+	/* the long awaited dream of 100% width comes true */
+    /* All hail CSS3 */
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+#gradx_slider_info {
+	display: none;
+	border: 1px solid #ccc;
+	padding: 2px;
+	background: #f1f1f1;
+}
+#gradx_slider_controls {
+	margin-left: 15px;
+	padding-top:4px;
+	padding-bottom: 4px;
+}
+.gradx_add_slider {
+	border: 1px solid black;
+	width: 50px;
+	margin-bottom: 4px;
+}
+.gradx_slectboxes {
+	display: inline;
+}
+.gradx_gradient_type {
+	height: 25px;
+	background: #efefef;
+	border: 1px solid #ccc;
+	padding-right: 2px;
+	width: 115px;
+	margin: 0;
+}
+.gradx_btn > .icon {
+	position: relative;
+	left: -3px;
+	background-size: 12px 12px;
+	top: 2px;
+	display: inline-block;
+	height: 12px;
+	width: 12px;
+	background-position: 0 0;
+}
+.gradx_btn > .icon-add {
+	background-image: url("../Images/plus.png");
+	left: -10px;
+}
+.gradx_btn > .icon-remove {
+	background-image: url("../Images/remove.png");
+}
+.gradx_btn > .icon-file-css {
+	background-image: url("../Images/file-css.png");
+}
+.gradx_btn > .icon-preset {
+	background-image: url("../Images/preset.png");
+}
+/* Common stuff */
+.picker-wrapper, .slide-wrapper {
+	position: relative;
+	float: left;
+}
+.picker-indicator, .slide-indicator {
+	position: absolute;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+}
+.picker, .slide {
+	cursor: crosshair;
+	float: left;
+}
+/* Default skin */
+
+.cp-default {
+	border-radius: 6px;
+	float: left;
+	margin-top: 13px;
+	margin-left: -96px;
+	position: absolute;
+	z-index: 10000;
+}
+.cp-default .picker {
+	width: 200px;
+	height: 200px;
+}
+.cp-default .slide {
+	width: 30px;
+	height: 200px;
+}
+.cp-default .slide-wrapper {
+	margin-left: 10px;
+}
+.cp-default .picker-indicator {
+	width: 5px;
+	height: 5px;
+	border: 2px solid darkblue;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	opacity: .5;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+	filter: alpha(opacity=50);
+	background-color: white;
+}
+.cp-default .slide-indicator {
+	width: 100%;
+	height: 10px;
+	left: -4px;
+	opacity: .6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+	filter: alpha(opacity=60);
+	border: 4px solid black;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #333;
+}
+
+.gradx_btn {
+	display: inline-block;
+	padding: 4px 10px 4px;
+	font-size: 13px;
+	line-height: 18px;
+	color: #333333;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #f5f5f5;
+	background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	border: 1px solid #cccccc;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-bottom-color: #b3b3b3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+ filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+ filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.gradx_btn:hover, .gradx_btn:active, .gradx_btn.active, .gradx_btn.disabled, .gradx_btn[disabled] {
+	background-color: #e6e6e6;
+}
+.gradx_btn:active, .gradx_btn.active {
+	background-color: #cccccc \9;
+}
+.gradx_btn:hover {
+	color: #333333;
+	text-decoration: none;
+	background-color: #e6e6e6;
+
+    background-position: 0 -15px;
+	-webkit-transition: background-position 0.1s linear;
+	-moz-transition: background-position 0.1s linear;
+	-ms-transition: background-position 0.1s linear;
+	-o-transition: background-position 0.1s linear;
+	transition: background-position 0.1s linear;
+}
+.gradx_btn:focus {
+	outline: thin dotted #333;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+.gradx_btn.active, .gradx_btn:active {
+	background-color: #e6e6e6;
+	background-color: #d9d9d9 \9;
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.gradx_btn.disabled, .gradx_btn[disabled] {
+	cursor: default;
+	background-color: #e6e6e6;
+	background-image: none;
+	opacity: 0.65;
+	filter: alpha(opacity=65);
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+</style>
+<script src="source/plugin/viewui_tools/js/jquery-1.10.2.js"></script>
+<script type="text/javascript"> var jq = jQuery.noConflict(); </script>
+<script type="text/javascript" src="source/plugin/viewui_tools/js/colorpicker.js"></script>
+<script type="text/javascript" src="source/plugin/viewui_tools/js/dom-drag.js"></script>
+<script type="text/javascript" src="source/plugin/viewui_tools/js/gradx.js"></script>
+
+<div id="viewui-toolsbg">
+<div class="tips"><strong>{lang viewui_tools:tip}</strong>{lang viewui_tools:cssjbsummary}</div>
+<div id="gradX" ></div>
+
+<div class="result"> {lang viewui_tools:cssjbshow}</div>
+
+<div class="targets">
+	<div class="target" id="target">
+		<div class="target_text">{lang viewui_tools:cssdemo} #1</div>
+	</div>
+	<div class="target" id="target2">
+		<div class="target_text">{lang viewui_tools:cssdemo} #2</div>
+	</div>
+</div>
+</div>
+
+<script type="text/javascript">
+gradX("#gradX", {
+	targets: [".target"]
+});
+</script>
+
+{template viewui_tools:footer}

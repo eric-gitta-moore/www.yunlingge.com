@@ -1,0 +1,105 @@
+<script src="source/plugin/rjyfk_in/template/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">var jq = jQuery.noConflict();</script>
+<style>
+.banklist{height:auto;overflow: hidden;list-style: none}
+.banklist li{width: 134px;height: 38px;display: block;border: 1px solid #cfcfcf;float: left;margin: 0 24px 12px 0;cursor: pointer;}
+.banklist li.bank_on { background: url({$_G['site_url']}source/plugin/rjyfk_in/template/img/radio_cur.gif) right bottom no-repeat;background-color: #f4f9eb;border: 1px solid #f86c41;}
+.banklist li em {background: url({$_G['site_url']}source/plugin/rjyfk_in/template/img/lbs.png) no-repeat -16px -80px;width: 15px;height: 15px;display: block;position: absolute;margin: -16px 0 0 120px;_margin: 23px 0 0 -14px;}
+ol, ul {list-style: none;}
+</style>
+<table cellspacing="0" cellpadding="0" class="tfm mtn" bgcolor="#F5F5F5">
+<tr>
+<td>
+<!--{if $rjyfk_in[rj_information]}-->
+<div style="width:88%; height:30px; line-height:30px; float:right;color:#FF0000"><strong>{$rjyfk_in[rj_information]}</strong>
+    <!--{/if}-->
+</div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="tfm mtn">
+    <tr>
+        <th>{lang rjyfk_in:Template12}</th>
+        <td colspan="2">
+            <div class="controls">
+            <ul class="valuelist" id="bank_pay_channel">
+			<input name="rjyzf_type" type="radio" id="rjyzf_type" checked="checked" style="position:relative; top:2px;"/>
+			<label style="margin-right:18px; color:red; font-weight:700;" for="rjyzf_type">$rj_title</label>
+             </ul>
+            </div>
+        </td>
+    </tr>
+    </table>
+<form id="postsubmit" name="postsubmit"   target='rjyfk_in' method="post" autocomplete="off" action="plugin.php?id=rjyfk_in:payment" >
+				<input type="hidden" name="formhash" value="{FORMHASH}" />
+				<table cellspacing="0" cellpadding="0" class="tfm mtn">
+					<tr id="paybox" >
+						<th>{lang rjyfk_in:Template3}</th>
+						<td class="pns">
+                        <div style="height:30px; float:left">
+						<input name="total_fee" class="px" type="text" style="width: auto;"  id="total_fee" value="0" onkeyup="rj_get()" />
+		                <span>{lang rjyfk_in:Template4}</span><span>{lang rjyfk_in:Template32}</span><strong style="font-size:12px;">{lang rjyfk_in:Template5} <span id="nums" style="color:#F60">0</span> {$titlename}</strong> </div>
+						</td>
+						<td width="300" class="d">
+						</td>
+					</tr>
+					<tr id="paybox" >
+						<th>{lang rjyfk_in:Template30}</th>
+						<td class="pns">({$rj_minimum} ~ {$rj_dayumum}) {lang rjyfk_in:Template23}</div>
+						</td>
+						<td width="300" class="d">
+						</td>
+					</tr>
+					<td>{lang rjyfk_in:Template11}:</td>
+                        <td>
+                            <ul class="banklist" id="banklist"  style="height: auto;">
+                          <!--{loop $bank_types $val}-->
+                                <li bank_id="$val[id]" payment_type="chinapay" title="{$val[lang]}" onclick="setSelect(this)">
+								<img src="{$_G['site_url']}source/plugin/rjyfk_in/template/img/{$val[id]}.png">
+                                </li>
+                                <!--{/loop}-->
+							<input type="hidden"  id="bankcode" name="bankcode" value="" />	
+					<tr>
+						<th>&nbsp;</th>
+						<td colspan="2">
+							<button onclick="{if $_G[uid]}go_postchong(){else}location='member.php?mod=logging&action=login';{/if}" type="button"  value="yes" name="postsubmit"  id="postsubmit" style="border:none; background:#F00; padding:5px 10px; font-size:14px; font-weight:700; color:#FFF; cursor:pointer;">{lang rjyfk_in:Template7}</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+
+<script>
+function setSelect(obj) {
+  var banklist= document.getElementById("banklist");
+  var arr=banklist.getElementsByTagName("li");
+  var len=arr.length;
+  var nextYear = 'ABC';
+  for(var i=0;i<len;i++){
+	arr[i].className ="";
+	arr[i].innerHTML=arr[i].innerHTML.replace("<font></font>","");
+  }
+  obj.className ="bank_on";
+  obj.innerHTML=obj.innerHTML+"<font></font>";
+  document.getElementById("bankcode").value=obj.getAttribute("bank_id");
+}
+function rj_get(){
+   var f = jq("#total_fee").val().replace(/\D/g,'');
+   jq("#total_fee").val(f);
+   var y = jq("#total_fee").val();
+   if(y){
+       var m = parseInt(jq("#total_fee").val())*{$rj_ratio};
+   }else{
+	   var m = 0;
+   }
+   jq("#nums").html(m);
+}
+function go_postchong(){
+   var total_fee = parseInt(jq("#total_fee").val());
+   if(total_fee < {$rj_minimum}) {
+	   showDialog ('{lang rjyfk_in:Template6}{$rj_minimum}{lang rjyfk_in:Template4}');
+	   return false;
+   }else{
+	   jq("#postsubmit").submit();
+   }
+}
+</script>

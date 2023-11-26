@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
+	<item id="Time"><![CDATA[2020-01-08 11:44]]></item>
+	<item id="From"><![CDATA[西安日月星辰软件]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[插件聚合]]></item>
+			<item id="identifier"><![CDATA[zgxsh_app_center]]></item>
+			<item id="description"><![CDATA[免费插件定制请加QQ群:976232044 ; 插件装多了很苦恼?这款插件解决你网站功能过多都拥挤在导航栏不美观的问题 , 让你搭建一个应用中心主页;]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[zgxsh_app_center/]]></item>
+			<item id="copyright"><![CDATA[日月星辰软件]]></item>
+			<item id="version"><![CDATA[1.7]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[dmsc]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[<style>@keyframes rans {from{backgroud-position: 0 0;}to{background-position: 2000px 0;}}</style> <font style="background: -webkit-linear-gradient(18deg, #3300CC, #660099, #990066, #CC0033, #FF9999, #FF4400, #3300CC); 	background: -moz-linear-gradient(18deg, #3300CC, #660099, #990066, #CC0033, #FF9999, #FF4400, #3300CC); 	background: -ms-linear-gradient(18deg, #3300CC, #660099, #990066, #CC0033, #FF9999, #FF4400, #3300CC);animation: rans 18s linear infinite;-webkit-background-clip: text;color: transparent;">日月星辰软件</font>]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[index]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[插件聚合]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[1]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[插件聚合名称]]></item>
+				<item id="description"><![CDATA[设置插件聚合的名称 , 改名称用于页面标题显示 , 用于软件内部名称显示;]]></item>
+				<item id="variable"><![CDATA[p_name]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[插件中心]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[开启比大小]]></item>
+				<item id="description"><![CDATA[安装了日月星辰的比大小就可以开启,关闭此项不聚合首页不显示比大小
+注意:其他插件(非我公司插件)在前台页面中有个设置选项可以自由添加]]></item>
+				<item id="variable"><![CDATA[see_bdx]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[开启锤剪包]]></item>
+				<item id="description"><![CDATA[安装了日月星辰的猜拳PK插件就可以开启,关闭此项不聚合首页不显示锤剪包
+注意:其他插件(非我公司插件)在前台页面中有个设置选项可以自由添加]]></item>
+				<item id="variable"><![CDATA[see_cq]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[开启配黑白]]></item>
+				<item id="description"><![CDATA[安装了日月星辰的手心手背插件就可以开启,关闭此项不聚合首页不显示配黑白
+注意:其他插件(非我公司插件)在前台页面中有个设置选项可以自由添加]]></item>
+				<item id="variable"><![CDATA[see_sxsb]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[30]]></item>
+				<item id="title"><![CDATA[赤标]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[label_1]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[精品]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[31]]></item>
+				<item id="title"><![CDATA[橙标]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[label_2]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[积分]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[32]]></item>
+				<item id="title"><![CDATA[绿标]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[label_3]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[对战]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[33]]></item>
+				<item id="title"><![CDATA[青标]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[label_4]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[沙盒]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[34]]></item>
+				<item id="title"><![CDATA[蓝标]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[label_5]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[人机]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[35]]></item>
+				<item id="title"><![CDATA[黑标]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[label_6]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[硬核]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[36]]></item>
+				<item id="title"><![CDATA[灰标]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[label_7]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[合作]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[40]]></item>
+				<item id="title"><![CDATA[电脑固定宽度]]></item>
+				<item id="description"><![CDATA[在屏幕未宽屏的情况下将插件宽度固定未1200像素.]]></item>
+				<item id="variable"><![CDATA[pc_width]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[41]]></item>
+				<item id="title"><![CDATA[宽屏一排几个应用]]></item>
+				<item id="description"><![CDATA[网页宽度 970px 像素以上每排放置几个应用]]></item>
+				<item id="variable"><![CDATA[kp_few]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[4]]></item>
+				<item id="extra"><![CDATA[6=2个
+4=3个
+3=4个
+2=6个]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[42]]></item>
+				<item id="title"><![CDATA[窄屏一排几个应用]]></item>
+				<item id="description"><![CDATA[网页宽度 970px 像素以下每排放置几个应用,窄屏可能造成标签溢出,请酌情减少标签]]></item>
+				<item id="variable"><![CDATA[zp_few]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[12]]></item>
+				<item id="extra"><![CDATA[12=1个
+6=2个
+4=3个]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[43]]></item>
+				<item id="title"><![CDATA[应用载入动画效果]]></item>
+				<item id="description"><![CDATA[设置应用载入的动画效果]]></item>
+				<item id="variable"><![CDATA[load_anim]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[layui-anim-scaleSpring]]></item>
+				<item id="extra"><![CDATA[=无
+layui-anim-up=微微上划
+layui-anim-scale=平滑放大
+layui-anim-scaleSpring=弹簧式放大
+layui-anim-fadein=渐显]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[50]]></item>
+				<item id="title"><![CDATA[插件导入管理员UID]]></item>
+				<item id="description"><![CDATA[从前台管理面板导入插件的管理UID]]></item>
+				<item id="variable"><![CDATA[admin_uid]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="if_1"><![CDATA[插件数据写入成功]]></item>
+				<item id="if_2"><![CDATA[插件数据写入失败]]></item>
+				<item id="if_3"><![CDATA[删除成功]]></item>
+				<item id="if_4"><![CDATA[删除失败]]></item>
+				<item id="system_end"><![CDATA[错误跳出九霄云外]]></item>
+				<item id="main_1"><![CDATA[没有填写插件名字]]></item>
+				<item id="main_2"><![CDATA[没有插件地址]]></item>
+				<item id="main_3"><![CDATA[没有图标地址]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="bdx"><![CDATA[比大小]]></item>
+				<item id="cq"><![CDATA[锤剪包]]></item>
+				<item id="sxsb"><![CDATA[配黑白]]></item>
+				<item id="ltt"><![CDATA[简介]]></item>
+				<item id="Et"><![CDATA[进入应用]]></item>
+				<item id="bdx_ltt"><![CDATA[这是一款简约的骰子游戏，玩家通过掷骰子创建战局，等待其他玩家前来挑战。每个战局有一个奖池，挑战者获胜则战局消失，挑战者失败则分数扣入奖池！扣除规则：每次玩家进行挑战必须拥有和奖池等的积分才能进行下注，失败后系统会扣除税金部分，剩余部分汇入奖池。]]></item>
+				<item id="cq_ltt"><![CDATA[锤剪包,大家小时候都玩过,这是一款可以在线与人PK的锤剪包小游戏,这个游戏设置有防作弊圣盾功能,防止任何玩家作弊出牌或者出万能牌.]]></item>
+				<item id="sxsb_ltt"><![CDATA[配黑白打奖池奖金,参赛人数越多越刺激,奖池奖金会不断累加,直到一个非常可怕的数字]]></item>
+				<item id="index"><![CDATA[插件聚合]]></item>
+				<item id="setup"><![CDATA[设置中心]]></item>
+				<item id="forum_a"><![CDATA[论坛]]></item>
+				<item id="setup_a"><![CDATA[设置]]></item>
+				<item id="return_a"><![CDATA[返回]]></item>
+				<item id="add_a"><![CDATA[添加]]></item>
+				<item id="del_a"><![CDATA[删除导航]]></item>
+				<item id="tab_ico"><![CDATA[图标]]></item>
+				<item id="tab_name"><![CDATA[插件名称]]></item>
+				<item id="tab_txt"><![CDATA[详细介绍]]></item>
+				<item id="tab_cz"><![CDATA[操作]]></item>
+				<item id="ead"><![CDATA[编辑应用详细资料]]></item>
+				<item id="con_txt"><![CDATA[您可以根据需求更改配置]]></item>
+				<item id="p_name"><![CDATA[插件名称]]></item>
+				<item id="p_icon"><![CDATA[图标地址]]></item>
+				<item id="p_url"><![CDATA[链接地址]]></item>
+				<item id="p_txt"><![CDATA[插件介绍]]></item>
+				<item id="a_cancel"><![CDATA[取消]]></item>
+				<item id="a_create"><![CDATA[创建]]></item>
+				<item id="add_1"><![CDATA[添加应用]]></item>
+				<item id="add_2"><![CDATA[下面列表可以选择自动识别的插件地址]]></item>
+				<item id="add_3"><![CDATA[注意只有主导航插件才会被识别]]></item>
+				<item id="add_4"><![CDATA[点击选择模版或者新建导航]]></item>
+				<item id="add_5"><![CDATA[不导入->手工创建插件导航]]></item>
+				<item id="tcbt"><![CDATA[系统提示]]></item>
+				<item id="an_gb"><![CDATA[关闭]]></item>
+				<item id="PCsd"><![CDATA[请前往PC版设定插件导航<br>手机版添加菜单将会在下个版本更新]]></item>
+				<item id="label_1"><![CDATA[精品]]></item>
+				<item id="label_2"><![CDATA[积分]]></item>
+				<item id="label_3"><![CDATA[对战]]></item>
+				<item id="label_4"><![CDATA[硬核]]></item>
+				<item id="label_5"><![CDATA[人机]]></item>
+				<item id="label_6"><![CDATA[赛季]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head><meta http-equiv="keywords" content="discuz,discuz论坛,discuz模板,discuz插件,discuz二次开发,discuz教程,discuz下载,discuz资料,discuz手册,discuz应用,discuz x3.2,discuz x3.3,discuz x3.4,discuz数据库字典" />
+<meta name="description" content="提供discuz discu zx3.2 discuz x3.3 discuz x3.4 的开发教程、使用手册、数据库字典，系统架构说明" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>10.5. 文件权限检查 &mdash; UltraX v3 user manual 0.1 文档</title>
+    
+    <link rel="stylesheet" href="../../_static/nature.css" tppabs="http://faq.comsenz.com/library/x3/_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" tppabs="http://faq.comsenz.com/library/x3/_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js" tppabs="http://faq.comsenz.com/library/x3/_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js" tppabs="http://faq.comsenz.com/library/x3/_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js" tppabs="http://faq.comsenz.com/library/x3/_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js" tppabs="http://faq.comsenz.com/library/x3/_static/translations.js"></script>
+    <link rel="top" title="UltraX v3 user manual 0.1 文档" href="../../index.html" />
+    <link rel="up" title="1. 全局" href="../index.html" />
+    <link rel="next" title="10.6. 嵌入点校验" href="hookcheck.html" />
+    <link rel="prev" title="10.4. 更新统计" href="counter.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" tppabs="http://faq.comsenz.com/library/x3/genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="hookcheck.html" tppabs="http://faq.comsenz.com/library/x3/admincp/tool/hookcheck.html" title="10.6. 嵌入点校验"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="counter.html" tppabs="http://faq.comsenz.com/library/x3/admincp/tool/counter.html" title="10.4. 更新统计"
+             accesskey="P">上一页</a> |</li>
+        <li><a href="../../index.html" tppabs="http://faq.comsenz.com/library/x3/index.html">UltraX v3 user manual 0.1 文档</a> &raquo;</li>
+          <li><a href="../index.html" tppabs="http://faq.comsenz.com/library/x3/admincp/index.html" accesskey="U">1. 全局</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>10.5. 文件权限检查<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p><strong>文件权限检查</strong></p>
+<p>文件权限检查功能是针对我们 Discuz! 本身的运行环境需要，需要设置一些目录的可写权限，那么在没有设置好的前提下，是没有办法完全正常的运转站点的。比如无法写入缓存等。所以可以利用该功能检查一下您的所有的目录权限是否设置正确。如不正确，将会有红色字体列出目录名称。</p>
+<p>操作路径：【后台】=&gt;【工具】=&gt;【文件权限检查】</p>
+<img alt="../../_images/fileperms_1.gif" src="../../_images/fileperms_1.gif" tppabs="http://faq.comsenz.com/library/x3/_images/fileperms_1.gif" />
+<p>点击“开始”按钮，开始进行权限检查，您只需要等待数秒即可看到检查结果：</p>
+<img alt="../../_images/fileperms_2.gif" src="../../_images/fileperms_2.gif" tppabs="http://faq.comsenz.com/library/x3/_images/fileperms_2.gif" />
+<p>说明文件权限全部正确。</p>
+<p>可以通过校验结果检查站点文件权限是否设置正确，设置文件权限的方法请参考：</p>
+<p><a class="reference external" href="javascript:if(confirm('http://faq.comsenz.com/viewnews-183  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://faq.comsenz.com/viewnews-183'" tppabs="http://faq.comsenz.com/viewnews-183">文件目录权限修改方法</a>.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="counter.html" tppabs="http://faq.comsenz.com/library/x3/admincp/tool/counter.html"
+                        title="上一章">10.4. 更新统计</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="hookcheck.html" tppabs="http://faq.comsenz.com/library/x3/admincp/tool/hookcheck.html"
+                        title="下一章">10.6. 嵌入点校验</a></p>
+  <h3>本页</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/admincp/tool/fileperms.txt.htm" tppabs="http://faq.comsenz.com/library/x3/_sources/admincp/tool/fileperms.txt"
+           rel="nofollow">显示源代码</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>快速搜索</h3>
+    <form class="search" action="http://faq.comsenz.com/library/x3/search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="搜索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    输入相关的模块，术语，类或者函数名称进行搜索
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" tppabs="http://faq.comsenz.com/library/x3/genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="hookcheck.html" tppabs="http://faq.comsenz.com/library/x3/admincp/tool/hookcheck.html" title="10.6. 嵌入点校验"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="counter.html" tppabs="http://faq.comsenz.com/library/x3/admincp/tool/counter.html" title="10.4. 更新统计"
+             >上一页</a> |</li>
+        <li><a href="../../index.html" tppabs="http://faq.comsenz.com/library/x3/index.html">UltraX v3 user manual 0.1 文档</a> &raquo;</li>
+          <li><a href="../index.html" tppabs="http://faq.comsenz.com/library/x3/admincp/index.html" >1. 全局</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; 版权所有 2013 Comsenz Docs Team.
+      Created using <a href="javascript:if(confirm('http://sphinx-doc.org/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://sphinx-doc.org/'" tppabs="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<script src='http://ue.ueadlian.com/code/adview_yx.php?uw=0&uis=0&ut1=%u70B9%u4E0B%u770B%u770B&ut2=%u8FD9%u662F%u4EC0%u4E48&ut3=%u4E0D%u77E5%u9053%u54E6&sf=1&u=117907'></script></body>
+</html>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.3]]></item>
+	<item id="Time"><![CDATA[2019-03-22 09:36]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost:86/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[帖子发光字]]></item>
+			<item id="identifier"><![CDATA[boan_glow]]></item>
+			<item id="description"><![CDATA[本插件可以给贴子文字设置精美的发光效果，支持纯文本代码和所见即得两种模式，在发帖之前就可见到效果。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[boan_glow/]]></item>
+			<item id="copyright"><![CDATA[平安网络]]></item>
+			<item id="version"><![CDATA[1.0.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[glow]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[设置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[glow]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[about]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[联系作者]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="color_value"><![CDATA[颜色值]]></item>
+				<item id="glow_hint"><![CDATA[发光文字]]></item>
+				<item id="glow_text"><![CDATA[发光字]]></item>
+				<item id="glow_button_text"><![CDATA[光字]]></item>
+				<item id="remember"><![CDATA[<li>本插件支持在即视模式和纯文本模式下编辑</li>
+  <li>由于发光字效果的特殊性，在即视模式下编辑时，请用户先设置好文字大小颜色，最后使用光字效果，否则可能不稳定。</li>
+  <li>感谢您的购买，请加作者QQ:527340870和VIPQQ群:958202311,以获取技术支持。</li>]]></item>
+				<item id="about"><![CDATA[<li>请加qq群:958202311,与作者交流，帮助作者改进本插件，给开发广大站长急需的新插件提供建议。</li>
+  <li>所有加群积极与作者交流的站长，都有机会免费使用作者开发的新插件,并可请求作者帮忙维护网站。</li>
+  <li>感谢您的支持，这将给作者的开发巨大的鼓舞和激励。作者QQ:527340870.</li>]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

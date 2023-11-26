@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[avatarrefresh.plugin]]></item>
+	<item id="RevisionID"><![CDATA[86143]]></item>
+	<item id="SN"><![CDATA[2020012608YRCw5Br74g]]></item>
+	<item id="RevisionDateline"><![CDATA[1571535373]]></item>
+	<item id="Data">
+		<item id="/more.inc.php"><![CDATA[c496c4ce9335038c95ccaa3d5948b6e7]]></item>
+		<item id="/hook.class.php"><![CDATA[212abdea7a96cf35bdb6ca94170197ee]]></item>
+		<item id="/discuz_plugin_avatarrefresh_TC_UTF8.xml"><![CDATA[f76f49da2196d96da5abb0e1d0eb8f3e]]></item>
+		<item id="/discuz_plugin_avatarrefresh_SC_UTF8.xml"><![CDATA[50b52cb30288bed5c6bc90254811a2f8]]></item>
+		<item id="/mobile.class.php"><![CDATA[7da173a30aaebaa0f0552707e2e54536]]></item>
+	</item>
+</root>

@@ -1,0 +1,88 @@
+{template viewui_tools:header}
+<!--[if IE 8]> 
+<script>
+ alert("{lang viewui_tools:ieerror}");
+window.location.href = "plugin.php?id=viewui_tools";
+</script>
+<![endif]-->
+<style type="text/css">
+#viewui-toolsbg {overflow:hidden;margin-bottom:10px;}
+#viewui-toolsbg .tips{
+    overflow: hidden;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #FBEED5;
+    border-radius: 4px;
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    color: #3A87AD;
+    margin-bottom: 10px;
+}
+#viewui-toolsbg .tips strong{
+    margin-right: 5px;
+}
+#viewui-toolsbg .left{padding:10px;float:left;width:49%;border: 1px solid #c6cede !important;}
+#viewui-toolsbg .right{padding:10px;float:right;width:45%;border: 1px solid #c6cede !important;}
+#viewui-toolsbg textarea {
+    padding: 0px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+    color: #333;
+}
+#viewui-toolsbg .btns{
+    float: right;
+    overflow: hidden;
+    margin-top: 10px;
+}
+#viewui-toolsbg .btns button {
+    background-color: #55a7e3;
+    color: #fff;
+    font-family: 'Microsoft YaHei';
+    border: none;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 10px;
+    letter-spacing: .5px;
+    text-decoration: none;
+    cursor: pointer;
+    min-width: 70px;
+    outline: none;
+}
+#viewui-toolsbg .btns button:hover{
+    opacity: 0.8;
+}
+</style>   
+<div id="viewui-toolsbg">
+<div class="tips"><strong>{lang viewui_tools:tip}</strong>{lang viewui_tools:md5summary}</div>
+	<div class="left">
+		<textarea  rows="10" id="input" placeholder="{lang viewui_tools:md5input}"></textarea>
+	</div>
+		<div class="right">
+			<textarea rows="10" id="result" placeholder="{lang viewui_tools:md5ok}"></textarea>
+		</div>
+		<div class="btns">
+		<button type="submit" id="calculate">{lang viewui_tools:md5open}</a></button>
+		</div>
+</div>
+<script src="source/plugin/viewui_tools/js/md5.js"></script>
+<script>
+(function () {
+  'use strict'
+  var input = document.getElementById('input')
+  document.getElementById('calculate').addEventListener(
+    'click',
+    function (event) {
+      event.preventDefault()
+      document.getElementById('result').value = md5(input.value)
+    }
+  )
+  input.value = ''
+}())
+</script>
+
+{template viewui_tools:footer}

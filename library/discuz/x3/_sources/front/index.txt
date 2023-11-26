@@ -1,0 +1,111 @@
+.. 前台功能
+
+论坛
+============================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+ forum/forumindex
+ forum/forumviewthread
+ forum/forumcollection
+ forum/comment
+ forum/forumdisplay
+ forum/forummodcp
+ forum/forumpost
+ forum/guide
+ forum/interaction
+ forum/listmodcp
+ forum/repost
+
+
+门户
+============================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+ portal/channel
+ portal/portal
+ portal/diy
+ portal/portalcp
+ portal/topic
+ portal/article
+
+家园
+============================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+ home/home
+
+广播
+============================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+ follow/follow
+
+
+群组
+============================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+ group/groupcreate
+ group/intro
+ group/groupcp
+ group/groupcontent
+ group/groupindex
+
+运营
+============================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+ operating/other
+ operating/magic
+ operating/medal
+ operating/task
+
+云平台
+============================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+ cloud/sososmilies
+ cloud/cloudwall
+ cloud/cloudstat
+ cloud/qqconnect
+ cloud/discuzunion
+ cloud/cloudsearch
+ cloud/manyou
+
+
+
+排行榜
+============================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+ ranklist/ranklist
+
+用户
+============================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+ member/setting
+ member/credit
+ member/notice
+ member/friend
+ member/register
+ member/signin
+ member/usergroup
+

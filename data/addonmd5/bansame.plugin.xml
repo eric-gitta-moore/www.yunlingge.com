@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[bansame.plugin]]></item>
+	<item id="RevisionID"><![CDATA[33628]]></item>
+	<item id="SN"><![CDATA[2020021805awdi1ktZBI]]></item>
+	<item id="RevisionDateline"><![CDATA[1580968722]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_bansame_SC_UTF8.xml"><![CDATA[35d818a3a81d90414825f66464b15ff4]]></item>
+		<item id="/uninstall.php"><![CDATA[fc06d2fe1749731d45fe24a3a28f1e0b]]></item>
+		<item id="/hook.class.php"><![CDATA[1383398b2c2a5a7106ca7fbd5af433ff]]></item>
+		<item id="/data.inc.php"><![CDATA[1bc0e98ad510bd84d2fa14122ad5b66c]]></item>
+		<item id="/discuz_plugin_bansame_TC_UTF8.xml"><![CDATA[a88d741e3752ee4de61b94cc331ca858]]></item>
+		<item id="/install.php"><![CDATA[a15ec715f46eb04b9c223b4367500d8c]]></item>
+		<item id="/upgrade.php"><![CDATA[a15ec715f46eb04b9c223b4367500d8c]]></item>
+		<item id="/mxtech.inc.php"><![CDATA[f0ef6e70c6dcc89e432e58dc76f5227b]]></item>
+	</item>
+</root>

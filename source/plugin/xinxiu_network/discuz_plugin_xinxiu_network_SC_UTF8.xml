@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4]]></item>
+	<item id="Time"><![CDATA[2018-12-12 17:08]]></item>
+	<item id="From"><![CDATA[新秀网络测试站 (http://demo.xinxiuvip.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[新秀网络验证收费系统]]></item>
+			<item id="identifier"><![CDATA[xinxiu_network]]></item>
+			<item id="description"><![CDATA[网络验证系统]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[xinxiu_network/]]></item>
+			<item id="copyright"><![CDATA[XinXiuVip.com Inc.]]></item>
+			<item id="version"><![CDATA[1.01]]></item>
+			<item id="__modules">
+
+				<item id="1">
+					<item id="name"><![CDATA[tixian]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[积分提现]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[invite]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[推广查询]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[token]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[登录日志]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[3]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="4">
+					<item id="name"><![CDATA[logs]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[接口日志]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[4]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[总开关]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[iskaiguan]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[授权许可]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[license]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[9039Sk4_xin_xiu_0dWOx1cJOyK5N_xin_xiu_YewpXLZEZGKF6YmEShwrjUA17ir4Db_xinxiu_FF66zBoog0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[版本号]]></item>
+				<item id="description"><![CDATA[显示当前最新版本号，在这里将不添加强制更新功能，可通过软件进行调取当前版本号与软件版本号进行对比，再判断是否强制更新。]]></item>
+				<item id="variable"><![CDATA[version]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1.01]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[软件公告]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[Notice]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[更新地址]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[updateurl]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[http://demo.xinxiuvip.com/1.rar]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[传输密钥]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[apikey]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[123456]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[软件md5动态验证码]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[ismd5]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[软件积分]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[credits]]></item>
+				<item id="type"><![CDATA[extcredit]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[禁止会员组]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[groupids]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[4]]></item>
+					<item id="1"><![CDATA[5]]></item>
+					<item id="2"><![CDATA[6]]></item>
+					<item id="3"><![CDATA[7]]></item>
+					<item id="4"><![CDATA[8]]></item>
+				</item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[开启日志]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[islog]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[提卡销售]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[issale]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[数据加密特征码]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[iscode]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[123]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[token有效期]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[istoken]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[交易积分]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jiaoyi]]></item>
+				<item id="type"><![CDATA[extcredit]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[充值卡分类]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[cardtype]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[15]]></item>
+				<item id="title"><![CDATA[开启服务器时间验证]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[servertime]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[16]]></item>
+				<item id="title"><![CDATA[推广提成]]></item>
+				<item id="description"><![CDATA[无限推广提成，会员利用充值接口完成充值时，各级均可获得充值积分的提成；
+例：0.03,0.02,0.01
+解释：此设置为三级推广提成，会员上面第一级提成0.03，第二级0.02，第三级0.01，的充值积分奖励。可设置至十级推广奖励。 ...]]></item>
+				<item id="variable"><![CDATA[tuiguangticheng]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[0.03,0.02,0.01]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[17]]></item>
+				<item id="title"><![CDATA[提卡折扣]]></item>
+				<item id="description"><![CDATA[一条规则一行，用分号隔开！格式：会员组ID|折扣;
+例如：
+15|0.85;
+解释：会员组ID为15提卡时：实际支付金额=充值卡总金额*0.85，此处消耗交易积分！]]></item>
+				<item id="variable"><![CDATA[tikazhekou]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[15|0.85;
+2|0.3;
+3|0.2;]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="18">
+				<item id="displayorder"><![CDATA[18]]></item>
+				<item id="title"><![CDATA[接口关闭]]></item>
+				<item id="description"><![CDATA[请输入需要关闭的接口方法(action)，以 “,” 英文逗号隔开，例如：
+login_register,card_chongzhi,sale_buy
+解译：关闭注册,关闭充值,关闭提卡]]></item>
+				<item id="variable"><![CDATA[isaction]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="19">
+				<item id="displayorder"><![CDATA[19]]></item>
+				<item id="title"><![CDATA[提现设置]]></item>
+				<item id="description"><![CDATA[设置提现手续费，例如：
+10-100|0.05;
+101-1000|0.03;
+1001-99999|0.02
+解译：在10元到100元之间是扣除5%手续费；提成积分是交易积分与人民币比例是1:1。小于10或大于99999不予处理，软件可以加设置，后期优化。 ...]]></item>
+				<item id="variable"><![CDATA[tixian]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[10-100|0.05;
+101-1000|0.03;
+1001-99999|0.02]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

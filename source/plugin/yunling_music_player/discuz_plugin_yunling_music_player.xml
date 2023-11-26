@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2020-02-29 05:48]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://dz1.cc/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[0]]></item>
+			<item id="name"><![CDATA[云凌网页音乐播放器]]></item>
+			<item id="identifier"><![CDATA[yunling_music_player]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[yunling_music_player/]]></item>
+			<item id="copyright"><![CDATA[云凌工作室（http://www.yunlingge.com/）]]></item>
+			<item id="version"><![CDATA[1.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[播放器KEY]]></item>
+				<item id="description"><![CDATA[<script id="ilt" src="http://player.api.yunlingge.com/player/js/player.js" key="1c047fe0dc1d43118ffe89caf5efc4f4"></script>
+获取到的script代码中的key属性：1c047fe0dc1d43118ffe89caf5efc4f4]]></item>
+				<item id="variable"><![CDATA[key]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[1c047fe0dc1d43118ffe89caf5efc4f4]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[开启范围]]></item>
+				<item id="description"><![CDATA[注册地址：player.api.yunlingge.com]]></item>
+				<item id="variable"><![CDATA[multi_select]]></item>
+				<item id="type"><![CDATA[selects]]></item>
+				<item id="extra"><![CDATA[1=全站显示
+2=门户首页
+3=论坛首页
+4=论坛版块
+5=论坛贴子
+6=其它页面]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[1]]></item>
+				</item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[是否延迟加载]]></item>
+				<item id="description"><![CDATA[开启后可提高网站加载速度]]></item>
+				<item id="variable"><![CDATA[switch_lazyload]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[延迟时间]]></item>
+				<item id="description"><![CDATA[单位毫秒。默认1000]]></item>
+				<item id="variable"><![CDATA[lazyload_time]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[是否引入jQuery]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[jquery]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+	</item>
+</root>

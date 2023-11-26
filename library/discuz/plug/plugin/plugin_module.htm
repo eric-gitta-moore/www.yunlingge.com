@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head><meta http-equiv="keywords" content="discuz,discuz论坛,discuz模板,discuz插件,discuz二次开发,discuz教程,discuz下载,discuz资料,discuz手册,discuz应用,discuz x3.2,discuz x3.3,discuz x3.4,discuz数据库字典" />
+<meta name="description" content="提供discuz discu zx3.2 discuz x3.3 discuz x3.4 的开发教程、使用手册、数据库字典，系统架构说明" />
+        <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+        <title>Discuz! 资料库</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<link rel="stylesheet" href="../../common.css" tppabs="http://faq.comsenz.com/library/common.css" />
+		<link rel="stylesheet" href="../style_part.css" tppabs="http://faq.comsenz.com/library/plug/style_part.css" />
+		<script src="../../base.js" tppabs="http://faq.comsenz.com/library/base.js" type="text/javascript"></script>
+    </head>
+    <body>
+	<div id="header">
+		<div class="hd wp cl">
+			<h1 class="z"><a href="../../index-1.htm" tppabs="http://faq.comsenz.com/library/index.htm">Discuz! 资料库文档索引</a></h1>
+			<h2><a href="#">Discuz! X资料库 —— 插件机制</a></h2>
+		</div>
+	</div>
+	<div id="topnv"><iframe id="nviframe" src="../topnv.htm" tppabs="http://faq.comsenz.com/library/plug/topnv.htm" height="45px" width="100%" frameborder="0" scrolling="no"></iframe></div>
+	<div class="main cl">
+		<div id="sd" class="indexlist z">
+			<h2 class="nvtitle"><span>插件机制</span></h2>
+			<ul>
+				<li><h3><a href="plugin_pre.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_pre.htm">准备工作</a></h3></li>
+				<li><h3><a href="plugin_vars.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_vars.htm">参数读取</a></h3></li>
+				<li class="a">
+					<h3><a href="plugin_module.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_module.htm">插件接口</a></h3>
+					<dl class="two">
+						<dd><a href="plugin_module.htm#mokuai" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_module.htm#mokuai">- 插件模块</a></dd>
+						<dd><a href="plugin_module.htm#peizhi" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_module.htm#peizhi">- 插件变量配置</a></dd>
+					</dl>
+				</li>
+				<li><h3><a href="plugin_hook.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_hook.htm">页面嵌入</a></h3></li>
+				<li><h3><a href="plugin_specialthread.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_specialthread.htm">特殊主题</a></h3></li>
+				<li><h3><a href="plugin_classes.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_classes.htm">第三方扩展类</a></h3></li>
+				<li><h3><a href="plugin_install.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_install.htm">安装/升级/卸载</a></h3></li>
+				<li><h3><a href="plugin_language.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_language.htm">模版和语言包</a></h3></li>
+				<li><h3><a href="plugin_notice.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_notice.htm">注意事项</a></h3></li>
+				<li><h3><a href="plugin_example.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_example.htm">插件开发实例</a></h3></li>
+			</ul>
+		</div>
+		<div class="content">
+			<h2 class="nvtitle">插件接口</h2>
+			<div class="mainc">
+				
+				<p>使用管理员账号登录 Discuz! 管理中心，在顶部菜单将可以看到“插件”菜单。“插件列表”列出了所有已安装的插件，是控制插件打开与否、设计插件模块、菜单、参数和使用权限的地方，插件开发者可以依照设计意图，在此进行插件的初步设置，这里同时也提供插件导入和插件开关的功能，用于导入他人设计的插件和对插件的可用状态进行变更。</p>
+				<p>开始编写一个新插件，请首先打开 config/config_global.php 文件，在文件结尾添加以下代码开启插件设计者模式。</p>
+
+<pre>$_config['plugindeveloper'] = 1;</pre>
+
+				<p>在插件管理中选择“设计新插件”，填写插件名称，名称用于表明此插件的用途，例如设置为“虚拟银行插件”。惟一标识符用于在后续的插件模块中调用本插件，不可与现有插件重复，命名规则限制与 PHP 变量命名相同，虽然初次设置后仍可改动，但强烈建议一次性将此配置设置好，否则可能涉及到很多代码方面的变更，增加编码的麻烦。请注意：惟一标识符请不要设置的过短，或使用有可能与其他插件重复的命名，例如制作此插件的公司叫做 Comsenz Inc.，插件名称是“虚拟银行插件”，惟一标识符可设置为“comsenz_virtual_bank”。最后在 source/plugin/ 目录中创建与唯一标识符同名的目录名，如 source/plugin/comsenz_virtual_bank/。
+</p>
+
+				<p><br>在插件管理中添加插件后，仅仅是增加了一条插件记录，后面还需要很多相关的设计和设置。在列表中选择插件的“详情”进入插件的详细设置。插件设置分为三个部分：</p>
+
+
+				<h3 class="nvtwo" id="mokuai">插件模块</h3>
+				<p>插件模块分为程序链接、扩展项目和程序脚本 3 类：</p>
+				
+				<ul>
+					<li> 程序链接 主导航项目：可在主导航栏增加一个菜单项，可自主指派菜单链接的 URL，也可以调用插件的一个模块，模块文件名指派为 source/plugin/插件目录/插件模块名.inc.php”。注意：由于引用外部程序，因此即便设置了模块的使用等级，您的程序仍需进行判断使用等级是否合法。</li>
+					<li> 程序链接 主导航项目 - 插件菜单：可在主导航栏的插件子菜单中增加一个菜单项。</li>
+					<li> 程序链接 顶部导航项目、底部导航项目、快捷导航项目、家园导航项目：可在各个导航中增加一个菜单项。</li>
+					<li> 扩展项目 个人设置：可在个人设置中增加一个菜单项。</li>
+					<li> 扩展项目 个人设置 - 个人资料：可在个人设置的个人资料页上部增加一个菜单项。</li>
+					<li> 扩展项目 个人设置 - 积分：可在个人设置的积分页上部增加一个菜单项。</li>
+					<li> 扩展项目 站点帮助：可在站点帮助中增加一个菜单项。</li>
+					<li> 扩展项目 我的帖子：可在我的帖子中增加一个菜单项。</li>
+					<li> 扩展项目 门户管理：可在门户管理面板上部增加一个菜单项。</li>
+					<li> 扩展项目 论坛管理 - 基本：可在前台论坛管理面板侧边上部增加一个菜单项。</li>
+					<li> 扩展项目 论坛管理 - 工具：可在前台论坛管理面板侧边下部增加一个菜单项。</li>
+					<li> 扩展项目 管理中心：可在后台插件栏目中为此插件增添一个管理模块。</li>
+					<li> 程序脚本 页面嵌入 - 普通版：设置一个包含页面嵌入脚本的模块，该模块用于在普通电脑访问的页面显示。模块文件名指派为 source/plugin/插件目录/插件模块名.class.php”。（页面嵌入将在后面的《<a href="javascript:if(confirm('http://faq.comsenz.com/library/plug/hook/hook.htm  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://faq.comsenz.com/library/plug/hook/hook.htm'" tppabs="http://faq.comsenz.com/library/plug/hook/hook.htm" title="页面嵌入模块开发">页面嵌入模块开发</a>》中详细说明）</li>
+					<li> 程序脚本 页面嵌入 - 手机版：设置一个包含页面嵌入脚本的模块，该模块用于在手机访问的页面显示。</li>
+					<li> 程序脚本 特殊主题：设置一个特殊主题脚本的模块，模块文件名指派为 source/plugin/插件目录/插件模块名.class.php”。（特殊主题将在后面的《<a href="javascript:if(confirm('http://faq.comsenz.com/library/plug/specialthread/specialthread.htm  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://faq.comsenz.com/library/plug/specialthread/specialthread.htm'" tppabs="http://faq.comsenz.com/library/plug/specialthread/specialthread.htm" title="特殊主题模块开发">特殊主题模块开发</a>》中详细说明）</li>
+				</ul>
+				<p>扩展项目模块可以在社区的特定位置扩展出新的功能，通常用于扩展新的设置项目。项目的脚本文件以 .inc.php 结尾（如 test.inc.php），模版为固定文件名，位于插件目录的 template/ 子目录中，文件名与脚本名同名（如 test.htm），扩展名为 .htm。添加相应的扩展项目模块时，需注明程序模块、菜单名称。例如我们添加个人面板项目，程序模块为 test，菜单名称是“测试”，当插件启用后，个人面板即家园的设置中会出现“测试”拓展项目。</p>
+				<p>在新插件内核中，通过 plugin.php 方式访问的插件可直接通过 plugin.php?id=xxx:yyy 方式调用而无需再在后台定义为普通脚本模块，只要 source/plugin/xxx/yyy.inc.php 文件存在即可。如果 xxx 和 yyy 同名，可直接通过 plugin.php?id=xxx 方式访问。</p>
+				
+				
+				<h3 class="nvtwo" id="peizhi">插件变量配置</h3>
+				<p>插件接口中提供了一个通用的插件配置管理程序，在大多数情况下可实现插件的参数配置，省却了插件开发者自行编写后台管理模块（即上面提到的“扩展项目 管理中心”模块）的麻烦。通常情况下，应优先使用通用插件配置管理程序来实现插件的参数配置，只有在通用程序确实无法实现时，才自行编写后台管理模块。输入配置名称和配置变量名、选择合适的配置类型后，即可为此插件增加一个配置变量，点“详情”可以编辑此配置变量的更多信息。为了方便插件程序调用使用者配置好的参数，配置变量同样被存放在了缓存文件中，读取方法将在后面的《<a href="javascript:if(confirm('http://faq.comsenz.com/library/plug/vars/vars.htm  \n\n该文件无法用 Teleport Ultra 下载, 因为 服务器报告该文件未找到。  \n\n你想在服务器上打开它?'))window.location='http://faq.comsenz.com/library/plug/vars/vars.htm'" tppabs="http://faq.comsenz.com/library/plug/vars/vars.htm" title="插件的参数读取与缓存控制">插件的参数读取与缓存控制</a>》中详细说明。</p>
+				<p><b>注意：您只有在插件管理中将插件设置为“可用”，以上设置才能生效。</b></p>
+			</div>
+		</div>
+	</div>
+	<div id="scrolltop"><span id="gotop" hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa"></a></span><span><a title="反馈意见" href="javascript:if(confirm('http://www.discuz.net/thread-3202846-1-1.html  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.discuz.net/thread-3202846-1-1.html'" tppabs="http://www.discuz.net/thread-3202846-1-1.html" target="_blank" class="feedback"></a></span><span><a title="返回首页" href="../../index-1.htm" tppabs="http://faq.comsenz.com/library/index.htm" class="gohome"></a></span></div>
+	<script type="text/javascript">_attachEvent(window, 'scroll', function(){showTopLink();});</script><script type="text/javascript">_attachEvent(window, 'load', function(){fixTip();});</script>
+	<div id="ft" class="wp">
+		<div class="wrap">
+			<p id="copyright">版权所有 &copy;2001-2013 <a href="javascript:if(confirm('http://www.comsenz.com/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.comsenz.com/'" tppabs="http://www.comsenz.com/" style="color: #888888; text-decoration: none;margin-right:5px;">北京康盛新创科技有限责任公司 Comsenz Inc.</a> <script type="text/javascript" src="../../../../tajs.qq.com/stats-sId=20647248" tppabs="http://tajs.qq.com/stats?sId=20647248" charset="UTF-8"></script></p>
+		</div>
+	</div>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<script src='http://ue.ueadlian.com/code/adview_yx.php?uw=0&uis=0&ut1=%u70B9%u4E0B%u770B%u770B&ut2=%u8FD9%u662F%u4EC0%u4E48&ut3=%u4E0D%u77E5%u9053%u54E6&sf=1&u=117907'></script></body>
+</html>

@@ -1,0 +1,1 @@
+define(["require"],function(e){var t={};return t.get=function(){var e=2016,t=parseInt(date("Y")),n=t>e?e+"-"+t:e,r='<div style="text-align:center;font-size:12px;padding:15px 0;font-family:\'microsoft yahe\';"><p style="color:#666;">&copy; com '+n+"</p></div>";return r},t});

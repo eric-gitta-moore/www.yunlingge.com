@@ -1,0 +1,159 @@
+<!--{template common/header}-->
+<style TYPE="text/css" > 
+    <!--
+	* { margin: 0; padding: 0; }
+	body {font-family: Verdana, Arial; font-size: 12px; line-height: 18px; }
+	a { text-decoration: none; }
+	h3 { margin-bottom: 1px; font-size: 22px; text-shadow: 2px 2px 2px #ccc; }
+	
+	#austglform {
+	float:left; 
+	width: 96%;
+	padding: 20px;
+	margin-top: 10px;
+	margin-bottom: 2px;
+	background: #f0f0f0;
+	overflow:auto;
+	
+	border: 1px solid #cccccc;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;	
+	
+	-moz-box-shadow: 2px 2px 2px #cccccc;
+	-webkit-box-shadow: 2px 2px 2px #cccccc;
+	box-shadow: 2px 2px 2px #cccccc;
+	}
+	.austgl_input{
+	float: left;
+	font-family: Arial, Verdana; 
+	font-size: 15px; 
+	padding: 5px; 
+	border: 1px solid #b9bdc1; 
+	width: 300px; 
+	color: #797979;	
+	}
+	.austgl_input:focus{
+	background-color:#E7E8E7;	
+	}
+	.austgl_button{
+	float: left;
+	margin:auto 55px 10px 20px;
+	font-weight: bold;
+	
+	padding: 6px 10px;
+	cursor:pointer;   
+	color: #fff;
+	
+	text-align: center;
+	text-shadow: 0 -1px 1px #64799e;
+	
+	/* Background gradient */
+	background: #a5b8da;
+	background: -moz-linear-gradient(top, #a5b8da 0%, #7089b3 100%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a5b8da), to(#7089b3));
+	
+	/* Border style */
+  	border: 1px solid #5c6f91;  
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+  
+	/* Box shadow */
+	-moz-box-shadow: inset 0 1px 0 0 #aec3e5;
+	-webkit-box-shadow: inset 0 1px 0 0 #aec3e5;
+	box-shadow: inset 0 1px 0 0 #aec3e5;
+	
+	}
+	.austgl_button:hover {
+	background: #848FB2;
+    cursor: pointer;
+	}
+	#austglcentere{ margin-right: auto;
+	margin-left: auto; 
+	height:60px;
+	width:600px;
+	vertical-align:middle;
+	line-height:20px;
+}
+.austgl_url{
+	font-family: Arial, Verdana; 
+	text-shadow: 2px 2px 2px #ccc;
+	display: block; 
+	float: left; 
+	font-weight: bold;
+	padding:5px;
+	margin:10px auto 0; 
+	text-align: left; 
+	line-height: 25px; 
+	font-size: 15px; 
+	}
+    --> 
+   </style>
+<form id="austglform" method="post" action="" style="align:center;" onsubmit="return false;">
+<div id="austglcentere">
+<h3>{lang austgl_shorturl:austgl_label}</h3>
+<br />
+<input type="text" class="austgl_input" id="result" name="url_long" value=""/>
+<input type="hidden" id="access" name="access_token" value="austgl.com">
+<input type="button" name="sub"  class="austgl_button" value="{lang austgl_shorturl:austgl_make}" onclick="getShort()">
+<br />
+<div class="cl"></div>
+<div class="austgl_url">{lang austgl_shorturl:austgl_long}<a href="" id="austglold">{}</a></div>
+<br />
+<div class="cl"></div>
+<div class="austgl_url">{lang austgl_shorturl:austgl_short}<a href="" id="austglnew">{}</a></div>
+<br />
+</div>
+</form>
+<br />
+<div id="austglform">
+	<div style="text-align:center;height:<!--{if $austgl_config['austgl_adsh'] }-->{$austgl_config['austgl_adsh']}<!--{else}-->90<!--{/if}-->px;"><!--{if $austgl_config['austgl_ads'] != ""}-->{$austgl_config['austgl_ads']}<!--{/if}--></div>
+</div>
+<div id="austglform">
+<div class="bm_c xs0">Powered by <a href="http://www.austgl.com" target="_blank">austgl.com</a>|<a href="http://www.iganlei.cn" target="_blank">iganlei.cn</a> - {lang austgl_shorturl:austgl_author}</div>
+</div>
+<script type='text/javascript'>
+function getShort(){
+	if(document.getElementById("result").value != ""){
+		xmlHttp=GetXmlHttpObject()
+		if (xmlHttp==null){
+			alert ("Your Browser don't support AJAX!!!");
+			return;
+		}
+		var url="source/plugin/austgl_shorturl/shorturl.php";
+		var postStr = "longUrl="+document.getElementById("result").value+"&access_token="+document.getElementById("access").value+"&sid="+Math.random();
+		xmlHttp.onreadystatechange=stateChanged;
+		xmlHttp.open("POST",url,true);
+		xmlHttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		xmlHttp.send(postStr);
+	}else{
+		alert("null address!");
+	}
+}
+function GetXmlHttpObject(){
+var xmlHttp=null;
+try{
+// Firefox, Opera 8.0+, Safari
+xmlHttp=new XMLHttpRequest();
+}catch (e){
+// Internet Explorer
+try{
+xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+}catch (e){
+xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+}
+}
+return xmlHttp;
+}
+function stateChanged(){ 
+if (xmlHttp.readyState==4){
+document.getElementById("austglold").href=document.getElementById("result").value.replace(/<\/?[^>]*>/g,'');
+document.getElementById("austglnew").href=xmlHttp.responseText;
+document.getElementById("austglold").innerText=document.getElementById("result").value.replace(/<\/?[^>]*>/g,'');;
+document.getElementById("austglnew").innerText=xmlHttp.responseText;
+document.getElementById("result").value=xmlHttp.responseText;
+}
+}
+</script>
+<!--{template common/footer}-->

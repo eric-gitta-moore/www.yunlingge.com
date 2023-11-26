@@ -1,0 +1,102 @@
+{template viewui_tools:header}
+<!--{eval $name = 1;}-->
+<style type="text/css">
+#viewui-toolsbg {overflow:hidden;margin-bottom:10px;}
+#viewui-toolsbg .tips{
+    overflow: hidden;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #FBEED5;
+    border-radius: 4px;
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    color: #3A87AD;
+    margin-bottom: 10px;
+}
+#viewui-toolsbg .tips strong{
+    margin-right: 5px;
+}
+#viewui-toolsbg .left{padding:10px;float:left;width:49%;border: 1px solid #c6cede !important;}
+#viewui-toolsbg .right{padding:10px;float:right;width:45%;border: 1px solid #c6cede !important;}
+#viewui-toolsbg textarea {
+    padding: 0px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+    color: #333;
+}
+#viewui-toolsbg .btns{
+    float: right;
+    overflow: hidden;
+    margin-top: 10px;
+}
+#viewui-toolsbg .btns a{
+    background-color: #55a7e3;
+    color: #fff;
+    font-family: 'Microsoft YaHei';
+    padding: 15px 12px;
+    border: none;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 10px;
+    letter-spacing: .5px;
+	text-decoration: none;
+}
+#viewui-toolsbg .btns a:hover{
+    opacity: 0.8;
+}
+</style>   
+<div id="viewui-toolsbg">
+<div class="tips"><strong>{lang viewui_tools:tip}</strong>{lang viewui_tools:utf8summary}</div>
+       <div class="left">
+          <textarea name="source" rows="10" id="source" placeholder="{lang viewui_tools:utf8lefttip}"></textarea>
+        </div>
+		<div class="right">
+        <div id="tt" style="display:none"></div>
+        <textarea name="show2" rows="10" id="show2" placeholder="{lang viewui_tools:utf8righttip}"></textarea>
+		</div>
+		<div class="btns">
+		<a href="javascript:action('CONVERT_FMT1')"> {lang viewui_tools:intoutf8}</a>
+        <a href="javascript:action('CONVERT_FMT2')"> {lang viewui_tools:intounicode}</a> 
+        <a href="javascript:action('RECONVERT')">{lang viewui_tools:intodefault}</a>  
+		</div>
+</div>
+<script language="javascript" type="text/javascript"> 
+var oSource = document.getElementById("source"); 
+var oShow2 = document.getElementById("show2"); 
+var oTt = document.getElementById("tt"); 
+function action(pChoice){ 
+switch(pChoice){ 
+case "CONVERT_FMT1": 
+oShow2.value = ascii(oSource.value); 
+break; 
+case "CONVERT_FMT2": 
+oShow2.value = unicode(oSource.value); 
+break; 
+case "RECONVERT": 
+oShow2.value = reconvert(oSource.value); 
+break; 
+} 
+} 
+function ascii(str){ 
+return str.replace(/[^\u0000-\u00FF]/g,function($0){return escape($0).replace(/(%u)(\w{4})/gi,"\&#x$2;")}); 
+} 
+function unicode(str){ 
+return str.replace(/[^\u0000-\u00FF]/g,function($0){return escape($0).replace(/(%u)(\w{4})/gi,"\\u$2")}); 
+} 
+function reconvert(str){ 
+str = str.replace(/(\\u)(\w{4})/gi,function($0){ 
+return (String.fromCharCode(parseInt((escape($0).replace(/(%5Cu)(\w{4})/g,"$2")),16))); 
+}); 
+
+str = str.replace(/(&#x)(\w{4});/gi,function($0){ 
+return String.fromCharCode(parseInt(escape($0).replace(/(%26%23x)(\w{4})(%3B)/g,"$2"),16)); 
+}); 
+return str; 
+} 
+</script>
+{template viewui_tools:footer}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[nimba_checkword.plugin]]></item>
+	<item id="RevisionID"><![CDATA[84729]]></item>
+	<item id="SN"><![CDATA[2020012912Mi44VMDuUr]]></item>
+	<item id="RevisionDateline"><![CDATA[1562041520]]></item>
+	<item id="Data">
+		<item id="/logs.inc.php"><![CDATA[183e05c080c5b94529b022e78b832915]]></item>
+		<item id="/discuz_plugin_nimba_checkword_SC_UTF8.xml"><![CDATA[8f218fa424d187c4657e85f70685a00e]]></item>
+		<item id="/discuz_plugin_nimba_checkword_TC_UTF8.xml"><![CDATA[2dce2a825312a04cecb778e31c53ca47]]></item>
+		<item id="/uninstall.php"><![CDATA[27945ad98d558942bc201213e3760412]]></item>
+		<item id="/hook.class.php"><![CDATA[15dc1ba08035f5d936af04c358d2a0e6]]></item>
+		<item id="/addon.inc.php"><![CDATA[1b5b3146ba6fc2f50c04b52af92a63f1]]></item>
+		<item id="/install.php"><![CDATA[733d7084d121a52c820689fd6a91b54b]]></item>
+		<item id="/upgrade.php"><![CDATA[ae5b9aa4ef73d6f3034f5084a66afc43]]></item>
+	</item>
+</root>

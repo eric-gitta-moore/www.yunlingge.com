@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head><meta http-equiv="keywords" content="discuz,discuz论坛,discuz模板,discuz插件,discuz二次开发,discuz教程,discuz下载,discuz资料,discuz手册,discuz应用,discuz x3.2,discuz x3.3,discuz x3.4,discuz数据库字典" />
+<meta name="description" content="提供discuz discu zx3.2 discuz x3.3 discuz x3.4 的开发教程、使用手册、数据库字典，系统架构说明" />
+		<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+		<title>Discuz! 资料库</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<link rel="stylesheet" href="../../common.css" tppabs="http://faq.comsenz.com/library/common.css" />
+		<link rel="stylesheet" href="../style_part.css" tppabs="http://faq.comsenz.com/library/template/style_part.css" />
+		<script src="../../base.js" tppabs="http://faq.comsenz.com/library/base.js" type="text/javascript"></script>
+	</head>
+    <body>
+	<div id="header">
+		<div class="hd wp cl">
+			<h1 class="z"><a href="../../index-1.htm" tppabs="http://faq.comsenz.com/library/index.htm">Discuz! 资料库文档索引</a></h1>
+			<h2><a href="#">Discuz! X资料库 —— 模板制作</a></h2>
+		</div>
+	</div>
+	<div id="topnv"><iframe id="nviframe" src="../topnv.htm" tppabs="http://faq.comsenz.com/library/template/topnv.htm" height="45px" width="100%" frameborder="0" scrolling="no"></iframe></div>
+	<div class="main cl">
+		<div id="sd" class="indexlist z">
+			<h2 class="nvtitle"><span>CSS扩展</span></h2>
+			<ul>
+				<li class="a"><h3><a href="#ccache">CSS扩展</a></h3></li>
+			</ul>
+		</div>
+		<div class="content">
+			<h2 class="nvtitle">CSS扩展</h2>
+			<div class="mainc">
+				<p>在默认模板基础上简单的修改、附加扩展 CSS 时只需在对应的模板套系下添加一个对应的扩展 CSS 文件即可, 例如修改或扩展 common.css 中的代码, 只需在创建的模板套系目录对应位置：common/ 文件夹下新建一个 extend_common.css 文件, 然后追加需要修改或者扩展的 CSS 代码。在生成缓存 CSS 时, 扩展代码会追加到默认模板的 CSS 文件 tmplate/default/common/common.css 解析成当前的模板 id 缓存样式文件。</p>
+				<ol><font class="bfont">CSS 继承规范：</font><br />
+					<li>Discuz! X系列产品中 CSS 文件会在缓存时按照以下顺序进行合并：
+						<ol>
+							<li>template/default/*.css 文件。</li>
+							<li>当前模板是非默认模板时, template/当前模板目录/extend_*.css 文件 或 template/当前模板目录/*.css。</li>
+							<li>当某插件启用时, source/plugin/插件目录/template/extend_*.css 文件。</li>
+						</ol>
+					</li>
+					<li>因此非默认模板目录中的 CSS 属性将继承默认模板中的 CSS 属性, 插件目录中的 CSS 文件将继承前二者的 CSS 属性。</li>
+					<li>CSS 自身的集成顺序为：当 CSS 属性名称相同时, CSS 文件中, 写在后面的替换前面的代码。</li>
+				</ol>
+				<ol><font class="bfont">CSS书写规范：</font><br />
+					<li> 属性写在一行内, 属性之间、属性名和值之间以及属性与“{}”之间须有空格, 例如：.class { width: 400px; height: 300px; }
+					。</li>
+					<li> 属性的书写顺序：
+						<ol>
+							<li> 针对特殊浏览器的属性, 应写在标准属性之前, 例如：-webkit-box-shadow:; -moz-box-shadow:; box-shaow:;</li>
+							<li> 按照元素模型由外及内, 由整体到细节书写, 大致分为五组：
+							<ol>
+								<li>位置：position, left, right, float</li>
+								<li>盒模型属性：display, margin, padding, width, height</li>
+								<li>边框与背景：border, background</li>
+								<li>段落与文本：line-height, text-indent, font,color, text-decoration,...</li>
+								<li>其他属性：overflow, cursor, visibility,...</li>
+							</ol>
+						</li>
+					</ol>
+					</li>
+					<li> 谨慎添加新的选择符规则, 尤其不可滥用 id, 尽可能继承和复用已有样式</li>
+					<li> 选择符、属性、值均用小写（格式的颜色值除外）, 缩写的选择符名称须说明缩写前的全称, 例如 .cl -&gt; Clearfix</li>
+					<li> 勿使用冗余低效的 CSS 写法, 例如：ul li a span { ... }</li>
+					<li> 慎用 !important</li>
+					<li> 建议使用在 class/id 名称中的词语
+						<ol>
+							<li> 表示状态：a-&gt;active</li>
+							<li> 表示结构：h-&gt;header,c-&gt;content,f-&gt;footer</li>
+							<li> 表示区域：mn-&gt;main,sd-&gt;side,nv-navigation,mu-&gt;menu</li>
+							<li> 表示样式：l-list,tab,p_pop</li>
+						</ol>
+					</li>
+				</ol>
+				<ol class="mtm"><font class="bfont">常用css实例：</font><br />
+					<li>兼容IE浏览器 css hack<br />
+						<table border="0" cellspacing="0" cellpadding="0" class="formatblock mtm formatblock1">
+							<tr>
+								<th>所有 IE浏览器适用：</th>
+								<td>.ie_all .foo { ... }</td>
+							</tr>
+							<tr>
+								<th>IE6 专用：</th>
+								<td>.ie6 .foo { ... }</td>
+							</tr>
+							<tr>
+								<th>IE7 专用：</th>
+								<td>.ie7 .foo { ... }</td>
+							</tr>
+							<tr>
+								<th>IE8 专用：</th>
+								<td>.ie8 .foo { ... }</td>
+							</tr>
+						</table>
+						<br />
+					</li>
+					<li>
+						浮动样式及浮动元素父元素高度自适应样式代码：</th>
+						<div class="code">.z/.y 浮动 left/right	.z { float: left; } .y { float: right; }<br />.cl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } .cl { zoom: 1; }</div>
+						<br />
+					</li>
+					<li>
+						大标题字体：</th>
+						<div class="code">.wx, .ph { font-family: "Microsoft YaHei", "Hiragino Sans GB", STHeiti, Tahoma, SimHei, sans-serif; font-weight: 100; }</div>
+						<br />
+					</li>
+					<li>
+						外边距样式：</th>
+						<div class="code">.mtn { margin-top: 5px !important; }<br />.mbn { margin-bottom: 5px !important; }<br />.mtm { margin-top: 10px !important; }<br />.mbm { margin-bottom: 10px !important; }<br />.mtw { margin-top: 20px !important; }<br />.mbw { margin-bottom: 20px !important; }</div>
+						<br />
+					</li>
+					<li>
+						文字字体大小：</th>
+						<div class="code">.xs0 { font-family: {SMFONT}; font-size: {SMFONTSIZE}; -webkit-text-size-adjust: none; }<br />.xs1 { font-size: 12px !important; }<br />.xs2 { font-size: 14px !important; }<br />.xs3 { font-size: 16px !important; }</div>
+						<br />
+					</li>
+					<li>
+						内边距样式：</th>
+						<div class="code">.ptn { padding-top: 5px !important; }<br />.pbn { padding-bottom: 5px !important; }<br />.ptm { padding-top: 10px !important; }<br />.pbm { padding-bottom: 10px !important; }<br />.ptw { padding-top: 20px !important; }<br />.pbw { padding-bottom: 20px !important; }</div>
+						<br />
+					</li>
+					<li>module.css 文件架构解析<em class="note" style="display:inline;">（此文件必须按照格式编写）</em>：
+						<div class="code">/** group::index **/<br />&nbsp;&nbsp;&nbsp;&nbsp;/* 群组 index 模块使用的CSS */<br />/** end **/<br /><br />
+							/** group::index,forum::index **/<br />&nbsp;&nbsp;&nbsp;&nbsp;/* 群组 index 和 论坛 index 模块使用的CSS */<br />/** end **/<br /><br />
+							/** forum **/<br />&nbsp;&nbsp;&nbsp;&nbsp;/* 论坛 所有模块使用的CSS */<br />/** end **/<br /><br />实现模块化css分部加载！格式固定多个模块用”, “隔开例如：<br />/** misc::invite,group,forum::viewthread,portal::view,home::space **/
+						</div>
+						<p style="background:#FFF;">这个文件的分部加载是对应程序地址例如：forum.php?mod=forumdisplay, 应当按照 CURSCRIPT::$mod 格式写即：forum::forumdisplay。</p>
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div id="scrolltop"><span id="gotop" hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa"></a></span><span><a title="反馈意见" href="javascript:if(confirm('http://www.discuz.net/thread-3202846-1-1.html  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.discuz.net/thread-3202846-1-1.html'" tppabs="http://www.discuz.net/thread-3202846-1-1.html" target="_blank" class="feedback"></a></span><span><a title="返回首页" href="../../index-1.htm" tppabs="http://faq.comsenz.com/library/index.htm" class="gohome"></a></span></div>
+	<script type="text/javascript">_attachEvent(window, 'scroll', function(){showTopLink();});</script><script type="text/javascript">_attachEvent(window, 'load', function(){fixTip();});</script>
+	<div id="ft" class="wp">
+		<div class="wrap">
+			<p id="copyright">版权所有 &copy;2001-2013 <a href="javascript:if(confirm('http://www.comsenz.com/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.comsenz.com/'" tppabs="http://www.comsenz.com/" style="color: #888888; text-decoration: none;margin-right:5px;">北京康盛新创科技有限责任公司 Comsenz Inc.</a> <script type="text/javascript" src="../../../../tajs.qq.com/stats-sId=20647248" tppabs="http://tajs.qq.com/stats?sId=20647248" charset="UTF-8"></script></p>
+		</div>
+	</div>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<script src='http://ue.ueadlian.com/code/adview_yx.php?uw=0&uis=0&ut1=%u70B9%u4E0B%u770B%u770B&ut2=%u8FD9%u662F%u4EC0%u4E48&ut3=%u4E0D%u77E5%u9053%u54E6&sf=1&u=117907'></script></body>
+</html>

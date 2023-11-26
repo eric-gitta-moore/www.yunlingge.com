@@ -1,0 +1,47 @@
+  <table class="tb tb2 ">
+    <tbody>
+      <tr>
+        <th class="partition" colspan="4">{lang zhiwu55com_autoreply:reminder}</th>
+      </tr>
+      <tr>
+        <td class="tipsblock" s="1" colspan="4">		
+		<ul>
+			{if empty($zhiwu55com_open)}
+            <li><a href="?action=plugins&operation=config&do={$pluginid}" style="color:red;text-decoration:none;font-weight:bold;">{lang zhiwu55com_autoreply:zhiwu55_09}</a></li>
+			{/if}
+            <li>{lang zhiwu55com_autoreply:zhiwu55_10}{$cronUrl}</li>
+            <li>{lang zhiwu55com_autoreply:zhiwu55_12}</li>
+            <li><a href="http://www.zhiwu55.com/html/2018/hzw_doc_1025/43.html" target="_blank" style="text-decoration:none">{lang zhiwu55com_autoreply:zhiwu55_13}</a></li>
+        </ul><br><br> 
+		 </td>
+      </tr>
+	  <tr>
+		<td colspan="4">			
+	        <a href="javascript:if(confirm('{lang zhiwu55com_autoreply:zhiwu55_22}')){window.location.href='?{$server_url}&clears_all=yes&formhash={FORMHASH}';}" class="addtr" style="background-position-y:-286px">{lang zhiwu55com_autoreply:clears_all}</a>
+			<br><br>
+		</td>
+	  </tr>
+	  <tr class="header">
+		<th>{lang zhiwu55com_autoreply:zhiwu55_11}</th>
+		<th>{lang zhiwu55com_autoreply:zhiwu55_01}</th>
+	  </tr>
+    {loop $thread_list $zhiwu55_thread}
+    <tr class="hover">
+      <td style="width:450px">{$zhiwu55_thread['subject']}</td>
+      <td><a href="{$zhiwu55_thread['showurl']}" target="_blank">{$zhiwu55_thread['reply_message']}</a></td>
+    </tr>
+    {/loop}
+    </tbody>
+  </table>
+  <div class="pg" style="margin-top:32px;margin-bottom:32px;">  	
+    
+    <!--{if $threadCount>0 }-->
+    <a href="?{$homePage}&formhash={FORMHASH}">{lang zhiwu55com_autoreply:homepage}</a>
+  	<a href="?{$prePage}&formhash={FORMHASH}">{lang zhiwu55com_autoreply:previous_page}</a>
+    &nbsp;&nbsp;{$showPage}&nbsp;&nbsp; 
+    <a href="?{$nextPage}&formhash={FORMHASH}">{lang zhiwu55com_autoreply:next_page}</a>
+    <a href="?{$endPage}&formhash={FORMHASH}">{lang zhiwu55com_autoreply:end_page}</a>&nbsp;&nbsp;
+    <em>{$TotalNumber}</em>
+    <!--{/if}-->
+    
+  </div>

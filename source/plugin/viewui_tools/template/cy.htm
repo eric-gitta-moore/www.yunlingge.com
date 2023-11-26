@@ -1,0 +1,242 @@
+{template viewui_tools:header}
+<!--[if IE 8]> 
+<script>
+ alert("{lang viewui_tools:ieerror}");
+window.location.href = "plugin.php?id=viewui_tools";
+</script>
+<![endif]-->
+<!--[if IE 9]> 
+<script>
+ alert("{lang viewui_tools:ieerror}");
+window.location.href = "plugin.php?id=viewui_tools";
+</script>
+<![endif]-->
+<style>
+#viewui-toolsbg .tips{
+    overflow: hidden;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #FBEED5;
+    border-radius: 4px;
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    color: #3A87AD;
+    margin-bottom: 10px;
+}
+#viewui-toolsbg .tips strong{
+    margin-right: 5px;
+}
+#viewui-toolsbg{
+	overflow:hidden;
+}
+#viewui-toolsbg .left {
+    float: left;
+    width: 30%;
+    margin-right: 4%;
+}
+#viewui-toolsbg .right {
+    float: left;
+    width: 65%;
+	margin-bottom:10px;
+}
+#viewui-toolsbg .fileup{
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	position: relative;
+	margin: 10px 0;
+}
+#viewui-toolsbg .fileup img{
+    width: 100%;
+    height: 100%;
+	cursor:pointer;
+}
+#viewui-toolsbg .fileup input{
+	width: 100px;
+	height: 100px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+#viewui-toolsbg .left .tt,.right .tt{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    color: #333;
+}
+#viewui-toolsbg .left .img-show{
+    width: 90%;
+    height: auto;
+    overflow: auto;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 10px;
+	margin:10px 0;
+}
+#viewui-toolsbg .left .img-show img{
+    width: 100%;
+    height: 100%;
+}
+#viewui-toolsbg .right #area-16p{
+	float:left;
+	width:50%;
+}
+#viewui-toolsbg .right #area-16p,#area-rgbap{
+	float:left;
+	width:50%;
+}
+#viewui-toolsbg .sftglong-input input{
+    margin: 10px 0;
+}
+#viewui-toolsbg #lee img{
+    width:100%;
+	height:100%;
+}
+#choose span {
+	margin-right: 10px;
+}
+
+#choose {
+	position: absolute;
+	width: 640px;
+	height: 500px;
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+	line-height: 500px;
+	font-size: 50px;
+	top: 0;
+	left: 0;
+	display: none;
+	color: #fff;
+	font-weight: bold;
+}
+</style>
+<div id="viewui-toolsbg">
+		<div class="tips"><strong>{lang viewui_tools:tip}</strong>{lang viewui_tools:cysummary}</div>
+			<div class="left">
+			<p class="tt">{lang viewui_tools:cytip}</p>
+			<div class="sftg-yourinfo left">
+			<div class="sftglong-input">
+			<a><input type="file" /></a>
+			</div>
+			<div id="lee" style="height:auto;width:100%;margin:0;"></div>
+			</div>
+			</div>
+		
+				<div class="right">
+				<p class="tt">{lang viewui_tools:cyshow}</p>
+				<div id="main" style="width:640px;height:500px;"></div>
+				<div id="choose"></div>	
+		</div>
+	
+	<script src="source/plugin/viewui_tools/js/jquery-1.10.2.js"></script>
+		<script src="source/plugin/viewui_tools/js/echarts.min.js"></script>
+		<script src="source/plugin/viewui_tools/js/echarts-wordcloud.min.js"></script>
+				<script type="text/javascript"> var jq = jQuery.noConflict(); </script>
+<script>
+		 jq(function(){
+			function xmTanUploadImg(obj) {
+                var file = obj.files[0];              
+                var reader = new FileReader();            
+                reader.onload = function (e) {           	
+                    var img = '<img src='+ e.target.result +'>';
+                    srcword = e.target.result;
+					img = '<div class="item">'+img+'<i class="iconfont icon-guanbi1"></i></div>';
+					jq('#lee').html(img);
+                }
+               reader.readAsDataURL(file);
+            }
+			jq('.sftg-yourinfo').on('change','.sftglong-input a input',function(event){
+				event.stopPropagation();
+				event.preventDefault();
+				var val = jq(this).val();
+				var dataval=[];
+				val = val.split('\\')[2];
+				jq(this).parent().parent().find('span').html(val);	
+				jq('#lee').css({'height':'auto'});
+			    xmTanUploadImg(this);
+			    console.log('aaa');
+			    setTimeout(add,500);
+			});
+			function add(){
+				var myChart = echarts.init(document.getElementById('main'));
+				var presents = [{$plugin['cytxt']}]				
+				var chooseurl = jq('#lee').find('img').attr('src');
+	   			var data = [];
+				 for (var i = 0; i < presents.length; ++i) {
+				     data.push({
+				         name: presents[i],
+				         value: (presents.length - i) * 2
+				     });
+				 }
+				 for (var i = 10; i < presents.length; ++i) {
+				     var cnt = Math.floor(Math.random() * 10);
+				     for (var j = 0; j < cnt; ++j) {
+				         data.push({
+				             name: presents[i],
+				             value: Math.random() * 100
+				         });
+				     }
+				 }
+					 var maskImage = new Image();
+					 maskImage.onload = function() {
+					     myChart.setOption({
+					         tooltip: {
+					             show: false
+					         },
+					         series: [{
+					             type: 'wordCloud',
+					             gridSize: 1,
+					             sizeRange: [6, 20],
+					             rotationRange: [0, 180],
+					             rotationStep: 90,
+//					             shape:'trapezoidal',
+ 								 maskImage: maskImage,
+					             textStyle: {
+					                 normal: {
+					                     color: function(v) {
+					                         if (v.value > 190) {
+					                             return 'rgb(110, 206, 7)';
+					                         } else if (v.value > 160) {
+					                             return 'rgb(7, 49, 206)';
+					                         } else if (v.value > 130) {
+					                             return 'rgb(105, 7, 206)';
+					                         } else if (v.value > 110) {
+					                             return 'rgb(185, 45, 225)';
+					                         } else if (v.value > 90) {
+					                             return 'rgb(247, 65, 193)';
+					                         } else if (v.value > 60) {
+					                             return 'rgb(223, 31, 126)';
+					                         } else if (v.value > 40) {
+					                             return 'rgb(66, 152, 177)';
+					                         } else if (v.value > 20) {
+					                             return 'rgb(229, 208, 66)';
+					                         } else if (v.value > 10) {
+					                             return 'rgb(189, 117, 82)';
+					                         } else {
+					                             return 'rgb(20, 186, 167)';
+					                         }
+					                     }
+					                 },
+					             },
+					             width: 500,
+					             top: 40,
+					             data: data
+					         }]
+					     });
+					 };
+					 maskImage.src = chooseurl;
+			}
+			var myChart = echarts.init(document.getElementById('main'));
+			myChart.on('click', function (params) { 
+			    	jq('#choose').show();
+			    	jq('#choose').html(params.name);
+			});
+			jq('#choose').on('click',function(){
+				jq('#choose').hide();
+			});
+		});
+		</script>
+{template viewui_tools:footer}

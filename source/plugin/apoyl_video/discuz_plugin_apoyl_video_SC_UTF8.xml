@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4]]></item>
+	<item id="Time"><![CDATA[2019-12-02 17:05]]></item>
+	<item id="From"><![CDATA[凹凸曼博客 (http://www.apoyl.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[『凹凸曼』播放视频]]></item>
+			<item id="identifier"><![CDATA[apoyl_video]]></item>
+			<item id="description"><![CDATA[实现mp4、优酷、youtube等视频能在主题里播放]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[apoyl_video/]]></item>
+			<item id="copyright"><![CDATA[凹凸曼]]></item>
+			<item id="version"><![CDATA[1.8.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[mobilevideo]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[adminhelp]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[推荐插件]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[video]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[开启电脑版块]]></item>
+				<item id="description"><![CDATA[哪些电脑版版块开启视频可以播放
+如需帮助请留言 地址：http://www.apoyl.com/?page_id=9]]></item>
+				<item id="variable"><![CDATA[openforums]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[48]]></item>
+					<item id="1"><![CDATA[42]]></item>
+					<item id="2"><![CDATA[39]]></item>
+					<item id="3"><![CDATA[2]]></item>
+				</item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[开启手机版块]]></item>
+				<item id="description"><![CDATA[哪些手机版版块开启视频可以播放
+推荐搭配『凹凸曼』视频列表：https://addon.dismall.com/?@apoyl_videolist.plugin]]></item>
+				<item id="variable"><![CDATA[openmbforums]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[42]]></item>
+					<item id="1"><![CDATA[39]]></item>
+					<item id="2"><![CDATA[2]]></item>
+				</item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[开启上传mp4附件播放 ... ...]]></item>
+				<item id="description"><![CDATA[附件上传MP4视频插入主题，主题解析格式[attach]319[/attach] 为HTML5播放MP4]]></item>
+				<item id="variable"><![CDATA[openmp4]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[电脑端视频宽度]]></item>
+				<item id="description"><![CDATA[电脑端视频宽度]]></item>
+				<item id="variable"><![CDATA[mp4width]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[100%]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[电脑端视频高度]]></item>
+				<item id="description"><![CDATA[电脑端视频高度]]></item>
+				<item id="variable"><![CDATA[mp4height]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[300]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[手机端视频宽度]]></item>
+				<item id="description"><![CDATA[手机端视频宽度
+建议百分比设置]]></item>
+				<item id="variable"><![CDATA[mp4mbwidth]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[100%]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[手机端视频高度]]></item>
+				<item id="description"><![CDATA[手机端视频高度]]></item>
+				<item id="variable"><![CDATA[mp4mbheight]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[200]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[主题优酷视频播放组件 ... ...]]></item>
+				<item id="description"><![CDATA[支持手机版和电脑版优酷视频在主题里正常播放。
+需安装扩展组件--主题优酷视频播放组件，才能正常使用
+https://addon.dismall.com/?@apoyl_video.plugin.82581]]></item>
+				<item id="variable"><![CDATA[openyouku]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[主题youtube播放组件]]></item>
+				<item id="description"><![CDATA[支持手机版和电脑版youtube在主题帖里播放视频。
+需安装扩展组件--youtube播放组件，才能正常使用
+https://addon.dismall.com/?@apoyl_video.plugin.82580]]></item>
+				<item id="variable"><![CDATA[openyoutube]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[开启dailymotion播放组件 . ...]]></item>
+				<item id="description"><![CDATA[支持手机版和电脑版dailymotion在主题帖里播放视频。
+需安装扩展组件--dailymotion播放组件，才能正常使用
+https://addon.dismall.com/?@apoyl_video.plugin.82611]]></item>
+				<item id="variable"><![CDATA[opendailymotion]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[主题bilibili视频播放组件 ...]]></item>
+				<item id="description"><![CDATA[支持手机版和电脑版bilibili在主题帖里播放视频。
+需安装扩展组件--主题bilibili播放组件，才能正常使用
+https://addon.dismall.com/?@apoyl_video.plugin.82610]]></item>
+				<item id="variable"><![CDATA[openbilibili]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[主题腾讯视频播放组件 ...]]></item>
+				<item id="description"><![CDATA[支持手机版和电脑版腾讯视频在主题帖里播放视频。
+需安装扩展组件--腾讯视频播放组件，才能正常使用
+https://addon.dismall.com/?@apoyl_video.plugin.82609]]></item>
+				<item id="variable"><![CDATA[openqqvideo]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[开启外链mp4播放组件 ... . ...]]></item>
+				<item id="description"><![CDATA[支持手机版和电脑版外链mp4视频在主题帖里播放视频。（备：外链能正常公共访问地址）
+需安装扩展组件--外链mp4播放组件，才能正常使用]]></item>
+				<item id="variable"><![CDATA[openwmp4]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[开启土豆视频播放组件 ... ...]]></item>
+				<item id="description"><![CDATA[支持手机版和电脑版土豆视频在主题帖里播放视频。
+需安装扩展组件--土豆视频播放组件，才能正常使用]]></item>
+				<item id="variable"><![CDATA[opentudou]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[开启带封面外链mp4播放组件 ...]]></item>
+				<item id="description"><![CDATA[添加外链接MP4视频封面,这样手机版主题里默认打开视频就有图了。
+如编辑器视频里插入：外链接mp4||图片超链接 （英文状态下双竖杠分割）
+需安装扩展组件--带封面外链mp4组件，才能正常使用 ...]]></item>
+				<item id="variable"><![CDATA[openwcovermp4]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[15]]></item>
+				<item id="title"><![CDATA[开启电脑文章mp4附件播放 . ...]]></item>
+				<item id="description"><![CDATA[支持电脑版门户文章里mp4视频在文章帖里播放视频。（本地上传MP4附件）
+需安装扩展组件--电脑版文章mp4组件，才能正常使用]]></item>
+				<item id="variable"><![CDATA[openapcmp4]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[16]]></item>
+				<item id="title"><![CDATA[开启手机文章mp4附件播放 ...]]></item>
+				<item id="description"><![CDATA[支持手机触屏版门户文章里mp4视频在文章帖里播放视频。（备注：本地上传MP4附件，官方默认模板无手机版文章）
+需安装扩展组件--手机版文章mp4组件，才能正常使用]]></item>
+				<item id="variable"><![CDATA[openambmp4]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[17]]></item>
+				<item id="title"><![CDATA[开启爱奇艺视频播放组件 ...]]></item>
+				<item id="description"><![CDATA[支持手机版和电脑版爱奇艺视频在主题帖里播放视频。
+需安装扩展组件--爱奇艺视频播放组件，才能正常使用
+扩展：https://addon.dismall.com/?@apoyl_video.plugin.86366]]></item>
+				<item id="variable"><![CDATA[openiqiyi]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="18">
+				<item id="displayorder"><![CDATA[18]]></item>
+				<item id="title"><![CDATA[文章优酷视频播放组件 ...]]></item>
+				<item id="description"><![CDATA[支持手机版和电脑版优酷视频在门户文章里正常播放。
+需安装扩展组件--门户文章优酷视频播放组件，才能正常使用
+扩展：https://addon.dismall.com/?@apoyl_video.plugin.86464]]></item>
+				<item id="variable"><![CDATA[openayouku]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="19">
+				<item id="displayorder"><![CDATA[19]]></item>
+				<item id="title"><![CDATA[文章bilibili播放组件 ... ...]]></item>
+				<item id="description"><![CDATA[支持手机版和电脑版bilibili视频在门户文章里正常播放。
+需安装扩展组件--门户文章bilibili播放组件，才能正常使用
+地址：https://addon.dismall.com/?@apoyl_video.plugin.86465]]></item>
+				<item id="variable"><![CDATA[openabilibili]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="20">
+				<item id="displayorder"><![CDATA[20]]></item>
+				<item id="title"><![CDATA[显示视频封面图片]]></item>
+				<item id="description"><![CDATA[自动获取视频封面图片及自动转码...其他视频转码（如MOV转MP4）和提取视频封面
+（此功能需要配套后端转码软件，如有需要咨询应用中心作者-凹凸曼）]]></item>
+				<item id="variable"><![CDATA[opendefaultcover]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="21">
+				<item id="displayorder"><![CDATA[21]]></item>
+				<item id="title"><![CDATA[手机上传视频]]></item>
+				<item id="description"><![CDATA[手机上传安卓MP4 和苹果MOV 视频
+（此功能需要配套后端转码软件，才能正常使用，暂未开放，如有需要咨询应用中心作者-凹凸曼）]]></item>
+				<item id="variable"><![CDATA[openmbupload]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="22">
+				<item id="displayorder"><![CDATA[22]]></item>
+				<item id="title"><![CDATA[文章youtube播放组件]]></item>
+				<item id="description"><![CDATA[支持手机版和电脑版youtube在门户文章里播放视频。
+需安装扩展组件--门户文章youtube播放组件，才能正常使用]]></item>
+				<item id="variable"><![CDATA[openayoutube]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="23">
+				<item id="displayorder"><![CDATA[23]]></item>
+				<item id="title"><![CDATA[文章腾讯视频播放组件 ...]]></item>
+				<item id="description"><![CDATA[支持手机版和电脑版腾讯视频在门户文章里播放视频。
+需安装扩展组件--门户文章腾讯视频播放组件，才能正常使用]]></item>
+				<item id="variable"><![CDATA[openaqq]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="english"><![CDATA[chinese]]></item>
+				<item id="apoyl_videovideo"><![CDATA[直传阿里云视频点播：实现视频文件直传到阿里云视频点播以及主题内播放视频，大量节约服务器带宽流量，防止因视频上传播放造成服务器瘫痪，并可以节约大量资金。<a href="https://addon.dismall.com/?@apoyl_videovideo.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_qiniu"><![CDATA[直传七牛云视频播放：实现视频文件直传到七牛云以及主题内和版块列表页播放视频，大量节约服务器带宽流量，防止因视频上传播放造成服务器瘫痪，并可以节约大量资金。<a href="https://addon.dismall.com/?@apoyl_qiniu.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_videolist"><![CDATA[『凹凸曼』视频列表：支持主题列表播放youtube、播放优酷、播放腾讯视频、播放本地上传MP4。<a href="https://addon.dismall.com/?@apoyl_videolist.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_service"><![CDATA[『凹凸曼』自助开服：实现客户自助购买，游戏开服表，可选择套黄或者滚动（蓝白）类型广告。<a href="http://addon.dismall.com/?@apoyl_service.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_html5upload"><![CDATA[『凹凸曼』HTML5：实现手机版上传图片自定义大小以及选择多张图片上传。<a href="http://addon.dismall.com/?@apoyl_html5upload.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_limit"><![CDATA[『凹凸曼』发帖限制：实现不同版块不同用户组，设置不同限制发帖时间、不同限制发帖数及不同限制提示信息。<a href="https://addon.dismall.com/?@apoyl_limit.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_baidumip"><![CDATA[『凹凸曼』百度MIP：实现版块列表页和主题页，按照MIP规则制作并实现原页面对应关系。<a href="http://addon.dismall.com/?@apoyl_baidumip.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_baiduxiong"><![CDATA[『凹凸曼』百度推送：全名百度熊掌号推送，实现主题帖主动推送到百度熊掌号，享受百度熊掌号带来的好处。<a href="http://addon.dismall.com/?@apoyl_baiduxiong.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_interest"><![CDATA[『凹凸曼』兴趣标签：实现主题添加所属兴趣标签，打破传统版块限制向兴趣标签聚合。<a href="http://addon.dismall.com/?@apoyl_interest.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_picverify"><![CDATA[『凹凸曼』图片审核：主题、回帖里发的网络图片，本地图片及附件会进入后台内容审核，这样更能保障你的网站安全。<a href="http://addon.dismall.com/?@apoyl_picverify.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_rewrite"><![CDATA[『凹凸曼』伪静态化：整合手机版强制伪静态化、电脑版强制伪静态化、TAG标签页面伪静态化、TAG标签强制伪静态化，有利于搜索引擎收录。<a href="http://addon.dismall.com/?@apoyl_rewrite.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_googleping"><![CDATA[『凹凸曼』谷歌ping：使用google的ping服务接口加快网站收录。<a href="http://addon.dismall.com/?@apoyl_googleping.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_prize"><![CDATA[『凹凸曼』发帖有奖：实现发主题、回帖达到每日要求设置数量，自动弹出领红包奖励。<a href="http://addon.dismall.com/?@apoyl_prize.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_auth"><![CDATA[『凹凸曼』实名认证：实现手机认证后，才能发帖回帖，响应互联网实名政策。<a href="http://addon.dismall.com/?@apoyl_auth.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_weixinshare"><![CDATA[『凹凸曼』分享有图：解决在微信里帖子分享到朋友或朋友圈，图标无法显示，描述更改为部分主题内容。<a href="http://addon.dismall.com/?@apoyl_weixinshare.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_telfunc"><![CDATA[『凹凸曼』手机功能：解决电脑版有，但手机版没有的功能，如显示个人签名、相关帖子、显示图章、帖子分享等。<a href="http://addon.dismall.com/?@apoyl_telfunc.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_like"><![CDATA[『凹凸曼』评论点赞：实现文章评论点赞，提高网友之间的互动。<a href="http://addon.dismall.com/?@apoyl_like.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_yahoo"><![CDATA[『凹凸曼』Yahoo：实现Yahoo一键登录注册网站、绑定已有帐号、邮箱同步。<a href="http://addon.dismall.com/?@apoyl_yahoo.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_google"><![CDATA[『凹凸曼』Google：实现Google一键登录注册网站、绑定已有帐号。<a href="http://addon.dismall.com/?@apoyl_google.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_facebook"><![CDATA[『凹凸曼』Facebook：实现Facebook一键登录注册网站、绑定已有帐号。<a href="http://addon.dismall.com/?@apoyl_facebook.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_twitter"><![CDATA[『凹凸曼』Twitter：实现Twitter一键登录注册网站、绑定已有帐号、分享主题到Twitter并且可以@已绑定发帖作者Twitter、关注Twitter用户。<a href="http://addon.dismall.com/?@apoyl_twitter.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_vest"><![CDATA[『凹凸曼』切换马甲：实现多用户自由切换，方便管理员管理。<a href="http://addon.dismall.com/?@apoyl_vest.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_pushpub"><![CDATA[『凹凸曼』推公众号：实现网站注册和访问加密版块，关注微信公众号，获取验证码、访问密码及贴内显示微信公众号，有利于微信号推广。<a href="http://addon.dismall.com/?@apoyl_pushpub.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_gif"><![CDATA[『凹凸曼』播放gif：贴内可手动播放、停止gif图片，支持手机版，PC播放，让你网站看上去更美。<a href="http://addon.dismall.com/?@apoyl_gif.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_hidesection"><![CDATA[『凹凸曼』隐藏版块：为适应不同手机端及PC端运营，可自定义隐藏版块及隐藏后禁止直接通过URL访问。<a href="http://addon.dismall.com/?@apoyl_hidesection.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_teladv"><![CDATA[『凹凸曼』手机广告：支持手机版系统所有的嵌入点广告位，让站长不在担心手机广告位的问题，文字、图片、代码、flash形式的展现及代码方式手机广告联盟。<a href="http://addon.dismall.com/?@apoyl_teladv.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_wmark"><![CDATA[『凹凸曼』版块水印：站长可独立设置每个版块图片上传的水印，能体现每个版块图片内容的个性化。<a href="http://addon.dismall.com/?@apoyl_wmark.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_money"><![CDATA[『凹凸曼』发红包了：过年，过节给坛友发点红包，爱恋的她或他，发送一句心里话，访问任意页面自动弹出红包。<a href="http://addon.dismall.com/?@apoyl_money.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_telbigimg"><![CDATA[『凹凸曼』手机大图：使原来的模糊图片变非常清晰，缩图片裁剪改变，图片自适应手机屏幕，让手机版（标准版和触屏版）的图片更加清晰和美观。<a href="http://addon.dismall.com/?@apoyl_telbigimg.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_salary"><![CDATA[『凹凸曼』发工资了：对网站做贡献的版主、特定的会员以及一般会员进行奖励，根据业绩考核系统自动发放工资，为热爱这个平台的朋友们提供一个最直接的奖励机制。<a href="http://addon.dismall.com/?@apoyl_salary.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_picessence"><![CDATA[『凹凸曼』图片精华：可选一个楼层的精华图片到当前版块顶部展示，也可瀑布流展示你推荐的所有精华图片。<a href="http://addon.dismall.com/?@apoyl_picessence.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_moderator"><![CDATA[『凹凸曼』申请版主：会员自助申请论坛版主权限,为喜爱做版主的朋友提供一个最直接的申请通道。<a href="http://addon.dismall.com/?@apoyl_moderator.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_picdivision"><![CDATA[『凹凸曼』图片分楼：全称图片自动分楼，用户发帖上传多张图片或通过网络云图库插入图片，上传的图片无需插入帖子，就可以实现图片自动分楼。<a href="http://addon.dismall.com/?@apoyl_picdivision.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="apoyl_index"><![CDATA[『凹凸曼』手机首页：实现打开手机版论坛有聚合首页，支持自定义选择模块、显示顺序以及数据源。<a href="http://addon.dismall.com/?@apoyl_index.plugin" target="_blank">点击具体了解</a>]]></item>
+				<item id="addr"><![CDATA[官网地址：<a href="https://addon.dismall.com/?@37901.developer" target="_blank">https://addon.dismall.com/?@37901.developer</a>]]></item>
+				<item id="blog"><![CDATA[技术博客：<a href="http://www.apoyl.com" target="_blank">凹凸曼博客</a>]]></item>
+				<item id="qq"><![CDATA[技术QQ：411835506]]></item>
+				<item id="err_login"><![CDATA[亲，上传错误，你未登录！]]></item>
+				<item id="err_formhash"><![CDATA[亲，上传错误，验证出错！]]></item>
+				<item id="err_groupid"><![CDATA[亲，上传错误，你无权限！]]></item>
+				<item id="err_uploadfail"><![CDATA[亲，上传错误，数据插入异常!]]></item>
+				<item id="err_transfail"><![CDATA[正在转码稍后插入]]></item>
+				<item id="err_id"><![CDATA[亲，异常ID]]></item>
+				<item id="apoyllimit"><![CDATA[单个视频小于{limit}MB，大视频上传多数情况下，网络环境决定你上传快慢及是否成功]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="english"><![CDATA[chinese]]></item>
+				<item id="showtitle"><![CDATA[视频上传]]></item>
+				<item id="uploadname"><![CDATA[选择本地视频]]></item>
+				<item id="close"><![CDATA[关闭]]></item>
+				<item id="limit"><![CDATA[限制上传MP4、MOV，单个视频小于100M，上传多数情况下，网络环境决定你上传快慢及是否成功]]></item>
+				<item id="filename"><![CDATA[文件名]]></item>
+				<item id="size"><![CDATA[大小(MB)]]></item>
+				<item id="detail"><![CDATA[上传结果]]></item>
+				<item id="limitupdesc"><![CDATA[最大上传文件]]></item>
+				<item id="videoac"><![CDATA[点击插入]]></item>
+				<item id="videodel"><![CDATA[删除]]></item>
+				<item id="videodelfail"><![CDATA[删除失败]]></item>
+				<item id="goon"><![CDATA[继续上传]]></item>
+				<item id="stop"><![CDATA[暂停上传]]></item>
+				<item id="uploadsuccess"><![CDATA[上传成功]]></item>
+				<item id="uploadsuccessinsert"><![CDATA[上传成功 点击插入]]></item>
+				<item id="progress"><![CDATA[进度：]]></item>
+				<item id="mbuploadapoyl"><![CDATA[上传本地视频]]></item>
+				<item id="delfail"><![CDATA[删除失败]]></item>
+			</item>
+		</item>
+	</item>
+</root>

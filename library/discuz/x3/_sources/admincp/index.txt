@@ -1,0 +1,190 @@
+..
+
+全局
+======================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+   setting/datetime
+   setting/fangguanshui
+   setting/topset
+   setting/perop
+   setting/spacehou
+   setting/broadcast
+   setting/watermarkset
+   setting/mobile
+   setting/SEOset
+   setting/attach
+   setting/collection
+   setting/access
+   setting/attachmentsize
+   setting/search
+   setting/siteinfo
+   setting/permissions
+   setting/credits
+   setting/functions
+   setting/domain
+   setting/diqu
+
+界面
+======================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+   template/biaotai
+   template/smilies
+   template/dstyles
+   template/onlinelist
+   template/templates
+   template/daohang
+   template/editor
+   template/jiemian
+   template/icon
+
+内容
+======================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+   moderate/groupzt
+   moderate/prune
+   moderate/recyclebin
+   moderate/taotie
+   moderate/blogrecyclebin
+   moderate/postcomment
+   moderate/feed
+   moderate/modpost
+   moderate/jubao
+   moderate/share
+   moderate/comment
+   moderate/forumstick
+   moderate/album
+   moderate/groupdel
+   moderate/label
+   moderate/doing
+   moderate/blog
+   moderate/adminatt
+   moderate/groupatt
+   moderate/recyclebinpost
+   moderate/adminthreads
+   moderate/censor
+   moderate/pic
+
+用户
+======================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+   member/banip
+   member/usertag
+   member/memberadd
+   member/memberadmin
+   member/statistics
+   member/profilefields
+   member/ban
+
+门户
+======================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+   portal/makehtml
+   portal/blogcategory
+   portal/albumcategory
+
+论坛
+======================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+   forum/types
+   forum/forumadmin
+   forum/forumsmerge
+   forum/grid4
+
+群组
+======================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+   group/grouplevel
+   group/groupmod
+   group/grouptype
+   group/groupuserperm
+   group/groupsetting
+   group/groupmanage
+
+运营
+======================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+   operating/magics
+   operating/relatedlink
+   operating/ec
+   operating/card
+   operating/webadv
+   operating/focus
+   operating/announce
+   operating/link
+   operating/webfaq
+   operating/tasks
+   operating/勋章中心
+
+应用
+======================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+   app/cloudaddons
+   app/plugins
+
+工具
+======================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+   tool/cron
+   tool/filecheck
+   tool/updatecache
+   tool/counter
+   tool/fileperms
+   tool/hookcheck
+   tool/logs
+
+云平台
+======================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+   cloud/cloudplatform
+   cloud/doctor
+
+站长
+======================
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+   founder/check
+   founder/houteam
+   founder/UCenter
+   founder/optimizer
+   founder/postfen
+   founder/upgrade
+   founder/threadfen
+   founder/patch
+   founder/db
+   founder/email
+

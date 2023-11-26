@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * 	[¡¾ÔÆÃ¨¡¿ÐÒÔË·¢Ìû(ya_lucky)] (C)2019-2099 Powered by ÔÆÃ¨¹¤×÷ÊÒ.
+ * 	Date: 2019-5-20 16:29
+ *      File: course.inc.php
+ */
+if (!defined('IN_DISCUZ') || !defined('IN_ADMINCP')) {
+    exit('Access Denied');
+}
+?>

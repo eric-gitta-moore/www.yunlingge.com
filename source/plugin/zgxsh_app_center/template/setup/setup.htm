@@ -1,0 +1,68 @@
+<!--{template common/header}-->
+<!--{template zgxsh_app_center:system/css}-->
+
+<div class="<!--{if $_TRC['pc_width']}-->layui-main<!--{/if}-->" style="padding: 15px; background: #4F6976;<!--{if $_TRC['pc_width']}-->width: 1200px<!--{/if}-->">
+  <div class="layui-row layui-col-space15">
+    <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+      <div class="layui-card">
+        <div class="layui-card-header" style="text-align:center"><span>{lang zgxsh_app_center:setup}</span> </div>
+        <div class="layui-card-body" style="display: flex;justify-content: space-between;align-items:centers">
+          <button style="flex:1;flex-grow:0;text-align: left" type="button" class="layui-btn layui-btn-primary" onClick="location='plugin.php?id=zgxsh_app_center:index'"><i class="layui-icon">&#xe65c;</i>{lang zgxsh_app_center:return_a}</button>
+          
+          <!--{if $_TRC['admin_uid']==$_G['uid'] or $_G['adminid']==1}-->
+          <button style="flex:1;flex-grow:0;text-align:right" type="button" class="layui-btn" onClick="showWindow('TC','plugin.php?id=zgxsh_app_center:setup_if&op=setup_add&formhash={FORMHASH}','get',0,{'cover':'1'});"><i class="layui-icon">&#xe61f;</i>{lang zgxsh_app_center:add_a}</button>
+          <!--{/if}--> 
+        </div>
+      </div>
+    </div>
+    <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+      <div class="layui-card">
+        <div class="layui-card-body" style="display: flex;justify-content: space-between;align-items:centers">
+          <table class="layui-table">
+            <colgroup>
+            <col width="100">
+            <col width="200">
+            <col>
+            <col width="100">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>{lang zgxsh_app_center:tab_ico}</th>
+                <th>{lang zgxsh_app_center:tab_name}</th>
+                <th>{lang zgxsh_app_center:tab_txt}</th>
+								<th>{lang zgxsh_app_center:tab_cz}</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+								<!--{if $db_plugin}-->
+								<!--{loop $db_plugin $i $v}-->
+							<tr>
+                <td><img src="{$db_plugin[$i]['ico']}" width="80" height="80" style="border-radius:10px;"/></td>
+                <td>$db_plugin[$i]['name']</td>
+                <td>$db_plugin[$i]['txt']</td>
+                <td><button type="button" class="layui-btn layui-btn-danger" onClick="showWindow('TC','plugin.php?id=zgxsh_app_center:setup_if&op=setup_del&bh={$db_plugin[$i]['id']}&formhash={FORMHASH}','get',0,{'cover':'1'});"><i class="layui-icon">&#xe640;</i>{lang zgxsh_app_center:del_a}</button></td>
+								</tr>
+								<!--{/loop}-->
+								<!--{else}-->
+							<tr>
+								<td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+							</tr>
+								<!--{/if}-->
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--{template common/footer}--> 
+
+<script>
+
+</script>

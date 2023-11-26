@@ -1,0 +1,60 @@
+{template common/header}
+<header class="header">
+<div class="nav">
+<a href="{echo dreferer();}" class="z"><img src="static/image/mobile/images/icon_back.png" /></a>
+<span class="name">{lang dc_pay:scanpay}</span>
+</div>
+</header>
+<style>
+	.pay-transfer{margin: 20px;}
+	.p-w-hd{padding-bottom:20px;}
+	.payinfo .tips{border-bottom: 1px solid #CCC;font-size: 20px;padding-bottom:20px;}
+	.payinfo .tips li{list-style-type:none;}
+	.payinfo .img{margin-top: 10px;text-align: center;}
+	.payinfo .for th{text-align: right;height:30px;}
+	.payinfo .for .t{font-size: 16px;text-align: center;}
+	.payinfo .for .btn{display: block;width: 80%;margin: 8px auto;height: 40px;line-height: 40px;border-radius: 4px;background: #5494ee;text-align: center;color: #fff;font-size: 18px;text-decoration:none;border:0px;}
+</style>
+<div class="wp cl frame">
+<div class="pay-transfer">
+		<div class="payinfo">
+			<div class="tips">
+				<li>{lang dc_pay:transferorderid}<span style="color:#FF0000">{$orderid}</span></li>
+				<li>{lang dc_pay:transfersubject}<span style="color:#FF0000">{$order[subject]}</span></li>
+				<li>{lang dc_pay:transferprice}<span style="color:#FF0000">{$order[price]}</span>{$_lang[yuan]}</li>
+				<li>{lang dc_pay:transferaccount}<span style="color:#FF0000">{$config[account]}</span></li>
+			</div>
+			<div>
+			<div style="font-size: 20px;">{lang dc_pay:transfer_1}<span style="color:#FF0000">{$payinfo[title]}</span>{lang dc_pay:transfer_2}</div>
+			<div class="img">
+				<img src="{$config[qrcode]}" width="300" height="300"/>
+			</div>
+			<div class="for"><form method="post" action="plugin.php?id=dc_pay:transfer" id="payfor" autocomplete="off">
+				<input type="hidden" name="formhash" value="{FORMHASH}"/>
+				<input type="hidden" name="submit" value="true" />
+				<input type="hidden" name="data" value="{$_GET['data']}" />
+				<input type="hidden" name="paytype" value="{$paytype}" />
+				<div class="t">{lang dc_pay:transfer_0}
+				</div>
+				<div class="rfm">
+					<table>
+					<tbody><tr>
+					<th><span class="rq">*</span><label>{lang dc_pay:transfer_account}</label></th>
+					<td><input name="account" tabindex="1" class="px" required="" type="text" size="25" value="" autocomplete="off"></td>
+					</tr>
+					<tr>
+					<th><label>{lang dc_pay:transfer_payid}</label></th>
+					<td><input name="payid" tabindex="1" class="px" type="text" size="25" value="" autocomplete="off"></td>
+					</tr>
+					</tbody></table>
+				</div>
+				<p class="o pns">
+					<button type="submit" name="submit" value="true" class="btn"><strong>{lang dc_pay:paydo}</strong></button>
+				</p>
+				<form>
+			</div>
+		</div>
+	 </div>
+    </div>
+</div>
+{template common/footer}

@@ -1,0 +1,49 @@
+<!--{template common/header}-->
+<!--{template zgxsh_app_center:system/css}-->
+
+<div class="layui-card" style="padding:10px;margin-bottom: 0px">
+  <div class="layui-card-header layui-bg-gray"> 
+    <b>{lang zgxsh_app_center:add_1}</b> 
+    <i class="layui-icon layui-btn layui-btn-xs layui-btn-primary" style="text-align:right;display:block;float: right;margin-top: 10px" onClick="location='plugin.php?id=zgxsh_app_center:index'">&#x1006;</i> 
+  </div>
+  <br>
+  <div class="layui-card-body">
+    
+    <p style="color: rgba(31,138,216,1.00);"> 
+			{lang zgxsh_app_center:add_2}<br>
+			{lang zgxsh_app_center:add_3}<br>
+		</p>
+    <p style="color: #E516D7;"> 
+			{lang zgxsh_app_center:add_4}
+		</p>
+    <br>
+		
+    <form class="layui-form" action="plugin.php?id=zgxsh_app_center:setup_if" method="post" id="TR_A">
+      <input type="hidden" name="formhash" value="{FORMHASH}"/>
+      <input type="text" name="op" value="setup_add_xz_sub" hidden>
+                      
+      <div class="layui-form-item">
+        <select name="pluginid" lay-filter="aihao" lay-verify="required" lay-search>
+					<option value="0">{lang zgxsh_app_center:add_5}</option>
+					<!--{if $p_l}-->
+					  <!--{loop $p_l $i $v}-->
+					    <option value="$p_l[$i]['pluginid']">$p_l[$i]['name']</option>
+					  <!--{/loop}-->
+					<!--{/if}-->
+        </select>
+      </div>
+
+			<div class="layui-btn-group">
+        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm" onClick="location='plugin.php?id=zgxsh_app_center:index'"> <i class="layui-icon">&#xe65c;</i> {lang zgxsh_app_center:a_cancel} </button>
+        <button class="layui-btn layui-btn-sm" onClick="showWindow('TC','TR_A','post',0,{'cover':'1'});"> <i class="layui-icon">&#x1005;</i> {lang zgxsh_app_center:a_create} </button>
+      </div>
+			
+    </form>
+  </div>
+</div>
+
+<script>
+$see['form']
+</script>
+
+<!--{template common/footer}-->

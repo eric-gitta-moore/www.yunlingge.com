@@ -1,0 +1,37 @@
+<!--{template common/header}-->
+<!--{if empty($_GET['infloat'])}-->
+<div id="pt" class="bm cl">
+	<div class="z"><a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a> <em>&rsaquo;</em> $navigation</div>
+</div>
+<div id="ct" class="wp cl">
+	<div class="mn">
+		<div class="bm bw0">
+<!--{/if}-->
+<div class="tm_c">
+	<h3 class="flb" style="text-align:center;">
+		<em id="return_banadblock" style="float: none;">&#x63D0;&#x793A;&#x4FE1;&#x606F;</em>
+	</h3>
+	<div class="c" style="width:400px;">
+		$splugin_setting[tips]
+	</div>
+	<p class="o pns">
+		<span class="z xg1">{$_G['setting']['sitename']}&#x611F;&#x8C22;&#x60A8;&#x7684;&#x652F;&#x6301;&#x548C;&#x7406;&#x89E3;</span>
+		<!--{if $splugin_setting[seconds] >= 0}-->
+		<button type="submit" name="basubmit" id="basubmit" class="pn pnc" onclick="hideWindow('banadblock')" value="{lang confirms}"><span>{lang confirms}</span></button>
+		<!--{/if}-->
+	</p>
+</div>
+
+<script type="text/javascript" reload="1">
+	//hideWindow('banadblock');
+	$('fwin_banadblock_cover').style.backgroundColor = '{$splugin_setting[bgcolor]}';
+	$('fwin_banadblock_cover').style.opacity = {$splugin_setting[opacity]};
+	$('fwin_banadblock_cover').style.position = 'fixed';
+</script>
+
+<!--{if empty($_GET['infloat'])}-->
+		</div>
+	</div>
+</div>
+<!--{/if}-->
+<!--{template common/footer}-->

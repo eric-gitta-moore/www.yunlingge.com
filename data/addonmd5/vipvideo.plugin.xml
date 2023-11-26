@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[vipvideo.plugin]]></item>
+	<item id="RevisionID"><![CDATA[84325]]></item>
+	<item id="SN"><![CDATA[2020022307JQUUKp0x9E]]></item>
+	<item id="RevisionDateline"><![CDATA[1567342817]]></item>
+	<item id="Data">
+		<item id="/cache/cache_interface.php"><![CDATA[30ae3ca58eda0b6079d058f55eed6ba1]]></item>
+		<item id="/css/common.css"><![CDATA[d1e23a345d7c294ffbbda376bcb09a14]]></item>
+		<item id="/css/touch/common.css"><![CDATA[22f9ce52447992894e1d9dfdeded7ce2]]></item>
+		<item id="/more.inc.php"><![CDATA[c496c4ce9335038c95ccaa3d5948b6e7]]></item>
+		<item id="/uninstall.php"><![CDATA[68f3d01281d742cf28c53b25a3f6e0fc]]></item>
+		<item id="/table/table_vipvideo_record.php"><![CDATA[11458e9479afc4618671d30921c1c1c3]]></item>
+		<item id="/table/table_vipvideo_interface.php"><![CDATA[bda6bcbd5b857c1fcada57587a05d32c]]></item>
+		<item id="/index.inc.php"><![CDATA[ea250caa9a75f3fb64741cec8cee0d4f]]></item>
+		<item id="/discuz_plugin_vipvideo_TC_UTF8.xml"><![CDATA[7657fb8572f97a4bc94de44e5b358fdf]]></item>
+		<item id="/install.php"><![CDATA[ef53c32bc51b716548f021dadcf042a5]]></item>
+		<item id="/interface.inc.php"><![CDATA[18df8ced739930e61e3bf55ee8c0cea4]]></item>
+		<item id="/upgrade.php"><![CDATA[aebffc319aef33aa3f64c568d6d3b1e1]]></item>
+		<item id="/template/vipvideo_index.htm"><![CDATA[f6a466f64dc68cef95a6fc7ce2b4b78a]]></item>
+		<item id="/template/touch/vipvideo_index.htm"><![CDATA[76de343c9b6536030c2e79c97ff3ecb2]]></item>
+		<item id="/template/touch/vipvideo_jump.htm"><![CDATA[46768ed72c870e618eac37ee0739bdc9]]></item>
+		<item id="/template/vipvideo_jump.htm"><![CDATA[46768ed72c870e618eac37ee0739bdc9]]></item>
+		<item id="/record.inc.php"><![CDATA[c71a78cab1e695e23bcf8ce8779cbf3e]]></item>
+		<item id="/discuz_plugin_vipvideo_SC_UTF8.xml"><![CDATA[34faadb212f0befc8fe76847d0edbb94]]></item>
+	</item>
+</root>

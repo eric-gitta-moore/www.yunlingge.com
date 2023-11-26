@@ -1,0 +1,15 @@
+.video_body{width: 100%;padding: 28.125% 0;position: relative;overflow:hidden;display:block;background:#000;}
+.video_body iframe{width: 100%;height: 100%;display:block;position: absolute;top: 0;left: 0;}
+.video_form{overflow:hidden;}
+.video_form .v_engine{float:left;width:25%;}
+.video_form .v_engine select{border: 1px solid #ccc;height: 48px;line-height: 48px;font-size: 18px;padding: 0 15px;border-radius: 5px;width:100%;box-sizing: border-box;}
+.video_form .v_url{float:left;width:60%;padding-left:15px;box-sizing: border-box;}
+.video_form .v_url input{width:100%;height: 48px;line-height: 48px;font-size: 18px;padding:0 15px;border-radius: 5px;background-color: #fff;color: #555;border: 1px solid #ccc;box-sizing: border-box;}
+.video_form .v_button{float:left;width:15%;padding-left:15px;box-sizing: border-box;}
+.video_form .v_button button{font-size: 18px;text-align: center;width:100%;border-radius: 5px;height: 48px;line-height: 48px;border:0 none;cursor:pointer;}
+.video_guide{background:#fff;}
+.video_guide .bm_h{padding:9px 15px;font-size:20px;}
+.video_guide .bm_h span{margin-left:20px;color:#f00;font-size:16px;}
+.video_guide .bm_c{padding:10px 15px;font-size:16px;line-height:1.6;}
+.video_guide .bm_c pre{margin:0;white-space: pre-wrap;word-wrap: break-word;}
+.video_guide .bm_c p{margin:15px 0;}

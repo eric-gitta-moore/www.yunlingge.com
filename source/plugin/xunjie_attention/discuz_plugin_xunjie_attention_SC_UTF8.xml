@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2020-03-07 12:41]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost/dz/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[[迅捷]关注用户]]></item>
+			<item id="identifier"><![CDATA[xunjie_attention]]></item>
+			<item id="description"><![CDATA[关注用户，不错过该用户的每一个动态]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[xunjie_attention/]]></item>
+			<item id="copyright"><![CDATA[迅捷]]></item>
+			<item id="version"><![CDATA[1.0.2]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[xunjie_attention]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[关注上限]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[top]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[请选择不可使用该功能的用户组]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[usergroup]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="xunjie_attention_1"><![CDATA[关注人数达到上限]]></item>
+				<item id="xunjie_attention_2"><![CDATA[关注TA]]></item>
+				<item id="xunjie_attention_3"><![CDATA[已取消]]></item>
+				<item id="xunjie_attention_4"><![CDATA[暂无关注的人]]></item>
+				<item id="xunjie_attention_5"><![CDATA[取消关注]]></item>
+				<item id="xunjie_attention_6"><![CDATA[暂无新动态]]></item>
+				<item id="xunjie_attention_7"><![CDATA[关注的人]]></item>
+				<item id="xunjie_attention_8"><![CDATA[动态通知]]></item>
+				<item id="xunjie_attention_9"><![CDATA[全部忽略]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

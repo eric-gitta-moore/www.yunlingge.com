@@ -1,0 +1,59 @@
+<!--{template common/header}-->
+<div class="tm_c" id="floatlayout_topicadmin">
+	<h3 class="flb">
+		<em id="return_setrecpost">{lang study_nge:study_nge_tmp_023}</em>
+		<span>
+			<a href="javascript:;" class="flbc" onclick="hideWindow('recpost')" title="{lang close}">{lang close}</a>
+		</span>
+	</h3>
+	<form id="setrecpostform" method="post" autocomplete="off" action="plugin.php?id=study_nge:recpost&tid={$_GET[tid]}&setrecpostsubmit=yes" onsubmit="ajaxpost('setrecpostform', 'return_setrecpost', 'return_setrecpost', 'onerror');return false;">
+		<input type="hidden" name="formhash" value="{FORMHASH}" />
+		<input type="hidden" name="handlekey" value="$_GET['handlekey']" />
+		<div class="c" style="width:206px">
+				<table cellspacing="0" cellpadding="5" width="100%">
+					<!--{if $s_recpost}-->
+					<tr>
+						<td>
+							<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<label for="recpost_radio_true" style="cursor: default;background: none;color: #09C;">
+								<input type="radio" name="recpost_radio" value="1" id="recpost_radio_true" checked="checked"/>
+								{lang study_nge:study_nge_tmp_024}
+							</label>
+							<label for="recpost_radio_false" style="cursor: default;background: none;color: #09C;">
+								<input type="radio" name="recpost_radio" value="0" id="recpost_radio_false"/>
+								{lang study_nge:study_nge_tmp_025}
+							</label>
+							</p>
+						</td>
+					</tr>
+					<!--{/if}-->
+					<tr>
+						<td>
+							<p>
+							{lang study_nge:study_nge_tmp_026}
+							<input type="text" name="subject" id="subject" style="width: 126px;" value="{if $s_recpost}$s_recpost[subject]{else}$thread[subject]{/if}"/>
+							</p>
+						</td>
+					</tr>
+				</table>
+		</div>
+
+		<p class="o pns">
+			<!--{if $s_recpost}-->
+			<label for="recpost_top"><input type="checkbox" name="recpost_top" id="recpost_top" class="pc" checked="checked"/>{lang study_nge:study_nge_tmp_027}</label>
+			<!--{else}-->
+			<label for="recpost_send"><input type="checkbox" name="recpost_send" id="recpost_send" class="pc" checked="checked"/>{lang study_nge:study_nge_tmp_028}</label>
+			<!--{/if}-->
+			<button type="submit" name="setrecpostsubmit" id="setrecpostsubmit" class="pn pnc" value="{lang confirms}"><span>{lang confirms}</span></button>
+		</p>
+	</form>
+</div>
+
+<script type="text/javascript" reload="1">
+function succeedhandle_recpost(url, message, values) {
+	hideWindow('recpost');
+	showPrompt(null, null, '<span>' + message + '</span>', 3000);
+}
+</script>
+<!--{template common/footer}-->

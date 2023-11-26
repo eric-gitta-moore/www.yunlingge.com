@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[nimba_romotepic.plugin]]></item>
+	<item id="RevisionID"><![CDATA[3091]]></item>
+	<item id="SN"><![CDATA[2020012711jNn9h3Yc9z]]></item>
+	<item id="RevisionDateline"><![CDATA[1562125096]]></item>
+	<item id="Data">
+		<item id="/uninstall.php"><![CDATA[9b90772ca3f20f7e16d95751ee9e159d]]></item>
+		<item id="/discuz_plugin_nimba_romotepic_TC_UTF8.xml"><![CDATA[50423447e6230a6989ee69762322c1ae]]></item>
+		<item id="/hook.class.php"><![CDATA[f1dde42987058894aa66da10656658dc]]></item>
+		<item id="/addon.inc.php"><![CDATA[03f00291fa3cc5db8503448027533afa]]></item>
+		<item id="/install.php"><![CDATA[9b90772ca3f20f7e16d95751ee9e159d]]></item>
+		<item id="/upgrade.php"><![CDATA[9b90772ca3f20f7e16d95751ee9e159d]]></item>
+		<item id="/functions.php"><![CDATA[dfd97eb23c72b0a146edd501d70a4de0]]></item>
+		<item id="/discuz_plugin_nimba_romotepic_SC_UTF8.xml"><![CDATA[7c7b46773de5a37499c58c9948ab62ef]]></item>
+		<item id="/template/post_newthread.htm"><![CDATA[5f2cb3adaa8c637898eebe573fe71858]]></item>
+	</item>
+</root>

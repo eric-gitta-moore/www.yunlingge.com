@@ -1,0 +1,122 @@
+{subtemplate common/header} 
+
+ 
+<div id="pt" class="bm cl">
+	<!--{if empty($gid) && $announcements}-->
+	<div class="y">
+		<div id="an">
+			<dl class="cl">
+				<dt class="z xw1">{lang announcements}:&nbsp;</dt>
+				<dd>
+					<div id="anc"><ul id="ancl">$announcements</ul></div>
+				</dd>
+			</dl>
+		</div>
+		<script type="text/javascript">announcement();</script>
+
+
+	</div>
+	<!--{/if}-->
+	<div class="z">
+	 
+	<a href="./" class="nvhm">$_G[setting][bbname]</a><em>&rsaquo;</em><a href="./">$_G[setting][bbname]</a> <em>&rsaquo;</em>
+	
+   <a href="plugin.php?id=xhkj5com_jtft:xhkj5com_jtft">$xhkj5com_jtft_biaoti</a></div>
+	<div class="z"><!--{hook/index_status_extra}--></div>
+</div>
+ 
+		<style> 
+#tip {
+padding-left: 20px;
+padding-right:20px;
+}
+.pnc, a.pnc {
+padding: 5px;
+}
+.px {
+margin-top: 10px;
+}
+.xhkj5comzhana.y {
+float: right;
+padding-right: 16px;
+}
+.xhkj5comxzss{float:left;padding-left: 10px;}
+</style>
+<SCRIPT LANGUAGE="JavaScript" src="/source/plugin/xhkj5com_jtft/xhkj5com_js/fanti_corvert$xhkj5com_jtft_gbut.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function zhuanhuan($s)
+{
+    var ch=chk('ch');
+	var content=document.getElementById('content').value;
+	if(ch=='fanti')
+    {
+        var contentout=traditionalized(content);
+		//document.getElementById('source').value='zh-CN';
+        //document.getElementById('to').value='zh-TW';
+    }
+    else
+    {
+        //document.getElementById('source').value='zh-TW';
+        //document.getElementById('to').value='zh-CN';
+		var contentout=simplized(content);
+    }
+    //translate();
+	document.getElementById('contentout').value=contentout;
+}
+function qingkong()
+{
+	document.getElementById('content').value='';
+	document.getElementById('contentout').value='';
+
+}
+function   chk(name){   
+  var   obj   =   document.getElementsByName(name);   
+  for   (i=0;i<obj.length;i++){   
+  if   (obj[i].checked){   
+  return obj[i].value;  
+  return;   
+  }   
+  }   
+  }  
+//-->
+</SCRIPT>
+<div id="mainBox">
+  <div id="tip">
+      <div id="tip_content">        
+ $xhkj5com_jtft_jianjie
+        </div>
+  </div>
+	<div class="blank_20"></div>
+    <div class="jianfan">     
+	 <div style="padding:5px 20px 0 20px;">
+	  
+ 
+ $xhkj5com_jtft_weizhi
+	 <textarea class="px" onload="this.value=''" name="content" id="content" rows="6" style="width:100%;height:150px;"></textarea>	 
+	 </div>	 
+	 <div style="padding:10px 10px;">
+	    <div class="xhkj5comxzss" ><table><tr><td align=center colspan=3><font size=-1><span style="text-align:left;">
+	
+
+		<label class="pwfc" ><input id=ch type=radio name=ch value="fanti" checked>{lang xhkj5com_jtft:bl_zhcft}</label>
+		
+		<label class="pwfc" ><input id=ch type=radio name=ch value="jianti">{lang xhkj5com_jtft:bl_zhcjt}</label></span></font></td></tr></table></div>
+		<div class="xhkj5comzhana y" >
+		<a class="pn pnc" href="javascript:void(0);" onclick='zhuanhuan("fanti")'>{lang xhkj5com_jtft:bl_kszh}</a>
+		 <a class="pn pnc" href="javascript:void(0);" onclick='qingkong()'>{lang xhkj5com_jtft:bl_qingkong}</a></div>	 
+	 </div>	 
+	 <input type="hidden" value="" id='source'>
+	 <input type="hidden" value="" id='to'>
+	 <div class="blank_10"></div>
+	 <div style="padding:0px 20px 20px 20px">
+	 <textarea class="px" onload="this.value=''" name="contentout" id="contentout" rows="6" style="width:100%;height:150px;"></textarea>	 
+	 </div>
+	 <div style="clear:both"></div>
+</div>	
+	 
+</div>
+</div>
+ 
+
+{subtemplate common/footer}

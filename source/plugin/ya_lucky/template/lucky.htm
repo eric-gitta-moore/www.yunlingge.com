@@ -1,0 +1,120 @@
+<!--{subtemplate common/header}-->
+
+<div id="pt" class="bm cl">
+    <div class="z">
+        <a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a> <em>&rsaquo;</em>
+        <a href="plugin.php?id=ya_lucky">{lang ya_lucky:lucky_stat}</a> <em>&rsaquo;</em>
+        <!--{if $a_actives_type[list]}-->{lang ya_lucky:eventlog}<!--{elseif $a_actives_type[rank]}-->{lang ya_lucky:rank}<!--{/if}-->
+    </div>
+</div>
+
+<style id="diy_style" type="text/css"></style>
+
+<div id="ct" class="ct2_a wp cl">
+    <div class="mn">
+
+        <div class="bm bml pbn">
+            <div class="bm_h cl">
+                <span class="y">
+                    <p>{$mystat}</p>
+                </span>
+                <h1 class="xs2">
+                    <!--{if $a_actives_type[list]}-->{lang ya_lucky:eventlog}<!--{elseif $a_actives_type[rank]}-->{lang ya_lucky:rank}<!--{/if}-->
+                </h1>
+            </div>
+        </div>
+        <div class="bm bw0">
+            <!--{if $type=='list'}-->
+            
+                <!--奖惩列表-->
+                <ul class="tb cl">
+                    <li{$a_actives[all]}><a href="plugin.php?id=ya_lucky&type=list&view=all">{lang ya_lucky:all_eventlog}</a></li>
+                    <li{$a_actives[my]}><a href="plugin.php?id=ya_lucky&type=list&view=my">{lang ya_lucky:my_eventlog}</a></li>
+                </ul>
+                
+                <!--{if $list}-->
+                    <div class="tl mbm mtm">
+                        <table cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr class="th">
+                                    <td class="icn">&nbsp;</td>
+                                    <th>{lang ya_lucky:r_and_p_log}</th>
+                                    <td class="frm">{lang ya_lucky:trigger_person}</td>
+                                    <td class="by">{lang ya_lucky:trigger_location}</td>
+                                </tr>
+                            </tbody>
+                            <!--{loop $list $key $value}-->
+                                <tr>
+                                    <td class="icn">{if $value['extcredits'] >= 0}<img src="{IMGDIR}/rec_add.gif" />{else}<img src="{IMGDIR}/rec_subtract.gif" />{/if}</td>
+                                    <th><a href="forum.php?mod=viewthread&tid={$value['tid']}" target="_blank">$value['desc']</a></th>
+                                    <td class="frm">
+                                        <a class="avatar ftid" href="home.php?mod=space&uid=$value[uid]" target="_blank" c="1"><!--{avatar($value[uid],small)}--></a>
+                                        <cite>
+                                            <a href="home.php?mod=space&uid={$value['uid']}" target="_blank"{eval yl_g_color($value[groupid]);}>$value['username']</a>
+                                            <!--{if $ols[$value[uid]]}--><img src="{IMGDIR}/ol.gif" alt="online" title="{lang ya_lucky:online}" class="vm" /> <!--{/if}-->
+                                        </cite>
+                                        <em><span{if $value['istoday']} class="xi1"{/if}>$value[dateline]</span></em>
+                                    </td>
+                                    <td class="by"><a href="{if $value['pid']}forum.php?mod=redirect&goto=findpost&ptid=$value['tid']&pid=$value['pid']{else}forum.php?mod=viewthread&tid=$value['tid']{/if}" class="xg1" target="_blank">{lang ya_lucky:click_view}</a></td>
+                                </tr>
+                            <!--{/loop}-->
+                        </table>
+                    </div>
+                    <div class="bm bw0 pgs cl">
+                            $multipage
+                            <span class="pgb y"><a href="{$page_url}">{lang ya_lucky:return_index}</a></span>
+                            
+                            <a onclick="showWindow('nav', this.href, 'get', 0)" href="forum.php?mod=misc&amp;action=nav"><img src="{IMGDIR}/pn_post.png" alt="{lang send_posts}" /></a>
+
+                    </div>
+                <!--{else}-->
+                    <div class="emp">{lang ya_lucky:no_event}</div>
+                <!--{/if}-->
+                
+            <!--{else}-->
+            
+                <!--排行榜单-->
+                <ul class="tb cl">
+                    <li{$a_actives[lucky]}><a href="plugin.php?id=ya_lucky&type=rank&view=lucky">{lang ya_lucky:lucky_rank}</a></li>
+                    <li{$a_actives[bad]}><a href="plugin.php?id=ya_lucky&type=rank&view=bad">{lang ya_lucky:bad_rank}</a></li>
+                </ul>
+                <!--{if $list}-->
+                    <div class="xld xlda hasrank">
+                        <!--{loop $list $key $value}-->
+                            <dl class="bbda cl">
+                                <dd class="ranknum"><!--{if $value[rank] <= 3}--><img src="{IMGDIR}/rank_$value[rank].gif" alt="$value[rank]" /><!--{else}-->$value[rank]<!--{/if}--></dd>
+                                <dd class="m avt"><a href="home.php?mod=space&uid=$value[uid]" target="_blank" c="1"><!--{avatar($value[uid],small)}--></a></dd>
+                                <dt class="y">
+                                    <p class="xw0"><a href="home.php?mod=space&uid=$value[uid]" target="_blank" title="{lang ya_lucky:visit_friend}">{lang ya_lucky:visit_friend}</a></p>
+                                    <p class="xw0"><a href="home.php?mod=spacecp&ac=poke&op=send&uid=$value[uid]" id="a_poke_$key" onclick="showWindow(this.id, this.href, 'get', 0);" title="{lang ya_lucky:say_hi}">{lang ya_lucky:say_hi}</a></p>
+                                    <p class="xw0"><a href="home.php?mod=spacecp&ac=pm&op=showmsg&handlekey=showmsg_$value[uid]&touid=$value[uid]&pmid=0&daterange=2" id="a_sendpm_$key" onclick="showWindow('showMsgBox', this.href, 'get', 0)"  title="{lang ya_lucky:send_pm}">{lang ya_lucky:send_pm}</a></p>
+                                    <!--{if isset($value['isfriend']) && !$value['isfriend']}--><p class="xw0"><a href="home.php?mod=spacecp&ac=friend&op=add&uid=$value[uid]" id="a_friend_$key" onclick="showWindow('friend_$key', this.href, 'get', 0)" title="{lang ya_lucky:add_friend}">{lang ya_lucky:add_friend}</a></p><!--{/if}-->
+                                </dt>
+                                <dt>
+                                    <a href="home.php?mod=space&uid=$value[uid]" target="_blank"{eval yl_g_color($value[groupid]);}>$value[username]</a>
+                                    <!--{if $ols[$value[uid]]}--><img src="{IMGDIR}/ol.gif" alt="online" title="{lang ya_lucky:online}" class="vm" /> <!--{/if}-->
+                                </dt>
+                                <dd>
+                                    <p>{$numtitle}: $value[num]</p>
+                                </dd>
+                            </dl>
+                        <!--{/loop}-->
+                    </div>
+                <!--{else}-->
+                    <div class="emp">{lang ya_lucky:no_event}</div>
+                <!--{/if}-->
+
+            <!--{/if}-->
+        </div>
+    </div>
+    <div class="appl">
+	<div class="tbn">
+	    <h2 class="mt bbda">{lang ya_lucky:lucky_stat}</h2>
+	    <ul>
+		<li class="cl{$a_actives_type['rank']}"><a href="plugin.php?id=ya_lucky&type=rank">{lang ya_lucky:rank}</a></li>
+		<li class="cl{$a_actives_type['list']}"><a href="plugin.php?id=ya_lucky&type=list">{lang ya_lucky:eventlog}</a></li>
+	    </ul>
+	</div>
+    </div>
+</div>
+<!--{subtemplate common/footer}-->

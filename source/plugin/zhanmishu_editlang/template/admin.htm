@@ -1,0 +1,37 @@
+<span id="editlang" style="display: none;"></span>
+<script type="text/javascript">
+	window.jQuery || document.write('<script type = "text/javascript" src ="source/plugin/zhanmishu_editlang/template/static/jquery.min.js"><\/script>');
+</script>
+<script type="text/javascript">
+	jQuery.noConflict();
+	jQuery(function(){
+		jQuery(".editsubmit").click(function(event) {
+			var lang = this.title;
+			var val = jQuery("[name='"+this.title+"']").val();
+			var langtype = "{$_GET['langtype']}";
+			var pluginid = "{$_GET['pluginid']}";
+            val = encodeURI(val,"UTF-8");
+			editlang(pluginid,langtype,lang,val);
+		});
+	})
+
+
+
+function editlang(pluginid,langtype,lang,val) {
+        jQuery.ajax({  
+            type: "POST", 
+            dataType: "html", 
+            url: '{ADMINSCRIPT}?action=plugins&operation=config&identifier=zhanmishu_editlang&pmod=edit&editlangsubmit=yes',   
+            data: "pluginid=" + pluginid + "&langtype=" + langtype + "&lang=" + lang+ "&val=" + val+"&formhash={FORMHASH}",  
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+            },  
+            success: function (msg){
+            	var re = jQuery(msg).find('#editlangreturn').html();
+            	location.href='';
+//            	showDialog(re,'notice','','location.href=\'\'','1','','','È·¶¨');
+
+            }
+        });
+    }
+
+</script>

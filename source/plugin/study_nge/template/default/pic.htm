@@ -1,0 +1,65 @@
+<td width="{$study_slide['width']}px" align=center class="nge_border_right" style="border-top:none;">
+    <table border="0" cellSpacing=0 cellPadding=0 width="{$study_slide['width']}">
+      <tbody>
+        <tr>
+        	<td align="center" style="position: relative;">
+						<!--{if $study_nge['pic_way'] == 'js'}-->
+						<div>
+							<div class="module cl slidebox">
+								<ul class="slideshow">
+								<!--{if $study_nge['pic_ad_first']}-->
+									<li style="width: {$study_slide['width']}px; height: {$study_slide['height']}px;">
+											$study_nge['pic_ad_first']
+									</li>
+								<!--{/if}-->
+								<!--{if $study_slide['title_radio']}--><!--{loop $nge_data['content']['image']['new']['pic'] $key $value}-->
+										<li style="width: {$study_slide['width']}px; height: {$study_slide['height']}px;">
+											<a href="{$nge_data['content']['image']['new']['url'][$key]}" title="{$nge_data['content']['image']['new']['text'][$key]}" target="_blank">
+											<img src="{$value}?x-oss-process=style/yunlingge.com" width="{$study_slide['width']}" height="{$study_slide['height']}" alt="{$nge_data['content']['image']['new']['text'][$key]}"/></a>										
+											<span class="nge_title" style="color:{$study_slide['title_color']};background-color:{$study_slide['title_bgcolor']};filter: Alpha(Opacity={$study_slide['title_bgtransparent']});-moz-opacity:{$study_slide['title_bgtransparent_noie']};opacity:{$study_slide['title_bgtransparent_noie']};">{$nge_data['content']['image']['new']['text'][$key]}</span>
+										</li>
+									<!--{/loop}-->
+								<!--{else}-->
+									<!--{loop $nge_data['content']['image']['new']['pic'] $key $value}-->
+										<li style="width: {$study_slide['width']}px; height: {$study_slide['height']}px;">
+											<a href="{$nge_data['content']['image']['new']['url'][$key]}" title="{$nge_data['content']['image']['new']['text'][$key]}" target="_blank">
+											<img src="{$value}?x-oss-process=style/yunlingge.com" width="{$study_slide['width']}" height="{$study_slide['height']}" alt="{$nge_data['content']['image']['new']['text'][$key]}"/></a>										
+										</li>
+									<!--{/loop}-->
+								<!--{/if}-->
+								<!--{if $study_nge['pic_ad_last']}-->
+									<li style="width: {$study_slide['width']}px; height: {$study_slide['height']}px;">
+											$study_nge['pic_ad_last']
+									</li>
+								<!--{/if}-->
+								</ul>
+							</div>
+							<script type="text/javascript">
+							runslideshow();
+							</script>
+						</div>
+						<!--{else}-->
+						<script type="text/javascript">
+						<!--
+						    var swf_width={$study_slide['width']}
+						    var swf_height={$study_slide['height']}
+						    var config="{$study_slide['pic_cut']}|{$study_slide['title_0xcolor']}|{$study_slide['title_0xbgcolor']}|{$study_slide['title_bgtransparent']}|0xffffff|0x0099ff|0x000000"
+						    var files="$flash_pic[pic]"
+						    var links="$flash_pic[url]"
+						    var texts="$flash_pic[text]"
+						document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+						document.write('<param name="movie" value="/source/plugin/study_nge/images/focus.swf" />');
+						document.write('<param name="quality" value="high" />');
+						document.write('<param name="menu" value="false" />');
+						document.write('<param name=wmode value="opaque" />');
+						document.write('<param name="FlashVars" value="config='+config+'&bcastr_flie='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'" />');
+						document.write('<embed src="/source/plugin/study_nge/images/focus.swf" wmode="opaque" FlashVars="config='+config+'&bcastr_flie='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'& menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+						document.write('</object>');
+						//-->
+						</script>
+						<!--{/if}-->
+					</td>
+				</tr>
+			</tbody>
+		</table>
+</td>

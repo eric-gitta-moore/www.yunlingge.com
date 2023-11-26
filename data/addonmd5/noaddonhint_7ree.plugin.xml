@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[noaddonhint_7ree.plugin]]></item>
+	<item id="RevisionID"><![CDATA[9548]]></item>
+	<item id="SN"><![CDATA[2020012615o4T4cyTRR6]]></item>
+	<item id="RevisionDateline"><![CDATA[1565920011]]></item>
+	<item id="Data">
+		<item id="/noaddonhint_7ree.class.php"><![CDATA[ba013cb34eaec75acee0de9ca0ed70e3]]></item>
+		<item id="/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/discuz_plugin_noaddonhint_7ree_TC_UTF8.xml"><![CDATA[3fe465d91d648e6a343d1a4823b06615]]></item>
+		<item id="/more_7ree.inc.php"><![CDATA[fc01ed4ea526572ee985ae981d7081d7]]></item>
+		<item id="/discuz_plugin_noaddonhint_7ree_SC_UTF8.xml"><![CDATA[daf67e9d28b81df107e8dfc8daff61b9]]></item>
+		<item id="/template/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+	</item>
+</root>

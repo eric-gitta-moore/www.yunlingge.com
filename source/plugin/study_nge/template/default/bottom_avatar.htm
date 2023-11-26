@@ -1,0 +1,76 @@
+<!--{loop $nge_data['id']['bottom_avatar'] $key $id}-->
+
+<!--{if $id=='newmember'}-->
+<tr width="960px">
+  <td colspan="3" class="bottom_avatar">
+  	<div style="height: 82px;overflow: hidden;">
+    <div class="bottom_avatar_avatar">{$nge_data['nav']['bottom_avatar'][$id]}</div>
+		<!--{loop $nge_data['content']['bottom_avatar'][$id] $member}-->
+			<div class="bottom_avatar_a">
+				<ul class="avt y" style="float:left;">
+					<a href="home.php?mod=space&uid=$member['uid']"{$target_blank_radio} title="{$member[regdate]}" target="_blank">{$member[avatar]}</a>
+				</ul>
+				<ul style="text-align:center;">
+					<a href="home.php?mod=space&uid=$member['uid']"{$target_blank_radio} title="{$member[regdate]}" target="_blank">{$member['username']}</a>
+				</ul>
+			</div>
+		<!--{/loop}-->
+	</div>
+	</td>
+</tr>
+<!--{elseif $id=='posts'}-->
+<tr width="960px">
+  <td colspan="3" class="bottom_avatar">
+  	<div style="height: 82px;overflow: hidden;">
+    <div class="bottom_avatar_avatar">{$nge_data['nav']['bottom_avatar'][$id]}</div>
+		<!--{loop $nge_data['content']['bottom_avatar'][$id] $member}-->
+			<div class="bottom_avatar_a">
+				<ul class="avt y" style="float:left;">
+					<a href="home.php?mod=space&uid=$member['uid']"{$target_blank_radio} title="$member[num] {lang study_nge:study_nge_title_tie}" target="_blank">{$member[avatar]}</a>
+				</ul>
+				<ul style="text-align:center;">
+					<a href="home.php?mod=space&uid=$member['uid']"{$target_blank_radio} title="$member[num] {lang study_nge:study_nge_title_tie}" target="_blank">{$member['username']}</a>
+				</ul>
+			</div>
+		<!--{/loop}-->
+		</div>
+	</td>
+</tr>				
+<!--{elseif $id=='online'}-->
+<tr width="960px">
+  <td colspan="3" class="bottom_avatar">
+  	<div style="height: 82px;overflow: hidden;">
+    <div class="bottom_avatar_avatar">{$nge_data['nav']['bottom_avatar'][$id]}</div>
+		<!--{loop $nge_data['content']['bottom_avatar'][$id] $member}-->
+			<div class="bottom_avatar_a">
+				<ul class="avt y" style="float:left;">
+					<a href="home.php?mod=space&uid=$member['uid']"{$target_blank_radio} title="$member[oltime] {lang study_nge:study_nge_title_hour}" target="_blank">{$member[avatar]}</a>
+				</ul>
+				<ul style="text-align:center;">
+					<a href="home.php?mod=space&uid=$member['uid']"{$target_blank_radio} title="$member[oltime] {lang study_nge:study_nge_title_hour}" target="_blank">{$member['username']}</a>
+				</ul>
+			</div>
+		<!--{/loop}-->
+		</div>
+	</td>
+</tr>
+<!--{elseif $id=='credits'}-->
+<tr width="960px">
+  <td colspan="3" class="bottom_avatar">
+  	<div style="height: 82px;overflow: hidden;">
+    <div class="bottom_avatar_avatar">{$nge_data['nav']['bottom_avatar'][$id]}</div>
+		<!--{loop $nge_data['content']['bottom_avatar'][$id] $member}-->
+			<div class="bottom_avatar_a">
+				<ul class="avt y" style="float:left;">
+					<a href="home.php?mod=space&uid=$member['uid']"{$target_blank_radio} title="$member[credits] {if $study_nge[credits_extcredit]}$_G[setting][extcredits][$study_nge[credits_extcredit]][title]{else}{lang study_nge:study_nge_title_credits}{/if}" target="_blank">{$member[avatar]}</a>
+				</ul>
+				<ul style="text-align:center;">
+					<a href="home.php?mod=space&uid=$member['uid']"{$target_blank_radio} title="$member[credits] {if $study_nge[credits_extcredit]}$_G[setting][extcredits][$study_nge[credits_extcredit]][title]{else}{lang study_nge:study_nge_title_credits}{/if}" target="_blank">{$member['username']}</a>
+				</ul>
+			</div>
+		<!--{/loop}-->
+		</div>
+	</td>
+</tr>
+<!--{/if}-->
+<!--{/loop}-->

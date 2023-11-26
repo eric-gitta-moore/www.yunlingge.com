@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2019-11-22 11:33]]></item>
+	<item id="From"><![CDATA[博士設計 (http://localhost/dz/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[0]]></item>
+			<item id="name"><![CDATA[歷史上的今天最熱帖]]></item>
+			<item id="identifier"><![CDATA[both_today_history]]></item>
+			<item id="description"><![CDATA[本插件用於在頁麪顯示歷史上的今天用戶發佈的帖子中熱度*高的帖子]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[both_today_history/]]></item>
+			<item id="copyright"><![CDATA[博士設計]]></item>
+			<item id="version"><![CDATA[v1.0.0]]></item>
+			<item id="__modules">
+				<item id="general">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+					<item id="hooks">
+						<item id="common">
+							<item id="header.htm">
+								<item id="global_header"><![CDATA[global_header]]></item>
+							</item>
+						</item>
+						
+					</item>
+				</item>
+				<item id="cron">
+					<item id="both_today_history">
+						<item id="name"><![CDATA[both_today_history]]></item>
+						<item id="displayorder"><![CDATA[0]]></item>
+						<item id="weekday"><![CDATA[-1]]></item>
+						<item id="day"><![CDATA[-1]]></item>
+						<item id="hour"><![CDATA[1]]></item>
+						<item id="minute"><![CDATA[0]]></item>
+						<item id="description"><![CDATA[定時獲取歷史上今天的最熱帖]]></item>
+					</item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4]]></item>
+		<item id="language">
+			<item id="templatelang">
+				<item id="title"><![CDATA[歷史上的今天最熱帖：]]></item>
+				<item id="norecord"><![CDATA[暫無]]></item>
+			</item>
+		</item>
+		<item id="var">
+			<item id="0">
+							<item id="displayorder"><![CDATA[1]]></item>
+							<item id="title"><![CDATA[是否啓用]]></item>
+							<item id="description"><![CDATA[是否啓用該插件]]></item>
+							<item id="variable"><![CDATA[isopen]]></item>
+							<item id="type"><![CDATA[radio]]></item>
+							<item id="value"><![CDATA[0]]></item>
+							<item id="extra"><![CDATA[]]></item>
+						</item>
+						<item id="1">
+							<item id="displayorder"><![CDATA[2]]></item>
+							<item id="title"><![CDATA[字躰顔色]]></item>
+							<item id="description"><![CDATA[選擇最熱帖子在顯示是的字躰顔色]]></item>
+							<item id="variable"><![CDATA[color]]></item>
+							<item id="type"><![CDATA[color]]></item>
+							<item id="value"><![CDATA[#3399FF]]></item>
+							<item id="extra"><![CDATA[]]></item>
+						</item>
+						<item id="2">
+							<item id="displayorder"><![CDATA[3]]></item>
+							<item id="title"><![CDATA[字躰大小]]></item>
+							<item id="description"><![CDATA[最熱貼標題字躰大小，數值越大字躰越大]]></item>
+							<item id="variable"><![CDATA[size]]></item>
+							<item id="type"><![CDATA[number]]></item>
+							<item id="value"><![CDATA[3]]></item>
+							<item id="extra"><![CDATA[]]></item>
+						</item>
+						<item id="3">
+							<item id="displayorder"><![CDATA[4]]></item>
+							<item id="title"><![CDATA[對齊方式]]></item>
+							<item id="description"><![CDATA[帖子標題文本對齊方式]]></item>
+							<item id="variable"><![CDATA[align]]></item>
+							<item id="type"><![CDATA[select]]></item>
+							<item id="value"><![CDATA[left]]></item>
+							<item id="extra"><![CDATA[left=左對齊
+			center=居中對齊
+			right=右對齊]]></item>
+						</item>
+						<item id="4">
+							<item id="displayorder"><![CDATA[6]]></item>
+							<item id="title"><![CDATA[顯示背景色]]></item>
+							<item id="description"><![CDATA[選擇顯示最熱貼的背景色]]></item>
+							<item id="variable"><![CDATA[bgcolor]]></item>
+							<item id="type"><![CDATA[color]]></item>
+							<item id="value"><![CDATA[#CCCCCC]]></item>
+							<item id="extra"><![CDATA[]]></item>
+						</item>
+						<item id="5">
+							<item id="displayorder"><![CDATA[7]]></item>
+							<item id="title"><![CDATA[包含板塊]]></item>
+							<item id="description"><![CDATA[包含哪些板塊的帖子，“空”表示所有]]></item>
+							<item id="variable"><![CDATA[inforums]]></item>
+							<item id="type"><![CDATA[forums]]></item>
+							<item id="value"><![CDATA[]]></item>
+							<item id="extra"><![CDATA[]]></item>
+						</item>
+						<item id="6">
+							<item id="displayorder"><![CDATA[8]]></item>
+							<item id="title"><![CDATA[包含用戶組]]></item>
+							<item id="description"><![CDATA[包含哪些用戶組的帖子，“空”表示所有用戶組]]></item>
+							<item id="variable"><![CDATA[ingroups]]></item>
+							<item id="type"><![CDATA[groups]]></item>
+							<item id="value"><![CDATA[]]></item>
+							<item id="extra"><![CDATA[]]></item>
+						</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

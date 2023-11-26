@@ -1,0 +1,104 @@
+<ul class="tb cl">
+<li {$x[0]}><a href="home.php?mod=spacecp&ac=plugin&id=xhkj5com_dashang:keke_myds&o=0">{lang xhkj5com_dashang:jbsz}</a></li>
+<li {$x[1]}><a href="home.php?mod=spacecp&ac=plugin&id=xhkj5com_dashang:keke_myds&o=1">{lang xhkj5com_dashang:zfbsk}</a></li>
+<li {$x[2]}><a href="home.php?mod=spacecp&ac=plugin&id=xhkj5com_dashang:keke_myds&o=2">{lang xhkj5com_dashang:wxsk}</a></li>
+<li {$x[3]}><a href="home.php?mod=spacecp&ac=plugin&id=xhkj5com_dashang:keke_myds&o=3">{lang xhkj5com_dashang:wsmhqff}</a></li>
+</ul>
+{if $o==0}
+<form enctype="multipart/form-data" method="post" action="home.php?mod=spacecp&ac=plugin&id=xhkj5com_dashang:keke_myds&pluginop=text&o={$o}">
+<input type="hidden" name="formhash" value="{FORMHASH}" />
+<table cellspacing="0" cellpadding="0" class="tfm" style="table-layout:fixed;margin-top:10px;">
+	<tbody>
+        <tr>
+            <th>
+                {lang xhkj5com_dashang:dsysz}
+            </th>
+            <td>
+                <input type="text" name="texta" id="texta"  size="50" value="{$vl}">
+             </td>
+        </tr>
+       
+      <tr>
+			<td colspan="2">
+				<button type="submit" name="text" value="true" class="pn pnc"><strong>{lang xhkj5com_dashang:bc}</strong></button>
+			</td>
+	  </tr>
+        
+	</tbody>
+</table>
+</form>
+
+{elseif $o==1 || $o==2}
+<form enctype="multipart/form-data" method="post" action="home.php?mod=spacecp&ac=plugin&id=xhkj5com_dashang:keke_myds&pluginop=update&o={$o}">
+<input type="hidden" name="formhash" value="{FORMHASH}" />
+<!--<p class="tbmu">{lang lucas_watermark:my_watermark}</p>-->
+
+
+<table cellspacing="0" cellpadding="0" class="tfm" style="table-layout:fixed;margin-top:10px;">
+	<tbody>
+        <tr>
+            <th class="mtm pns">
+                {lang xhkj5com_dashang:xqewm}
+            </th>
+            <td class="mtm pns">
+                <input type="file" id="doc" onchange="javascript:setImagePreview();" name="file" class="pf" size="25"><br /> <span style="color:#999; line-height:25px;">{lang xhkj5com_dashang:scxz}{$xhkj5com_dashang['size']}K</span>
+             </td>
+        </tr>
+        <tr>
+            <th class="mtm pns">
+                {lang xhkj5com_dashang:wdskewm}
+            </th>
+            <td class="mtm pns">
+                <img id="preview" src="{$icon_file}?{TIMESTAMP}" style="width:150px;"/><br /><input type="checkbox" name="del" />{lang xhkj5com_dashang:sc}<br />
+                <input type="hidden" name="file_path" value="{$icon_file}" />
+             </td>
+        </tr>
+      <tr>
+		
+      <tr>
+			<td colspan="2">
+			    
+				<button type="submit" name="submitwater" value="true" class="pn pnc"><strong>{lang xhkj5com_dashang:bc}</strong></button>
+				<span id="submit_result" class="rq"></span>
+			</td>
+	  </tr>
+        
+	</tbody>
+</table>
+</form>
+{elseif $o==3}<style>.kekeds_sm{ line-height:25px; color:#333}</style><div class="kekeds_sm"><p></p>
+<p>&nbsp; </p>
+{lang xhkj5com_dashang:hqfs}
+<p>&nbsp; </p>
+  </div>
+  {/if}</p>
+<script type="text/javascript">
+	function setImagePreview(avalue) {
+		var docObj = document.getElementById("doc");
+		var imgObjPreview = document.getElementById("preview");
+		//div
+		var divs = document.getElementById("localImag");
+		if (docObj.files && docObj.files[0]) {
+			imgObjPreview.style.display = 'block';
+			imgObjPreview.style.width = '150px';
+			imgObjPreview.style.height = '150px';
+		   imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+		} else {
+			docObj.select();
+			var imgSrc = document.selection.createRange().text;
+			var localImagId = document.getElementById("localImag");
+			localImagId.style.width = "100px";
+			localImagId.style.height = "100px";
+			try {
+				localImagId.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+				localImagId.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+			} catch(e) {
+				alert("您上传的图片格式不正确，请重新选择!");
+				return false;
+			}
+			imgObjPreview.style.display = 'none';
+			document.selection.empty();
+		}
+		return true;
+	}
+</script>

@@ -1,0 +1,58 @@
+<!--{subtemplate common/header_ajax}-->
+<style type="text/css">
+.vest_list{
+	<!--{if $limit > 54}-->
+	width: 740px;
+	<!--{else}-->
+   	width: 720px;
+	<!--{/if}-->
+	height: 475px;
+	overflow-y: auto;
+}
+.vest_list ul li{
+	float: left;
+	margin: 5px 5px 0 5px;
+	padding: 0;
+	position: relative;
+	cursor: pointer;
+}
+.vest_list ul li img{
+	width: 70px;
+	height: 70px;
+	border-radius: 5px;
+}
+.vest_list ul li .username{
+	position: absolute;
+	bottom: 3px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: black;
+	opacity: 0.7;
+	width: 100%;
+	height: 15px;
+	line-height: 15px;
+	color: white;
+	text-align: center;
+	overflow: hidden;
+}
+</style>
+<script type="text/javascript">
+function vest_add(uid, avatar)
+{
+	document.getElementById('ror_vest_uid').value = uid;
+	document.getElementById('ror_vest_avatar').src = avatar;
+	
+	hideWindow('{$handlekey}');
+}
+</script>
+<div class="tm_c vest_list">
+	<ul>
+		<!--{loop $vest_list $key $value}-->
+		<li onclick="vest_add({$value['uid']}, '{$value['avatar']}')">
+			<img src="{$value['avatar']}" title="{$value['username']}" alt="{$value['username']}"/>
+			<div class="username" title="{$value['username']}">{$value['username']}</div>
+		</li>
+		<!--{/loop}-->
+	</ul>
+</div>
+<!--{subtemplate common/footer_ajax}-->

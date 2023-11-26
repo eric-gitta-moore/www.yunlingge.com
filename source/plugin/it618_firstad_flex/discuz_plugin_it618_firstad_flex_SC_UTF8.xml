@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+	<item id="Time"><![CDATA[2012-11-07 09:55]]></item>
+	<item id="From"><![CDATA[IT618 (http://www.cnit618.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[it618超级格子广告]]></item>
+			<item id="identifier"><![CDATA[it618_firstad_flex]]></item>
+			<item id="description"><![CDATA[非常实用的可以自定义图片广告，文字广告与联盟广告，灵活多变的排版。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[it618_firstad_flex/]]></item>
+			<item id="copyright"><![CDATA[IT618]]></item>
+			<item id="version"><![CDATA[v1.5]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[firstad_flex]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[admin_ad]]></item>
+					<item id="menu"><![CDATA[广告管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[help]]></item>
+					<item id="menu"><![CDATA[<font color=red><b>IT618应用中心</b></font>]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[是否启用广告管理]]></item>
+				<item id="description"><![CDATA[如果不启用，广告内容来自本设置下面的广告内容，如果启用了广告内容来自广告管理，并且广告管理支持指定页面显示指定内容。]]></item>
+				<item id="variable"><![CDATA[ad_isad]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[是否显示当前页的地址]]></item>
+				<item id="description"><![CDATA[这个很重要，当你想在指定页面显示指定广告时，一定要知道那个页面的地址，这个设置专门用于显示当前页地址。特别是当你的地址是伪静态时更要用这个设置。因为插件只识别动态地址。]]></item>
+				<item id="variable"><![CDATA[ad_isurl]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[格子广告内容]]></item>
+				<item id="description"><![CDATA[广告内容格式：
+广告文字1=={图片地址1(img)广告链接1}
+广告文字2=={文字描述2(txt)广告链接2}
+
+注意：(img)表示是图片广告，(txt)表示是文字广告]]></item>
+				<item id="variable"><![CDATA[ads]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[测试广告1=={{source/plugin/it618_firstad_flex/adimg/ad1.jpg(img)http://www.cnit618.com}}
+测试广告2=={{source/plugin/it618_firstad_flex/adimg/ad2.jpg(img)http://www.cnit618.com}}
+测试广告3=={{source/plugin/it618_firstad_flex/adimg/ad3.jpg(img)http://www.cnit618.com}}
+<span style="font-size:14px;color:#F00F00;text-decoration:underline;font-weight:bold;">测试广告4</span>=={{测试广告4描述(txt)http://www.cnit618.com}}
+测试广告5=={{测试广告5描述(txt)http://www.cnit618.com}}
+测试广告6=={{测试广告6描述(txt)http://www.cnit618.com}}
+测试广告7=={{测试广告7描述(txt)http://www.cnit618.com}}
+测试广告8=={{测试广告8描述(txt)http://www.cnit618.com}}
+测试广告9=={{测试广告4描述(txt)http://www.cnit618.com}}
+测试广告5=={{测试广告10描述(txt)http://www.cnit618.com}}
+测试广告6=={{测试广告11描述(txt)http://www.cnit618.com}}
+<span style="font-size:14px;color:#F00F00;text-decoration:underline;font-weight:bold;">测试广告7</span>=={{测试广告12描述(txt)http://www.cnit618.com}}
+测试广告8=={{测试广告13描述(txt)http://www.cnit618.com}}
+测试广告14=={{测试广告4描述(txt)http://www.cnit618.com}}
+测试广告5=={{测试广告15描述(txt)http://www.cnit618.com}}
+测试广告6=={{测试广告16描述(txt)http://www.cnit618.com}}
+测试广告7=={{测试广告17描述(txt)http://www.cnit618.com}}
+<span style="font-size:14px;color:#F00F00;text-decoration:underline;font-weight:bold;">测试广告8==</span>{{测试广告18描述(txt)http://www.cnit618.com}}]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[格子顶部联盟广告]]></item>
+				<item id="description"><![CDATA[一般放宽度为960px的联盟广告或自定义的图片广告，支持HTML代码。如果为空就不显示。]]></item>
+				<item id="variable"><![CDATA[adtop]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[格子底部联盟广告]]></item>
+				<item id="description"><![CDATA[一般放宽度为960px的联盟广告或自定义的图片广告，支持HTML代码。如果为空就不显示。]]></item>
+				<item id="variable"><![CDATA[adbottom]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[广告边框颜色]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[bordercolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#e8e8e8]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[格子边框样式]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[ad_borderstyle]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=虚线(dashed)
+2=实线(solid)]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[格子边框颜色]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[ad_bordercolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#0066CC]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[格子背景颜色]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[ad_bgcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FFFF00]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[格子对齐方式]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[ad_align]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[1=左对齐
+2=右对齐
+3=居中对齐]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[格子高度]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[ad_height]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[30]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[格子宽度]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[ad_width]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[185]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[格子内边距]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[ad_padding]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[格子外边距]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[ad_margin]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[15]]></item>
+				<item id="title"><![CDATA[排版方案]]></item>
+				<item id="description"><![CDATA[有四种排版方案，前提是设置了格子的高度与宽度。]]></item>
+				<item id="variable"><![CDATA[ad_style]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[1=格子固定高度
+2=格子固定宽度
+3=格子固定高度与宽度
+4=格子高度宽度自适应]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[16]]></item>
+				<item id="title"><![CDATA[排版方案适用对象]]></item>
+				<item id="description"><![CDATA[排版方案适用对象有文字广告与图片广告，一般文字广告适合高度宽度固定排版，但是图片广告如果尺寸相同也可以高度宽度固定排版。]]></item>
+				<item id="variable"><![CDATA[ad_stylewho]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=文字广告
+2=图片广告
+3=文字广告与图片广告]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[17]]></item>
+				<item id="title"><![CDATA[图片广告是否无边框]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[ad_isimgborder]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[18]]></item>
+				<item id="title"><![CDATA[用户组显示权限]]></item>
+				<item id="description"><![CDATA[没有权限的用户组不显示此应用。注意：为空时是全部用户可看到应用。
+
+技巧提示：调试应用时，可以设置管理员有显示权限，只有管理员可以看到应用。]]></item>
+				<item id="variable"><![CDATA[usergroup]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[9]]></item>
+					<item id="1"><![CDATA[10]]></item>
+					<item id="2"><![CDATA[11]]></item>
+					<item id="3"><![CDATA[12]]></item>
+					<item id="4"><![CDATA[13]]></item>
+					<item id="5"><![CDATA[14]]></item>
+					<item id="6"><![CDATA[15]]></item>
+					<item id="7"><![CDATA[20]]></item>
+					<item id="8"><![CDATA[16]]></item>
+					<item id="9"><![CDATA[17]]></item>
+					<item id="10"><![CDATA[18]]></item>
+					<item id="11"><![CDATA[19]]></item>
+					<item id="12"><![CDATA[1]]></item>
+					<item id="13"><![CDATA[2]]></item>
+					<item id="14"><![CDATA[3]]></item>
+					<item id="15"><![CDATA[4]]></item>
+					<item id="16"><![CDATA[5]]></item>
+					<item id="17"><![CDATA[6]]></item>
+					<item id="18"><![CDATA[7]]></item>
+					<item id="19"><![CDATA[8]]></item>
+				</item>
+			</item>
+			<item id="18">
+				<item id="displayorder"><![CDATA[19]]></item>
+				<item id="title"><![CDATA[开启论坛首页默认调用]]></item>
+				<item id="description"><![CDATA[默认是在论坛首页显示应用，如果你DIY调用了应用，而不想在论坛首页默认调用，那么可以不开启此设置。
+DIY调用教程：http://www.cnit618.com/thread-1483-1-1.html]]></item>
+				<item id="variable"><![CDATA[indextop]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="19">
+				<item id="displayorder"><![CDATA[20]]></item>
+				<item id="title"><![CDATA[每页记录数]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[pagecount]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[20]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="it618_ad_lang1"><![CDATA[广告更新成功！(已存在未修改数:]]></item>
+				<item id="it618_ad_lang2"><![CDATA[成功修改数:]]></item>
+				<item id="it618_ad_lang3"><![CDATA[已存在未添加数:]]></item>
+				<item id="it618_ad_lang4"><![CDATA[成功添加数:]]></item>
+				<item id="it618_ad_lang5"><![CDATA[成功删除数:]]></item>
+				<item id="it618_ad_lang6"><![CDATA[广告管理]]></item>
+				<item id="it618_ad_lang7"><![CDATA[查找]]></item>
+				<item id="it618_ad_lang8"><![CDATA[按广告标题：]]></item>
+				<item id="it618_ad_lang9"><![CDATA[广告数：]]></item>
+				<item id="it618_ad_lang10"><![CDATA[提示：广告所在页面特征字符是指获取你要放广告的页面地址的特征字符，比如，你要放到某个论坛列表页，一看就知道这部分字符forum.php?mod=forumdisplay&fid=2是主要特征。注意广告所在页面功能一定要用到DIY调用，调用方法：<a href=http://www.cnit618.com/thread-1483-1-1.html target=_blank>http://www.cnit618.com/thread-1483-1-1.html</a>
+DIY调用标识符：it618_firstad_flex<br><br>广告所在页面特征字符实例讲解，论坛首页：#forum.php,所有论坛列表页：#forum.php?mod=forumdisplay#,所有论坛帖子页：#forum.php?mod=viewthread#]]></item>
+				<item id="it618_ad_lang11"><![CDATA[广告标题]]></item>
+				<item id="it618_ad_lang12"><![CDATA[广告图片]]></item>
+				<item id="it618_ad_lang13"><![CDATA[广告链接/广告提示信息]]></item>
+				<item id="it618_ad_lang14"><![CDATA[广告所在页面特征字符]]></item>
+				<item id="it618_ad_lang15"><![CDATA[是否有效/排序]]></item>
+				<item id="it618_ad_lang16"><![CDATA[图片广告可以不填此项]]></item>
+				<item id="it618_ad_lang17"><![CDATA[文字广告可以不填此项]]></item>
+				<item id="it618_ad_lang18"><![CDATA[格式：替换符(#)+特征符+替换符(#)<br>例如：#forum.php?mod=forumdisplay#]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+	</item>
+</root>

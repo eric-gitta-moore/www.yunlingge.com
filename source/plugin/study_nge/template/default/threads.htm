@@ -1,0 +1,118 @@
+<td class="nge_border_right">
+    <table border="0" cellSpacing=0 cellPadding=0 width="100%" style="table-layout:auto;">
+        <tbody>
+        <tr valign="top">
+	        <td>
+	        	<img src="source/plugin/study_nge/images/list{$thread_num}.gif" alt="{lang study_nge:study_nge_tmp_004}"/>
+	        </td>
+	        <td class="nge_list_td">
+		        <!--{if $nge_config['threadcard_select'] == 2}-->
+		        <!--{loop $nge_data['id']['threads'] $key $id}-->
+				        	<div id="study_nge_m_threads_{$key}" class="<!--{if $key == '0'}-->nge_dis<!--{else}-->nge_undis<!--{/if}-->">
+				        		<!--{loop $nge_data['content']['threads'][$id] $tid $thread}-->
+				        		<div class="nge_list_div">
+				        			<div style="float:right;margin-right:5px;display:inline;overflow:hidden;text-overflow:ellipsis;">
+												&nbsp;
+												<!--{if $nge_config['common_icon_radio']}-->
+													<!--{if $thread['attachment'] == 2}-->
+														<img src="/static/image/filetype/image_s.gif" alt="attach_img" title="{lang study_nge:attach_img}" align="absmiddle" />
+													<!--{elseif $thread['attachment'] == 1}-->
+														<img src="/static/image/filetype/common.gif" alt="attachment" title="{lang study_nge:attachment}" align="absmiddle" />
+													<!--{/if}-->
+													
+													<!--{if $thread['digest'] > 0}-->
+														<img src="/static/image/common/digest_{$thread[digest]}.gif" align="absmiddle" alt="digest" title="{lang study_nge:thread_digest} {$thread[digest]}" />
+													<!--{/if}-->
+													
+													<!--{if $thread['rate'] > 0}-->
+															<img src="/static/image/common/agree.gif" align="absmiddle" alt="agree" title="{lang study_nge:rate_credit_add}" />
+													<!--{elseif $thread['rate'] < 0}-->
+															<img src="/static/image/common/disagree.gif" align="absmiddle" alt="disagree" title="{lang study_nge:posts_deducted}" />
+													<!--{/if}-->
+												<!--{/if}-->
+				        				
+					        			<!--{if $study_nge[common_tiezi_right]==3}-->
+							        			<!--{if $nge_data['config']['threads'][$id]['right_reply']}-->
+								        			<!--{if $thread['lastposter']}-->
+								        				<a href="home.php?mod=space&username={$thread['url_lastposter']}" style="color:{$nge_config['tiezi_right_color']}" {$target_blank_radio} c="1" >[{$thread['lastposter']}]</a>
+								        			<!--{else}-->
+								        				<font color="{$nge_config['tiezi_right_color']}">[{$_G[setting][anonymoustext]}]</font>
+							        				<!--{/if}-->
+							        			<!--{else}-->
+								        			<!--{if $thread['author']}-->
+								        				<a href="home.php?mod=space&uid={$thread['authorid']}" style="color:{$nge_config['tiezi_right_color']}" {$target_blank_radio} c="1" >[{$thread['author']}]</a>	
+							        				<!--{else}-->
+								        				<font color="{$nge_config['tiezi_right_color']}">[{$_G[setting][anonymoustext]}]</font>
+							        				<!--{/if}-->
+							        			<!--{/if}-->
+						      			<!--{elseif $study_nge[common_tiezi_right]==2}-->
+						        				<!--{if $nge_data['config']['threads'][$id]['right_reply']}-->
+							        				{$thread['lastpost']}	
+							        			<!--{else}-->
+							        				{$thread['dateline']}
+							        			<!--{/if}-->
+						      			<!--{/if}-->
+				        			</div>
+				        			<div style="display:inline;overflow:hidden;text-overflow:ellipsis;">
+					        			<!--{if $study_nge[common_fid_radio]}-->
+													<a href="forum.php?mod=forumdisplay&fid={$thread[fid]}" title="{$study_nge_forums[$thread[fid]][name]}" {$thread['highlight']} {$target_blank_radio} >[{$study_nge_forums[$thread[fid]][name]}]</a>
+												<!--{/if}-->
+												<!--{if $study_nge[newreply_gotolastpost] && $id =='newreply' && $_G[uid]}-->
+					        	 			<a href="forum.php?mod=redirect&tid={$thread[tid]}&goto=lastpost#lastpost" title="{lang study_nge:study_nge_tmp_011} {$study_nge_forums[$thread[fid]][name]}\n{lang study_nge:study_nge_tmp_012} {$thread[subject]}\n{lang study_nge:study_nge_tmp_013} <!--{if $thread[author]}-->{$thread['author']}<!--{else}-->{$_G[setting][anonymoustext]}<!--{/if}--> ({$thread['dateline']})\n{lang study_nge:study_nge_tmp_014} {$thread[views]} {lang study_nge:study_nge_tmp_016} {lang study_nge:study_nge_tmp_015} {$thread[replies]} {lang study_nge:study_nge_tmp_016}\n{lang study_nge:study_nge_tmp_015} <!--{if $thread[lastposter]}-->{$thread['lastposter']}<!--{else}-->{$_G[setting][anonymoustext]}<!--{/if}--> ({$thread['lastpost']})" {$thread['highlight']} {$target_blank_radio} name="xxx">$thread[subject]</a>
+												<!--{else}-->
+													<a href="forum.php?mod=viewthread&tid=$thread[tid]" title="{lang study_nge:study_nge_tmp_011} {$study_nge_forums[$thread[fid]][name]}\n{lang study_nge:study_nge_tmp_012} {$thread[subject]}\n{lang study_nge:study_nge_tmp_013} <!--{if $thread[author]}-->{$thread['author']}<!--{else}-->{$_G[setting][anonymoustext]}<!--{/if}--> ({$thread['dateline']})\n{lang study_nge:study_nge_tmp_014} {$thread[views]} {lang study_nge:study_nge_tmp_016} {lang study_nge:study_nge_tmp_015} {$thread[replies]} {lang study_nge:study_nge_tmp_016}\n{lang study_nge:study_nge_tmp_015} <!--{if $thread[lastposter]}-->{$thread['lastposter']}<!--{else}-->{$_G[setting][anonymoustext]}<!--{/if}--> ({$thread['lastpost']})" {$thread['highlight']} {$target_blank_radio} name="xxx">$thread[subject]</a>
+												<!--{/if}-->
+											</div>
+										</div>
+										<!--{/loop}-->
+				        	</div>
+							<!--{/loop}-->
+		        <!--{else}-->
+		        	<!--{loop $nge_data['id']['threads'] $key $id}-->
+				        	<div id="study_nge_m_threads_{$key}" class="<!--{if $key == '0'}-->nge_dis<!--{else}-->nge_undis<!--{/if}-->">
+				        		<!--{loop $nge_data['content']['threads'][$id] $tid $thread}-->
+				        		<div class="nge_list_div">
+				        			<div style='float:right;margin-right:5px' style="display:inline;overflow:hidden;text-overflow:ellipsis;">
+				        			<!--{if $study_nge[common_tiezi_right]==3}-->
+						        			<!--{if $nge_data['config']['threads'][$id]['right_reply']}-->
+							        			<!--{if $thread['lastposter']}-->
+							        				<a href="home.php?mod=space&username={$thread['url_lastposter']}" style="color:{$nge_config['tiezi_right_color']}" {$target_blank_radio} c="1" >[{$thread['lastposter']}]</a>
+							        			<!--{else}-->
+							        				<font color="{$nge_config['tiezi_right_color']}">[{$_G[setting][anonymoustext]}]</font>
+						        				<!--{/if}-->
+						        			<!--{else}-->
+							        			<!--{if $thread['author']}-->
+							        				<a href="home.php?mod=space&uid={$thread['authorid']}" style="color:{$nge_config['tiezi_right_color']}" {$target_blank_radio} c="1" >[{$thread['author']}]</a>	
+						        				<!--{else}-->
+							        				<font color="{$nge_config['tiezi_right_color']}">[{$_G[setting][anonymoustext]}]</font>
+						        				<!--{/if}-->
+						        			<!--{/if}-->
+					      			<!--{elseif $study_nge[common_tiezi_right]==2}-->
+					        				<!--{if $nge_data['config']['threads'][$id]['right_reply']}-->
+						        				{$thread['lastpost']}	
+						        			<!--{else}-->
+						        				{$thread['dateline']}
+						        			<!--{/if}-->
+					      			<!--{/if}-->
+				        			</div>
+				        			<div style="display:inline;overflow:hidden;text-overflow:ellipsis;">
+				        			<!--{if $study_nge[common_fid_radio]}-->
+												<a href="forum.php?mod=forumdisplay&fid={$thread[fid]}" title="{$study_nge_forums[$thread[fid]][name]}" {$thread['highlight']} {$target_blank_radio} >[{$study_nge_forums[$thread[fid]][name]}]</a>
+											<!--{/if}-->
+											<!--{if $study_nge[newreply_gotolastpost] && $id =='newreply' && $_G[uid]}-->
+				        	 			<a href="forum.php?mod=redirect&tid={$thread[tid]}&goto=lastpost#lastpost" nge_c="1" nge_t="{$thread[tid]}" {$thread['highlight']} {$target_blank_radio}>$thread[subject]</a>
+											<!--{else}-->
+												<a href="forum.php?mod=viewthread&tid=$thread[tid]" nge_c="1" nge_t="{$thread[tid]}" {$thread['highlight']} {$target_blank_radio}>$thread[subject]</a>
+											<!--{/if}-->
+										</div>
+										</div>
+										<!--{/loop}-->
+				        	</div>
+							<!--{/loop}-->
+						<!--{/if}-->
+						<!-- Powered by 1314study.com -->
+	        </td>
+        </tr>
+        </tbody>
+    </table>
+</td>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2020-02-24 15:48]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://dz1.cc/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[TAG标签自动获取SEO]]></item>
+			<item id="identifier"><![CDATA[exx_tagseo]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[exx_tagseo/]]></item>
+			<item id="copyright"><![CDATA[讯幻网（www.xhkj5.com）]]></item>
+			<item id="version"><![CDATA[V1.3]]></item>
+			<item id="__modules">
+				<item id="1">
+					<item id="name"><![CDATA[exx_tagseo]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[tag获取方式]]></item>
+				<item id="description"><![CDATA[tag获取方式，百度相关搜索获取方式仅百度相关搜索版本才能使用。]]></item>
+				<item id="variable"><![CDATA[hq]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[2=百度相关搜索关键词]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[允许触发的用户组]]></item>
+				<item id="description"><![CDATA[允许触发的用户组，保持默认即可]]></item>
+				<item id="variable"><![CDATA[yhz]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+					<item id="1"><![CDATA[9]]></item>
+					<item id="2"><![CDATA[10]]></item>
+					<item id="3"><![CDATA[11]]></item>
+					<item id="4"><![CDATA[12]]></item>
+					<item id="5"><![CDATA[13]]></item>
+					<item id="6"><![CDATA[14]]></item>
+					<item id="7"><![CDATA[15]]></item>
+					<item id="8"><![CDATA[16]]></item>
+					<item id="9"><![CDATA[17]]></item>
+					<item id="10"><![CDATA[18]]></item>
+					<item id="11"><![CDATA[19]]></item>
+					<item id="12"><![CDATA[1]]></item>
+					<item id="13"><![CDATA[2]]></item>
+					<item id="14"><![CDATA[3]]></item>
+					<item id="15"><![CDATA[4]]></item>
+					<item id="16"><![CDATA[5]]></item>
+					<item id="17"><![CDATA[6]]></item>
+					<item id="18"><![CDATA[7]]></item>
+					<item id="19"><![CDATA[8]]></item>
+				</item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[强制tag模式]]></item>
+				<item id="description"><![CDATA[启用后tag标签将强制为插件获取tag，发帖时设置的tag标签无效。若关闭，则插件仅对没有tag的帖子起效。]]></item>
+				<item id="variable"><![CDATA[qz]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[获取tag数量]]></item>
+				<item id="description"><![CDATA[获取tag数量，最大数量为5]]></item>
+				<item id="variable"><![CDATA[sl]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[开启的版块]]></item>
+				<item id="description"><![CDATA[开启的版块，当为空时所有版块均生效]]></item>
+				<item id="variable"><![CDATA[bk]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[访问的cookie]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[cookie]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[BIDUPSID=B210D85B4FE55C0FBFDBF0BB84EFB9BE; PSTM=1580779019; BAIDUID=B619299E6A6C6E43844C7B42FCC2F0D6:FG=1; __cfduid=d6651fbf4598cb04ffb3ef98099c8c4fc1581954581; BDUSS=1RQZ1Z0QVUwM2FaZU9GN2t3dXVJY0ZwQ1FBc2k2c2tTbFFQOURuczdvS3ZqWGxlRUFBQUFBJCQAAAAAAAAAAAEAAADsSW5ftPK9tNPNdjUyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK8AUl6vAFJeU; yjs_js_security_passport=e85ea2386abeb67cf0c485200410a8c073470b4f_1582494398_js; plus_lsv=f197ee21ffd230fd; BDORZ=AE84CDB3A529C0F8A2B9DCDD1D18B695; plus_cv=1::m:49a3f4a6; BDICON=10123156; ysm=8065|8065; delPer=0; rsv_i=a7a7woSoHguUdaVNiLo%2B2dcqpkoKAWEEvEwhW8nfmoU6Hqmn613hDVfYKhdcbsqcPbKzjwxMqqCdnIR4vDQUkFYw%2Bi24zmM; SE_LAUNCH=5%3A26375400_0%3A26375400; BDPASSGATE=IlPT2AEptyoA_yiU4VKI3kIN8efjWrK41fPDSDRpBVSPfCaWmhH3BrVMSEnHN-a81iTM-Y3fo_-5kV8PQlxmicwdggYTpW-H7CG-zNSF5aTvL_NgzbIZCb4jQUZqqvzxkgl-zuEHQ49zBCstpBTbpuo4ivKl73JQb4r56kCygKrl_oGm2X8My88bOXVfYZ0APNu594rXnEpKLDm4YtKtT9PecSIMR7QEy0uykssk3QnTtyYp_A3lO3Mi1Fz5BJV2BxCyGwC78qSo1-QwrpNiVSw--USY9tC; ASUV=1.2.126; H_WISE_SIDS=142112_114551_142058_142080_142506_141373_142209_135847_141000_142019_141837_141651_142514_140989_142390_140324_140578_133847_140065_131423_142172_128143_107311_131113_140993_140312_140798_140967_137703_110085_142272_138595_142345_140853_138878_137979_140174_131247_141261_138165_138883_140259_141942_127969_139136_140623_140593_138425_141191_141930; PSINO=7; __bsi=6524481296554925674_00_32_R_N_0_0303_c02f_Y; H_PS_PSSID=1426_21115_30823_26350]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+	</item>
+</root>

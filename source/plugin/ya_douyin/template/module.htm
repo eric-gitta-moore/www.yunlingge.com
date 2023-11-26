@@ -1,0 +1,22 @@
+{eval
+function ydy_get_mate(){
+}
+<!--{block return}-->
+    <meta name="referrer" content="no-referrer"/>
+<!--{/block}-->
+<!--{eval return $return;}-->
+{eval
+}
+
+function ydy_get_video($url,$w,$h){
+global $_G;
+}
+<!--{block return}-->
+<video controls name="media" style="width:{$w};height:{$h}" class="has_douyin">
+    <source src="http://{$url}" type="video/mp4">
+</video>
+<!--{/block}-->
+<!--{eval return $return;}-->
+{eval
+}
+}

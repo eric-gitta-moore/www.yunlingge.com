@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[ya_douyin.plugin]]></item>
+	<item id="RevisionID"><![CDATA[86205]]></item>
+	<item id="SN"><![CDATA[2020012608w4JBAeMTbB]]></item>
+	<item id="RevisionDateline"><![CDATA[1572139807]]></item>
+	<item id="Data">
+		<item id="/class/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/class/base.class.php"><![CDATA[c73db62e1ac5429d507d8e36ee4ce0a8]]></item>
+		<item id="/douyin.class.php"><![CDATA[95a1105e998a7beca1b4c935d6a0128a]]></item>
+		<item id="/discuz_plugin_ya_douyin_SC_UTF8.xml"><![CDATA[555e24d07debb6840c1faf12cafcba16]]></item>
+		<item id="/uninstall.php"><![CDATA[6e29800559fde072e008d25e080a549f]]></item>
+		<item id="/src/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/src/app_src.php"><![CDATA[114bfafb0389a538ed1ca2252fe213a2]]></item>
+		<item id="/src/upgrade_src.php"><![CDATA[f656e44bd3bd1a0d45e1c66cc1e3ac11]]></item>
+		<item id="/src/install_src.php"><![CDATA[aaad38c20212a0f56000e1e5938a8b87]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/function/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/function/douyin.func.php"><![CDATA[cff0d6953ee14794674f3a4a510d287d]]></item>
+		<item id="/function/admincp.func.php"><![CDATA[8d4688d510a1787d9edb984af62b9bcd]]></item>
+		<item id="/install.php"><![CDATA[d70d7667a5964f9c465196709b6223d7]]></item>
+		<item id="/upgrade.php"><![CDATA[70d097a19b8ff70fa5d07e7fa2e52622]]></item>
+		<item id="/template/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/module.htm"><![CDATA[1d09638707d83bfdea09cd523d967015]]></item>
+		<item id="/discuz_plugin_ya_douyin_TC_UTF8.xml"><![CDATA[0063d5bf5fb08f4447ebc2b78aff97ab]]></item>
+	</item>
+</root>

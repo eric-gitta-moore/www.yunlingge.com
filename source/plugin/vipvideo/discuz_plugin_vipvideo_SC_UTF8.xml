@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2019-09-01 12:55]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[vip视频]]></item>
+			<item id="identifier"><![CDATA[vipvideo]]></item>
+			<item id="description"><![CDATA[提供各主流视频网站的vip视频解析播放]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[vipvideo/]]></item>
+			<item id="copyright"><![CDATA[乘凉]]></item>
+			<item id="version"><![CDATA[1.9]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[index]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[vip视频]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[1]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[interface]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[接口管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[record]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[扣费记录]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[more]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[更多插件推荐]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[3]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[SEO标题]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[seo_title]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[vip视频在线解析|爱奇艺vip|乐视vip|腾讯vip|优酷vip]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[SEO关键字]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[seo_keywords]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[vip视频解析,vip视频在线解析,vip解析,万能vip视频解析,vip视频全能解析,vip视频,手机vip视频解析,优酷vip解析,爱奇艺vip解析,腾讯vip解析,乐视vip解析,芒果vip解析]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[SEO描述]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[seo_description]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[VIP视频免费看，在线解析，vip视频解析，优酷vip解析，爱奇艺vip解析，腾讯vip解析，乐视vip解析，芒果vip解析方便广大用户VIP视频服务，最新电影最新电视剧在线免费观看]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[允许使用用户组]]></item>
+				<item id="description"><![CDATA[为空表示不限制]]></item>
+				<item id="variable"><![CDATA[allow_user_group]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[消耗积分项]]></item>
+				<item id="description"><![CDATA[不选表示不消耗积分，仅在选中用户组后有效]]></item>
+				<item id="variable"><![CDATA[use_credit_item]]></item>
+				<item id="type"><![CDATA[extcredit]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[消耗积分数]]></item>
+				<item id="description"><![CDATA[填0表示不消耗积分，仅在选中用户组后有效]]></item>
+				<item id="variable"><![CDATA[use_credit_num]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[操作指南显示文字]]></item>
+				<item id="description"><![CDATA[内容支持html]]></item>
+				<item id="variable"><![CDATA[operate_text]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<p>第一步、找到并打开我们的视频解析页面，为接下来的vip视频解析做准备工作</p>
+<p>第二步、打开优酷、腾讯、爱奇艺等网站官方地址 找到你想要看的视频</p>
+<p>第三步、打开视频以后，看浏览器最上方的地址栏，复制视频地址（要完全复制哦，复制一半是没有用的）</p>
+<p>第四步、将刚刚复制好的链接，粘贴在我们的视频解析的框内，点击【立即播放】即可观看。</p>
+<p>注：如若遇到无法正常解析播放视频，请试试更换其他vip引擎系统。</p>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="vipvideo"><![CDATA[vip视频]]></item>
+				<item id="video_interface">
+					<item id="0">
+						<item id="name"><![CDATA[1号通用vip引擎系统]]></item>
+						<item id="url"><![CDATA[https://api.sigujx.com/jx/?url=]]></item>
+					</item>
+					<item id="1">
+						<item id="name"><![CDATA[2号通用vip引擎系统]]></item>
+						<item id="url"><![CDATA[https://api.927jx.com/vip/?url=]]></item>
+					</item>
+					<item id="2">
+						<item id="name"><![CDATA[3号通用vip引擎系统]]></item>
+						<item id="url"><![CDATA[https://cdn.yangju.vip/k/?url=]]></item>
+					</item>
+					<item id="3">
+						<item id="name"><![CDATA[4号通用vip引擎系统]]></item>
+						<item id="url"><![CDATA[https://www.jqaaa.com/jx.php?url=]]></item>
+					</item>
+					<item id="4">
+						<item id="name"><![CDATA[5号通用vip引擎系统]]></item>
+						<item id="url"><![CDATA[https://jx.618g.com/?url=]]></item>
+					</item>
+					<item id="5">
+						<item id="name"><![CDATA[6号通用vip引擎系统]]></item>
+						<item id="url"><![CDATA[https://api.v6.chat/?url=]]></item>
+					</item>
+				</item>
+				<item id="view_video"><![CDATA[观看视频]]></item>
+				<item id="no_permission"><![CDATA[您没有权限观看视频]]></item>
+				<item id="url_empty"><![CDATA[视频链接不能为空]]></item>
+				<item id="url_error"><![CDATA[视频链接地址错误]]></item>
+				<item id="deduct_credit"><![CDATA[每次解析视频需扣除{credit_num}{credit_unit}{credit_item}]]></item>
+				<item id="credit_notenough"><![CDATA[您的{credit_item}数量不足]]></item>
+				<item id="interface_add"><![CDATA[添加接口]]></item>
+				<item id="interface_list"><![CDATA[接口列表]]></item>
+				<item id="interface_name"><![CDATA[接口名称]]></item>
+				<item id="interface_url"><![CDATA[接口链接]]></item>
+				<item id="interface_status"><![CDATA[状态]]></item>
+				<item id="interface_status_1"><![CDATA[显示]]></item>
+				<item id="interface_status_0"><![CDATA[隐藏]]></item>
+				<item id="interface_nonexistence"><![CDATA[接口不存在]]></item>
+				<item id="interface_updatesucceed"><![CDATA[接口更新成功]]></item>
+				<item id="interface_deletesucceed"><![CDATA[接口删除成功]]></item>
+				<item id="interface_addsucceed"><![CDATA[接口添加成功]]></item>
+				<item id="record_list"><![CDATA[记录列表]]></item>
+				<item id="record_linkurl"><![CDATA[视频链接]]></item>
+				<item id="record_credit"><![CDATA[消耗积分]]></item>
+				<item id="record_updatesucceed"><![CDATA[记录更新成功]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="video_url_placeholder"><![CDATA[输入需要播放的视频地址，点击“立即播放”即可]]></item>
+				<item id="video_btn"><![CDATA[立即播放]]></item>
+				<item id="video_guide_tit"><![CDATA[操作指南]]></item>
+				<item id="video_guide_desc"><![CDATA[<p>第一步、找到并打开我们的视频解析页面，为接下来的vip解析做准备工作</p>	
+			<p>第二步、打开优酷、腾讯、爱奇艺等网站官方地址 找到你想要看的视频</p>	
+			<p>第三步、打开视频以后，看浏览器最上方的地址栏，复制视频地址（要完全复制哦，复制一半是没有用的）</p>	
+			<p>第四步、将刚刚复制好的链接，粘贴在我们的视频解析的框内，点击【立即播放】即可观看。</p>]]></item>
+			</item>
+			<item id="installlang">
+				<item id="vipvideo"><![CDATA[vip视频]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+	</item>
+</root>

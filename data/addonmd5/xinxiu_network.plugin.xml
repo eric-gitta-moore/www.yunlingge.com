@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[xinxiu_network.plugin]]></item>
+	<item id="RevisionID"><![CDATA[83181]]></item>
+	<item id="SN"><![CDATA[2020012608KTedeYKt1e]]></item>
+	<item id="RevisionDateline"><![CDATA[1563872119]]></item>
+	<item id="Data">
+		<item id="/logs.inc.php"><![CDATA[dba90c1ff1464986948c1197b22bf64d]]></item>
+		<item id="/class/class_base.php"><![CDATA[ccf7800e7675c332bc990ead19514525]]></item>
+		<item id="/class/class_client.php"><![CDATA[f27fde02b817788689faa31e5c2ea4ef]]></item>
+		<item id="/friends.inc.php"><![CDATA[d3cbad0dc9ca1e4b888cd1f0c4731ca2]]></item>
+		<item id="/sale.inc.php"><![CDATA[736d75da25732997df16af54028d71c1]]></item>
+		<item id="/login.inc.php"><![CDATA[e04163a90f6fb5d65370cc9c490edce2]]></item>
+		<item id="/uninstall.php"><![CDATA[6b04136ffeaed85621e46cfb1fc10014]]></item>
+		<item id="/user.inc.php"><![CDATA[88e4d7df47d4c8f74db0135ba603a4c4]]></item>
+		<item id="/discuz_plugin_xinxiu_network_SC_UTF8.xml"><![CDATA[a0cf1f724acf85e7992f82e88f467fa5]]></item>
+		<item id="/table/table_xinxiu_network_tixian.php"><![CDATA[a4ffaf029af09a29b7736ff9ac0ed36d]]></item>
+		<item id="/table/table_xinxiu_network_token.php"><![CDATA[2b605f901059f33f6e6b31eec8d2e328]]></item>
+		<item id="/table/table_common_banned.php"><![CDATA[6adbc7725b55b9c9c7ad9f5da6724fc4]]></item>
+		<item id="/table/table_xinxiu_network_log.php"><![CDATA[b61e3789036daa9f9785d170f9aefb29]]></item>
+		<item id="/function/function_user.php"><![CDATA[2acc8dc049c9fee1c76521adb0b48fdf]]></item>
+		<item id="/function/function_pm.php"><![CDATA[c69add17a5fee4df9ea47097224f767d]]></item>
+		<item id="/function/function_sale.php"><![CDATA[5a1bc92c83505c7920345beea52a9bbd]]></item>
+		<item id="/function/function_token.php"><![CDATA[8d01c8bef160ea7559d707aa59feb873]]></item>
+		<item id="/function/function_card.php"><![CDATA[c9315060960e69dc6d83ed68a8551b9d]]></item>
+		<item id="/function/function_friends.php"><![CDATA[f9556f74f49a213a33216684f6df3e2c]]></item>
+		<item id="/function/function_login.php"><![CDATA[d9b82637ebf21cb3f30ec0a5f533dc4b]]></item>
+		<item id="/card.inc.php"><![CDATA[c8704e6b381633b5cfc15833db21db9d]]></item>
+		<item id="/tixian.inc.php"><![CDATA[0adef4c7805069c0c9462a845f1ce98b]]></item>
+		<item id="/install.php"><![CDATA[9ae94476fe270170d2fd0cb54cb99fed]]></item>
+		<item id="/invite.inc.php"><![CDATA[d529df56073098142d9a7ec4719473c9]]></item>
+		<item id="/token.inc.php"><![CDATA[cd1fd3d8a0710e14ecf1ce1bc96ae5ef]]></item>
+		<item id="/pm.inc.php"><![CDATA[1fe82e84aa827268938f58d7b2f429e4]]></item>
+	</item>
+</root>

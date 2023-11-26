@@ -1,0 +1,18 @@
+<!--{block return}-->
+<div class="wp">
+	<div  style=" background-color: {$bgcolor}">
+		<div style="text-align: {$align}">
+		<img border="0" src="source/plugin/both_today_history/images/fire_24.png" />
+		<span style="margin-right:25px">
+			<font size='{$size}' color='{$color}'><b>{lang both_today_history:title}</b></font> 
+			<!--{if !empty($val['tid'])}-->	
+			<a href="forum.php?mod=viewthread&tid={$val['tid']}" target='__blank'>
+				<font size='{$size}' color='{$color}'>¡¾{$val['name']}¡¿ {$val['subject']} - {$val['author']} - {$val['dateline']}</font>
+			<!--{else}-->
+				<font size='{$size}' color='{$color}'>{lang both_today_history:norecord}</font>
+			<!--{/if}-->
+		</span>
+		</div>
+	</div>
+</div>
+<!--{/block}-->

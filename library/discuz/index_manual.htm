@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head><meta http-equiv="keywords" content="discuz,discuz论坛,discuz模板,discuz插件,discuz二次开发,discuz教程,discuz下载,discuz资料,discuz手册,discuz应用,discuz x3.2,discuz x3.3,discuz x3.4,discuz数据库字典" />
+<meta name="description" content="提供discuz discu zx3.2 discuz x3.3 discuz x3.4 的开发教程、使用手册、数据库字典，系统架构说明" />
+        <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+        <title>Discuz! 资料库</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<link rel="stylesheet" href="common.css" tppabs="http://faq.comsenz.com/library/common.css" />
+		<script src="base.js" tppabs="http://faq.comsenz.com/library/base.js" type="text/javascript"></script>
+		<style>
+			.indexbox{background:#fff;padding:10px;}
+			.item {margin-top:40px;background:#f4f4f4;position:relative;padding:10px;}
+			.item .title{position:absolute;top:-10px;height:30px;line-height:30px;width:120px;left:30px;text-align:center; background:#1a75bb;border:0px solid #ccc;border-top: solid 0px #357AE8;border-bottom:0;color:#FFF;}
+			.item dl{border:1px solid #ccc;padding:20px 0px 10px 10px;background:#fff;_padding-bottom:10px;}
+			.item dt{line-height:32px;color:#666;font-size:14px;text-align:center;float:left;margin:0px 10px 0px 0px;font-weight:400;}
+			.item dt a{text-decoration:none;display:block;background:url("img/front.png")/*tpa=http://faq.comsenz.com/library/img/front.png*//*tpa=http://faq.comsenz.com/library/img/front.png*/ no-repeat 50% 10px #FFF;border:1px dotted #ccc;color:#000;font-weight:700;width:160px;height:30px;padding-top:80px;}
+			.item dt a:hover{border:1px dotted #000;}
+			.item .admincp a{background:url("img/admincp.png")/*tpa=http://faq.comsenz.com/library/img/admincp.png*//*tpa=http://faq.comsenz.com/library/img/admincp.png*/ no-repeat 50% 10px #FFF;}
+			.item .tran a{background:url("img/tran.png")/*tpa=http://faq.comsenz.com/library/img/tran.png*//*tpa=http://faq.comsenz.com/library/img/tran.png*/ no-repeat 50% 10px #FFF;}
+			.item .env a{background:url("img/env.png")/*tpa=http://faq.comsenz.com/library/img/env.png*//*tpa=http://faq.comsenz.com/library/img/env.png*/ no-repeat 50% 10px #FFF;}
+			.item .serviceext a{background:url("img/serviceext.png")/*tpa=http://faq.comsenz.com/library/img/serviceext.png*//*tpa=http://faq.comsenz.com/library/img/serviceext.png*/ no-repeat 50% 10px #FFF;}
+			.item .database a{background:url("img/database.png")/*tpa=http://faq.comsenz.com/library/img/database.png*//*tpa=http://faq.comsenz.com/library/img/database.png*/ no-repeat 50% 10px #FFF;}
+			.item .plug a{background:url("img/plug.png")/*tpa=http://faq.comsenz.com/library/img/plug.png*//*tpa=http://faq.comsenz.com/library/img/plug.png*/ no-repeat 50% 10px #FFF;}
+			.item .template a{background:url("img/template.png")/*tpa=http://faq.comsenz.com/library/img/template.png*//*tpa=http://faq.comsenz.com/library/img/template.png*/ no-repeat 50% 10px #FFF;}
+			.item .diy a{background:url("img/diy.png")/*tpa=http://faq.comsenz.com/library/img/diy.png*//*tpa=http://faq.comsenz.com/library/img/diy.png*/ no-repeat 50% 10px #FFF;}
+			.item .construct a{background:url("img/construct.png")/*tpa=http://faq.comsenz.com/library/img/construct.png*//*tpa=http://faq.comsenz.com/library/img/construct.png*/ no-repeat 50% 15px #FFF;}
+			.item .safe a{background:url("img/safe.png")/*tpa=http://faq.comsenz.com/library/img/safe.png*//*tpa=http://faq.comsenz.com/library/img/safe.png*/ no-repeat 50% 10px #FFF;}
+			.item .efficiency a{background:url("img/efficiency.png")/*tpa=http://faq.comsenz.com/library/img/efficiency.png*//*tpa=http://faq.comsenz.com/library/img/efficiency.png*/ no-repeat 50% 10px #FFF;}
+			.item .safe a{background:url("img/safe.png")/*tpa=http://faq.comsenz.com/library/img/safe.png*//*tpa=http://faq.comsenz.com/library/img/safe.png*/ no-repeat 50% 10px #FFF;}
+			.item .introduction a{background:url("img/introduction.png")/*tpa=http://faq.comsenz.com/library/img/introduction.png*//*tpa=http://faq.comsenz.com/library/img/introduction.png*/ no-repeat 50% 10px #FFF;}
+			#ft{width:980px;}
+			#scrolltop{bottom: 700px;}
+		</style>
+    </head>
+    <body>
+	<div id="header">
+		<div class="hd wp cl">
+			<h1 class="z"><a href="index-1.htm" tppabs="http://faq.comsenz.com/library/index.htm">Discuz! X资料库文档索引</a></h1>
+			<h2><a href="index-1.htm" tppabs="http://faq.comsenz.com/library/index.htm">Discuz! 资料库文档索引</a></h2>
+		</div>
+	</div>
+	<div class="indexbox wp cl">
+		<div class="item">
+			<h2 class="title"><span>功能使用</span></h2>
+			<dl class="cl">
+				<dt class="front"><a href="front/index.htm" tppabs="http://faq.comsenz.com/library/front/index.htm">前台功能</a></dt>
+				<dt class="admincp"><a href="admcp/index.htm" tppabs="http://faq.comsenz.com/library/admcp/index.htm">后台管理</a></dt>
+			</dl>
+		</div>
+		<div class="item">
+			<h2 class="title"><span>系统运维</span></h2>
+			<dl class="cl">
+				<dt class="tran"><a href="bbsapp/tran/tran_index.htm" tppabs="http://faq.comsenz.com/library/bbsapp/tran/tran_index.htm">转换/升级/搬家资料</a></dt>
+				<dt class="env"><a href="system/env/env_linux.htm" tppabs="http://faq.comsenz.com/library/system/env/env_linux.htm">环境搭建</a></dt>
+				<dt class="serviceext"><a href="system/serviceext/serviceext_apc.htm" tppabs="http://faq.comsenz.com/library/system/serviceext/serviceext_apc.htm">扩展服务部署</a></dt>
+				<dt style="display:none;"><a href="#">常见服务器部署方案</a></dt>
+			</dl>
+		</div>
+		<div class="item">
+			<h2 class="title"><span>二次开发</span></h2>
+			<dl class="cl">
+				<dt class="database"><a href="database/x25/x25_index.htm" tppabs="http://faq.comsenz.com/library/database/x25/x25_index.htm">数据字典</a></dt>
+				<dt class="plug"><a href="plug/plugin/plugin_pre.htm" tppabs="http://faq.comsenz.com/library/plug/plugin/plugin_pre.htm">插&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;件</a></dt>
+				<dt class="template"><a href="template/made/made_html.htm" tppabs="http://faq.comsenz.com/library/template/made/made_html.htm">模&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;板</a></dt>
+				<dt class="diy"><a href="diy/diyuse/diyuse_index.htm" tppabs="http://faq.comsenz.com/library/diy/diyuse/diyuse_index.htm">DIY</a></dt>
+				<dt class="construct"><a href="plug/construct/construct_file.htm" tppabs="http://faq.comsenz.com/library/plug/construct/construct_file.htm">Discuz! X2.5 产品框架</a></dt>
+			</dl>
+		</div>
+		<div class="item">
+			<h2 class="title"><span>架构扩展</span></h2>
+			<dl class="cl">
+				<dt class="safe"><a href="safe/security/security_config.htm" tppabs="http://faq.comsenz.com/library/safe/security/security_config.htm">Discuz! X2.5 安全机制</a></dt>
+				<dt class="efficiency"><a href="efficiency/efficiency/efficiency_mysql.htm" tppabs="http://faq.comsenz.com/library/efficiency/efficiency/efficiency_mysql.htm">Discuz! X2.5 效率机制</a></dt>
+			</dl>
+		</div>
+		<div class="item">
+			<h2 class="title"><span>UCenter 相关</span></h2>
+			<dl class="cl">
+				<dt class="front"><a href="UCenteruse/usebasicset/usebasicset_index.htm" tppabs="http://faq.comsenz.com/library/UCenteruse/usebasicset/usebasicset_index.htm">功能使用</a></dt>
+				<dt class="database"><a href="database/uc/uc_index.htm" tppabs="http://faq.comsenz.com/library/database/uc/uc_index.htm">数据字典</a></dt>
+				<dt class="introduction"><a href="UCenter/introduction/introduction_brief.htm" tppabs="http://faq.comsenz.com/library/UCenter/introduction/introduction_brief.htm">接口开发</a></dt>
+			</dl>
+		</div>
+	</div>
+	<div id="scrolltop"><span id="gotop" hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa"></a></span><span><a title="反馈意见" href="javascript:if(confirm('http://www.discuz.net/thread-3202846-1-1.html  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.discuz.net/thread-3202846-1-1.html'" tppabs="http://www.discuz.net/thread-3202846-1-1.html" target="_blank" class="feedback"></a></span><span><a title="返回首页" href="index-1.htm" tppabs="http://faq.comsenz.com/library/index.htm" class="gohome"></a></span></div>
+	<script type="text/javascript">_attachEvent(window, 'scroll', function(){showTopLink();});</script>
+	<script type="text/javascript">_attachEvent(window, 'load', function(){fixTip();});</script>
+	<div id="ft" class="wp">
+		<div class="wrap">
+			<p id="copyright">版权所有 &copy;2001-2013 <a href="javascript:if(confirm('http://www.comsenz.com/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.comsenz.com/'" tppabs="http://www.comsenz.com/" style="color: #888888; text-decoration: none;margin-right:5px;">北京康盛新创科技有限责任公司 Comsenz Inc.</a> <script type="text/javascript" src="../../tajs.qq.com/stats-sId=20647248" tppabs="http://tajs.qq.com/stats?sId=20647248" charset="UTF-8"></script></p>
+		</div>
+	</div>
+
+</body>
+</html>

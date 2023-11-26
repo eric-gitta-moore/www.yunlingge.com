@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+	<item id="Time"><![CDATA[2016-12-22 15:32]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://127.0.0.1/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[0]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[瑞捷云邀请码购买]]></item>
+			<item id="identifier"><![CDATA[rjyfk_invite]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[rjyfk_invite/]]></item>
+			<item id="copyright"><![CDATA[瑞捷云 www.19fk.com]]></item>
+			<item id="version"><![CDATA[v2.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[rjyzf]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[admin_data]]></item>
+					<item id="param"><![CDATA[acto=list]]></item>
+					<item id="menu"><![CDATA[邀请码管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[Instructions]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[使用说明]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[3]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+	    <item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[接入编号]]></item>
+				<item id="description"><![CDATA[申请地址：http://www.19fk.com]]></item>
+				<item id="variable"><![CDATA[userid]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[20080001]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[接入密钥(key)]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[userkey]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[61b72850ed1c302c33cf0b13c0912249d0769763]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[开启插件]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[switch_invite]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[链接颜色]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[linkcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FF0000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[链接位置]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[linktype]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[0=顶部导航(左侧,通用)
+1=顶部导航(右侧,通用)
+2=注册页面(推荐位置)
+3=主导航(X2.5以上)
+4=不显示购买链接]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[购买价格]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[rj_money]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[邀请码有效期]]></item>
+				<item id="description"><![CDATA[单位：天]]></item>
+				<item id="variable"><![CDATA[rj_day]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[邀请人UID]]></item>
+				<item id="description"><![CDATA[邀请码的邀请人UID，默认为管理员]]></item>
+				<item id="variable"><![CDATA[rj_uid]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[插件名称]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[rj_title]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[购买邀请码]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[提示信息]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[rj_information]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<div style="color:#red;">
+温馨提醒：<br>1.付款完成后,系统将自动开通！2.最终解释权归Discuz! Board所有！</div>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[是否开启邮件通知]]></item>
+				<item id="description"><![CDATA[请先在后设置SMTP,开启后,付款成功后将会发送邮件通知]]></item>
+				<item id="variable"><![CDATA[switch_mail]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[成功通知状态]]></item>
+				<item id="description"><![CDATA[是:显示邀请码模式 否:不显示邀请码显示邀请人模式]]></item>
+				<item id="variable"><![CDATA[suss_ok]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+				<item id="12">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[购买用户限制]]></item>
+				<item id="description"><![CDATA[是:需要退出当前账号才可以购买 否:任意用户购买]]></item>
+				<item id="variable"><![CDATA[uppay_ok]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+				<item id="13">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[不传递备注参数]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[remark_user]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+				<item id="scriptlang">
+				<item id="Prompt1"><![CDATA[<div style="margin:10px;"> 介绍<br>
+						  瑞捷云是国内首家提供一站式解决在线支付接口方案的云服务平台。  <br>
+						</div>
+						<br>
+						<div style="margin:10px;"> 1、到后台-选择全局-注册与访问控制-关闭普通注册，开放邀请注册.设置对应参数即可<br>
+						  <br>
+						  2、插件模板调用地址:plugin.php?id=rjyfk_invite:in<br>
+						  <br>
+						    企业客服： 800176586<br>
+						  <br>
+						</div>
+                        <div style="margin:10px;">
+						洽谈QQ：  <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3335852721&site=qq&menu=yes"><img src="http://www.19fk.com/static/default/images/qq.png" alt="点击这里给我发消息" border="0" align="absmiddle" title="点击这里给我发消息"/></a>
+                        </div>]]></item>
+				<item id="Prompt2"><![CDATA[说明和规则介绍]]></item>
+				<item id="Prompt3"><![CDATA[插件未开启]]></item>
+				<item id="Prompt4"><![CDATA[请先退出登录再执行本操作]]></item>
+				<item id="confirmdelete"><![CDATA[您确定要删除选定的记录吗？]]></item>
+				<item id="deletebutton"><![CDATA[批量删除]]></item>
+				<item id="deleteselect"><![CDATA[没有选择操作对象!]]></item>
+				<item id="deletesuccess"><![CDATA[成功删除{sqlnum}个邀请码!]]></item>
+				<item id="searchbutton"><![CDATA[搜 索]]></item>
+				<item id="defaultselect"><![CDATA[默认全部]]></item>
+				<item id="isused"><![CDATA[已使用]]></item>
+				<item id="noused"><![CDATA[未使用]]></item>
+				<item id="codestatus"><![CDATA[邀请码状态]]></item>
+				<item id="codetitle"><![CDATA[邀请码管理]]></item>
+				<item id="code"><![CDATA[邀请码]]></item>
+				<item id="uid"><![CDATA[邀请人]]></item>
+				<item id="fuid"><![CDATA[被邀请人]]></item>
+				<item id="validtime"><![CDATA[有效期]]></item>
+				<item id="usetime"><![CDATA[使用时间]]></item>
+				<item id="orderid"><![CDATA[订单号]]></item>
+				<item id="Prompt5"><![CDATA[输入的订单号参数错误]]></item>
+				<item id="email"><![CDATA[购买者邮箱]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="confirmdelete"><![CDATA[您确定要删除选定的记录吗？]]></item>
+				<item id="deletebutton"><![CDATA[批量删除]]></item>
+				<item id="deleteselect"><![CDATA[没有选择操作对象!]]></item>
+				<item id="deletesuccess"><![CDATA[成功删除{sqlnum}个邀请码!]]></item>
+				<item id="searchbutton"><![CDATA[搜 索]]></item>
+				<item id="defaultselect"><![CDATA[默认全部]]></item>
+				<item id="isused"><![CDATA[已使用]]></item>
+				<item id="noused"><![CDATA[未使用]]></item>
+				<item id="codestatus"><![CDATA[邀请码状态]]></item>
+				<item id="codetitle"><![CDATA[邀请码管理]]></item>
+				<item id="code"><![CDATA[邀请码]]></item>
+				<item id="uid"><![CDATA[邀请人]]></item>
+				<item id="fuid"><![CDATA[被邀请人]]></item>
+				<item id="validtime"><![CDATA[有效期]]></item>
+				<item id="usetime"><![CDATA[使用时间]]></item>
+				<item id="orderid"><![CDATA[订单号]]></item>
+				<item id="email"><![CDATA[购买者邮箱]]></item>
+				<item id="Template1"><![CDATA[购买邀请码]]></item>
+				<item id="Template2"><![CDATA[您的邀请码为]]></item>
+				<item id="Template3"><![CDATA[未成功付款或邀请码已失效]]></item>
+				<item id="Template4"><![CDATA[订单号]]></item>
+				<item id="Template5"><![CDATA[充值金额]]></item>
+				<item id="Template6"><![CDATA[充值时间]]></item>
+				<item id="Template7"><![CDATA[请先退出登录再执行本操作]]></item>
+				<item id="Template8"><![CDATA[注意事项]]></item>
+				<item id="Template9"><![CDATA[邀请码价格￥ ]]></item>
+				<item id="Template10"><![CDATA[元]]></item>
+				<item id="Template11"><![CDATA[参数错误]]></item>
+				<item id="Template12"><![CDATA[立即购买]]></item>
+				<item id="Template13"><![CDATA[邀请码有效期]]></item>
+				<item id="Template14"><![CDATA[天]]></item>
+				<item id="Template15"><![CDATA[购买记录查询]]></item>
+				<item id="Template16"><![CDATA[请输入购买时付款的订单号]]></item>
+				<item id="Template17"><![CDATA[立即查询]]></item>
+				<item id="Template18"><![CDATA[查询记录]]></item>
+				<item id="Template19"><![CDATA[没有找到相应订单!]]></item>
+				<item id="Template20"><![CDATA[mail:]]></item>
+				<item id="Template21"><![CDATA[请填写接收的邮箱地址]]></item>
+				<item id="Template22"><![CDATA[邮箱格式错误]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5,X3,X3.1,X3.2]]></item>
+	<item id="Time"><![CDATA[2015-02-26 18:20]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://www.yun-wan.com)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[【雲玩】未登錄提示]]></item>
+			<item id="identifier"><![CDATA[yw_alertlogin]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[yw_alertlogin/]]></item>
+			<item id="copyright"><![CDATA[雲玩互動]]></item>
+			<item id="version"><![CDATA[v1.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[login]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[addon]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[應用詳情]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[yunwan]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[雲玩官方網站]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[developer]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[<font color="red">雲玩應用中心</font>]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[3]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[開啟顯示]]></item>
+				<item id="description"><![CDATA[是否在頁面上顯示未登錄提醒]]></item>
+				<item id="variable"><![CDATA[open]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[是否顯示關閉按鈕]]></item>
+				<item id="description"><![CDATA[是否允許顯示右上角的關閉按鈕]]></item>
+				<item id="variable"><![CDATA[isShowOff]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[提醒文字內容]]></item>
+				<item id="description"><![CDATA[提醒欄提醒的文字內容，建議不要超過15個字]]></item>
+				<item id="variable"><![CDATA[alertText]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[為興趣而生，雲玩更懂你。]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[提醒顯示方式]]></item>
+				<item id="description"><![CDATA[提醒欄彈出的方式]]></item>
+				<item id="variable"><![CDATA[alertShowType]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1 = 從左到右
+2 = 從下到上
+3 = 直接顯示（無動畫）]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[提醒動畫時間]]></item>
+				<item id="description"><![CDATA[提醒欄顯示播放動畫的時間（秒，支持小數）]]></item>
+				<item id="variable"><![CDATA[alertShowTime]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[1.5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[默認透明度]]></item>
+				<item id="description"><![CDATA[默認提醒欄的透明度]]></item>
+				<item id="variable"><![CDATA[opacity]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[60]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[點亮透明度]]></item>
+				<item id="description"><![CDATA[鼠標移動到提醒欄上的透明度]]></item>
+				<item id="variable"><![CDATA[hoverOpacity]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[80]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[提醒欄文字顏色]]></item>
+				<item id="description"><![CDATA[提醒欄的文字顏色，推薦為白色或其他亮色]]></item>
+				<item id="variable"><![CDATA[alertTextColor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FFFFFF]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[提醒欄文字尺寸]]></item>
+				<item id="description"><![CDATA[提醒欄的文字大小，推薦為26或20-30之間的其他數字]]></item>
+				<item id="variable"><![CDATA[alertTextSize]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[26]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[提醒欄高度]]></item>
+				<item id="description"><![CDATA[提醒欄的高度，推薦為60或以上]]></item>
+				<item id="variable"><![CDATA[alertHeight]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[80]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[按鈕文字尺寸]]></item>
+				<item id="description"><![CDATA[登陸和注冊按鈕的文字尺寸，推薦為20，請設置12~24之內比較合適]]></item>
+				<item id="variable"><![CDATA[buttonTextSize]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[20]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[按鈕圓角弧度]]></item>
+				<item id="description"><![CDATA[按鈕圓角的弧度，推薦為2，為0則無圓角，建議不要超過5]]></item>
+				<item id="variable"><![CDATA[buttonRaduis]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[登錄按鈕文字內容]]></item>
+				<item id="description"><![CDATA[登錄按鈕的文字內容，推薦不要超過6個字]]></item>
+				<item id="variable"><![CDATA[loginText]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[立即登錄雲玩]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[15]]></item>
+				<item id="title"><![CDATA[登錄按鈕背景顏色]]></item>
+				<item id="description"><![CDATA[登錄按鈕的背景顏色，推薦為天藍色或者暖黃色]]></item>
+				<item id="variable"><![CDATA[loginColor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#0066CC]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[16]]></item>
+				<item id="title"><![CDATA[登錄按鈕文字顏色]]></item>
+				<item id="description"><![CDATA[登錄按鈕的文字顏色，推薦為白色]]></item>
+				<item id="variable"><![CDATA[loginTextColor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FFFFFF]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[17]]></item>
+				<item id="title"><![CDATA[注冊按鈕文字內容]]></item>
+				<item id="description"><![CDATA[注冊按鈕的文字內容，推薦不要超過4個字]]></item>
+				<item id="variable"><![CDATA[registerText]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[立即注冊]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[18]]></item>
+				<item id="title"><![CDATA[注冊按鈕背景顏色]]></item>
+				<item id="description"><![CDATA[注冊按鈕的背景顏色，推薦為灰色或者其他淡色]]></item>
+				<item id="variable"><![CDATA[registerColor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#999999]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[19]]></item>
+				<item id="title"><![CDATA[注冊按鈕文字顏色]]></item>
+				<item id="description"><![CDATA[登陸按鈕的文字顏色，推薦為深色]]></item>
+				<item id="variable"><![CDATA[registerTextColor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#333333]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="18">
+				<item id="displayorder"><![CDATA[20]]></item>
+				<item id="title"><![CDATA[按鈕中間文字內容]]></item>
+				<item id="description"><![CDATA[登陸和注冊按鈕中間的文字，默認為“或”]]></item>
+				<item id="variable"><![CDATA[orText]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[或]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+	</item>
+</root>

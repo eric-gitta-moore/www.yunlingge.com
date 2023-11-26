@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+	<item id="Time"><![CDATA[2012-11-07 09:55]]></item>
+	<item id="From"><![CDATA[IT618 (http://www.cnit618.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[it618首页N格]]></item>
+			<item id="identifier"><![CDATA[it618_firstnflex]]></item>
+			<item id="description"><![CDATA[图片区、主题区、版块区、会员区与工具区5个区，默认有22个数据调用模块。可以自己设计模块，可以设置N格的风格。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[it618_firstnflex/]]></item>
+			<item id="copyright"><![CDATA[IT618]]></item>
+			<item id="version"><![CDATA[v2.8]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[firstnflex]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[block]]></item>
+					<item id="menu"><![CDATA[模块管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[help]]></item>
+					<item id="menu"><![CDATA[<font color=red><b>IT618应用中心</b></font>]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[图片区内容]]></item>
+				<item id="description"><![CDATA[格式：标题=模块调用，标题可以修改，{}里的文字不要修改，一行代表一格，顺序可以调整，可以自己再设计数据调用。更多模块与设计教程：http://www.cnit618.com/thread-1594-1-1.html
+如果默认的模块名称不知道了，可以到教程里查到]]></item>
+				<item id="variable"><![CDATA[image_content]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[最新图片={block,it618_nflex_最新图片}
+最新相册={block,it618_nflex_最新相册}]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[主题区内容]]></item>
+				<item id="description"><![CDATA[格式：标题=模块调用，标题可以修改，{}里的文字不要修改，一行代表一格，顺序可以调整，可以自己再设计数据调用。更多模块与设计教程：http://www.cnit618.com/thread-1594-1-1.html
+如果默认的模块名称不知道了，可以到教程里查到]]></item>
+				<item id="variable"><![CDATA[thread_content]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[最新主题={block,it618_nflex_最新主题}
+最新回复={thread_newthreadreply}
+热门主题={block,it618_nflex_热门主题}
+精华主题={block,it618_nflex_精华主题}
+最新日志={block,it618_nflex_最新日志}
+最新活动={block,it618_nflex_最新活动}]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[版块区内容]]></item>
+				<item id="description"><![CDATA[格式：标题=模块调用，标题可以修改，{}里的文字不要修改，一行代表一格，顺序可以调整，可以自己再设计数据调用。更多模块与设计教程：http://www.cnit618.com/thread-1594-1-1.html
+如果默认的模块名称不知道了，可以到教程里查到]]></item>
+				<item id="variable"><![CDATA[forum_content]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[活跃会员={member_todaypost}
+人气版块={block,it618_nflex_版块今日发贴排行}
+]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[会员区内容]]></item>
+				<item id="description"><![CDATA[格式：标题=模块调用，标题可以修改，{}里的文字不要修改，一行代表一格，顺序可以调整，可以自己再设计数据调用。更多模块与设计教程：http://www.cnit618.com/thread-1594-1-1.html
+如果默认的模块名称不知道了，可以到教程里查到]]></item>
+				<item id="variable"><![CDATA[nmember_content]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[新注册会员={block,it618_nflex_新注册会员}
+主题排行={block,it618_nflex_会员主题排行}
+帖子排行={block,it618_nflex_会员帖子排行}
+精华排行={block,it618_nflex_会员精华排行}
+在线时间排行={member_onlinetime,14}
+空间访问排行={member_homeview,14}
+积分排行={block,it618_nflex_会员积分排行}
+]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[工具区天气预报]]></item>
+				<item id="description"><![CDATA[不同风格的天气预报代码生成网址：http://www.tianqi.com/plugin 推荐宽度：230px 高度：18px]]></item>
+				<item id="variable"><![CDATA[tools_weather]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<iframe width="230" scrolling="no" height="18" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"  src="http://i.tianqi.com/index.php?c=code&id=1&icon=1&wind=0&num=1"></iframe>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[工具区时间]]></item>
+				<item id="description"><![CDATA[工具区时间一个JS脚本，可以在里面修改细节，注意修改前备份一下]]></item>
+				<item id="variable"><![CDATA[tools_time]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<script>var enabled = 0; today = new Date();
+months = today.getMonth() + 1; months = ( (months < 10) ? "0" : "" ) + months;
+dates = today.getDate(); dates = ( (dates < 10) ? "0" : "" ) + dates;
+document.write( months + "月" + dates + "日");</script>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[工具区滚动消息标题]]></item>
+				<item id="description"><![CDATA[工具区滚动消息标题 支持HTML代码]]></item>
+				<item id="variable"><![CDATA[tools_movetitle]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[滚动消息：]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[工具区滚动消息内容]]></item>
+				<item id="description"><![CDATA[支持各种内容，只符合规则，格式(高度不要大于28px)：
+<li>你的内容1</li>
+<li>你的内容2</li>
+<li>你的内容3</li>]]></item>
+				<item id="variable"><![CDATA[tools_movelist]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<li><a href="http://www.cnit618.com" target="_blank">欢迎光临 IT618</a></li>
+<li><a href="https://addon.dismall.com/?@5683.developer" target="_blank">欢迎光临 IT618应用中心</a></li>
+<li><a href="http://www.cnit618.com/thread-1594-1-1.html" target="_blank"><font color=red>it618首页N格教程与精选案例</font></a></li>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[工具区百度分享]]></item>
+				<item id="description"><![CDATA[百度分享代码生成地址：http://share.baidu.com/code
+注意宽度与高度]]></item>
+				<item id="variable"><![CDATA[tools_baidu]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=0" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[工具区自定义内容]]></item>
+				<item id="description"><![CDATA[自定义内容可以放HTML代码。
+提示：如果你有百度联盟广告或别的广告，推荐图片尺寸：960px*90px 例如：<img src="source/plugin/it618_firstnflex/images/ad.jpg" width=960 height=90/>]]></item>
+				<item id="variable"><![CDATA[tools_diy]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[工具区底间距]]></item>
+				<item id="description"><![CDATA[工具区与N格主体部分之间的间距，看情况设置间距大小，一般放通栏广告时最好有间距。单位：px]]></item>
+				<item id="variable"><![CDATA[tools_diymargin]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[N格布局]]></item>
+				<item id="description"><![CDATA[版块区与会员区是可选区，也就是可以不显示在N格里。选中了就显示，默认时版块区与会员区都是选中状态。]]></item>
+				<item id="variable"><![CDATA[contentstyle]]></item>
+				<item id="type"><![CDATA[selects]]></item>
+				<item id="extra"><![CDATA[1=显示工具区
+2=显示版块区
+3=显示会员区]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[1]]></item>
+					<item id="1"><![CDATA[2]]></item>
+				</item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[缓存时间]]></item>
+				<item id="description"><![CDATA[可以提高N格的加载速度，优化性能。
+默认的缓存时间为5,也就是5分钟刷新一次，但是在调试的时候，缓存时间一定要设置为0，为了不影响用户体验，你可以设置一下用户组显示权限，只让你一个人可以看到。
+单位：分钟]]></item>
+				<item id="variable"><![CDATA[cachetime]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[是否开启伪静态]]></item>
+				<item id="description"><![CDATA[如果你的网站支持伪静态，那么就开启伪静态]]></item>
+				<item id="variable"><![CDATA[rewriteurl]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[15]]></item>
+				<item id="title"><![CDATA[用户组显示权限]]></item>
+				<item id="description"><![CDATA[没有权限的用户组不显示此应用。注意：为空时是全部用户可看到应用。
+
+技巧提示：调试应用时，可以设置管理员有显示权限，只有管理员可以看到应用。]]></item>
+				<item id="variable"><![CDATA[usergroup]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[16]]></item>
+				<item id="title"><![CDATA[N格背景颜色]]></item>
+				<item id="description"><![CDATA[N格背景颜色]]></item>
+				<item id="variable"><![CDATA[main_bgcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FFFFFF]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[17]]></item>
+				<item id="title"><![CDATA[N格背景图片]]></item>
+				<item id="description"><![CDATA[N格背景图片]]></item>
+				<item id="variable"><![CDATA[main_bgimage]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[18]]></item>
+				<item id="title"><![CDATA[N格背景图片重复]]></item>
+				<item id="description"><![CDATA[N格背景图片重复]]></item>
+				<item id="variable"><![CDATA[main_bgimage_repeat]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[1=不重复(no-repeat)
+2=横向纵向重复(repeat)
+3=横向重复(repeat-x)
+4=纵向重复(repeat-y)]]></item>
+			</item>
+			<item id="18">
+				<item id="displayorder"><![CDATA[19]]></item>
+				<item id="title"><![CDATA[N格边框颜色]]></item>
+				<item id="description"><![CDATA[N格边框颜色]]></item>
+				<item id="variable"><![CDATA[main_bordercolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#c2d5e3]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="19">
+				<item id="displayorder"><![CDATA[20]]></item>
+				<item id="title"><![CDATA[N格背景方案]]></item>
+				<item id="description"><![CDATA[N格背景方案]]></item>
+				<item id="variable"><![CDATA[main_bgfangan]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=背景颜色
+2=背景图片
+3=背景颜色+背景图片]]></item>
+			</item>
+			<item id="20">
+				<item id="displayorder"><![CDATA[21]]></item>
+				<item id="title"><![CDATA[顶部导航背景颜色]]></item>
+				<item id="description"><![CDATA[顶部导航背景颜色]]></item>
+				<item id="variable"><![CDATA[topnv_bgcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#e1e1e1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="21">
+				<item id="displayorder"><![CDATA[22]]></item>
+				<item id="title"><![CDATA[顶部导航高亮背景颜色]]></item>
+				<item id="description"><![CDATA[顶部导航高亮背景颜色]]></item>
+				<item id="variable"><![CDATA[topnv_onbgcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FFFFFF]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="22">
+				<item id="displayorder"><![CDATA[23]]></item>
+				<item id="title"><![CDATA[顶部导航背景图片]]></item>
+				<item id="description"><![CDATA[顶部导航背景图片]]></item>
+				<item id="variable"><![CDATA[topnv_bgimage]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[source/plugin/it618_firstnflex/images/titlebg.png]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="23">
+				<item id="displayorder"><![CDATA[24]]></item>
+				<item id="title"><![CDATA[顶部导航高亮背景图片]]></item>
+				<item id="description"><![CDATA[顶部导航高亮背景图片]]></item>
+				<item id="variable"><![CDATA[topnv_onbgimage]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="24">
+				<item id="displayorder"><![CDATA[25]]></item>
+				<item id="title"><![CDATA[顶部导航背景图片重复]]></item>
+				<item id="description"><![CDATA[顶部导航背景图片重复]]></item>
+				<item id="variable"><![CDATA[topnv_bgimage_repeat]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[1=不重复(no-repeat)
+2=横向纵向重复(repeat)
+3=横向重复(repeat-x)
+4=纵向重复(repeat-y)]]></item>
+			</item>
+			<item id="25">
+				<item id="displayorder"><![CDATA[26]]></item>
+				<item id="title"><![CDATA[顶部导航字体颜色]]></item>
+				<item id="description"><![CDATA[顶部导航字体颜色]]></item>
+				<item id="variable"><![CDATA[topnv_color]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#000000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="26">
+				<item id="displayorder"><![CDATA[27]]></item>
+				<item id="title"><![CDATA[顶部导航亮背字体颜色]]></item>
+				<item id="description"><![CDATA[顶部导航亮背字体颜色]]></item>
+				<item id="variable"><![CDATA[topnv_oncolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FF3300]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="27">
+				<item id="displayorder"><![CDATA[28]]></item>
+				<item id="title"><![CDATA[顶部导航背景方案]]></item>
+				<item id="description"><![CDATA[顶部导航背景方案]]></item>
+				<item id="variable"><![CDATA[topnv_bgfangan]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[1=背景颜色
+2=背景图片
+3=背景颜色+背景图片]]></item>
+			</item>
+			<item id="28">
+				<item id="displayorder"><![CDATA[29]]></item>
+				<item id="title"><![CDATA[底部导航背景颜色]]></item>
+				<item id="description"><![CDATA[底部导航背景颜色]]></item>
+				<item id="variable"><![CDATA[bottomnv_bgcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#cccccc]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="29">
+				<item id="displayorder"><![CDATA[30]]></item>
+				<item id="title"><![CDATA[底部导航高亮背景颜色]]></item>
+				<item id="description"><![CDATA[底部导航高亮背景颜色]]></item>
+				<item id="variable"><![CDATA[bottomnv_onbgcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FFFFFF]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="30">
+				<item id="displayorder"><![CDATA[31]]></item>
+				<item id="title"><![CDATA[底部导航背景图片]]></item>
+				<item id="description"><![CDATA[底部导航背景图片]]></item>
+				<item id="variable"><![CDATA[bottomnv_bgimage]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[source/plugin/it618_firstnflex/images/titlebg.png]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="31">
+				<item id="displayorder"><![CDATA[32]]></item>
+				<item id="title"><![CDATA[底部导航高亮背景图片]]></item>
+				<item id="description"><![CDATA[底部导航高亮背景图片]]></item>
+				<item id="variable"><![CDATA[bottomnv_onbgimage]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="32">
+				<item id="displayorder"><![CDATA[33]]></item>
+				<item id="title"><![CDATA[底部导航背景图片重复]]></item>
+				<item id="description"><![CDATA[底部导航背景图片重复]]></item>
+				<item id="variable"><![CDATA[bottomnv_bgimage_repeat]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[1=不重复(no-repeat)
+2=横向纵向重复(repeat)
+3=横向重复(repeat-x)
+4=纵向重复(repeat-y)]]></item>
+			</item>
+			<item id="33">
+				<item id="displayorder"><![CDATA[34]]></item>
+				<item id="title"><![CDATA[底部导航字体颜色]]></item>
+				<item id="description"><![CDATA[底部导航字体颜色]]></item>
+				<item id="variable"><![CDATA[bottomnv_color]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#000000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="34">
+				<item id="displayorder"><![CDATA[35]]></item>
+				<item id="title"><![CDATA[底部导航亮背字体颜色]]></item>
+				<item id="description"><![CDATA[底部导航亮背字体颜色]]></item>
+				<item id="variable"><![CDATA[bottomnv_oncolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FF3300]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="35">
+				<item id="displayorder"><![CDATA[36]]></item>
+				<item id="title"><![CDATA[底部导航背景方案]]></item>
+				<item id="description"><![CDATA[底部导航背景方案]]></item>
+				<item id="variable"><![CDATA[bottomnv_bgfangan]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[1=背景颜色
+2=背景图片
+3=背景颜色+背景图片]]></item>
+			</item>
+			<item id="36">
+				<item id="displayorder"><![CDATA[37]]></item>
+				<item id="title"><![CDATA[列表排行数字背景颜色]]></item>
+				<item id="description"><![CDATA[列表排行数字背景颜色]]></item>
+				<item id="variable"><![CDATA[list_numberbgcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#CCCCCC]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="37">
+				<item id="displayorder"><![CDATA[38]]></item>
+				<item id="title"><![CDATA[列表排行前三背景颜色]]></item>
+				<item id="description"><![CDATA[列表排行前三背景颜色]]></item>
+				<item id="variable"><![CDATA[list_number123bgcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FF3300]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="38">
+				<item id="displayorder"><![CDATA[39]]></item>
+				<item id="title"><![CDATA[列表排行数字字体颜色]]></item>
+				<item id="description"><![CDATA[列表排行数字字体颜色]]></item>
+				<item id="variable"><![CDATA[list_numbercolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FFFFFF]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="39">
+				<item id="displayorder"><![CDATA[40]]></item>
+				<item id="title"><![CDATA[列表字体颜色]]></item>
+				<item id="description"><![CDATA[列表字体颜色]]></item>
+				<item id="variable"><![CDATA[list_color]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#333333]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="40">
+				<item id="displayorder"><![CDATA[41]]></item>
+				<item id="title"><![CDATA[列表字体鼠标移动颜色]]></item>
+				<item id="description"><![CDATA[列表字体鼠标移动颜色]]></item>
+				<item id="variable"><![CDATA[list_oncolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FF3300]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="41">
+				<item id="displayorder"><![CDATA[42]]></item>
+				<item id="title"><![CDATA[列表右侧字体颜色]]></item>
+				<item id="description"><![CDATA[列表右侧字体颜色]]></item>
+				<item id="variable"><![CDATA[list_rightcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#CCCCCC]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="42">
+				<item id="displayorder"><![CDATA[43]]></item>
+				<item id="title"><![CDATA[列表右侧鼠标移动颜色]]></item>
+				<item id="description"><![CDATA[列表右侧鼠标移动颜色]]></item>
+				<item id="variable"><![CDATA[list_onrightcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#000000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="43">
+				<item id="displayorder"><![CDATA[44]]></item>
+				<item id="title"><![CDATA[列表分隔线颜色]]></item>
+				<item id="description"><![CDATA[列表分隔线颜色]]></item>
+				<item id="variable"><![CDATA[list_bordercolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#CCCCCC]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="44">
+				<item id="displayorder"><![CDATA[45]]></item>
+				<item id="title"><![CDATA[会员字体颜色]]></item>
+				<item id="description"><![CDATA[会员字体颜色]]></item>
+				<item id="variable"><![CDATA[member_color]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#333333]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="45">
+				<item id="displayorder"><![CDATA[46]]></item>
+				<item id="title"><![CDATA[会员鼠标移动字体颜色]]></item>
+				<item id="description"><![CDATA[会员鼠标移动字体颜色]]></item>
+				<item id="variable"><![CDATA[member_oncolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FF3300]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="46">
+				<item id="displayorder"><![CDATA[47]]></item>
+				<item id="title"><![CDATA[提示背景颜色]]></item>
+				<item id="description"><![CDATA[提示背景颜色]]></item>
+				<item id="variable"><![CDATA[tip_bgcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#f8f8f8]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="47">
+				<item id="displayorder"><![CDATA[48]]></item>
+				<item id="title"><![CDATA[提示背景图片]]></item>
+				<item id="description"><![CDATA[提示背景图片]]></item>
+				<item id="variable"><![CDATA[tip_bgimage]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="48">
+				<item id="displayorder"><![CDATA[49]]></item>
+				<item id="title"><![CDATA[提示背景图片重复]]></item>
+				<item id="description"><![CDATA[提示背景图片重复]]></item>
+				<item id="variable"><![CDATA[tip_bgimage_repeat]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=不重复(no-repeat)
+2=横向纵向重复(repeat)
+3=横向重复(repeat-x)
+4=纵向重复(repeat-y)]]></item>
+			</item>
+			<item id="49">
+				<item id="displayorder"><![CDATA[50]]></item>
+				<item id="title"><![CDATA[提示边框颜色]]></item>
+				<item id="description"><![CDATA[提示边框颜色]]></item>
+				<item id="variable"><![CDATA[tip_bordercolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#CCCCCC]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="50">
+				<item id="displayorder"><![CDATA[51]]></item>
+				<item id="title"><![CDATA[提示字本颜色]]></item>
+				<item id="description"><![CDATA[提示字本颜色]]></item>
+				<item id="variable"><![CDATA[tip_color]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#006699]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="51">
+				<item id="displayorder"><![CDATA[52]]></item>
+				<item id="title"><![CDATA[提示背景方案]]></item>
+				<item id="description"><![CDATA[提示背景方案]]></item>
+				<item id="variable"><![CDATA[tip_bgfangan]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=背景颜色
+2=背景图片
+3=背景颜色+背景图片]]></item>
+			</item>
+			<item id="52">
+				<item id="displayorder"><![CDATA[53]]></item>
+				<item id="title"><![CDATA[开启论坛首页默认调用]]></item>
+				<item id="description"><![CDATA[默认是在论坛首页显示应用，如果你DIY调用了应用，而不想在论坛首页默认调用，那么可以不开启此设置。
+DIY调用教程：http://www.cnit618.com/html/kyxt/discuz/2888.htm]]></item>
+				<item id="variable"><![CDATA[indextop]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="it618_sql"><![CDATA[INSERT INTO `pre_common_block` (`blockclass`, `blocktype`, `name`, `title`, `classname`, `summary`, `uid`, `username`, `styleid`, `blockstyle`, `picwidth`, `picheight`, `target`, `dateformat`, `dateuformat`, `script`, `param`, `shownum`, `cachetime`, `punctualupdate`, `hidedisplay`, `dateline`, `notinherited`, `isblank`) VALUES
+('member_member', 1, 'it618_nflex_会员威望排行', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:13:"member_member";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:3:{i:0;s:3:"url";i:1;s:6:"avatar";i:2;s:5:"title";}s:8:"template";a:9:{s:3:"raw";s:130:"[loop]\r\n<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:113:"<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>";}s:4:"hash";s:8:"c160d602";}', 0, 0, 'blank', 'Y-m-d', 0, 'membercredit', 'a:4:{s:7:"orderby";s:10:"extcredits";s:9:"extcredit";s:1:"1";s:8:"startrow";s:1:"0";s:5:"items";i:14;}', 14, 60, 0, 0, 1353893918, 0, 0),
+('forum_forum', 1, 'it618_nflex_版块今日发贴排行', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:11:"forum_forum";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:1;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:7:{i:0;s:10:"todayposts";i:1;s:12:"currentorder";i:2;s:3:"url";i:3;s:5:"title";i:4;s:5:"posts";i:5;s:7:"threads";i:6;s:7:"summary";}s:8:"template";a:9:{s:3:"raw";s:341:"[loop]\r\n<li><span class="it618_flex_author">{todayposts}</span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a><div class=it618_title><br>版块帖子数：{posts}<br>版块话题数：{threads}<br>版块今日新帖数：{todayposts}<br>版块介绍：{summary}</div></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:324:"<li><span class="it618_flex_author">{todayposts}</span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a><div class=it618_title><br>版块帖子数：{posts}<br>版块话题数：{threads}<br>版块今日新帖数：{todayposts}<br>版块介绍：{summary}</div></li>";}s:4:"hash";s:8:"0221356d";}', 0, 0, 'blank', 'Y-m-d', 0, 'forum', 'a:6:{s:4:"fids";s:0:"";s:4:"fups";a:1:{i:0;s:1:"0";}s:11:"titlelength";s:2:"18";s:13:"summarylength";s:2:"80";s:7:"orderby";s:10:"todayposts";s:5:"items";i:10;}', 10, 60, 0, 0, 1354520261, 0, 0),
+('forum_thread', 1, 'it618_nflex_最新图片', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:12:"forum_thread";s:9:"makethumb";i:1;s:6:"getpic";i:1;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:3:{i:0;s:3:"url";i:1;s:5:"title";i:2;s:3:"pic";}s:8:"template";a:9:{s:3:"raw";s:143:"[loop]\r\n<li><a href="{url}" title="{title}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:126:"<li><a href="{url}" title="{title}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a></li>";}s:4:"hash";s:8:"5308799e";}', 310, 235, 'blank', 'Y-m-d', 0, 'threadnew', 'a:12:{s:4:"fids";a:1:{i:0;s:1:"0";}s:7:"special";a:1:{i:0;s:1:"0";}s:7:"viewmod";s:1:"0";s:12:"rewardstatus";s:1:"0";s:11:"picrequired";s:1:"1";s:7:"orderby";s:8:"lastpost";s:12:"postdateline";s:1:"0";s:8:"lastpost";s:1:"0";s:11:"titlelength";s:2:"50";s:13:"summarylength";s:2:"80";s:8:"startrow";s:1:"0";s:5:"items";i:5;}', 5, 60, 0, 0, 1354520261, 0, 0),
+('forum_thread', 1, 'it618_nflex_精选主题', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:12:"forum_thread";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:16:{i:0;s:8:"authorid";i:1;s:6:"author";i:2;s:12:"currentorder";i:3;s:3:"url";i:4;s:5:"title";i:5;s:2:"id";i:6;s:9:"forumname";i:7;s:8:"typename";i:8;s:5:"posts";i:9;s:10:"todayposts";i:10;s:8:"lastpost";i:11;s:8:"dateline";i:12;s:7:"replies";i:13;s:5:"views";i:14;s:5:"heats";i:15;s:10:"recommends";}s:8:"template";a:9:{s:3:"raw";s:569:"[loop]\r\n<li><span class="it618_flex_author"><a href="home.php?mod=space&uid={authorid}" target="_blank">{author}</a></span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a>it618_nflexgetico{id}it618_nflex<div class=it618_title><br>版块名称：{forumname}<br>主题分类名称：{typename}<br>总发帖数：{posts}<br>今日发帖数：{todayposts}<br>最后回复时间：{lastpost}<br>发帖时间：{dateline}<br>回复数：{replies}<br>总浏览数：{views}<br>热度值：{heats}<br>推荐数：{recommends}</div></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:552:"<li><span class="it618_flex_author"><a href="home.php?mod=space&uid={authorid}" target="_blank">{author}</a></span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a>it618_nflexgetico{id}it618_nflex<div class=it618_title><br>版块名称：{forumname}<br>主题分类名称：{typename}<br>总发帖数：{posts}<br>今日发帖数：{todayposts}<br>最后回复时间：{lastpost}<br>发帖时间：{dateline}<br>回复数：{replies}<br>总浏览数：{views}<br>热度值：{heats}<br>推荐数：{recommends}</div></li>";}s:4:"hash";s:8:"8102072e";}', 0, 0, 'blank', 'Y-m-d', 0, 'thread', 'a:17:{s:4:"tids";s:0:"";s:4:"uids";s:0:"";s:7:"keyword";s:0:"";s:10:"tagkeyword";s:0:"";s:7:"typeids";s:0:"";s:9:"recommend";s:1:"0";s:7:"viewmod";s:1:"0";s:12:"rewardstatus";s:1:"0";s:11:"picrequired";s:1:"0";s:7:"orderby";s:8:"lastpost";s:12:"postdateline";s:1:"0";s:8:"lastpost";s:1:"0";s:9:"highlight";s:1:"1";s:11:"titlelength";s:2:"50";s:13:"summarylength";s:2:"80";s:8:"startrow";s:1:"0";s:5:"items";i:10;}', 10, 60, 0, 0, 1354503306, 0, 1),
+('forum_activity', 1, 'it618_nflex_最新活动', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:14:"forum_activity";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:14:{i:0;s:8:"authorid";i:1;s:6:"author";i:2;s:12:"currentorder";i:3;s:3:"url";i:4;s:5:"title";i:5;s:2:"id";i:6;s:4:"time";i:7;s:10:"expiration";i:8;s:4:"cost";i:9;s:5:"place";i:10;s:5:"class";i:11;s:6:"gender";i:12;s:6:"number";i:13;s:11:"applynumber";}s:8:"template";a:9:{s:3:"raw";s:515:"[loop]\r\n<li><span class="it618_flex_author"><a href="home.php?mod=space&uid={authorid}" target="_blank">{author}</a></span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a>it618_nflexgetico{id}it618_nflex<div class=it618_title><br>活动时间：{time}<br>报名截止时间：{expiration}<br>每人花销：{cost}<br>活动地点：{place}<br>活动类型：{class}<br>性别要求：{gender}<br>需要人数：{number}<br>已报名人数：{applynumber}</div></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:498:"<li><span class="it618_flex_author"><a href="home.php?mod=space&uid={authorid}" target="_blank">{author}</a></span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a>it618_nflexgetico{id}it618_nflex<div class=it618_title><br>活动时间：{time}<br>报名截止时间：{expiration}<br>每人花销：{cost}<br>活动地点：{place}<br>活动类型：{class}<br>性别要求：{gender}<br>需要人数：{number}<br>已报名人数：{applynumber}</div></li>";}s:4:"hash";s:8:"eb64040c";}', 0, 0, 'blank', 'Y-m-d', 0, 'activity', 'a:15:{s:4:"tids";s:0:"";s:4:"uids";s:0:"";s:7:"keyword";s:0:"";s:4:"fids";a:1:{i:0;s:1:"0";}s:7:"viewmod";s:1:"0";s:9:"recommend";s:1:"0";s:5:"place";s:0:"";s:5:"class";s:0:"";s:6:"gender";s:0:"";s:7:"orderby";s:8:"dateline";s:9:"highlight";s:1:"1";s:11:"titlelength";s:2:"50";s:13:"summarylength";s:2:"80";s:8:"startrow";s:1:"0";s:5:"items";i:10;}', 10, 60, 0, 0, 1354520261, 0, 0),
+('forum_forum', 1, 'it618_nflex_版块帖子排行', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:11:"forum_forum";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:1;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:7:{i:0;s:5:"posts";i:1;s:12:"currentorder";i:2;s:3:"url";i:3;s:5:"title";i:4;s:7:"threads";i:5;s:10:"todayposts";i:6;s:7:"summary";}s:8:"template";a:9:{s:3:"raw";s:336:"[loop]\r\n<li><span class="it618_flex_author">{posts}</span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a><div class=it618_title><br>版块帖子数：{posts}<br>版块话题数：{threads}<br>版块今日新帖数：{todayposts}<br>版块介绍：{summary}</div></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:319:"<li><span class="it618_flex_author">{posts}</span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a><div class=it618_title><br>版块帖子数：{posts}<br>版块话题数：{threads}<br>版块今日新帖数：{todayposts}<br>版块介绍：{summary}</div></li>";}s:4:"hash";s:8:"65d5134d";}', 0, 0, 'blank', 'Y-m-d', 0, 'forum', 'a:6:{s:4:"fids";s:0:"";s:4:"fups";a:1:{i:0;s:1:"0";}s:11:"titlelength";s:2:"18";s:13:"summarylength";s:2:"80";s:7:"orderby";s:5:"posts";s:5:"items";i:10;}', 10, 60, 0, 0, 1353893823, 0, 0),
+('forum_trade', 1, 'it618_nflex_最新商品', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:11:"forum_trade";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:1;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:8:{i:0;s:8:"authorid";i:1;s:6:"author";i:2;s:12:"currentorder";i:3;s:3:"url";i:4;s:5:"title";i:5;s:7:"summary";i:6;s:10:"totalitems";i:7;s:5:"price";}s:8:"template";a:9:{s:3:"raw";s:374:"[loop]\r\n<li><span class="it618_flex_author"><a href="home.php?mod=space&uid={authorid}" target="_blank">{author}</a></span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a><div class=it618_title><br>商品说明：{summary}<br>商品累计售出数：{totalitems}<br>商品价格：{price}</div></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:357:"<li><span class="it618_flex_author"><a href="home.php?mod=space&uid={authorid}" target="_blank">{author}</a></span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a><div class=it618_title><br>商品说明：{summary}<br>商品累计售出数：{totalitems}<br>商品价格：{price}</div></li>";}s:4:"hash";s:8:"e816f25d";}', 0, 0, 'blank', 'Y-m-d', 0, 'trade', 'a:12:{s:4:"tids";s:0:"";s:4:"uids";s:0:"";s:7:"keyword";s:0:"";s:4:"fids";a:1:{i:0;s:1:"0";}s:7:"viewmod";s:1:"0";s:9:"recommend";s:1:"0";s:7:"orderby";s:8:"dateline";s:9:"highlight";s:1:"1";s:11:"titlelength";s:2:"50";s:13:"summarylength";s:2:"80";s:8:"startrow";s:1:"0";s:5:"items";i:10;}', 10, 60, 0, 0, 1354503604, 0, 0),
+('forum_thread', 1, 'it618_nflex_精华主题', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:12:"forum_thread";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:16:{i:0;s:8:"authorid";i:1;s:6:"author";i:2;s:12:"currentorder";i:3;s:3:"url";i:4;s:5:"title";i:5;s:2:"id";i:6;s:9:"forumname";i:7;s:8:"typename";i:8;s:5:"posts";i:9;s:10:"todayposts";i:10;s:8:"lastpost";i:11;s:8:"dateline";i:12;s:7:"replies";i:13;s:5:"views";i:14;s:5:"heats";i:15;s:10:"recommends";}s:8:"template";a:9:{s:3:"raw";s:569:"[loop]\r\n<li><span class="it618_flex_author"><a href="home.php?mod=space&uid={authorid}" target="_blank">{author}</a></span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a>it618_nflexgetico{id}it618_nflex<div class=it618_title><br>版块名称：{forumname}<br>主题分类名称：{typename}<br>总发帖数：{posts}<br>今日发帖数：{todayposts}<br>最后回复时间：{lastpost}<br>发帖时间：{dateline}<br>回复数：{replies}<br>总浏览数：{views}<br>热度值：{heats}<br>推荐数：{recommends}</div></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:552:"<li><span class="it618_flex_author"><a href="home.php?mod=space&uid={authorid}" target="_blank">{author}</a></span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a>it618_nflexgetico{id}it618_nflex<div class=it618_title><br>版块名称：{forumname}<br>主题分类名称：{typename}<br>总发帖数：{posts}<br>今日发帖数：{todayposts}<br>最后回复时间：{lastpost}<br>发帖时间：{dateline}<br>回复数：{replies}<br>总浏览数：{views}<br>热度值：{heats}<br>推荐数：{recommends}</div></li>";}s:4:"hash";s:8:"8102072e";}', 0, 0, 'blank', 'Y-m-d', 0, 'thread', 'a:20:{s:4:"tids";s:0:"";s:4:"uids";s:0:"";s:7:"keyword";s:0:"";s:10:"tagkeyword";s:0:"";s:4:"fids";a:1:{i:0;s:1:"0";}s:7:"typeids";s:0:"";s:6:"digest";a:3:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"3";}s:9:"recommend";s:1:"0";s:7:"special";a:1:{i:0;s:1:"0";}s:7:"viewmod";s:1:"0";s:12:"rewardstatus";s:1:"0";s:11:"picrequired";s:1:"0";s:7:"orderby";s:8:"lastpost";s:12:"postdateline";s:1:"0";s:8:"lastpost";s:1:"0";s:9:"highlight";s:1:"1";s:11:"titlelength";s:2:"50";s:13:"summarylength";s:2:"80";s:8:"startrow";s:1:"0";s:5:"items";i:10;}', 10, 60, 0, 0, 1354520261, 0, 0),
+('forum_forum', 1, 'it618_nflex_版块主题排行', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:11:"forum_forum";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:1;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:7:{i:0;s:7:"threads";i:1;s:12:"currentorder";i:2;s:3:"url";i:3;s:5:"title";i:4;s:5:"posts";i:5;s:10:"todayposts";i:6;s:7:"summary";}s:8:"template";a:9:{s:3:"raw";s:338:"[loop]\r\n<li><span class="it618_flex_author">{threads}</span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a><div class=it618_title><br>版块帖子数：{posts}<br>版块话题数：{threads}<br>版块今日新帖数：{todayposts}<br>版块介绍：{summary}</div></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:321:"<li><span class="it618_flex_author">{threads}</span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a><div class=it618_title><br>版块帖子数：{posts}<br>版块话题数：{threads}<br>版块今日新帖数：{todayposts}<br>版块介绍：{summary}</div></li>";}s:4:"hash";s:8:"c65cef6d";}', 0, 0, 'blank', 'Y-m-d', 0, 'forum', 'a:6:{s:4:"fids";s:0:"";s:4:"fups";a:1:{i:0;s:1:"0";}s:11:"titlelength";s:2:"18";s:13:"summarylength";s:2:"80";s:7:"orderby";s:7:"threads";s:5:"items";i:10;}', 10, 60, 0, 0, 1354519187, 0, 0),
+('member_member', 1, 'it618_nflex_会员竞价排行', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:13:"member_member";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:3:{i:0;s:3:"url";i:1;s:6:"avatar";i:2;s:5:"title";}s:8:"template";a:9:{s:3:"raw";s:130:"[loop]\r\n<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:113:"<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>";}s:4:"hash";s:8:"c160d602";}', 0, 0, 'blank', 'Y-m-d', 0, 'membershow', 'a:2:{s:8:"startrow";s:1:"0";s:5:"items";i:14;}', 14, 60, 0, 0, 1353893877, 0, 0),
+('member_member', 1, 'it618_nflex_会员主题排行', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:13:"member_member";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:3:{i:0;s:3:"url";i:1;s:6:"avatar";i:2;s:5:"title";}s:8:"template";a:9:{s:3:"raw";s:130:"[loop]\r\n<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:113:"<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>";}s:4:"hash";s:8:"c160d602";}', 0, 0, 'blank', 'Y-m-d', 0, 'memberposts', 'a:4:{s:7:"orderby";s:7:"threads";s:8:"lastpost";s:0:"";s:8:"startrow";s:1:"0";s:5:"items";i:14;}', 14, 60, 0, 0, 1354520262, 0, 0),
+('member_member', 1, 'it618_nflex_会员精华排行', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:13:"member_member";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:3:{i:0;s:3:"url";i:1;s:6:"avatar";i:2;s:5:"title";}s:8:"template";a:9:{s:3:"raw";s:130:"[loop]\r\n<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:113:"<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>";}s:4:"hash";s:8:"c160d602";}', 0, 0, 'blank', 'Y-m-d', 0, 'memberposts', 'a:4:{s:7:"orderby";s:11:"digestposts";s:8:"lastpost";s:0:"";s:8:"startrow";s:1:"0";s:5:"items";i:14;}', 14, 60, 0, 0, 1354520262, 0, 0),
+('member_member', 1, 'it618_nflex_新注册会员', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:13:"member_member";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:3:{i:0;s:3:"url";i:1;s:6:"avatar";i:2;s:5:"title";}s:8:"template";a:9:{s:3:"raw";s:130:"[loop]\r\n<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:113:"<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>";}s:4:"hash";s:8:"c160d602";}', 0, 0, 'blank', 'Y-m-d', 0, 'membernew', 'a:6:{s:6:"gender";s:0:"";s:14:"xbirthprovince";s:0:"";s:15:"xresideprovince";s:0:"";s:12:"avatarstatus";s:1:"0";s:8:"startrow";s:1:"0";s:5:"items";i:14;}', 14, 60, 0, 0, 1354520261, 0, 0),
+('member_member', 1, 'it618_nflex_会员积分排行', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:13:"member_member";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:3:{i:0;s:3:"url";i:1;s:6:"avatar";i:2;s:5:"title";}s:8:"template";a:9:{s:3:"raw";s:130:"[loop]\r\n<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:113:"<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>";}s:4:"hash";s:8:"c160d602";}', 0, 0, 'blank', 'Y-m-d', 0, 'membercredit', 'a:4:{s:7:"orderby";s:7:"credits";s:9:"extcredit";s:1:"1";s:8:"startrow";s:1:"0";s:5:"items";i:14;}', 14, 60, 0, 0, 1354520262, 0, 0),
+('member_member', 1, 'it618_nflex_会员贡献排行', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:13:"member_member";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:3:{i:0;s:3:"url";i:1;s:6:"avatar";i:2;s:5:"title";}s:8:"template";a:9:{s:3:"raw";s:130:"[loop]\r\n<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:113:"<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>";}s:4:"hash";s:8:"c160d602";}', 0, 0, 'blank', 'Y-m-d', 0, 'membercredit', 'a:4:{s:7:"orderby";s:10:"extcredits";s:9:"extcredit";s:1:"3";s:8:"startrow";s:1:"0";s:5:"items";i:14;}', 14, 60,  0, 0, 1353893929, 0, 0),
+('forum_thread', 1, 'it618_nflex_最新主题', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:12:"forum_thread";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:16:{i:0;s:8:"authorid";i:1;s:6:"author";i:2;s:12:"currentorder";i:3;s:3:"url";i:4;s:5:"title";i:5;s:2:"id";i:6;s:9:"forumname";i:7;s:8:"typename";i:8;s:5:"posts";i:9;s:10:"todayposts";i:10;s:8:"lastpost";i:11;s:8:"dateline";i:12;s:7:"replies";i:13;s:5:"views";i:14;s:5:"heats";i:15;s:10:"recommends";}s:8:"template";a:9:{s:3:"raw";s:569:"[loop]\r\n<li><span class="it618_flex_author"><a href="home.php?mod=space&uid={authorid}" target="_blank">{author}</a></span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a>it618_nflexgetico{id}it618_nflex<div class=it618_title><br>版块名称：{forumname}<br>主题分类名称：{typename}<br>总发帖数：{posts}<br>今日发帖数：{todayposts}<br>最后回复时间：{lastpost}<br>发帖时间：{dateline}<br>回复数：{replies}<br>总浏览数：{views}<br>热度值：{heats}<br>推荐数：{recommends}</div></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:552:"<li><span class="it618_flex_author"><a href="home.php?mod=space&uid={authorid}" target="_blank">{author}</a></span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a>it618_nflexgetico{id}it618_nflex<div class=it618_title><br>版块名称：{forumname}<br>主题分类名称：{typename}<br>总发帖数：{posts}<br>今日发帖数：{todayposts}<br>最后回复时间：{lastpost}<br>发帖时间：{dateline}<br>回复数：{replies}<br>总浏览数：{views}<br>热度值：{heats}<br>推荐数：{recommends}</div></li>";}s:4:"hash";s:8:"8102072e";}', 0, 0, 'blank', 'Y-m-d', 0, 'thread', 'a:19:{s:4:"tids";s:0:"";s:4:"uids";s:0:"";s:7:"keyword";s:0:"";s:10:"tagkeyword";s:0:"";s:4:"fids";a:1:{i:0;s:1:"0";}s:7:"typeids";s:0:"";s:9:"recommend";s:1:"0";s:7:"special";a:1:{i:0;s:1:"0";}s:7:"viewmod";s:1:"0";s:12:"rewardstatus";s:1:"0";s:11:"picrequired";s:1:"0";s:7:"orderby";s:8:"lastpost";s:12:"postdateline";s:1:"0";s:8:"lastpost";s:1:"0";s:9:"highlight";s:1:"1";s:11:"titlelength";s:2:"50";s:13:"summarylength";s:2:"80";s:8:"startrow";s:1:"0";s:5:"items";i:10;}', 10, 60, 0, 0, 1354520261, 0, 0),
+('space_album', 1, 'it618_nflex_最新相册', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:11:"space_album";s:9:"makethumb";i:1;s:6:"getpic";i:1;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:3:{i:0;s:3:"url";i:1;s:5:"title";i:2;s:3:"pic";}s:8:"template";a:9:{s:3:"raw";s:143:"[loop]\r\n<li><a href="{url}" title="{title}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:126:"<li><a href="{url}" title="{title}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a></li>";}s:4:"hash";s:8:"ba1fec46";}', 125, 125, 'blank', 'Y-m-d', 0, 'album', 'a:7:{s:4:"aids";s:0:"";s:4:"uids";s:0:"";s:5:"catid";a:1:{i:0;s:1:"0";}s:7:"orderby";s:8:"dateline";s:11:"titlelength";s:2:"50";s:8:"startrow";s:1:"0";s:5:"items";i:5;}', 5, 60, 0, 0, 1354520261, 0, 0),
+('member_member', 1, 'it618_nflex_会员帖子排行', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:13:"member_member";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:3:{i:0;s:3:"url";i:1;s:6:"avatar";i:2;s:5:"title";}s:8:"template";a:9:{s:3:"raw";s:130:"[loop]\r\n<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:113:"<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>";}s:4:"hash";s:8:"c160d602";}', 0, 0, 'blank', 'Y-m-d', 0, 'memberposts', 'a:4:{s:7:"orderby";s:5:"posts";s:8:"lastpost";s:0:"";s:8:"startrow";s:1:"0";s:5:"items";i:14;}', 14, 60, 0, 0, 1354520262, 0, 0),
+('space_blog', 1, 'it618_nflex_最新日志', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:10:"space_blog";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:13:{i:0;s:3:"uid";i:1;s:8:"username";i:2;s:12:"currentorder";i:3;s:3:"url";i:4;s:5:"title";i:5;s:2:"id";i:6;s:8:"replynum";i:7;s:7:"viewnum";i:8;s:6:"click1";i:9;s:6:"click2";i:10;s:6:"click3";i:11;s:6:"click4";i:12;s:6:"click5";}s:8:"template";a:9:{s:3:"raw";s:470:"[loop]\r\n<li><span class="it618_flex_author"><a href="home.php?mod=space&uid={uid}" target="_blank">{username}</a></span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a>it618_nflexgetico{id}it618_nflex<div class=it618_title><br>评论数：{replynum}<br>浏览数：{viewnum}<br>路过数：{click1}<br>鸡蛋数：{click2}<br>鲜花数：{click3}<br>握手数：{click4}<br>雷人数：{click5}</div></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:453:"<li><span class="it618_flex_author"><a href="home.php?mod=space&uid={uid}" target="_blank">{username}</a></span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a>it618_nflexgetico{id}it618_nflex<div class=it618_title><br>评论数：{replynum}<br>浏览数：{viewnum}<br>路过数：{click1}<br>鸡蛋数：{click2}<br>鲜花数：{click3}<br>握手数：{click4}<br>雷人数：{click5}</div></li>";}s:4:"hash";s:8:"55aa36c8";}', 0, 0, 'blank', 'Y-m-d', 0, 'blog', 'a:10:{s:7:"blogids";s:0:"";s:4:"uids";s:0:"";s:5:"catid";a:1:{i:0;s:1:"0";}s:11:"picrequired";s:1:"0";s:7:"orderby";s:8:"dateline";s:5:"hours";s:0:"";s:11:"titlelength";s:2:"50";s:13:"summarylength";s:2:"80";s:8:"startrow";s:1:"0";s:5:"items";i:10;}', 10, 60, 0, 0, 1354520261, 0, 0),
+('member_member', 1, 'it618_nflex_会员金钱排行', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:13:"member_member";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:3:{i:0;s:3:"url";i:1;s:6:"avatar";i:2;s:5:"title";}s:8:"template";a:9:{s:3:"raw";s:130:"[loop]\r\n<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:113:"<li><a href="{url}" c="1"{target}><img src="{avatar}" width="48" height="48" alt="{title}" /><br>{title}</a></li>";}s:4:"hash";s:8:"c160d602";}', 0, 0, 'blank', 'Y-m-d', 0, 'membercredit', 'a:4:{s:7:"orderby";s:10:"extcredits";s:9:"extcredit";s:1:"2";s:8:"startrow";s:1:"0";s:5:"items";i:14;}', 14, 60, 0, 0, 1353893911, 0, 0),
+('forum_thread', 1, 'it618_nflex_精选图片', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:12:"forum_thread";s:9:"makethumb";i:1;s:6:"getpic";i:1;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:3:{i:0;s:3:"url";i:1;s:5:"title";i:2;s:3:"pic";}s:8:"template";a:9:{s:3:"raw";s:143:"[loop]\r\n<li><a href="{url}" title="{title}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:126:"<li><a href="{url}" title="{title}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" /><p>{title}</p></a></li>";}s:4:"hash";s:8:"5308799e";}', 310, 235, 'blank', 'Y-m-d', 0, 'thread', 'a:17:{s:4:"tids";s:0:"";s:4:"uids";s:0:"";s:7:"keyword";s:0:"";s:10:"tagkeyword";s:0:"";s:7:"typeids";s:0:"";s:9:"recommend";s:1:"0";s:7:"viewmod";s:1:"0";s:12:"rewardstatus";s:1:"0";s:11:"picrequired";s:1:"0";s:7:"orderby";s:8:"lastpost";s:12:"postdateline";s:1:"0";s:8:"lastpost";s:1:"0";s:9:"highlight";s:1:"0";s:11:"titlelength";s:2:"50";s:13:"summarylength";s:2:"80";s:8:"startrow";s:1:"0";s:5:"items";i:5;}', 5, 60, 0, 0, 1353893737, 0, 1),
+('forum_thread', 1, 'it618_nflex_热门主题', '', '', '', 1, 'admin', 0, 'a:10:{s:4:"name";s:0:"";s:10:"blockclass";s:12:"forum_thread";s:9:"makethumb";i:0;s:6:"getpic";i:0;s:10:"getsummary";i:0;s:9:"settarget";i:1;s:7:"moreurl";i:0;s:6:"fields";a:16:{i:0;s:8:"authorid";i:1;s:6:"author";i:2;s:12:"currentorder";i:3;s:3:"url";i:4;s:5:"title";i:5;s:2:"id";i:6;s:9:"forumname";i:7;s:8:"typename";i:8;s:5:"posts";i:9;s:10:"todayposts";i:10;s:8:"lastpost";i:11;s:8:"dateline";i:12;s:7:"replies";i:13;s:5:"views";i:14;s:5:"heats";i:15;s:10:"recommends";}s:8:"template";a:9:{s:3:"raw";s:569:"[loop]\r\n<li><span class="it618_flex_author"><a href="home.php?mod=space&uid={authorid}" target="_blank">{author}</a></span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a>it618_nflexgetico{id}it618_nflex<div class=it618_title><br>版块名称：{forumname}<br>主题分类名称：{typename}<br>总发帖数：{posts}<br>今日发帖数：{todayposts}<br>最后回复时间：{lastpost}<br>发帖时间：{dateline}<br>回复数：{replies}<br>总浏览数：{views}<br>热度值：{heats}<br>推荐数：{recommends}</div></li>\r\n[/loop]";s:6:"footer";s:0:"";s:6:"header";s:0:"";s:9:"indexplus";a:0:{}s:5:"index";a:0:{}s:9:"orderplus";a:0:{}s:5:"order";a:0:{}s:8:"loopplus";a:0:{}s:4:"loop";s:552:"<li><span class="it618_flex_author"><a href="home.php?mod=space&uid={authorid}" target="_blank">{author}</a></span><em class="it618_flex_ranknum{currentorder}">{currentorder}</em><a class="quicktip" href="{url}" title="{title}"{target}>{title}</a>it618_nflexgetico{id}it618_nflex<div class=it618_title><br>版块名称：{forumname}<br>主题分类名称：{typename}<br>总发帖数：{posts}<br>今日发帖数：{todayposts}<br>最后回复时间：{lastpost}<br>发帖时间：{dateline}<br>回复数：{replies}<br>总浏览数：{views}<br>热度值：{heats}<br>推荐数：{recommends}</div></li>";}s:4:"hash";s:8:"8102072e";}', 0, 0, 'blank', 'Y-m-d', 0, 'thread', 'a:19:{s:4:"tids";s:0:"";s:4:"uids";s:0:"";s:7:"keyword";s:0:"";s:10:"tagkeyword";s:0:"";s:4:"fids";a:1:{i:0;s:1:"0";}s:7:"typeids";s:0:"";s:9:"recommend";s:1:"0";s:7:"special";a:1:{i:0;s:1:"0";}s:7:"viewmod";s:1:"0";s:12:"rewardstatus";s:1:"0";s:11:"picrequired";s:1:"0";s:7:"orderby";s:5:"heats";s:12:"postdateline";s:1:"0";s:8:"lastpost";s:1:"0";s:9:"highlight";s:1:"1";s:11:"titlelength";s:2:"50";s:13:"summarylength";s:2:"80";s:8:"startrow";s:1:"0";s:5:"items";i:10;}', 10, 60, 0, 0, 1354520261, 0, 0)
+]]></item>
+				<item id="it618_string"><![CDATA[主题名称：,版块名称：,收起/展开]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="it618_string"><![CDATA[调试模式：应用设置里的缓存时间当前为0时，会显示此提示，为了提高应用加载速度，请设置缓存时间。不过当你要调试时，缓存时间一定要设置为0，否则会看不到调试效果！]]></item>
+			</item>
+
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

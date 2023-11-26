@@ -1,0 +1,233 @@
+{template viewui_tools:header}
+<style type="text/css">
+#viewui-toolsbg {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+#viewui-toolsbg .tips {
+	overflow: hidden;
+	padding: 8px 35px 8px 14px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	border: 1px solid #FBEED5;
+	border-radius: 4px;
+	background-color: #D9EDF7;
+	border-color: #BCE8F1;
+	color: #3A87AD;
+	margin-bottom: 10px;
+}
+
+#viewui-toolsbg .tips strong {
+	margin-right: 5px;
+}
+
+#viewui-toolsbg .left {
+	padding: 10px;
+	float: left;
+	width: 49%;
+	background: #262626;
+	border-radius: 10px;
+}
+
+#viewui-toolsbg .right {
+	padding: 10px;
+	float: right;
+	width: 45%;
+	min-height: 210px;
+	background: #EEE;
+	border-radius: 8px;
+}
+
+#viewui-toolsbg .right-body {
+	text-align: center;
+	width: 98%;
+	margin: 0 auto;
+}
+
+#viewui-toolsbg #qrcode {
+	margin: 10px auto 10px;
+}
+
+#viewui-toolsbg #qrcode img {
+	margin: 0 auto;
+}
+
+#viewui-toolsbg .right-body span {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+#viewui-toolsbg textarea {
+	padding: 0px;
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	font-family: 'Microsoft Yahei';
+	color: #333;
+}
+
+#viewui-toolsbg .btns {
+	float: left;
+	margin-top: 5px;
+}
+
+#viewui-toolsbg .btns button {
+	background-color: #55a7e3;
+	color: #fff;
+	font-family: 'Microsoft YaHei';
+	border: none;
+	height: 35px;
+	font-size: 14px;
+	line-height: 35px;
+	text-align: center;
+	margin-right: 5px;
+	letter-spacing: .5px;
+	text-decoration: none;
+	min-width: 70px;
+	cursor: pointer;
+}
+
+#viewui-toolsbg .btns button:hover {
+	opacity: 0.8;
+}
+
+#box {
+	width: 1000px;
+	height: 600px;
+	margin: 200px auto;
+}
+
+#box .qrcode {
+	width: 400px;
+	height: 400px;
+	float: left;
+	margin: 40px 40px;
+}
+
+#box .introduce {
+	width: 500px;
+	height: 600px;
+	float: left;
+}
+
+.introduce p {
+    width: 210px;
+    height: 40px;
+    background: #000;
+    float: left;
+    margin: 10px 10px;
+    color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.introduce p span {
+    float: left;
+    width: 50px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    background: #333;
+}
+.introduce p input {
+    width: 158px;
+    height: 40px;
+    float: left;
+    border: 0;
+    color: #fff;
+    background: #000;
+    text-indent: 10px;
+    outline: none;
+}
+
+.introduce .btn {
+	width: 440px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background: #6c0;
+}
+.introduce #btns {
+	width: 440px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background: #6c0;
+}
+</style> 
+<div id="viewui-toolsbg">
+<div class="tips"><strong>{lang viewui_tools:tip}</strong>{lang viewui_tools:wechatsummary}</div>
+<div style="overflow: hidden;">
+<div class="left">
+<div class="introduce">
+            <p>
+                <span>{lang viewui_tools:wechatxm}</span>
+                <input type="text" id="name">
+            </p>
+            <p>
+                <span>{lang viewui_tools:wechatgs}</span>
+                <input type="text" id="company">
+            </p>
+            <p>
+                <span>{lang viewui_tools:wechatzw}</span>
+                <input type="text" id="title">
+            </p>
+            <p>
+                <span>{lang viewui_tools:wechatdz}</span>
+                <input type="text" id="address">
+            </p>
+            <p>
+                <span>{lang viewui_tools:wechatsj}</span>
+                <input type="text" id="mobile">
+            </p>
+            <p>
+                <span>{lang viewui_tools:wechatyx}</span>
+                <input type="text" id="email">
+            </p>
+            <p>
+                <span>{lang viewui_tools:wechatwz}</span>
+                <input type="text" id="web">
+            </p>
+            <p>
+                <span>{lang viewui_tools:wechatbz}</span>
+                <input type="text" id="desc">
+            </p>
+            <p id="btn" class="btn" onclick="document.getElementById('btn').style.display='none';document.getElementById('btns').style.display='block';">{lang viewui_tools:wechatok}</p>
+			<p id="btns" style="display:none;background: #9E9E9E;">&#x4E8C;&#x7EF4;&#x7801;&#x5DF2;&#x751F;&#x6210;</p>
+        </div>
+</div>
+<div class="right">
+	<div class="right-body">
+	<span>{lang viewui_tools:wechattip}</span>
+	<div id="qrcode"></div>
+	<span style="font-size:14px;">{lang viewui_tools:qrcodebttips}</span>
+	</div>
+</div>
+</div>
+</div>
+<script src="source/plugin/viewui_tools/js/jquery-1.10.2.js"></script>
+<script src="source/plugin/viewui_tools/js/qrcode.js"></script>
+<script type="text/javascript"> var jq = jQuery.noConflict(); </script>
+<script>
+    var name, company, title, address, mobile, email, web, desc;
+	jq(".btn").click(function() {
+				name = "FN:" + jq("#name").val() + "\n";
+				company = "ORG:" + jq("#company").val() + "\n";
+				title = "TITLE:" + jq("#title").val() + "\n";
+				address = "WORK:" + jq("#address").val() + "\n";
+				mobile = "TEL:" + jq("#mobile").val() + "\n";
+				email = "EMAIL:" + jq("#email").val() + "\n";
+				web = "URL:" + jq("#web").val() + "\n";
+				desc = "NOTE:" + jq("#desc").val() + "\n";
+
+				var info = "BEGIN:VCARD\n" + name + company + title + address + mobile + email + web + desc + "END:VCARD";
+				var qrcode = new QRCode("qrcode");
+				qrcode.makeCode(info);
+
+    })
+</script>
+
+{template viewui_tools:footer}

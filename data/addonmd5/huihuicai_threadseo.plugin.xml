@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[huihuicai_threadseo.plugin]]></item>
+	<item id="RevisionID"><![CDATA[85132]]></item>
+	<item id="SN"><![CDATA[2020012607yM76DhMmk7]]></item>
+	<item id="RevisionDateline"><![CDATA[1578326505]]></item>
+	<item id="Data">
+		<item id="/threadseo.inc.php"><![CDATA[ad34c9e5e4d2eaaae07f7868142063e6]]></item>
+		<item id="/threadseo.class.php"><![CDATA[4deb2ea299d95ef02876f8baccfe5e00]]></item>
+		<item id="/uninstall.php"><![CDATA[a4d65e76c0fd6fc4579ea47fa668ddd5]]></item>
+		<item id="/discuz_plugin_huihuicai_threadseo_SC_UTF8.xml"><![CDATA[97dee76aad0848b50f9a35f54597bcad]]></item>
+		<item id="/install.php"><![CDATA[e7653b767562a1a368705a40640a25cc]]></item>
+		<item id="/discuz_plugin_huihuicai_threadseo_TC_UTF8.xml"><![CDATA[e662ad3260c42177bcc6cbdaf794e361]]></item>
+	</item>
+</root>

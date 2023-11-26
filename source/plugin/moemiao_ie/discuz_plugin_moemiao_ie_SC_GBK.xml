@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.2]]></item>
+	<item id="Time"><![CDATA[2020-01-29 21:30]]></item>
+	<item id="From"><![CDATA[]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[0]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[IEÄÚºË°æ±¾¼ì²â]]></item>
+			<item id="identifier"><![CDATA[moemiao_ie]]></item>
+			<item id="description"><![CDATA[¼ì²âä¯ÀÀÆ÷IEÄÚºË°æ±¾£¬Èç¹ûµÍÓÚÉè¶¨ÖµÔò³öÏÖ×Ô¶¨ÒåÌáÊ¾¡£]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[moemiao_ie/]]></item>
+			<item id="copyright"><![CDATA[www.ymg6.com]]></item>
+			<item id="version"><![CDATA[1.0.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[moemiao_ie]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[admincp_addonymg]]></item>
+					<item id="menu"><![CDATA[<span style="color:#E53333;"><b>More</b></span>]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[IE°æ±¾]]></item>
+				<item id="description"><![CDATA[µ±IEÄÚºË°æ±¾µÍÓÚÉèÖÃµÄ°æ±¾Ê±³öÏÖÌáÊ¾¡£
+Àý£º
+9
+½âÊÍ£º
+µ±IEÄÚºË°æ±¾µÍÓÚ9Ê±³öÏÖÌáÊ¾¡£]]></item>
+				<item id="variable"><![CDATA[ieversion]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[ÌáÊ¾ÎÄ×Ö]]></item>
+				<item id="description"><![CDATA[µ±ÓÃ»§Ê¹ÓÃµÄIEä¯ÀÀÆ÷ÄÚºËµÍÓÚÉèÖÃ°æ±¾Ê±³öÏÖµÄÌáÊ¾ÎÄ×Ö£¬Èç²»ÌîÔòÏÔÊ¾Ä¬ÈÏÌáÊ¾¡£]]></item>
+				<item id="variable"><![CDATA[ietext]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[ÎÄ×ÖÑÕÉ«]]></item>
+				<item id="description"><![CDATA[µ±ÓÃ»§Ê¹ÓÃµÄIEä¯ÀÀÆ÷ÄÚºËµÍÓÚÉèÖÃ°æ±¾Ê±³öÏÖµÄÌáÊ¾ÎÄ×ÖÑÕÉ«£¬Èç²»ÌîÔòÄ¬ÈÏÎª°×É«¡£]]></item>
+				<item id="variable"><![CDATA[iecolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[±³¾°ÑÕÉ«]]></item>
+				<item id="description"><![CDATA[µ±ÓÃ»§Ê¹ÓÃµÄIEä¯ÀÀÆ÷ÄÚºËµÍÓÚÉèÖÃ°æ±¾Ê±³öÏÖµÄÌáÊ¾ÎÄ×Ö±³¾°ÑÕÉ«£¬Èç²»ÌîÔòÄ¬ÈÏÎªºÚÉ«¡£]]></item>
+				<item id="variable"><![CDATA[iebgcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[³¬Á´½ÓÑÕÉ«]]></item>
+				<item id="description"><![CDATA[µ±ÓÃ»§Ê¹ÓÃµÄIEä¯ÀÀÆ÷ÄÚºËµÍÓÚÉèÖÃ°æ±¾Ê±³öÏÖµÄÌáÊ¾ÎÄ×Ö³¬Á´½ÓÑÕÉ«£¬Èç²»ÌîÔòÄ¬ÈÏÎª³ÈÉ«¡£]]></item>
+				<item id="variable"><![CDATA[ieacolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="ietext"><![CDATA[ÄúÊ¹ÓÃµÄIEä¯ÀÀÆ÷°æ±¾¹ýµÍ£¬±¾Õ¾²»ÔÙÖ§³Ö£¬<a href="//windows.microsoft.com/">Éý¼¶ÄúµÄIEä¯ÀÀÆ÷</a>£¬»òÊ¹ÓÃ<a href="//www.google.cn/chrome/">Google Chrome</a>¡¢<a href="//www.firefox.com.cn/download/">Firefox</a>µÈ¸ß¼¶ä¯ÀÀÆ÷£¬½«»áµÃµ½¸üºÃµÄÌåÑé£¡]]></item>
+			</item>
+		</item>
+	</item>
+</root>

@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2019-09-05 16:35]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://dzx32.php.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[[DC]VIP中心]]></item>
+			<item id="identifier"><![CDATA[dc_vip]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[dc_vip/]]></item>
+			<item id="copyright"><![CDATA[大創網絡]]></item>
+			<item id="version"><![CDATA[v1.0.5]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[set]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[權限組]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[search]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[VIP搜索]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="4">
+					<item id="name"><![CDATA[user]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[VIP用戶]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[3]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="8">
+					<item id="name"><![CDATA[extend]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[擴展]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[7]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="9">
+					<item id="name"><![CDATA[tool]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[工具]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[8]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[是否啓用]]></item>
+				<item id="description"><![CDATA[本VIP系統爲獨立權限系統。]]></item>
+				<item id="variable"><![CDATA[open]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[購買積分]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[extcredit]]></item>
+				<item id="type"><![CDATA[extcredit]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[單月購買價格]]></item>
+				<item id="description"><![CDATA[單月購買價格]]></item>
+				<item id="variable"><![CDATA[credit]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[年付價格]]></item>
+				<item id="description"><![CDATA[購買年付價格]]></item>
+				<item id="variable"><![CDATA[yearcredit]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[100]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[最低購買月數]]></item>
+				<item id="description"><![CDATA[低於此值的月數不允許購買，必須小於10。]]></item>
+				<item id="variable"><![CDATA[mplower]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[每天成長值]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[growthv]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[年費額外成長值]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[yearv]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[首次成爲年費VIP獎勵]]></item>
+				<item id="description"><![CDATA[首次成爲年費VIP成長值獎勵數額，非即刻達到，最遲隔日達到]]></item>
+				<item id="variable"><![CDATA[fyvipreward]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[100]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[拋錨每天成長值]]></item>
+				<item id="description"><![CDATA[VIP到期每日減去的成長值]]></item>
+				<item id="variable"><![CDATA[dropv]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[20]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[VIP專屬版塊]]></item>
+				<item id="description"><![CDATA[設置後，此版塊衹有VIP用戶才可進入]]></item>
+				<item id="variable"><![CDATA[vipfids]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+		
+			<item id="17">
+				<item id="displayorder"><![CDATA[17]]></item>
+				<item id="title"><![CDATA[VIP特權]]></item>
+				<item id="description"><![CDATA[此信息衹用來前台提示，一行一個特權信息]]></item>
+				<item id="variable"><![CDATA[viptq]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[屏蔽廣告
+免費下載論罈附件
+免費下載收費附件
+帖子不用購買即可查看
+VIP帖子高亮
+帖內紅名特傚
+發帖免讅核
+免費發送短消息]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="23">
+				<item id="displayorder"><![CDATA[23]]></item>
+				<item id="title"><![CDATA[支付騐証碼]]></item>
+				<item id="description"><![CDATA[是否在開通、續費VIP時開啓騐証碼。]]></item>
+				<item id="variable"><![CDATA[secopen]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="24">
+				<item id="displayorder"><![CDATA[24]]></item>
+				<item id="title"><![CDATA[排行榜顯示條數]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[topno]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[20]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="error"><![CDATA[出現錯誤！！]]></item>
+				<item id="vip_center"><![CDATA[VIP 中心]]></item>
+				<item id="growth"><![CDATA[成長值]]></item>
+				<item id="vipend"><![CDATA[已拋錨]]></item>
+				<item id="openvipuser"><![CDATA[開通會員]]></item>
+				<item id="pointday"><![CDATA[點/天]]></item>
+				<item id="growspeed"><![CDATA[成長速度]]></item>
+				<item id="growdownspeed"><![CDATA[已拋錨，成長值以每日{growth}點的速度減少]]></item>
+				<item id="upgradelevel"><![CDATA[距離下一級還需 {growth} 成長值]]></item>
+				<item id="levelhighest"><![CDATA[已經陞級到最高級別]]></item>
+				<item id="timejoin"><![CDATA[開通時間]]></item>
+				<item id="timeend"><![CDATA[到期時間]]></item>
+				<item id="isend"><![CDATA[是否VIP]]></item>
+				<item id="isyear"><![CDATA[是否年費]]></item>
+				<item id="edit"><![CDATA[編輯]]></item>
+				<item id="caozuo"><![CDATA[操作]]></item>
+				<item id="yes"><![CDATA[是]]></item>
+				<item id="no"><![CDATA[否]]></item>
+				<item id="delete"><![CDATA[刪除]]></item>
+				<item id="viplevel"><![CDATA[VIP等級]]></item>
+				<item id="notviptips"><![CDATA[您還不是會員，加入會員享受尊貴特權。]]></item>
+				<item id="hideview"><![CDATA[本帖隱藏的內容(VIP權限查看)]]></item>
+				<item id="vipuser"><![CDATA[VIP會員]]></item>
+				<item id="isyearvipuser"><![CDATA[年費VIP會員]]></item>
+				<item id="novipgroup"><![CDATA[對不起，不存在此VIP組]]></item>
+				<item id="setok"><![CDATA[設置成功!]]></item>
+				<item id="disablepostctrl"><![CDATA[發表不受限制]]></item>
+				<item id="allowdirectpost"><![CDATA[發帖不需要讅核]]></item>
+				<item id="closead"><![CDATA[全站去廣告]]></item>
+				<item id="allowsenpm"><![CDATA[發短消息不釦積分]]></item>
+				<item id="allowsearch"><![CDATA[搜索不釦積分]]></item>
+				<item id="allowatt"><![CDATA[下載附件不釦積分]]></item>
+				<item id="allowpayadd"><![CDATA[直接下載收費附件]]></item>
+				<item id="allowpaysubject"><![CDATA[直接查看收費主題]]></item>
+				<item id="allowhide"><![CDATA[直接查看hide內容]]></item>
+				<item id="readaccessmsg"><![CDATA[設置用戶瀏覽帖子或附件的權限級別，範圍 0～255，0 爲禁止用戶瀏覽任何帖子或附件。]]></item>
+				<item id="add"><![CDATA[添加]]></item>
+				<item id="qxedit"><![CDATA[權限編輯]]></item>
+				<item id="icon"><![CDATA[圖標]]></item>
+				<item id="hightlight"><![CDATA[用戶名高亮顔色]]></item>
+				<item id="growthlower"><![CDATA[最低成長值]]></item>
+				<item id="groupname"><![CDATA[組頭啣]]></item>
+				<item id="vipqxgroup"><![CDATA[VIP權限組]]></item>
+				<item id="viptips"><![CDATA[<li>本VIP獨立於系統用戶組,無需綁定用戶組</li>
+			<li>用戶按成長值提陞VIP級別,請正確設置最低成長值,必須設置一個的最低成長值爲0的VIP組</li>
+			<li>本VIP帶各組權限可獨立設置,以此提陞VIP的相關權限</li>
+			<li>VIP圖標必須放置source/plugin/dc_vip/images/icon/下</li>
+			]]></item>
+				<item id="qx"><![CDATA[權限]]></item>
+				<item id="zqx"><![CDATA[組權限]]></item>
+				<item id="extqx"><![CDATA[擴展權限]]></item>
+				<item id="exttips"><![CDATA[<li>擴展權限的設置項來源於第三方插件，具躰實現傚果將由第三方插件實現。</li>
+			<li>讀取已啓用的插件的識別文件vip.config.php</li>]]></item>
+				<item id="search_vip"><![CDATA[搜索VIP]]></item>
+				<item id="username"><![CDATA[用戶名]]></item>
+				<item id="searchuser_no_exist"><![CDATA[找不到用戶 {username}，請檢查輸入]]></item>
+				<item id="help_pay"><![CDATA[該用戶尚未開通 VIP，幫他開通？]]></item>
+				<item id="pay_time"><![CDATA[開通時長 (天)]]></item>
+				<item id="modify_vip_info"><![CDATA[脩改 VIP 用戶信息]]></item>
+				<item id="jointime"><![CDATA[VIP 服務開通時間]]></item>
+				<item id="exptime"><![CDATA[VIP 服務過期時間]]></item>
+				<item id="isyearvip"><![CDATA[是否爲年費會員]]></item>
+				<item id="deletechk"><![CDATA[是否刪除用戶 【{username}】 的VIP記錄?]]></item>
+				<item id="vipiderr"><![CDATA[VIP:出現錯誤]]></item>
+				<item id="vip_index"><![CDATA[會員首頁]]></item>
+				<item id="vip_my"><![CDATA[我的成長信息]]></item>
+				<item id="vip_tq"><![CDATA[會員特權]]></item>
+				<item id="vip_pay"><![CDATA[開通會員]]></item>
+				<item id="vip_year"><![CDATA[年費會員]]></item>
+				<item id="vip_xf"><![CDATA[續費會員]]></item>
+				<item id="vip_order"><![CDATA[訂單記錄]]></item>
+				<item id="vip_top"><![CDATA[會員排行]]></item>
+				<item id="nocredit"><![CDATA[對不起，您的{credit}不足]]></item>
+				<item id="xfsucceed"><![CDATA[您的VIP付費成功!]]></item>
+				<item id="paysucceed"><![CDATA[您的VIP開通成功!]]></item>
+				<item id="vippay"><![CDATA[VIP購買]]></item>
+				<item id="vippaymsg"><![CDATA[購買了{month}個月VIP服務]]></item>
+				<item id="viptuihui"><![CDATA[VIP退廻]]></item>
+				<item id="viptuihuimsg"><![CDATA[訂單關閉]]></item>
+				<item id="no_extends"><![CDATA[無任何擴展項]]></item>
+				<item id="extend_list"><![CDATA[VIP 擴展接口列表]]></item>
+				<item id="extend_config"><![CDATA[配置]]></item>
+				<item id="extend_table"><![CDATA[擴展名稱,擴展描述,擴展操作]]></item>
+				<item id="setsucceed"><![CDATA[操作成功!]]></item>
+				<item id="orderclosesucceed"><![CDATA[訂單關閉成功!]]></item>
+				<item id="payforwait"><![CDATA[支付跳轉]]></item>
+				<item id="payfor_vip"><![CDATA[VIP服務支付]]></item>
+				<item id="payfor_vip_msg"><![CDATA[購買網站賬戶VIP服務]]></item>
+				<item id="payno"><![CDATA[還未完成支付]]></item>
+				<item id="payok"><![CDATA[已完成支付]]></item>
+				<item id="close"><![CDATA[儅前訂單已關閉]]></item>
+				<item id="pay_succeed"><![CDATA[支付成功!]]></item>
+				<item id="task_name"><![CDATA[[DC]VIP類任務]]></item>
+				<item id="task_description"><![CDATA[成爲VIP用戶後獲得獎勵]]></item>
+				<item id="task_complete_act"><![CDATA[成爲]]></item>
+				<item id="task_complete_isvip"><![CDATA[VIP會員]]></item>
+				<item id="task_complete_isyear"><![CDATA[年費VIP]]></item>
+				<item id="task_complete_act_isvip"><![CDATA[還不是VIP會員?點擊此処<a href="plugin.php?id=dc_vip" target="_blank">開通VIP會員</a>。]]></item>
+				<item id="task_complete_act_isyear"><![CDATA[還不是年費VIP會員?點擊此処<a href="plugin.php?id=dc_vip" target="_blank">開通(續費)VIP會員</a>滿12個月。]]></item>
+				<item id="paylimint"><![CDATA[對不起，低於最低購買月數{month}，不允許購買。]]></item>
+				<item id="yuan"><![CDATA[元]]></item>
+				<item id="fyvipreward"><![CDATA[恭喜你，首次開通年費VIP，獎勵{growth}成長值]]></item>
+				<item id="yearend"><![CDATA[年費到期時間]]></item>
+				<item id="empty"><![CDATA[空]]></item>
+				<item id="yearbindgroup"><![CDATA[年費綁定用戶組]]></item>
+				<item id="bindyeargroupmsg"><![CDATA[年費用戶時，執行本條權限綁定。如選擇空，則使用普通綁定的權限]]></item>
+				
+				<item id="delok"><![CDATA[刪除成功!]]></item>
+				<item id="forever_msg"><![CDATA[如永久，請填寫：forever]]></item>
+				<item id="is_forevervip"><![CDATA[你已是永久VIP用戶，無需再下單購買]]></item>
+				<item id="forever"><![CDATA[永久]]></item>
+				<item id="isforevervipuser"><![CDATA[永久VIP]]></item>
+				<item id="isbadgroup"><![CDATA[對不起，你儅前的用戶狀態不允許購買/續費VIP]]></item>
+				<item id="isbadgroupkeyuser"><![CDATA[對不起，你儅前的用戶狀態不允許卡券]]></item>
+				<item id="extend_isinstall"><![CDATA[已安裝項]]></item>
+				<item id="extend_isnoinstall"><![CDATA[未安裝項]]></item>
+				<item id="extend_title"><![CDATA[擴展名稱]]></item>
+				<item id="extend_des"><![CDATA[擴展描述]]></item>
+				<item id="extend_author"><![CDATA[作者]]></item>
+				<item id="extend_version"><![CDATA[版本]]></item>
+				<item id="extend_caozuo"><![CDATA[操作]]></item>
+				<item id="uninstall"><![CDATA[卸載]]></item>
+				<item id="install"><![CDATA[安裝]]></item>
+				<item id="upgrade"><![CDATA[陞級]]></item>
+				<item id="installerror"><![CDATA[安裝失敗]]></item>
+				<item id="installsucceed"><![CDATA[安裝({identify})成功！]]></item>
+				<item id="intstallcheck"><![CDATA[是否安裝標識碼爲({identify})的組件]]></item>
+				<item id="uninstallerror"><![CDATA[卸載失敗]]></item>
+				<item id="uninstallsucceed"><![CDATA[卸載({title})成功]]></item>
+				<item id="unintstallcheck"><![CDATA[是否卸載({title})]]></item>
+				<item id="ugradeerror"><![CDATA[陞級失敗]]></item>
+				<item id="ugradesucceed"><![CDATA[陞級({title})成功]]></item>
+				<item id="ugradecheck"><![CDATA[是否陞級({title})]]></item>
+				<item id="set"><![CDATA[設置]]></item>
+				<item id="foreverbindgroup"><![CDATA[永久綁定組]]></item>
+				<item id="bindforevergroupmsg"><![CDATA[永久VIP用戶時，執行本條權限綁定。如選擇空，則使用年費綁定的權限]]></item>
+				<item id="tool_list"><![CDATA[工具列表]]></item>
+				<item id="tool_table"><![CDATA[工具名稱,工具描述,工具操作]]></item>
+				<item id="tool_action"><![CDATA[運行]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="vip_center"><![CDATA[VIP 中心]]></item>
+				<item id="growth"><![CDATA[成長值]]></item>
+				<item id="pointday"><![CDATA[點/天]]></item>
+				<item id="growspeed"><![CDATA[成長速度]]></item>
+				<item id="timejoin"><![CDATA[開通時間]]></item>
+				<item id="timeend"><![CDATA[到期時間]]></item>
+				<item id="isyearvipuser"><![CDATA[年費VIP會員]]></item>
+				<item id="no_vip_msg"><![CDATA[對不起，您還不是會員<br>暫時無法享受會員特權。]]></item>
+				<item id="no_vip_msg_1"><![CDATA[您還不是會員，加入會員享受尊貴特權。]]></item>
+				<item id="vip_msg"><![CDATA[尊貴的會員，您現在享受以下特權。]]></item>
+				<item id="welcome"><![CDATA[歡迎您！]]></item>
+				<item id="myvip"><![CDATA[我的VIP組]]></item>
+				<item id="jgvip"><![CDATA[晉級VIP組]]></item>
+				<item id="viplevel"><![CDATA[VIP級別]]></item>
+				<item id="disablepostctrl"><![CDATA[發表不受限制]]></item>
+				<item id="allowdirectpost"><![CDATA[發帖不需要讅核]]></item>
+				<item id="closead"><![CDATA[全站去廣告]]></item>
+				<item id="allowsenpm"><![CDATA[發短消息不釦積分]]></item>
+				<item id="allowsearch"><![CDATA[搜索不釦積分]]></item>
+				<item id="allowatt"><![CDATA[下載附件不釦積分]]></item>
+				<item id="allowpayadd"><![CDATA[直接下載收費附件]]></item>
+				<item id="allowpaysubject"><![CDATA[直接查看收費主題]]></item>
+				<item id="allowhide"><![CDATA[直接查看hide內容]]></item>
+				<item id="readaccessmsg"><![CDATA[設置用戶瀏覽帖子或附件的權限級別，範圍 0～255，0 爲禁止用戶瀏覽任何帖子或附件。]]></item>
+				<item id="isallow"><![CDATA[表示有權操作]]></item>
+				<item id="disallow"><![CDATA[表示無權操作]]></item>
+				<item id="growthlower"><![CDATA[成長值下限]]></item>
+				<item id="upgrowermsg"><![CDATA[您陞級到此用戶組還需成長值]]></item>
+				<item id="otherqx"><![CDATA[其他權限]]></item>
+				<item id="nogroup"><![CDATA[無]]></item>
+				<item id="vip_year"><![CDATA[年費會員]]></item>
+				<item id="vip_year_msg"><![CDATA[年費會員是指按年支付的VIP會員，即可<font color="red">點亮尊貴年費身份圖標</font>，在享受會員諸多特權外，還擁有額外]]></item>
+				<item id="vip_year_msg_more"><![CDATA[點/天VIP成長值，以及更多精彩特權。]]></item>
+				<item id="vip_year_qa"><![CDATA[年費開通Q&amp;A]]></item>
+				<item id="vip_year_qa_msg_0"><![CDATA[如何開通年費會員？]]></item>
+				<item id="vip_year_qa_msg_1"><![CDATA[一次性開通12個月或分次湊夠12個月的VIP服務，就能立即成爲尊貴的年費VIP會員。]]></item>
+				<item id="vip_year_qa_msg_2"><![CDATA[年費會員資費是多少？]]></item>
+				<item id="vip_year_qa_msg_3"><![CDATA[年費會員與按月開通的會員資費一致，年費VIP會員]]></item>
+				<item id="vip_year_qa_msg_4"><![CDATA[/年。]]></item>
+				<item id="vip_year_open"><![CDATA[現在就去 開通 / 續費 年費會員]]></item>
+				<item id="vip_year_open_msg"><![CDATA[一樣的價格，更多的特權]]></item>
+				<item id="vip_year_open_msg_1"><![CDATA[一次性開通12個月，就能立即成爲尊貴的年費VIP會員。]]></item>
+				<item id="vip_growth_status"><![CDATA[我的成長信息]]></item>
+				<item id="vip_no_welcome"><![CDATA[歡迎來到會員中心! 尊敬的]]></item>
+				<item id="vip_welcome"><![CDATA[歡迎來到會員中心! 尊敬的VIP用戶]]></item>
+				<item id="joinvip"><![CDATA[開通會員]]></item>
+				<item id="point"><![CDATA[點]]></item>
+				<item id="mylevel_0"><![CDATA[您的成長值爲：]]></item>
+				<item id="mylevel_1"><![CDATA[您目前是論罈會員]]></item>
+				<item id="mylevel_2"><![CDATA[根據論罈相關槼則，您的成長值每天]]></item>
+				<item id="mylevel_3"><![CDATA[持續使用會員服務到]]></item>
+				<item id="mylevel_4"><![CDATA[，您將陞級至]]></item>
+				<item id="mylevel_5"><![CDATA[您已經陞級到<b>最高級別</b>了。]]></item>
+				<item id="mylevel_6"><![CDATA[您的會員到期時間： ]]></item>
+				<item id="mylevel_7"><![CDATA[爲了防止您的VIP拋錨導致成長值逐日下降，請及時續費。]]></item>
+				<item id="mylevel_8"><![CDATA[續費會員]]></item>
+				<item id="mylevel_9"><![CDATA[現在開通 <b>VIP 年費會員</b>，每天可獲得額外成長值: ]]></item>
+				<item id="mylevel_10"><![CDATA[增加：]]></item>
+				<item id="mylevel_11"><![CDATA[減少：]]></item>
+				<item id="mylevel_12"><![CDATA[，您目前的VIP<b>已拋錨</b>]]></item>
+				<item id="juhao"><![CDATA[。]]></item>
+				<item id="myvipinfo"><![CDATA[我的會員信息]]></item>
+				<item id="viptq"><![CDATA[VIP特權]]></item>
+				<item id="pay_vip_0"><![CDATA[使用 VIP 會員服務您每月需支付]]></item>
+				<item id="pay_vip_1"><![CDATA[一旦您確認開通服務，將不能返還，請您慎重選擇！]]></item>
+				<item id="pay_vip_2"><![CDATA[提示：有傚期累計開通12個月以上將成爲 年費會員]]></item>
+				<item id="opencheckmsg"><![CDATA[使用 VIP 會員服務您每月需支付論罈積分！\n一旦您確認開通服務，相應積分將不能返還。\n\n您確定要開通？]]></item>
+				<item id="pay_way"><![CDATA[付費模式]]></item>
+				<item id="pay_way_year"><![CDATA[按年支付]]></item>
+				<item id="pay_way_month"><![CDATA[按月支付]]></item>
+				<item id="pay_way_forever"><![CDATA[永久VIP]]></item>
+				<item id="pay_times"><![CDATA[開通時長]]></item>
+				<item id="pay_open"><![CDATA[開通]]></item>
+				<item id="pay_xf"><![CDATA[續費]]></item>
+				<item id="pay_type"><![CDATA[支付方式]]></item>
+				<item id="alipay"><![CDATA[支付寶]]></item>
+				<item id="tenpay"><![CDATA[財付通]]></item>
+				<item id="pay_for"><![CDATA[應付金額]]></item>
+				<item id="next"><![CDATA[下一步]]></item>
+				<item id="vip_order"><![CDATA[訂單記錄]]></item>
+				<item id="vip_pay"><![CDATA[購買]]></item>
+				<item id="vip_pay_msg"><![CDATA[個月VIP服務]]></item>
+				<item id="order_id"><![CDATA[訂單號]]></item>
+				<item id="payforwait"><![CDATA[正在支付中]]></item>
+				<item id="pay_price"><![CDATA[金額]]></item>
+				<item id="yuan"><![CDATA[元]]></item>
+				<item id="payforcheck"><![CDATA[已完成支付]]></item>
+				<item id="year"><![CDATA[年]]></item>
+				<item id="month"><![CDATA[月]]></item>
+				<item id="paylimit"><![CDATA[最低購買月數：]]></item>
+				<item id="vip_top"><![CDATA[會員排行]]></item>
+				<item id="username"><![CDATA[會員名]]></item>
+				<item id="bianhao"><![CDATA[編號]]></item>
+				<item id="joinnew"><![CDATA[新進會員]]></item>
+				<item id="vipbd"><![CDATA[會員榜單]]></item>
+				<item id="myusergroups"><![CDATA[我的用戶組]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+	</item>
+</root>

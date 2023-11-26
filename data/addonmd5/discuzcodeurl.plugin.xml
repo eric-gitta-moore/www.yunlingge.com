@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[discuzcodeurl.plugin]]></item>
+	<item id="RevisionID"><![CDATA[86395]]></item>
+	<item id="SN"><![CDATA[2020012608M11S1c1s9C]]></item>
+	<item id="RevisionDateline"><![CDATA[1573974478]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_discuzcodeurl_SC_UTF8.xml"><![CDATA[b3faf86ce3294c27aae24b9bd9eab7bb]]></item>
+		<item id="/more.inc.php"><![CDATA[c496c4ce9335038c95ccaa3d5948b6e7]]></item>
+		<item id="/hook.class.php"><![CDATA[2463cc7274ff60ca6c3a6e14f456bca8]]></item>
+		<item id="/discuz_plugin_discuzcodeurl_TC_UTF8.xml"><![CDATA[f80efd40c913ff0d8b6d8f619d648020]]></item>
+		<item id="/mobile.class.php"><![CDATA[a5a63f001cd94e91eba43ffd7419a378]]></item>
+	</item>
+</root>

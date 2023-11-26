@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[cdc_html5eff.plugin]]></item>
+	<item id="RevisionID"><![CDATA[22464]]></item>
+	<item id="SN"><![CDATA[2020012616S3FZR5N9Q1]]></item>
+	<item id="RevisionDateline"><![CDATA[1565169695]]></item>
+	<item id="Data">
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/discuz_plugin_cdc_html5eff_TC_UTF8.xml"><![CDATA[f83ac307e898ebdf024a302c449c1dac]]></item>
+		<item id="/template/extend_common.css"><![CDATA[51e66665f2ed2f3bef37681ccc2ac1a8]]></item>
+		<item id="/discuz_plugin_cdc_html5eff_SC_UTF8.xml"><![CDATA[d393f030a69836737fd4a04413fbc2a1]]></item>
+	</item>
+</root>

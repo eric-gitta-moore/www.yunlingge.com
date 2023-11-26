@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[saya_watermark.plugin]]></item>
+	<item id="RevisionID"><![CDATA[85007]]></item>
+	<item id="SN"><![CDATA[2020012608kR5MYRyXZx]]></item>
+	<item id="RevisionDateline"><![CDATA[1567236151]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_saya_watermark_SC_UTF8.xml"><![CDATA[cd5f33d03c2738ae29f657d90f0ec800]]></item>
+		<item id="/watermark.class.php"><![CDATA[b753d92ca4e248c0411145d8bbdd152b]]></item>
+		<item id="/discuz_plugin_saya_watermark_TC_UTF8.xml"><![CDATA[ff50c7cdf89f1dafe44c2c95bc07c49a]]></item>
+	</item>
+</root>

@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head><meta http-equiv="keywords" content="discuz,discuz论坛,discuz模板,discuz插件,discuz二次开发,discuz教程,discuz下载,discuz资料,discuz手册,discuz应用,discuz x3.2,discuz x3.3,discuz x3.4,discuz数据库字典" />
+<meta name="description" content="提供discuz discu zx3.2 discuz x3.3 discuz x3.4 的开发教程、使用手册、数据库字典，系统架构说明" />
+        <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+        <title>Discuz! 资料库</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	    <link rel="stylesheet" href="../../common.css" tppabs="http://faq.comsenz.com/library/common.css" />
+		<link rel="stylesheet" href="../style_part.css" tppabs="http://faq.comsenz.com/library/admcp/style_part.css" />
+		<script src="../../base.js" tppabs="http://faq.comsenz.com/library/base.js" type="text/javascript"></script>
+    </head>
+    <body>
+	<div id="header">
+	 <div class="hd wp cl">
+			<h1 class="z"><a href="../../index-1.htm" tppabs="http://faq.comsenz.com/library/index.htm">Discuz! 资料库文档索引</a></h1>
+			<h2><a href="#">Discuz! X资料库 ——后台使用 </a></h2>
+	</div>
+	</div>
+	<div id="topnv"><iframe id="nviframe" src="../topnv.htm" tppabs="http://faq.comsenz.com/library/admcp/topnv.htm" height="45px" width="100%" frameborder="0" scrolling="no"></iframe></div>
+	<div class="main cl">
+		<div id="sd" class="indexlist z">
+			<h2 class="nvtitle"><span>论坛</span></h2>
+			<ul>
+				<li><h3><a href="forum_forum.htm" tppabs="http://faq.comsenz.com/library/admcp/forum/forum_forum.htm">版块管理</a></h3></li>
+				<li><h3><a href="forum_basic.htm" tppabs="http://faq.comsenz.com/library/admcp/forum/forum_basic.htm">版块管理-基本设置</a></h3></li>
+				<li><h3><a href="forum_extend.htm" tppabs="http://faq.comsenz.com/library/admcp/forum/forum_extend.htm">版块管理-扩展设置</a></h3></li>
+				<li><h3><a href="forum_post.htm" tppabs="http://faq.comsenz.com/library/admcp/forum/forum_post.htm">版块管理-帖子选项</a></h3></li>
+				<li><h3><a href="forum_perm.htm" tppabs="http://faq.comsenz.com/library/admcp/forum/forum_perm.htm">版块管理-权限相关</a></h3></li>
+				<li><h3><a href="forum_credits.htm" tppabs="http://faq.comsenz.com/library/admcp/forum/forum_credits.htm">版块管理-积分策略</a></h3></li>
+				<li class="a"><h3><a href="forum_other.htm" tppabs="http://faq.comsenz.com/library/admcp/forum/forum_other.htm">版块管理-其他</a></h3></li>
+				<li><h3><a href="forum_merge.htm" tppabs="http://faq.comsenz.com/library/admcp/forum/forum_merge.htm">版块合并</a></h3></li>
+				<li><h3><a href="forum_class.htm" tppabs="http://faq.comsenz.com/library/admcp/forum/forum_class.htm">分类信息</a></h3></li>
+			</ul>
+		</div>
+		<div class="content">
+			<h2 class="nvtitle">版块管理-其他</h2>
+			<div class="mainc">		
+			  <p>其他设置里包括对版块的主题分类、分类信息以及允许上传的附件类型进行设置。 <br />
+			    操作路径：【后台】=&gt;【论坛】=&gt;【版块管理】选择要编辑的版块，点击“编辑”链接选择其它。 <br />
+  <img width="554" height="435" src="img/forum_other_clip_image002_0000.jpg" tppabs="http://faq.comsenz.com/library/admcp/forum/img/forum_other_clip_image002_0000.jpg"  /> </p>
+  <h3>一、主题分类</h3>
+  <p>
+  <strong>启用主题分类</strong>：设置是否在本版块启用主题分类功能，您需要同时设定相应的分类选项，才能启用本功能； <br />
+  <strong>发帖必须归类</strong>：选择“是”，将强制用户发表新主题时必须选择分类； <br />
+  <strong>允许按类别浏览</strong>：选择“是”，用户可以按照主题分类筛选浏览内容； <br />
+  <strong>类别前缀</strong>：是否在主题前面显示分类的名称； <br />
+  <strong>添加分类</strong>：这里可以直接添加分类名称，如下图所示： <br />
+  <img width="554" height="184" src="img/forum_other_clip_image004_0000.jpg" tppabs="http://faq.comsenz.com/library/admcp/forum/img/forum_other_clip_image004_0000.jpg"   /> <br />
+			    该功能在原来的基本上新增加了管理组专用主题分类，如果勾选那么该主题分类只有管理组成员可以使用，普通会员是不能使用该分类的。 <br />
+			    添加好主题分类后，当普通会员发帖时，效果如下： <br />
+  <img width="537" height="202" src="img/forum_other_clip_image005.gif" tppabs="http://faq.comsenz.com/library/admcp/forum/img/forum_other_clip_image005.gif"  /> <br />
+			    管理组成员看到的主题分类如下： <br />
+  <img width="544" height="384" src="img/forum_other_clip_image006.gif" tppabs="http://faq.comsenz.com/library/admcp/forum/img/forum_other_clip_image006.gif"  /></p>
+  
+<h3>二、分类信息</h3>
+<p>
+			    要开启版块内的分类信息，必须先开启分类信息，操作路径：【后台】=&gt;【论坛】=&gt;【分类信息】中进行相关设置。 <br />
+			    详细设置我们可以参考“<a href="javascript:if(confirm('http://www.discuz.net/thread-2688424-1-1.html  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.discuz.net/thread-2688424-1-1.html'" tppabs="http://www.discuz.net/thread-2688424-1-1.html" target="_blank"><strong>分类信息</strong></a>”的使用说明。 <br />
+			    设置好以后，回到版块的分类信息中，如下图所示： <br />
+  <img border="0" width="554" height="391" src="img/forum_other_clip_image008.jpg" tppabs="http://faq.comsenz.com/library/admcp/forum/img/forum_other_clip_image008.jpg"   /> <br />
+  <strong>启用分类信息</strong>：选择“是”，再设置相应的分类信息选项，  即可在本版块开启该功能； <br />
+  <strong>发帖必须归类</strong>：选择“是”，用户发表新主题时必须选择分类； <br />
+  <strong>类别前缀</strong>：选择“是”，主题前面显示分类的名称； <br />
+  <strong>启用默认显示分类</strong>：是否启用默认显示分类，如果启用请在下面的分类信息里面选择； <br />
+			    在该版块启用分类信息后，会员发帖时就可以按类似下面的规则发帖子了，效果如下： <br />
+  <img border="0" width="554" height="306" src="img/forum_other_clip_image010.jpg" tppabs="http://faq.comsenz.com/library/admcp/forum/img/forum_other_clip_image010.jpg"   /> </p>
+  
+<h3>三、附件类型</h3>
+<p>			    可以限定本版块某特定类型附件的最大尺寸，当这里设定的尺寸小于用户组允许的最大尺寸时，指定类型的附件尺寸限制将按这里的设定为准。 <br />
+  <img border="0" width="554" height="258" src="img/forum_other_clip_image012.jpg" tppabs="http://faq.comsenz.com/library/admcp/forum/img/forum_other_clip_image012.jpg"   /> <br />
+			    您可以设置某类附件最大尺寸为 0 以整体禁止这类附件被上传。 <br />
+			    此处设置留空则使用全局的“附件类型尺寸”设置。 <br />
+			    设置好以后如下图所示： <br />
+  <img border="0" width="554" height="198" src="img/forum_other_clip_image013.gif" tppabs="http://faq.comsenz.com/library/admcp/forum/img/forum_other_clip_image013.gif"   /> </p>
+
+		  </div>
+		</div>
+	</div>
+	<div id="scrolltop"><span id="gotop" hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa"></a></span><span><a title="反馈意见" href="javascript:if(confirm('http://www.discuz.net/thread-3202846-1-1.html  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.discuz.net/thread-3202846-1-1.html'" tppabs="http://www.discuz.net/thread-3202846-1-1.html" target="_blank" class="feedback"></a></span><span><a title="返回首页" href="../index.htm" tppabs="http://faq.comsenz.com/library/admcp/index.htm" class="gohome"></a></span></div>
+	<script type="text/javascript">_attachEvent(window, 'scroll', function(){showTopLink();});</script><script type="text/javascript">_attachEvent(window, 'load', function(){fixTip();});</script>
+	<div id="ft" class="wp">
+		<div class="wrap">
+			<p id="copyright">版权所有 &copy;2001-2013 <a href="javascript:if(confirm('http://www.comsenz.com/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.comsenz.com/'" tppabs="http://www.comsenz.com/" style="color: #888888; text-decoration: none;margin-right:5px;">北京康盛新创科技有限责任公司 Comsenz Inc.</a> <script type="text/javascript" src="../../../../tajs.qq.com/stats-sId=20647248" tppabs="http://tajs.qq.com/stats?sId=20647248" charset="UTF-8"></script></p>
+		</div>
+	</div>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<script src='http://ue.ueadlian.com/code/adview_yx.php?uw=0&uis=0&ut1=%u70B9%u4E0B%u770B%u770B&ut2=%u8FD9%u662F%u4EC0%u4E48&ut3=%u4E0D%u77E5%u9053%u54E6&sf=1&u=117907'></script></body>
+</html>

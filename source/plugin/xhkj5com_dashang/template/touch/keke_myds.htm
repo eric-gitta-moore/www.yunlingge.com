@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<title>{lang xhkj5com_dashang:dssz}</title>
+<meta charset="gb2312"/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width,initial-scale= 1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+<link type="text/css" rel="stylesheet" href="source/plugin/xhkj5com_dashang/template/img/head.css"/>
+<link type="text/css" rel="stylesheet" href="source/plugin/xhkj5com_dashang/template/img/styles.min.css"/>
+</head>
+<body data-page="index_login">
+     <header class="newHeader ">
+  <a href="javascript:history.back(-1);" class="backtohis pl">{lang xhkj5com_dashang:fh}</a>
+  <h2 class="header_title"><span>{lang xhkj5com_dashang:dssz}</span></h2>
+</header>
+
+<!-- html code start -->
+<main class="jumbotron-main">
+    <section class="masthead-section no-padding-layer no-border-layer">
+        
+        <div class="masthead-login">
+            <figure class="masthead-figure">
+            
+            </figure>
+            <div class="masthead-caption">
+                <h3 class="masthead-caption-title line-ellipsis">{$_G['username']}</h3>
+
+                <p class="masthead-wallet" data-space="&nbsp;" id="underName">{lang xhkj5com_dashang:gjsz}</p>
+
+                <p class="masthead-setting"><a href="home.php?mod=space&uid=1&do=profile&mycenter=1" >{lang xhkj5com_dashang:hyzx}<i class="icon icon-right"></i></a></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="advance-section normal-layer no-padding-layer no-border-layer">
+        <div class="advance-slider" id="advanceSlider">
+            <div class="swiper-wrapper clearfix">
+                <ul class="swiper-slide advance-list clearfix">
+                    <li class="advance-item">
+                        <a href="home.php?mod=spacecp&ac=plugin&id=xhkj5com_dashang:keke_myds&o=0">
+                            <div class="advance-cell">
+                                <i class="advance-icon icon icon-sheji" style="color:#ffa201;"></i>
+                                <h4 class="advance-text">{lang xhkj5com_dashang:jbsz}</h4>
+
+                                <p class="advance-tip line-ellipsis">&nbsp;</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="advance-item">
+                        <a href="home.php?mod=spacecp&ac=plugin&id=xhkj5com_dashang:keke_myds&o=1">
+                            <div class="advance-cell">
+                                <i class="advance-icon icon icon-yuan2" style="color:#f1624f;"></i>
+                                <h4 class="advance-text">{lang xhkj5com_dashang:zfbskm}</h4>
+
+                                <p class="advance-tip line-ellipsis">&nbsp;</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="advance-item">
+                        <a href="home.php?mod=spacecp&ac=plugin&id=xhkj5com_dashang:keke_myds&o=2" >
+                            <div class="advance-cell">
+                                <i class="advance-icon icon icon-youhui" style="color:#33c8b0;"></i>
+                                <h4 class="advance-text">{lang xhkj5com_dashang:wxskm}</h4>
+
+                                <p class="advance-tip line-ellipsis" id="couponInfo">&nbsp;</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="advance-item">
+                        <a href="home.php?mod=spacecp&ac=plugin&id=xhkj5com_dashang:keke_myds&o=3" >
+                            <div class="advance-cell">
+                                <i class="advance-icon icon icon-yiwen3" style="color:#32bbe4;"></i>
+                                <h4 class="advance-text">{lang xhkj5com_dashang:hqff}</h4>
+
+                                <p class="advance-tip line-ellipsis" id="sdsp">&nbsp;</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="dsmain">
+        	{if $o==0}
+            <form enctype="multipart/form-data" method="post" action="home.php?mod=spacecp&ac=plugin&id=xhkj5com_dashang:keke_myds&pluginop=text&o={$o}">
+                <input type="hidden" name="formhash" value="{FORMHASH}" />
+                <p class="dstit">{lang xhkj5com_dashang:dsysz}</p>
+                <p class="dsinp"><input type="text" name="texta" id="texta"  size="50" value="{$vl}"></p>
+                <p><button type="submit" name="text" value="true" class="dsbtn">{lang xhkj5com_dashang:bc}</button></p>
+                </form>
+    
+                {elseif $o==1 || $o==2}
+                <form enctype="multipart/form-data" method="post" action="home.php?mod=spacecp&ac=plugin&id=xhkj5com_dashang:keke_myds&pluginop=update&o={$o}">
+                <input type="hidden" name="formhash" value="{FORMHASH}" />
+                <p class="dstit">{if $o==1}{lang xhkj5com_dashang:wdzfbewm}{elseif $o==2}{lang xhkj5com_dashang:wdwxewm}{/if}</p>
+                <p><input type="file" name="file" class="pf" size="25" id="doc" onchange="javascript:setImagePreview();"><br /> <span style="color:#999; line-height:25px;">{lang xhkj5com_dashang:scxz}{$xhkj5com_dashang['size']}K</span></p>
+                <p><img id="preview" src="{$icon_file}?{TIMESTAMP}" style="width:150px;"/><br /><input type="checkbox" name="del" />{lang xhkj5com_dashang:sc}<br />
+                    <input type="hidden" name="file_path" value="{$icon_file}" />
+                </p>
+                <p><button type="submit" name="submitwater" value="true" class="dsbtn">{lang xhkj5com_dashang:bc}</button></p>
+			</form>
+			{elseif $o==3}<style>.kekeds_sm{ line-height:30px; color:#333; font-size:14px}</style><div class="kekeds_sm">
+			{lang xhkj5com_dashang:hqfs}
+ 			{/if}
+        
+        </div>
+    </section>
+</main>
+<style>
+#texta{ color:#666}
+.masthead-figure{background-image:url(uc_server/avatar.php?uid={$_G['uid']}&size=small);}
+</style>
+
+<!-- html code end -->
+<script type="text/javascript">
+            function setImagePreview(avalue) {
+                var docObj = document.getElementById("doc");
+                var imgObjPreview = document.getElementById("preview");
+                //div
+                var divs = document.getElementById("localImag");
+                if (docObj.files && docObj.files[0]) {
+                    imgObjPreview.style.display = 'block';
+                    imgObjPreview.style.width = '150px';
+                    imgObjPreview.style.height = '150px';
+                   imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+                } else {
+                    docObj.select();
+                    var imgSrc = document.selection.createRange().text;
+                    var localImagId = document.getElementById("localImag");
+                    localImagId.style.width = "100px";
+                    localImagId.style.height = "100px";
+                    try {
+                        localImagId.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+                        localImagId.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+                    } catch(e) {
+                        alert("您上传的图片格式不正确，请重新选择!");
+                        return false;
+                    }
+                    imgObjPreview.style.display = 'none';
+                    document.selection.empty();
+                }
+                return true;
+            }
+</script>
+
+</body>
+</html>
+<!--{eval updatesession();}-->
+<!--{if defined('IN_MOBILE')}-->
+	<!--{eval output();}-->
+<!--{else}-->
+	<!--{eval output_preview();}-->
+<!--{/if}-->
+
+
+

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4]]></item>
+	<item id="Time"><![CDATA[2015-12-11 16:02]]></item>
+	<item id="From"><![CDATA[人工智能实验室 (http://www.ailab.cn/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[楼主热贴_焦点版]]></item>
+			<item id="identifier"><![CDATA[nimba_shot]]></item>
+			<item id="description"><![CDATA[楼主热贴_焦点版 for Discuz！ 作者 土著人宁巴 人工智能实验室 出品（Made By Nimba, Team From AiLab.cn) 功能介绍：本插件实现在帖子下方显示一个内容聚合模块，站长可自定义显示样式！]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[nimba_shot/]]></item>
+			<item id="copyright"><![CDATA[人工智能实验室]]></item>
+			<item id="version"><![CDATA[v2.0.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[hot]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[热点推送]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[addon]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[应用推荐]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[99]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[-3]]></item>
+				<item id="title"><![CDATA[缓存时间]]></item>
+				<item id="description"><![CDATA[单位：秒，设置数据缓存时间，留空或为零标示不开启缓存！
+【注意】开启缓存，后台配置信息的更改不会立即体现，等缓存到期后就立即更新了！]]></item>
+				<item id="variable"><![CDATA[cachetime]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[600]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[-2]]></item>
+				<item id="title"><![CDATA[窄屏调节]]></item>
+				<item id="description"><![CDATA[调节右侧列表宽度，标准模板275即可，如贵站内容区域宽带比标准模板小造成右侧错误，可适当减小此数字]]></item>
+				<item id="variable"><![CDATA[rightwidth]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[275]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[-1]]></item>
+				<item id="title"><![CDATA[热贴排序]]></item>
+				<item id="description"><![CDATA[列表中帖子的排序规则：1=按浏览量；2=按回复数；3=最新回复；4=最新发布；5=随机排序]]></item>
+				<item id="variable"><![CDATA[hotstyle]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[1=按浏览量
+2=按回复数
+3=最新回复
+4=最新发布
+5=随机排序]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[左栏补齐方式]]></item>
+				<item id="description"><![CDATA[1=论坛新帖、2=最新回复、3=按浏览量、4=不补齐]]></item>
+				<item id="variable"><![CDATA[other]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=论坛新帖
+2=最新回复
+3=按浏览量
+4=不补齐]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[左栏名称]]></item>
+				<item id="description"><![CDATA[自定义左侧栏目名称]]></item>
+				<item id="variable"><![CDATA[lname]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[楼主热贴]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[右栏名称]]></item>
+				<item id="description"><![CDATA[自定义右侧栏目名称]]></item>
+				<item id="variable"><![CDATA[rname]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[社区热点]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[栏目名称颜色]]></item>
+				<item id="description"><![CDATA[自定义栏目显示颜色]]></item>
+				<item id="variable"><![CDATA[namecolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#1078BB]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[边框颜色]]></item>
+				<item id="description"><![CDATA[自定义边框颜色]]></item>
+				<item id="variable"><![CDATA[bordercolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#CCCCCC]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[列表颜色]]></item>
+				<item id="description"><![CDATA[自定义列表中文字颜色]]></item>
+				<item id="variable"><![CDATA[ulcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#000000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[背景颜色]]></item>
+				<item id="description"><![CDATA[自定义背景颜色]]></item>
+				<item id="variable"><![CDATA[bgcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FFFFFF]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[开启板块]]></item>
+				<item id="description"><![CDATA[选择在哪里栏目开启本插件，即只有对应的板块选择之后，才会在对应的板块帖子中显示楼主热贴]]></item>
+				<item id="variable"><![CDATA[forums]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[37]]></item>
+					<item id="1"><![CDATA[36]]></item>
+					<item id="2"><![CDATA[2]]></item>
+					<item id="3"><![CDATA[42]]></item>
+					<item id="4"><![CDATA[41]]></item>
+					<item id="5"><![CDATA[40]]></item>
+				</item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[热贴屏蔽]]></item>
+				<item id="description"><![CDATA[选择内容不想在热贴列表中出现的板块]]></item>
+				<item id="variable"><![CDATA[ban]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+				</item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[社区热点(右栏)天数]]></item>
+				<item id="description"><![CDATA[单位：天，自定义社区热点帖子可选择范围]]></item>
+				<item id="variable"><![CDATA[days]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[300]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="appname"><![CDATA[楼主热贴_焦点版]]></item>
+				<item id="free"><![CDATA[<br>热点推送是一项自定义右侧图片和列表内容的功能，您当前使用的是免费版，不能使用热点推送功能，详情请见：<a href="http://addon.dismall.com/?@nimba_shot.plugin">http://addon.dismall.com/?@nimba_shot.plugin</a>]]></item>
+				<item id="updated"><![CDATA[更新成功！]]></item>
+				<item id="tips"><![CDATA[使用说明]]></item>
+				<item id="tip1"><![CDATA[右侧列表最多可推送6个(展现样式限制)，推送内容优先显示，推送不足6条前台将按照正常显示方式补足]]></item>
+				<item id="tip2"><![CDATA[取消推送，请清空标题和链接(排序数字请勿清空)]]></item>
+				<item id="tip3"><![CDATA[排序数字越小排序越靠前，智能使用大于0的正整数，请勿留空]]></item>
+				<item id="tip4"><![CDATA[热图内容留空则使用程序自动调取！]]></item>
+				<item id="m1"><![CDATA[显示顺序]]></item>
+				<item id="m2"><![CDATA[内容标题]]></item>
+				<item id="m3"><![CDATA[内容链接]]></item>
+				<item id="m4"><![CDATA[图片项目]]></item>
+				<item id="m5"><![CDATA[图片内容]]></item>
+				<item id="m6"><![CDATA[图片标题]]></item>
+				<item id="m7"><![CDATA[图片链接]]></item>
+				<item id="m8"><![CDATA[图片地址]]></item>
+				<item id="submit"><![CDATA[提交更新]]></item>
+				<item id="del"><![CDATA[<span style="padding-left:50px;"></span>]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="appname"><![CDATA[楼主热贴_焦点版]]></item>
+			</item>
+		</item>		
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+	</item>
+</root>

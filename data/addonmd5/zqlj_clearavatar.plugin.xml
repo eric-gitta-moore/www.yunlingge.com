@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[zqlj_clearavatar.plugin]]></item>
+	<item id="RevisionID"><![CDATA[81195]]></item>
+	<item id="SN"><![CDATA[2020013008gDz499zXjo]]></item>
+	<item id="RevisionDateline"><![CDATA[1564386288]]></item>
+	<item id="Data">
+		<item id="/logs.inc.php"><![CDATA[45b3163b370fe2966adac47db301350c]]></item>
+		<item id="/discuz_plugin_zqlj_clearavatar_TC_UTF8.xml"><![CDATA[5ca821b2c71e106bb4230e7e2a7f7f6a]]></item>
+		<item id="/apps.inc.php"><![CDATA[901755419c307058c7fc52e6f40815d3]]></item>
+		<item id="/uninstall.php"><![CDATA[20642d87186089cdb32512bc281bc394]]></item>
+		<item id="/hook.class.php"><![CDATA[f4657ec1b2b1f7e5b5d319d7a8e44af9]]></item>
+		<item id="/clearavatar.inc.php"><![CDATA[aca529ffcb7c4e0c4dc5efb7502f652b]]></item>
+		<item id="/install.php"><![CDATA[0baa4371ecd7d244e555b71f2ec5d7a5]]></item>
+		<item id="/upgrade.php"><![CDATA[a47414c3dd09e6bc5c54906eff516094]]></item>
+		<item id="/mobile.class.php"><![CDATA[9773a1eb316722b570ff23cad3ce6a19]]></item>
+		<item id="/discuz_plugin_zqlj_clearavatar_SC_UTF8.xml"><![CDATA[74614dec9765909c2190d1eac1fd3e7a]]></item>
+		<item id="/template/clearavatar.htm"><![CDATA[b727cfb1140504b9a3a71afb918b144c]]></item>
+	</item>
+</root>

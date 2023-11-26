@@ -1,0 +1,133 @@
+<!--{template common/header}-->
+<script src="source/plugin/rjyfk_invite/template/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">var jq = jQuery.noConflict();</script>
+<style type="text/css">
+.background_clear { clear: both; }
+.trfont { font-size: 15px; font-weight: bold; }
+.notestyle { font-size: 15px; }
+.role{border:1px dashed #c2d5e3; padding:5px; margin:0px 10px 10px 0px;line-height:30px; font-size:14px}
+.center{ text-align:center}
+.role font{color:red;font-weight:bold}
+</style>
+<div id="pt" class="bm cl" >
+  <div class="z"> <a href="./" class="nvhm" title="{lang homepage}">{$_G[setting][rj_title]}</a> <em>&rsaquo;</em><a href="./plugin.php?id=rjyfk_invite:in">{lang rjyfk_invite:Template1}</a> </div>
+</div>
+<div class="bm bmw fl background_clear ">
+<div class="ct wp cl">
+<div class="bm">
+  <div class="bm_h b center" ><h2><a>{lang rjyfk_invite:Template1}</a></h2></div>
+  <form id="payform" method="post" action="plugin.php?id=rjyfk_invite:payment"  target="_blank">
+  <input name="formhash" value="{FORMHASH}" type="hidden">
+  <input name="total_fee" value="{$rj_money}" id="total_fee" type="hidden">
+  <input type="hidden" name="dosubmit" value="1">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr class="role center">
+      <td width="*">
+	  <span class="s1 b">{lang rjyfk_invite:Template9}:</span> <font>{$rj_money}{lang rjyfk_invite:Template10}</font>
+	    <span class="s1 b">{lang rjyfk_invite:Template13}:</span> <font>{$rj_day}{lang rjyfk_invite:Template14}</font>
+	  </td>
+    </tr>
+	<!--{if $op_mail == '1'}-->
+	     <tr class="role center">
+      <td width="*">{lang rjyfk_invite:Template20}&nbsp;<input type="text"  id="mail" name="mail" class="px mr10" value="" />&nbsp;&nbsp;{lang rjyfk_invite:Template21}</td>
+    </tr>
+	<!--{/if}-->
+  </table>
+<br/>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr class="center">
+      <td><button class="pn pnc vm" name="replysubmit" type="button" onclick="go_post()"> <strong>{lang rjyfk_invite:Template12}</strong> </button></td>
+    </tr>
+  </table><br/>
+  </form>
+</div>
+
+<div class="bm">
+  <div class="bm_h b center"><h2><a>{lang rjyfk_invite:Template15}</a></h2></div>
+  <form id="Search" method="post" action="{$basename}"  >
+  <input type="hidden" name="formhash" value="{FORMHASH}">
+  <input type="hidden" name="Search" value="find">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tr class="role center">
+      <td width="*">{lang rjyfk_invite:Template4}:&nbsp;<input type="text"  id="orderid" name="orderid" class="px mr10" value="" />&nbsp;&nbsp;{lang rjyfk_invite:Template16}</td>
+    </tr>
+  </table>
+  <br/>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr class="center">
+      <td><button class="pn pnc vm" name="replysubmit" type="button" onclick="go_Search()"> <strong>{lang rjyfk_invite:Template17}</strong> </button></td>
+    </tr>
+  </table><br/>
+  </form>
+</div>
+<!--{if $Search == 'find'}-->
+<div class="bm">
+  <div class="bm_h b center"><h2><a>{lang rjyfk_invite:Template18}</a></h2></div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+   <tr class="role center">
+      <td>{lang rjyfk_invite:orderid}</td>
+      <td>{lang rjyfk_invite:code}</td>
+      <td>{lang rjyfk_invite:codestatus}</td>
+      <td>{lang rjyfk_invite:validtime}</td>
+      <td>{lang rjyfk_invite:usetime}</td>
+    </tr>
+<!--{eval $eachnum = 0;}-->
+<!--{loop $query $key $value}-->
+<!--{eval $eachnum++;}-->
+       <tr class="role center">
+      <td style="color:blue" >{$value[orderid]}</td>
+      <td><font color='red'>{$value[code]}</font></td>
+      <td>{echo $value[status] == 1 ? '<span style="color:green" >{lang rjyfk_invite:noused}</span>' : '<span style="color:red">{lang rjyfk_invite:isused}</span>'}</td>
+      <td style="color:red" >{echo dgmdate($value[dateline], 'Y-m-d H:i')} -- {echo dgmdate($value[endtime], 'Y-m-d H:i')}</td>
+      <td style="color:red" >{echo $value[regdateline] ? dgmdate($value[regdateline], 'Y-m-d H:i') : '--'}</td>
+    </tr>
+<!--{/loop}-->
+<!--{if $eachnum <= 0}-->
+      <tr class="role center">
+      <td colspan="5"><font color='red'>{lang rjyfk_invite:Template19}</font></td>
+    </tr>
+<!--{/if}-->
+  </table>
+</div>
+<!--{/if}-->
+<div class="bm">
+  <div class="bm_h b"><font color='red'>{lang rjyfk_invite:Template8}</font></div>
+  <div class="bm_c txtstyle"><table width='100%' class='notestyle'>
+  <tr><td>$rj_attention</td></tr></table>
+  </div>
+  </div>
+  </div>
+		
+<script type="text/javascript">
+function go_post(){
+	 var total_fee = parseInt(jq("#total_fee").val());
+	    if(!total_fee) {
+	   showDialog ('{lang rjyfk_invite:Template11}');
+	   return false;
+     }
+   var f = {$op_mail};
+   if (f == "1") {ischeckemail()}
+      else {
+   jq("#payform").submit();} 
+}
+
+function ischeckemail(){
+	 var mail = jq("#mail").val();
+            if (!mail || mail != "") {
+            var reg = /^([0-9a-zA-Z_-])+@([0-9a-zA-Z_-])+((\.[0-9a-zA-Z_-]{2,3}){1,2})$/;
+                isok= reg.test(mail );
+                if (!isok) {
+            	   showDialog ('{lang rjyfk_invite:Template22}');
+                    return false;
+                }  else {
+				  jq("#payform").submit();
+				  }
+            };
+}
+function go_Search(){
+	   jq("#Search").submit();
+}
+</script>
+<div class="background_clear"></div>
+</div>
+<!--{template common/footer}-->

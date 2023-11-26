@@ -1,0 +1,60 @@
+<!--don't close the div here-->
+<div class="vipblock">
+<h3 class="title">{lang dc_vip:vip_top}</h3>
+<div class="content">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tr style="font-size:16px;font-weight:bold;text-align:center;">
+<td width="50%">{lang dc_vip:joinnew}</td><td width="50%">{lang dc_vip:vipbd}</td>
+</tr>
+<tr>
+<td style="border-right: 1px solid #CDCDCD;">
+<table class="dt" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<th>{lang dc_vip:bianhao}</th>
+<th>{lang dc_vip:username}</th>
+<th>{lang dc_vip:viplevel}</th>
+<th>{lang dc_vip:timejoin}</th>
+</tr>
+<!--{eval $i=1;}-->
+<!--{loop $vipnews $v}-->
+<tr>
+<td>{$i}</td>
+<td><a href="home.php?mod=space&uid={$v['uid']}" target="_blank" style="color:{$_G['dc_plugin']['vip']['groupdata'][$v['vgid']]['color']}">{$member[$v['uid']]['username']}</a><!--{if $v['isyear']}--><!--{if $v['yearend']==2147454847}--><img src="source/plugin/dc_vip/images/common/forever_vip.jpg" class="vm" /><!--{else}--><img src="source/plugin/dc_vip/images/common/year_vip.jpg" class="vm" /><!--{/if}--><!--{/if}--></td>
+<td><img src="source/plugin/dc_vip/images/icon/{$_G['dc_plugin']['vip']['groupdata'][$v['vgid']]['icon']}"></td>
+<td><!--{echo dgmdate($v['jointime'])}--></td>
+</tr>
+<!--{eval $i++;}-->
+<!--{/loop}-->
+</tbody></table>
+</td><td>
+<table class="dt" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<th>{lang dc_vip:bianhao}</th>
+<th>{lang dc_vip:username}</th>
+<th>{lang dc_vip:growth}</th>
+<th>{lang dc_vip:viplevel}</th>
+</tr>
+<!--{eval $i=1;}-->
+<!--{loop $viptops $v}-->
+<tr>
+<td>{$i}</td>
+<td><a href="home.php?mod=space&uid={$v['uid']}" target="_blank" style="color:{$_G['dc_plugin']['vip']['groupdata'][$v['vgid']]['color']}">{$member[$v['uid']]['username']}</a><!--{if $v['isyear']}--><!--{if $v['yearend']==2147454847}--><img src="source/plugin/dc_vip/images/common/forever_vip.jpg"  class="vm"/><!--{else}--><img src="source/plugin/dc_vip/images/common/year_vip.jpg" class="vm" /><!--{/if}--><!--{/if}--></td>
+<td>{$v['growth']}</td>
+<td><img src="source/plugin/dc_vip/images/icon/{$_G['dc_plugin']['vip']['groupdata'][$v['vgid']]['icon']}"></td>
+</tr>
+<!--{eval $i++;}-->
+<!--{/loop}-->
+</tbody></table>
+
+</td></tr></table>
+
+</div></div>
+<div class="vipblock">
+<h3 class="title">{lang dc_vip:viptq}</h3>
+<div class="content">
+<p><!--{if $_G['dc_plugin']['vip']['user']}-->{lang dc_vip:vip_msg}<!--{else}-->{lang dc_vip:no_vip_msg_1}<!--{/if}--></p>
+<ul class="intro">
+{$vip_intro}
+</ul>
+</div>
+</div>

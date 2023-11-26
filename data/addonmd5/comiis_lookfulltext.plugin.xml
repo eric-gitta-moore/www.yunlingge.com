@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[comiis_lookfulltext.plugin]]></item>
+	<item id="RevisionID"><![CDATA[82047]]></item>
+	<item id="SN"><![CDATA[2020012608QrsRV377Ns]]></item>
+	<item id="RevisionDateline"><![CDATA[1561387805]]></item>
+	<item id="Data">
+		<item id="/index.htm"><![CDATA[7215ee9c7d9dc229d2921a40e899ec5f]]></item>
+		<item id="/discuz_plugin_comiis_lookfulltext_TC_UTF8.xml"><![CDATA[afde0877c575ba02087c2c08ab109df8]]></item>
+		<item id="/discuz_plugin_comiis_lookfulltext_SC_UTF8.xml"><![CDATA[926a454134e8f2b9213c2c6918d1374b]]></item>
+		<item id="/image/jquery.min.js"><![CDATA[62a6f5f806585ccd3c51442f20471b6d]]></item>
+		<item id="/image/index.htm"><![CDATA[7215ee9c7d9dc229d2921a40e899ec5f]]></item>
+		<item id="/image/comiis_ico.png"><![CDATA[936a47576bc4283f231aca2ef3c99970]]></item>
+		<item id="/comiis_more.inc.php"><![CDATA[d0f3aef7865d048c4416e98f500a7a54]]></item>
+		<item id="/comiis_lookfulltext_pc.class.php"><![CDATA[53cbbb45b16b3bc52ec1751312f938c6]]></item>
+		<item id="/comiis_lookfulltext.class.php"><![CDATA[1aa616be8dd671f4db250c321cc08e52]]></item>
+		<item id="/template/comiis_hook.htm"><![CDATA[0a45076a301f590f273dca1766c404a4]]></item>
+		<item id="/template/index.htm"><![CDATA[7215ee9c7d9dc229d2921a40e899ec5f]]></item>
+		<item id="/template/touch/comiis_hook.htm"><![CDATA[7c2c564b8793cf39d0f537704b538de0]]></item>
+		<item id="/template/touch/index.htm"><![CDATA[7215ee9c7d9dc229d2921a40e899ec5f]]></item>
+	</item>
+</root>

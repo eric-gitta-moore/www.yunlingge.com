@@ -1,0 +1,19 @@
+<!--{block return}-->
+<style>
+hook { display: none; }
+.show_hooks hook { display: inline; background: #ebd854; padding: 3px; }
+</style>
+<script>
+function show_hide_hooks(ctrlobj){
+	if(document.getElementsByTagName('html')[0].className.indexOf('show_hooks') < 0){
+		document.getElementsByTagName('html')[0].className += ' show_hooks';
+		ctrlobj.innerHTML = '{lang hook:tlang_001}';
+	}else{
+		document.getElementsByTagName('html')[0].className = document.getElementsByTagName('html')[0].className.replace(' show_hooks', '');
+		ctrlobj.innerHTML = '{lang hook:tlang_002}';
+	}
+}
+</script>
+<span class="pipe">|</span>
+<a id="hook_btn" onclick="show_hide_hooks(this);" style="color:#999999;" href="javascript:;">{lang hook:tlang_002}</a>
+<!--{/block}-->

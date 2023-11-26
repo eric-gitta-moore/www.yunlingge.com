@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[zqlj_changedownloads.plugin]]></item>
+	<item id="RevisionID"><![CDATA[73591]]></item>
+	<item id="SN"><![CDATA[2020021805eZ5RqZARa3]]></item>
+	<item id="RevisionDateline"><![CDATA[1581490369]]></item>
+	<item id="Data">
+		<item id="/apps.inc.php"><![CDATA[87fc3e18217075a551d553efaebb0812]]></item>
+		<item id="/uninstall.php"><![CDATA[e3bc4d201d7416899b97eea710e622cb]]></item>
+		<item id="/zqlj_changedownloads.inc.php"><![CDATA[a5c8308cc0a6093d0199755d2bce1517]]></item>
+		<item id="/hook.class.php"><![CDATA[737c8bf1895c19c3c7068e3c29e5ace1]]></item>
+		<item id="/adminop.inc.php"><![CDATA[e1bda264cff0bea87aa92d9a7f5dd6a3]]></item>
+		<item id="/discuz_plugin_zqlj_changedownloads_TC_UTF8.xml"><![CDATA[c69c19e529c687bdf5f9c69246079b72]]></item>
+		<item id="/discuz_plugin_zqlj_changedownloads_SC_UTF8.xml"><![CDATA[1d137b05a3630359d4e331fe3bfe4cc3]]></item>
+		<item id="/install.php"><![CDATA[72799bf3060061b43f2bf4608a2d05f4]]></item>
+		<item id="/upgrade.php"><![CDATA[72799bf3060061b43f2bf4608a2d05f4]]></item>
+		<item id="/template/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/op.htm"><![CDATA[96973abf0ea0b7320b0cce0e4ddaf040]]></item>
+	</item>
+</root>

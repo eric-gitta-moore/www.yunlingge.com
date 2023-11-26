@@ -1,0 +1,13 @@
+<!--{block return}-->
+<style>
+#llx_noreply {
+	color: #444;
+}
+</style>
+<div id = "llx_noreply">
+	<input type = "checkbox" class = "vm" name = "noreply" value = "1" /> {$this->config['tip']}
+</div>
+<script>
+	$("#llx_noreply").insertAfter("#needmessage");
+</script>
+<!--{/block}-->

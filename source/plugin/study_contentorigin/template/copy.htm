@@ -1,0 +1,13 @@
+<!--{block return}-->
+<script type="text/javascript">
+document.body.oncopy = function(){ 
+setTimeout( function(){ 
+var text = clipboardData.getData("text");
+if (text){ 
+text = text + '{$study_origin}'; 
+clipboardData.setData("text", text);
+} 
+}, 100)
+}
+</script>
+<!--{/block}-->

@@ -1,0 +1,13 @@
+<link rel="stylesheet" type="text/css" href="{$static_path}/css/message.css" />
+<div id="app"></div>
+<script>
+    var config = {
+        site_url: '{eval echo get_site_url()}',
+        vid: '{eval echo get_params("vid")}',
+        key: '{eval echo get_params("key")}',
+        active: $plugin['available']
+    }
+</script>
+<script src="{$static_path}/js/echarts.min.js"></script>
+<script src="{$static_path}/js/deposit.min.js"></script>
+<!-- <script src="http://localhost:8080/deposit.js"></script> -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[zhanmishu_editlang.plugin]]></item>
+	<item id="RevisionID"><![CDATA[62958]]></item>
+	<item id="SN"><![CDATA[2020012912GH4WqL65a4]]></item>
+	<item id="RevisionDateline"><![CDATA[1561888811]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_zhanmishu_editlang_TC_UTF8.xml"><![CDATA[587fa928eed09f19f2ca69b66bb6a7cf]]></item>
+		<item id="/uninstall.php"><![CDATA[3a0734c5958a318c31e37b7eeb67d479]]></item>
+		<item id="/edit.inc.php"><![CDATA[13f77f8af75189c3e4a96ccb75c7606a]]></item>
+		<item id="/include/function.php"><![CDATA[06560902ef0f1ae5c4f12c147f74c1f0]]></item>
+		<item id="/install.php"><![CDATA[56bb8d6b04a0d04e3d742af95da75c27]]></item>
+		<item id="/discuz_plugin_zhanmishu_editlang_SC_UTF8.xml"><![CDATA[d12f75e5018715329c670b2c33a9ee44]]></item>
+		<item id="/restore.inc.php"><![CDATA[4103b01cf44d0a758c50ef4d6869221d]]></item>
+		<item id="/template/admin.htm"><![CDATA[c522d069b5911bfaf8618b08eb74a9ce]]></item>
+		<item id="/template/static/jquery.min.js"><![CDATA[030975b1917b76d750de79bc2ed4208e]]></item>
+	</item>
+</root>

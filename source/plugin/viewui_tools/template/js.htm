@@ -1,0 +1,75 @@
+{template viewui_tools:header}
+<style>
+#viewui-toolsbg textarea {
+    padding: 5px;
+    width: 99%;
+    border: 1px solid #c6cede !important;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+    color: #333;
+}
+.textarea-btn{
+	background-color: #55a7e3;
+    color: #fff;
+    font-family: 'Microsoft YaHei';
+    border: none;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 5px;
+    letter-spacing: .5px;
+    text-decoration: none;
+    min-width: 70px;
+    cursor: pointer;
+	margin-bottom:10px;
+}
+.textarea-btn:hover{
+    opacity: 0.8;
+}
+#viewui-toolsbg .tips{
+    overflow: hidden;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #FBEED5;
+    border-radius: 4px;
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    color: #3A87AD;
+    margin-bottom: 10px;
+}
+#viewui-toolsbg .tips strong{
+    margin-right: 5px;
+}
+</style>
+<div id="viewui-toolsbg">
+<div class="tips"><strong>{lang viewui_tools:tip}</strong>{lang viewui_tools:jssummary}</div>
+    <div class='textarea-wrapper'>
+        <div class='textarea-block'>
+            <textarea class="textarea-item" rows="10" name="content" placeholder="&#x8BF7;&#x5728;&#x6B64;&#x5904;&#x8F93;&#x5165;&#x6587;&#x5B57;" maxlength="100000" spellcheck="false"></textarea>
+            <div class="textarea-count" style="margin: 5px 0;letter-spacing: .5px;">
+                &#x5F53;&#x524D;&#x8F93;&#x5165;&#x5B57;&#x6570;&#xFF1A; <span class="textareaInput">0</span>
+            </div>
+        </div>
+    </div>
+		
+<script src="source/plugin/viewui_tools/js/jquery-1.10.2.js"></script>
+<script type="text/javascript"> var jq = jQuery.noConflict(); </script>
+    <script>
+        jq(document).ready(function(){
+
+            var lenInput = jq('.textarea-item').val().length;
+
+            jq(".textarea-item").keyup(function(){
+                lenInput = jq(this).val().length;
+                if(lenInput>0 && lenInput<=100000){
+                    jq('.textareaInput').html(lenInput);
+                    jq('.textarea-btn').attr('disabled',false);
+                }else{
+                    jq('.textarea-btn').attr('disabled',true);
+                }
+            });
+        });
+    </script>
+{template viewui_tools:footer}

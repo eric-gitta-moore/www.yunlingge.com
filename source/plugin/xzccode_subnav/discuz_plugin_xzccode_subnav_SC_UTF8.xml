@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2019-10-12 14:14]]></item>
+	<item id="From"><![CDATA[窝窝开发者 (http://open.wowozy.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[窝窝二级导航]]></item>
+			<item id="identifier"><![CDATA[xzccode_subnav]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[xzccode_subnav/]]></item>
+			<item id="copyright"><![CDATA[窝窝开发者]]></item>
+			<item id="version"><![CDATA[1.4]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[xzccode]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3.2,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[模板内容宽度]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[width]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[960]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[模块图片1]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[mod_img1]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[http://open.wowozy.com/static/plugin/images/1.png]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[模块数据1]]></item>
+				<item id="description"><![CDATA[链接名称|链接地址
+多个请换行
+最多可以提交6条数据]]></item>
+				<item id="variable"><![CDATA[mod_data1]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[模块图片2]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[mod_img2]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[http://open.wowozy.com/static/plugin/images/2.png]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[模块数据2]]></item>
+				<item id="description"><![CDATA[链接名称|链接地址
+多个请换行
+最多可以提交6条数据]]></item>
+				<item id="variable"><![CDATA[mod_data2]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[模块图片3]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[mod_img3]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[http://open.wowozy.com/static/plugin/images/3.png]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[模块数据3]]></item>
+				<item id="description"><![CDATA[链接名称|链接地址
+多个请换行
+最多可以提交6条数据]]></item>
+				<item id="variable"><![CDATA[mod_data3]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[模块图片4]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[mod_img4]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[http://open.wowozy.com/static/plugin/images/4.png]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[模块数据4]]></item>
+				<item id="description"><![CDATA[链接名称|链接地址
+多个请换行
+最多可以提交6条数据]]></item>
+				<item id="variable"><![CDATA[mod_data4]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com
+资源网|https://www.wowozy.com]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+	</item>
+</root>

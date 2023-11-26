@@ -1,0 +1,47 @@
+<table width="100%" border="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+<form action='{ADMINSCRIPT}?action=plugins&operation=config&do={$pluginid}&identifier=jnpar_logoimg&pmod=admin' method="post" enctype="multipart/form-data" name="cpform" id="cpform">
+  <table width="100%" border="1">
+    <tr>
+      <td width="20%" height="30" align="center" valign="middle"><strong>{lang jnpar_logoimg:admtml1}</strong></td>
+      <td width="10%" align="center" valign="middle"><strong>{lang jnpar_logoimg:admtml2}</strong></td>
+      <td width="20%" align="center" valign="middle"><strong>{lang jnpar_logoimg:admtml3}</strong></td>
+      <td width="30%" align="center" valign="middle"><strong>{lang jnpar_logoimg:admtml4}</strong></td>
+      <td width="20%" align="center" valign="middle"><strong>{lang jnpar_logoimg:admtml5}</strong></td>
+    </tr>
+    <!--{loop $fids $key $fid}-->
+    <tr>
+      <td align="center" valign="middle">{$fidinfos[$key]['name']}</td>
+      <td align="center" valign="middle">{$fidinfos[$key]['fid']}</td>
+      <td align="center" valign="middle"><img src="{$logoimgs[$key]}"/></td>
+      <td align="center" valign="middle">
+      <input name="iconnew_{$fid}" type="file" class="txt uploadbtn marginbot" id="fileAX_{$fid}_0" value="">
+<input id="fileAX_{$fid}_1" style="display: none;" name="TMPiconnew_{$fid}" value="{$logoinfos[$key]['icon']}" type="text"  class="txt marginbot"  size="60">
+<br/>
+<a id="fileAX_{$fid}_0a" style="font-weight: bold;" href="javascript:;" onclick="$('fileAX_{$fid}_1a').style.fontWeight = '';this.style.fontWeight = 'bold';$('fileAX_{$fid}_1').name = 'TMPiconnew_{$fid}';$('fileAX_{$fid}_0').name = 'iconnew_{$fid}';$('fileAX_{$fid}_0').style.display = '';$('fileAX_{$fid}_1').style.display = 'none'">{lang jnpar_logoimg:admtml6}</a>
+&nbsp;
+<a id="fileAX_{$fid}_1a" href="javascript:;" onclick="$('fileAX_{$fid}_0a').style.fontWeight = '';this.style.fontWeight = 'bold';$('fileAX_{$fid}_0').name = 'TMPiconnew_{$fid}';$('fileAX_{$fid}_1').name = 'iconnew_{$fid}';$('fileAX_{$fid}_1').style.display = '';$('fileAX_{$fid}_0').style.display = 'none'">{lang jnpar_logoimg:admtml7}</a>
+      </td>
+      <td align="center" valign="middle"><label>
+        <input name="iconwidth_{$fid}" type="text" id="iconwidth_{$fid}" value="{$logo_widths[$key]}" size="10" />
+      </label></td>
+    </tr>
+    <tr><td height="10px" colspan="5"></td></tr>
+    <!--{/loop}-->
+  </table>
+  <table width="100%" border="0">
+  <tr>
+    <td width="5%" height="30"><input type="hidden" name="formhash" id="formhash" value="{FORMHASH}" /></td>
+    
+    <td><input type="submit" name="submit" id="submit" value="{lang jnpar_logoimg:admtml8}" class="btn"/></td>
+    </tr>
+</table>
+
+</form>

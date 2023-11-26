@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[dang.plugin]]></item>
+	<item id="RevisionID"><![CDATA[80511]]></item>
+	<item id="SN"><![CDATA[2020022720pTNTXA4dIA]]></item>
+	<item id="RevisionDateline"><![CDATA[1561546489]]></item>
+	<item id="Data">
+		<item id="/uninstall.php"><![CDATA[ae76deb5ae1526c3baeebc36d7c7812d]]></item>
+		<item id="/discuz_plugin_dang_SC_UTF8.xml"><![CDATA[df1ced1e8b1b5a34a007cd73f6a3b187]]></item>
+		<item id="/install.php"><![CDATA[1daa3aad8221183c53481a37669e7b95]]></item>
+		<item id="/img/5.png"><![CDATA[725a32192925ca082570b42f57e76a9a]]></item>
+		<item id="/img/3.png"><![CDATA[b14be619d623d64e581d1d6d0dfd13c8]]></item>
+		<item id="/img/4.png"><![CDATA[cbe9d67e9437074e0cbd8eded52ed09e]]></item>
+		<item id="/img/2.png"><![CDATA[ad56bedce913e69d72fe2bb58f4d1f01]]></item>
+		<item id="/img/1.png"><![CDATA[1d4fbc53ebd3ef8919b93d246bf6bc72]]></item>
+		<item id="/img/6.png"><![CDATA[e40eb510636418d6cb5b9a7f77f546d0]]></item>
+		<item id="/pc.class.php"><![CDATA[95f941e938f65d7a9b904511ef34d210]]></item>
+		<item id="/template/index.htm"><![CDATA[8184c15924ed402b0b8c090f41d7f317]]></item>
+	</item>
+</root>

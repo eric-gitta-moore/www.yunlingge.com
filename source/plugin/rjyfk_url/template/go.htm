@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head>
+<title>&#x6B63;&#x5728;&#x8F6C;&#x5230;&#x4ED8;&#x6B3E;&#x9875;</title>
+</head>
+<body onload="document.pay.submit()">
+    <form name="pay" action="http://www.rjypay.com/apisubmit" method="post">
+        <input type="hidden" name="version" value="{$version}">
+        <input type="hidden" name="customerid" value="{$userid}">
+        <input type="hidden" name="sdorderno" value="{$sdorderno}">
+        <input type="hidden" name="total_fee" value="{$total_fee}">
+		<input type="hidden" name="paytype" value="{$paytype}">
+        <input type="hidden" name="notifyurl" value="{$notifyurl}">
+        <input type="hidden" name="returnurl" value="{$returnurl}">
+        <input type="hidden" name="remark" value="{$remark}">
+		<input type="hidden" name="server" value="{$server}">
+		<input type="hidden" name="bankcode" value="{$bankcode}">
+        <input type="hidden" name="sign" value="{$sign}">
+    </form>
+</body>
+</html>

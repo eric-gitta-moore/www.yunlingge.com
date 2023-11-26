@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[boan_glow.plugin]]></item>
+	<item id="RevisionID"><![CDATA[83943]]></item>
+	<item id="SN"><![CDATA[2020022013J1WRhLZhg8]]></item>
+	<item id="RevisionDateline"><![CDATA[1560995927]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_boan_glow_SC_UTF8.xml"><![CDATA[68948d1e3e437fceef8cfe11bb316e34]]></item>
+		<item id="/images/bb_glow.gif"><![CDATA[2806de432c2385906bae36f91839d496]]></item>
+		<item id="/images/bb_l_glow.gif"><![CDATA[ae8a4f94986fc6a7610ce827129b8693]]></item>
+		<item id="/images/index.htm"><![CDATA[7215ee9c7d9dc229d2921a40e899ec5f]]></item>
+		<item id="/uninstall.php"><![CDATA[dd3033c51d9e3c2f6c14c2d8c1e5751a]]></item>
+		<item id="/index.htm"><![CDATA[7215ee9c7d9dc229d2921a40e899ec5f]]></item>
+		<item id="/discuz_plugin_boan_glow_TC_UTF8.xml"><![CDATA[80043634b88f1373b3896ebad9b9725e]]></item>
+		<item id="/install.php"><![CDATA[8096f31673d6665520732f83fe557c2c]]></item>
+		<item id="/glow.class.php"><![CDATA[5ca556e43887ac02c5c85a7a279a4905]]></item>
+		<item id="/js/glow.js"><![CDATA[bd021459c857f08cb8c36c7517a3e403]]></item>
+		<item id="/js/index.htm"><![CDATA[7215ee9c7d9dc229d2921a40e899ec5f]]></item>
+		<item id="/about.inc.php"><![CDATA[b30e50d60f9795fa4741885571040c4b]]></item>
+		<item id="/glow.inc.php"><![CDATA[40a8b7a4ffc84249468168bd31766ec1]]></item>
+	</item>
+</root>

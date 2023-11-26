@@ -1,0 +1,54 @@
+<?php if(!defined('IN_DISCUZ')) exit('Access Denied'); ?><?php
+$return = <<<EOF
+
+<style>
+.comiis_lookfulltext_bg {position:absolute;width:100%;height:150px;bottom:0;background-image:linear-gradient(180deg,hsla(0,0%,100%,0),{$comiis_lookfulltext['bgcolor']});}
+.comiis_lookfulltext_key {width:100%;height:34px;line-height:34px;text-align:center;margin:10px auto {$comiis_lookfulltext['kmbottom']}px;}
+.comiis_lookfulltext_key a {display:inline-block;padding-right:20px;border-radius:20px;font-size:16px;color:{$comiis_lookfulltext['txtcolor']};background:url(source/plugin/comiis_lookfulltext/image/comiis_ico.png) no-repeat right;background-size:16px auto;}
+.comiis_lookfulltext_style1 a {background:{$comiis_lookfulltext['txtcolor']};color:#FFF;padding:0 25px;}
+{$comiis_lookfulltext['kmcss']}
+</style>
+<script>
+$(window).load(function(){
+var comiis_lookfulltext_box = $('.view_one .comiis_messages,div.display:first,.view_body{$comiis_lookfulltext['class']}');
+var comiis_lookfulltext_height = comiis_lookfulltext_box.height();
+if(comiis_lookfulltext_height > {$comiis_lookfulltext['maxheight']}){
+comiis_lookfulltext_box.after('<div class="comiis_lookfulltext_key
+EOF;
+ if($comiis_lookfulltext['kmstyle'] == 2) { 
+$return .= <<<EOF
+ comiis_lookfulltext_style1
+EOF;
+ } 
+$return .= <<<EOF
+"><a href="javascript:;"
+EOF;
+ if($comiis_lookfulltext['kmstyle'] == 1 && !$comiis_lookfulltext['txtcolor']) { 
+$return .= <<<EOF
+ class="f_0"
+EOF;
+ } elseif($comiis_lookfulltext['kmstyle'] == 2 && !$comiis_lookfulltext['txtcolor']) { 
+$return .= <<<EOF
+ class="bg_0"
+EOF;
+ } 
+$return .= <<<EOF
+>{$comiis_lookfulltext['name']}</a></div>').css({
+'max-height':'{$comiis_lookfulltext['maxheight']}px',
+'overflow-y':'hidden',
+'position':'relative'
+}).append('<div class="comiis_lookfulltext_bg"></div>');
+$(document).on('click', '.comiis_lookfulltext_key', function(e) {
+$('.comiis_lookfulltext_key,.comiis_lookfulltext_bg').remove();
+comiis_lookfulltext_box.css({
+'max-height':'inherit',
+'overflow-y':'inherit',
+'position':'inherit'
+});
+});
+}
+});
+</script>
+
+EOF;
+?><?php if(function_exists('yunling_redirect_resource_output')){yunling_redirect_resource_output('doNotMove');}?>

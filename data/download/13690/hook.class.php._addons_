@@ -1,0 +1,109 @@
+<?php
+
+/**
+ * Copyright 2001-2099 1314学习网.
+ * This is NOT a freeware, use is subject to license terms
+ * $Id: hook.class.php 5309 2020-02-16 21:20:24Z zhuge $
+ * 应用售后问题：http://www.1314study.com/services.php?mod=issue
+ * 应用售前咨询：QQ 15326940
+ * 应用定制开发：QQ 643306797
+ * 本插件为 1314学习网（www.1314study.com） 独立开发的原创插件, 依法拥有版权。
+ * 未经允许不得公开出售、发布、使用、修改，如需购买请联系我们获得授权。
+ */
+if (!defined('IN_DISCUZ')) {
+exit('Access Denied');
+}
+class plugin_study_virtualdata
+{
+}
+class plugin_study_virtualdata_forum extends plugin_study_virtualdata
+{
+    public function index_top_output()
+    {
+        global $_G, $todayposts, $postdata, $posts, $forumlist, $membercount, $guestcount, $onlinenum, $onlineinfo, $detailstatus, $whosonline;
+        $splugin_setting = $_G['cache']['plugin']['study_virtualdata'];
+        if ($splugin_setting['study_radio']) {
+            require_once libfile('function/core', 'plugin/study_virtualdata/source');
+            $todayposts                               = study_virtualdata_calculate($todayposts, $splugin_setting['study_todayposts']);
+            $postdata[0]                              = study_virtualdata_calculate($postdata[0], $splugin_setting['study_yestodayposts']);
+            $posts                                    = study_virtualdata_calculate($posts, $splugin_setting['study_posts']);
+            $_G['cache']['userstats']['totalmembers'] = study_virtualdata_calculate($_G['cache']['userstats']['totalmembers'], $splugin_setting['study_totalmembers']);
+            $study_forumtodaypost                     = explode("\n", str_replace("\r\n", "\n", $splugin_setting['study_forumtodaypost']));
+            foreach ($study_forumtodaypost as $rule) {
+                $rulearr = explode("|", $rule);
+                $rulefid = intval($rulearr[0]);
+                $rule    = $rulearr[1] . '|' . $rulearr[2];
+                if ($forumlist[$rulefid]) {
+                    $forumlist[$rulefid]['todayposts'] = study_virtualdata_calculate($forumlist[$rulefid]['todayposts'], $rule);
+                }
+            }
+            $membercount = study_virtualdata_calculate($membercount, $splugin_setting['study_online_member']);
+            $guestcount  = study_virtualdata_calculate($guestcount, $splugin_setting['study_online_guest']);
+            $onlinenum   = ($membercount + $guestcount) > 0 ? $membercount + $guestcount : study_virtualdata_calculate(study_virtualdata_calculate($onlinenum, $splugin_setting['study_online_member']), $splugin_setting['study_online_guest']);
+            if ($splugin_setting['study_online_max']) {
+                $onlineinfo = explode("|", $splugin_setting['study_online_max']);
+                if ($onlineinfo[0] < $onlinenum) {
+                    $onlineinfo[0] = $onlinenum + 1;
+                }
+            }
+            if ($detailstatus) {
+                $study_online_uid = explode("|", $splugin_setting['study_online_uid']);
+                if (!empty($study_online_uid)) {
+                    foreach ($whosonline as $v) {
+                        $onlineuids[] = $v['uid'];
+                    }
+                    $exist = 0;
+                    foreach ($study_online_uid as $online_uid) {
+                        $online_uid = intval($online_uid);
+                        if ($online_uid < 1) {
+                            continue;
+                        }
+                        if (in_array($online_uid, $onlineuids)) {
+                            continue;
+                        }
+                        if (DB::result_first("SELECT uid FROM " . DB::table('common_session') . " WHERE uid = '$online_uid'")) {
+                            $exist++;
+                            if ($exist < 20) {
+                                continue;
+                            } else {
+                                break;
+                            }
+                        } else {
+                            $result = DB::fetch_first("SELECT username,groupid FROM " . DB::table('common_member') . " WHERE uid = '$online_uid'");
+                            if (!empty($result)) {
+                                $lastip         = DB::result_first("SELECT lastip FROM " . DB::table('common_member_status') . " WHERE uid = '$online_uid'");
+                                $lastip         = explode(".", $lastip);
+                                $onlineuserdata = array(
+                                    'sid'          => random(6),
+                                    'ip1'          => intval($lastip[0]),
+                                    'ip2'          => intval($lastip[1]),
+                                    'ip3'          => intval($lastip[2]),
+                                    'ip4'          => intval($lastip[3]),
+                                    'uid'          => $online_uid,
+                                    'username'     => daddslashes($result['username']),
+                                    'groupid'      => intval($result['groupid']),
+                                    'lastactivity' => intval($_G['timestamp']),
+                                );
+                                DB::insert('common_session', $onlineuserdata);
+                                $onlineuserdata['icon'] = !empty($_G['cache']['onlinelist'][$onlineuserdata['groupid']]) ? $_G['cache']['onlinelist'][$onlineuserdata['groupid']] : $_G['cache']['onlinelist'][0];
+                                $whosonline[]           = $onlineuserdata;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return '';
+    }
+
+}
+
+
+//Copyright 2001-2099 1314学习网.
+//This is NOT a freeware, use is subject to license terms
+//$Id: hook.class.php 5755 2020-02-16 13:20:24Z zhuge $
+//应用售后问题：http://www.1314study.com/services.php?mod=issue
+//应用售前咨询：QQ 15326940
+//应用定制开发：QQ 643306797
+//本插件为 1314学习网（www.1314study.com） 独立开发的原创插件, 依法拥有版权。
+//未经允许不得公开出售、发布、使用、修改，如需购买请联系我们获得授权。

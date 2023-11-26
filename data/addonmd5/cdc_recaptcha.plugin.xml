@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[cdc_recaptcha.plugin]]></item>
+	<item id="RevisionID"><![CDATA[85474]]></item>
+	<item id="SN"><![CDATA[2020012615F4ydNTMH4H]]></item>
+	<item id="RevisionDateline"><![CDATA[1578711513]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_cdc_recaptcha_SC_UTF8.xml"><![CDATA[81b3312fcad1abac81f4f39fa820e3d7]]></item>
+		<item id="/discuz_plugin_cdc_recaptcha_TC_UTF8.xml"><![CDATA[069ef02ff0cb6a31a3f907ec0a624d9b]]></item>
+		<item id="/cache/cache_conf.php"><![CDATA[0ad386093e8a8da8e0756a56c3fc53ef]]></item>
+		<item id="/cache/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/seccode/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/seccode/seccode_recaptcha.php"><![CDATA[54d27daaf01460b99adecd14994ea827]]></item>
+		<item id="/cache.class.php"><![CDATA[a0876b3da1ed1de623a5b9d978e1f411]]></item>
+		<item id="/mobile.class.php"><![CDATA[d15af648ee6ceafca93036245b78c78f]]></item>
+		<item id="/template/extend_common.css"><![CDATA[2f8429ca35daa12e53d0b540830da0b8]]></item>
+		<item id="/template/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/template/js.htm"><![CDATA[072dc841f77d646951a0819782fb7e57]]></item>
+		<item id="/template/jsm.htm"><![CDATA[e14060c3865d8ba4dd833aeccfce595c]]></item>
+		<item id="/lib.class.php"><![CDATA[905b2af2affaa0218276542cf80da8d9]]></item>
+	</item>
+</root>

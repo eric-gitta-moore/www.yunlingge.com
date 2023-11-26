@@ -1,0 +1,72 @@
+<!--{template common/header}-->
+<div id="pt" class="bm cl">
+	<div class="z">
+		<a href="./" class="nvhm" title="{lang homepage}">{$_G[setting][bbname]}</a><em>&rsaquo;</em>{lang zqlj_changedownloads:appname}
+	</div> 
+</div>
+<div class="wp cl">
+	<form method="post" action="plugin.php?id=zqlj_changedownloads" name="tb">
+		<input type="hidden" name="formhash" value="{FORMHASH}">
+		<!--{if submitcheck('searchsubmit')||$_GET['resulthash']==formhash()}-->
+		<input type="hidden" name="tid" value="{$tid}">
+		<table cellspacing="0" cellpadding="0" class="dt mtm">
+			<caption>
+				<h2 class="mbm xs2"><strong>({lang zqlj_changedownloads:step2})</strong>{lang zqlj_changedownloads:title_list2}</h2>
+			</caption>
+			<tr>
+				<th width="80">aid</th>
+				<th>{lang zqlj_changedownloads:menu_filename}</th>
+				<th width="120">{lang zqlj_changedownloads:menu_dateline}</th>
+				<th width="80">{lang zqlj_changedownloads:menu_remote}</th>
+				<th width="80">{lang zqlj_changedownloads:menu_isimage}</th>
+				<th width="80">{lang zqlj_changedownloads:menu_price}</th>
+				<th width="80">{lang zqlj_changedownloads:menu_louceng}</th>
+				<th>{lang zqlj_changedownloads:menu_downloads}</th>
+				<th>{lang zqlj_changedownloads:menu_newdownloads}</th>
+			</tr>
+			<!--{loop $attchlist $attach}-->
+			<!--{eval $attach['dateline']=dgmdate($attach['dateline']);}-->
+			<tr>
+				<td>$attach['aid']</td>
+				<td>$attach['filename']</td>
+				<td>$attach['dateline']</td>
+				<td><!--{if $attach['remote']}-->{lang zqlj_changedownloads:yes}<!--{else}-->{lang zqlj_changedownloads:no}<!--{/if}--></td>
+				<td><!--{if $attach['isimage']}-->{lang zqlj_changedownloads:yes}<!--{else}-->{lang zqlj_changedownloads:no}<!--{/if}--></td>
+				<td>$attach['price']</td>
+				<td><a href="forum.php?mod=redirect&goto=findpost&ptid={$attach['tid']}&pid={$attach['pid']}" target="_blank">{lang zqlj_changedownloads:postview}</a></td>
+				<td>$attach['downloads']</td>
+				<td><input type="text" class="px" name="newdownloads[{$attach['aid']}]" value="{$attach['downloads']}" size="15"/></td>
+			</tr>
+			<!--{/loop}-->
+			<tr>
+			<td colspan="9" align="center">
+				<button type="submit" name="changesubmit" class="pn" value="true"><em>{lang zqlj_changedownloads:title_submit}</em></button>&nbsp;&nbsp;<a href="plugin.php?id=zqlj_changedownloads">{lang zqlj_changedownloads:upstep}</a> 
+			</td>
+			</tr>
+		</table>
+		<!--{else}-->
+		<table width="100%" border="1" bordercolor="#cccccc">
+		<tbody>
+			<tr align="center">
+				<td colspan="3" height="30px" bgcolor="#F2F2F2"><strong>({lang zqlj_changedownloads:step1})</strong>{lang zqlj_changedownloads:title_tid_info}</td>
+			</tr>
+			<tr>
+				<td height="35" bgcolor="#F2F2F2" align="center"><span style="color:red;">*</span>{lang zqlj_changedownloads:title_tid}</td>
+				<td colspan="2">&nbsp;&nbsp;&nbsp;<input type="text" name="tid" size="60" class="px" value=""></td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div style="text-align:center; margin-top:20px;">
+						<button type="submit" name="searchsubmit" value="true" class="pn pnc"><strong>{lang zqlj_changedownloads:title_submit}</strong></button>
+					</div>	
+				</td>	
+			</tr>
+		</tbody>
+		</table>
+		<!--{/if}-->
+	</form>
+</div>
+<!--{template common/footer}-->
+
+
+

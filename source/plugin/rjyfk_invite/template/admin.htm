@@ -1,0 +1,95 @@
+<style type="text/css">
+.s1{color:#ff0000 !important;}
+.s2{color:#ff6600 !important;}
+.s3{color:#008800 !important;}
+.s4{color:#014c90 !important;}
+.s5{color:#333333 !important;}
+</style>
+<script type="text/javascript">
+function confirm_delete() {
+	if (confirm('{lang rjyfk_invite:confirmdelete}')) {
+		return true;
+	}
+	return false;
+}
+</script>
+<!--{if $acto == 'list'}-->
+<div action="list">
+<!--{if empty($quer)}-->
+<!--{eval}
+showformheader("{$formurl}&a={$acto}");
+{/eval}-->
+<table class="tb tb2" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <th colspan="2" class="partition">{lang rjyfk_invite:searchbutton}</th>
+  </tr>
+  <tr class="vtop hover">
+    <td class="td21">{lang rjyfk_invite:uid}ID</td>
+    <td class="td29"><input type="text" name="uid" class="txt" value="{$uid}" /></td>
+  </tr>
+  <tr class="vtop hover">
+    <td class="td21">{lang rjyfk_invite:fuid}ID</td>
+    <td class="td29"><input type="text" name="fuid" class="txt" value="{$fuid}" /></td>
+  </tr>
+  <tr class="vtop hover">
+    <td class="td21">{lang rjyfk_invite:codestatus}</td>
+    <td>
+    <select name="status">
+      <option value="0">{lang rjyfk_invite:defaultselect}</option>
+      <option value="1"{$status_1}>{lang rjyfk_invite:noused}</option>
+      <option value="2"{$status_2}>{lang rjyfk_invite:isused}</option>
+    </select>
+    </td>
+  </tr>
+  <tr class="vtop hover">
+    <td class="td21"></td>
+    <td><input type="submit" class="btn" value="{lang rjyfk_invite:searchbutton}" /></td>
+  </tr>
+</table>
+<!--{eval}
+showformfooter();
+showformheader("{$formurl}&a={$acto}", 'onsubmit="return confirm_delete();"');
+{/eval}-->
+<input type="hidden" name="quer" value="delete" />
+<table class="tb tb2 nobdb" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <th colspan="10" class="partition">{lang rjyfk_invite:codetitle}<span class="s1">({$query_tatol})</span></th>
+  </tr>
+  <tr class="header">
+    <th class="td28">ID</th>
+    <th class="td28">{lang rjyfk_invite:orderid}</th>
+    <th class="td28">{lang rjyfk_invite:uid}ID</th>
+    <th class="td28">{lang rjyfk_invite:code}</th>
+    <th class="td28">{lang rjyfk_invite:fuid}ID</th>
+    <th class="td28">{lang rjyfk_invite:fuid}</th>
+    <th class="td28">{lang rjyfk_invite:codestatus}</th>
+	<th class="td28">{lang rjyfk_invite:usetime}</th>
+	<th class="td28">{lang rjyfk_invite:email}</th>
+    <th class="td28">{lang rjyfk_invite:validtime}</th>
+  </tr>
+<!--{eval $sqlnum = 0;}-->
+<!--{loop $query $key $value}-->
+<!--{eval $sqlnum++;}-->
+  <tr class="hover">
+    <td><input type="checkbox" name="delete[]" value="{$value[id]}"></td>
+    <td>{echo $value[orderid] ? $value[orderid] : '--'}</td>
+    <td>{$value[uid]}</td>
+    <td>{$value[code]}</td>
+    <td>{$value[fuid]}</td>
+    <td>{echo $value[fusername] ? $value[fusername] : '--'}</td>
+    <td>{echo $value[status] == 1 ? '<span class="s3">{lang rjyfk_invite:noused}</span>' : '<span class="s1">{lang rjyfk_invite:isused}</span>'}</td>
+	<td>{echo $value[regdateline] ? dgmdate($value[regdateline], 'Y-m-d H:i') : '--'}</td>
+	<td>{echo $value[email] ? $value[email] : '--'}</td>
+    <td>{echo dgmdate($value[dateline], 'Y-m-d H:i')} -- <span class="s1">{echo dgmdate($value[endtime], 'Y-m-d H:i')}</span></td>
+  </tr>
+<!--{/loop}-->
+</table>
+<!--{eval}
+showsubmit('delsubmit', lang('plugin/rjyfk_invite', 'deletebutton'), 'del', '', '', false);
+showformfooter();
+{/eval}-->
+{$pages}
+<!--{/if}-->
+</div>
+
+<!--{/if}-->

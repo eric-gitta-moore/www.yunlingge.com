@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+	<item id="Time"><![CDATA[2019-07-29 13:04]]></item>
+	<item id="From"><![CDATA[Dev开发站 (http://localhost/dev/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[快速删除头像]]></item>
+			<item id="identifier"><![CDATA[zqlj_clearavatar]]></item>
+			<item id="description"><![CDATA[快速删除头像 For Discuz! 是一款管理增强插件，现在很多恶意注册用户吧头像设置成广告内容甚至黄赌毒内容，扰乱了站长的正常网站运营！通常站长要删除用户的头像，需要先进入后台找到这个用户，进入用户详情，勾选删除头像!我们插件本着简化管理流程的思想，做到在用户资料页面一键删除头像，大大提高站长的日常效率！]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[zqlj_clearavatar/]]></item>
+			<item id="copyright"><![CDATA[众器良匠]]></item>
+			<item id="version"><![CDATA[v2.0.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[mobile]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[logs]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[操作记录]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[3]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[apps]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[插件推荐]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[99]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[允许操作的用户]]></item>
+				<item id="description"><![CDATA[插件默认允许管理员级别可以自由删除头像，其他组用户如果需要授权，进在此处设置允许删除用户头像的用户uid，多个uid之间以英文逗号分隔，例如:12,33,100
+[*]特别说明：此项设置仅商业版有效！]]></item>
+				<item id="variable"><![CDATA[uids]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[2,3,4,10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[系统通知]]></item>
+				<item id="description"><![CDATA[设置删除用户头像后给该用户发送系统消息，留空表示不发通知消息！]]></item>
+				<item id="variable"><![CDATA[msg]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[通知：您的头像涉嫌违规，已被管理员删除，如有异议请联系本站客服！]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="appname"><![CDATA[快速删除头像]]></item>
+				<item id="op_tips"><![CDATA[快速删除头像]]></item>
+				<item id="op_error"><![CDATA[操作有误，操作来路不正确！]]></item>
+				<item id="op_noright"><![CDATA[对不起，您无权进行此操作！如有问题，请联系管理员！]]></item>
+				<item id="op_success"><![CDATA[操作成功，感谢您对论坛的支持！]]></item>
+				<item id="op_cleartip1"><![CDATA[本操作删除此账号头像不可恢复，请慎重。]]></item>
+				<item id="op_cleartip2"><![CDATA[（删除后可能由于缓存原因更新不及时，可清除浏览器缓存后查看）]]></item>
+				<item id="log_title"><![CDATA[头像删除记录]]></item>
+				<item id="m_opuser"><![CDATA[操作人]]></item>
+				<item id="m_user"><![CDATA[被操作人]]></item>
+				<item id="m_date"><![CDATA[操作时间]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="appname"><![CDATA[快速删除头像]]></item>
+				<item id="op_yes"><![CDATA[确认操作]]></item>
+				<item id="op_no"><![CDATA[取消操作]]></item>
+				<item id="op_cleartips"><![CDATA[操作提示]]></item>
+				<item id="op_cleartip1"><![CDATA[本操作删除此账号头像不可恢复，请慎重。]]></item>
+				<item id="op_cleartip2"><![CDATA[（删除后可能由于缓存原因更新不及时，按Ctrl+F5刷新）]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+	</item>
+</root>

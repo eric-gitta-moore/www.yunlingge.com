@@ -1,0 +1,100 @@
+<style>
+body{background-color: #f5f3f3 !important;-webkit-backface-visibility: hidden;}
+.ui-page-theme-a{background-color: #f2f2f2!important;}
+.banklist{height:auto;overflow: hidden;list-style: none}
+.banklist li{width: 134px;height: 38px;display: block;border: 1px solid #cfcfcf;float: left;margin: 0 5px 12px 0;cursor: pointer;}
+.banklist li.bank_on { background: url({$_G['site_url']}source/plugin/rjyfk_in/template/img/radio_cur.gif) right bottom no-repeat;background-color: #f4f9eb;border: 1px solid #f86c41;}
+.banklist li em {background: url({$_G['site_url']}source/plugin/rjyfk_in/template/img/lbs.png) no-repeat -16px -80px;width: 15px;height: 15px;display: block;position: absolute;margin: -16px 0 0 120px;_margin: 23px 0 0 -14px;}
+ol, ul {list-style: none;}
+*{text-shadow: none!important;}
+.index .ui-content .index-year{ width: 100%; overflow: hidden;margin-bottom: 2%;background-color: #fff}
+.index .ui-content .index-year a{text-decoration: none;display: block;text-shadow: none;}
+.index .ui-content .index-year dt{background-color: #ff9966;color: #fff;font-size: 1em;padding: 0.4em 0;padding-left: 0.4em; }
+.index .ui-content .index-year dtt{background-color: #ff9966;color: #fff;font-size: 1em;padding: 0.4em 0;padding-left: 0.4em; }
+.index .ui-content .index-year dd{ width: 100%; overflow: hidden; display: table;padding: 2em 0;margin: 0;}
+.index .ui-content .index-year dd h4{ display: table-cell;font-size: 1.75em;font-weight: normal; color: #009DD9;text-indent: 1em;}
+.index .ui-content .index-year dd p{ display: table-cell; text-align: center;font-size: 1.75em;color: #009DD9;}
+.index .ui-content .index-year dd p small{font-size:50%;}
+table{border-collapse:collapse;width:100%}
+table td{border: 1px solid #ccc;padding: 5px;clip: rect(200px,auto,200px,auto);height: 40px;background:#fff;
+}
+</style>
+<!--{if $mode == 'pc'}-->
+<header>
+<div style="background-color: #64A7DA; ">
+<div align="center"><a style="color: #FFFFFF; font-size: 40px; body{line-height:normal;}"><strong>{lang rjyfk_in:Template13}</strong></a>
+  </header>
+  <!--{elseif $mode == 'wap'}-->
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script src="source/plugin/rjyfk_in/template/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">var jq = jQuery.noConflict();</script>
+<div data-role="page" class="index" id="index">
+<div style="background-color: #64A7DA; ">
+<div align="center"><a style="color: #FFFFFF; font-size: 40px; body{line-height:normal;}"><strong>{if $rj_flname}$rj_flname{else}{lang rjyfk_in:Template29}{/if}</strong></a>		</div>		</div>
+	<div class="ui-content" data-role="content"> 
+      <form id="payform"  action='plugin.php?id=rjyfk_in:payment' method='post' >
+        <input  type="hidden" id="formhash"  name="formhash" value="{FORMHASH}">
+			<dl class="index-year">		
+			<dt>
+			<!--{if $rjyfk_in[rj_information]}-->
+           {$rjyfk_in[rj_information]}
+          <!--{/if}-->
+			</dt>
+		<p style="text-align:center"><strong style="font-size:15px;color:#F00;" >{lang rjyfk_in:Template3}:&nbsp&nbsp&nbsp&nbsp&nbsp <input name="total_fee" class="px" type="text" id="total_fee" value="0" onkeyup="rj_get()" style="position:relative;"/><span>&nbsp&nbsp{lang rjyfk_in:Template4}</span></strong></p>
+		<p style="text-align:center"><strong style="font-size:15px;" >{lang rjyfk_in:Template5} <span id="nums" style="font-size:15px;color:#F00;" > 0</span> {$titlename}</strong></p>
+		<p style="text-align:center"><strong style="font-size:15px;">{lang rjyfk_in:Template30}&nbsp&nbsp&nbsp&nbsp<span style="color:#F00">({$rj_minimum} ~ {$rj_dayumum})</span>&nbsp&nbsp{lang rjyfk_in:Template23}</strong></p>
+			</dl>
+			    <table style=" width:100%">
+			         <td><strong style="font-size:15px;color:#F00;">{lang rjyfk_in:Template11}:</strong>
+                            <ul class="banklist" id="banklist"  style="height: auto;">
+                          <!--{loop $bank_types $val}-->
+                                <li bank_id="$val[id]" payment_type="chinapay" title="{$val[lang]}" onclick="setSelect(this)">
+								<img src="{$_G['site_url']}source/plugin/rjyfk_in/template/img/{$val[id]}.png">
+                                </li>
+                                <!--{/loop}-->
+							<input type="hidden"  id="bankcode" name="bankcode" value="" />	
+							      </ul>
+							</td>
+			     </table> 
+			</br>
+<button onclick="{if $_G[uid]}go_postchong(){else}location='member.php?mod=logging&action=login';{/if}" type="button"  value="yes" name="postsubmit"  id="postsubmit"style="color: #FFF; background: #F00; font-size: 50px; width:100%">{lang rjyfk_in:Template7}</button>
+</form>
+	</div>
+	</div>
+<script type="text/javascript">
+function setSelect(obj) {
+  var banklist= document.getElementById("banklist");
+  var arr=banklist.getElementsByTagName("li");
+  var len=arr.length;
+  var nextYear = 'ABC';
+  for(var i=0;i<len;i++){
+	arr[i].className ="";
+	arr[i].innerHTML=arr[i].innerHTML.replace("<font></font>","");
+  }
+  obj.className ="bank_on";
+  obj.innerHTML=obj.innerHTML+"<font></font>";
+  document.getElementById("bankcode").value=obj.getAttribute("bank_id");
+}
+function rj_get(){
+   var f = jq("#total_fee").val().replace(/\D/g,'');
+   jq("#total_fee").val(f);
+   var y = jq("#total_fee").val();
+   if(y){
+       var m = parseInt(jq("#total_fee").val())*{$rj_ratio};
+   }else{
+	   var m = 0;
+   }
+   jq("#nums").html(m);
+}
+function go_postchong(){
+   var total_fee = parseInt(jq("#total_fee").val());
+   if(total_fee < {$rj_minimum}) {
+    popup.open('{lang rjyfk_in:Template6}{$rj_minimum}', 'alert');
+	   return false;
+   }else{
+	   jq("#payform").submit();
+   }
+}
+</script> 
+<div class="hux_bank_clear"></div>
+<!--{/if}-->

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4]]></item>
+	<item id="Time"><![CDATA[2020-02-26 00:27]]></item>
+	<item id="From"><![CDATA[新意創想工作室 (http://www.xdaoolocal.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[帖子彈幕]]></item>
+			<item id="identifier"><![CDATA[xdaoo_danmu]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[xdaoo_danmu/]]></item>
+			<item id="copyright"><![CDATA[xdaoo.com]]></item>
+			<item id="version"><![CDATA[1.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[xdaoo_danmu]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[開啓頁麪]]></item>
+				<item id="description"><![CDATA[選中表示該頁麪開啓彈幕，可多選]]></item>
+				<item id="variable"><![CDATA[open_page]]></item>
+				<item id="type"><![CDATA[selects]]></item>
+				<item id="extra"><![CDATA[portal_index = 門戶首頁
+portal_list = 文章列表業
+portal_view = 文章內容頁
+forum_index = 論罈首頁
+forum_forumdisplay = 帖子列表頁
+forum_viewthread = 帖子內容頁]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[portal_index]]></item>
+					<item id="1"><![CDATA[portal_list]]></item>
+					<item id="2"><![CDATA[portal_view]]></item>
+					<item id="3"><![CDATA[forum_index]]></item>
+					<item id="4"><![CDATA[forum_forumdisplay]]></item>
+					<item id="5"><![CDATA[forum_viewthread]]></item>
+				</item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[每條彈幕發送時間]]></item>
+				<item id="description"><![CDATA[秒]]></item>
+				<item id="variable"><![CDATA[looper_time]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[是否循環]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isloop]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[顯示位置]]></item>
+				<item id="description"><![CDATA[侷裡底部高度，單位px;0表示隨機]]></item>
+				<item id="variable"><![CDATA[bottom]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[文字顔色]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[text_color]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#FFFFFF]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[背景顔色]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[bg_color]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#990066]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[調用帖子數據條數]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[data_num]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[調用版塊]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[fid]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[2]]></item>
+				</item>
+			</item>
+		</item>
+	</item>
+</root>

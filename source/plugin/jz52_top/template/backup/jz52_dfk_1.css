@@ -1,0 +1,41 @@
+#jz52top { position: fixed; display: block; width: 50px; background: none repeat scroll 0% 0% transparent; border: 0px #cdcdcd solid; border-radius: 3px; border-top: 0; cursor: pointer; }
+#jz52top:hover { text-decoration: none; }
+                a.jz52topa:hover { background-position: -50px 0px !important;}
+				a.replyfast { background-position: 0 -50px !important; }
+				a.replyfast:hover { background-position: -50px -50px !important;}
+				a.returnlist { background-position: 0 -100px !important; }
+				a.returnlist:hover { background-position: -50px -100px !important;}
+				a.returnboard { background-position: -100px -300px !important; }
+				a.returnboard:hover { background-position: -150px -300px !important;}
+				a.jzqr { background-position: 0 -150px !important; }
+				a.jzqr:hover { background-position: -50px -150px !important;}	
+                a.jzwx { background-position: 0 -400px !important; }
+				a.jzwx:hover { background-position: -50px -400px !important;}				
+				a.jzkf { background-position: -100px 0px !important; }
+				a.jzkf:hover { background-position: -150px -0px !important;}
+				a.jzfx { background-position: -100px -50px !important; }
+				a.jzfx:hover { background-position: -150px -50px !important;}
+				.jzfxn { background: #fff !important; width: 231px !important; height: 260px !important; }
+				a.jzlast { background-position: -100px -100px !important; }
+				a.jzlast:hover { background-position: -150px -100px !important;}
+				a.jznext { background-position: -100px -150px !important; }
+				a.jznext:hover { background-position: -150px -150px !important;}	
+                a.jzxyy { background-position: -100px -150px !important; }
+				a.jzxyy:hover { background-position: -150px -450px !important;}					
+				a.jzsct { background-position: 0px -200px !important; }
+				a.jzsct:hover { background-position: -50px -200px !important;}				
+				a.jzscb { background-position: -100px -200px !important; }
+				a.jzscb:hover { background-position: -150px -200px !important;}				
+				a.jzqqq { background-position: 0px -250px !important; }
+				a.jzqqq:hover { background-position: -50px -250px !important;}
+                a.jzsoso { background-position: -100px -400px !important; }
+				a.jzsoso:hover { background-position: -150px -400px !important;}					
+				a.jzwo { background-position: -100px -250px !important; }
+				a.jzwo:hover { background-position: -150px -250px !important;}
+				a.jzzdy { background-position: 0px -300px !important; }
+				a.jzzdy:hover { background-position: -50px -300px !important;}
+				a.jzfbzt { background-position: 0px -350px !important; }
+				a.jzfbzt:hover { background-position: -50px -350px !important;}
+				a.jzkfzx { background-position: -100px -350px !important; }
+				a.jzkfzx:hover { background-position: -150px -350px !important;}
+
